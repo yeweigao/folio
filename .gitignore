@@ -4,13 +4,10 @@
 __pycache__/
 node_modules/
 
-# 生成物：由 slides/*.slide（slidep）与生成记录复现，不入库
+# 生成物：由生成引擎与生成记录复现，不入库
 *.pptx
-Up High - Grade 3 English/assets/*.png
-Up High - Grade 3 English/xhs_overview_3x4.png
 
-# 示例课件整体不随仓库分发（含公开教材改编练习），本地保留
-Up High - Grade 3 English/
+# 示例工程不随仓库分发（已移至 ../folio-examples/，含二进制与公开教材改编练习）
 
 # 工具缓存与日志
 .cache/
