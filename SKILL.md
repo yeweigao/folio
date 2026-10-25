@@ -1,129 +1,89 @@
 ---
 name: folio
-description: 设计审美宪法。以瑞士国际主义为底座，融合编辑叙事、公共信息、构成主义、包豪斯、克制粗野、时装编辑、纪实摄影、模块网格与瑞士朋克。用于制作或修改 PPT/幻灯片、海报、网页/落地页、画布设计稿、手册/画册，或用户说“模板感、平庸、AI 味、像 SaaS 官网、不够高级、大师级、做审美审计”。引擎无关，适用于 Claude、Codex、DeepSeek、Gemini、WorkBuddy、Ardot、Slidep 及任何能读 Markdown 的 agent。
+description: Designs, redesigns, and critiques visual work (slide decks and PPT, posters, web and landing pages, canvases, brochures and handbooks) with a deliberate house theme, by default the Swiss International Style and the modernist movements around it. Use whenever layout, hierarchy, or visual direction matters, or when the user says a result looks generic, templated, AI-made, cheap, or not premium enough, even if no style is named.
 license: MIT
-version: 1.0.0
 ---
 
 # Folio
 
-你不是来装饰的，你是来决定的。读这一页就能开工；深水按 §7 取用。
+Design is deciding what is seen first, what recedes, and what never appears. This file sets the target and the limits; the route is yours.
 
-## §0 开工三行
+## Themes
 
-```
-Reading this as: [形态], for [读者], with a [气质] temperament.
-Material: real [有什么]; pictures [有/无]; absent [缺什么].
-Dialect: [folio/…] — because [一句理由].
-```
+A theme is a visual language: a mother tongue every piece speaks, dialects that fuse it with one movement, and variations that break it on purpose. Read the theme's mother tongue before designing.
 
-- 有歧义只问一个问题；能推断就推断，并写明推断。
-- 用户给了品牌规范或 DESIGN.md，先读它；它高于方言。
-- 没有真实材料，先列缺口，不编。
+Every deliverable is a mix, never a template: the mother tongue throughout, at most one primary dialect chosen from the reader and the evidence, and a few structural units that speak a variation or one move from a guest dialect. Whole dialects mixed on one page read as costume. A brand or existing system outranks every theme.
 
-## §1 七条铁律
+### Swiss (default)
 
-1. **内容先于形式** — 先判这个单位在干什么，再选形式；冲突时形态赢。
-2. **网格即结构** — 没声明列、槽、边距、基线，不动笔。列宽是解出来的，不是选出来的；留白是结构。
-3. **一套排印系统** — 一套阶梯，一个字重轴；层级只靠尺度、字重、位置、留白。
-4. **三种声音** — 纸、墨、一个信号；中间调由墨派生；颜色有语义。
-5. **装饰必须挣得位置** — 说不出的构图职责，就删。
-6. **诚实** — 不编事实；演示数据标记；文字可编辑；图片是证据或气氛。
-7. **可读性不可谈判** — 对比、字号、行宽、顺序；与审美冲突时审美让路。
+[Mother tongue](references/themes/swiss/mother-tongue.md): Swiss structure, heavy or thin type, rules instead of boxes. [Variations](references/themes/swiss/variations.md): the deliberate breaks.
 
-> **自由条款**：铁律之外一切自由。方言整套采纳，一次只用一个。
+| Dialect | Reach for it when | Signature move |
+|---|---|---|
+| [editorial](references/themes/swiss/dialects/editorial.md) | Argument, board review, deep reporting | Action title, one exhibit, a full-width decision band |
+| [public-info](references/themes/swiss/dialects/public-info.md) | Teaching, wayfinding, mixed-language readers | One grotesque, mapped function colors, one pictogram set |
+| [documentary](references/themes/swiss/dialects/documentary.md) | Evidence-dense, photo-led research | One real photograph leads; captions say who, where, when, source |
+| [fashion](references/themes/swiss/dialects/fashion.md) | Fashion, exhibitions, lookbooks | Bodoni-scale type colliding with a cropped image |
+| [constructivist](references/themes/swiss/dialects/constructivist.md) | Manifestos, posters that mobilize | One diagonal, condensed giant type, red and black |
+| [bauhaus](references/themes/swiss/dialects/bauhaus.md) | Geometry, education, product structure | One primitive shape repeated at changing scale; one primary color |
+| [brutalist](references/themes/swiss/dialects/brutalist.md) | Technical work where structure is the content | Grid and containers drawn in plain view; system type |
+| [bento](references/themes/swiss/dialects/bento.md) | Product overviews, canvases, dashboard narratives | Four to seven unequal modules, one dominant |
+| [swiss-punk](references/themes/swiss/dialects/swiss-punk.md) | Culture and music: rebellious, still readable | One rotation, overprint, or crop; body text stays on the grid |
+| [programme](references/themes/swiss/dialects/programme.md) | Series, flexible identities, campaigns | One declared rule generates every unit; each unit is another state |
+| [isotype](references/themes/swiss/dialects/isotype.md) | Numbers for broad or young audiences | Quantities as rows of repeated, equal-sized pictograms |
+| [tokyo](references/themes/swiss/dialects/tokyo.md) | Culture, ceremony, East Asian identity | One mark in charged emptiness; vertical CJK titles |
+| [gridnik](references/themes/swiss/dialects/gridnik.md) | Technology, architecture, constructed identities | Display letters built from the page grid itself |
 
-## §2 硬地板（16）
+## Goals
 
-出现任一条即返工。第 1、9、10、16 条不可豁免；其余可被用户明确指令覆盖，但必须窄、可解释、写进偏离记录。
+The design philosophy, true whatever the theme:
 
-1. 不编造事实、数字、客户、评价、奖项、logo、来源；不篡改对方提供的标题、日期、地点等事实性文案。
-2. 不用装饰性渐变、投影、发光、3D、拟物材质。照片压暗层只为可读，单层、中性、可解释。
-3. 不用圆角卡片、KPI 磁贴、图标墙、三等分同构卡片作为默认布局。
-4. 不用 emoji、装饰性符号、箭头粘在链接上、装饰性状态点（功能性 ✓/✗ 教学标记除外）。
-5. 一个构图只有一个信号色；其他色相必须说明语义；不新增独立灰 hex。
-6. 不用换字体或彩色小字制造层级。
-7. 不默认居中对称；居中只能有一个理由：仪式、碑铭、单一物件。
-8. 不用饼图、圆环、仪表盘、双轴图、3D 图表。
-9. 不把可读文字烤进图片。装饰性字即图像，必须同时提供真实可选文本与替代文本。
-10. 不用 AI 假照片、假人物、假产品图冒充真实材料；图库占位必须可替换并注明。
-11. 不用填充动词与空话：elevate、seamless、unleash、赋能、一站式、引领未来。
-12. 不为了通过检查而填充，也不为了显得丰富而增加无信息模块。
-13. 一个单位不混用两个方言；破格必须事先声明并留痕。
-14. 一个单位一个主意；第二个主意另起一页、一屏、一帧。
-15. 字体最多三个角色：展示、正文、标签/数字。默认不用 Inter；用作标签/数字时必须声明。
-16. 可读硬下限：正文不小于介质最小值；对比 ≥4.5:1；行宽 45–75 字符（CJK 25–40 字）；长句不全大写。
+- **One idea per unit.** One first read; the rest queues behind it.
+- **The eye follows the reading order.** One entry, one path, one exit, in the content's logical order.
+- **One decisive move per unit**, found in the subject's own world rather than in a style, describable in a sentence.
+- **Content outranks layout.** Never crop, hide, or shrink type to fit; edit the words or change the layout.
+- **One measure.** Every column, distance, and rule derives from one grid and one baseline.
+- **Space is placed, not left over.** Empty space is bounded by the grid and serves a focus; a half-empty unit is leftover, fixed by scale or placement, never by filler.
+- **Restrained type.** Few faces, few levels, wide gaps, one treatment per role, sized for the reader's distance.
+- **Color by role.** Every color has a role; the accent comes from the brand or the subject and stays the exception.
+- **Rhythm.** Dense, quiet, and loud units alternate; a few units break the pattern on purpose.
+- **Decoration never poses as information**, and color is never the only code.
+- **Images inform**: evidence, explanation, or declared atmosphere. If removing one loses nothing, remove it.
+- **The owner's test.** Without its colors and fonts, the piece is still recognizable.
 
-## §3 工作流（七步）
+## Constraints
 
-1. **读解** — 三行（§0）；再写一句：读者离开时只能记住的一件事。
-2. **命名默认** — 写下这类 brief 最可能生成的三个陈词滥调，全部划掉。第一版不像模板，才算开始。
-3. **盘材料，定形态与方言** — real / pictures / absent；没有就不放。形态八选一（`form-routing.md`）；方言十选一，整套采纳（§4）。
-4. **三个结构** — 对最小单位用文字各写一句：图像主导 / 文字主导 / 证据主导；不得是第 2 步的三类。只比结构，不比颜色；三个都像模板，重来。
-5. **一个主张，一个动作** — 选一个结构（并列时选更克制、动作更可说的那个），写一句主张；指定一个观者能一句话描述的决定性动作。动作承担排序、证据或节奏，不做装饰。
-6. **最小单位，声明系统** — 先做封面 / 首屏 / 首帧 / 最难的一页；同时声明网格、阶梯、三声、母题、图像。审过再复制语法，不复制版式；换介质只保留主张、三声与决定性动作，网格、字号、裁切、节奏全部重算。
-7. **删一个，审查交付** — 删掉一个不承重的元素；过 §2 与 §8；换上下文复审（`review.md`）；高风险件跑红队（`red-team.md`）；记录偏离；实际打开导出件。
+Style yields to the user; these do not.
 
-## §4 方言（10）
+- **Truth.** Nothing invented: no facts, figures, people, logos, or generated photos posed as real. Demo numbers say `illustrative`; missing material stays visibly missing.
+- **Facts are fixed; wording is design.** Names, dates, numbers, places, quotations, and required statements stay exact. Wording may be cut or rewritten to serve the message, and every change is listed for approval.
+- **Legibility.** Contrast ≥ 4.5:1, text at or above the surface minimum, lines of 45–75 characters (CJK 25–40), text kept live.
+- **Precedence.** User, then facts and supplied content, then brand, then dialect, then mother tongue.
 
-| 方言 | 何时用 | 标志性动作 | 状态 |
-|---|---|---|---|
-| `folio` | 无特殊气质、纯瑞士、通用默认 | 12 列 + 双声部 + 唯一母题 + 信号满版 | stable |
-| `editorial` | 论证、董事会、深度报道 | 动作标题 + 证据 + 决策带；衬线展示 × 无衬线正文 | stable |
-| `public-info` | 教学、导视、公共活动、跨语言 | 单一 grotesque + 功能色 + 象形符号 + 进度尺 | stable |
-| `constructivist` | 宣言、动员、强主张海报 | 一条斜线 + condensed 巨字 + 红黑 | experimental |
-| `bauhaus` | 几何、教育、产品结构 | 一个基本形系统 + 原色块面 | experimental |
-| `brutalist` | 技术、反精致、结构本身是内容 | 裸露网格 + 系统字 + 单信号 | experimental |
-| `fashion` | 时装、展览、形象册 | Bodoni 巨字 × 图像裁切 × 钴蓝 | stable |
-| `documentary` | 纪实、研究、证据密集 | 照片优先 + 图注/来源/地图 + 暖纸或纯白 | stable |
-| `bento` | 画布、产品总览、仪表盘叙事 | 4–7 个不等模块，一个主导 | experimental |
-| `swiss-punk` | 文化、音乐、反叛但克制 | 一次旋转/叠印/裁切 + 报纸纸 | experimental |
+## Avoid
 
-**选法**：先按内容形态与读者排除，再按材料能否承载排除；仍并列，选更克制的那个，并写出放弃另一个的理由。**同一作者连续三个同类项目，方言不得连续重复。**
+Named, because "less generic" alone swaps one default for another; vague taste ("more premium", "less AI") becomes a visible change you can name. Use these only when the brief, brand, or theme asks.
 
-## §5 破格（14）
+- Centered hero, three equal cards, gradient button, logo wall; KPI tiles; an icon per bullet; equal grids
+- Floating rounded cards, drop shadows, glow, glass, purple-blue gradients, fake 3D
+- Emoji and decorative symbols; numbering on content with no order
+- A colored eyebrow above every heading; extra fonts or colored text as hierarchy
+- Pie, donut, gauge, and dual-axis charts; legends where direct labels fit
+- Cream backgrounds on screen; decorative English on Chinese pages
+- Filler copy: elevate, seamless, unleash, 赋能, 一站式
+- The theme's own habit. If the plan could be described without naming this brief's subject, it is a default
 
-一个单位最多一次；先声明（打破哪条、为什么、代价），后施工；不用来掩盖弱构图；其余部分回默认。全表见 `variations.md`。
+## Done means
 
-## §6 优先级
+- The real export was viewed at intended size, every unit; contrast measured on the real composite.
+- Each unit has a nameable idea, path, and decisive move; the deliverable, a nameable grid, scale, and palette.
+- The delivery note names theme, dialect, variation units, copy edits, and anything unverified.
 
-**用户明确指令 > 内容与事实 > 项目 DESIGN.md / 品牌规范 > 方言文件 > 本页默认。**
+## Library
 
-用户说“就要这个风格”：整套采纳，不混搭。用户说“随便”或“高级一点”：不是指令；翻译成一个可检查的条件（更少元素 / 更大尺度 / 更冷纸色 / 更硬网格），再按 §4 选。用户指令与事实冲突：事实赢，并说明。用户指令可豁免风格禁令，不可豁免诚实与可读性（§2 第 1、9、10、16 条）。
+Open only what the current decision needs; examples teach method, never content. A mother tongue's values override these defaults.
 
-## §7 路由
-
-| 若… | 读 |
-|---|---|
-| 需要母体数值 | `references/styles/folio.md` |
-| 选/改方言；新增方言 | `references/styles/<id>.md`；`styles/_template.md` |
-| 判单位形态 | `references/form-routing.md` |
-| 要做破格 | `references/variations.md` |
-| 撞上禁令、找替代 | `references/anti-patterns.md` |
-| 排印/色彩/网格/图像/数据/文案/动效深水 | `references/craft/` |
-| 做具体介质 | `references/surfaces/<surface>.md` |
-| 看一个概念如何落到五个表面 | `references/examples/grid-lecture.md` |
-| 交付前复审；攻击自己的门禁 | `references/review.md`；`references/red-team.md` |
-| 接新引擎、查引擎事实 | `references/engines/` |
-| 交付验收、写回执 | `references/engines/acceptance.md` |
-| 跑评测、校准评分 | `references/evals/` |
-| 想知道为什么 | `MANIFESTO.md`；来源与词条 `references/canon.md` |
-
-## §8 完成定义
-
-- [ ] 读解、材料、方言三行已写
-- [ ] 三个结构草案已写，且不是同一结构的三套皮肤
-- [ ] 网格、阶梯、三声、母题已声明
-- [ ] §2 十六条逐条过；例外已记录
-- [ ] 每个单位只有一个主意、一个形态、一个决定性动作
-- [ ] 多表面项目：主张、三声、动作不变；网格、字号、裁切全部重算
-- [ ] 数字有来源或标 illustrative；提供的文案逐字保留；文字可编辑
-- [ ] 对比度、字号、行宽实测达标
-- [ ] 换上下文复审过；只修受影响单位
-- [ ] 输出格式实际打开检查过；回执写明 pass / 带偏差 / unverified；高风险件的高危攻击已封堵或登记
-
-## §9 边界与自由
-
-只管审美判断与禁令：不替代生成引擎、不改引擎命令、不编内容或数据。用户品牌资产高于本契约。引擎事实只住 `engines/`；哲学与工艺不含引擎命令。
-
-铁律是底线，不是天花板。底线之上，把它做到你自己的最好。
+- **Surfaces**: [slides](references/surfaces/slides.md), [poster](references/surfaces/poster.md), [web](references/surfaces/web.md), [canvas](references/surfaces/canvas.md), [handbook](references/surfaces/handbook.md)
+- **Form**: [form-routing](references/form-routing.md)
+- **Craft**: [typography](references/craft/typography.md), [color](references/craft/color.md), [grid](references/craft/grid.md), [imagery](references/craft/imagery.md), [data](references/craft/data.md), [copy](references/craft/copy.md), [motion](references/craft/motion.md)
+- **Anti-patterns**: [anti-patterns](references/anti-patterns.md)

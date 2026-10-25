@@ -1,128 +1,53 @@
-# 排印
+# Typography
 
-排印是设计的最小单位。网格决定关系，排印决定关系是否读得出来。
+Type is the smallest unit of design. The grid decides relationships; type decides whether they can be read. Most AI typography fails not in font choice but in sloppiness: too many sizes, no weight logic, wrong punctuation, CJK set like Latin.
 
-## 1. 三个角色，最多三个
+## Roles
 
-| 角色 | 干什么 | 字号范围 | 字重 | 字族 |
-|---|---|---|---|---|
-| **展示** Display | 一个主张、一个词、一个关键数字 | 46–300（按表面） | Bold / Black | 与正文同族，或一个声明的展示族 |
-| **正文** Body | 阅读、论证、说明 | 16–24（屏幕）/ 10.5–12pt（A4）/ 9.5–10.5pt（A5） | Regular | 主字族 |
-| **标签 / 数字** Label | 图注、来源、单位、编号、表头 | 12–14（近看屏幕）/ 18–22（投影）/ 8.5–9.5pt（印刷） | Medium | 正文族小一档，或声明的标签族 |
+At most three roles per piece, each with one job.
 
-超过三个角色，就是没有角色。一个单位出现第四种字号意图，先问它是不是该拆单位。投影标签不小于 18；12–14 只属于近距离屏幕。
-
-## 2. 阶梯：先声明，再使用
-
-选一个比例，写死，全篇不越级。
-
-| 比例 | 16 起 | 适用 |
-|---|---|---|
-| 1.200（小全音） | 16 / 19 / 23 / 28 / 33 / 40 / 48 / 57 / 69 / 83 / 99 | 信息密集、手册、表格多 |
-| 1.250（大全音） | 16 / 20 / 25 / 31 / 39 / 49 / 61 / 76 / 95 / 119 | 通用、deck、web |
-| 1.333（四度） | 16 / 21 / 28 / 38 / 50 / 67 / 90 / 120 | 展示强、海报、封面 |
-
-Folio 母体的阶梯：**12 / 14 / 16 / 20 / 24 / 32 / 46 / 64 / 112**。这是 `folio` 与 `editorial` 的默认。旧稿的 11 / 13 已移除：11px 低于可读硬下限。海报的 196 / 280 属大画幅 pt 档，不并入屏幕阶梯。
-
-**规则**：每个字号必须映射到一个角色；没有角色的字号删掉。一个单位最多三个层级。
-
-## 3. 一个字重轴
-
-声明一次 `字号 → 字重`，全篇不换：
-
-```
-正文 400 · 标签 500 · 标题 700 · 巨字 900
-```
-
-出现第二套映射（比如封面用 600、内页用 700）就是两个系统。需要更重，换字号或换场，不加字重。
-
-## 4. 字族
-
-- **一个主字族**走全篇。Grotesque：`Neue Haas Grotesk` / `Helvetica Now` / `Archivo`（Arial 仅作回退）。几何：`Futura` / `Jost`。人文：`Source Sans` / `Noto Sans`。
-- **最多两个阅读字族 + 一个标签族。** 第二个阅读族必须是声明的角色（例如 `editorial` 的衬线展示），不能是"换换口味"。
-- **中文栈首**：`PingFang SC` / `Noto Sans SC` / `Hiragino Sans GB`；衬线用 `Noto Serif SC` / `Songti SC`。中文字体放栈首，否则粗体常丢失。
-- **配对原则**：角色对比，不是风格对比。衬线展示 + 无衬线正文成立；两个相似 grotesque 并置不成立。
-- **Inter**：可作声明的标签 / 数字族；不可作默认正文或展示。用了就要在 DESIGN.md 写明角色。
-- **可变字体**：只用一个轴（字重），不要在同一页混用多个轴。
-
-## 5. 行宽与行高
-
-| 角色 | 拉丁行宽 | 中文行宽 | 行高 |
+| Role | Job | Size | Weight |
 |---|---|---|---|
-| 正文 | 45–75 字符 | 25–40 字 | 1.5–1.75 |
-| 导语 | 40–60 字符 | 22–32 字 | 1.5–1.6 |
-| 展示 | 8–20 字符 | 4–12 字 | 0.95–1.12 |
-| 图注 | 30–50 字符 | 18–28 字 | 1.4–1.5 |
-| 表格 | — | — | 1.25–1.4 |
+| Display | One claim, one word, one key figure | 46–300 by surface | 700–900 |
+| Body | Reading, argument, explanation | 16–24 px screen · 10.5–12 pt A4 · 9.5–10.5 pt A5 | 400 |
+| Label | Captions, sources, units, numbers, table heads | 12–14 px near screen · 18–22 px projected · 8.5–9.5 pt print | 500 |
 
-**估算**：拉丁 `字符数 ≈ 容器宽 ÷ (0.5 × 字号)`；中文 `字数 ≈ 容器宽 ÷ 字号`。
-超过 75 字符，眼睛回行会丢行；少于 45，节奏碎。中文超过 40 字，读起来像合同。
+A fourth size intention on one unit usually means the unit holds two ideas.
 
-**块高**：`行高 = 字号 × 倍数`；文本块高 ≈ 行数 × 行高。标题最多两行，先算两行高度，再决定它占几列。
+## Scale and weight
 
-## 6. 对齐、标点、换行
+Use the theme's scale (Swiss: 11 / 13 / 14 / 16 / 20 / 24 / 32 / 46 / 64 / 112 / 196 / 280, with 11 for print only). Every size maps to a role, and sizes off the scale are removed. Posters add 196 / 280 pt for large formats. When a brand needs another ratio, declare it once (1.2 for dense handbooks, 1.25 for decks and web, 1.333 for posters) and stay on it.
 
-- **左齐，右松。** 正文不两端对齐（拉丁与中文）；中文必须开避头尾。
-- **不断词**：展示档关闭连字符；正文最多连续两个连字符。
-- **孤行寡行**：最后一行不只剩一个词；跨页不把一段的第一行或最后一行单独留下。
-- **引号**：英文用弯引号 `“ ” ‘ ’`；中文用 `“ ”` 或 `「 」`，全篇一种；不混用直引号。
-- **破折号**：中文 `——` 按中文标点；英文不用 em dash 作节奏停顿；范围用 en dash `–`；负号用 `−`。
-- **中英混排**：中西文之间加 1/8–1/4 em 空隙（或依赖字体的 kerning）；不手动打空格。
-- **避头尾**：句号、逗号、闭引号不能出现在行首；开引号不能出现在行尾。
-- **标题换行**：按语义断，不按容器断；一个标题最多两行；第二行不短于第一行的一半。
+Weight follows size. Each size band carries its own weight, declared once for the whole piece; never pick a weight independently of the band. Two coherent ways to run it:
 
-## 7. 数字
+- **Heavy mode**: weight rises with size (body 400, lead 600, headings 700, display 900). Emphasis adds one step (+200) within the band, capped at 900.
+- **Thin mode**: weight falls as size grows (display 200, H1 250, H2 300), while small text stays at 500–600 so it holds on the page. Emphasis comes from size and position, not bolding.
 
-- **表格**用等宽数字（tabular），小数点对齐；**展示**用比例数字（proportional）。
-- 千分位：`1,280`；中文正式文本可用 `1280`，全篇一种。
-- 单位：数字与单位之间一个细空格（`32 MB`）；百分号不留空格（`32%`）。
-- 范围：`2024–2025`（en dash），不是 `2024-2025`。
-- 小数位：只保留决策需要的位数；`99.9%` 必须有来源，否则写 `≈100%`。
-- 负数用 `−`，不用连字符。
+Small sizes are set a step heavier than body, because thin strokes vanish at caption size. A deliverable may switch modes for a section (a thin-mode chapter opener in a heavy-mode book) as a deliberate variation. Never synthesize weights: use real font files.
 
-## 8. 层级
+Tracking tightens as size grows (−0.02em at display, −0.04em at hero or edge-cropped sizes), stays 0 for text, and opens (+0.12em) only for kickers and running heads at legible sizes.
 
-层级只靠四件事：**字号、字重、位置、留白**。
+## Families
 
-- 标题大 → 正文小；标题重 → 正文轻；标题在上/左 → 正文在下/右；标题周围空 → 正文密。
-- 不用颜色区分层级（信号色是标点，不是层级）；不用字体家族区分层级；不用彩色小字。
-- 强调：加粗、块面反白、加大字号。三选一。
-- 一个单位最多三个层级；超过就拆。
+- One main family. A second reading family only as a declared role (a serif display voice in editorial), never "for variety". Pair by role contrast, not style contrast: two similar grotesques side by side read as a mistake.
+- Inter, Roboto, and system defaults read as unchosen. Use them only as a declared label or number face.
+- CJK fonts lead the stack (`"Noto Sans SC", "PingFang SC", sans-serif`), or bold silently falls back to a faux weight. Serif CJK: Noto Serif SC / Source Han Serif.
 
-## 9. 介质下限
+## Measure and leading
 
-| 介质 | 正文最小 | 展示上限 | 备注 |
+| Role | Latin | CJK | Leading |
 |---|---|---|---|
-| deck（投影） | 26px | 160px | 标题 48–64；最后一排也要读得见 |
-| web | 16px | 112px | H1 40–80；展示数字可到 112，须在 DESIGN.md 声明 |
-| 印刷 A4 | 10.5pt | 84pt | 图注 ≥8.5pt |
-| 印刷 A5 | 9.5pt | — | 展示档未实测；按 A4 降一档并记录 |
-| 海报 A2（3m） | 36pt | 300pt | 图注 14–18pt |
-| canvas | 14px @100% | 160px | 缩放后仍可读 |
+| Body | 45–75 chars | 25–40 | 1.5–1.75 |
+| Lead | 40–60 | 22–32 | 1.5–1.6 |
+| Display | 8–20 | 4–12 | 0.95–1.12 |
+| Caption | 30–50 | 18–28 | 1.4–1.5 |
 
-**海报字高**：cap height（mm）≈ 观看距离（m）× 5；等价于距离（mm）÷ 200。3m → 15mm；10m → 50mm；30m → 150mm。这条约束主标题，不替代正文下限。
+Estimate before setting: Latin characters ≈ width ÷ (0.5 × size); CJK characters ≈ width ÷ size. A title is at most two lines; break it by meaning, and the second line is at least half the first.
 
-## 10. 失败样本：拿 deck 的下限去排 3m 海报
+## Details models get wrong
 
-A2 海报，正文 24pt。24pt 是 deck 投影的下限，不是海报的下限；3m 外字高约 6mm，观者只读得到主标题。
-
-修正：海报正文 36pt 起，主标题 120pt 起；先按观看距离算 cap height，再选字号。介质换了，下限也换。
-
-## 11. 禁
-
-- 全大写长句；10px 以下全大写宽字距标签；假小型大写。
-- 描边字、发光字、渐变字、文字压复杂照片（除非有可解释 scrim）。
-- 一页六种字号；两套字重轴；用换字体做层级。
-- 居中正文；两端对齐的拉丁长文；连续三个连字符。
-- 默认 Inter；三个以上字族；用等宽字体做装饰标签。
-
-## 12. 检查
-
-- [ ] 阶梯已声明，每个字号有角色
-- [ ] 一个字重轴，全篇一套映射
-- [ ] 行宽在区间内；行高与角色匹配
-- [ ] 中文栈首；中西文间距正常
-- [ ] 标点、引号、破折号、数字格式统一
-- [ ] 没有孤行寡行；标题按语义断行
-- [ ] 对比度与介质最小字号实测
-- [ ] 文字可编辑，未烤进图片
+- Flush left, never justified; CJK line-breaking rules on (no closing punctuation at line start, no opening at line end); no widows or orphans.
+- Curly quotes in English; one quotation style in Chinese (“ ” or 「 」); en dash for ranges (2025–2026); true minus (−); no em dash as a rhythmic pause in English. Chinese dash is ——, ellipsis ……
+- Space between CJK and Latin comes from the font or 1/8–1/4 em, not typed spaces.
+- Tabular figures in tables, proportional in display; thin space between number and unit (32 MB), none before % (32%).
+- No all-caps sentences, no letterspaced all-caps labels under 12 px, no outlined, glowing, or gradient text.

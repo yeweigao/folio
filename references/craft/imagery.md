@@ -1,110 +1,38 @@
-# 图像
+# Imagery
 
-图像不是填充。它要么是证据，要么是空气；不能是壁纸。
+An image is evidence, explanation, or atmosphere, never wallpaper. Nothing marks a piece as AI-made faster than generated people with perfect skin, stock teams around a laptop, or a glossy 3D render standing in for a product that exists.
 
-## 1. 两种职责
+## Three jobs
 
-| 职责 | 什么时候用 | 必须给的 |
+| Job | When | Must carry |
 |---|---|---|
-| **证据** Evidence | 证明一件事：现场、产品、人物、界面、数据 | 图注（谁/什么/哪里/何时/来源）、可指回的出处 |
-| **空气** Atmosphere | 建立一种气质：材质、光线、场所 | 说明它是什么；不冒充证据 |
+| Evidence | Proves something: a place, a product, a person, an interface, a result | A caption (who, what, where, when, source) and a traceable origin |
+| Explanation | Teaches something: a diagram, a map, a pictogram set, an illustration of a process, a mechanism, or a story that is itself the content | A clear subject, one drawing style for the whole piece, labels as live text |
+| Atmosphere | Sets a temperament: material, light, place | Honesty that it is atmosphere; it never poses as proof |
 
-一张图只能承担一种职责。用气氛图证明事实，是欺骗；用证据图做背景，是浪费。
+An image does one job. Atmosphere used as proof is deception; evidence used as background is waste; illustration that repeats what the text already says is decoration. The test is the same for photographs and drawings: remove the image, and something must be lost.
 
-## 2. 材料优先级
+## Where images come from, in order
 
-1. 用户自己的照片、产品图、截图。
-2. 真实产品 / 现场的截图（能运行就运行，能拍就拍）。
-3. 公共收藏的真实照片（博物馆、档案馆、Wikimedia、Openverse；确认许可）。
-4. 用代码绘制的图表 / 几何（只在没有真实图像时）。
-5. 纯文字与色场。
+1. The user's own photographs, product shots, and screenshots.
+2. Real screenshots or photos of the actual thing.
+3. Real photographs from public collections (museums, archives, Wikimedia, Openverse), with the license checked.
+4. Diagrams, maps, pictograms, and explanatory illustration drawn for this content.
+5. Type and color fields alone.
 
-**不用**：AI 假照片、假人物、假产品、假现场；图库图冒充客户现场；无出处的"氛围图"。
+Search for the subject's own world (the street, the material, the tool, the archive, the map), not for "premium" or "business team". One strong image beats four weak ones. A placeholder is labeled as one and replaced before delivery.
 
-## 3. 图像角色
+## Crop and treatment
 
-| 角色 | 占位 | 规则 |
-|---|---|---|
-| 主图 Hero | 6–12 列，≥40% 内容区 | 一个单位一张；主体偏置 ≥1/3；可出血 |
-| 证据 | 4–8 列 | 必须配五要素图注；不裁掉关键信息 |
-| 人像 | 4–6 列 | 保留眼神/动作；不美化；不 AI 生成 |
-| 材质 / 纹理 | 12 列或局部 | 不压正文；不做假做旧 |
-| 图表 | 6–12 列 | 透明绘图区；直标；来源 |
-| 界面截图 | 6–12 列 | 裁到关键区域；可读；不缩成缩略图 |
+- Two or three aspect ratios per piece; subjects on the thirds, rarely dead center; image edges on column lines; faces, hands, and product marks never cut by accident.
+- One medium per piece: color documentary, black and white, duotone, or halftone. No nostalgic filters, fake film grain, neon edges, rounded corners, shadows, or 3D tilt.
+- White type on a photograph only over a quiet area, with a single neutral black scrim at ≤ 55%: 55% black over white gives a mid grey on which white text reaches 4.7:1. Any lighter and it falls under 4.5:1.
 
-## 4. 选图
+## Captions and resolution
 
-先盘点对象自身的事实，再搜索；不要按品类搜"高级感"。
+- Captions 12–14 px or 8.5–9.5 pt in muted ink, on the image's baseline, with the source on its own line; unknown fields say "unknown". Readable text is never baked into the image.
+- Pixels = trim in mm ÷ 25.4 × dpi. Print 300 dpi at trim size (A2: 4961 × 7016; A4: 2480 × 3508); large formats ≥ 150 dpi; web 2×; slides 1920 px wide. 1240 × 1754 is A4 at 150 dpi, or A2 at only 75 dpi.
 
-- 搜地点、街道、材料、工具、档案、地图、印刷品，不搜"business team"。
-- 每张图记录：来源、作者、许可、日期、地点。
-- 分辨率：印刷 300dpi（按成品尺寸）；大画幅最低 150dpi；web 2x。
-- 看原图再选；缩略图会骗人。
-- 一张强图胜于四张弱图。
+## Ethics
 
-## 5. 裁切
-
-- 比例：1:1 / 4:5 / 3:2 / 16:9 / 2:3；全篇 2–3 种，不滥用。
-- 主体偏置：放在 1/3 或 2/3 线，不总在中心。
-- 对齐：图片边缘对齐列线；出血图越过裁切边。
-- 安全区：印刷留 5mm；人物面部不贴边。
-- 不裁掉动作的关键部分（手、眼神、产品标识）。
-- 不在一个单位里混用圆角与直角；默认直角。
-
-## 6. 处理
-
-全篇一种媒介：彩色纪实 / 黑白 / 双色 / 网点。选一。
-
-- **黑白**：提高对比，保留层次；不压死阴影。
-- **双色**：灰度 + 一个平色正片叠底；亮部成为纸色；打样。
-- **网点**：真实网点 45–85 lpi；一张图；角度一致。
-- **scrim**：只在深色图上放白字时使用；单层中性黑，≤0.55；必须能解释"为了可读"。55% 黑压纯白 → `#737373`，白字 4.7:1；再低就跌破 4.5:1。上限是算出来的。
-- **禁止**：滤镜怀旧、假胶片颗粒、霓虹渐变、发光边框、圆角阴影、3D 倾斜。
-
-## 7. 图文关系
-
-- 图注五要素：谁 / 什么 / 哪里 / 何时 / 来源。缺一项标"未知"。
-- 图注 12–14px / 8.5–9.5pt，muted；放在图下或图右，与图同基线。
-- 来源与图注分开写；来源可以更小，但不能消失。
-- 文字压图：只允许在低信息区域，且有 scrim；不压人脸、产品标识、关键动作。
-- **可读文字不烤进图片**；图注、标题、数值都是独立文本层。
-
-## 8. 技术
-
-| 介质 | 分辨率 | 格式 | 备注 |
-|---|---|---|---|
-| 印刷 | 300dpi（成品尺寸） | TIFF / PDF 嵌入 | CMYK；总墨量按厂规 |
-| 大画幅 | ≥150dpi | TIFF / PDF | 3m 看距可降到 100dpi |
-| web | 2x | AVIF / WebP / JPEG | 提供 `width`/`height`，防 CLS |
-| deck | 1920px 宽 | PNG / JPEG | 投影不超过 2MB/张 |
-
-**像素复算**：`像素 = 成品毫米 ÷ 25.4 × dpi`。A2 300dpi = 4961×7016；A2 150dpi = 2480×3508；A4 300dpi = 2480×3508。1240×1754 只是 A2 的 75dpi，或 A4 的 150dpi；不能标成"A2 150dpi"。
-
-- 文件命名：`主题-地点-序号`；不用 `IMG_2043`。
-- 压缩后回看：文字边缘、渐变天空、皮肤是否出现色带。
-- 动图 / 视频：只在有真实素材时使用；静音、循环、提供暂停；不用装饰性背景视频。
-
-## 9. 伦理
-
-- 不伪造现场、人物、产品、客户。
-- 纪实不摆拍；不把摆拍当纪实。
-- 弱势主体：征得同意；不利用苦难做气氛。
-- 引用与许可：能指回原处；署名按许可要求。
-- 儿童：不发布可识别身份的信息，除非有授权。
-
-## 10. 失败样本：把 1240×1754 当成 A2 150dpi
-
-设计板上放了一张 1240×1754 的图，标注"A2 / 150dpi"。A2 在 150dpi 需要 2480×3508；1240×1754 只有一半像素，印刷会糊。
-
-修正：先算成品像素，再决定缩览尺寸。缩览可以小，但标签必须写"等比缩览"，不能冒充成品分辨率。
-
-## 11. 检查
-
-- [ ] 每张图有职责（证据 / 空气），不是壁纸
-- [ ] 真实材料优先；没有就留占位，不造假
-- [ ] 图注五要素齐全；来源可指回
-- [ ] 分辨率、格式、压缩后质量达标
-- [ ] 全篇一种媒介；裁切对齐列线
-- [ ] 文字未烤进图片；有 alt 文本
-- [ ] scrim 单层、中性、可解释
-- [ ] 伦理与许可已确认
+Do not fabricate scenes, people, products, or customers; do not stage documentary; get consent from vulnerable subjects and never use hardship as mood; do not publish identifiable children without authorization.

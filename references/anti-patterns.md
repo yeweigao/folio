@@ -1,196 +1,61 @@
-# 反模式登记册
-
-`SKILL.md §2` 是地板的一行版（机械执行用）；本文件是每条的**为什么与替代程序**（撞墙时查）。
-
-## 读法
-
-- **层级**：`floor` = 出现即返工；`reflex` = 默认避免，有理由可豁免并记录；`finish` = 工艺细节，交付前回答，不阻塞。
-- **依据**：`data-backed` = 有可验证危害（可读性、可访问性、工程限制）；`owner-taste` = 屋主口味。两者必须区分，不把口味伪装成数据。
-- **替代给的是程序**（先做什么、再做什么），不是"换个更好看的 X"。
-- 判断不了 data-backed 还是 owner-taste 时，标 owner-taste：诚实优先。
-
----
-
-## AP-001 · 白卡片 / KPI 磁贴 — `floor` · `owner-taste` · 全表面
-
-**症状**：圆角白底卡片 + 阴影浮起；六个指标各占一格瓷砖；卡片内再套灰底。
-**背叛**：铁律 2（网格被盒子取代）、铁律 5（圆角与阴影无构图职责）。
-**替代**：① 去掉盒子，只留网格跨度；② 分区改用实色块 / 3px 墨线 / 1px 墨线三档；③ 主次靠面积与线宽，不靠"浮起"。
-
-## AP-002 · 装饰性渐变 / 阴影 / 发光 / 3D — `floor` · `data-backed` · 全表面
-
-**症状**：紫蓝霓虹渐变背景、卡片投影、发光按钮、伪 3D 图表。**紫蓝渐变是 AI 生成内容的视觉签名。**
-**背叛**：铁律 5；渐变文字底对比度不稳（data-backed）。
-**替代**：① 要分区 → 实色块或墨线；② 要层次 → 字号与字重级差；③ 要纵深 → 换场（纸 / 墨 / 信号满版）。
-**唯一例外**：深色照片上的单层中性 scrim，只为文字可读，必须能解释。
-
-## AP-003 · 独立灰 hex 分区 — `floor` · `owner-taste` · 全表面
-
-**症状**：把 `#6B6B6B`、`#E5E5E5`、`#D4D4D4`、`#0B2E4A`（深蓝黑）写成独立 token，用作次级文字或分区底。
-**背叛**：铁律 4。写一个灰 hex 就是引入第四色，纸面立刻变卡片。
-**替代**：中间调一律 `ink + opacity`（muted 0.62 / rule 0.12 / 深底正文 white 0.78）。
-
-## AP-004 · 三张同构卡片排一行 — `floor` · `owner-taste` · 全表面
-
-**症状**：三个等宽等高、同结构的块，各装一个图标 + 标题 + 两行字。
-**背叛**：铁律 2（没有主次）、形态路由（并列 ≠ 等分）。
-**替代**：① 先判是并列还是推进；② 并列 → 跨列不等模块网格；③ 推进 → 单轴编号，一项一行。
-
-## AP-005 · 图标墙 — `floor` · `owner-taste` · 全表面
-
-**症状**：每条要点配一个小图标；六个彩色圆形图标排一排。
-**背叛**：铁律 5（装饰无职责）、铁律 3（用图形替代层级）。
-**替代**：① 纯文本页不配图标；② 只有"需跨语言快速识别动作"（导视、公共信息）才用系统符号，且全册一套。
-
-## AP-006 · 饼图 / 圆环 / 仪表盘 — `floor` · `data-backed` · 全表面
-
-**症状**：占比用饼图；进度用圆环；指标用仪表盘铬件。
-**背叛**：铁律 6（角度不可读，人眼比较长度远准于角度）。
-**替代**：① 占比 → 条 / 柱，同一基线；② 进度 → 数字 + 刻度条；③ 记分 → 排版账本（值 / 基线 / 进度 / 目标 / 负责人 + 发丝线）。
-
-## AP-007 · 双轴图表 — `floor` · `data-backed` · 全表面
-
-**症状**：左右两个量纲共用一个图，靠颜色区分。读者会把交点当成结论。
-**背叛**：铁律 6、形态"对照"（不同量纲不同尺度）。
-**替代**：① 拆成两个同基准的裸条并排；② 或指数化（统一基线 = 100）。
-
-## AP-008 · 居中对称的默认构图 — `floor` · `owner-taste` · 全表面
-
-**症状**：所有单位标题居中、正文居中、元素左右对称；没有理由就居中。
-**背叛**：铁律 2（瑞士式 flush-left，对称是缺席的默认）。
-**替代**：① 默认左齐；② 非对称落在网格上（大块 + 小块的跨度差）；③ 居中必须是显式构图决策，并写出理由。
-
-## AP-009 · 蛇形分栏 — `floor` · `data-backed` · 全表面
-
-**症状**：有先后顺序的内容被排成两栏 Z 字阅读（1→2 上排，3→4 下排）。
-**背叛**：形态"推进"（前后依赖被视觉打断）。
-**替代**：① 有依赖 → 单轴、一个方向；② 真要分栏 → 栏内自洽，跨栏不承载顺序。
-
-## AP-010 · 假数据 — `floor` · `data-backed` · 全表面
-
-**症状**：编造客户数、好评、奖项、"99.9% 可靠性"、"提升 300%"。
-**背叛**：铁律 6。这是**欺骗**，不是审美。
-**替代**：① 没有数据 → 用结构（空白占位 + 待补标注）；② 用真数据并附来源；③ 必须给量级时标 `illustrative`。
-
-## AP-011 · 演示数据不标 illustrative — `floor` · `data-backed` · 全表面
-
-**症状**：示例数字排版得像实测值，读者当真。
-**背叛**：铁律 6。
-**替代**：数值旁或来源行标 `illustrative`，与真数据同样显眼，并给算式或基线。
-
-## AP-012 · 为通过检查而填充内容 — `floor` · `data-backed` · 全表面
-
-**症状**：检测器 / 评审说"留白过多、失衡"，于是加装饰面板、加不服务论点的文字、把一页拆成两页。
-**背叛**：铁律 5、铁律 6。留白是结构。
-**替代**：① 先分结构空白 / 塌陷空白（见 `review.md`）；② 结构空白 → 保留并登记；③ 塌陷 → 只改网格变量，一次一个。
-
-## AP-013 · 可读文字烤进图片 — `floor` · `data-backed` · 全表面
-
-**症状**：图表标题、节点名、数值画进图片；整块 SVG 含 `<text>`；正文做成图片。
-**背叛**：铁律 6（不可编辑）、工程可维护性、可访问性。
-**替代**：形状层与文字层分离——图只画几何，文字用独立文本元素叠加。
-
-## AP-014 · 填充动词、装饰符号与 em dash — `floor` · `owner-taste` · 全表面
-
-**症状**：`elevate / seamless / unleash / 赋能 / 一站式 / 打造`；文案里塞 emoji；英文文案用 em dash 作节奏停顿。
-**背叛**：铁律 6（用修辞替代信息）；这些是机器生成感的标识。
-**替代**：① 删掉形容词，只留可验证的动作与对象；② 断句用句号或重组句子；③ 强调 → 字号 / 字重 / 块面。
-**中文破折号按中文标点规范使用，不属于本条禁令。**
-
-## AP-015 · 暖纸 / 米白底 — `reflex` · `data-backed` · 屏幕默认
-
-**症状**：`#F7F5F0`、米色、奶油底当默认屏幕底。
-**背叛**：投影与低质屏会洗掉暖白；暖纸同时是"复古"皮肤，与瑞士底座冲突。
-**替代**：① 投影类表面用纯白；② 印刷确实要用暖纸时，在 DESIGN.md 声明理由与介质；③ 屏幕暖白必须实测对比。
-
-## AP-016 · 白色绘图板 + 色块图例 — `floor` · `owner-taste` · 数据页
-
-**症状**：图表垫一块白底板 + 边框；系列用色块图例而不是末端直标。
-**背叛**：铁律 5（白板是卡片）、铁律 7（读图要看两处）。
-**替代**：① 绘图区透明，直接落在纸面或信号色底；② 不出图例，系列名 + 终值在末端直标。
-
-## AP-017 · 九宫格等分 — `floor` · `owner-taste` · 并列 / canvas
-
-**症状**：并列内容排成 3×3 或 2×3 等分格，每格同样大。
-**背叛**：铁律 2（无主次）、形态"并列"（扫读变成逐格读）。
-**替代**：① 按重要性给不同跨度（12 / 6 / 4 / 3）；② 块数 4–7，超过就拆单位。
-
-## AP-018 · 排印无系统 — `reflex` · `owner-taste` · 全表面
-
-**症状**：默认 Inter；靠换字体家族区分层级；靠彩色小字强调；一页 6 种字号。
-**背叛**：铁律 3。
-**替代**：① 声明一套阶梯 + 一个 W(S)；② 层级只靠字号与字重；③ 强调改用块面反白 / 加粗 / 加大字号。
-**例外**：Inter 可作声明的标签 / 数字字族，不可作默认正文或展示。
-
-## AP-019 · AI 假照片 / 假人物 / 假产品 — `floor` · `data-backed` · 全表面
-
-**症状**：生成的"办公室照片"、"客户头像"、"产品实拍"；皮肤过亮、背景完美、手指错误。
-**背叛**：铁律 6。这是伪造证据。
-**替代**：① 用真实素材；② 没有就留占位并注明；③ 需要气氛时用抽象几何或纯字，不用假人。
-
-## AP-020 · SaaS 首屏公式 — `floor` · `owner-taste` · web / deck 封面
-
-**症状**：小号彩色 eyebrow + 居中大标题 + 一句副标题 + 渐变按钮 + 下方三张卡片 + logo 墙。
-**背叛**：铁律 2、铁律 5；这是模型最熟的默认路径。
-**替代**：① 先回答"这个产品/页面让人做什么"；② 首屏放真实产品、真实数字或一个可操作的东西；③ 标题左对齐，动作只留一个。
-
-## AP-021 · 假编辑感 — `reflex` · `owner-taste` · editorial / handbook
-
-**症状**：首字下沉 + 引号墙 + 装饰性页码 + 假报纸分栏 + "Vol. 01" 装饰。
-**背叛**：铁律 5（装饰无职责）、方言纪律（编辑叙事不是编辑皮肤）。
-**替代**：① 动作标题、证据、图注、来源先成立；② 页码与栏目必须真的承担导航；③ 不要用"杂志感"替代论证。
-
-## AP-022 · 风格汤 — `floor` · `owner-taste` · 全表面
-
-**症状**：瑞士网格 + 包豪斯圆 + 构成主义斜线 + 时装 Bodoni + 霓虹渐变，一页全有。
-**背叛**：铁律 13（一个单位一个方言）、融合契约。
-**替代**：① 一个作品只用一个方言；② 要融合 → 在定义方言时写借 / 拒 / 留契约；③ 项目里出现第二个方言 → 删到只剩一个。
-
-## AP-023 · 微型大写标签 — `reflex` · `data-backed` · 全表面
-
-**症状**：10px 以下、全大写、字距 +12% 的小标签；中文也强行拉字距。
-**背叛**：铁律 7（小字 + 宽字距降低可读性）；这是"设计感"的廉价替代。
-**替代**：① 标签用正文族小一档、句首大写或中文正常；② 需要分类 → 用线、块、位置；③ 真要全大写，≥12px 且字距 ≤+4%。
-
-## AP-024 · 装饰性索引号 — `floor` · `owner-taste` · 全表面
-
-**症状**：每页都有 01 / 02 / 03，但内容之间没有顺序；巨型数字只是水印。
-**背叛**：铁律 5（装饰无职责）、铁律 6（编号暗示不存在的结构）。
-**替代**：① 有顺序才编号；② 编号必须与阅读顺序一致；③ 没有顺序 → 删掉数字，用标题层级。
-
-## AP-025 · 空心巨字 — `reflex` · `owner-taste` · 宣言 / 封面
-
-**症状**：一个巨大的词占满版面，但没有主张、没有事实、没有下一步；删掉字，页面为空。
-**背叛**：铁律 1（设计是排序，不是放大）、铁律 6。
-**替代**：① 巨字必须承载一个可复述的主张；② 配一个事实或一个动作；③ 如果只有字，回到内容层重写。
-
-## AP-026 · 装饰性动效 — `floor` · `data-backed` · web / deck
-
-**症状**：滚动视差、逐字飞入、无限循环的背景动画、hover 时整卡跳动。
-**背叛**：铁律 7（注意力被动画拿走）；`prefers-reduced-motion` 下不可用。
-**替代**：① 动效只解释状态变化（展开、切换、进度）；② 时长 ≤300ms（叙事型大面积位移 ≤400ms 且写理由），只动 `transform` / `opacity`；③ 提供 reduced-motion 静态版。
-
-## AP-027 · 假高级 — `floor` · `owner-taste` · 全表面
-
-**症状**：金色渐变、玻璃拟态、深色底 + 发光描边、衬线大写 + 大字距 + "LUXURY"。
-**背叛**：铁律 5；这是"贵"的刻板符号，不是材料。
-**替代**：① 高级来自比例、留白、纸张、摄影与克制；② 一个信号色 + 真实材料；③ 去掉所有"贵"的装饰，看结构是否还成立。
-
-## AP-028 · 不可读的实验 — `floor` · `data-backed` · 全表面
-
-**症状**：正文旋转 90°、字叠在图上、对比度 2:1、字号 9px、逐字换字体。
-**背叛**：铁律 7。实验不能以读不懂为代价。
-**替代**：① 实验只作用于展示声部；② 正文保持正交、≥介质最小值、≥4.5:1；③ 先保证读得懂，再谈脾气。
-
-## AP-029 · 装饰性英文 / 双语标签 — `reflex` · `owner-taste` · 中文项目
-
-**症状**：中文标题上永远挂一个 `STRATEGY / INSIGHT / VOL.01`；英文不是给读者看的，是给"设计感"看的。
-**背叛**：铁律 6（信息冗余）、铁律 5（装饰无职责）。
-**替代**：① 英文只在真双语读者需要时出现；② 出现就与中文同层级、可读、有信息；③ 只是装饰 → 删。
-
----
-
-## 登记新条目
-
-格式：`AP-0NN · 名字 — 层级 · 依据 · 表面` + 症状 / 背叛哪条铁律 / 替代**程序**。
-新条目同步写进 `../EVOLUTION.md`。没有命名的失败，不立新规。
+# Anti-patterns
+
+Why each default in SKILL.md's Avoid list fails, and what to do instead. "Evidence" means the harm is measurable (legibility, accessibility, honesty, production); "house" means it is the Swiss theme's preference, which another theme may decide differently. The distinction matters when a user asks for one: house rules yield readily, evidence does not.
+
+## Layout
+
+| Pattern | Why it fails | Instead | Basis |
+|---|---|---|---|
+| Centered hero, three equal cards, gradient button, logo wall | The most common generated page; says nothing about this subject | A flush-left claim, one supporting sentence, one action; the real product or number on the first screen | house |
+| Three or nine equal boxes | Equal space erases priority; scanning becomes reading every box | Decide parallel or sequence; parallel gets unequal spans (12 / 6 / 4 / 3), four to seven blocks | house |
+| Floating rounded cards, cards in cards | The box replaces the grid; corners and shadows carry no meaning | Remove the box; separate with a solid field, a 3 px rule, or a 1 px rule; rank by area and weight | house |
+| KPI tiles | Each number floats without baseline, period, or meaning | A typographic ledger: value, baseline, period, change, source, hairlines | house |
+| An icon on every bullet; icon walls | Pictures stand in for hierarchy and add no information | No icons on text units; one consistent pictogram set only where readers need fast, language-free recognition | house |
+| Centering by default | Symmetry is the absent decision; it weakens the reading line | Flush left, asymmetric spans; center only with a stated reason | house |
+| Snake columns for ordered content | The order breaks across the Z | One axis, one direction | evidence |
+| 01 / 02 / 03 on unordered content; giant watermark numbers | Implies a structure that does not exist | Number only real sequences, in reading order | house |
+| Leftover space (content bunched at the top, the bottom half empty) or filler panels added to hide it | Leftover reads as unfinished; filler reads as noise; neither is structure | Placed space has an axis and a focus and ends on a grid line. Fix leftover space by changing one grid variable (anchor size, scale contrast, start line, anchoring to the foot) or by splitting or merging units; never add a panel | evidence |
+| Two dialects on one page | Style soup: no voice survives | One dialect per piece; fusion belongs in defining a dialect, not in a project | house |
+
+## Surface and color
+
+| Pattern | Why it fails | Instead | Basis |
+|---|---|---|---|
+| Purple-blue gradients, glow, glass, drop shadows, fake 3D | The visual signature of generated UI; gradient text makes contrast unstable | Fields of paper, ink, or accent; depth through scale and field changes; a neutral scrim only for legibility on photographs | evidence |
+| Greys invented per component | Every box gets its own grey; the page turns into cards | Greys declared once in the palette (ink opacity or theme tokens) | house |
+| Several accents, or one accent used for titles, buttons, and lines at once | Nothing reads as the exception; greyscale shows no hierarchy | One accent with one meaning; hierarchy from ink, weight, position | evidence |
+| Cream or warm paper on screen | Projectors wash it out; it is now a generated-design default itself | Pure white on screen; warm stock only in print, as the paper | evidence |
+| Fake luxury: gold gradients, glassmorphism, dark pages with glowing outlines, widely spaced serif capitals | The stereotype of expensive, not expense | Proportion, space, real photography, one accent | house |
+
+## Type and copy
+
+| Pattern | Why it fails | Instead | Basis |
+|---|---|---|---|
+| Inter or system fonts by default; extra fonts or colored text as hierarchy | Reads as unchosen; hierarchy without a system | One declared family; hierarchy by size, weight, position, space | house |
+| A small colored eyebrow above every heading; tiny letterspaced capitals | The single most common generated-page tell; small size plus wide tracking reduces legibility | Let the heading stand alone; kickers and running heads only as furniture, at legible sizes (≥ 12 px on screen, ≥ 8 pt in print) | evidence |
+| Filler verbs, "not just X but Y", em-dash drama, emoji | Rhetoric replaces information and reads as generated | Concrete actions, objects, numbers, dates | house |
+| Decorative English on Chinese pages (STRATEGY, VOL.01) | Carries no information; signals "design" rather than meaning | English only for real bilingual readers, at equal standing | house |
+| A giant word with no claim behind it | Remove the word and nothing is left | Giant type carries a repeatable claim plus a fact or an action | house |
+| Fake editorial: drop caps, quote walls, decorative folios, "Vol. 01" | Magazine skin standing in for an argument | Action titles, evidence, captions, and sources first; folios and sections only where they navigate | house |
+
+## Charts and data
+
+| Pattern | Why it fails | Instead | Basis |
+|---|---|---|---|
+| Pie, donut, gauge | Angles compare far worse than lengths | Bars on a shared baseline; progress as a number on a ruler | evidence |
+| Dual axes | Readers treat the crossing as a conclusion | Two charts on one baseline, or both indexed to 100 | evidence |
+| A chart on a white card with a legend and a grey plot area | The card is a box; the legend makes readers look twice | A transparent plot on the page; direct end labels | house |
+| Invented numbers ("99.9% uptime", "300% growth"); unlabeled demo data | Deception, not design | Real data with a source; otherwise a visible placeholder; demo values marked `illustrative` with their arithmetic | evidence |
+| Text baked into images | Uneditable and inaccessible | Geometry in the image, text as live text on top | evidence |
+
+## Images and motion
+
+| Pattern | Why it fails | Instead | Basis |
+|---|---|---|---|
+| Generated photos of people, places, or products presented as real | Fabricated evidence | Real material, a labeled placeholder, or type and geometry for mood | evidence |
+| Parallax, fly-ins, floating backgrounds, fade-up on every block | Motion takes attention from content and breaks reduced-motion settings | Motion only for state change, ≤ 300 ms, `transform` and `opacity`; one orchestrated moment at most | evidence |
+| Unreadable experiments: rotated body text, type over busy photographs, 2:1 contrast | The experiment is paid for by the reader | Experiment only in the display voice; body upright, legible, ≥ 4.5:1 | evidence |
+
+## Habit
+
+Models also converge on newer defaults: a cream background with a high-contrast serif and a terracotta accent; a near-black page with one acid-green or vermilion accent; a broadsheet of hairlines, zero radius, and dense columns. The last two overlap with the Swiss theme's own vocabulary, which is exactly why they need a reason each time. If the plan could be described without mentioning this brief's subject, it is a default, not a decision.

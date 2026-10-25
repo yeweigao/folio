@@ -1,137 +1,52 @@
-# 文案
+# Copy
 
-文案是设计的一部分。标题决定版面的形状，句子决定阅读的节奏。
+Copy is design material. The title decides the shape of the layout; the sentences decide the rhythm. AI copy is as recognizable as AI layout, and it ruins an otherwise good page.
 
-## 1. 先写文案，再做版式
+## Write the words first
 
-用纯文本写一份 copy deck：每个单位的标题、导语、证据、图注、来源、动作。文案定不下来，版式一定反复。
+Draft each unit's title, lead, evidence, captions, sources, and action as plain text before laying anything out. Order: claim, evidence, implication, action. A claim with no evidence becomes a question or goes.
 
-顺序：**主张 → 证据 → 含义 → 动作**。没有证据的主张，删掉或降级为问题。
+## Editing the client's words
 
-## 2. 动作标题
+Editing supplied copy is part of the service: a vague title can become a sharp claim, a paragraph a line, a line a slogan. Facts stay exact: names, dates, numbers, places, quotations, and legal or required text. Edit to improve the message, never only to rescue a layout. List each change so the client can approve it.
 
-标题是一个**判断句**，不是名词短语。
+## Action titles
 
-| 弱 | 强 |
+A title is a judgment, not a noun phrase.
+
+| Weak | Strong |
 |---|---|
-| 2024 年收入情况 | 收入连续三年增长，但增速在 2024 年减半 |
-| 产品架构 | 三层架构让新客户在一天内上线 |
-| 市场分析 | 一线城市已饱和，增量在二线与县域 |
-| 项目进展 | 三个里程碑已完成，测试环境仍缺一个人 |
+| 2026 enrollment | Enrollment grew three years running, but growth halved in 2026 |
+| Product architecture | Three layers let a new school go live in one day |
+| Project update | Three milestones are done; testing still lacks one person |
 
-规则：
-- 一个标题只装一个判断；装不下就拆单位。
-- 标题长度：中文 12–24 字；英文 40–70 字符；最多两行。
-- 全篇标题连起来应能读成摘要。
-- 不用"赋能""引领""打造""一站式"这类动词。
-- 不用问句当标题，除非这一页真的在提问。
+One judgment per title; 12–24 Chinese characters or 40–70 Latin characters; two lines at most. The titles, read in order, form the summary. A question is a title only when the unit really asks one.
 
-## 3. 首屏 / 封面
+## The tells of machine-written copy
 
-- 主标题 ≤7 个词 / 20 个汉字；最多两行。
-- 一句支撑句：12 个词 / 30 个汉字以内，直接说"这是什么"。
-- 一个主动作，动词开头，说清做什么（"预约参观""下载报告"），不用"了解更多"。
-- 首屏不靠 eyebrow（小号彩色标签）建立层级；标题自己站得住。
-- 数字可以进标题，但必须有来源或标 illustrative。
+Cut these on sight:
 
-## 4. 主张与证据
+- Filler verbs and adjectives: elevate, seamless, unleash, empower, revolutionize, cutting-edge, next-generation, game-changing, unlock; 赋能, 一站式, 打造, 引领, 闭环, 抓手, 颠覆.
+- Shapes: "It's not just X, it's Y"; three adjectives in a row; "Imagine a world where…"; rhetorical questions to fake curiosity; "In today's fast-paced world"; "We believe".
+- Punctuation: em dashes as dramatic pauses in English, exclamation marks, ellipses for suspense, emoji.
+- Vague buttons: "Learn more", "Get started", "Submit".
 
-每个主张配一个证据；每个证据能指回来源。
+Replace each with the action, the object, the quantity, the date. If nothing concrete is left, the sentence had no information.
 
-```
-主张：交付周期缩短一半
-证据：从 12 天到 6 天；2024 Q3–2025 Q2；n=184；来源：内部工单系统
-含义：同样的团队可以多接一倍的订单
-动作：把排期模板复制到你的项目
-```
+## Sentences
 
-没有证据 → 标"待补"，不编；证据不同轴 → 换证据，不换标题；证据太多 → 只留最强的一个，其余进附录。
+Active voice; concrete nouns and verbs; one idea per sentence; break anything past 35 Chinese characters or 25 English words. No stacked nouns ("user experience design system platform"). Reading budget: 5–7 Chinese characters or 3–4 English words per second, so a 15-second slide holds 75–105 characters or 45–60 words. Over budget, split the unit; never shrink the type.
 
-## 5. 句子
+## Captions, sources, bilingual
 
-- 主动语态；主语是人或物，不是"通过……"。
-- 具体名词 + 具体动词；删掉形容词与副词。
-- 一句话一个意思；超过 35 个汉字 / 25 个英文词，断开。
-- 数字、单位、时间、地点，能具体就具体。
-- 不堆叠三个以上名词（"用户体验设计系统平台"）。
-- 不用感叹号；不用问号堆情绪；不用省略号制造悬念。
-- 不写"我们相信""众所周知""在这个时代"。
+- Captions answer who, what, where, when, and source, and never repeat the body. Unknown is written as unknown.
+- Chinese uses full-width punctuation, —— and ……; 《》 only for titles of works. English uses curly quotes and en dashes for ranges.
+- One primary language. The secondary appears only for real bilingual readers, one line below, two sizes smaller. English labels like STRATEGY or VOL.01 on Chinese pages are decoration and go. Translate by rewriting, with consistent terms.
 
-**长度预算**：中文默读 5–7 字/秒，英文 3–4 词/秒。15 秒的页面：中文 75–105 字，英文 45–60 词；超过就拆单位，不缩字号。行容量用 `typography.md §5` 的估算，先算行数，再写标题。
+## Interface words
 
-## 6. 填充词清单
+Buttons are a verb plus an object ("Save changes", "Send invite"). Errors say what happened, how to fix it, and whether anything was lost, without apologizing. Empty states say what will appear and offer one action. Dangerous confirmations state the consequence.
 
-删：elevate、seamless、unleash、empower、revolutionize、cutting-edge、next-generation、赋能、一站式、打造、引领、闭环、抓手、生态位、颠覆、重构认知。
+## Voice
 
-替换：写动作、对象、数量、时间。写不出，说明这句话没有信息。
-
-## 7. 图注与来源
-
-图注五要素：谁 / 什么 / 哪里 / 何时 / 来源。
-
-```
-图 3　施工中的西桥（2024-08，重庆），摄影：李四 / 来源：项目档案
-```
-
-- 图注不是标题；不重复正文。
-- 来源与图注分开；来源可以更小，但不能省。
-- 转载、许可、档案号写在来源行。
-- 不知道就写"未知"，不猜。
-
-## 8. 中文标点与中英混排
-
-- 中文用全角标点：，。；：？！“”「」——……
-- 中文破折号 `——` 占两个字符位；不写成 `--` 或 `—`。
-- 省略号 `……` 六点；不写 `...`。
-- 中英之间加 1/4 em 空隙（或依赖字体 kerning）；不手动打空格。
-- 数字与单位之间一个细空格；百分号不留空格。
-- 英文用弯引号；范围用 en dash；不用 em dash 作节奏停顿。
-- 书名号《》只用于作品名；不用来强调。
-
-## 9. 双语
-
-- 一个主语言；副语言只在真双语读者需要时出现。
-- 副语言小 2 档、muted，不并排挤在一行。
-- 英文不是装饰：不写 `STRATEGY / INSIGHT / VOL.01` 这类无信息标签。
-- 翻译要重写，不逐字对译；术语全篇一致。
-- 双语标题不堆两个完整句子；主标题 + 副标题各一行。
-
-## 10. 界面微文案
-
-- 按钮：动词 + 对象（"保存更改""发送邀请"），不用"确定""提交"。
-- 错误：说清发生了什么 + 怎么修 + 是否丢数据；不道歉三行。
-- 空状态：说清这里会出现什么 + 一个动作；不放插画占位。
-- 加载：<300ms 不显示；超过则用骨架屏，保持布局稳定。
-- 确认：危险动作写清后果；不用"你确定吗？"这种空确认。
-- 帮助文本：一句，放在需要的地方；不写营销话术。
-
-## 11. 语气
-
-方言决定语气，内容决定温度：
-
-- `folio`：克制、直接、名词与动词。
-- `editorial`：判断、证据、结论。
-- `public-info`：指令清楚、步骤短、无歧义。
-- `constructivist`：动词开头、短句、可喊出口。
-- `fashion`：少词、具体、留白。
-- `documentary`：人名、地点、时间、来源。
-- `swiss-punk`：短、硬、不解释。
-
-语气不是形容词堆出来的；是句子长度、动词强度、信息密度决定的。
-
-## 12. 失败样本：36 字标题挤进两行
-
-deck 8 列 = 752px，标题 60px。中文每行约 12 字，36 字要三行；违反"标题最多两行"，第三行压到正文，层级一起塌。
-
-修正：标题压到 24 字以内，或拆成主标题 + 一行支撑句；不靠缩字号解决，D≥96 时 T 仍须 ≥60。
-
-## 13. 检查
-
-- [ ] 每个标题是判断句；标题连起来是摘要
-- [ ] 首屏有主张、一句支撑、一个动作
-- [ ] 每个主张有证据；每个证据有来源
-- [ ] 没有填充词、emoji、装饰性英文
-- [ ] 图注五要素齐全
-- [ ] 中文标点、破折号、省略号、数字格式统一
-- [ ] 双语不是装饰；副语言可读
-- [ ] 微文案说清动作、后果、下一步
+Each mother tongue and dialect names its voice. Voice comes from sentence length, verb strength, and information density, not from adjectives.

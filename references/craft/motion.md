@@ -1,97 +1,27 @@
-# 动效
+# Motion
 
-动效解释状态，不表演。一个动画说不清"什么变了"，就删掉。
+Motion explains a change of state; it does not perform. Scattered fade-ups on every block, floating backgrounds, parallax, and letter-by-letter fly-ins are among the quickest signs of a generated page. One well-orchestrated moment does more than twenty small ones, and often the right amount is none.
 
-## 1. 四种合法职责
+## Legitimate jobs
 
-| 职责 | 例子 | 允许 |
+State change (open, close, switch, loaded), feedback (press, validate, drop), continuity (an item expanding into its detail), and focus (the current step). Anything else is decoration and goes.
+
+## Timing
+
+| Action | Duration | Easing |
 |---|---|---|
-| **状态变化** | 展开 / 收起、切换 tab、加载完成 | 是 |
-| **反馈** | 按钮按下、表单校验、拖拽落位 | 是 |
-| **连续性** | 列表项进入详情、卡片放大成页面 | 是 |
-| **焦点** | 当前步骤、当前章节 | 是，但要克制 |
+| Press, hover | 100–150 ms | ease-out |
+| Open, close | 150–200 ms | ease-out |
+| Page or section change | 200–300 ms | cubic-bezier(0.2, 0, 0, 1) |
+| Large movement | ≤ 400 ms | ease-in-out |
+| Exit | 100–150 ms | ease-in |
 
-装饰性动效：背景漂浮、无限旋转、逐字飞入、视差、鼠标跟随光斑。**不做。**
+Distance sets duration: under 24 px, 100–150 ms; up to 200 px, 200–300 ms; beyond, 300–400 ms. Stagger 20–40 ms per item for at most five items; six or more appear together. At most two moving elements on screen at once.
 
-## 2. 时长与缓动
+## Implementation that stays smooth
 
-| 动作 | 时长 | 缓动 |
-|---|---|---|
-| 微反馈（按下、hover） | 100–150ms | ease-out |
-| 展开 / 收起 | 150–200ms | ease-out |
-| 页面 / 章节切换 | 200–300ms | cubic-bezier(0.2, 0, 0, 1) |
-| 大面积位移 | ≤400ms | ease-in-out |
-| 退出 | 100–150ms | ease-in |
+Animate only `transform` and `opacity`; name each transitioned property rather than `all`. Content is visible without JavaScript and without the animation. Under `prefers-reduced-motion`, motion becomes instant or a fade of ≤ 100 ms. Below 30 fps, remove the animation.
 
-超过 400ms 的动效必须有理由（例如叙事型滚动场景）；否则用户会觉得慢。
+## Slides and video
 
-**常量**：60fps = 16.7ms/帧；30fps = 33.3ms/帧；低于 30fps 删动画。位移 ≤24px 用 100–150ms；24–200px 用 200–300ms；>200px 用 300–400ms。列表 stagger 20–40ms/项，总数 ≤5；6 项以上整组出现。同屏最多 2 个动画元素。
-
-## 3. 只动两件事
-
-- 只动 `transform` 与 `opacity`；不动 `width` / `height` / `top` / `left` / `margin`。
-- 不用 `transition: all`；逐条写属性。
-- 不叠加多个动画在同一元素上；一个元素一次只做一件事。
-- 不为动画而 `will-change`；只在长动画前短暂使用。
-
-## 4. 减少动态
-
-```css
-@media (prefers-reduced-motion: reduce) {
-  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
-}
-```
-
-- 减少动态时，内容仍然可见；不靠动画显示内容。
-- 滚动叙事在 reduced-motion 下改为静态段落。
-- 视频提供暂停；不自动播放声音；不用背景视频承载信息。
-
-## 5. deck / 演示
-
-- 一页最多一个 build；build 只用于控制注意力顺序。
-- 不用飞入、弹跳、旋转、3D 翻转；用出现 / 淡入 / 位移 ≤200ms。
-- 图表逐系列出现时，坐标轴先出现；不要让读者在空白坐标系里等。
-- 翻页过渡：cut 优先；淡入 ≤200ms；不做百叶窗、立方体、粒子。
-- 讲稿切换与动画不绑定；讲者可以跳过。
-
-## 6. web
-
-- 首屏内容不依赖动画可见；脚本关闭也能读。
-- 滚动出现（reveal）最多一次；元素默认可见，动画只是增强。
-- 不做滚动劫持（scroll-jacking）；不锁定滚动条。
-- 视差禁用；背景视频禁用（除非是产品演示，且可暂停）。
-- 页面转场不做全屏遮罩；用即时导航或 ≤200ms 淡入。
-- 焦点框立即出现，不做动画。
-- 加载 <300ms 不显示 spinner；超过用骨架屏，保持布局稳定。
-
-## 7. 视频与动态图像
-
-- 只在有真实素材时使用；不用 AI 生成的假现场。
-- 静音、循环、`playsinline`；提供暂停与字幕。
-- 首帧即 poster；不自动播放声音。
-- 视频不承载唯一信息；关键信息用文字复述。
-- 文件大小：首屏 ≤2MB；长视频按需加载。
-
-## 8. 性能
-
-- 目标 60fps；动画期间不触发布局（layout thrash）。
-- 图片、字体、脚本按需加载；字体用 `font-display: swap`，避免不可见文字。
-- 动画元素提升为合成层要克制；过多层会吃内存。
-- 在低端设备上测试；帧率掉到 30fps 以下就删动画。
-
-## 9. 失败样本：6 项 × 200ms + 80ms 间隔
-
-6 张卡片依次入场：最后一张在 5×80 = 400ms 后才开始，整组 600ms 才完成。用户已经滚到下一屏。
-
-修正：stagger 降到 30ms（总 350ms），或整组一次 200ms 淡入；不靠延长动画制造"精致"。
-
-## 10. 检查
-
-- [ ] 每个动画能说出四种职责之一
-- [ ] 时长在区间内；没有 `transition: all`
-- [ ] 只动 `transform` / `opacity`
-- [ ] reduced-motion 下内容可见
-- [ ] 首屏不依赖动画；脚本关闭可读
-- [ ] 无滚动劫持、无视差、无装饰性背景视频
-- [ ] 视频静音、可暂停、有字幕
-- [ ] 低端设备帧率达标
+In decks, cuts by default; a build only to control the order of attention, one per slide; charts reveal axes before series. No fly-ins, bounces, cubes, or blinds. Video only from real footage: muted, pausable, captioned, its first frame a usable poster, never the only carrier of information.

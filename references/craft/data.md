@@ -1,116 +1,42 @@
-# 数据
+# Data
 
-图表是论点，不是容器。先有问题，再选图型；没有问题的图，是装饰。
+A chart is an argument, not a container. If you cannot say which judgment the reader should change after seeing it, do not draw it. AI charts fail by decoration: donuts, gauges, rainbow series, legends, chart cards, and numbers that are invented to look impressive.
 
-## 1. 先问这一句
+## Question decides the chart
 
-**读者看完这张图，应该改变哪个判断？**
-
-答不出来，就不要画图。一个单位最多一张主图；第二张图说明的是同一件事的另一面，不是另一件事。
-
-## 2. 问题 → 图型
-
-| 问题 | 图型 | 不要用 |
+| Question | Use | Not |
 |---|---|---|
-| 谁大谁小 | 横条（标签长）/ 竖柱（类别短） | 饼、环、3D |
-| 随时间怎么变 | 折线；面积只用于累计 | 双轴、平滑到失真 |
-| 分布在哪 | 直方图 / 箱线 / 散点条 | 只用平均值 |
-| 两者有关系吗 | 散点 + 拟合（谨慎） | 相关当因果 |
-| 构成是什么 | 堆叠条 / 单条 100% | 饼、环、树图（除非真层级） |
-| 偏离基准多少 | 发散条（零在中） | 仪表盘 |
-| 不确定性多大 | 误差条 / 区间带 | 只画点 |
-| 多个小群体 | 小倍数（small multiples） | 一张图塞 12 条线 |
+| Which is bigger | Horizontal bars (long labels), columns (short) | Pie, donut, 3D |
+| How it changed over time | Line; area only for cumulative totals | Dual axis, oversmoothing |
+| How it is distributed | Histogram, box plot, strip plot | A lone average |
+| Whether two things relate | Scatter, with care about any fit | Correlation sold as cause |
+| What it is made of | Stacked or 100% bar | Pie, treemap without real hierarchy |
+| How far from a baseline | Diverging bar, zero in the middle | Gauge |
+| How uncertain | Error bars, interval bands | Bare points |
+| Many small groups | Small multiples | Twelve lines in one plot |
 
-## 3. 坐标与比例
+## Honest geometry
 
-- 柱状图从 0 开始；截断轴必须显式标注断点，并说明理由。
-- 折线图可以截断，但必须标出范围；不要让 1% 的波动看起来像崩盘。
-- 一个图只有一个量纲；**双轴禁用**。需要两个量纲，拆成两张同基线图，或指数化到 100。
-- 网格线 ≤5 条；能删就删；网格线比数据线细。
-- 时间轴从左到右；类别顺序按大小或逻辑，不按字母（除非查找是主要任务）。
-- 对数轴必须标注"对数"；不用于普通读者不熟悉的场景。
+- Bars start at zero; a cut axis is marked and explained. Lines may be cut but show their range, so 1% does not look like a crash.
+- One unit per chart; never two axes. For two units, two charts on a shared baseline, or index both to 100.
+- At most five gridlines, thinner than the data (screen: data 2 px, grid 1 px; print: 1–1.5 pt and 0.5–0.75 pt); 3–5 axis ticks; bar gaps no wider than bars.
+- Order by size or logic, not alphabet, unless lookup is the task.
 
-**几何常量**：
+## Labels and color
 
-| 元素 | 屏幕 | 印刷 |
-|---|---|---|
-| 数据线 | 2px | 1–1.5pt |
-| 网格线 | 1px | 0.5–0.75pt |
-| 柱间距 | ≤柱宽 | ≤柱宽 |
-| 组间距 | 1.5–2×柱间距 | 同 |
-| 轴刻度 | 3–5 条 | 3–5 条 |
-| 表格行高 | ≥1.35×字号；触控 ≥44px | ≥1.35×字号 |
+- Label series names and end values directly; no legend when labels fit. One annotation per chart, one thin line and one sentence.
+- Titles state the finding ("Enrollment rose three years running, but growth halved in 2026"), not the topic ("Enrollment 2024–2026").
+- Units on the axis title or first tick; source, period, and definition under the chart at 12–14 px.
+- One accent color for the one series or finding that matters; everything else ink at 100 / 62 / 38%. At most five categories; sequential data in one hue's steps; diverging data in two hues with paper at the midpoint; never a rainbow, never red-green as the only difference.
 
-## 4. 标注
+## Tables
 
-- **直接标注**：系列名 + 终值放在线末 / 柱末；不用图例。
-- **一个注释**：每张图只强调一个发现；用一条细线 + 一句话，不用箭头堆。
-- **单位**：写在轴标题或第一个刻度上；不要每个点都写。
-- **基线**：零线、目标线、历史均值线，三者最多两条；多了就是噪声。
-- **来源**：图下 12–14px；写清机构、期间、口径、链接或档案号。
-- **标题**：动作标题，不是"2024 年收入"。写"收入连续三年增长，但增速在 2024 年减半"。
+Open horizontal rules, no verticals, no zebra stripes, no colored cells unless they encode a mapped status. Numbers right-aligned on the decimal; units in the header; percentages and absolutes in separate columns; totals set apart by a rule or space.
 
-## 5. 颜色
+## Numbers that hold up
 
-- 一个信号色强调一个系列 / 一个发现；其余用墨的透明度（1.0 / 0.62 / 0.38）。
-- 类别 ≤5；超过 5 类，合并、排序或改用小倍数。
-- 顺序数据用单色阶；发散数据用双色阶，中点为纸。
-- 不用彩虹色阶；红绿不作为唯一区分。
-- 灰度打印后仍能读出层级；不能，就加形状 / 直接标注。
+Keep only the precision a decision needs (32.4%, not 32.417%). Percent and percentage points are different. Rates name their denominator (3.2%, 32 of 1,000). Forecasts are dashed and labeled with their assumptions. Missing data is not zero. Demo numbers say `illustrative`, as visibly as real ones, with the arithmetic shown.
 
-## 6. 表格
+## Dashboards
 
-- 开放横线，无竖线；屏幕表头 / 合计 1px、行间 1px；印刷统一 0.5–0.75pt。
-- 数字右对齐；小数点对齐；单位在表头；百分比与绝对值不混列。
-- 行高 ≥1.35；不用斑马纹；不用彩色单元格（除非状态编码，且有映射）。
-- 排序有理由：按大小、时间或逻辑；不按录入顺序。
-- 合计行与明细行用线或留白分开，不用加粗整行。
-
-## 7. 数字
-
-- 精度只保留决策需要的位数：`32.4%` 而不是 `32.417%`。
-- 千分位全篇一种；中文正式文本可用 `万 / 亿`，但要与原始单位对齐。
-- 百分比与百分点分开写："从 20% 到 25%" 是 5 个百分点，不是 5%。
-- 比率写清分母："转化率 3.2%（32/1000）"。
-- 四舍五入后合计不闭合时，加"因四舍五入，合计不等于 100%"。
-- 负数用 `−`；范围用 en dash。
-
-## 8. 不确定性与口径
-
-- 样本量、置信区间、缺失数据，能写就写；不能写就在来源行说明。
-- 调查数据标方法、时间、样本；不把自选样本当代表样本。
-- 同比 / 环比写清；基期写清；口径变化写清。
-- 预测与实测分开画；预测用虚线，并标注假设。
-- 不把相关性写成因果；不把没有数据写成 0。
-
-## 9. 演示数据
-
-- 必须标 `illustrative`，与真数据同样显眼。
-- 给算式或基线：`25 + 12 + 4 − 6 − 3 = 32`。
-- 不用真实机构的 logo 搭配编造数据。
-- 不用"99.9%""300% 提升"这类无来源的装饰数字。
-
-## 10. 仪表盘
-
-- 不做 KPI 磁贴墙；不做圆环 / 仪表盘 / 进度胶囊。
-- 一个主指标 + 一个趋势 + 一个分解；按阅读顺序排，不按网格填满。
-- 每个指标给：值、基线、期间、来源、变化方向。
-- 状态用文字 + 形状 + 颜色三重编码；不只用颜色。
-- 空状态、加载态、错误态都要设计；不要让仪表盘只剩"正常"。
-
-## 11. 失败样本：12 类 12 色
-
-12 个类别用 12 种颜色，图例两列；灰度打印后只剩一团灰。违反"类别 ≤5"和"一个信号色"。
-
-修正：合并到 5 类，其余进"其他"或改用小倍数；主类用信号，其余用墨的 1.0 / 0.62 / 0.38。颜色从 12 个降到 4 个，图例消失，直接标注。
-
-## 12. 检查
-
-- [ ] 每张图回答一个明确问题
-- [ ] 图型与问题匹配；没有饼 / 环 / 仪表盘 / 双轴 / 3D
-- [ ] 零线、截断、对数、单位、期间写清
-- [ ] 直接标注；图例不是唯一读数方式
-- [ ] 一个注释；一个信号色；灰度可读
-- [ ] 来源、口径、样本量、不确定性齐全
-- [ ] 演示数据标 illustrative 并给算式
-- [ ] 表格无竖线、数字右对齐、单位在表头
+One main metric, one trend, one breakdown, in reading order. Each metric carries value, baseline, period, source, and direction of change, set as a typographic ledger with hairlines rather than a wall of tiles. State is encoded in text, shape, and color together. Design empty, loading, and error states too.

@@ -1,96 +1,48 @@
-# 表面：poster（印刷海报）
+# poster
 
-海报是一个单位，不是一页。它在 3 秒内要么成立，要么被走过。
+A poster is a single unit seen in passing. It works in three seconds from three meters, or it is walked past.
 
-## 1. 尺寸与观看距离
+## Format and distance
 
-| 规格 | 成品 mm | 出血后 mm | 典型看距 | 主标题 cap height |
-|---|---|---|---|---|
-| A0 | 841×1189 | 847×1195 | 10–30m | 50–150mm |
-| A1 | 594×841 | 600×847 | 5–10m | 25–50mm |
-| A2 | 420×594 | 426×600 | 3–10m | 15–50mm |
-| A3 | 297×420 | 303×426 | 1–3m | 5–15mm |
-| A4 | 210×297 | 216×303 | 0.5–1m | 3–5mm |
+| Size | Trim (mm) | Typical distance | Main title cap height |
+|---|---|---|---|
+| A0 | 841 × 1189 | 10–30 m | 50–150 mm |
+| A1 | 594 × 841 | 5–10 m | 25–50 mm |
+| A2 | 420 × 594 | 3–10 m | 15–50 mm |
+| A3 | 297 × 420 | 1–3 m | 5–15 mm |
+| A4 | 210 × 297 | 0.5–1 m | 3–5 mm |
 
-**字高估算**：cap height（mm）≈ 观看距离（m）× 5。3m → 15mm；10m → 50mm；30m → 150mm。
-这是下限，不是目标；主标题通常取 2–4 倍。表内是 cap height，不是字号；字号 ≈ cap height ÷ 0.7（中文字面按 0.7 估）。
+Cap height in millimeters ≈ distance in meters × 5. That is a floor, not a target; titles usually take two to four times it. Font size ≈ cap height ÷ 0.7.
 
-## 2. 网格
+Grids: A2 margins 28, 12 × 23 mm, 8 mm gutters (content 364); A3 margins 20, 12 × 15.92, 6 mm gutters; A4 margins 15, 6 × 25, 6 mm gutters. Baseline 8 mm. Bleed 3 mm, safe area 5 mm.
 
-| 规格 | 边距 | 列 | 槽 | 内容宽 |
-|---|---|---|---|---|
-| A2 | 28mm | 12 × 23 | 8mm | 364mm |
-| A3 | 20mm | 12 × 15.92 | 6mm | 257mm |
-| A4 | 15mm | 6 × 25 | 6mm | 180mm |
+## What the three seconds must carry
 
-- 3mm 出血；5mm 安全区；文字与关键图形必须留在安全区内。
-- 基线 8mm；标题、正文、图注的底边落在基线上。
-- 允许跨度 12 / 8 / 6 / 4 / 3；一个主导元素占 8 或 12 列。
-- 视觉动线：主标题 → 图像 / 主图形 → 日期地点 → 来源 / 票务。最多四块。
+What it is, and when and where. "What" belongs to a category label or the title; "when, where, who" use text sizes of at least 36 pt on A2, never caption sizes. One claim, one main image or graphic, one action. At most four information blocks, and at least 30% empty space: a poster looks expensive because it dares to leave space, not because it is full.
 
-## 3. 一个单位，一个主意
+Sizes on A2 at 3 m: title 120–300 pt, text 36–48 pt, credits 14–18 pt. On A3 at 1–3 m: title 72–160, text 18–24, credits 10–12.
 
-- **3 秒测试**：3 米外 3 秒内，能读出"是什么 + 什么时候 / 哪里"吗？不能，删。
-- "是什么"由类别标签或主标题承担；"何时 / 何地 / 谁"用正文级 ≥36pt，不用图注级；图注 14–18pt 只承载 credits、来源、许可。
-- 一个主张；一个主图或一个主图形；一个动作（来看 / 来买 / 记住）。
-- 信息层级 ≤4 级；超过就做系列，不挤一张。
-- 留白 ≥30%；海报的贵气来自敢空，不来自填满。
+Facts in a supplied title stay exact; its wording may be tightened or rewritten as a design service, with the change shown to the client. Ten to twenty Chinese characters set in two to four lines at 120–180 pt, with a 2–6 character category label (公开课, 展览) of at least 48 pt carrying the three-second read. Beyond twenty characters the title becomes a 36–48 pt text block and a short display phrase becomes the main graphic. Never negative tracking to force one line.
 
-## 4. 排印
+## Where posters go generic
 
-- 主标题 1–3 个词；文化 / 展览 / 演出类中文 ≤10 字；英文 ≤5 词。
-- 公共信息 / 讲座类：**客户提供的标题逐字保留，不改写、不缩写、不换词**。10–20 字按 2–4 行排，120–180pt；超过 20 字时，标题降为正文块（36–48pt），另立 3–6 字展示短语作为主图形。
-- 长标题必须配一个 2–6 字类别标签（公开课 / 展览 / 演出），标签 ≥48pt，承担 3 秒测试里的"是什么"；标题承担第二眼的主张。
-- 行宽以版心为限，最长行留 ≥1 列余量；不许用负字距把标题硬塞进一行。
-- A2 / 3m 看距：主标题 120–300pt；正文 36–48pt；图注 14–18pt。正文级用于"何时 / 何地 / 谁"；cap height 下限只约束主标题。
-- A3 / 1–3m：主标题 72–160pt；正文 18–24pt；图注 10–12pt。
-- 一个展示族 + 一个正文字族；标签用正文族小一档。
-- 左齐优先；居中只在碑铭式构图；不做拉伸、描边、阴影。
-- 数字（日期、票价、年份）可以成为主图形；必须有来源或标 illustrative。
+| The template move | Instead |
+|---|---|
+| Everything centered and stacked | Flush-left on the grid; center only for a monument-like single object |
+| Gradient background with a glowing title | Paper, ink, one accent; let a real image or the type itself be the graphic |
+| Every piece of information the same size | Four levels at most, with a real jump between them |
+| A decorative frame around the edge | Let the edge be the format; bleed the main element |
+| Stock photography | One real image, or type and geometry alone |
 
-## 5. 色彩
+## Print facts that break silently
 
-- 纸 / 墨 / 一个信号；信号面积：常规 ≤10%，主张 / 事件页 ≤20%（与 `craft/color.md` 同口径）。大面积场只选纸、墨、信号三色。
-- 印刷用 CMYK；总墨量 ≤300%；小字 100K 单黑；大面积黑用 rich black（60/40/40/100）。
-- 信号色优先专色；四色近似必须打样。
-- 不用 RGB 霓虹、渐变、发光；网点与叠印属于破格，要有记录。
-- 纸张选择影响颜色：涂布 / 非涂布 / 报纸纸，先定纸再定色。
+- CMYK; total ink ≤ 300%; small text and hairlines in 100K only; large blacks as rich black 60/40/40/100.
+- Accent colors as spot when they are brand colors; otherwise proof the CMYK approximation.
+- Images at 300 dpi at trim size (≥ 150 dpi for large formats); pixels = mm ÷ 25.4 × dpi.
+- PDF/X-4, fonts embedded, trim marks outside the bleed; at least one proof before a run.
 
-## 6. 图像
+## Done means
 
-- 一张主图，最多三张；主图 ≥40% 画面或满版出血。
-- 300dpi（按成品尺寸）；大画幅 ≥150dpi。
-- 全篇一种媒介：彩色纪实 / 黑白 / 双色 / 网点。
-- 主图裁切保留一个可读主体；不把脸切掉一半只为"设计感"。
-- 图注与来源：作者 / 地点 / 年份 / 许可；没有来源不用。
-- 不用 AI 假照片、不用图库图冒充现场。
-
-## 7. 版式类型
-
-| 类型 | 结构 | 注意 |
-|---|---|---|
-| **文化海报** | 巨字 + 一张图 + 日期地点 | 一个字图碰撞；一个破格 |
-| **公共信息** | 标题 + 象形 / 路线 + 时间表 | 3m 可读；功能色有映射 |
-| **电影 / 演出** | 主视觉 + 片名 + credits | 片名不压脸；credits 小而可读 |
-| **展览** | 一个对象 + 展期 + 场馆 | 对象占主导；信息不超过四块 |
-| **政策 /  campaign** | 一句主张 + 一个事实 + 动作 | 不喊口号；数字有来源 |
-
-## 8. 印刷交付
-
-- PDF/X-4；字体嵌入或转曲（转曲后保留可编辑源文件）。
-- CMYK；色彩配置文件按印厂（FOGRA39 / GRACoL）；总墨量按纸。
-- 3mm 出血；裁切线 / 套准标记放在出血外；5mm 安全区。
-- 叠印预览检查：黑字压图、白字、专色、细线。
-- 打样：至少一次数字打样；大面积实地色要上机打样。
-- 文件命名：`项目-规格-版本-日期`；源文件与 PDF 分开。
-
-## 9. 检查
-
-- [ ] 3 秒测试通过：是什么 + 何时 / 何地
-- [ ] 一个主张、一个主图、一个动作
-- [ ] 主标题 cap height 达看距下限
-- [ ] 网格五个数已写；出血 / 安全区正确
-- [ ] 一个信号；CMYK / 总墨量 / 专色已确认
-- [ ] 图像 300dpi；图注与来源齐全
-- [ ] PDF/X-4 打开检查；字体、裁切、叠印无误
-- [ ] 打样颜色与屏幕预期一致
+- From three meters, the three-second test passes: what it is, when, where.
+- The title's cap height meets the distance floor; facts in the copy are unchanged and every wording edit is listed.
+- Bleed, safe area, color space, and image resolution are correct for the printer; anything unproofed is reported as unverified.

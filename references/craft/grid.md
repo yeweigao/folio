@@ -1,112 +1,36 @@
-# 网格
+# Grid
 
-网格不是限制，是合同。它先决定东西之间的关系，再决定东西长什么样。
+The grid is a contract: it fixes how things relate before deciding what they look like. Without one, an AI layout falls back to equal thirds and centered stacks.
 
-## 1. 五个数，先写下来
+## Five numbers
 
-1. **列数** Columns
-2. **槽宽** Gutter
-3. **外边距** Margin
-4. **基线** Baseline
-5. **内容宽** Content width
+Columns, gutter, margin, baseline, content width, with content = n × column + (n − 1) × gutter. Solve the column from the format: column = (content − (n − 1) × gutter) ÷ n; the left edge of column k (from 0) is margin + k × (column + gutter).
 
-公式：`内容宽 = 列数 × 列宽 + (列数 − 1) × 槽宽`。
-反解：`列宽 = (内容宽 − (列数 − 1) × 槽宽) ÷ 列数`；第 n 列左线 `x = 边距 + n × (列宽 + 槽宽)`（n 从 0 起）。
-写不出这五个数，就是没开工。
-
-## 2. 各表面的默认
-
-| 表面 | 画布 | 列 | 槽 | 边距 | 基线 |
+| Surface | Format | Columns | Gutter | Margin | Baseline |
 |---|---|---|---|---|---|
-| deck | 1280×720 | 12 × 73 | 24 | 70 | 8px |
-| web | 视口 1440 时内容 1296；上限 1440 | 12 | 24 | 5vw（最小 24） | 8px |
-| A4 手册 | 210×297mm | 12 × 9 | 6mm | 上18/下21/内21/外15mm | 28px / 21pt |
-| A2 海报 | 420×594mm | 12 × 23 | 8mm | 28mm | 8mm |
-| canvas | 无限 | 12（帧内模块） | 20 | 50（板边距） | 8pt |
+| Slides | 1280 × 720 | 12 × 73 | 24 | 70 | 8 px |
+| Web | content 1296 at a 1440 viewport, capped at 1440 | 12 | 24 | 5vw, min 24 | 8 px |
+| A4 handbook | 210 × 297 mm | 6 tracks (12 to subdivide) | 6 mm | 18 / 21 / 19 / 15 mm | 21 pt (28 px) |
+| A2 poster | 420 × 594 mm | 12 × 23 | 8 mm | 28 mm | 8 mm |
+| Canvas | infinite | 12 inside a frame | 20 | 50 | 8 pt |
 
-变体复算：A3 海报 297 宽 → 12×15.92 + 11×6 ≈ 257；A4 海报 210 宽 → 6×25 + 5×6 = 180；A5 手册版心 117 → 6×14.5 + 5×6 = 117。全部用同一公式，不另立规则。
+The same formula covers variants: A3 poster 12 × 15.92 + 11 × 6 ≈ 257; A4 poster 6 × 25 + 5 × 6 = 180; A5 handbook 6 × 14.5 + 5 × 6 = 117; A4 handbook 6 × 24.33 + 5 × 6 = 176.
 
-表面文件可以改数字，但必须给出上式与理由。
+## Using twelve columns
 
-## 3. 12 列怎么用
+- Spans 12 / 8 / 6 / 4 / 3. Every unit has one dominant element spanning 6 or 12.
+- Asymmetry carries hierarchy: 8 + 4, 7 + 5, 6 + 4 + 2 all beat 6 + 6. Equal thirds only when the content is truly equal, and then vary height or density.
+- Leave one or two columns free of text on reading units: that empty column is what makes the page breathe.
+- Image edges, title starts, captions, and source lines share column lines. Rules sit on grid lines; images and rules end on the baseline.
 
-- 允许跨度：12 / 8 / 6 / 4 / 3。其他跨度需要理由。
-- **一个主导**：每个单位有一个占 6 或 12 列的主元素；其余是辅助。
-- **非对称**：8 + 4、7 + 5、6 + 4 + 2 都比 6 + 6 有主次。三等分只在内容真的同级时使用，且要改变高度或密度。
-- **呼吸列**：正文至少留 1–2 列不被占用，除非这个单位是满版证据。
-- **对齐**：所有元素吸附列线；图片边缘、标题起点、图注、来源线共用同一条列线。
+## Optical alignment
 
-## 4. 基线
+Round and pointed forms (O, circles, triangles) overshoot by 1–2% to look aligned; quotation marks and periods may hang into the margin; very large titles may sit 1–2 px left of the text edge to compensate for side bearing.
 
-- 屏幕 8px；A4 28px；海报 8mm。
-- 字号尽量落在基线的整数倍上：16 / 24 / 32 / 40 / 48；行高 = 基线的倍数。
-- 图片底边、分隔线、表格线落在基线上；不靠"看起来差不多"。
-- 基线不是装饰：不需要画出来；但缩略图里能看出垂直节奏。
+## Breaks
 
-## 5. 光学对齐
+A deliberate break (bleed, rotation, overprint, crop) happens at most once per unit, its origin still on a grid intersection, and never moves body text off its columns and baseline. Everything else returns to the default, so the break reads as intentional.
 
-数学对齐不等于视觉对齐：
+## Responsive and infinite
 
-- 圆形、三角形、字母 `O` 的视觉边界比数学边界小，需要外扩 1–2%。
-- 标点悬挂：引号、句号可以挂进边距，让文字边缘看起来齐。
-- 大标题的左边距可以比正文小 1–2px，补偿字形侧边空白。
-- 图片与文字并排时，按主体边缘对齐，不按画框对齐。
-
-## 6. 响应式
-
-断点：390 / 768 / 1024 / 1440。
-
-| 断点 | 列 | 槽 | 边距 | 正文 |
-|---|---|---|---|---|
-| < 480 | 4 | 16 | 24 | 16–18 |
-| 480–767 | 6 | 16 | 24 | 16–18 |
-| 768–1023 | 8 | 20 | 32 | 17–19 |
-| 1024–1439 | 12 | 24 | 40 | 18–20 |
-| ≥1440 | 12 | 24 | 5vw | 18–20，max 65ch |
-
-1440 视口 → 内容 1296、列宽 86；≥1600 视口 → 内容封顶 1440、列宽 98。上限是内容，不是视口。
-
-规则：
-- `grid-template-columns: repeat(12, minmax(0, 1fr))`；图片轨道必须 `minmax(0, 1fr)`。
-- 坍缩后网格仍要可指认：4 列也要有明确的列线与槽。
-- 字号用 `clamp()`，但正文最小值不低于 16。
-- 不出现横向滚动；不用 `100vw`（会算进滚动条）；`overflow-x: clip` 放在 `html` 与 `body`。
-- 断点不是设备名，是内容开始难看的地方。
-
-## 7. 无限画布
-
-- 8pt 空间网格；模块按 8 的倍数放置。
-- 帧（frame）是单位；帧内再用 12 列。
-- 缩放级：25 / 50 / 100 / 200%；每级有最小字号（100% 时 14px）。
-- 连接线：正交（横/竖）优先；一条线一个方向；线宽两档（1px 结构 / 2px 主路径）；不画贝塞尔蜘蛛网。
-- 画布节奏：用空白区分组，不靠背景色块。
-
-## 8. 印刷
-
-- A 系列纸的宽高比是 √2；网格按成品尺寸算，不算出血。
-- 3mm 出血；5mm 安全区；跨页图要留装订补偿（creep）。
-- 订口（gutter）比外边距大 3–5mm；文字不跨订口。
-- 页脚、页码、running head 共用一条基线。
-- 表格线 0.5–0.75pt；不要 1px 屏幕线直接印。
-
-## 9. 破格
-
-- 一个单位最多一次；破格元素的原点仍落在网格交点上。
-- 出血、旋转、叠印、裁切都属于破格；破格之外回默认。
-- 破格不能取消正文的列线与基线。
-
-## 10. 失败样本：列宽加 2px，画布多 24px
-
-deck 12 列，列宽 73，槽 24：12×73 + 11×24 + 2×70 = 1280。有人把列宽改成 75，内容变成 1164；加边距 140，总宽 1304，右边正好多出一个槽。
-
-修正：先锁总宽，再解列宽：`(1140 − 11×24) ÷ 12 = 73`。列宽不是选的，是算出来的。
-
-## 11. 检查
-
-- [ ] 五个数已写；内容宽公式成立
-- [ ] 元素吸附列线与基线；图片边缘对齐
-- [ ] 每个单位一个主导；没有九宫格等分
-- [ ] 正文有呼吸列；行宽在区间内
-- [ ] 断点处网格仍可指认；无横向滚动
-- [ ] 印刷有出血、安全区、订口补偿
-- [ ] 破格有记录；其余部分回默认
+Web columns collapse 12 → 8 → 6 → 4 at 1024 / 768 / 480 and remain identifiable; use `repeat(12, minmax(0, 1fr))` and no `100vw`. Breakpoints are where the content starts to look wrong, not device names. On a canvas, frames sit on an 8 pt grid, groups are made by distance, and connectors run orthogonally.

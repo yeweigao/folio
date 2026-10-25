@@ -1,109 +1,30 @@
-# 形态路由 · 先判这个单位在干什么
+# Form
 
-**第一性原理**：依据内容的用途选展现形式，再在方言里"带着镣铐跳舞"。
-顺序是：**内容契约（整体）→ 方言 → 形态（逐单位）→ 版式 → 语法润色**。倒过来，就会得到"好看但不干活"的单位。
+Template design starts from a layout and pours content in. Folio starts from what each unit must make the reader do, and lets that choose the form. A unit is one slide, one poster, one screen or section, one canvas frame, one page or spread.
 
-自检一句话：**把装饰全删掉，只剩文字，读者还能完成那个动作吗？** 能，形态成立；不能，说明在用装饰替代结构。
+The check: strip all decoration and leave only the words. If the reader can still do what the unit is for, the form holds; if not, decoration was doing the work of structure.
 
-## 1. 单位
+## Eight forms
 
-| 表面 | 一个单位是 |
-|---|---|
-| deck | 一页 |
-| poster | 一幅（单张） |
-| web | 一屏或一个 section |
-| canvas | 一帧或一个模块簇 |
-| handbook | 一页或一个跨页 |
-
-形态按单位判，不按整个作品判。一个 deck 里可以每页不同形态；一个 web 页里每个 section 也可以不同。
-
-## 2. 八种形态
-
-| 形态 | 这个单位在干什么 | 出现即选它 | 必须给的 | 禁则 |
+| Form | The unit's job | Signs | It needs | It fails when |
 |---|---|---|---|---|
-| **宣言** Manifesto | 让一句话被记住 | 只有一个主张，且能被复述 | 巨字、满版场、极少元素 | 加第二组证据；加解释段；加装饰 |
-| **展品** Exhibit | 让一个对象被看清 | 有明确主角（物、人、界面、产品） | 主角 ≥40% 内容区；直标 | 主角缩成角标；多主角平分 |
-| **论证** Argument | 让一个判断被接受 | 主张 + 证据 + 含义，三段齐 | 结论式标题；证据可数 | 只摆数字不给判断；证据与主张不同轴 |
-| **推进** Sequence | 让人跟着走一遍 | 项之间有先后依赖（时间 / 步骤 / 因果） | 单轴编号；每步一个动作；末步落结论 | 蛇形分栏；打乱顺序；把有先后的写成并列 |
-| **对照** Comparison | 让差异被看见 | 两个以上对象需要被比 | 同一基准线、同一尺度、直标 | 双轴；不同量纲并排；只靠颜色区分 |
-| **演练** Drill | 让人动手做一遍 | 有题、有作答位、有核对方式 | 作答空间；**独立答案** | 答案与题同屏；题干被装饰挤压 |
-| **并列** Parallel | 让一组同级项被扫读 | 项与项之间没有先后依赖 | 统一基线；跨列面积排主次 | 九宫格等分；蛇形分栏；每项塞满 |
-| **转场** Turn | 让人知道翻章了 | 进入新的章节或段落 | 一句话说清下一段是什么 | 铺正文；四卡预览；重复目录 |
+| Statement | Make one sentence memorable | A single claim that can be repeated | Giant type, a full field, very few elements | A second piece of evidence or an explaining paragraph creeps in |
+| Exhibit | Make one object seen clearly | A clear protagonist: a thing, a person, an interface | The protagonist on ≥ 40% of the content area, labeled directly | The protagonist shrinks to a corner or shares the stage |
+| Argument | Make a judgment accepted | Claim, evidence, implication | A judgment title; evidence that can be counted | Numbers without a judgment, or evidence on a different axis from the claim |
+| Sequence | Lead the reader through | Steps, time, or cause that depend on order | One axis, one action per step, a conclusion at the end | Snake columns, shuffled order, ordered items set as equals |
+| Comparison | Make a difference visible | Two or more things to compare | One baseline, one scale, direct labels | Dual axes, mixed units, color as the only difference |
+| Drill | Make the reader do it | A task, space to answer, a way to check | Room to answer; answers on a separate unit | Answers on the same unit, the task squeezed by decoration |
+| Parallel | Let peers be scanned | Items with no order between them | A shared baseline; unequal spans for priority | Equal 3×3 grids, snake reading, every item stuffed full |
+| Turn | Signal a new chapter | Entering a new section | One sentence about what comes next | Body text, a four-card preview, a repeated table of contents |
 
-**收束**（结尾）不是第九种，是**宣言的终局用法**：只回收、不新增。
+A closing unit is a statement used as an ending: it gathers, it adds nothing new.
 
-## 3. 五问定形态
+## Rules of form
 
-1. 读者看完这个单位，要**做**什么：记住 / 看清 / 相信 / 跟着走 / 比较 / 动手 / 扫读 / 知道翻章？
-2. 内容有**先后依赖**吗？有 → 推进；没有 → 并列。
-3. 有**明确主角**吗？有 → 展品；没有 → 继续。
-4. 有**主张 + 证据 + 含义**吗？有 → 论证；只有主张 → 宣言。
-5. 有**题与作答**吗？有 → 演练；只是翻章 → 转场。
+- One primary form per unit, with at most one subordinate move (a four-line summary in a corner of an argument). Two primary forms mean two units.
+- Content outranks dialect. When they conflict, change the dialect's grammar first (blocks without boxes, emphasis by weight instead of color), then its density, and change dialect only when the reader or viewing distance changes. Never bend the content to keep a style.
+- Choose the dialect before you start; switching midway produces collage.
 
-五问都答不上来，说明这个单位还不该存在。
+## Common misreadings
 
-## 4. 形态 → 版式家族
-
-形态只约束"允许哪一族的版式"，具体用哪一种由方言给语法。
-
-| 形态 | 允许的版式家族 | 方言在其中的作用 |
-|---|---|---|
-| 宣言 | 满版单主张、巨字 + 一处证据 | 场色、字面、尺度极差 |
-| 展品 | 单主角占位（半屏 / 满高 / 首格） | 裁切比例、直标、图文耦合 |
-| 论证 | 结论标题 + 单轴证据 + 决策带 | 标题制度、图表纪律、密度 |
-| 推进 | 单轴编号、时间轴、步骤条 | 编号制度、连接件、每步重量 |
-| 对照 | 双栏 / 双行 / 同基准裸条 | 线宽分级、是否用色块 |
-| 演练 | 卷头 + 分节 + 作答行；答案独立 | 卷头语法、分节标记、行距 |
-| 并列 | 模块网格（跨列不等）、单轴列表 | 去壳方式（实色 / 粗线 / 细线） |
-| 转场 | 满版场 + 一句话 + 元信息 | 场色、巨字、元信息栏 |
-
-**跨表面换算**：deck 的一页、poster 的一幅、web 的一屏、canvas 的一帧、handbook 的一页，用同一张表。区别只在尺寸、看距和信息预算，不在形态。
-
-## 5. 冲突裁决：内容有否决权
-
-**形态与方言打架时，先改语法，再改密度，最后才换方言。** 绝不为守住方言而曲解内容用途。
-
-| 冲突 | 处置 |
-|---|---|
-| 方言禁卡片，但形态需要分块 | 保形态、改语法：去壳分块（实色块 / 粗线 / 细线三档） |
-| 方言禁彩色小字，但形态需要强调 | 保形态、改手段：块面反白、加粗、加大字号 |
-| 方言密度撑不起形态（演练要密） | 保形态、改密度：密度是形态的函数，不是方言的常量 |
-| 内容根本装不进方言（换读者 / 换距离） | 才换方言。给家长讲与给三年级讲，是两种选择 |
-
-镣铐的边界：**开工前可以换一副，开跳之后不许换**。中途换 = 拼贴。
-
-## 6. 三种典型误判
-
-- **演练被套了论证语法** → 题目页带答案带。学生看见答案，卷子作废。
-- **并列被套了对称版式** → 六宫格 / 九宫格。没有主次，扫读变成逐格读。
-- **论证被写成宣言** → 每页一句金句，全册没有一处证据落地。读着爽，什么都没证明。
-- **web 首屏被套了 deck 封面** → 只有一句口号，没有产品、没有动作、没有下一步。
-- **poster 被套了 deck 信息密度** → 3 米外读不到，近看全是小字。
-
-## 7. 一个单位只能有一个主形态
-
-允许"主形态 + 一个从属动作"（如论证页右下角四行小结）。**出现两个主形态就该拆单位**，不是压缩。
-
-## 8. 从内容源判形态
-
-| 内容源信号 | 大概率形态 |
-|---|---|
-| 封面 / 收束 | 宣言 |
-| 章节扉页 | 转场 |
-| 有题有作答 | 演练 |
-| 有主角图或物 | 展品 |
-| 有数字对比 | 论证 或 对照 |
-| 有先后 / 步骤 / 时间 | 推进 |
-| 清单 / 平级项 | 并列 |
-
-映射不是一一对应；逐单位确认。**单位映射表必须先有"形态"列，再有版式列。** 没有形态列 = 没做形态路由。
-
-## 9. 复核清单
-
-- [ ] 每个单位的形态都填了，且与内容用途一致（不是与版式一致）
-- [ ] 演练没有答案；答案独立
-- [ ] 宣言没有第二条证据；论证有结论式标题
-- [ ] 并列项之间没有先后；推进项之间有；两者没有互串
-- [ ] 推进是单轴向，没有蛇形分栏
-- [ ] 一个单位没有两个主形态
-- [ ] 形态与方言冲突处，记录了选哪边、为什么
+A drill set as an argument shows the answers. Parallel content set symmetrically becomes a nine-box grid, and scanning turns into reading every box. An argument written as statements gives a deck of slogans with nothing proved. A web first screen built like a slide cover offers a slogan with no product and no next step. A poster given a deck's density cannot be read from three meters.
