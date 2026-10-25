@@ -1,6 +1,8 @@
 # Swiss — the mother tongue
 
-Swiss structure with heavy and thin typography. The grid, asymmetry, and objectivity of the International Typographic Style, set for Chinese and Latin, with two typographic modes and a free choice of display lineage. It is the base of this theme because it is a grammar, not a look: it governs the relations between things rather than their decoration, so it can host other modernist movements without becoming costume. Every Swiss dialect inherits this file and changes only what it names.
+The grid, asymmetry, and objectivity of the International Typographic Style, set for Chinese and Latin, with heavy and thin typographic modes. This grammar governs relationships, so it can host other modernist movements without becoming costume. Every Swiss dialect inherits this file and changes only what it names.
+
+User scope, supplied content, and brand come first. The surface sets viewing-distance minima and production requirements; scale this theme's numerical examples to it.
 
 ## Lineage
 
@@ -14,22 +16,22 @@ The theme's dialects come from the movement's own history; knowing it lets you b
 
 ## The grammar
 
-- **Grid first.** Six shared tracks carry most layouts, so a 4 + 2 split meets the same gutter lines as a 3 + 3; twelve columns subdivide when needed. Margins, gutter, and baseline are fixed before anything is placed. White space is structure.
+- **Grid first.** Six shared tracks carry most layouts, so a 4 + 2 split meets the same gutter lines as a 3 + 3; twelve columns subdivide when needed. Set margins, gutters, a layout module, and text leading before placing content. White space is structure.
 - **Asymmetry.** Flush left, ragged right; hierarchy by unequal spans. Centering needs a reason.
 - **Weight follows size.** A size step brings its weight with it. Never pick a weight independently of the size band.
 - **Surfaces carry complete palettes.** Paper, soft, dark, and accent fields each reset every foreground role, so nesting dark in paper or paper in dark stays readable.
 - **Rules, not boxes.** A 2 px rule opens (a table, an index, a figure); hairlines separate; a thin ink rule closes. No plates, shadows, rounded corners, or tinted panels behind text.
-- **Text never shrinks to fit.** When content does not fit, edit the words, choose another layout, or add a page.
-- **One decisive move per unit**, and a rhythm across units: close reading, a turn, a burst. A few units speak a variation (see [variations](variations.md)).
+- **Text never shrinks to fit.** Change the layout first; edit words or add pages only within the task's scope.
+- **The subject supplies the move.** Speaking units carry one decisive move; reference units stay quiet and repeat a dependable structure. Use a [variation](variations.md) when the content calls for a turn.
 
 ## Type
 
 Typographic quality here does not come from the typeface. It comes from four habits:
 
 - **Restraint**: at most three faces, each with one role (display, text, labels and numbers). A face without a role goes.
-- **Steps, not slopes**: few levels with wide gaps. At most three levels on a unit; adjacent levels at least about 1.25× apart; display to body around 4–7× (112 over 16). Because weight follows size, each step differs in both size and blackness.
-- **Rhythm**: on a unit, one extreme scale contrast while everything else steps back; across units, close reading, a turn, a burst, with no grammar running more than two units.
-- **Consistency**: a role keeps one size and one weight for the whole deliverable, so the reader learns the pattern and a deliberate break reads as deliberate.
+- **Steps, not slopes**: few levels with wide gaps, usually three per unit; adjacent levels about 1.25× apart. On display units, a 4–7× jump from body to display can carry the composition. Each size step carries its weight.
+- **Rhythm**: change scale or density when the reader's task changes: close reading, a turn, a burst. Repetition supports comparison and lookup.
+- **Consistency**: a role keeps one size and weight within a reading context; responsive sizes follow one declared scale.
 
 The mother tongue fixes how size, weight, and spacing relate, not which typeface. The display face is chosen per deliverable from the content, the dialect, or the brand. Three lineages all belong here:
 
@@ -37,13 +39,13 @@ The mother tongue fixes how size, weight, and spacing relate, not which typeface
 - **Sans, thin at large sizes**: the later evolution, from Kenya Hara's restraint to Apple's hairline headlines. Quiet, precise, expensive.
 - **Serif, high contrast**: Didone and heavy Song or Ming faces for fashion, editorial, and culture. Gravity and drama.
 
-Whatever the face: body in a sans with full CJK coverage, labels and numbers in a neutral sans with good figures, at most three faces in one deliverable.
+Body defaults to a sans with full CJK coverage; labels and numbers use a neutral sans with good figures.
 
 ### Two modes
 
-Weight follows size. A size step brings its weight with it; never pick a weight independently of the band. A deliverable runs in one mode and may switch for a section as a variation.
+Choose one mode for the deliverable; a section may switch as a variation. This A4 scale illustrates the relationships; the surface determines actual sizes and leading.
 
-| Band | Size (px, A4 print) | Heavy mode · emphasis | Thin mode | Leading |
+| Band | Size (CSS px, A4 example) | Heavy mode · emphasis | Thin mode | Leading |
 |---|---|---|---|---|
 | Colossal · giant · hero | 280 · 196 · 112 | 900 | 200 | 1.0 |
 | Display | 64 | 900 | 200 | 1.12 |
@@ -62,7 +64,7 @@ Weight follows size. A size step brings its weight with it; never pick a weight 
 - Use real font files for every weight; never let the renderer synthesize bold.
 - Numbers share the text's ladder and weight; tabular figures only in figure columns.
 - Tracking: −0.04em for type cropped at an edge or at hero size; −0.02em for display and terms; 0 for text; +0.12em only for kickers and running heads.
-- Measure about 34 characters for CJK body (about 65 Latin). A Latin technical term beside a Chinese heading is set at H3 in the accent.
+- Prose measures about 34 CJK characters or 65 Latin where the surface permits. A necessary Latin term beside a Chinese heading uses a declared secondary role.
 
 ## Color
 
@@ -72,7 +74,7 @@ The mother tongue fixes roles and relationships, not hues. The values come from 
 |---|---|---|
 | Paper | The lightest ground: white on screen; in print, the stock itself | reading ground, ≥ 50% of the area |
 | Soft | Paper shifted a few steps toward the accent's temperature, barely tinted | a quieter second field |
-| Ink | Near-black, never pure black; may lean toward the accent's temperature | text, rules, structure |
+| Ink | Near-black on screen, optionally leaning toward the accent's temperature; print black follows the surface | text, rules, structure |
 | Muted | Ink lightened until it just holds 4.5:1 on paper and on soft, tinted toward the paper | secondary text, captions |
 | Line | A grey about 1.3–1.5:1 against paper | hairlines only, never text |
 | Dark | A near-black field; its text white, its muted text at least 7:1, its line clearly visible | full-bleed turns |
@@ -90,7 +92,7 @@ Illustration belongs when it explains (a process, a mechanism, a scientific subj
 
 ## Space and rules
 
-Baseline 28 px on A4 (scale it with the surface). Spacing moves in baseline fractions: ¼, ½, 1, 1½, 2, 3, 4, 6 lines (7 / 14 / 28 / 42 / 56 / 84 / 112 / 168 px). Rules: hairline 1 px, rule 2 px, heavy 8 px.
+Take the layout module from the surface; spacing uses its fractions and multiples: ¼, ½, 1, 1½, 2, 3, 4, 6. Text baselines follow the declared leading. Starting rule weights: hairline 1 px, rule 2 px, heavy 8 px; scale for the medium.
 
 ## Furniture
 

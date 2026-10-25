@@ -13,9 +13,9 @@ Reach for it for fashion, beauty, exhibitions, and brand image, read at 0.5–3 
 ## What makes it fashion
 
 - **Signature move**: one display word and one image touch: type covers, cuts, pierces, or yields to the picture. One focal point.
-- **Motif**: that collision, once per unit, never repeated like a sticker.
-- **Rhythm**: image field, display field, text unit, an accent turn. Images at most half of all units; no composition twice running.
-- **Owner's test**: the display word always meets the image.
+- **Motif**: that collision on image-led units; the crop and subject determine where it lands.
+- **Rhythm**: image field, display field, text unit, accent turn, chosen by the material; catalog comparisons keep a stable composition.
+- **Owner's test**: on image-led units, type and picture form one composition rather than two unrelated blocks.
 
 ## House values
 
@@ -25,10 +25,10 @@ Reach for it for fashion, beauty, exhibitions, and brand image, read at 0.5–3 
 | Ink | The deepest near-black | structure |
 | Accent | One saturated cool hue (canonically cobalt), with tints only by opacity (92 / 72 / 45 / 22%) | ≤ 15% |
 
-- Display Bodoni Moda or Didot (CJK Noto Serif SC Black or a declared modern Song) at 112 / 160 / 196, one word per unit. Grotesque text 14–16 at leading 1.6. Condensed label (Six Caps, Arial Narrow) 12 px, uppercase, +2%, only for place, date, author, number.
+- Display Bodoni Moda or Didot (CJK Noto Serif SC Black or a declared modern Song) at 112 / 160 / 196, one display phrase per unit. Grotesque text 14–16 at leading 1.6. Condensed label (Six Caps, Arial Narrow) 12 px, uppercase, +2%, only for place, date, author, number.
 - On a 1280 canvas: 108 margins, 12 × 74 columns, 16 gutters. Display may bleed but starts on a column line; accent hairlines sit on column lines.
 - Black and white or one duotone. Crops may be extreme yet keep one readable gesture. Credits name model, garment, photographer, source.
-- Numbers, if any, are a year or collection number in the display voice; prices stay small.
+- A year or collection number may take the display voice; prices and specifications keep a consistent, legible text role.
 - Voice in copy: few words, exact.
 
 ## The caricature
@@ -37,4 +37,4 @@ Asked for "luxury fashion", models produce gold gradients, glassmorphism, a cent
 
 ## Latitude
 
-Free: display size, crop, share of accent fields, label tracking, paper temperature. Say so when using color photography, a second display word, a second serif, or a second accent.
+Free: display size, crop, share of accent fields, label tracking, paper temperature. Say so when using color photography, competing display phrases, a second serif, or a second accent.

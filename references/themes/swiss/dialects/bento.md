@@ -12,7 +12,7 @@ Reach for it for product overviews, design-system boards, canvases, feature maps
 
 ## What makes it bento
 
-- **Signature move**: four to seven modules of unequal size; one spans 6 or 12 columns and is the first read; the rest follow importance.
+- **Signature move**: modules of unequal size; one spans 6 or 12 columns and is the first read; the rest follow importance.
 - **Separation**: white space, 1 px lines, or solid fields; one strength per screen. Modules are fields, not floating cards.
 - **Owner's test**: squint, and the dominant module still jumps out before anything else.
 
@@ -25,7 +25,7 @@ Reach for it for product overviews, design-system boards, canvases, feature maps
 
 - Module backgrounds are paper, ink, or accent only; a "light" module is paper with a 1 px line, never grey.
 - One grotesque. Scale 12 / 16 / 20 / 24 / 32 / 48: module titles 20–24, text 14–16, labels 12, the lead number 48.
-- On 1280: 50 margins, 12 × 80 columns, 20 gutters, row unit 160. Spans 3 / 4 / 6 / 12. More than seven modules means a second screen, not smaller modules.
+- On 1280: 50 margins, 12 × 80 columns, 20 gutters, row unit 160. Spans 3 / 4 / 6 / 12. Four to seven modules are a useful starting composition; when overloaded, group by task or change the layout before adding screens.
 - One number or one chart per module, with unit and source. Charts are bars, lines, or dots on a shared baseline, labeled directly.
 - Key numbers that a dashboard must show sit in a typographic ledger (value, baseline, period, change) rather than in tiles.
 - Voice in copy: one short line per module.
@@ -36,4 +36,4 @@ Asked for "bento", models produce the Apple keynote grid: equal rounded cards wi
 
 ## Latitude
 
-Free: module count (4–7), dominant span, row unit, separation strength. Say so when adding an eighth module, rounded corners, more than two images, or card treatment.
+Free: module count, dominant span, row unit, separation strength. Say so when adding rounded corners, card treatment, or competing focal points.

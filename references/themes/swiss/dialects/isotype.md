@@ -21,12 +21,12 @@ Reach for it when numbers must reach a broad or young audience: education, publi
 - Pictograms: solid silhouettes on the 8 px module, frontal or profile, one family for the whole piece; partial quantities shown by cutting a symbol, not shrinking it.
 - Rows read left to right on a shared baseline; a key states what one symbol equals; exact values printed at row ends.
 - Color: ink for all symbols, the accent for the row or category under discussion, at most three mapped colors for categories, always with a legend.
-- Type: the mother tongue's heavy mode; titles state the finding.
+- Type: the mother tongue's heavy mode; argument titles state the finding, reference titles name the comparison.
 - Voice in copy: plain, concrete, child-readable.
 
 ## The caricature
 
-Asked for "infographic", models produce icon-salad: colorful 3D icons of different styles, a big icon scaled up to show a big number, donuts and gauges next to clip art, decorative arrows. Refuse it. Scaling a symbol by area exaggerates the difference; repeat it instead.
+Asked for "infographic", models produce icon-salad: colorful 3D icons of different styles, a big icon scaled up to show a big number, donuts and gauges next to clip art, decorative arrows. Refuse it. Scaling both dimensions by the value exaggerates area; Isotype uses equal-sized repeated symbols.
 
 ## Latitude
 

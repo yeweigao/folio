@@ -4,10 +4,10 @@ Brochures, handbooks, and catalogs are read slowly and returned to. The density 
 
 ## Format and grid
 
-- A4 (default): margins top 18, bottom 21, inner 19, outer 15 mm; text area 176 × 258; six shared tracks with 6 mm gutters (about 24.3 mm each), subdividing to twelve when needed; baseline 28 px (21 pt, about 34 lines); body 10.5 / 18.4 pt.
-- A5: margins 15 / 18 / 18 / 13; text area 117 × 177; 6 × 14.5 mm with 6 mm gutters; baseline 18 pt; body 9.5 / 15.2 pt; never three columns.
-- Other formats: text width = trim − inner − outer; columns no narrower than 8 mm; gutters 55–70% of a column.
-- A spread is one 348 mm canvas: images may cross the gutter, but subjects keep 5 mm clear of it.
+- A4 (default): margins top 18, bottom 21, inner 19, outer 15 mm; text area 176 × 258; six shared tracks with 6 mm gutters (about 24.3 mm each), subdividing to twelve when needed; layout module 21 pt; body 10.5 / 18.4 pt.
+- A5: margins 15 / 18 / 18 / 13; text area 117 × 177; 6 × 14.5 mm with 6 mm gutters; layout module 18 pt; body 9.5 / 15.2 pt; never three text columns.
+- The layout module aligns blocks; text baselines follow the declared leading. Other formats: text width = trim − inner − outer; combine tracks into text columns that support a readable measure.
+- An A4 spread is a 420 × 297 mm trim canvas; its two 176 mm text areas remain separated by the inner margins. Images may cross the binding, but subjects keep clear of the printer's binding allowance.
 
 ## Type (A4)
 
@@ -22,11 +22,11 @@ Brochures, handbooks, and catalogs are read slowly and returned to. The density 
 | Captions | 8.5–9 | 12–13 pt |
 | Footnotes, page numbers, sources | 8–8.5 | 11–12 pt |
 
-At most four heading levels plus body and caption. Measure: Chinese 28–40 characters, Latin 60–75. Flush left, never justified (Chinese opens cracks between characters). Paragraphs take either a 1 em indent or 6 pt space, not both.
+At most four heading levels plus body and caption. Prose measure: Chinese 28–40 characters, Latin 60–75. Swiss defaults to flush left; justified text needs language-aware spacing and line breaking. Paragraphs take either a 1 em indent or 6 pt space, not both.
 
 ## Page types and rhythm
 
-Chapter opener (big number, title, one line, at least 60% empty, may go full accent); text page (one or two columns, running heads, captions with their images); plate (image ≥ 70%, only title, caption, source); data page (open tables, header and units, never split a table across pages without repeating the header). Large images and openers go on the right-hand page, where the eye lands after the turn.
+Chapter opener (title and one line, generous space, may go full accent); text page (one or two columns, running heads, captions with their images); plate (image leads, with title, caption, source); reference page (stable labels, columns, and lookup order; repeat table headers across pages). Use right-hand openers when the binding and reading direction support them; do not add blank pages merely to force the pattern.
 
 ## Where print goes generic
 
@@ -40,10 +40,10 @@ Chapter opener (big number, title, one line, at least 60% empty, may go full acc
 
 ## Print facts that break silently
 
-- Body black 100K; large blacks rich black C60 M40 Y40 K100; total ink ≤ 300%. The accent given as CMYK (and Pantone only if the brand requires).
-- Images 300 dpi at trim size, CMYK with the printer's profile (FOGRA39 or GRACoL); line art 600–1200 dpi or vector.
-- Bleed 3 mm, safe 5 mm. Saddle stitch needs page counts in multiples of four and creep compensation; perfect binding over 64 pages adds 1–2 mm to the inner margin.
-- Export PDF/X-4 with fonts embedded and no RGB.
+- Small black text in 100K. Use the printer's stock-specific profile, total ink limit, and rich-black recipe; specify spot colors only when required.
+- Images normally 300 dpi at final placed size; line art 600–1200 dpi or vector. Follow the printer's color-conversion workflow.
+- Bleed 3 mm and safe 5 mm are starting values. Saddle stitch needs page counts in multiples of four; confirm creep and binding allowances with the printer.
+- Export PDF/X-4 when accepted, with fonts embedded and the agreed output intent. It permits color-managed RGB; convert only as the printer's specification requires.
 
 ## Done means
 

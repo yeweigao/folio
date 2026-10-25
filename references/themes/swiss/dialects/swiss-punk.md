@@ -36,4 +36,4 @@ Asked for "punk design", models produce grunge filters, ransom-note lettering, s
 
 ## Latitude
 
-Free: which gesture, rotation angle, crop, newsprint temperature, accent area. Say so when using two gestures in one unit, the overprint ink, a second image, or rotated body text.
+Free: which gesture, rotation angle, crop, newsprint temperature, accent area. Say so when using two gestures in one unit, the overprint ink, or a second image. Body text remains upright.

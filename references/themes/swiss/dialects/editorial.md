@@ -2,7 +2,7 @@
 
 *A dialect of the Swiss theme: it inherits [the mother tongue](../mother-tongue.md) and changes only what it names.*
 
-The Swiss grid married to the editorial discipline of annual reports, board papers, and serious reporting: every page states a judgment, shows the evidence, and says what follows. A serif display voice gives the argument gravity.
+The Swiss grid married to the editorial discipline of annual reports, board papers, and serious reporting: argument units state a judgment, show the evidence, and say what follows; reference units make lookup easy. A serif display voice gives the argument gravity.
 
 Reach for it for boards, review committees, researchers, and long-form reporting, read at 1–3 m. Not for image-led branding, fashion, children's teaching, or a poster that shouts.
 
@@ -13,9 +13,9 @@ Reach for it for boards, review committees, researchers, and long-form reporting
 ## What makes it editorial
 
 - **Signature move**: action title, one exhibit, a full-width decision band.
-- **Motif**: the decision band, as a full-width ink rule or a solid band, on at least 70% of argument units.
-- **Rhythm**: dense argument, a sparse single exhibit, a dark chapter opener, a decision page. Never more than three argument units in a row.
-- **Owner's test**: reading only the titles in order gives the executive summary.
+- **Motif**: the decision band, as a full-width ink rule or a solid band, gives implications and actions a consistent place.
+- **Rhythm**: a new question or decision can change density or field; related arguments and comparisons keep their structure.
+- **Owner's test**: reading only the argument titles in order gives the executive summary.
 
 ## House values
 
@@ -29,7 +29,7 @@ Reach for it for boards, review committees, researchers, and long-form reporting
 - Serif display (Source Serif 4, Georgia, Noto Serif SC, Bold) only for action titles, chapter openers, and one key figure; grotesque text at 400, leading 1.6–1.75.
 - Scale 13 / 16 / 20 / 24 / 32 / 46 / 64 / 88: action title 32–46 across 8–12 columns, lead 24, text 16–20, caption 13, key figure 64–88.
 - Text runs 6–8 columns (45–70 characters, CJK 25–36). Leave at least two columns free of text on every unit except full-bleed evidence.
-- The decision band is two baseline units tall, its text 16–20 flush left; owner, date, or page number may sit at its right end.
+- The decision band starts at two layout modules tall; size its text for the surface, flush left. Owner, date, or page number may sit at its right end.
 - One documentary photograph per unit at most, black and white or one duotone, traceable to a source.
 - Voice in copy: judgment, evidence, conclusion.
 
@@ -39,4 +39,4 @@ Asked for "board deck", models produce the consulting template: noun-phrase titl
 
 ## Latitude
 
-Free: title span, exhibit height, band position (foot or right edge), density, paper temperature in print. Say so when adding a typeface, a second chart type, a motif other than the band, or color photography.
+Free: title span, exhibit height, band position (foot or right edge), density, paper temperature in print. Say so when adding a typeface, a motif other than the band, or changing photographic medium.

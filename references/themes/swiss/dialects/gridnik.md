@@ -30,4 +30,4 @@ Asked for "retro-futuristic" or "techno", models produce neon wireframes, dot-ma
 
 ## Latitude
 
-Free: cell size, stroke width, which letters are constructed, field color. Say so when mixing constructed and conventional display type, adding curves of a second radius, or dropping the live-text equivalent.
+Free: cell size, stroke width, which letters are constructed, field color. Say so when mixing constructed and conventional display type or adding curves of a second radius. Keep the live-text equivalent.

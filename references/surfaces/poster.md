@@ -12,17 +12,17 @@ A poster is a single unit seen in passing. It works in three seconds from three 
 | A3 | 297 × 420 | 1–3 m | 5–15 mm |
 | A4 | 210 × 297 | 0.5–1 m | 3–5 mm |
 
-Cap height in millimeters ≈ distance in meters × 5. That is a floor, not a target; titles usually take two to four times it. Font size ≈ cap height ÷ 0.7.
+Cap height in millimeters ≈ distance in meters × 5 is a starting estimate; verify at the actual viewing distance. Font size in millimeters ≈ cap height ÷ 0.7, depending on the face; multiply by 72 ÷ 25.4 for points.
 
-Grids: A2 margins 28, 12 × 23 mm, 8 mm gutters (content 364); A3 margins 20, 12 × 15.92, 6 mm gutters; A4 margins 15, 6 × 25, 6 mm gutters. Baseline 8 mm. Bleed 3 mm, safe area 5 mm.
+Grids: A2 margins 28, 12 × 23 mm, 8 mm gutters (content 364); A3 margins 20, 12 × 15.92, 6 mm gutters; A4 margins 15, 6 × 25, 6 mm gutters. Layout module 8 mm; text leading follows the type scale. Bleed 3 mm, safe area 5 mm, subject to the printer's specification.
 
 ## What the three seconds must carry
 
-What it is, and when and where. "What" belongs to a category label or the title; "when, where, who" use text sizes of at least 36 pt on A2, never caption sizes. One claim, one main image or graphic, one action. At most four information blocks, and at least 30% empty space: a poster looks expensive because it dares to leave space, not because it is full.
+For an event: what it is, and when and where. Essential details use text sizes of at least 36 pt on A2, never caption sizes. One main image or typographic composition leads; an action appears only when the brief supplies one. Group supporting facts tightly and place space around the focus, without an empty-area quota.
 
 Sizes on A2 at 3 m: title 120–300 pt, text 36–48 pt, credits 14–18 pt. On A3 at 1–3 m: title 72–160, text 18–24, credits 10–12.
 
-Facts in a supplied title stay exact; its wording may be tightened or rewritten as a design service, with the change shown to the client. Ten to twenty Chinese characters set in two to four lines at 120–180 pt, with a 2–6 character category label (公开课, 展览) of at least 48 pt carrying the three-second read. Beyond twenty characters the title becomes a 36–48 pt text block and a short display phrase becomes the main graphic. Never negative tracking to force one line.
+Facts and required wording in a supplied title stay exact; rewrite only within scope. For an A2 event poster, ten to twenty Chinese characters may span two to four lines at 120–180 pt; add a category label only when it identifies the event. A longer fixed title needs a new composition, not a replacement slogan or compressed tracking.
 
 ## Where posters go generic
 
@@ -36,13 +36,13 @@ Facts in a supplied title stay exact; its wording may be tightened or rewritten 
 
 ## Print facts that break silently
 
-- CMYK; total ink ≤ 300%; small text and hairlines in 100K only; large blacks as rich black 60/40/40/100.
-- Accent colors as spot when they are brand colors; otherwise proof the CMYK approximation.
+- Use the printer's profile, ink limit, and rich-black recipe; small black text and hairlines in 100K.
+- Use spot colors when the brand and print specification require them; otherwise proof the process-color approximation.
 - Images at 300 dpi at trim size (≥ 150 dpi for large formats); pixels = mm ÷ 25.4 × dpi.
 - PDF/X-4, fonts embedded, trim marks outside the bleed; at least one proof before a run.
 
 ## Done means
 
-- From three meters, the three-second test passes: what it is, when, where.
-- The title's cap height meets the distance floor; facts in the copy are unchanged and every wording edit is listed.
+- At the intended distance, the subject and essential details can be recognized quickly; for an event, test what it is, when, and where.
+- Title and essential text were checked at viewing distance; facts and fixed wording are unchanged, substantive copy edits disclosed.
 - Bleed, safe area, color space, and image resolution are correct for the printer; anything unproofed is reported as unverified.

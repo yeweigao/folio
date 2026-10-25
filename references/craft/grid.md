@@ -4,9 +4,9 @@ The grid is a contract: it fixes how things relate before deciding what they loo
 
 ## Five numbers
 
-Columns, gutter, margin, baseline, content width, with content = n × column + (n − 1) × gutter. Solve the column from the format: column = (content − (n − 1) × gutter) ÷ n; the left edge of column k (from 0) is margin + k × (column + gutter).
+Columns, gutter, margin, layout module, content width, with content = n × column + (n − 1) × gutter. Solve the column from the format: column = (content − (n − 1) × gutter) ÷ n; the left edge of column k (from 0) is margin + k × (column + gutter). The module aligns blocks; text baselines follow the declared leading, not necessarily that module.
 
-| Surface | Format | Columns | Gutter | Margin | Baseline |
+| Surface | Format | Columns | Gutter | Margin | Layout module |
 |---|---|---|---|---|---|
 | Slides | 1280 × 720 | 12 × 73 | 24 | 70 | 8 px |
 | Web | content 1296 at a 1440 viewport, capped at 1440 | 12 | 24 | 5vw, min 24 | 8 px |
@@ -18,10 +18,10 @@ The same formula covers variants: A3 poster 12 × 15.92 + 11 × 6 ≈ 257; A4 po
 
 ## Using twelve columns
 
-- Spans 12 / 8 / 6 / 4 / 3. Every unit has one dominant element spanning 6 or 12.
-- Asymmetry carries hierarchy: 8 + 4, 7 + 5, 6 + 4 + 2 all beat 6 + 6. Equal thirds only when the content is truly equal, and then vary height or density.
+- Spans 12 / 8 / 6 / 4 / 3. Speaking units have a dominant element; reference units favor stable scan paths.
+- Asymmetry carries priority: 8 + 4, 7 + 5, 6 + 4 + 2. Equal peers may use equal spans and repeated geometry; do not invent priority to avoid symmetry.
 - Leave one or two columns free of text on reading units: that empty column is what makes the page breathe.
-- Image edges, title starts, captions, and source lines share column lines. Rules sit on grid lines; images and rules end on the baseline.
+- Image edges, title starts, captions, and source lines share column lines. Rules and image edges align to the layout module; text baselines follow leading.
 
 ## Optical alignment
 
@@ -33,4 +33,4 @@ A deliberate break (bleed, rotation, overprint, crop) happens at most once per u
 
 ## Responsive and infinite
 
-Web columns collapse 12 → 8 → 6 → 4 at 1024 / 768 / 480 and remain identifiable; use `repeat(12, minmax(0, 1fr))` and no `100vw`. Breakpoints are where the content starts to look wrong, not device names. On a canvas, frames sit on an 8 pt grid, groups are made by distance, and connectors run orthogonally.
+Web columns may collapse 12 → 8 → 6 → 4 around 1024 / 768 / 480; support reflow down to 320 CSS px. Use `repeat(12, minmax(0, 1fr))` and avoid overflow from `100vw`. Breakpoints are where the content starts to look wrong, not device names. On a canvas, frames sit on an 8 pt grid, groups are made by distance, and connectors run orthogonally.

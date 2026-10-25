@@ -1,10 +1,10 @@
 # Motion
 
-Motion explains a change of state; it does not perform. Scattered fade-ups on every block, floating backgrounds, parallax, and letter-by-letter fly-ins are among the quickest signs of a generated page. One well-orchestrated moment does more than twenty small ones, and often the right amount is none.
+Motion explains a change of state or carries one deliberate expressive moment. Scattered fade-ups, floating backgrounds, parallax, and letter-by-letter fly-ins easily compete with the content. Often the right amount is none.
 
 ## Legitimate jobs
 
-State change (open, close, switch, loaded), feedback (press, validate, drop), continuity (an item expanding into its detail), and focus (the current step). Anything else is decoration and goes.
+State change (open, close, switch, loaded), feedback (press, validate, drop), continuity (an item expanding into its detail), focus (the current step), or an expressive moment the subject earns. Name the job before adding motion.
 
 ## Timing
 
@@ -20,8 +20,8 @@ Distance sets duration: under 24 px, 100–150 ms; up to 200 px, 200–300 ms; b
 
 ## Implementation that stays smooth
 
-Animate only `transform` and `opacity`; name each transitioned property rather than `all`. Content is visible without JavaScript and without the animation. Under `prefers-reduced-motion`, motion becomes instant or a fade of ≤ 100 ms. Below 30 fps, remove the animation.
+Prefer `transform` and `opacity`; name each transitioned property rather than `all`. Content stays available without animation. Under `prefers-reduced-motion`, remove nonessential movement and preserve state changes instantly or with a brief fade. If motion stutters, simplify it.
 
 ## Slides and video
 
-In decks, cuts by default; a build only to control the order of attention, one per slide; charts reveal axes before series. No fly-ins, bounces, cubes, or blinds. Video only from real footage: muted, pausable, captioned, its first frame a usable poster, never the only carrier of information.
+In decks, cuts by default; a build controls the order of attention, with charts establishing axes before series. No decorative fly-ins, bounces, cubes, or blinds. Video is pausable, captioned when it carries speech, and never the only carrier of essential information; generated footage must not pose as documentary evidence.

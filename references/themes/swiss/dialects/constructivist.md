@@ -14,7 +14,7 @@ Reach for it for manifestos, mobilizing posters, launches, and cultural events s
 
 - **Signature move**: one diagonal crosses the format and carries the eye toward the action or the date; condensed giant type runs along it or collides with it.
 - **Motif**: that diagonal, at one angle for the whole piece (18° or 45°), starting from a grid intersection. It may be a solid band, a 3 px rule, or a field cut on the bias.
-- **Rhythm**: red manifesto field, paper evidence, black turn. The same field never runs more than two units.
+- **Rhythm**: red for a manifesto, paper for evidence, black for a turn; change fields when the content changes register.
 - **Owner's test**: in greyscale, the diagonal and the scale of the type still shout.
 
 ## House values
@@ -28,7 +28,7 @@ Reach for it for manifestos, mobilizing posters, launches, and cultural events s
 - Display: condensed grotesque in capitals (Druk Condensed, Oswald, Archivo Narrow; CJK Noto Sans SC Bold with tight tracking) at 96–200. Text: grotesque 16–24, never tilted, never capitals.
 - Display may bleed but keeps one whole readable word; type on the diagonal tilts no more than 18°.
 - Images: high-contrast black and white, halftone, or pure geometry; one per unit at most, never heroic low-angle figures.
-- One number per unit, in the display voice, with unit and source. Numbering 01 / 02 / 03 only where it is the reading order, aligned with the diagonal.
+- One number may lead in the display voice, with unit and source; supporting dates, prices, and quantities stay readable. Numbering 01 / 02 / 03 only where it is the reading order, aligned with the diagonal.
 - Voice in copy: verb-first lines you could shout.
 
 ## The caricature

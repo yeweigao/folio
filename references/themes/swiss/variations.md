@@ -1,14 +1,13 @@
 # Variations
 
-A deliverable that speaks only the mother tongue, page after page, becomes a template however good each page is. A few units must break the default on purpose, so the reader feels the rule by seeing it broken and no two deliverables look alike.
+A variation makes a change in the content felt. Use it for a turn, an emphasis, or a mood the subject asks for; continuity is right when the reader's task stays the same.
 
-## Dosage
+## Placement
 
-- Roughly one unit in five to eight carries a variation; a single-unit poster may carry one.
-- Place them at structural moments: the cover, chapter openers, the climax of the argument, the close. Never on two adjacent units.
+- Place variations at structural moments: the cover, a chapter opening, the climax of an argument, the close. There is no quota.
 - One variation per unit; everything else on that unit returns to the mother tongue.
 - A variation may come from a guest dialect: one signature move borrowed for one unit (a constructivist diagonal on the manifesto page of an editorial deck, a documentary photo essay inside a handbook), never the guest's whole system.
-- The variation must carry something: a turn, an emphasis, a mood the content asks for. A break that rescues a weak composition is not a variation.
+- Fix a weak composition before adding a variation.
 - Readable text stays readable: a variation never rotates body text, overprints it, or drops it below the contrast floor.
 
 ## Vocabulary
@@ -24,11 +23,11 @@ A deliverable that speaks only the mother tongue, page after page, becomes a tem
 | Overprint | Two inks multiply where they overlap | Culture, music, one poster | Never over text |
 | Rotation | One display element at ±6° or 90° | Posters, swiss-punk moments | Origin on a grid intersection |
 | Stair | Lines step one track right, line by line | Titles with a sequence, manifestos | Every line keeps its remaining width |
-| Programme field | A bounded generative field in ink, accent, and signal, a five-cell cycle | Openers, back covers, dividers | Empty decorative cells only; never encodes data |
+| Programme field | A bounded generative field in ink, accent, and signal, with a declared cycle | Openers, back covers, dividers | Decorative cells carry no data |
 | Visible grid | Columns or baselines drawn in the accent at 8–32% | A page about method, structure, or planning | Content stays above it in normal flow |
 | Vertical CJK | Chinese set top to bottom, right to left | Openers, quotations, culture | Only short texts |
 | Monumental figure | One number at 196–280 becomes the image | Key results, anniversaries | Unit and source beside it |
-| Accent field | The whole unit on the accent surface: accent becomes the ground, paper becomes the type | Chapter openers, statements, a few turns per deliverable; the whole ground of a single poster | Complete foreground roles; no other hue added |
+| Accent field | The whole unit on the accent surface: accent becomes the ground, paper becomes the type | Chapter openers, statements, the whole ground of a single poster | Complete foreground roles; no other hue added |
 
 ## Delivery note
 

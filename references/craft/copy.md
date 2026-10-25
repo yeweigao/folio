@@ -4,15 +4,15 @@ Copy is design material. The title decides the shape of the layout; the sentence
 
 ## Write the words first
 
-Draft each unit's title, lead, evidence, captions, sources, and action as plain text before laying anything out. Order: claim, evidence, implication, action. A claim with no evidence becomes a question or goes.
+Draft the words the unit needs before laying anything out. For an argument: claim, evidence, implication, action; a claim with no evidence becomes a question or goes. Covers identify; reference units label and order; neither needs an invented claim.
 
 ## Editing the client's words
 
-Editing supplied copy is part of the service: a vague title can become a sharp claim, a paragraph a line, a line a slogan. Facts stay exact: names, dates, numbers, places, quotations, and legal or required text. Edit to improve the message, never only to rescue a layout. List each change so the client can approve it.
+When copy edits are allowed, a vague title can become a sharp claim, a paragraph a line, a line a slogan. Facts stay exact: names, dates, numbers, places, quotations, and legal or required text. If the user requires verbatim copy, preserve all wording, including titles. Edit to improve the message, never only to rescue a layout; disclose substantive changes.
 
 ## Action titles
 
-A title is a judgment, not a noun phrase.
+An argument title states a judgment. Covers, tables, reference units, and navigation use descriptive titles; supplied titles stay unchanged when copy is fixed.
 
 | Weak | Strong |
 |---|---|
@@ -20,11 +20,11 @@ A title is a judgment, not a noun phrase.
 | Product architecture | Three layers let a new school go live in one day |
 | Project update | Three milestones are done; testing still lacks one person |
 
-One judgment per title; 12–24 Chinese characters or 40–70 Latin characters; two lines at most. The titles, read in order, form the summary. A question is a title only when the unit really asks one.
+For argument titles, aim for one judgment in 12–24 Chinese characters or 40–70 Latin characters, over at most two lines. Read in order, they form the summary. A question is a title only when the unit really asks one.
 
 ## The tells of machine-written copy
 
-Cut these on sight:
+When editing is allowed, cut these:
 
 - Filler verbs and adjectives: elevate, seamless, unleash, empower, revolutionize, cutting-edge, next-generation, game-changing, unlock; 赋能, 一站式, 打造, 引领, 闭环, 抓手, 颠覆.
 - Shapes: "It's not just X, it's Y"; three adjectives in a row; "Imagine a world where…"; rhetorical questions to fake curiosity; "In today's fast-paced world"; "We believe".
@@ -35,7 +35,7 @@ Replace each with the action, the object, the quantity, the date. If nothing con
 
 ## Sentences
 
-Active voice; concrete nouns and verbs; one idea per sentence; break anything past 35 Chinese characters or 25 English words. No stacked nouns ("user experience design system platform"). Reading budget: 5–7 Chinese characters or 3–4 English words per second, so a 15-second slide holds 75–105 characters or 45–60 words. Over budget, split the unit; never shrink the type.
+Active voice; concrete nouns and verbs; one idea per sentence. When editing, review sentences longer than 35 Chinese characters or 25 English words for a useful break. No stacked nouns ("user experience design system platform"). Budget for the reader's pace and the material's difficulty; resolve overload through grouping, wording, or pagination within scope, never by shrinking type.
 
 ## Captions, sources, bilingual
 

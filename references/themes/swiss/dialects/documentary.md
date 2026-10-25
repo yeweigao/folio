@@ -14,7 +14,7 @@ Reach for it for research, nonprofits, field reports, deep reporting, and archiv
 
 - **Signature move**: one real photograph leads; its caption answers who, what, where, when, and source.
 - **Motif**: the caption block and source line, one format throughout. A photograph without a caption is decoration.
-- **Rhythm**: lead photograph, text or data, a multi-image evidence unit, a quotation on a dark field. Lead photographs are at most a third of all units.
+- **Rhythm**: let the evidence choose between a lead photograph, text or data, a multi-image unit, and a sourced quotation. Keep related evidence in a consistent structure.
 - **Owner's test**: every image can be traced back to where and when it was taken.
 
 ## House values
@@ -28,7 +28,7 @@ Reach for it for research, nonprofits, field reports, deep reporting, and archiv
 - Serif display (Georgia, Source Serif 4, Noto Serif SC): titles 32–64, quotations 24–32. Grotesque text 16–20 at leading 1.65. Captions and sources 12–13, never smaller.
 - The lead photograph spans 8–12 columns and at least 40% of the content height; its caption starts on the photograph's first column. Supporting images take unequal spans (4 / 3 / 3), never an equal wall. Maps carry scale, north, and source.
 - One photographic medium throughout. Crops keep the relation between person and place. An unknown caption field says "unknown".
-- White text on a photograph gets a single neutral black scrim at ≤ 55%, never a fade.
+- White text on a photograph uses a quiet area and, when needed, a neutral black scrim; measure contrast on the actual composite.
 - Quotations carry speaker, role, date, and source, verbatim.
 - Voice in copy: names, places, dates, sources.
 
@@ -38,4 +38,4 @@ Asked for "documentary", models produce National Geographic pastiche: a yellow b
 
 ## Latitude
 
-Free: lead image proportion, number of supporting images, caption width, paper temperature in print, map position. Say so when introducing color photography, a second caption format, a duotone, or an image as background.
+Free: lead image proportion, number of supporting images, caption width, paper temperature in print, map position. Say so when switching photographic medium, adding a second caption format, or using an image as background.

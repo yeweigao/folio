@@ -36,4 +36,4 @@ Asked for "brutalist", models produce glitch art and terminal cosplay: green-on-
 
 ## Latitude
 
-Free: index size, how much grid shows, table density, paper temperature. Say so when adding a second mono, gridlines as texture, a full-bleed photograph, or a second chart type.
+Free: index size, how much grid shows, table density, paper temperature. Say so when adding a second mono, gridlines as texture, or a full-bleed photograph.
