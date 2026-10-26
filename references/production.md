@@ -41,4 +41,4 @@ Establish format, physical or viewport size, viewing distance or zoom, reading t
 
 - **One deliverable does not change a shared system.** Record the template version and role mappings; keep adjustments local.
 - **A family upgrade is versioned, not silent.** New version, change note, representative outputs rechecked, previous baseline recoverable; edit sources and rebuild, checking a dense and a sparse use.
-- **Licenses travel with assets.** This skill's MIT license covers neither fonts, photographs, nor third-party examples; see [fonts](craft/fonts.md) and [cases](examples/index.md).
+- **Licenses travel with assets.** This skill's MIT license covers neither fonts nor photographs; see [fonts](craft/fonts.md).

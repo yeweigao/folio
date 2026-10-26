@@ -101,7 +101,6 @@ references/
   methods.md          forms and the methods matrix
   craft/              typography · fonts · color · grid · imagery · data · copy · motion
   anti-patterns.md    why defaults fail, and on what basis
-  examples/           three studied cases
 ```
 
 Every file serves one decision in the eight-step Practice of `SKILL.md`: brief, reader, material, move, system, sequence, make, inspect. A change goes to the file of the decision it changes; a new file only for a new decision; no file depends on a later step.
@@ -114,4 +113,4 @@ Folio 是给 AI agent 用的设计 skill：PPT、海报、网页、画布、手�
 
 ## License
 
-MIT. Example previews in `references/examples` are Apache 2.0. No fonts are bundled; each keeps its own license.
+MIT. No fonts are bundled; each keeps its own license.

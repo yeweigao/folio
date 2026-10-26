@@ -48,7 +48,7 @@ The International Typographic Style: Müller-Brockmann's *Grid Systems*, Ruder's
 
 - **One module, few axes.** Distances group, separate, or focus; leading keeps its own rhythm.
 - **Furniture earns its place by function, not by look.** *Kopfzeile* and *Fusszeile* locate, *Verzeichnis* serves lookup, *Bildlegende* ties evidence to source, *Kennzahl* makes a consequential quantity visible, *Zeitachse* needs a real sequence, *Bemassung* a real measure.
-- **A reading relationship comes before a layout.** Comparison, argument with aside, paired annotation, collection, continuous scene; see [grid](../../craft/grid.md) and the [cases](../../examples/index.md).
+- **A reading relationship comes before a layout.** Comparison, argument with aside, paired annotation, collection, continuous scene; see [grid](../../craft/grid.md).
 
 ## Methods in Swiss
 
