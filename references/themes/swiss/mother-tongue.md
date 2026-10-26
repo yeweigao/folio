@@ -1,14 +1,14 @@
 # Swiss — the mother tongue
 
-The International Typographic Style: Müller-Brockmann's *Grid Systems*, Ruder's *Typographie*, Hofmann's Basel, *Neue Grafik*; grid, asymmetry, and objectivity, set for Chinese and Latin. It governs relationships, so it hosts other modernisms without becoming costume. Every dialect inherits this file and changes only what it names. Delivery follows the [production charter](../../production.md); numbers live in the craft files.
+The International Typographic Style: Müller-Brockmann's *Grid Systems*, Ruder's *Typographie*, Hofmann's Basel, *Neue Grafik*; grid, asymmetry, and objectivity, set for Chinese and Latin. It governs relationships, so it hosts other movements without becoming costume. Every dialect inherits this file and replaces only what it names, across the whole piece. Delivery follows the [production charter](../../production.md); numbers live in the craft files.
 
 ## Lineage
 
-- **Roots, 1920s:** Bauhaus and De Stijl; Lissitzky and Rodchenko; Tschichold's *Die neue Typographie* (bauhaus, constructivist). Neurath and Arntz's Isotype (isotype).
-- **Zurich and Basel, 1950s–60s:** Müller-Brockmann, Lohse, Vivarelli, Neuburg; Ruder and Hofmann; Akzidenz, Univers, Helvetica. The mother tongue. Gerstner's *Designing Programmes* and Lohse's concrete art (gerstner).
-- **Ulm and after:** Max Bill and Otl Aicher; Lufthansa; Munich 1972 (aicher).
-- **Export:** Vignelli and Unimark (editorial); Crouwel and Total Design (gridnik); Hiromu Hara, Kamekura, Tanaka, Kenya Hara (ma 間); Brodovitch's *Harper's Bazaar* (brodovitch); the photo-essay and *Sachfotografie* (documentary).
-- **Rebellion and after:** Weingart, Greiman, Emigre (swiss-punk); honest structure today (brutalist); Vignelli's Unigrid carried into product boards (unigrid).
+- **Before it, 1917–1930s:** De Stijl (de-stijl), the Bauhaus (bauhaus), Russian Constructivism (constructivist), Tschichold's *Die neue Typographie*, Vienna's Isotype (isotype).
+- **Zurich and Basel, 1950s–60s:** Müller-Brockmann, Lohse, Vivarelli, Neuburg; Ruder and Hofmann; Gerstner's *Designing Programmes*; Akzidenz, Univers, Helvetica. The mother tongue.
+- **Beside it:** Brodovitch's *Harper's Bazaar* (brodovitch), the Polish Poster School (polish-poster), the HfG Ulm (ulm), Crouwel's Total Design (gridnik), Vignelli and Unimark.
+- **Against it:** Weingart's Swiss Punk (swiss-punk), Memphis in Milan (memphis).
+- **After it:** Kenya Hara's emptiness (ma 間), brutalist web design (brutalist).
 
 ## Grammar
 

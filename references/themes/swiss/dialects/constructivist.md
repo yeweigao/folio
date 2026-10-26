@@ -1,32 +1,12 @@
 # constructivist — the diagonal
 
-*A dialect of the Swiss theme: it inherits [the mother tongue](../mother-tongue.md) and changes only what it names.*
+Russian Constructivism, Moscow, 1919–1930s: Alexander Rodchenko, El Lissitzky, Gustav Klutsis, Varvara Stepanova, the Stenberg brothers; *Beat the Whites with the Red Wedge* (1919), Rodchenko's Lengiz "Books" poster (1924), *Kino-Fot*. It inherits the [mother tongue](../mother-tongue.md) and replaces only these rules, across the whole piece:
 
-Rodchenko, Lissitzky, the *Kino-Fot* covers: one diagonal, giant condensed type, red against black, typography as a call to act. For manifestos, launches, and events at 3–10 m, where one claim and one fact must land; not for dense argument, tables, long text, or gentleness.
+- **One diagonal drives, not the orthogonal grid.** One axis crosses the format at one angle for the whole piece; dates, places, and prices stay upright.
+- **Type shouts, not reads.** Condensed grotesque capitals at giant size ride or strike the diagonal; text stays upright and lowercase.
+- **Photomontage agitates, not documents.** Cut black-and-white photographs against geometry, declared as montage.
+- **Red and black call to act, not a quiet accent.** Red takes the diagonal, one word, or one fact; never small text.
 
-## What makes it constructivist
+**Test:** In greyscale at ten meters, one claim and one fact still land in a second.
 
-- **One diagonal, not several.** It crosses the format from a grid intersection toward the action or the date, at one angle for the whole piece; band, rule, or bias-cut field.
-- **Type collides, the facts survive.** Condensed giant capitals ride or strike the diagonal; date, place, and price stay upright and readable.
-- **Owner's test:** in greyscale, the diagonal and the scale still shout.
-
-## House values
-
-| Role | Relationship | Area |
-|---|---|---|
-| Paper | Warm stone stock or white | 40–60% |
-| Ink | As the mother tongue | structure |
-| Accent | A strong warm hue, classically red: the diagonal, one giant word, one fact | 10–25% |
-
-- Display: condensed grotesque capitals (Druk Condensed, Oswald, Archivo Narrow; Noto Sans SC Bold) tilted at most 18° and keeping one whole readable word. Text: grotesque, never tilted, never capitals.
-- Images: high-contrast black and white, halftone, or pure geometry, one per unit at most.
-- Field follows register: red for the manifesto, paper for evidence, black for a turn.
-- Voice: verb-first lines you could shout.
-
-## Caricature
-
-Soviet kitsch: hammer and sickle, red stars, fake Cyrillic, heroic figures, aged paper; a second diagonal, red small text, giant type over the date. Refuse it.
-
-## Latitude
-
-Free: angle (one per piece), red field span, display size, paper temperature. Say so for a second angle, a second image, color photography, or a curve.
+**Caricature:** Soviet kitsch: hammer and sickle, red stars, fake Cyrillic, aged paper; everything tilted.

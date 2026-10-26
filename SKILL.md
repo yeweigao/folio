@@ -31,39 +31,39 @@ Each decision constrains the next; when a later one fails, go back, not around. 
 1. **Brief.** Facts, wording, format, and brand bind; refinement keeps the existing system, redesign may replace it. [Production charter](references/production.md).
 2. **Reader.** Who reads, where, from how far, for how long, to do what. The surface holds its numbers: [slides](references/surfaces/slides.md), [poster](references/surfaces/poster.md), [web](references/surfaces/web.md), [canvas](references/surfaces/canvas.md), [handbook](references/surfaces/handbook.md).
 3. **Material.** The claim and its proof, before any layout: the words, data, and images on hand. [Copy](references/craft/copy.md).
-4. **Move.** The decisive move, in a sentence. Then the dialect by what the material does and who reads it, never by the surface: the one whose signature move this material can feed, or the mother tongue alone. A dialect or style the brief names binds: take the dialect whose lineage holds it, and re-form the material until it can feed it.
+4. **Move.** The decisive move, in a sentence. Then the dialect, chosen by what the material does and who reads it, never by the surface; or none, and the mother tongue alone. A style or designer the brief names binds wherever its lineage sits, in a dialect, method, variation, or craft file; a named dialect governs the whole piece, and the material is re-formed until it can carry it.
 5. **System.** Grid, type ramp, faces, and color roles, declared once for the deliverable: the surface's numbers through the [mother tongue](references/themes/swiss/mother-tongue.md) and the dialect. [Grid](references/craft/grid.md), [typography](references/craft/typography.md), [fonts](references/craft/fonts.md), [color](references/craft/color.md).
 6. **Sequence.** Each unit's job and its [form](references/methods.md); a [variation](references/themes/swiss/variations.md) only where the content turns. [Data](references/craft/data.md), [imagery](references/craft/imagery.md), and [motion](references/craft/motion.md) when the content has them.
 7. **Make.** The hardest unit first, with real content.
-8. **Inspect.** The final export at viewing size, against the floors, the dialect's owner's test, and the [anti-patterns](references/anti-patterns.md).
+8. **Inspect.** The final export at viewing size, against the floors, the dialect's test, and the [anti-patterns](references/anti-patterns.md).
 
 Critique runs 1–4 and 8 on the supplied work.
 
 ## Theme
 
-A theme is a constraint system: the mother tongue holds the piece together, at most one primary dialect changes selected rules, and a variation breaks one rule where the content calls for it, sometimes with a single move borrowed from a guest dialect.
+A theme is a constraint system. The mother tongue is the default grammar. A dialect is a named movement, its people, place, and period, that replaces the rules it names, with the craft and surface defaults behind them, across the whole piece; what it does not name still holds, and the floors never yield. A move that could sit inside any dialect is a [method](references/methods.md), or, where it breaks the grammar once, a [variation](references/themes/swiss/variations.md).
 
 Default theme: the International Typographic Style. Müller-Brockmann's *Grid Systems*, Ruder's *Typographie*, *Neue Grafik*, the Basel school of Hofmann: modular grid, asymmetric flush-left composition, scale contrast as hierarchy, Sachfotografie, paper, ink, and one accent. Its caricature is grey minimal skin at one volume; its habit is white, black, one red, hairlines.
 
-| Dialect | The material | Signature move |
+| Dialect | The material | Departs from Swiss |
 |---|---|---|
-| [editorial](references/themes/swiss/dialects/editorial.md) | Argues to a decision: a judgment and its evidence | Action title, one exhibit, a full-width decision band |
-| [aicher](references/themes/swiss/dialects/aicher.md) | Instructs: steps, rules, schedules for strangers or mixed-language readers | One grotesque, mapped function colors, one pictogram set |
-| [documentary](references/themes/swiss/dialects/documentary.md) | Testifies: real photographs and sourced facts | One real photograph leads; captions say who, where, when, source |
-| [brodovitch](references/themes/swiss/dialects/brodovitch.md) | Seduces: the image is the subject, as in fashion, beauty, exhibitions | Bodoni-scale type colliding with a cropped image |
-| [constructivist](references/themes/swiss/dialects/constructivist.md) | Mobilizes: one claim and one fact that call to act | One diagonal, condensed giant type, red and black |
-| [bauhaus](references/themes/swiss/dialects/bauhaus.md) | Explains structure: how parts, geometry, or proportion work | One primitive shape repeated at changing scale; one primary |
-| [brutalist](references/themes/swiss/dialects/brutalist.md) | Specifies: a technical system whose structure is the content | Grid and containers drawn in plain view; system type |
-| [unigrid](references/themes/swiss/dialects/unigrid.md) | Surveys: many parallel parts of unequal weight, no single argument | Unequal modules, one dominant |
-| [swiss-punk](references/themes/swiss/dialects/swiss-punk.md) | Provokes: culture and music that should feel rebellious, still readable | One rotation, overprint, or crop; body text on the grid |
-| [gerstner](references/themes/swiss/dialects/gerstner.md) | Varies: a series or identity whose units one rule can generate | One declared rule generates every unit |
-| [isotype](references/themes/swiss/dialects/isotype.md) | Counts: quantities for readers who do not read charts | Quantities as rows of repeated, equal pictograms |
-| [ma 間](references/themes/swiss/dialects/ma.md) | Invites: one object, craft, or ceremony, few words; East Asian identity | One thing in measured emptiness; small, quiet type |
-| [gridnik](references/themes/swiss/dialects/gridnik.md) | Constructs: a technical or architectural identity whose name can be built | Display letters built from the page grid |
+| *the mother tongue alone* | Argues, reports, testifies, surveys, or lists | — |
+| [De Stijl](references/themes/swiss/dialects/de-stijl.md) | Relates: parts whose proportions and balance are the subject | Black bars and primary planes in equilibrium |
+| [Bauhaus](references/themes/swiss/dialects/bauhaus.md) | Explains structure: how parts, geometry, or proportion work | One primitive at changing scale, one primary, bars |
+| [Constructivism](references/themes/swiss/dialects/constructivist.md) | Mobilizes: one claim and one fact that call to act | One diagonal, giant condensed type, photomontage, red and black |
+| [Isotype](references/themes/swiss/dialects/isotype.md) | Counts: quantities for readers who do not read charts | Rows of equal pictograms, no axes |
+| [Brodovitch](references/themes/swiss/dialects/brodovitch.md) | Seduces: the image is the subject, as in fashion, beauty, exhibitions | Didot-scale type colliding with a daring crop |
+| [Polish Poster School](references/themes/swiss/dialects/polish-poster.md) | Interprets: a cultural subject that wants a point of view | One authored, hand-made metaphor |
+| [Ulm](references/themes/swiss/dialects/ulm.md) | Coordinates: instructions, wayfinding, a system of related messages | Rules for every case; color and pictograms as codes |
+| [Crouwel, gridnik](references/themes/swiss/dialects/gridnik.md) | Constructs: a technical or architectural identity whose name can be built | Display letters built from the page grid |
+| [Swiss Punk](references/themes/swiss/dialects/swiss-punk.md) | Provokes: culture and music that should feel rebellious, still readable | The grid tested by rotation, layering, and stepped type |
+| [Memphis](references/themes/swiss/dialects/memphis.md) | Delights: products, events, youth culture that want character | Clashing colors and pattern as material |
+| [Kenya Hara, ma 間](references/themes/swiss/dialects/ma.md) | Invites: one object, craft, or ceremony, few words | Emptiness as the vessel; small, quiet type |
+| [Brutalism](references/themes/swiss/dialects/brutalist.md) | Specifies: a technical system whose structure is the content | System defaults and visible containers |
 
 ## Defaults that pose as structure
 
-Models reach for these by habit. Each is legitimate when the content, brand, or user asks for it; when a client insists, make it as clean as the grid allows. Otherwise use the alternative. The [anti-patterns](references/anti-patterns.md) explain why.
+Models reach for these by habit. Each is legitimate when the content, brand, dialect, or user asks for it; when a client insists, make it as clean as the grid allows. Otherwise use the alternative. The [anti-patterns](references/anti-patterns.md) explain why.
 
 - Centered hero, three equal cards, gradient button → a flush-left claim, one supporting line, one action
 - Floating rounded cards, shadows, glow, glass → grouping by space, rules, or a solid field

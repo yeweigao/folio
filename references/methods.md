@@ -9,7 +9,7 @@ Choose the form first: what the unit must make the reader do. Then choose the me
 | Cover | Identify the work | Find the lead; feel the edge | Title, maker, date; one image or typographic idea | A slogan replaces the title |
 | Statement | Make one sentence memorable | Find the lead | One claim, almost nothing else | Evidence or explanation creeps in |
 | Exhibit | Make one object seen | Find the lead; feel the edge | The object on ≥ 40% of the area, labeled directly | It shrinks to a corner or shares the stage |
-| Argument | Make a judgment accepted | Find the lead; compare | A judgment title, countable evidence, the implication | Numbers without a judgment; evidence off the claim's axis |
+| Argument | Make a judgment accepted | Find the lead; compare | A judgment title, countable evidence, the implication in one place | Numbers without a judgment; evidence off the claim's axis |
 | Sequence | Lead through steps, time, or cause | Follow the order | One action per step, then the conclusion | Snake columns; shuffled or flattened order |
 | Comparison | Make a difference visible | Compare | Shared scales, direct labels | Misaligned scales; color as the only difference |
 | Exercise | Make the reader do it | Follow the order; see the groups | The task and room to answer; answers on another unit | Answers on the same unit |
@@ -30,7 +30,7 @@ A method is a named way to make the reader do one thing. Its parts are Gestalt's
 | Find the lead | Scale contrast: one word or figure at poster size; an oversized glyph; a calligram | A tight crop into the subject; one dominant image | Preattentive highlight: the titled mark in the accent, the rest grey | Active white space around the focus | nothing leads | A unit has a lead |
 | See the groups | Hanging indent; typographic color, blocks of distinct density | An image grid on shared edges | Decimal-aligned figures in a ledger | Proximity; common region, one solid field; an exposed grid | the groups blur | Space is placed; measure is shared |
 | Follow the order | Outdented numbers in the margin | A common horizon line across images | A timeline on one axis | A leading line: one rule joining the steps | the order is lost | The eye's path is designed |
-| Compare | Parallel columns, row by row | A Becher typology: same angle, same scale, in a grid | Shared baseline; small multiples; bullet graph | Equal spans on shared tracks | the difference cannot be measured | Information is encoded |
+| Compare | Parallel columns, row by row | A Becher typology: same angle, same scale, in a grid | Shared baseline; small multiples; bullet graph; Isotype rows | Equal spans on shared tracks | the difference cannot be measured | Information is encoded |
 | Tell figure from ground | Value contrast: ink against muted | A cut-out with type behind it, as in a masthead overlap; color blocking across the photo's edge | A reference band behind the series | A reversed-out field | priority flattens | Hierarchy is steps; color is a role |
 | Know where they are | Running heads | Figure numbers | A unit line and as-of date | A thumb index of bleed tabs; section numbers | the reader is lost | The eye's path is designed |
 | Feel the change | A pull quote between dense units | A full-page plate: one quiet image | One figure alone on the unit | A shift of field or density from the unit before | the sequence drones | A deliverable has rhythm |
@@ -41,7 +41,7 @@ A method is a named way to make the reader do one thing. Its parts are Gestalt's
 - **A move the tools cannot make well is swapped within its row, not faked.**
 - **Group by space, rules, or one field, never by a box.** A box is the default this table replaces.
 - **An empty need is a missing method, not a license for a default.**
-- **The theme draws each cell.** The [mother tongue](themes/swiss/mother-tongue.md) says how in Swiss.
+- **The active grammar draws each cell.** The [mother tongue](themes/swiss/mother-tongue.md) says how in Swiss; a dialect redraws what it names.
 
 ## Repetition
 

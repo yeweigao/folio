@@ -41,3 +41,4 @@ A deck is presented at a distance or read alone; choose one mode per deck. Argum
 
 - Every slide viewed at full size in the actual render: title breaks, CJK glyphs, real weights.
 - Text live; charts native or vector; nothing below 16 px when projected.
+- Argument titles read in order are the executive summary.
