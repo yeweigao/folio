@@ -12,3 +12,9 @@ node_modules/
 # 工具缓存与日志
 .cache/
 .slidep/
+
+# 调试与测评产物：skill 运行用不上
+.folio_dialect_debug/
+docs/
+exports/
+.tmpcheck/

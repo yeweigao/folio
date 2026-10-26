@@ -1,36 +1,20 @@
 # Grid
 
-The grid is a contract: it fixes how things relate before deciding what they look like. Without one, an AI layout falls back to equal thirds and centered stacks.
+The grid fixes how things relate before deciding what they look like. Without one, AI layouts fall back to equal thirds and centered stacks.
 
-## Five numbers
+- **The grid is solved from the format, not picked from a preset.** Content = n × column + (n − 1) × gutter; column k starts at margin + k × (column + gutter). Each surface file holds its numbers.
+- **Tracks are construction lines, not columns to fill.** Six tracks start most work: 3 + 3 makes peers, 4 + 2 priority, a full span interrupts. Subdivide to twelve only for an alignment the content needs; an unused track is not a vacancy.
+- **Asymmetry carries priority, not novelty.** Unequal spans for a lead; equal spans for real peers. Never invent priority to avoid symmetry.
+- **Axes are few and visible, not many and accidental.** Two or three vertical axes, repeated; image edges, title starts, captions, and sources share them.
+- **Space comes from one module, not from the eye.** Half within a group, one between peers, two between sections. Rules and image edges sit on the module; baselines follow leading.
+- **Alignment is optical, not arithmetic.** Round and pointed forms overshoot; quotes and points hang; large titles compensate for side bearing.
+- **Breakpoints are where content breaks, not device names.** Reflow to 320 CSS px; on a canvas, groups form by distance and connectors run orthogonally.
 
-Columns, gutter, margin, layout module, content width, with content = n × column + (n − 1) × gutter. Solve the column from the format: column = (content − (n − 1) × gutter) ÷ n; the left edge of column k (from 0) is margin + k × (column + gutter). The module aligns blocks; text baselines follow the declared leading, not necessarily that module.
-
-| Surface | Format | Columns | Gutter | Margin | Layout module |
-|---|---|---|---|---|---|
-| Slides | 1280 × 720 | 12 × 73 | 24 | 70 | 8 px |
-| Web | content 1296 at a 1440 viewport, capped at 1440 | 12 | 24 | 5vw, min 24 | 8 px |
-| A4 handbook | 210 × 297 mm | 6 tracks (12 to subdivide) | 6 mm | 18 / 21 / 19 / 15 mm | 21 pt (28 px) |
-| A2 poster | 420 × 594 mm | 12 × 23 | 8 mm | 28 mm | 8 mm |
-| Canvas | infinite | 12 inside a frame | 20 | 50 | 8 pt |
-
-The same formula covers variants: A3 poster 12 × 15.92 + 11 × 6 ≈ 257; A4 poster 6 × 25 + 5 × 6 = 180; A5 handbook 6 × 14.5 + 5 × 6 = 117; A4 handbook 6 × 24.33 + 5 × 6 = 176.
-
-## Using twelve columns
-
-- Spans 12 / 8 / 6 / 4 / 3. Speaking units have a dominant element; reference units favor stable scan paths.
-- Asymmetry carries priority: 8 + 4, 7 + 5, 6 + 4 + 2. Equal peers may use equal spans and repeated geometry; do not invent priority to avoid symmetry.
-- Leave one or two columns free of text on reading units: that empty column is what makes the page breathe.
-- Image edges, title starts, captions, and source lines share column lines. Rules and image edges align to the layout module; text baselines follow leading.
-
-## Optical alignment
-
-Round and pointed forms (O, circles, triangles) overshoot by 1–2% to look aligned; quotation marks and periods may hang into the margin; very large titles may sit 1–2 px left of the text edge to compensate for side bearing.
-
-## Breaks
-
-A deliberate break (bleed, rotation, overprint, crop) happens at most once per unit, its origin still on a grid intersection, and never moves body text off its columns and baseline. Everything else returns to the default, so the break reads as intentional.
-
-## Responsive and infinite
-
-Web columns may collapse 12 → 8 → 6 → 4 around 1024 / 768 / 480; support reflow down to 320 CSS px. Use `repeat(12, minmax(0, 1fr))` and avoid overflow from `100vw`. Breakpoints are where the content starts to look wrong, not device names. On a canvas, frames sit on an 8 pt grid, groups are made by distance, and connectors run orthogonally.
+| Reading need | Composition | Invariant |
+|---|---|---|
+| Compare peers | 3 + 3, criteria in shared rows | Row alignment, units, scales |
+| Read with evidence | 4 + 2 or 2 + 4 | Text and evidence share an anchor |
+| Annotate | Narrow note track beside the reading column | Each note beside its passage |
+| Argue | Claim, one exhibit, implication | One left axis, claim before evidence |
+| Survey | Contact sheet | Comparable crops, aligned caption baselines |
+| Carry a brand | A unit derived from the actual mark | Its proportions and clear space |

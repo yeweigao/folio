@@ -2,40 +2,30 @@
 
 *A dialect of the Swiss theme: it inherits [the mother tongue](../mother-tongue.md) and changes only what it names.*
 
-The Swiss grid carrying the documentary tradition of the FSA photographers, *Life*, and Magnum: the photograph from the scene, the full caption, real people in real places, a chain of evidence the reader can follow.
-
-Reach for it for research, nonprofits, field reports, deep reporting, and archive exhibitions, read at 0.5–3 m. Not for image-only branding, fashion, children's teaching, or a manifesto.
-
-## Picture it
-
-*Illustration, not a template.* A black-and-white photograph fills ten columns: a teacher at a blackboard in a village school. Beneath its left edge, a caption block: "Li Wei teaches Grade 3 English, Lancang, Yunnan, March 2026. Photo: field team / project archive." The facing page carries one bar chart of attendance and a single sentence in serif. An accent marker flags one figure.
+The FSA photographers (Walker Evans, Dorothea Lange), *Life* and W. Eugene Smith's photo-essays, Magnum: the photograph from the scene, the full caption, real people in real places, a chain of evidence on the Swiss grid. For research, nonprofits, field reports, deep reporting, archive exhibitions, at 0.5–3 m; not for image-only branding, fashion, children's teaching, or manifestos.
 
 ## What makes it documentary
 
-- **Signature move**: one real photograph leads; its caption answers who, what, where, when, and source.
-- **Motif**: the caption block and source line, one format throughout. A photograph without a caption is decoration.
-- **Rhythm**: let the evidence choose between a lead photograph, text or data, a multi-image unit, and a sourced quotation. Keep related evidence in a consistent structure.
-- **Owner's test**: every image can be traced back to where and when it was taken.
+- **One real photograph leads, not a wall.** It spans most of the field; supporting images take unequal spans.
+- **The caption is the evidence, not a credit.** Who, what, where, when, source, in one format throughout; an unknown field says unknown.
+- **Owner's test:** every image traces back to where and when it was taken.
 
 ## House values
 
 | Role | Relationship | Area |
 |---|---|---|
-| Paper | White on screen; a warm stock in print | ≥ 50% |
+| Paper | White on screen, a warm stock in print | ≥ 50% |
 | Ink | As the mother tongue | structure |
-| Accent | A light, high-chroma hue that takes ink (classically a lemon yellow), for fields and markers only, never small text | ≤ 10% |
+| Accent | A light high-chroma hue that takes ink, classically lemon; fields and markers, never small text | ≤ 10% |
 
-- Serif display (Georgia, Source Serif 4, Noto Serif SC): titles 32–64, quotations 24–32. Grotesque text 16–20 at leading 1.65. Captions and sources 12–13, never smaller.
-- The lead photograph spans 8–12 columns and at least 40% of the content height; its caption starts on the photograph's first column. Supporting images take unequal spans (4 / 3 / 3), never an equal wall. Maps carry scale, north, and source.
-- One photographic medium throughout. Crops keep the relation between person and place. An unknown caption field says "unknown".
-- White text on a photograph uses a quiet area and, when needed, a neutral black scrim; measure contrast on the actual composite.
-- Quotations carry speaker, role, date, and source, verbatim.
-- Voice in copy: names, places, dates, sources.
+- Serif display (Source Serif 4, Noto Serif SC) for titles and quotations; grotesque text; captions at the surface floor, never smaller.
+- One photographic medium; crops keep person and place together; maps carry scale, north, and source; quotations carry speaker, role, date, and source, verbatim.
+- Voice: names, places, dates, sources.
 
-## The caricature
+## Caricature
 
-Asked for "documentary", models produce National Geographic pastiche: a yellow border, a sweeping hero landscape, warm film filters, stock photos of smiling children, captions that say "Image: internet". Refuse that, and refuse staged or generated scenes, photos used as wallpaper, and hardship used as mood.
+Magazine pastiche: yellow border, sweeping hero landscape, warm film filters, stock smiling children, "Image: internet"; staged or generated scenes, photos as wallpaper, hardship as mood. Refuse it.
 
 ## Latitude
 
-Free: lead image proportion, number of supporting images, caption width, paper temperature in print, map position. Say so when switching photographic medium, adding a second caption format, or using an image as background.
+Free: lead proportion, supporting count, caption width, paper temperature, map position. Say so for a second medium, a second caption format, or an image as background.
