@@ -38,7 +38,7 @@ Agents reach for the same moves. Folio names each one and gives the alternative.
 12. Style is a constraint system, not an element set.
 13. The frame is composed, not inherited.
 
-**A theme, not a template.** The Swiss mother tongue (Müller-Brockmann, Ruder, Hofmann, *Neue Grafik*) holds every piece together. A dialect is a named movement: its people, place, and period, and the three or four Swiss rules it overturns across the whole piece. Nine are in the library, from De Stijl to Brutalism. The masters' moves inside Swiss, Crouwel's grid-built letters, Gerstner's programmes, Isotype rows, Vignelli's Unigrid, live in its methods. One of 21 variations breaks a rule where the content turns.
+**A theme, not a template.** The Swiss mother tongue (Müller-Brockmann, Ruder, Hofmann, *Neue Grafik*) holds every piece together. A dialect is a named movement: its people, place, and period, and the three or four Swiss rules it overturns across the whole piece. Nine are in the library, from De Stijl to Swiss Brutal. The masters' moves inside Swiss, Crouwel's grid-built letters, Gerstner's programmes, Isotype rows, Vignelli's Unigrid, live in its methods. One of 21 variations breaks a rule where the content turns.
 
 **Forms and methods.** Each unit takes one of eleven forms by what the reader must do. The theme's methods cross eight reader tasks with text, image, data, and space, each cell a master's move, built from Gestalt, Bertin's visual variables, and Gerstner's morphological box.
 
@@ -59,7 +59,7 @@ Agents reach for the same moves. Folio names each one and gives the alternative.
 | [Swiss Punk](references/themes/swiss/dialects/swiss-punk.md) | Provokes: culture and music that should feel rebellious, still readable | The grid tested by rotation, layering, and stepped type |
 | [Memphis](references/themes/swiss/dialects/memphis.md) | Delights: products, events, youth culture that want character | Clashing colors and pattern as material |
 | [Kenya Hara, ma 間](references/themes/swiss/dialects/ma.md) | Invites: one object, craft, or ceremony, few words | Emptiness as the vessel; small, quiet type |
-| [Brutalism](references/themes/swiss/dialects/brutalist.md) | Specifies: a technical system whose structure is the content | System defaults and visible containers |
+| [Swiss Brutal](references/themes/swiss/dialects/brutalist.md) | Specifies: a technical system whose structure is the content | Visible grid rules, zero radius, dense ledger rows |
 
 The image above is set in ma 間, after Kenya Hara: one sentence, one red mark, and the emptiness kept whole.
 

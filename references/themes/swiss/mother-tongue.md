@@ -8,7 +8,7 @@ The International Typographic Style: Müller-Brockmann's *Grid Systems*, Ruder's
 - **Zurich and Basel, 1950s–60s:** Müller-Brockmann, Lohse, Vivarelli, Neuburg; Ruder and Hofmann; Gerstner's *Designing Programmes*; Akzidenz, Univers, Helvetica. The mother tongue.
 - **Beside it:** Brodovitch's *Harper's Bazaar* (brodovitch), the Polish Poster School (polish-poster), the HfG Ulm (ulm), Crouwel's Total Design, Vignelli and Unimark.
 - **Against it:** Weingart's Swiss Punk (swiss-punk), Memphis in Milan (memphis).
-- **After it:** Kenya Hara's emptiness (ma 間), brutalist web design (brutalist).
+- **After it:** Kenya Hara's emptiness (ma 間), Swiss Brutal (brutalist).
 
 ## Grammar
 

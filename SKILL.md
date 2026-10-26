@@ -56,7 +56,7 @@ Default theme: the International Typographic Style. Müller-Brockmann's *Grid Sy
 | [Swiss Punk](references/themes/swiss/dialects/swiss-punk.md) | Provokes: culture and music that should feel rebellious, still readable | The grid tested by rotation, layering, and stepped type |
 | [Memphis](references/themes/swiss/dialects/memphis.md) | Delights: products, events, youth culture that want character | Clashing colors and pattern as material |
 | [Kenya Hara, ma 間](references/themes/swiss/dialects/ma.md) | Invites: one object, craft, or ceremony, few words | Emptiness as the vessel; small, quiet type |
-| [Brutalism](references/themes/swiss/dialects/brutalist.md) | Specifies: a technical system whose structure is the content | System defaults and visible containers |
+| [Swiss Brutal](references/themes/swiss/dialects/brutalist.md) | Specifies: a technical system whose structure is the content | Visible grid rules, zero radius, dense ledger rows |
 
 ## Defaults that pose as structure
 
