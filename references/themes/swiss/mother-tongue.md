@@ -1,12 +1,12 @@
 # Swiss — the mother tongue
 
-The International Typographic Style: Müller-Brockmann's *Grid Systems*, Ruder's *Typographie*, Hofmann's Basel, *Neue Grafik*; grid, asymmetry, and objectivity, set for Chinese and Latin. It governs relationships, so it hosts other movements without becoming costume. Every dialect inherits this file and replaces only what it names, across the whole piece. Delivery follows the [production charter](../../production.md); numbers live in the craft files.
+The International Typographic Style: Müller-Brockmann's *Grid Systems*, Ruder's *Typographie*, Hofmann's Basel, *Neue Grafik*; grid, asymmetry, and objectivity, set for Chinese and Latin. It governs relationships, so it hosts other movements without becoming costume. Every dialect inherits this file and replaces only what it names, across the whole piece. Delivery follows the [production charter](../../production.md); numbers live in the craft files; the masters' moves live in [methods](methods.md).
 
 ## Lineage
 
-- **Before it, 1917–1930s:** De Stijl (de-stijl), the Bauhaus (bauhaus), Russian Constructivism (constructivist), Tschichold's *Die neue Typographie*, Vienna's Isotype (isotype).
+- **Before it, 1917–1930s:** De Stijl (de-stijl), the Bauhaus (bauhaus), Russian Constructivism, Tschichold's *Die neue Typographie*, Vienna's Isotype.
 - **Zurich and Basel, 1950s–60s:** Müller-Brockmann, Lohse, Vivarelli, Neuburg; Ruder and Hofmann; Gerstner's *Designing Programmes*; Akzidenz, Univers, Helvetica. The mother tongue.
-- **Beside it:** Brodovitch's *Harper's Bazaar* (brodovitch), the Polish Poster School (polish-poster), the HfG Ulm (ulm), Crouwel's Total Design (gridnik), Vignelli and Unimark.
+- **Beside it:** Brodovitch's *Harper's Bazaar* (brodovitch), the Polish Poster School (polish-poster), the HfG Ulm (ulm), Crouwel's Total Design, Vignelli and Unimark.
 - **Against it:** Weingart's Swiss Punk (swiss-punk), Memphis in Milan (memphis).
 - **After it:** Kenya Hara's emptiness (ma 間), brutalist web design (brutalist).
 
@@ -49,10 +49,6 @@ The International Typographic Style: Müller-Brockmann's *Grid Systems*, Ruder's
 - **One module, few axes.** Distances group, separate, or focus; leading keeps its own rhythm.
 - **Furniture earns its place by function, not by look.** *Kopfzeile* and *Fusszeile* locate, *Verzeichnis* serves lookup, *Bildlegende* ties evidence to source, *Kennzahl* makes a consequential quantity visible, *Zeitachse* needs a real sequence, *Bemassung* a real measure.
 - **A reading relationship comes before a layout.** Comparison, argument with aside, paired annotation, collection, continuous scene; see [grid](../../craft/grid.md).
-
-## Methods in Swiss
-
-- **Methods take this grammar's form, not a generic one.** A leading line is a straight rule on the grid, never a wave; color blocking is solid, never translucent; a calligram keeps whole lines on the baseline grid; an oversized glyph is geometric, one per deliverable; a cut-out keeps a clean edge and the text stays legible.
 
 ## Caricature and habit
 

@@ -1,6 +1,6 @@
 # Variations
 
-A variation breaks the active grammar, the mother tongue as the dialect has changed it, on purpose, so a change in the content is felt. A dialect's own moves are its grammar, never variations. Tactics inside the grammar are [methods](../../methods.md); a method pushed until it breaks the grammar becomes a variation.
+A variation breaks the active grammar, the mother tongue as the dialect has changed it, on purpose, so a change in the content is felt. A dialect's own moves are its grammar, never variations. Tactics inside the grammar are [methods](methods.md); a method pushed until it breaks the grammar becomes a variation.
 
 - **A break answers the content, not a quota.** A turn, an emphasis, or a mood the subject asks for, on any unit; continuity is right while the reader's task stays the same.
 - **One break per unit, not a pile.** Everything else on that unit keeps the active grammar.

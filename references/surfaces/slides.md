@@ -29,7 +29,7 @@ A deck is presented at a distance or read alone; choose one mode per deck. Argum
 
 | The template move | Instead |
 |---|---|
-| Title and six bullets on every slide | The form each slide's job needs ([methods](../methods.md)) |
+| Title and six bullets on every slide | The form each slide's job needs ([forms](../forms.md)) |
 | Agenda as icon cards | Chapters on one axis, or an opener per section |
 | Topic titles on argument slides | Judgment titles where copy may change |
 | The same volume throughout | A change of field or scale at real turns only |
