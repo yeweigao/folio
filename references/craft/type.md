@@ -41,6 +41,7 @@ Replaceable resources, not principles. A new font is not a substitute for a stro
 - **Weights are real, not formulas.** One regular reading weight, one emphasis weight; display and small-text weights chosen optically; optical sizes matched to the set size.
 - **A fallback is resolved, not accepted.** If a font is missing, substitute deliberately and reflow.
 - **The exported face is checked, not assumed.** Compare rendered faces with the chosen families and weights, including embedded font names where supported; fix or report substitutions, then recheck line breaks.
+- **Embedding prefers static TTF, not OTF/CFF.** Use a static TrueType build when a file must carry its faces; presentation engines often embed TrueType but not CFF-based OpenType, and variable fonts are unreliable. Embed where the format and license allow, then open the delivered file on the target machine. A PDF subset does not prove the PPTX carries the font.
 
 | Job | Chinese | Latin | Stack |
 |---|---|---|---|
