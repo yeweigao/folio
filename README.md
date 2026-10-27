@@ -95,9 +95,8 @@ references/
   production.md       floors: scope, viewing, frame, inspection
   surfaces/           slides · poster · web · canvas · handbook
   forms.md            what each unit makes the reader do
-  themes/swiss/       mother tongue · master methods · 21 variations · 9 dialects
-  craft/              typography · fonts · color · grid · imagery · data · copy · motion
-  anti-patterns.md    why defaults fail, and on what basis
+  themes/swiss/       mother tongue · master methods · 21 variations · 9 dialects · anti-patterns
+  craft/              type · color · grid · imagery · data · copy · motion
 ```
 
 Every file serves one decision in the eight-step Practice of `SKILL.md`: brief, reader, material, move, system, sequence, make, inspect. A change goes to the file of the decision it changes; a new file only for a new decision; no file depends on a later step.

@@ -6,7 +6,7 @@ Choose the form first: what the unit must make the reader do. The theme's method
 |---|---|---|---|---|
 | Cover | Identify the work | Find the lead; feel the edge | Title, maker, date; one image or typographic idea | A slogan replaces the title |
 | Statement | Make one sentence memorable | Find the lead | One claim, almost nothing else | Evidence or explanation creeps in |
-| Exhibit | Make one object seen | Find the lead; feel the edge | The object on ≥ 40% of the area, labeled directly | It shrinks to a corner or shares the stage |
+| Exhibit | Make one object seen | Find the lead; feel the edge | The subject on ≥ 40% of the area, labeled directly | It shrinks to a corner or shares the stage |
 | Argument | Make a judgment accepted | Find the lead; compare | A judgment title, countable evidence, the implication in one place | Numbers without a judgment; evidence off the claim's axis |
 | Sequence | Lead through steps, time, or cause | Follow the order | One action per step, then the conclusion | Snake columns; shuffled or flattened order |
 | Comparison | Make a difference visible | Compare | Shared scales, direct labels | Misaligned scales; color as the only difference |
@@ -16,7 +16,7 @@ Choose the form first: what the unit must make the reader do. The theme's method
 | Reference | Let the reader look things up | Know where they are; see the groups | A guessable order and scannable heads; density welcome | Decoration, a decisive move, a hidden order |
 | Close | Leave the one claim or next action | Find the lead | The claim the units proved, or the action | A new conclusion, or thanks |
 
-- **One primary form per unit, not two.** One subordinate move at most; two primary forms are two units. A form may span units, each with its own lead.
+- **One primary form per unit, not two.** One subordinate form at most; two primary forms are two units. A form may span units, each with its own lead.
 - **The test is structural, not cosmetic.** Strip decoration, keep content and relationships: the reader can still do the job.
 
 ## Reader tasks
@@ -34,7 +34,7 @@ Every form is carried by these tasks; the theme's methods say how to perform eac
 | Feel the change | the sequence drones | A deliverable has rhythm |
 | Feel the edge | the frame is inherited | The frame is composed |
 
-- **Choose by relationship, not by material.** Name what the reader must do, then the method. The remaining philosophies choose among methods: the subject decides the move, the content outranks it, an image earns its place.
+- **Choose by relationship, not by material.** Name what the reader must do, then the methods that carry it. The remaining philosophies choose among methods: the subject decides the move, the content outranks it, an image earns its place.
 - **An empty need is a missing method, not a license for a default.**
 
 ## Repetition

@@ -11,7 +11,7 @@ Brochures, handbooks, and catalogs are read slowly and returned to. Density can 
 
 | Role (A4) | pt | Leading |
 |---|---|---|
-| Display: openers, spread quotes | 48–84 | 0.98–1.08 |
+| Display: openers, spread quotes | 48–84 to start; graphic display may exceed | 0.98–1.08 |
 | Chapter title | 24–32 | 1.15 |
 | Section title | 15–18 | 1.3 |
 | Subhead | 11.5–13 | 1.35 |

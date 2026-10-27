@@ -1,13 +1,11 @@
 # Color
 
-Color is a role, not decoration. AI palettes fail two ways: timid and evenly spread (five pastel accents), or loud and generic (purple-to-blue gradients, teal and orange). A dominant field with one sharp accent beats both.
+Color is a role, not decoration. AI palettes fail two ways: timid and evenly spread (five pastel accents), or loud and generic (purple-to-blue gradients, teal and orange). The theme sets how many hues and how much of each; this file holds what any palette needs.
 
 - **Roles, not swatches.** Paper, ink, accent; muted text and a hairline only when needed. Greys are declared once as tokens, never invented per component. A hairline separates; it never sets text.
-- **One accent, not a palette.** Another hue enters only as a declared second ink, a print stock, a mapped function color (at most three, with a legend, never the only code), or an overprint.
 - **The accent comes from the brand or the subject's story, not from habit or a topic cliché.** A brand color keeps its hue and moves only in lightness. Without one, choose a color the world knows by name: a historic pigment, a maker's signature, a Pantone color of the year, sourced and measured. The table below is a calibrated sample, not the limit.
-- **The accent is an exception, not a second paper.** Paper ≥ 50% of the area; accent ≤ 10%, ≤ 20% on a statement unit; a full accent field is a variation.
 - **Contrast is measured on the composite, not assumed from opacity.** Text ≥ 4.5:1 on its actual ground; a dark field resets every foreground role and lightens the accent until it passes.
-- **Paper is material, not mood.** White on screen and the stock itself in print; a warm screen ground is a brand decision.
+- **Paper is material, not mood.** On screen it is the display's ground, in print the stock itself.
 - **Hierarchy survives greyscale.** If it disappears, color is doing the work of size, weight, and position.
 
 ## Named colors

@@ -12,7 +12,7 @@ Design is deciding what is seen first, what recedes, and what never appears. Thi
 
 - **A unit has a lead, not a crowd.** One element is read first and everything else queues behind it, whatever the unit holds.
 - **The eye's path is designed, not discovered.** Guide reading along declared axes; give lookup clear entry points and a predictable order.
-- **The decisive move comes from the subject, not from a style.** Every unit that speaks carries one, said in a sentence; units for reference stay quiet.
+- **The decisive move comes from the subject, not from a style.** Every unit that speaks has one leading idea, said in a sentence; it may combine methods, while reference units stay quiet.
 - **Layout serves the content, not the other way round.** Change the composition or edit within scope; never hide content or shrink type to make it fit.
 - **Measure is shared, not improvised.** Columns, spacing, baselines, and proportions belong to one system, fitted to the surface.
 - **Space is placed, not left over.** Judge it by its job, not its amount: group, separate, or focus. Fix accidental gaps with scale or placement, never filler.
@@ -31,17 +31,17 @@ Each decision constrains the next; when a later one fails, go back, not around. 
 1. **Brief.** Facts, wording, format, and brand bind; refinement keeps the existing system, redesign may replace it. [Production charter](references/production.md).
 2. **Reader.** Who reads, where, from how far, for how long, to do what. The surface holds its numbers: [slides](references/surfaces/slides.md), [poster](references/surfaces/poster.md), [web](references/surfaces/web.md), [canvas](references/surfaces/canvas.md), [handbook](references/surfaces/handbook.md).
 3. **Material.** The claim and its proof, before any layout: the words, data, and images on hand. [Copy](references/craft/copy.md).
-4. **Move.** The decisive move, in a sentence. Then the dialect, chosen by what the material does and who reads it, never by the surface; or none, and the mother tongue alone. A style or designer the brief names binds wherever its lineage sits: find its entry first in the theme's dialect, method, or variation files, or in the craft files. A named dialect governs the whole piece, and the material is re-formed until it can carry it.
-5. **System.** Grid, type ramp, faces, and color roles, declared once for the deliverable: the surface's numbers through the [mother tongue](references/themes/swiss/mother-tongue.md) and the dialect. [Grid](references/craft/grid.md), [typography](references/craft/typography.md), [fonts](references/craft/fonts.md), [color](references/craft/color.md).
-6. **Sequence.** Each unit's job, its [form](references/forms.md), and the theme's [methods](references/themes/swiss/methods.md) that carry it; a [variation](references/themes/swiss/variations.md) only where the content turns. [Data](references/craft/data.md), [imagery](references/craft/imagery.md), and [motion](references/craft/motion.md) when the content has them.
+4. **Move.** The work's central idea, in a sentence. Then the dialect, chosen by what the material does and who reads it, never by the surface; or none, and the mother tongue alone. A style or designer the brief names binds wherever its lineage sits: find its entry first in the theme's dialect, method, or variation files, or in the craft files. A named dialect governs the whole piece, and the material is re-formed until it can carry it.
+5. **System.** Grid, type ramp, faces, color roles, and the methods the deliverable will speak in, declared once: the surface's numbers through the [mother tongue](references/themes/swiss/mother-tongue.md), its [methods](references/themes/swiss/methods.md), and the dialect. [Grid](references/craft/grid.md), [type](references/craft/type.md), [color](references/craft/color.md).
+6. **Sequence.** For each unit, its job, its [form](references/forms.md), and the declared methods that carry it; reuse or change them as the content requires. A [variation](references/themes/swiss/variations.md) only where the content turns. [Data](references/craft/data.md), [imagery](references/craft/imagery.md), and [motion](references/craft/motion.md) when the content has them.
 7. **Make.** The hardest unit first, with real content.
-8. **Inspect.** The final export at viewing size, against the floors, the theme's test, and the [anti-patterns](references/anti-patterns.md). A dialect sets its own test; with the mother tongue alone, use philosophy 12: strip away colors and fonts, and the piece is still recognizable.
+8. **Inspect.** The final export at viewing size, against the floors, the theme's test, and the [anti-patterns](references/themes/swiss/anti-patterns.md). A dialect sets its own test; with the mother tongue alone, use philosophy 12: strip away colors and fonts, and the piece is still recognizable.
 
 Critique runs 1–4 and 8 on the supplied work.
 
 ## Theme
 
-A theme is a constraint system. The mother tongue is the default grammar. A dialect is a named movement, its people, place, and period, that replaces the rules it names, with the craft and surface defaults behind them, across the whole piece; what it does not name still holds, and the floors never yield. A move that could sit inside any dialect is a [method](references/themes/swiss/methods.md), or, where it breaks the grammar once, a [variation](references/themes/swiss/variations.md). A theme brings its own mother tongue, methods, variations, and dialects; forms, surfaces, and craft serve every theme.
+A theme is a constraint system. The mother tongue is the default grammar. A dialect is a named movement, its people, place, and period, that replaces the rules it names, with the craft and surface defaults behind them, across the whole piece; what it does not name still holds, and the floors never yield. A dialect changes how a form is drawn, never the reader task it serves. A move that could sit inside any dialect is a [method](references/themes/swiss/methods.md), or, where it breaks the grammar once, a [variation](references/themes/swiss/variations.md). A theme brings its own mother tongue, methods, variations, and dialects; forms, surfaces, and craft serve every theme and hold only what any good design needs.
 
 Default theme: the International Typographic Style. Müller-Brockmann's *Grid Systems*, Ruder's *Typographie*, *Neue Grafik*, the Basel school of Hofmann: modular grid, asymmetric flush-left composition, scale contrast as hierarchy, Sachfotografie, paper, ink, and one accent. Its caricature is grey minimal skin at one volume; its habit is white, black, one red, hairlines.
 
@@ -60,7 +60,7 @@ Default theme: the International Typographic Style. Müller-Brockmann's *Grid Sy
 
 ## Defaults that pose as structure
 
-Models reach for these by habit. Each is legitimate when the content, brand, dialect, or user asks for it; when a client insists, make it as clean as the grid allows. Otherwise use the alternative. The [anti-patterns](references/anti-patterns.md) explain why.
+Models reach for these by habit. Each is legitimate when the content, brand, dialect, or user asks for it; when a client insists, make it as clean as the grid allows. Otherwise use the alternative. The [anti-patterns](references/themes/swiss/anti-patterns.md) explain why.
 
 - Centered hero, three equal cards, gradient button → a flush-left claim, one supporting line, one action
 - Floating rounded cards, shadows, glow, glass → grouping by space, rules, or a solid field

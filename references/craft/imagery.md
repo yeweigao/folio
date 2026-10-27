@@ -20,7 +20,7 @@ An image is evidence, explanation, or atmosphere, never wallpaper. Nothing marks
 | Drawn in code | Explanation | The deliverable's grid, ink, and accent; one drawing style for the piece |
 | Type and color alone | Any unit | Better than an image doing the wrong job |
 
-- **One strong image, not four weak ones.** A placeholder is labeled and replaced before delivery.
+- **One strong image, not four weak ones.** A placeholder is labeled, and reported if still missing at delivery.
 - **The crop serves the subject, not the rectangle.**
 
 | Relationship | For | Check |

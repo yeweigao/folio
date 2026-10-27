@@ -1,6 +1,6 @@
 # Anti-patterns
 
-Why defaults fail. The fix lives in [SKILL.md](../SKILL.md), the surface, and the craft file; this file holds the reason and its basis. **Evidence** is a concrete failure of legibility, navigation, honesty, or production: test the result. **House** is a Swiss preference that a brief or brand may override. A style choice alone is not a failed check.
+Why defaults fail. The fix lives in [SKILL.md](../../../SKILL.md), the surface, and the craft file; this file holds the reason and its basis. **Evidence** is a concrete failure of legibility, navigation, honesty, or production, and holds in every theme: test the result. **House** is this theme's preference; a brief, brand, or dialect may override it. A style choice alone is not a failed check.
 
 ## Layout
 

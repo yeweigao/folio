@@ -44,7 +44,7 @@ A variation breaks the active grammar, the mother tongue as the dialect has chan
 |---|---|---|---|---|
 | Accent field | The whole unit on the accent; paper becomes the type | Chapter openers, statements, the ground of a single poster | Complete foreground roles; no other hue | Müller-Brockmann's Zurich posters |
 | Type band | A hard band of dark or accent behind a line of display type | Statements, section labels | One band per unit | Swiss poster typography |
-| Overprint | Two inks multiply where they overlap | Culture, music, one poster | Never over text | Weingart, Greiman |
+| Overprint / translucent field | Two inks multiply where they overlap; a translucent field can cover a photograph | Culture, music, posters | Keep reading text and evidence clear | Weingart, Greiman; Pieter Brattinga's *P.T.T.* poster |
 | Line field | Parallel lines vary in weight or spacing until the field vibrates | Openers, music, technology | Never behind reading text | Op art (Riley, Vasarely), Gerstner |
 | Programme field | A bounded generative field with a declared cycle | Openers, back covers, dividers | Cells carry no data | Gerstner, Lohse |
 

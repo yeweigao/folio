@@ -4,7 +4,7 @@ A single unit seen in passing: it works in three seconds from three meters, or i
 
 ## System
 
-| Size | Trim (mm) | Distance | Title cap height |
+| Size | Trim (mm) | Distance | Distance-derived title cap-height floor (mm) |
 |---|---|---|---|
 | A0 | 841 × 1189 | 10–30 m | 50–150 mm |
 | A1 | 594 × 841 | 5–10 m | 25–50 mm |
@@ -12,9 +12,9 @@ A single unit seen in passing: it works in three seconds from three meters, or i
 | A3 | 297 × 420 | 1–3 m | 5–15 mm |
 | A4 | 210 × 297 | 0.5–1 m | 3–5 mm |
 
-- Cap height (mm) ≈ distance (m) × 5, verified at the real distance; font size ≈ cap height ÷ 0.7; pt = mm × 72 ÷ 25.4.
-- Grids: A2 margins 28, 12 × 23 mm, gutters 8 (content 364); A3 margins 20, 12 × 15.92, gutters 6; A4 margins 15, 6 × 25, gutters 6. Module 8 mm; bleed 3, safe 5, as the printer specifies.
-- A2 at 3 m: title 120–300 pt, text 36–48, credits 14–18. A3 at 1–3 m: title 72–160, text 18–24, credits 10–12.
+- Use distance (m) × 5 as a minimum title cap height in mm; this is a legibility floor, not a display-size target. Start with the format-specific ranges below and keep cap height above the floor; font size (pt) ≈ cap height (mm) ÷ 0.7 × 72 ÷ 25.4. Verify at the real distance.
+- Grids: A2 margins 28, 12 × 23 mm, gutters 8 (content 364); A3 margins 20, 12 × 15.92, gutters 6; A4 margins 15, 6 × 25, gutters 6. Module 8 mm; bleed 3, safe 5, as the printer specifies. Landscape swaps trim dimensions and recomputes the grid; a bound spread is two pages, governed by the handbook and binding.
+- A2 at 3 m: title 120–300 pt, text 36–48 pt, credits 14–18 pt. A3 at 1–3 m: title 72–160 pt, text 18–24 pt, credits 10–12 pt. Title ranges are starting points; a graphic display may exceed them if essentials remain legible.
 
 ## Principles
 

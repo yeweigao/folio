@@ -5,8 +5,8 @@ Floors for making and delivering work, not design philosophy. Read this and the 
 ## Scope
 
 - **The brief binds, not the habit.** Supplied facts, fixed wording, format, and brand come first; refinement keeps the existing system, redesign may replace it within scope.
-- **Facts are exact; wording is a disclosed service.** Names, dates, numbers, places, quotations, and required text never change; other edits stay within scope and are reported. Frozen content is fitted by composition.
-- **Nothing invented poses as real.** Demo numbers say `illustrative`; missing evidence is disclosed, not manufactured.
+- **Facts are exact; wording is a disclosed service.** Names, dates, numbers, places, quotations, and required text never change; other edits stay within scope and are reported. Fit frozen content by composition; if fixed facts conflict with a fixed text limit, ask which can change.
+- **Nothing invented poses as real.** Label demo values as illustrative and calculated values with their basis; where requested real-world names, locations, hours, lineups, or product options are missing, mark them unprovided in the deliverable rather than fabricating them.
 - **Truth and legibility are floors; style yields above them.** The surface governs dimensions, viewing, and export; a dialect overrides the mother tongue; craft defaults yield to the chosen system.
 
 ## Viewing contract
@@ -29,7 +29,7 @@ Establish format, physical or viewport size, viewing distance or zoom, reading t
 
 - **Trim, bleed, safe area, and binding are separate, not one margin.** A new format is recomposed, not scaled.
 - **A spread is two real facing pages, not a label.** Verify order and sides in the assembled file; a crossing image keeps one source, scale, and crop coordinate; faces and labels stay clear of the gutter.
-- **Units are physical, not interchangeable.** Confirm page size in the export; CSS px, canvas px, pt, and mm convert only through the renderer.
+- **Units are measured, not guessed.** In CSS, 1 in = 96 CSS px = 72 pt = 25.4 mm; scale the whole print layout together for an HTML preview. Screen CSS px need not be physical pixels; confirm trim and type sizes in the export.
 
 ## Inspection
 
@@ -41,4 +41,4 @@ Establish format, physical or viewport size, viewing distance or zoom, reading t
 
 - **One deliverable does not change a shared system.** Record the template version and role mappings; keep adjustments local.
 - **A family upgrade is versioned, not silent.** New version, change note, representative outputs rechecked, previous baseline recoverable; edit sources and rebuild, checking a dense and a sparse use.
-- **Licenses travel with assets.** This skill's MIT license covers neither fonts nor photographs; see [fonts](craft/fonts.md).
+- **Licenses travel with assets.** This skill's MIT license covers neither fonts nor photographs; see [type](craft/type.md).

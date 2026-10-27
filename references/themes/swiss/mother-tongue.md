@@ -17,14 +17,14 @@ The International Typographic Style: Müller-Brockmann's *Grid Systems*, Ruder's
 - **Rules, not boxes.** An opening rule establishes a table, index, or figure; hairlines separate; a closing rule completes. No shadows, no floating plates.
 - **A field resets every foreground, not only the ground.** Paper, soft, dark, and accent each carry a complete palette, so any field nests in any other.
 - **Text never shrinks to fit.** Recompose first; edit or paginate within scope.
-- **The subject supplies the move, not the style.** Speaking units carry one; reference units repeat a dependable structure; a [variation](variations.md) marks a turn.
+- **The subject supplies the move, not the style.** A speaking unit has one leading idea, carried by one or more methods; reference units repeat a dependable structure; a [variation](variations.md) marks a turn.
 
 ## Type
 
 - **Roles before faces.** Reading, display, apparatus; one family often serves all three; a CJK/Latin pair is one voice.
 - **Display has three lineages, none more refined.** A heavy grotesque for mass, a large light sans for scale without a black block, a high-contrast serif or Song for editorial and cultural weight. The subject and the viewing distance choose.
 - **One hierarchy, held.** Weight-led, scale-led, or single-weight; about three levels per unit; a change of register is deliberate.
-- **Titles inherit the reading family, unless another voice earns its role.** Sustained reading may take a text serif; apparatus a sans. See [fonts](../../craft/fonts.md).
+- **Titles inherit the reading family, unless another voice earns its role.** Sustained reading may take a text serif; apparatus a sans. See [fonts](../../craft/type.md).
 
 ## Color
 
@@ -37,7 +37,9 @@ The International Typographic Style: Müller-Brockmann's *Grid Systems*, Ruder's
 | Accent | The exception; an accent field is a deliberate turn |
 | Signal | An optional second ink with a different job and a non-color cue |
 
-- **The accent comes from the brand or the subject, and returns rarely enough to matter.** Values live in [color](../../craft/color.md).
+- **One accent, not a palette.** Another hue enters only as a declared second ink, a print stock, a mapped function color (at most three, with a legend, never the only code), or an overprint.
+- **The accent is an exception, not a second paper.** Paper ≥ 50% of the area; accent ≤ 10%, ≤ 20% on a statement unit; a full accent field is a variation.
+- **The accent comes from the brand or the subject, and returns rarely enough to matter.** White paper on screen; a warm screen ground is a brand decision. Values live in [color](../../craft/color.md).
 
 ## Images
 

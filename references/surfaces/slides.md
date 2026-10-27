@@ -5,7 +5,7 @@ A deck is presented at a distance or read alone; choose one mode per deck. Argum
 ## System
 
 - 1280 × 720; margins 70; 12 columns × 73 with 24 gutters (content 1140); column n starts at 70 + 97n; module 8 px.
-- One master: header rule 26–32, kicker 50–70, title 78–141, content 157–653, footer 688–708.
+- One master, vertical zones in px: header rule 26–32, kicker 50–70, reading-slide title 78–141, content 157–653, footer 688–708. A graphic display on a cover or opener may use the content zone and exceed the display range; reading text keeps its floor.
 
 | Role | Desk (read alone) | Projected (≥ 3 m) |
 |---|---|---|

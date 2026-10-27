@@ -1,6 +1,6 @@
 # Data
 
-A chart proves a sentence; a table serves lookup. The house voice is the consulting exhibit: Zelazny's *Say It With Charts* (McKinsey), Minto's pyramid, Tufte's data-ink, IBCS notation (ISO 24896). AI charts fail by decoration: donuts, gauges, rainbow series, legends, chart cards, invented numbers.
+A chart proves a sentence; a table serves lookup. The voice is the consulting exhibit: Zelazny's *Say It With Charts* (McKinsey), Minto's pyramid, Tufte's data-ink, IBCS notation (ISO 24896). AI charts fail by decoration: donuts, gauges, rainbow series, legends, chart cards, invented numbers.
 
 ## Charts
 
