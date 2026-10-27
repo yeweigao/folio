@@ -20,7 +20,7 @@ Design is deciding what is seen first, what recedes, and what never appears. Thi
 - **Color is a role, not a decoration.** Hue carries meaning; every foreground stays distinct from the ground it actually touches.
 - **A deliverable has rhythm, not monotony.** Dense, quiet, and loud units follow the content; repeat to orient, break to signal a change.
 - **Information is encoded, not decorated.** Data takes a readable form; decoration never poses as evidence, and information never depends on color alone.
-- **An image is information, not filler.** Evidence, explanation, or declared atmosphere; keep only the images whose removal would lose something.
+- **An image is information, not filler.** Evidence, explanation, setting, or atmosphere; distinguish illustrative imagery from documentary proof.
 - **Style is a constraint system, not an element set.** Strip away colors and fonts, and the piece is still recognizable.
 - **The frame is composed, not inherited.** Format, crop, and spread boundaries shape the composition; use the edge deliberately.
 
@@ -35,7 +35,7 @@ Each decision informs the next; revisit earlier decisions when later ones fail. 
 5. **System.** Read the active theme's mother tongue and methods whole, plus its chosen dialect. Declare grid, type ramp, faces, and color roles once for the deliverable. [Grid](references/craft/grid.md), [type](references/craft/type.md), [color](references/craft/color.md).
 6. **Sequence.** For each unit, choose its job and [form](references/forms.md), then methods from the active theme to carry them; combine, reuse, or change methods as the content requires within the shared system. Read that theme's variations when the content calls for a turn.
 7. **Make.** The hardest unit first, with real content.
-8. **Inspect.** Read the active theme's anti-patterns; inspect the final export at viewing size against the production floors, relevant craft, and theme's test. A dialect sets its own test; with the mother tongue alone, use philosophy 12: strip away colors and fonts, and the piece is still recognizable.
+8. **Inspect.** Read the active theme's anti-patterns; inspect the final export at viewing size against production floors and relevant craft. Judge hierarchy, relationships, and rhythm; fix identified weaknesses and compare renders before and after. Apply the design philosophy and any chosen dialect's test.
 
 Critique uses 1–6 to understand the supplied work and its existing system, then 8 to judge it.
 

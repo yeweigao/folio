@@ -2,13 +2,13 @@
 
 An image earns its place as evidence, explanation, or atmosphere; its source must fit that job.
 
-- **An image has a primary job, not a vacant slot.** Remove it, and something must be lost.
+- **An image has a primary job, not a vacant slot.** Setting and atmosphere are purposes too.
 
-| Job | Proves or teaches | Must carry |
+| Job | Contributes | Must carry |
 |---|---|---|
 | Evidence | A place, product, person, interface, result | Caption (who, what, where, when, source) and a traceable origin |
 | Explanation | A diagram, map, pictogram, process, mechanism, or a story that is the content | One drawing style for the piece, labels as live text |
-| Atmosphere | Material, light, temperament | Honesty that it is atmosphere, never proof |
+| Atmosphere | Setting, material, light, feeling | Honesty that it is atmosphere, never proof |
 
 - **The job picks the source, not convenience.** Choose a source that can meet the task and its evidence needs; required imagery remains a material requirement.
 

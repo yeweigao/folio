@@ -43,7 +43,7 @@ The International Typographic Style: Müller-Brockmann's *Grid Systems*, Ruder's
 
 ## Images
 
-- **A photograph is a fact, not a mood.** *Sachfotografie*, edge to edge or cut by a hard horizontal; no plate, shadow, radius, or scrim beyond legibility.
+- **A photograph serves the subject, not a generic mood.** *Sachfotografie*, edge to edge or cut by a hard horizontal; no plate, shadow, radius, or scrim beyond legibility.
 - **Drawing is native when it explains, not when it decorates.** Geometry, diagrams, maps, pictograms; illustration flat, one line weight, one style, on the grid, colored from the roles. Clip art, mascots, blob people, emoji, and echoing icon sets stay out.
 
 ## Space and furniture
