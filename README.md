@@ -38,13 +38,13 @@ Agents reach for the same moves. Folio names each one and gives the alternative.
 12. Style is a constraint system, not an element set.
 13. The frame is composed, not inherited.
 
-**A theme, not a template.** The Swiss mother tongue (Müller-Brockmann, Ruder, Hofmann, *Neue Grafik*) holds every piece together. A dialect is a named movement: its people, place, and period, and the three or four Swiss rules it overturns across the whole piece. Nine are in the library, from De Stijl to Swiss Brutal. The masters' moves inside Swiss, Crouwel's grid-built letters, Gerstner's programmes, Isotype rows, Vignelli's Unigrid, live in its methods. One of 21 variations breaks a rule where the content turns.
+**A theme, not a template.** By default, the Swiss mother tongue (Müller-Brockmann, Ruder, Hofmann, *Neue Grafik*) holds the work together. A dialect is a named movement: its people, place, and period, and the three or four Swiss rules it overturns across the whole piece. Nine are in the library, from De Stijl to Swiss Brutal. The masters' moves inside Swiss, Crouwel's grid-built letters, Gerstner's programmes, Isotype rows, Vignelli's Unigrid, live in its methods. One of 21 variations breaks a rule where the content turns.
 
-**Forms and methods.** Each unit takes one of eleven forms by what the reader must do. The theme's methods cross eight reader tasks with text, image, data, and space, each cell a master's move, built from Gestalt, Bertin's visual variables, and Gerstner's morphological box.
+**Forms and methods.** Each unit takes a form by its reader task. Read the theme's methods whole, then choose and combine them per unit within one system. Swiss crosses eight tasks with text, image, data, and space, drawing on Gestalt, Bertin's visual variables, and Gerstner's morphological box.
 
-**Craft that holds up.** Typography, fonts, grid, imagery, copy, and motion, plus color with 21 named classics from International Klein Blue to Cloud Dancer, and data in the McKinsey exhibit tradition with IBCS notation.
+**Craft that holds up.** Type, grid, imagery, copy, motion, and color with 21 named starting points; data follows the reader's question, with consulting exhibits and IBCS as report conventions. Specialist craft is read when the task needs it, including missing assets.
 
-**Floors.** Facts stay exact. Text holds 4.5:1 on its actual composite. The final export is inspected, not the draft.
+**Floors.** Facts stay exact. Normal text holds 4.5:1, verified large text 3:1, against its actual ground at viewing size. The final export is inspected; [production](references/production.md) and [color](references/craft/color.md) hold the conditions.
 
 ## Dialects
 
@@ -52,7 +52,7 @@ Agents reach for the same moves. Folio names each one and gives the alternative.
 |---|---|---|
 | *the mother tongue alone* | Argues, reports, testifies, surveys, counts, or lists | — |
 | [De Stijl](references/themes/swiss/dialects/de-stijl.md) | Relates: parts whose proportions and balance are the subject | Black bars and primary planes in equilibrium |
-| [Bauhaus](references/themes/swiss/dialects/bauhaus.md) | Explains structure: how parts, geometry, or proportion work | One primitive at changing scale, one primary, bars |
+| [Bauhaus](references/themes/swiss/dialects/bauhaus.md) | Celebrates or explains: events, culture, education, where geometry can carry the subject | Primaries and primitives on one module, overlapping into figures |
 | [Brodovitch](references/themes/swiss/dialects/brodovitch.md) | Seduces: fashion, beauty, portraits, exhibitions, where the image is the subject | Didot type colliding with a daring crop; spreads paced like film |
 | [Polish Poster School](references/themes/swiss/dialects/polish-poster.md) | Interprets: a cultural subject that wants a point of view | One authored, hand-made metaphor |
 | [Ulm](references/themes/swiss/dialects/ulm.md) | Coordinates: instructions, wayfinding, a system of related messages | Rules for every case; color and pictograms as codes |
@@ -90,7 +90,7 @@ Ask for the work. The skill triggers on visual design, redesign, or critique, an
 ## Structure
 
 ```
-SKILL.md              philosophy, the eight decisions, theme and dialects, defaults
+SKILL.md              philosophy, the eight decisions, theme selection and dialects
 references/
   production.md       floors: scope, viewing, frame, inspection
   surfaces/           slides · poster · web · canvas · handbook
@@ -99,13 +99,13 @@ references/
   craft/              type · color · grid · imagery · data · copy · motion
 ```
 
-Every file serves one decision in the eight-step Practice of `SKILL.md`: brief, reader, material, move, system, sequence, make, inspect. A change goes to the file of the decision it changes; a new file only for a new decision; no file depends on a later step.
+Each rule has one home: production for floors, forms for reader tasks, surfaces for viewing and export, craft for reusable technique, themes for visual grammar. Read references when a decision needs them and revisit as necessary; add a file only for a distinct responsibility or an independent theme.
 
 ## 中文
 
 Folio 是给 AI agent 用的设计 skill：PPT、海报、网页、画布、手册，做出瑞士风，不再一眼 AI 味。
 
-13 条设计哲学，一套瑞士母语，瑞士大师方法，21 种变奏，9 种方言。方言是有名有姓的设计运动，管整件作品的美学：风格派、包豪斯、Brodovitch 时尚杂志、波兰海报学派、乌尔姆、瑞士朋克、孟菲斯、原研哉（ma 間）、粗野主义。大师方法是大师们在瑞士语法里琢磨出的单页招式：Crouwel 的格子造字、Gerstner 的程序规则、Isotype 符号计数、Vignelli 的 Unigrid、字穿图，任何方言都能调用。以后加新主题，带上自己的母语、方法、变奏和方言即可；形式、载体、工艺各主题共用。
+13 条设计哲学，一套瑞士母语，瑞士大师方法，21 种变奏，9 种方言。方言是有名有姓的设计运动，管整件作品的美学：风格派、包豪斯、Brodovitch 时尚杂志、波兰海报学派、乌尔姆、瑞士朋克、孟菲斯、原研哉（ma 間）、粗野主义。方法是整份作品的元素处理词汇：Crouwel 的格子造字、Gerstner 的程序规则、Isotype 符号计数、Vignelli 的 Unigrid、字穿图；先整体读，再按单元的任务选用和组合。新主题在 `references/themes/<theme>/` 带上母语、方法、变奏、反模式和方言，由工作流读取当前主题；形式、载体、工艺共用。
 
 没有点名时按内容在做什么选方言，格式从不决定方言；点名了风格或人物，就照它的谱系走。安装方式同上。
 

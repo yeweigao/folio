@@ -27,10 +27,10 @@ The grid decides relationships; type decides whether they can be read. AI typogr
 - **Lines break by meaning, not by width.** Titles in balanced lines; headings, labels, and cells follow their content.
 - **Spacing is designed, not typed.** Body keeps the font's spacing; display tracking follows the actual letterforms; CJK and Latin are separate decisions; the gap between them comes from the font or 1/8–1/4 em.
 - **Punctuation is exact, not approximate.**
-  - Flush left; justify only with language-aware spacing. No closing punctuation at a line start or opening at a line end; no widows or orphans.
+  - Align by reading task; justify only with language-aware spacing. No closing punctuation at a line start or opening at a line end; no widows or orphans.
   - English: curly quotes, en dash for ranges, true minus, no em dash as a pause. Chinese: one quotation style, ——, ……, 《》 only for titles of works.
   - Tabular figures in tables, proportional in display; thin space before a unit, none before %.
-  - No all-caps sentences, no tracked caps below 12 px, no outlined, glowing, or gradient text.
+  - Capitalization, tracking, and display effects follow the theme; sustained reading keeps familiar letterforms and enough stroke at viewing size.
 
 ## Faces
 

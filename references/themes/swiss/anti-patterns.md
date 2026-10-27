@@ -1,6 +1,6 @@
 # Anti-patterns
 
-Why defaults fail. The fix lives in [SKILL.md](../../../SKILL.md), the surface, and the craft file; this file holds the reason and its basis. **Evidence** is a concrete failure of legibility, navigation, honesty, or production, and holds in every theme: test the result. **House** is this theme's preference; a brief, brand, or dialect may override it. A style choice alone is not a failed check.
+Why defaults fail. The [mother tongue](mother-tongue.md) sets the house; the [production charter](../../production.md) holds shared floors. **Evidence** is a concrete failure of legibility, navigation, honesty, or production: test the result. **House** is this theme's preference; a brief, brand, or dialect may override it. Functional backing, shadow, or halo is judged by legibility; a style choice alone is not a failed check.
 
 ## Layout
 
@@ -21,7 +21,7 @@ Why defaults fail. The fix lives in [SKILL.md](../../../SKILL.md), the surface, 
 
 | Pattern | Why it fails | Basis |
 |---|---|---|
-| Gradients, glow, glass, drop shadows, fake 3D | A familiar effect stands in for a subject-specific decision | house |
+| Gradients, glow, glass, drop shadows, fake grain, fake 3D | A familiar effect stands in for a subject-specific decision | house |
 | Greys invented per component | The page turns into boxes | house |
 | Several accents, or one accent for unrelated roles | Emphasis loses its meaning | house |
 | Warm paper on screen by habit | A palette convention stands in for a decision | house |
@@ -43,7 +43,7 @@ Why defaults fail. The fix lives in [SKILL.md](../../../SKILL.md), the surface, 
 | Pattern | Why it fails | Basis |
 |---|---|---|
 | Pie, donut, gauge for precise comparison | Angles and arcs hide close differences | evidence |
-| Dual axes | Scaling can manufacture a crossing or correlation | evidence |
+| Dual axes implying an unsupported crossing or correlation | Independent scales manufacture the apparent relationship | evidence |
 | A chart on a card with a legend and a grey plot | The box isolates it; the legend makes readers look twice | house |
 | Invented or unlabeled numbers | Deception, not design | evidence |
 | Reading text baked into images | It cannot be edited, searched, or read aloud | evidence |

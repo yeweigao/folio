@@ -2,7 +2,7 @@
 
 A single unit seen in passing: it works in three seconds from three meters, or it is walked past.
 
-## System
+## Starting system
 
 | Size | Trim (mm) | Distance | Distance-derived title cap-height floor (mm) |
 |---|---|---|---|
@@ -27,10 +27,9 @@ A single unit seen in passing: it works in three seconds from three meters, or i
 
 | The template move | Instead |
 |---|---|
-| Everything centered and stacked | Flush left on the grid; center only a monument-like object |
-| Gradient ground, glowing title | Paper, ink, one accent; the image or the type is the graphic |
-| A decorative border | The edge as the format; bleed the main element |
-| Stock photography | One real image, or type and geometry alone |
+| Everything given equal emphasis | A clear lead with supporting facts on shared axes |
+| A border unrelated to content | A frame that groups, directs, or defines the crop |
+| An unrelated stock photograph | An image that identifies or interprets this subject |
 
 ## Print
 

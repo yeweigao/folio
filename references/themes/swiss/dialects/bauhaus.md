@@ -1,11 +1,14 @@
-# bauhaus — one shape, one primary
+# bauhaus — construction from elements
 
-The Bauhaus, Weimar and Dessau, 1919–33: Herbert Bayer, László Moholy-Nagy, Joost Schmidt, Josef Albers; Bayer's universal alphabet, Schmidt's 1923 exhibition poster, the Dessau workshop prints. It inherits the [mother tongue](../mother-tongue.md) and replaces only these rules, across the whole piece:
+The Bauhaus, Weimar and Dessau, 1919–33: Herbert Bayer, Joost Schmidt, László Moholy-Nagy, Josef Albers, and Kandinsky's yellow triangle, red square, and blue circle; Schmidt's 1923 exhibition poster, Bayer's universal alphabet; carried on in the Bauhaus 100 posters of 2019. Spoken in Swiss, the Bauhaus constructs: the Vorkurs's elements, assembled on the Swiss module. It inherits the [mother tongue](../mother-tongue.md) and replaces only these rules, across the whole piece:
 
-- **Geometry is the content, not an illustration.** One primitive, circle, square, or triangle, repeats at changing scale and crop to show cycle, module, or direction; never a bullet or a corner ornament.
-- **One primary, not a palette.** Red, blue, or yellow, one per piece; further levels come from line weight or a field.
-- **Bars, not hairlines.** Heavy rules structure the page; a geometric sans, Latin set lowercase after Bayer.
+- **Primaries together, not one accent.** Red, yellow, and blue with black, on white or off-white paper; no other hue.
+- **The image is constructed from elements, not photographed or drawn.** Point, line, and plane, after Kandinsky's *Point and Line to Plane*: circle, square, triangle, bar, and their halves and quarters assemble the subject, a face, a chair, a letter, a number.
+- **Shapes overlap, not only abut.** Where two primaries cross, one overprints or cuts the other.
+- **Type is a shape among shapes, not a caption.** A geometric sans or constructed capitals, after Bayer and Schmidt, set vertical, diagonal, or across the field; Latin may go lowercase.
 
-**Test:** Remove the color, and the shapes still explain the content.
+**Swiss keeps:** The module: every shape snaps to one square grid at doubling sizes; reading text, the type ramp, and the facts.
 
-**Caricature:** Primary-color confetti: a scattered red circle, yellow triangle, and blue square; retro poster type; a beige ground.
+**Test:** Remove the type, and the shapes still compose the subject on the grid.
+
+**Caricature:** Shapes scattered off the grid with no relation; pastel or teal "Bauhaus"; gradients, shadows, rounded UI cards; geometry pasted beside an ordinary layout.

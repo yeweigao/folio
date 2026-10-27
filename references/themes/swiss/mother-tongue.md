@@ -1,6 +1,6 @@
 # Swiss — the mother tongue
 
-The International Typographic Style: Müller-Brockmann's *Grid Systems*, Ruder's *Typographie*, Hofmann's Basel, *Neue Grafik*; grid, asymmetry, and objectivity, set for Chinese and Latin. It governs relationships, so it hosts other movements without becoming costume. Every dialect inherits this file and replaces only what it names, across the whole piece. Delivery follows the [production charter](../../production.md); numbers live in the craft files; the masters' moves live in [methods](methods.md).
+The International Typographic Style: Müller-Brockmann's *Grid Systems*, Ruder's *Typographie*, Hofmann's Basel, *Neue Grafik*; grid, asymmetry, and objectivity, set for Chinese and Latin. It governs relationships, so it hosts other movements without becoming costume. Every dialect inherits this file and replaces only what it names, across the whole piece. Delivery follows the [production charter](../../production.md); measurements live in the surface and craft files; the masters' moves live in [methods](methods.md).
 
 ## Lineage
 
@@ -12,9 +12,9 @@ The International Typographic Style: Müller-Brockmann's *Grid Systems*, Ruder's
 
 ## Grammar
 
-- **The grid comes before the content, not after.** Six shared tracks, twelve to subdivide; margins, gutters, module, and leading set before anything is placed.
+- **The grid comes before placement, not after.** Six shared tracks, twelve to subdivide; margins, gutters, module, and leading set before anything is placed.
 - **Asymmetry is the default, not a gesture.** Flush left, ragged right, unequal spans; centering needs a reason.
-- **Rules, not boxes.** An opening rule establishes a table, index, or figure; hairlines separate; a closing rule completes. No shadows, no floating plates.
+- **Rules, not boxes.** An opening rule establishes a table, index, or figure; hairlines separate; a closing rule completes. No decorative shadows, glow, or floating plates.
 - **A field resets every foreground, not only the ground.** Paper, soft, dark, and accent each carry a complete palette, so any field nests in any other.
 - **Text never shrinks to fit.** Recompose first; edit or paginate within scope.
 - **The subject supplies the move, not the style.** A speaking unit has one leading idea, carried by one or more methods; reference units repeat a dependable structure; a [variation](variations.md) marks a turn.
@@ -24,7 +24,7 @@ The International Typographic Style: Müller-Brockmann's *Grid Systems*, Ruder's
 - **Roles before faces.** Reading, display, apparatus; one family often serves all three; a CJK/Latin pair is one voice.
 - **Display has three lineages, none more refined.** A heavy grotesque for mass, a large light sans for scale without a black block, a high-contrast serif or Song for editorial and cultural weight. The subject and the viewing distance choose.
 - **One hierarchy, held.** Weight-led, scale-led, or single-weight; about three levels per unit; a change of register is deliberate.
-- **Titles inherit the reading family, unless another voice earns its role.** Sustained reading may take a text serif; apparatus a sans. See [fonts](../../craft/type.md).
+- **Titles inherit the reading family, unless another voice earns its role.** Sustained reading may take a text serif; apparatus a sans. See [type](../../craft/type.md).
 
 ## Color
 
@@ -39,7 +39,7 @@ The International Typographic Style: Müller-Brockmann's *Grid Systems*, Ruder's
 
 - **One accent, not a palette.** Another hue enters only as a declared second ink, a print stock, a mapped function color (at most three, with a legend, never the only code), or an overprint.
 - **The accent is an exception, not a second paper.** Paper ≥ 50% of the area; accent ≤ 10%, ≤ 20% on a statement unit; a full accent field is a variation.
-- **The accent comes from the brand or the subject, and returns rarely enough to matter.** White paper on screen; a warm screen ground is a brand decision. Values live in [color](../../craft/color.md).
+- **The accent comes from the brand or the subject, and returns rarely enough to matter.** White paper on screen; a warm screen ground is a brand decision. The theme's habit is Folio vermilion, with Folio signal yellow as a second ink; values live in [color](../../craft/color.md).
 
 ## Images
 
@@ -48,7 +48,7 @@ The International Typographic Style: Müller-Brockmann's *Grid Systems*, Ruder's
 
 ## Space and furniture
 
-- **One module, few axes.** Distances group, separate, or focus; leading keeps its own rhythm.
+- **One module, few axes.** Half within a group, one between peers, two between sections; distances group, separate, or focus, while leading keeps its own rhythm.
 - **Furniture earns its place by function, not by look.** *Kopfzeile* and *Fusszeile* locate, *Verzeichnis* serves lookup, *Bildlegende* ties evidence to source, *Kennzahl* makes a consequential quantity visible, *Zeitachse* needs a real sequence, *Bemassung* a real measure.
 - **A reading relationship comes before a layout.** Comparison, argument with aside, paired annotation, collection, continuous scene; see [grid](../../craft/grid.md).
 

@@ -2,7 +2,7 @@
 
 A deck is presented at a distance or read alone; choose one mode per deck. Argument slides make one point; reference slides make lookup easy. Preserve an existing deck or brand while meeting the mode's floor.
 
-## System
+## Starting system
 
 - 1280 × 720; margins 70; 12 columns × 73 with 24 gutters (content 1140); column n starts at 70 + 97n; module 8 px.
 - One master, vertical zones in px: header rule 26–32, kicker 50–70, reading-slide title 78–141, content 157–653, footer 688–708. A graphic display on a cover or opener may use the content zone and exceed the display range; reading text keeps its floor.
@@ -23,7 +23,7 @@ A deck is presented at a distance or read alone; choose one mode per deck. Argum
 - **The exhibit changes; the axis does not.** Every slide hangs from the same master lines.
 - **The content owns the area, not the furniture.** A data slide gives the chart most of the field; a cover carries only its essentials.
 - **Modules are sized by priority, not by count.** Parallel parts share gutters; equal peers may take equal spans.
-- **A teaching deck separates doing from answering.** A stage label says what to do now; answers sit on their own slide; focus words take weight or position, not a new color.
+- **A teaching deck separates doing from answering.** A stage label says what to do now; answers sit on their own slide; focus words use the declared emphasis role.
 
 ## Where decks go generic
 

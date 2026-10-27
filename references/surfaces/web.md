@@ -2,12 +2,12 @@
 
 A page is read, scrolled, clicked, used by keyboard, and loaded on a slow phone. It is not a tall poster.
 
-## System
+## Starting system
 
 - Content = min(1440, viewport − 2 × max(24 px, 5vw)); 12 columns, 24 gutters: 1296 wide at a 1440 viewport, capped at 1440 from 1600.
 - Columns collapse where the content breaks, around 1024 / 768 / 480; reflow to 320 CSS px; tables and maps may scroll within their own region.
-- Text 16–20 px, leading 1.5–1.7, measure ≤ 65ch (CJK 25–35); H1 ≤ 80 px; a display word or number ≤ 112 px, set as a graphic.
-- Tokens: paper, ink, accent, muted, line, focus. The theme sets radius and depth; Swiss uses radius 0 and no shadows.
+- Text 16–20 px, leading 1.5–1.7, measure ≤ 65ch (CJK 25–35); H1 starts at 40–80 px. A graphic word or number takes the scale its composition needs, reflowing at smaller viewports.
+- Tokens: ground, text, emphasis, muted, line, focus. The theme sets radius, depth, and palette.
 
 ## Principles
 
@@ -22,10 +22,10 @@ A page is read, scrolled, clicked, used by keyboard, and loaded on a slow phone.
 
 | The template move | Instead |
 |---|---|
-| Eyebrow, centered headline, gradient button, three cards, logo wall | A flush-left statement, one line, one action |
+| A hero formula unrelated to the task | The subject, its proof, and a clear next action |
 | Icon, title, two lines, in threes | Sections shaped by their tasks |
 | Fade-up on everything | Content already there |
-| Glass, glow, purple gradients | Paper, ink, one accent; texture from real images |
+| Surface effects competing with content | Separation where needed; expression from the chosen theme |
 | "Learn more" | A verb and an object |
 
 ## Done means

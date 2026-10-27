@@ -6,8 +6,8 @@ Choose the form first: what the unit must make the reader do. The theme's method
 |---|---|---|---|---|
 | Cover | Identify the work | Find the lead; feel the edge | Title, maker, date; one image or typographic idea | A slogan replaces the title |
 | Statement | Make one sentence memorable | Find the lead | One claim, almost nothing else | Evidence or explanation creeps in |
-| Exhibit | Make one object seen | Find the lead; feel the edge | The subject on ≥ 40% of the area, labeled directly | It shrinks to a corner or shares the stage |
-| Argument | Make a judgment accepted | Find the lead; compare | A judgment title, countable evidence, the implication in one place | Numbers without a judgment; evidence off the claim's axis |
+| Exhibit | Make one object seen | Find the lead; feel the edge | An identifiable subject, labeled directly; scale or isolation makes it the lead | The subject is lost or shares the stage |
+| Argument | Make a judgment accepted | Find the lead; compare | A judgment title, relevant evidence, the implication in one place | Evidence without a judgment; evidence off the claim's axis |
 | Sequence | Lead through steps, time, or cause | Follow the order | One action per step, then the conclusion | Snake columns; shuffled or flattened order |
 | Comparison | Make a difference visible | Compare | Shared scales, direct labels | Misaligned scales; color as the only difference |
 | Exercise | Make the reader do it | Follow the order; see the groups | The task and room to answer; answers on another unit | Answers on the same unit |

@@ -1,12 +1,14 @@
 # swiss-punk — the grid tested
 
-Swiss Punk and New Wave typography, Basel, 1968–1980s: Wolfgang Weingart, April Greiman, Dan Friedman, Willi Kunz; then *Emigre*, Rudy VanderLans and Zuzana Licko. It inherits the [mother tongue](../mother-tongue.md) and replaces only these rules, across the whole piece:
+Swiss Punk and New Wave typography, Basel, 1968–1980s: Wolfgang Weingart, April Greiman, Dan Friedman, Willi Kunz; then *Emigre*, Rudy VanderLans and Zuzana Licko. Spoken in Swiss, Swiss Punk is Swiss arguing with itself: the same grid and grotesque, displaced, stepped, and layered until the system shows. It inherits the [mother tongue](../mother-tongue.md) and replaces only these rules, across the whole piece:
 
-- **The grid is tested, not obeyed.** Rotation, stepped baselines, and displacement run through the piece; body text, labels, and data stay horizontal and on the grid. The single-break rotation limits do not constrain this dialect's display.
-- **Type speaks, not only sizes.** Display spacing, weight, and direction change within a line; several registers collide.
-- **Layers make depth, not separation.** Overprint, transparent screens, and montage; never under reading text.
+- **The grid is tested, not obeyed.** Rotation, stepped baselines, and displacement run through the piece as its grammar.
+- **Type speaks, not only sizes.** Spacing, weight, and direction change within a display line; several registers collide.
+- **Layers overprint off register, not apart.** Two or three inks of one word or shape, slipped by a fraction of a stroke, still read as one form with a vibrating edge, like a misregistered offset proof; screens and montage stack on the same axis; never under reading text.
 - **The process is the image, not a texture.** Film montage, enlarged halftone, early bitmap type.
+
+**Swiss keeps:** The grotesque, the grid as the reference being tested, and body text, labels, and data horizontal on it.
 
 **Test:** The typographic relations themselves express the subject; remove one tilted word and the dialect survives.
 
-**Caricature:** Glitch filters, random distress, illegible stacks; one rotated word on an otherwise Swiss page.
+**Caricature:** Glitch filters, random distress, illegible stacks; a word repeated and spread down the page like an echo; one rotated word on an otherwise Swiss page.

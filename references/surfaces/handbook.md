@@ -2,7 +2,7 @@
 
 Brochures, handbooks, and catalogs are read slowly and returned to. Density can be high, but every page needs a way in. The proof, not the screen, is the judge.
 
-## System
+## Starting system
 
 - A4 (default): margins top 18, bottom 21, inner 19, outer 15 mm; text area 176 × 258; six tracks of about 24.3 mm with 6 mm gutters, twelve when needed; module 21 pt; body 10.5 / 18.4 pt.
 - A5: margins 15 / 18 / 18 / 13; text area 117 × 177; 6 × 14.5 mm, 6 mm gutters; module 18 pt; body 9.5 / 15.2 pt; never three text columns.
@@ -30,10 +30,10 @@ Brochures, handbooks, and catalogs are read slowly and returned to. Density can 
 
 | The template move | Instead |
 |---|---|
-| Fake paper grain, tape, shadows, handwriting | The real stock is the texture |
-| A theme color per chapter | One accent for the book |
+| Texture that obscures reading | Stock or a chosen finish supports the content |
+| Chapter identity depends on color alone | Repeated heads, folios, and a non-color cue |
 | Decorative chapter numbers | Numbers only where they navigate |
-| Justified text with stretched spacing | Flush left; widows and orphans fixed |
+| Justified text with stretched spacing | Language-aware composition; widows and orphans fixed |
 | Leading inflated or body squeezed to fit pages | A changed content plan, not changed type |
 
 ## Print

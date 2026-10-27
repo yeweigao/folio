@@ -7,7 +7,7 @@ Floors for making and delivering work, not design philosophy. Read this and the 
 - **The brief binds, not the habit.** Supplied facts, fixed wording, format, and brand come first; refinement keeps the existing system, redesign may replace it within scope.
 - **Facts are exact; wording is a disclosed service.** Names, dates, numbers, places, quotations, and required text never change; other edits stay within scope and are reported. Fit frozen content by composition; if fixed facts conflict with a fixed text limit, ask which can change.
 - **Nothing invented poses as real.** Label demo values as illustrative and calculated values with their basis; where requested real-world names, locations, hours, lineups, or product options are missing, mark them unprovided in the deliverable rather than fabricating them.
-- **Truth and legibility are floors; style yields above them.** The surface governs dimensions, viewing, and export; a dialect overrides the mother tongue; craft defaults yield to the chosen system.
+- **Truth and legibility are floors; style is chosen.** The brief fixes scope; the surface fixes viewing and export. Theme and dialect set style; craft and surface starting values may change, explicit floors do not.
 
 ## Viewing contract
 
@@ -21,7 +21,7 @@ Establish format, physical or viewport size, viewing distance or zoom, reading t
 | [Web](surfaces/web.md) | Reflow, keyboard, states, browsers |
 | [Canvas](surfaces/canvas.md) | Overview and reading zoom, grouping, navigation |
 
-- **Text holds 4.5:1 on its actual composite and stays at or above the surface floor.** This is Folio's floor, not an accessibility conformance claim.
+- **Text separates from its actual ground.** Normal text ≥ 4.5:1; verified large text ≥ 3:1, otherwise use 4.5:1. Judge size after scaling and at the intended viewing distance; keep the surface's size floors. Essential non-text cues hold 3:1 against adjacent colors. These thresholds alone do not establish accessibility conformance; [color](craft/color.md) defines the screen-size test.
 - **Reading text is live, not baked.** An image-filled or cropped title keeps a complete live-text equivalent.
 - **Static work stays static.** Motion belongs to interactive work only.
 
