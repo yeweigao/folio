@@ -1,14 +1,14 @@
-# brodovitch — the fashion magazine
+# Brodovitch — the fashion magazine
 
-Alexey Brodovitch's *Harper's Bazaar*, New York, 1934–58, with Carmel Snow, Martin Munkácsi, Richard Avedon, Lillian Bassman, and Cassandre's covers; Alexander Liberman's *Vogue*; Fabien Baron's *Harper's Bazaar* (1992) and its Didot masthead. Spoken in Swiss, Brodovitch keeps the grid and the white, and lets desire lead: one photograph and one display word collide, spread after spread. It inherits the [mother tongue](../mother-tongue.md) and replaces only these rules, across the whole piece:
+Alexey Brodovitch's *Harper's Bazaar*, New York, 1934–58, with Munkácsi and Avedon; Liberman's *Vogue*; Fabien Baron's 1992 *Bazaar* and its Didot masthead. Spoken in Swiss, Brodovitch keeps the grid and the white and lets desire lead: one photograph and one display word collide, spread after spread.
 
 - **Type and image collide, not sit side by side.** A Didot or Bodoni display word covers, cuts, or yields to the photograph; a text block may echo the figure's line.
 - **The photograph is desire, not fact.** The body in motion, a daring crop that keeps one gesture; credits name model, garment, and photographer, and never invent one.
 - **The issue is paced like film, not stacked as pages.** Scale, crop, and white change from spread to spread; a quiet spread prepares a loud one.
 - **Black and white is the palette, not a restraint.** Deep black and paper white; one cool accent or one duotone at most.
-- **A centered axis is allowed, not only flush left.** Covers and openers may hang on one axis; place, date, and name in small tracked capitals.
+- **A centered axis is allowed.** Covers and openers may hang on one axis; place, date, and name in small tracked capitals.
 
-**Swiss keeps:** The column grid, white as structure, and reading text and credits in a quiet grotesque.
+**Swiss keeps:** the column grid, white as structure, and reading text and credits in a quiet grotesque.
 
 **Test:** Remove the type, and the photograph loses its composition; remove the photograph, and the type loses its reason.
 

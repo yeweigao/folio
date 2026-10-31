@@ -12,9 +12,8 @@ On an infinite canvas the unit is the frame, and position is information: distan
 ## Principles
 
 - **Grouping is visible, not inferred.** Space or labeled regions distinguish groups; the theme sets their appearance.
-- **Every frame aligns with a neighbor, not with nothing.** Top, left, or center.
+- **Every frame aligns with a neighbor.** Top, left, or center.
 - **One skeleton per board, not a scatter.** Linear for flows, swim lanes (two to four) for roles, or a map: one overview with three to six details.
-- **One task per frame.** A claim, a comparison, a sequence, or lookup.
 - **Each zoom has its reader.** Body for 100%, navigation for the overview; scale titles or add a navigator rather than hope.
 - **Connectors are a last resort, not wiring.** Orthogonal, 1 px for relations and 2 px for the main flow, never across a frame.
 

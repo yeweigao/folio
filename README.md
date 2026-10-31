@@ -40,17 +40,20 @@ Agents reach for the same moves. Folio names each one and gives the alternative.
 
 **A theme, not a template.** By default, the Swiss mother tongue (Müller-Brockmann, Ruder, Hofmann, *Neue Grafik*) holds the work together. A dialect is a named movement: its people, place, and period, and the three or four Swiss rules it overturns across the whole piece. Nine are in the library, from De Stijl to Swiss Brutal. The masters' moves inside Swiss, Crouwel's grid-built letters, Gerstner's programmes, Isotype rows, Vignelli's Unigrid, live in its methods. One of 21 variations breaks a rule where the content turns.
 
+**Three directions, one locked file.** Before anything is rendered, Folio drafts three directions: the mother tongue by the book, the mother tongue pushed, and the closest dialect. It renders the hardest unit in each, in one image, and waits for a choice. The choice is locked in a [DESIGN.md](references/design-md.md), Google's open format plus every unit's form, lead, named methods, and variation, so later units, sessions, and helpers build from the same file.
+
 **Forms and methods.** Each unit takes a form by its reader task. Read the theme's methods whole, then choose and combine them per unit within one system. Swiss crosses eight tasks with text, image, data, and space, drawing on Gestalt, Bertin's visual variables, and Gerstner's morphological box.
 
-**Craft that holds up.** Type, grid, imagery, copy, motion, and color with 21 named starting points; data follows the reader's question, with consulting exhibits and IBCS as report conventions. Specialist craft is read when the task needs it, including missing assets.
+**Craft that holds up.** Grid, type, color with 20 named starting points, copy, data, and imagery, read whole for every task; data follows the reader's question, with consulting exhibits and IBCS as report conventions.
 
-**Floors.** Facts stay exact. Normal text holds 4.5:1, verified large text 3:1, against its actual ground at viewing size. The final export is inspected; [production](references/production.md) and [color](references/craft/color.md) hold the conditions.
+**Floors.** Facts stay exact. Normal text holds 4.5:1, verified large text 3:1, against its actual ground at viewing size. The final export is inspected; [SKILL.md](SKILL.md) and [craft](references/craft.md) hold the conditions.
 
 ## Dialects
 
+The mother tongue alone suits material that argues, reports, testifies, surveys, counts, or lists; the closest dialect is still tested beside it.
+
 | Dialect | The material | Departs from Swiss |
 |---|---|---|
-| *the mother tongue alone* | Argues, reports, testifies, surveys, counts, or lists | — |
 | [De Stijl](references/themes/swiss/dialects/de-stijl.md) | Relates: parts whose proportions and balance are the subject | Black bars and primary planes in equilibrium |
 | [Bauhaus](references/themes/swiss/dialects/bauhaus.md) | Celebrates or explains: events, culture, education, where geometry can carry the subject | Primaries and primitives on one module, overlapping into figures |
 | [Brodovitch](references/themes/swiss/dialects/brodovitch.md) | Seduces: fashion, beauty, portraits, exhibitions, where the image is the subject | Didot type colliding with a daring crop; spreads paced like film |
@@ -90,24 +93,26 @@ Ask for the work. The skill triggers on visual design, redesign, or critique, an
 ## Structure
 
 ```
-SKILL.md              philosophy, the eight decisions, theme selection and dialects
+SKILL.md              philosophy, the eight steps and reading list, forms, floors, dialects
 references/
-  production.md       floors: scope, viewing, frame, inspection
-  surfaces/           slides · poster · web · canvas · handbook
-  forms.md            what each unit makes the reader do
-  themes/swiss/       mother tongue · master methods · 21 variations · 9 dialects · anti-patterns
-  craft/              type · color · grid · imagery · data · copy · motion
+  craft.md            grid · type · color · copy · data · imagery
+  design-md.md        the deliverable's DESIGN.md: tokens, directions, sequence, coverage
+  fonts.md            appendix: installing, embedding, licensing fonts
+  surfaces/           slides · poster · web (with motion) · canvas · handbook
+  themes/swiss/
+    theme.md          mother tongue · master methods · 21 variations · anti-patterns
+    dialects/         9 dialects
 ```
 
-Each rule has one home: production for floors, forms for reader tasks, surfaces for viewing and export, craft for reusable technique, themes for visual grammar. Read references when a decision needs them and revisit as necessary; add a file only for a distinct responsibility or an independent theme.
+Each rule has one home. Files read together are merged; files chosen between, surfaces and dialects, stay separate; rarely needed material is an appendix. Every task reads SKILL.md, craft, the theme, one surface, the DESIGN.md template, and each dialect a direction uses; once a DESIGN.md is locked, it stands in for the theme and dialects. Add a file only for a distinct choice or an independent theme.
 
 ## 中文
 
 Folio 是给 AI agent 用的设计 skill：PPT、海报、网页、画布、手册，做出瑞士风，不再一眼 AI 味。
 
-13 条设计哲学，一套瑞士母语，瑞士大师方法，21 种变奏，9 种方言。方言是有名有姓的设计运动，管整件作品的美学：风格派、包豪斯、Brodovitch 时尚杂志、波兰海报学派、乌尔姆、瑞士朋克、孟菲斯、原研哉（ma 間）、粗野主义。方法是整份作品的元素处理词汇：Crouwel 的格子造字、Gerstner 的程序规则、Isotype 符号计数、Vignelli 的 Unigrid、字穿图；先整体读，再按单元的任务选用和组合。新主题在 `references/themes/<theme>/` 带上母语、方法、变奏、反模式和方言，由工作流读取当前主题；形式、载体、工艺共用。
+13 条设计哲学，一套瑞士母语，瑞士大师方法，21 种变奏，9 种方言。方言是有名有姓的设计运动，管整件作品的美学：风格派、包豪斯、Brodovitch 时尚杂志、波兰海报学派、乌尔姆、瑞士朋克、孟菲斯、原研哉（ma 間）、粗野主义。方法是整份作品的元素处理词汇：Crouwel 的格子造字、Gerstner 的程序规则、Isotype 符号计数、Vignelli 的 Unigrid、字穿图；先整体读，再按单元的任务选用和组合。新主题在 `references/themes/<theme>/` 带上 `theme.md`（母语、方法、变奏、反模式）和 `dialects/`；形式、载体、工艺共用。
 
-没有点名时按内容在做什么选方言，格式从不决定方言；点名了风格或人物，就照它的谱系走。安装方式同上。
+没有点名时，先写三个方向：标准母语、加强母语、最贴近内容的方言；把最难的一页按三个方向各渲染一张，放在一张图里给你选。选定后锁进 DESIGN.md（每页的形式、主角、点名的方法和变奏），后续页面、会话和助手都照它做。点名了风格或人物，就只走它的谱系。安装方式同上。
 
 ## License
 

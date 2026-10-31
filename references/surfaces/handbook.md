@@ -7,7 +7,7 @@ Brochures, handbooks, and catalogs are read slowly and returned to. Density can 
 - A4 (default): margins top 18, bottom 21, inner 19, outer 15 mm; text area 176 × 258; six tracks of about 24.3 mm with 6 mm gutters, twelve when needed; module 21 pt; body 10.5 / 18.4 pt.
 - A5: margins 15 / 18 / 18 / 13; text area 117 × 177; 6 × 14.5 mm, 6 mm gutters; module 18 pt; body 9.5 / 15.2 pt; never three text columns.
 - Other formats: text width = trim − inner − outer; tracks combine into columns that hold a readable measure (Chinese 28–40 characters, Latin 60–75).
-- An A4 spread is a 420 × 297 mm trim; images may cross the binding, subjects stay clear of its allowance.
+- An A4 spread is a 420 × 297 mm trim. A spread is two real facing pages, not a label: verify order and sides in the assembled file; a crossing image keeps one source, scale, and crop coordinate; faces, labels, and subjects stay clear of the binding allowance.
 
 | Role (A4) | pt | Leading |
 |---|---|---|
@@ -22,7 +22,7 @@ Brochures, handbooks, and catalogs are read slowly and returned to. Density can 
 
 ## Principles
 
-- **Levels are few, not inflated.** At most four heading levels plus body and caption.
+- **Levels are few.** At most four heading levels plus body and caption.
 - **A paragraph is marked once, not twice.** A 1 em indent or 6 pt space.
 - **Pages have types, not one template.** Chapter opener, text page, plate, reference page; right-hand openers where the binding supports them, never forced with blanks.
 
@@ -33,13 +33,11 @@ Brochures, handbooks, and catalogs are read slowly and returned to. Density can 
 | Texture that obscures reading | Stock or a chosen finish supports the content |
 | Chapter identity depends on color alone | Repeated heads, folios, and a non-color cue |
 | Decorative chapter numbers | Numbers only where they navigate |
-| Justified text with stretched spacing | Language-aware composition; widows and orphans fixed |
 | Leading inflated or body squeezed to fit pages | A changed content plan, not changed type |
 
 ## Print
 
-- Small black text in 100K; the printer's stock profile, ink limit, and rich-black recipe; spot colors only when required.
-- Images 300 dpi at placed size; line art 600–1200 dpi or vector.
+- Color and image resolution per craft; line art 600–1200 dpi or vector.
 - Bleed 3, safe 5 as starting values; saddle stitch in multiples of four; creep and binding confirmed with the printer.
 - PDF/X-4 where accepted, fonts embedded, the agreed output intent.
 
