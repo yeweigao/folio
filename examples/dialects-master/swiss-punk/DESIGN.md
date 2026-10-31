@@ -37,6 +37,12 @@ components:
   paper-on-blue: { backgroundColor: "{colors.blue}", textColor: "{colors.neutral}" }
 ---
 
+## Invocation
+
+**沃尔夫冈·魏因加特（Wolfgang Weingart）的「瑞士朋克排印（Swiss Punk / New Wave）」 — Make this poster as Weingart made the Kunsthalle posters: break the baseline, step the text, slip the register, layer the process marks until the grid is tested everywhere at once.**
+
+This line governs the file. Where a parameter below and the named hand's evident way of working conflict on atmosphere or composition, the hand wins and the conflict is recorded in Record; the parameters bind absolutely on the facts, the contrast floors, live text, the format, and the bans.
+
 ## Overview
 One poster (print-first, read at arm's length and across a foyer) for a fictional public evening, THE GRID — three talks and a poster exhibition on the system behind modern design. It is one of nine dialect master examples in examples/dialects-master/: the source content (content.md) is identical in all nine; only the design changes. All names, the venue, and the times are illustrative. Theme: Swiss; dialect: Swiss Punk.
 Governing hand: Make this poster as Weingart made the Basel typographic posters: keep the grotesque and the grid, then test them — step the baselines, rotate the display line, slip one ink off register by a fraction of a stroke; body text, labels, and data stay horizontal on the grid; never glitch filters, never an illegible stack, never one tilted word as a garnish.
@@ -81,7 +87,7 @@ Ink on off-white #F5F2EA; the red #D10015 is the slipped second ink, blue #2255A
 One grotesque, Inter with Source Han Sans SC, in colliding registers: display at 168px, the stepped lines at 27px with shifting weights, facts at body size, horizontal, always.
 
 ## Layout
-Poster 900 × 1200. Zones in order: kicker — the words 'A PUBLIC EVENING · 公共讲座之夜 · BASEL RULES, TESTED' in the label token, tracked 0.14em — at top 44; the title construction from y=120, 430 tall; the stepped subtitle at y=600; the programme from y=900 behind a 3px ink rule; apparatus at the foot. The title is set three times: once on the grid at display 168/800 in ink, with its own red copy slipped +4px/+4px behind it (off-register overprint); once rotated −6° as an outline (格网 GRID, 96px, 3px ink stroke, transparent fill); and the subtitle is set as three stepped lines at 27px — 'Three talks and a poster exhibition' (indent 0, weight 400), 'on the system behind modern design' (indent 48, weight 600, the words 'modern design' in blue, the stepped setting's one blue), '三场讲座，一场海报展' (indent 96, weight 800). Below the programme rows, the remaining facts stand as two meta lines at 17px (date and venue; foyer and admission), and the illustrative line closes the poster at a declared local 12px in secondary, bottom-left. A halftone dot field fills one band inside the stepped zone: dots of 2.2px radius on a 15px pitch, ink on paper, 120 tall. The programme block stays horizontal and flush left on the grid — the reference the testing is measured against.
+Poster 900 × 1200. Zones in order: kicker — the words 'A PUBLIC EVENING · 公共讲座之夜 · BASEL RULES, TESTED' in the label token, tracked 0.14em — at top 44; the title construction from y=120, 430 tall; the stepped subtitle at y=600; the programme from y=900 behind a 3px ink rule; apparatus at the foot. The title construction is summoned, not coordinated (v0.5.3, from the name test): the title stands at display 168/800 in ink with its own red copy slipped off-register behind it (about 4px — the hand judges the slip), its baseline broken, letters dropped and lifted as Weingart breaks them; a rotated outline setting (格网 GRID, about 96px, ink stroke, transparent fill) crosses the construction. Displacement, stepping, and layering are the grammar. Ban: no displacement ever covers a fact — collisions stop at the facts' edge, the name test's recorded defect. The subtitle is set as three stepped lines at 27px — 'Three talks and a poster exhibition' (indent 0, weight 400), 'on the system behind modern design' (indent 48, weight 600, the words 'modern design' in blue, the stepped setting's one blue), '三场讲座，一场海报展' (indent 96, weight 800). Below the programme rows, the remaining facts stand as two meta lines at 17px (date and venue; foyer and admission), and the illustrative line closes the poster at a declared local 12px in secondary, bottom-left. A halftone dot field fills one band inside the stepped zone: dots of 2.2px radius on a 15px pitch, ink on paper, 120 tall. The programme block stays horizontal and flush left on the grid — the reference the testing is measured against.
 
 ## Do's and Don'ts
 Dialect test: the typographic relations express the subject — a grid arguing with itself; remove the rotated title and the dialect survives in the stepped lines and the slipped overprint. Ruled out: random distress, echoed words spread down the page, illegibility.
@@ -109,7 +115,7 @@ Text: display type tested, facts untouched and horizontal. Image: a halftone fie
 The programme is fictional and marked illustrative on the poster itself. No photography is used in this dialect render. Print proof: the HTML is the preview at poster scale; a press proof is unmade and would be checked before any real printing.
 
 ## Record
-Folio version: 0.5.2. Template version: 5. Files read: SKILL.md, craft, Swiss theme, swiss-punk dialect, poster surface, design-md template, signature.md. Date: 2026-10-31. Family master: none. Part of the dialects-master set; content source: examples/dialects-master/content.md.
+Folio version: 0.5.3. Template version: 6. Files read: SKILL.md, craft, Swiss theme, swiss-punk dialect, poster surface, design-md template, signature.md. Date: 2026-10-31. Family master: none. Part of the dialects-master set; content source: examples/dialects-master/content.md.
 
 ## Overrides
 Empty: no family master.

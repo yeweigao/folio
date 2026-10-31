@@ -37,6 +37,12 @@ components:
   paper-on-teal: { backgroundColor: "{colors.teal}", textColor: "{colors.neutral}" }
 ---
 
+## Invocation
+
+**「波兰海报学派（Polish Poster School）」 — Make this poster as Tomaszewski's school made the film posters: a painted metaphor before any information, letters manhandled by hand, the facts demoted to a quiet block at the foot.**
+
+This line governs the file. Where a parameter below and the named hand's evident way of working conflict on atmosphere or composition, the hand wins and the conflict is recorded in Record; the parameters bind absolutely on the facts, the contrast floors, live text, the format, and the bans.
+
 ## Overview
 One poster (print-first, read at arm's length and across a foyer) for a fictional public evening, THE GRID — three talks and a poster exhibition on the system behind modern design. It is one of nine dialect master examples in examples/dialects-master/: the source content (content.md) is identical in all nine; only the design changes. All names, the venue, and the times are illustrative. Theme: Swiss; dialect: Polish Poster School.
 Governing hand: Make this poster as Lenica made the Wozzeck poster: give the picture to one metaphor in one hand's line — here cut paper, a net of black bars falling over loose letters — and give the facts to the grid in live type; never a brush font, never distress as decoration, never a metaphor unrelated to the subject.
@@ -83,7 +89,7 @@ Live type in Inter with Source Han Sans SC; the title lettering is live text tur
 ## Layout
 Poster 900 × 1200 on ochre paper. The upper two-thirds are the picture: cut-paper letters tumbling into a net of black bars, the title lettering drawn as part of the picture (each letter a live-text span, turned by hand-like amounts). Facts stand flush left on the grid below, in live type.
 
-Composition, in numbers: the picture occupies y0–760 on the ochre ground. Title lettering: T H E G R I D as live spans at 120px/800, tops between y48–70, lefts from x70 to x790, each turned within ±5°; G and the I stand in the red, the rest in ink. Five loose letters fall through y250–410 (a in red, k in ink, m in teal, z in ink, q in teal) at 50–58px and weight 700, turned within ±22°. The net stands at (70,430), 760 × 300: bars 10px ink, verticals at x offsets 0/150/300/450/600/750, horizontals at y offsets 0/145/290. Caught glyphs stand upright in the cells at 44px/800 — first row: 19, 30 (red), 格， 网 (teal), 间； second row: 序 (teal), 列， 统 (red), 系， 块 (red). The facts block begins at y806, left 56, width 788: the live title at the title token, subtitle at 19px, programme rows at 19px with times bold, then the when/where/admission lines, then the illustrative line in secondary.
+Composition, in numbers: the picture occupies y0–760 on the ochre ground. The picture is summoned, not coordinated (v0.5.3, from the name test): the title lettering is manhandled by hand — T H E G R I D as live spans at display/800 across the top of the field, each letter nudged and turned (within ±6°), G and the I in the red, the rest in ink; their exact places are the hand's. Five loose letters fall through the middle field (a in red, k in ink, m in teal, z in ink, q in teal) at 50–58px and weight 700, turned as they fall. The net is drawn by hand beneath them: a field of black bars, roughly 760 × 300 in the picture's lower half, its lines allowed to sag under the caught glyphs — never ruled straight, never mechanical; a net that could be drawn with a ruler has failed and is redrawn. Caught glyphs stand upright in the cells at 44px/800 — first row: 19, 30 (red), 格， 网 (teal), 间； second row: 序 (teal), 列， 统 (red), 系， 块 (red). The facts block begins at y806, left 56, width 788: the live title at the title token, subtitle at 19px, programme rows at 19px with times bold, then the when/where/admission lines, then the illustrative line in secondary.
 
 ## Do's and Don'ts
 Dialect test: the picture says what a photograph could not — that the grid is a net: it catches falling letters and holds them in order. Ruled out: a surreal object unrelated to the subject, a brush font, distressed paper texture.
@@ -111,7 +117,7 @@ Text: title inside the picture as turned live letters; all facts as live type be
 The programme is fictional and marked illustrative on the poster itself. No photography is used in this dialect render. Print proof: the HTML is the preview at poster scale; a press proof is unmade and would be checked before any real printing.
 
 ## Record
-Folio version: 0.5.2. Template version: 5. Files read: SKILL.md, craft, Swiss theme, polish-poster dialect, poster surface, design-md template, signature.md. Date: 2026-10-31. Family master: none. Part of the dialects-master set; content source: examples/dialects-master/content.md.
+Folio version: 0.5.3. Template version: 6. Files read: SKILL.md, craft, Swiss theme, polish-poster dialect, poster surface, design-md template, signature.md. Date: 2026-10-31. Family master: none. Part of the dialects-master set; content source: examples/dialects-master/content.md.
 
 ## Overrides
 Empty: no family master.

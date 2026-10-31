@@ -1,5 +1,7 @@
 # Swiss Brutal — the structure shown
 
+**Invocation:** 粗野主义 Brutalism — Make work as a document of record: the construction shown, everything set as specification, one hazard figure at most; never polish, never decoration.
+
 Brutalism's exposed structure, from Le Corbusier's *béton brut* and the Smithsons to the web's brutalist revival (brutalistwebsites.com, 2014; Craigslist and the Drudge Report as raw precedents). Spoken in Swiss, Brutalism strips the grid of polish and shows it: no radius, no shadow, no apology, information as the only ornament.
 
 - **The grid is visible, not implied, and quieter than the text.** Hairlines at one weight in a mid grey, never full ink; a heavier ink rule only opens or closes a table; zero radius, no shadows, no gradients; a box only when it is the real structure.

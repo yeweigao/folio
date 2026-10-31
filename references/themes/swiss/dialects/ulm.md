@@ -1,5 +1,7 @@
 # Ulm — the system decides
 
+**Invocation:** 乌尔姆设计学院 HfG Ulm — Make work as Aicher and Bill made the Ulm system: rules before shapes, color only as labelled code, signs a stranger can extend; never a difference without a nameable reason.
+
 The HfG Ulm, 1953–68: Max Bill, Otl Aicher, Tomás Maldonado, Hans Gugelot; Braun with Dieter Rams, Aicher's Lufthansa identity and Munich 1972 Olympics. Spoken in Swiss, Ulm moves the decision from the page to the system: one set of rules, applied to every case.
 
 - **The system is the design, not the page.** Rules for every case come first; each unit is one application another designer could extend.

@@ -63,3 +63,20 @@ that did not close, facts a build spec silently truncated. Each is
 fixed in the current files. The lesson the set now teaches: a DESIGN.md
 earns "master-level" only when a stranger with nothing else can build
 the work from it — system, composition, and facts alike.
+
+## The name test, and the Invocation (v0.5.3)
+
+A second test followed the blind test: nine fresh agents received one
+sentence each — the dialect's proper name, nothing else — plus the
+same facts, and rebuilt the posters. The names matched or beat these
+parameterized files in five to six of nine (Brodovitch and the Polish
+school decisively; ma on atmosphere only; Ulm lost — its route line is
+this set's invention, which no name can know), and lost on discipline
+everywhere: invented fact prose, decoration covering facts, a title
+too small to read. So each DESIGN.md in this set now opens with an
+**Invocation** — the tested name, the named work, the imperative —
+governing the file, and the compositions of the gesture dialects
+(Brodovitch, Polish Poster, Swiss Punk, Memphis, ma) are specified as
+summonings with predicates and a ban, while the construction dialects
+keep their coordinates. The parameters remain what they always should
+have been: the discipline underneath the name.

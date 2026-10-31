@@ -99,7 +99,7 @@ Ask for the work. The skill triggers on visual design, redesign, or critique, an
 ## Structure
 
 ```
-SKILL.md              philosophy, the eight steps and reading list, forms, floors, dialects (v0.5.2)
+SKILL.md              philosophy, the eight steps and reading list, forms, floors, dialects (v0.5.3)
 references/
   craft.md            grid · type · color · copy · data · imagery
   design-md.md        the deliverable's DESIGN.md: tokens, directions, sequence, coverage

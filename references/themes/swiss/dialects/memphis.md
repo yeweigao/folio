@@ -1,5 +1,7 @@
 # Memphis — the party on the grid
 
+**Invocation:** 孟菲斯 Memphis Group, Ettore Sottsass — Make work as Sottsass and the group made the 1981 collection: pattern as clothing, primitives colliding at jaunty angles, hierarchy by exuberance; never good taste, never a pattern that carries information.
+
 Milan, 1981–88: Sottsass, Du Pasquier, De Lucchi, Shire; the Carlton bookcase, Sottsass's Bacterio laminate, Du Pasquier's patterns. Spoken in Swiss, Memphis keeps good form's grid and refuses its good taste.
 
 - **Color clashes on purpose, not one accent.** Several saturated hues with black and white, chosen as relations.

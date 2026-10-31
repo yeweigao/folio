@@ -1,12 +1,13 @@
 # DESIGN.md
 
-<!-- folio-template-version: 5 -->
+<!-- folio-template-version: 6 -->
 
 One file per deliverable, beside the work, holds every decision, so each unit, later session, or helper makes the same piece without rereading the theme. It follows the open [DESIGN.md](https://github.com/google-labs-code/design.md) format, tokens in YAML front matter and reasons in prose under its sections in order, and adds Folio's sections after them.
 
 - **Drafted at Directions, locked at Lock.** Step 4 writes Overview, Directions, and Gaps; step 6 completes the rest for the chosen direction.
 - **It names the subject.** A file that would fit another deliverable is a default.
 - **Cite by name, then say how.** Each method cell, variation, and dialect rule appears under its name in the theme, with one line on how this work makes it.
+- **The first content line is an Invocation.** The locked file opens, before Overview, with the tested term or master's name, the named work, and the imperative — and that line governs everything below it. Parameters are the discipline: facts, floors, bans, arithmetic; they also carry the work's own inventions (its signature programme above all), which no name can know. A lead of gesture or atmosphere is specified by invocation + visual predicates + one ban, not by coordinates; coordinates are for construction-led leads. The division is empirical (blind tests, v0.5.2–0.5.3): a name buried mid-file loses to checkable numbers at Make, and a bare name without the file drifts facts and breaks floors.
 - **Names are written as commands, not records.** The Overview carries a Governing hand line in instruction voice; a Sequence citation a unit will rely on carries its evocation bundle (master, work, imperative, parameters, one ban). After the lock, helpers read this file instead of the theme, so whatever the bundle leaves out is lost.
 - **The file changes before the work.** A missing value is added first; a failed unit changes the file, then the unit; changes after the lock go in Record.
 - **A supplied DESIGN.md binds** like a brand: keep its values and fill its gaps in place.
@@ -53,6 +54,9 @@ components:
   muted-on-soft: { backgroundColor: "{colors.soft}", textColor: "{colors.secondary}" }
   focus-ring: { backgroundColor: "{colors.focus}", height: 2px }
 ---
+
+## Invocation
+<The tested term or master's name + the named work, as an imperative — this file's first content line. It governs everything below: where a parameter and the named hand's evident way of working conflict on atmosphere or composition, the hand wins and the conflict is recorded in Record; the parameters bind absolutely on facts, contrast floors, live text, format, and the bans.>
 
 ## Overview
 Subject and where its content lives (the file holds decisions, not content); reader, setting, and one reading mode; surface; the central idea; theme and dialect.

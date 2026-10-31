@@ -1,5 +1,7 @@
 # Swiss Punk — the grid tested
 
+**Invocation:** Wolfgang Weingart, Swiss Punk / New Wave typography — Make work as Weingart made the Kunsthalle posters: break the baseline, step the text, slip the register, let the process show; never displacement that covers a fact.
+
 Basel, 1968–1980s: Weingart, April Greiman, Dan Friedman, Willi Kunz; then *Emigre*. Spoken in Swiss, Swiss Punk is Swiss arguing with itself: the same grid and grotesque, displaced, stepped, and layered until the system shows.
 
 - **The grid is tested, not obeyed.** Rotation, stepped baselines, and displacement run through the piece as its grammar.

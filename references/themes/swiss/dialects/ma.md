@@ -1,5 +1,7 @@
 # ma 間 — the charged interval
 
+**Invocation:** 原研哉 Kenya Hara — Make work as Hara made *White* and the MUJI posters: emptiness as a vessel, the subject precious by isolation, paper with a temperature; never Zen props, never type below the floors.
+
 Kenya Hara and the MUJI lineage, Tokyo: Ikko Tanaka's MUJI, Hara's Horizon campaign (2003), *Designing Design*, *White*. Emptiness, not simplicity: simplicity removes to clarify; emptiness removes so the viewer brings the meaning. Spoken in Swiss, ma turns the Swiss white from placed space into an open vessel.
 
 - **Emptiness is a vessel, not spacing.** Content gathers so one large interval stays whole; it frames the content, never replaces it.

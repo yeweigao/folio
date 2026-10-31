@@ -37,6 +37,12 @@ components:
   paper-on-blue: { backgroundColor: "{colors.blue}", textColor: "{colors.neutral}" }
 ---
 
+## Invocation
+
+**「乌尔姆设计学院（HfG Ulm）」 — Make this poster as Aicher and Bill made the Ulm system: decide the rules before the page, color only as labelled code, pictograms a stranger can extend.**
+
+This line governs the file's atmosphere and judgment. The parameters bind absolutely on the facts, the contrast floors, live text, the format, and the bans — and on this file's own invention, the route line, which the name cannot know and which therefore stands below as discipline, not as summoning.
+
 ## Overview
 One poster (print-first, read at arm's length and across a foyer) for a fictional public evening, THE GRID — three talks and a poster exhibition on the system behind modern design. It is one of nine dialect master examples in examples/dialects-master/: the source content (content.md) is identical in all nine; only the design changes. All names, the venue, and the times are illustrative. Theme: Swiss; dialect: Ulm.
 Governing hand: Make this poster as Aicher made the Munich 1972 system: decide the rules before the page — one grotesque, color as code with a legend and a direct label, pictograms built solid on a modular grid, the primary language above and the second below; never three kinds of arrow, never a difference without a nameable reason.
@@ -126,7 +132,7 @@ Text: short unambiguous lines, EN above CN. Image: pictograms only, as code. Dat
 The programme is fictional and marked illustrative on the poster itself. No photography is used in this dialect render. Print proof: the HTML is the preview at poster scale; a press proof is unmade and would be checked before any real printing.
 
 ## Record
-Folio version: 0.5.2. Template version: 5. Files read: SKILL.md, craft, Swiss theme, ulm dialect, poster surface, design-md template, signature.md. Date: 2026-10-31. Family master: none. Part of the dialects-master set; content source: examples/dialects-master/content.md.
+Folio version: 0.5.3. Template version: 6. Files read: SKILL.md, craft, Swiss theme, ulm dialect, poster surface, design-md template, signature.md. Date: 2026-10-31. Family master: none. Part of the dialects-master set; content source: examples/dialects-master/content.md.
 
 ## Overrides
 Empty: no family master.

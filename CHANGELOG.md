@@ -212,3 +212,41 @@ ma's stack recomputed so every Source fact fits, Ulm's branch moved to
 the entry node and its pictograms drawn, Brodovitch's figure given the
 front/behind split its signature card demands. All nine pass
 folio-check against their posters and Google lint at 0/0.
+
+## 0.5.3 — 2026-10-31 · the invocation
+
+The author's verdict on the master set — "除了风格派，其他一点都不大师" —
+was tested rather than argued with: nine fresh agents received ONE
+sentence each, the dialect's proper name and nothing else (用原研哉风格做,
+波兰海报学派, Brodovitch at Harper's Bazaar, Weingart's Swiss Punk…),
+plus the same facts. The bare names matched or beat the parameterized
+DESIGNs in five to six of nine: Brodovitch decisively (a 356px word
+cropped by the frame against the spec's polite 250px), the Polish
+school's painterly sagging net, Weingart's broken baseline, Bauhaus,
+and ma on atmosphere. The names lost where a dialect carries a Folio
+invention no name can know (Ulm's route line) and on discipline
+everywhere: name-only builds invented fact prose (De Stijl), covered
+facts with decoration (Swiss Punk, Memphis), and set a 21px title no
+poster can carry (ma). Construction dialects (De Stijl, Brutalist)
+converged under both regimes. Notably, the names had been in the files
+all along, as mid-document Governing-hand citations — and had lost to
+the checkable numbers around them at Make time.
+
+The format therefore changes (template v6): a DESIGN.md now opens,
+before Overview, with an **Invocation** — the tested term or master's
+name, the named work, the imperative — and that line governs the file.
+Parameters are demoted to their proper office: the discipline (facts
+verbatim, contrast floors, live text, format, bans, arithmetic) plus
+carrying the work's own inventions, the signature programme above all.
+A lead of gesture or atmosphere is specified by invocation + visual
+predicates + one ban instead of coordinates; construction-led leads
+keep their coordinates. SKILL.md's Lock states the rule and its
+evidence; every dialect file gains its tested Invocation line; the
+nine master DESIGNs are rebuilt on the new format — the five gesture
+dialects' compositions re-specified as summonings with the bans the
+name test earned (no displacement covers a fact; no pattern crosses a
+line of text; a word that fits is a word too small; a whisper title is
+a failure mode), Ulm's route line explicitly reclassified as
+discipline. The Brodovitch reference is re-rendered at the summoned
+scale. All nine still pass folio-check against their posters and
+Google lint at 0/0.

@@ -1,5 +1,7 @@
 # Polish Poster School — the authored metaphor
 
+**Invocation:** 波兰海报学派 Polish Poster School — Make work as Tomaszewski's school made the film posters: a painted metaphor first, letters manhandled, the facts demoted to a quiet block; never a ruled mechanical image.
+
 Warsaw, 1950s–70s: Tomaszewski, Lenica, Cieślewicz, Świerzy, Starowieyski; film, theatre, opera, and circus posters. Spoken in Swiss, the Polish poster gives the image to the author and the facts to the grid.
 
 - **The image interprets, not reports.** One visual metaphor states a view of the subject; it never poses as evidence.

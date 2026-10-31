@@ -1,5 +1,7 @@
 # De Stijl — the grid as the picture
 
+**Invocation:** 荷兰风格派 De Stijl — Make work as van Doesburg and Mondrian made the compositions: black bars, unequal planes, the three primaries, every word flush-left inside its plane; never a diagonal, never symmetry.
+
 The Netherlands, 1917–31: Mondrian, van Doesburg, Rietveld, van der Leck; Mondrian's compositions with red, yellow, and blue, the Rietveld Schröder House. Spoken in Swiss, De Stijl draws the grid: the Swiss tracks become black bars, and the fields between them become planes of color.
 
 - **The grid is the picture, not the scaffold.** Black bars on the tracks divide the field; text and images live inside its planes.

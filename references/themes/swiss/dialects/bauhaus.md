@@ -1,5 +1,7 @@
 # Bauhaus — construction from elements
 
+**Invocation:** 包豪斯 Bauhaus — Make work as Kandinsky, Moholy-Nagy and Bayer made the Dessau work: circle, square and triangle in the primaries (yellow triangle, red square, blue circle) constructing the field, type as one shape among shapes; never decoration, never a fourth hue.
+
 Weimar and Dessau, 1919–33: Bayer, Joost Schmidt, Moholy-Nagy, Albers; Kandinsky's yellow triangle, red square, and blue circle; Schmidt's 1923 exhibition poster, Bayer's universal alphabet. Spoken in Swiss, the Bauhaus constructs: the Vorkurs's elements, assembled on the Swiss module.
 
 - **Primaries together, not one accent.** Red, yellow, and blue with black, on white or off-white paper; no other hue.

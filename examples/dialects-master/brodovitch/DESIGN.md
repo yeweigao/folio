@@ -12,7 +12,7 @@ colors:
   dark: "#111111"
   focus: "#005FCC"
 typography:
-  display: { fontFamily: "Didot, 'Bodoni MT', 'Playfair Display', 'Songti SC', serif", fontSize: 250px, fontWeight: 700, lineHeight: 1.05 }
+  display: { fontFamily: "Didot, 'Bodoni MT', 'Playfair Display', 'Songti SC', serif", fontSize: 320px, fontWeight: 700, lineHeight: 1.05 }
   title: { fontFamily: "Didot, 'Bodoni MT', 'Playfair Display', 'Songti SC', serif", fontSize: 44px, fontWeight: 700, lineHeight: 1.15 }
   body: { fontFamily: "Inter, Source Han Sans SC, Noto Sans SC, sans-serif", fontSize: 19px, fontWeight: 400, lineHeight: 1.5 }
   label: { fontFamily: "Inter, Source Han Sans SC, Noto Sans SC, sans-serif", fontSize: 14px, fontWeight: 700, lineHeight: 1.3 }
@@ -34,6 +34,12 @@ components:
   muted-on-soft: { backgroundColor: "{colors.soft}", textColor: "{colors.secondary}" }
   focus-ring: { backgroundColor: "{colors.focus}", height: 2px }
 ---
+
+## Invocation
+
+**亚历山大·布罗多维奇（Alexey Brodovitch），《Harper's Bazaar》时期 — Make this poster as Brodovitch made the Bazaar covers: one Didot word and one figure in motion colliding at theatrical scale, the crop daring, the apparatus whispered in tracked capitals on a centered axis.**
+
+This line governs the file. Where a parameter below and the named hand's evident way of working conflict on atmosphere or composition, the hand wins and the conflict is recorded in Record; the parameters bind absolutely on the facts, the contrast floors, live text, the format, and the bans.
 
 ## Overview
 One poster (print-first, read at arm's length and across a foyer) for a fictional public evening, THE GRID — three talks and a poster exhibition on the system behind modern design. It is one of nine dialect master examples in examples/dialects-master/: the source content (content.md) is identical in all nine; only the design changes. All names, the venue, and the times are illustrative. Theme: Swiss; dialect: Brodovitch.
@@ -98,7 +104,7 @@ Display in Didot/Bodoni with Songti SC for the Chinese title word; reading text 
 ## Layout
 Poster 900 × 1200. Centered axis allowed for the cover: masthead capitals at top, the Didot word at graphic scale across the middle, the figure (an SVG silhouette, atmosphere not evidence) crossing it, programme and credits in a quiet grotesque at the foot.
 
-Composition, in numbers: masthead at top 52 — place in label capitals tracked 0.34em, centered; the date line below it in the tertiary, tracked 0.30em, carrying exactly 'SATURDAY 14 NOVEMBER 2026 · 19:30–22:00'. The word Grid (Didot, display 250) is centered with its cap top ~150px below the date line. The figure is one ink silhouette spanning roughly x250–880, y90–760: a head circle r30 above a single curved body whose gesture falls diagonally (~12° below horizontal) across the word; it passes in front of 'Gri' and behind the final 'd', the split falling at that letter's left stem. 格网 is centered beneath the word in Songti at the title token, letter-spacing 0.5em. A hairline 56 × 1 in the line color, centered, stands 44px below 格网. The date line takes the label token. Below the hairline, the programme block stands centered in the body token (19px) at a declared local line-height of 2.0, in this order: the talks on one line with their times bold; the subtitle (EN · CN, as in the Source); the foyer and admission line. Credits close at bottom 34, at a declared local 12.5px in secondary, naming the figure an illustrative silhouette. The poster face is neutral white; the soft token is the surround outside the trim in preview.
+Composition, in numbers: masthead at top 52 — place in label capitals tracked 0.34em, centered; the date line below it in the tertiary, tracked 0.30em, carrying exactly 'SATURDAY 14 NOVEMBER 2026 · 19:30–22:00'. The lead is summoned, not coordinated (v0.5.3, from the name test): the word Grid in Didot at theatrical scale — the display token, 320px, or larger where the hand dares, cropped by the sheet's edge rather than seated politely inside the frame at reading size; it stands below the date line with clear air under the masthead. The figure is one ink silhouette in motion crossing the word, its bounding field roughly x250–880, y90–760 — a head above a single curved body falling diagonally — passing in front of the word's first letters and behind its last letter (the Cut-out signature); the split point and the body's curve are the hand's, decided at the sheet, not in this file. Predicates: one collision only, and everything else whispers. Ban: a word that fits is a word too small. 格网 is centered beneath the word in Songti at the title token, letter-spacing 0.5em. A hairline 56 × 1 in the line color, centered, stands 44px below 格网. The date line takes the label token. Below the hairline, the programme block stands centered in the body token (19px) at a declared local line-height of 2.0, in this order: the talks on one line with their times bold; the subtitle (EN · CN, as in the Source); the foyer and admission line. Credits close at bottom 34, at a declared local 12.5px in secondary, naming the figure an illustrative silhouette. The poster face is neutral white; the soft token is the surround outside the trim in preview.
 
 ## Do's and Don'ts
 Dialect test: remove the word and the figure loses its composition; remove the figure and the word loses its reason — the crop is chosen so the gesture crosses the word's stem. Ruled out: fake luxury, gold gradients, a centered serif logo over a stock model, Bodoni as body text.
@@ -126,7 +132,7 @@ Text: title as the collision; the programme in grotesque at the foot, credits na
 The programme is fictional and marked illustrative on the poster itself. No photography is used in this dialect render. Print proof: the HTML is the preview at poster scale; a press proof is unmade and would be checked before any real printing.
 
 ## Record
-Folio version: 0.5.2. Template version: 5. Files read: SKILL.md, craft, Swiss theme, brodovitch dialect, poster surface, design-md template, signature.md. Date: 2026-10-31. Family master: none. Part of the dialects-master set; content source: examples/dialects-master/content.md.
+Folio version: 0.5.3. Template version: 6. Files read: SKILL.md, craft, Swiss theme, brodovitch dialect, poster surface, design-md template, signature.md. Date: 2026-10-31. Family master: none. Part of the dialects-master set; content source: examples/dialects-master/content.md.
 
 ## Overrides
 Empty: no family master.

@@ -41,6 +41,12 @@ components:
   paper-on-blue: { backgroundColor: "{colors.blue}", textColor: "{colors.neutral}" }
 ---
 
+## Invocation
+
+**「孟菲斯设计（Memphis Group）」、索特萨斯（Ettore Sottsass） — Make this poster as Sottsass and the Memphis group made the 1981 collection: pattern as clothing, glyphs and primitives colliding at jaunty angles, hierarchy by exuberance rather than by system.**
+
+This line governs the file. Where a parameter below and the named hand's evident way of working conflict on atmosphere or composition, the hand wins and the conflict is recorded in Record; the parameters bind absolutely on the facts, the contrast floors, live text, the format, and the bans.
+
 ## Overview
 One poster (print-first, read at arm's length and across a foyer) for a fictional public evening, THE GRID — three talks and a poster exhibition on the system behind modern design. It is one of nine dialect master examples in examples/dialects-master/: the source content (content.md) is identical in all nine; only the design changes. All names, the venue, and the times are illustrative. Theme: Swiss; dialect: Memphis.
 Governing hand: Make this poster as Sottsass and Du Pasquier made the Carlton and the Bacterio laminate: clash saturated hues as relations, clad one surface in pattern as material, let primitives sit at odd proportions — and keep the grid under every line of reading text; never squiggle confetti, never pattern behind text, never pastel nostalgia.
@@ -85,7 +91,7 @@ The clash as relations: pink #D12A66 (tertiary), teal #0E7C7B, yellow #F2C500, b
 Inter with Source Han Sans SC at display weight for the title; its glyphs cycle pink, teal, blue, ink — in that order, repeating — and yellow is never a glyph color on paper or soft (1.5:1, below the large-text floor): yellow appears only as a ground behind ink glyphs (ink-on-yellow), in the pattern, and as row markers. The Chinese title 格网 takes the title token as paper on a dark chip at the title field's lower right, overlapping the band's top edge. Facts in ink at body size, flush left on the grid.
 
 ## Layout
-Poster 900 × 1200. Zones in order: title field (soft, y0–430) carrying the kicker at (56,44) and the title THE GRID on one line at (52,92); the patterned band, outer box y430–640 (190 of pattern between two 10px ink rules, full bleed); the programme zone on white opening at y=640, its first row at y=690; the details block (subtitle EN then CN, when, where, admission — body size, gaps of one module, in Source order); the apparatus at the foot (the illustrative line at a declared local 12px in secondary, bottom-left, 24px from the foot). The Chinese-title chip stands at the title field's lower right: right offset 56, top y=396, padding 8px vertical / 22px horizontal. The title's glyphs cycle pink, teal, blue, ink; a Bacterio-like squiggle band — SVG pattern, tile 90 × 60: one teal squiggle stroke 6px, one pink disc r6, one yellow bar 16 × 8 per tile — clads the middle surface and carries no text; a black triangle (200 × 170) overlaps the band's top edge at the right, a pink ellipse (120 × 150) its lower edge. The programme stands black on white, flush left, on the grid, its rows marked by 20px squares in pink, teal, blue, and yellow in row order (the foyer line is the fourth row, marked yellow).
+Poster 900 × 1200. Zones in order: title field (soft, y0–430) carrying the kicker at (56,44) and the title THE GRID — its line, tilt, and place inside the field are the hand's (v0.5.3: in this dialect the lead is summoned, not coordinated); the patterned band, outer box y430–640 (190 of pattern between two 10px ink rules, full bleed); the programme zone on white opening at y=640, its first row at y=690; the details block (subtitle EN then CN, when, where, admission — body size, gaps of one module, in Source order); the apparatus at the foot (the illustrative line at a declared local 12px in secondary, bottom-left, 24px from the foot). The Chinese-title chip stands at the title field's lower right: right offset 56, top y=396, padding 8px vertical / 22px horizontal. The title's glyphs cycle pink, teal, blue, ink; a Bacterio-like squiggle band — SVG pattern, tile 90 × 60: one teal squiggle stroke 6px, one pink disc r6, one yellow bar 16 × 8 per tile — clads the middle surface and carries no text; a black triangle (about 200 × 170) and a pink ellipse (about 120 × 150) are dropped onto the band's edges at the hand's angles — jaunty, crossing, never aligned to the grid. Ban: no shape and no pattern ever crosses a line of text; exuberance stops at the facts' edge (the name test's recorded defect). The programme stands black on white, flush left, on the grid, its rows marked by 20px squares in pink, teal, blue, and yellow in row order (the foyer line is the fourth row, marked yellow).
 
 ## Do's and Don'ts
 Dialect test: remove the clash and the character goes — the same facts read as a committee notice. The pattern is a clad surface with edges, never wallpaper behind the Swiss page. Ruled out: confetti on everything, black outlines everywhere, an 80s pastel palette.
@@ -113,7 +119,7 @@ Text: title joins the clash; facts black on white, floors kept. Image: pattern a
 The programme is fictional and marked illustrative on the poster itself. No photography is used in this dialect render. Print proof: the HTML is the preview at poster scale; a press proof is unmade and would be checked before any real printing.
 
 ## Record
-Folio version: 0.5.2. Template version: 5. Files read: SKILL.md, craft, Swiss theme, memphis dialect, poster surface, design-md template, signature.md. Date: 2026-10-31. Family master: none. Part of the dialects-master set; content source: examples/dialects-master/content.md.
+Folio version: 0.5.3. Template version: 6. Files read: SKILL.md, craft, Swiss theme, memphis dialect, poster surface, design-md template, signature.md. Date: 2026-10-31. Family master: none. Part of the dialects-master set; content source: examples/dialects-master/content.md.
 
 ## Overrides
 Empty: no family master.
