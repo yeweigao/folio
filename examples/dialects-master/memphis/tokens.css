@@ -1,0 +1,19 @@
+:root{
+  --colors-primary: #111111;
+  --colors-secondary: #4A463F;
+  --colors-tertiary: #D12A66;
+  --colors-neutral: #FFFFFF;
+  --colors-soft: #FFF3D6;
+  --colors-line: #111111;
+  --colors-dark: #111111;
+  --colors-focus: #005FCC;
+  --colors-teal: #0E7C7B;
+  --colors-yellow: #F2C500;
+  --colors-blue: #2255A4;
+  --spacing-margin: 56px;
+  --spacing-gutter: 16px;
+  --spacing-column: 51px;
+  --spacing-columns: 12;
+  --spacing-module: 8px;
+  --rounded-none: 0px;
+}

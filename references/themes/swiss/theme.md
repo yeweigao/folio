@@ -38,7 +38,9 @@ Display has three lineages, none more refined: a heavy grotesque for mass, a lar
 
 ## Methods
 
-Ways to make the reader do each task. Semicolons separate options, not a checklist. A name is a handle: DESIGN.md cites the cell by it, with its how-to; no research needed.
+Two prices are hidden in this table: most cells are baseline craft, and a few carry a master's hand. The signature tier — graphic scale, grid alphabet, exposed grid, Isotype, Becher typology, route line, cut-out, programme series, close-up — lives in [signature](../../signature.md) with its construction, parameters, test, and caricature; the matrix gloss is not enough to build one from.
+
+Ways to make the reader do each task. Semicolons separate options, not a checklist. A name is a handle, not a spell: DESIGN.md cites the cell by it, and the citation carries its evocation bundle (the work, the move as an imperative, its parameters, one ban) into the file; at Make the cell is re-read in the original and invoked in the unit's brief. A name left as a bare citation in a table summons nothing.
 
 | The reader must | Text | Image | Data | Space and frame |
 |---|---|---|---|---|
@@ -60,7 +62,7 @@ Ways to make the reader do each task. Semicolons separate options, not a checkli
 
 A variation breaks the active grammar, the mother tongue as the dialect has changed it, on one unit, so a change in the content is felt. A dialect's own moves are its grammar, not variations; a method pushed until it breaks the grammar becomes one, cited as pushed plus the method's name.
 
-- **Every turn gets a decision.** At an opener, a key number, a pause, or a change of mood, take a variation from the tables below or record in DESIGN.md why continuity serves.
+- **Every turn gets a decision.** At an opener, a key number, a pause, or a change of mood, take a variation from the tables below or record in DESIGN.md why continuity serves — with the rhythm cost named (step 6 of SKILL.md). A variation named without its magnitude is a wish, not a decision: every use states its angle, area, count, or size in the Sequence, beside its Keep condition.
 - **A break answers the content, not a quota;** continuity is right while the reader's task stays the same.
 - **One break per unit;** everything else on it keeps the grammar.
 - **A guest lends one move, not its system:** one signature from another dialect, for one unit.

@@ -1,0 +1,16 @@
+:root{
+  --colors-primary: #2B2B28;
+  --colors-secondary: #6B675C;
+  --colors-tertiary: #A63A2E;
+  --colors-neutral: #FAF8F3;
+  --colors-soft: #F1EEE6;
+  --colors-line: #D8D3C6;
+  --colors-dark: #2B2B28;
+  --colors-focus: #005FCC;
+  --spacing-margin: 56px;
+  --spacing-gutter: 16px;
+  --spacing-column: 51px;
+  --spacing-columns: 12;
+  --spacing-module: 8px;
+  --rounded-none: 0px;
+}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="138" viewBox="0 0 880 138">
+<line x1="0" y1="6" x2="880" y2="6" stroke="#C5C2BC" stroke-width="1"/>
+<text x="8" y="24" text-anchor="start" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#111111">Item</text>
+<text x="430" y="24" text-anchor="end" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#111111">Value</text>
+<text x="560" y="24" text-anchor="end" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#111111">Baseline</text>
+<text x="700" y="24" text-anchor="start" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#111111">Period</text>
+<text x="872" y="24" text-anchor="end" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#111111">Change</text>
+<text x="8" y="52" text-anchor="start" font-family="Inter, sans-serif" font-size="14" font-weight="400" fill="#111111" font-variant-numeric="tabular-nums">Revenue</text>
+<text x="430" y="52" text-anchor="end" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#111111" font-variant-numeric="tabular-nums">128.4</text>
+<text x="560" y="52" text-anchor="end" font-family="Inter, sans-serif" font-size="14" font-weight="400" fill="#111111" font-variant-numeric="tabular-nums">112.0</text>
+<text x="700" y="52" text-anchor="start" font-family="Inter, sans-serif" font-size="14" font-weight="400" fill="#111111" font-variant-numeric="tabular-nums">FY25</text>
+<text x="872" y="52" text-anchor="end" font-family="Inter, sans-serif" font-size="14" font-weight="400" fill="#111111" font-variant-numeric="tabular-nums">+14.6%</text>
+<text x="8" y="82" text-anchor="start" font-family="Inter, sans-serif" font-size="14" font-weight="400" fill="#111111" font-variant-numeric="tabular-nums">Cost</text>
+<text x="430" y="82" text-anchor="end" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#111111" font-variant-numeric="tabular-nums">86.1</text>
+<text x="560" y="82" text-anchor="end" font-family="Inter, sans-serif" font-size="14" font-weight="400" fill="#111111" font-variant-numeric="tabular-nums">88.3</text>
+<text x="700" y="82" text-anchor="start" font-family="Inter, sans-serif" font-size="14" font-weight="400" fill="#111111" font-variant-numeric="tabular-nums">FY25</text>
+<text x="872" y="82" text-anchor="end" font-family="Inter, sans-serif" font-size="14" font-weight="400" fill="#111111" font-variant-numeric="tabular-nums">-2.5%</text>
+<text x="8" y="112" text-anchor="start" font-family="Inter, sans-serif" font-size="14" font-weight="400" fill="#111111" font-variant-numeric="tabular-nums">Headcount</text>
+<text x="430" y="112" text-anchor="end" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#111111" font-variant-numeric="tabular-nums">412</text>
+<text x="560" y="112" text-anchor="end" font-family="Inter, sans-serif" font-size="14" font-weight="400" fill="#111111" font-variant-numeric="tabular-nums">398</text>
+<text x="700" y="112" text-anchor="start" font-family="Inter, sans-serif" font-size="14" font-weight="400" fill="#111111" font-variant-numeric="tabular-nums">FY25</text>
+<text x="872" y="112" text-anchor="end" font-family="Inter, sans-serif" font-size="14" font-weight="400" fill="#111111" font-variant-numeric="tabular-nums">+3.5%</text>
+<line x1="0" y1="130" x2="880" y2="130" stroke="#111111" stroke-width="2"/></svg>

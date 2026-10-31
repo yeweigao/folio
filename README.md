@@ -68,6 +68,12 @@ The image above is set in ma 間, after Kenya Hara: one sentence, one red mark, 
 
 ## Install
 
+**Any agent that reads Agent Skills:**
+
+```
+npx skills add yeweigao/folio
+```
+
 **Claude Code**, for every project:
 
 ```bash
@@ -93,15 +99,23 @@ Ask for the work. The skill triggers on visual design, redesign, or critique, an
 ## Structure
 
 ```
-SKILL.md              philosophy, the eight steps and reading list, forms, floors, dialects
+SKILL.md              philosophy, the eight steps and reading list, forms, floors, dialects (v0.5.2)
 references/
   craft.md            grid · type · color · copy · data · imagery
   design-md.md        the deliverable's DESIGN.md: tokens, directions, sequence, coverage
+  signature.md        the signature tier: 9 master methods as recipe cards — construction · parameters · test · caricature
+  steering.md         named moves for refinement turns
+  family.md           a master DESIGN.md and per-deliverable overrides
+  manifest.json       every file, its role, and when an agent loads it
   fonts.md            appendix: installing, embedding, licensing fonts
   surfaces/           slides · poster · web (with motion) · canvas · handbook
   themes/swiss/
     theme.md          mother tongue · master methods · 21 variations · anti-patterns
     dialects/         9 dialects
+scripts/              folio-check (deterministic gates) · preview (token catalog) · extract (DESIGN.md from a .pptx or .html) · measure (field shares from thumbnails) · generators/ (isotype · ledger · programme, as SVG)
+examples/             board-deck: a locked DESIGN.md with previews · paired: same content, basic vs signature · dialects: the nine-dialect sampler · dialects-master: one generic programme set as a master poster in each dialect, each with its locked DESIGN.md
+tests/                three regression briefs for judging skill changes by finished contact sheets
+CHANGELOG.md          what changed in 0.4.0, and what was borrowed from whom
 ```
 
 Each rule has one home. Files read together are merged; files chosen between, surfaces and dialects, stay separate; rarely needed material is an appendix. Every task reads SKILL.md, craft, the theme, one surface, the DESIGN.md template, and each dialect a direction uses; once a DESIGN.md is locked, it stands in for the theme and dialects. Add a file only for a distinct choice or an independent theme.

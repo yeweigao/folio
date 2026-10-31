@@ -25,7 +25,7 @@ Without a grid, layouts fall back to equal thirds and centered stacks.
 
 AI typography fails by sloppiness, not font choice: too many sizes, no weight logic, wrong punctuation, CJK set like Latin.
 
-- **Three roles: display, body, label.** Add a level only for a real navigation task; skip every intermediate size the content does not need; judge the hierarchy at thumbnail and at viewing size.
+- **Three roles carry the reading: display, body, label.** A title is display's family at a second size, not a fourth role; the DESIGN.md template's four type tokens (display, title, body, label) map onto these three roles. Add a level only for a real navigation task; skip every intermediate size the content does not need; judge the hierarchy at thumbnail and at viewing size.
 - **When type leads, start at graphic scale,** the title or key word spanning the frame.
 - **Choose one hierarchy for the deliverable,** declaring size and weight together:
 

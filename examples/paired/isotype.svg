@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="416" height="146" viewBox="0 0 416 146">
+<text x="0" y="18" font-family="Inter, sans-serif" font-size="12">1 symbol = 50000</text>
+<text x="0" y="48" font-family="Inter, sans-serif" font-size="13">Cities</text>
+<circle cx="199.0" cy="43.0" r="9.0" fill="#C83024"/>
+<circle cx="223.0" cy="43.0" r="9.0" fill="#C83024"/>
+<circle cx="247.0" cy="43.0" r="9.0" fill="#C83024"/>
+<circle cx="271.0" cy="43.0" r="9.0" fill="#C83024"/>
+<circle cx="295.0" cy="43.0" r="9.0" fill="#C83024"/>
+<circle cx="319.0" cy="43.0" r="9.0" fill="#C83024"/>
+<circle cx="343.0" cy="43.0" r="9.0" fill="#C83024"/>
+<circle cx="367.0" cy="43.0" r="9.0" fill="#C83024"/>
+<clipPath id="c0"><rect x="382" y="34" width="7.2" height="18"/></clipPath>
+<g clip-path="url(#c0)"><circle cx="391.0" cy="43.0" r="9.0" fill="#C83024"/></g>
+<text x="0" y="82" font-family="Inter, sans-serif" font-size="13">Towns</text>
+<circle cx="199.0" cy="77.0" r="9.0" fill="#C83024"/>
+<circle cx="223.0" cy="77.0" r="9.0" fill="#C83024"/>
+<circle cx="247.0" cy="77.0" r="9.0" fill="#C83024"/>
+<circle cx="271.0" cy="77.0" r="9.0" fill="#C83024"/>
+<circle cx="295.0" cy="77.0" r="9.0" fill="#C83024"/>
+<clipPath id="c1"><rect x="310" y="68" width="3.6" height="18"/></clipPath>
+<g clip-path="url(#c1)"><circle cx="319.0" cy="77.0" r="9.0" fill="#C83024"/></g>
+<text x="0" y="116" font-family="Inter, sans-serif" font-size="13">Villages</text>
+<circle cx="199.0" cy="111.0" r="9.0" fill="#C83024"/>
+<circle cx="223.0" cy="111.0" r="9.0" fill="#C83024"/>
+<clipPath id="c2"><rect x="238" y="102" width="12.6" height="18"/></clipPath>
+<g clip-path="url(#c2)"><circle cx="247.0" cy="111.0" r="9.0" fill="#C83024"/></g>
+</svg>

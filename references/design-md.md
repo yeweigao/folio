@@ -1,12 +1,18 @@
 # DESIGN.md
 
+<!-- folio-template-version: 5 -->
+
 One file per deliverable, beside the work, holds every decision, so each unit, later session, or helper makes the same piece without rereading the theme. It follows the open [DESIGN.md](https://github.com/google-labs-code/design.md) format, tokens in YAML front matter and reasons in prose under its sections in order, and adds Folio's sections after them.
 
 - **Drafted at Directions, locked at Lock.** Step 4 writes Overview, Directions, and Gaps; step 6 completes the rest for the chosen direction.
 - **It names the subject.** A file that would fit another deliverable is a default.
 - **Cite by name, then say how.** Each method cell, variation, and dialect rule appears under its name in the theme, with one line on how this work makes it.
+- **Names are written as commands, not records.** The Overview carries a Governing hand line in instruction voice; a Sequence citation a unit will rely on carries its evocation bundle (master, work, imperative, parameters, one ban). After the lock, helpers read this file instead of the theme, so whatever the bundle leaves out is lost.
 - **The file changes before the work.** A missing value is added first; a failed unit changes the file, then the unit; changes after the lock go in Record.
 - **A supplied DESIGN.md binds** like a brand: keep its values and fill its gaps in place.
+- **Run the checks.** `scripts/folio-check.py DESIGN.md` verifies completeness (versions recorded, focus and soft-field tokens present, type faces carry a CJK fallback, every token used, Sequence filled); Google's lint verifies references and contrast.
+- **Family work** follows [family](family.md): a master DESIGN.md holds the shared system; a deliverable records its master in Record and lists only its differences under Overrides.
+- **The example numbers are the slides starting system.** Recompute spacing and type from the active surface before use; a template value that survives unchanged into a poster or handbook is a default, not a decision.
 - **Tokens use px, em, or rem;** print gives CSS px, with pt or mm in the prose. Every size and gap a unit uses has a token; none goes unused. Primary is ink, secondary muted, tertiary accent, neutral paper; other roles keep Folio's names. Each component pairs a foreground with the ground it touches, so `npx @google/design.md lint DESIGN.md` checks its contrast.
 - **Headings stay in English** for tools; prose may use the user's language.
 
@@ -20,13 +26,15 @@ colors:
   secondary: "#625F59"
   tertiary: "#C83024"
   neutral: "#FFFFFF"
+  soft: "#F4F2ED"
+  focus: "#005FCC"
   line: "#C5C2BC"
   dark: "#141414"
 typography:
-  display: { fontFamily: Arial, fontSize: 120px, fontWeight: 700, lineHeight: 1 }
-  title: { fontFamily: Arial, fontSize: 48px, fontWeight: 700, lineHeight: 1.15 }
-  body: { fontFamily: Arial, fontSize: 20px, fontWeight: 400, lineHeight: 1.45 }
-  label: { fontFamily: Arial, fontSize: 14px, fontWeight: 700, lineHeight: 1.3 }
+  display: { fontFamily: "Inter, Source Han Sans SC, Noto Sans SC, sans-serif", fontSize: 120px, fontWeight: 700, lineHeight: 1 }
+  title: { fontFamily: "Inter, Source Han Sans SC, Noto Sans SC, sans-serif", fontSize: 48px, fontWeight: 700, lineHeight: 1.15 }
+  body: { fontFamily: "Inter, Source Han Sans SC, Noto Sans SC, sans-serif", fontSize: 20px, fontWeight: 400, lineHeight: 1.45 }
+  label: { fontFamily: "Inter, Source Han Sans SC, Noto Sans SC, sans-serif", fontSize: 14px, fontWeight: 700, lineHeight: 1.3 }
 spacing:
   margin: 70px
   gutter: 24px
@@ -41,10 +49,15 @@ components:
   paper-on-accent: { backgroundColor: "{colors.tertiary}", textColor: "{colors.neutral}" }
   paper-on-dark: { backgroundColor: "{colors.dark}", textColor: "{colors.neutral}" }
   hairline: { backgroundColor: "{colors.line}", height: 1px }
+  text-on-soft: { backgroundColor: "{colors.soft}", textColor: "{colors.primary}" }
+  muted-on-soft: { backgroundColor: "{colors.soft}", textColor: "{colors.secondary}" }
+  focus-ring: { backgroundColor: "{colors.focus}", height: 2px }
 ---
 
 ## Overview
 Subject and where its content lives (the file holds decisions, not content); reader, setting, and one reading mode; surface; the central idea; theme and dialect.
+Governing hand: Make every unit as <master / programme> made <work>: <the move in one imperative line>; never <the ban>.
+Signature programme: <one signature method from signature.md, its card's parameters for this work> — or: Signature: none — <the reason>.
 
 ## Colors
 Each role: what it marks, the grounds it touches, where it never appears.
@@ -68,7 +81,9 @@ The dialect's rules and test; habits ruled out, or the brief's reason for one.
 Dialects set aside, each with its reason. Chosen: which, by whom, from which render.
 
 ## Sequence
-| Unit | Form | Lead | Methods (name: how) | Variation or continuity |
+Rhythm first, as one composition: mark every unit's register (base / turn / pause) before filling the columns; the turns sit where the content turns. A speaking deliverable of four or more units with no variation does not lock.
+
+| Unit | Form | Register | Lead | Methods (master · work: imperative + parameters + ban) | Variation (name + magnitude + keep) or continuity (with its rhythm cost) |
 |---|---|---|---|---|
 
 ## Coverage
@@ -78,5 +93,8 @@ Text · Image · Data · Space and frame: the cells used, or why a column stays 
 Missing assets and evidence; unverified facts; what is illustrative.
 
 ## Record
-Folio version, files read, date; template version and role mappings; changes after the lock.
+Folio version, files read, date; template version and role mappings; the family master, if any; changes after the lock.
+
+## Overrides
+Against the family master: each token or rule this deliverable changes, and why. Empty when there is no master.
 ```

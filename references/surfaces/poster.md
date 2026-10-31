@@ -10,7 +10,7 @@ A single unit seen in passing: it works in three seconds from three meters, or i
 | A1 | 594 × 841 | 5–10 m | 25–50 mm |
 | A2 | 420 × 594 | 3–10 m | 15–50 mm |
 | A3 | 297 × 420 | 1–3 m | 5–15 mm |
-| A4 | 210 × 297 | 0.5–1 m | 3–5 mm |
+| A4 | 210 × 297 | 0.5–1 m | 2.5–5 mm |
 
 - Minimum title cap height in mm = distance in m × 5: a legibility floor, not a display target. Font size (pt) ≈ cap height (mm) ÷ 0.7 × 72 ÷ 25.4. Verify at the real distance.
 - Grids: A2 margins 28, 12 × 23 mm, gutters 8 (content 364); A3 margins 20, 12 × 15.92, gutters 6; A4 margins 15, 6 × 25, gutters 6. Module 8 mm; bleed 3, safe 5, as the printer specifies. Landscape swaps trim dimensions and recomputes the grid; a bound spread follows the handbook.

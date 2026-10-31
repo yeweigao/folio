@@ -1,0 +1,77 @@
+{
+  "folio": "0.5.2",
+  "load_order": [
+    "SKILL.md",
+    "references/craft.md",
+    "references/themes/swiss/theme.md",
+    "one surface",
+    "references/design-md.md"
+  ],
+  "always": [
+    {
+      "file": "SKILL.md",
+      "role": "philosophy, eight steps, forms, floors"
+    },
+    {
+      "file": "references/craft.md",
+      "role": "shared technique: grid, type, color, copy, data, imagery"
+    }
+  ],
+  "on_demand": [
+    {
+      "file": "references/design-md.md",
+      "when": "drafting or locking the deliverable's DESIGN.md",
+      "template_version": 5
+    },
+    {
+      "file": "references/fonts.md",
+      "when": "installing, embedding, or licensing fonts only"
+    },
+    {
+      "file": "references/steering.md",
+      "when": "a refinement turn after delivery"
+    },
+    {
+      "file": "references/family.md",
+      "when": "the deliverable belongs to a family with a master DESIGN.md"
+    },
+    {
+      "file": "references/signature.md",
+      "when": "a direction uses a signature method; required at Lock for the signature programme"
+    }
+  ],
+  "surfaces": {
+    "slides": "references/surfaces/slides.md",
+    "poster": "references/surfaces/poster.md",
+    "web": "references/surfaces/web.md",
+    "canvas": "references/surfaces/canvas.md",
+    "handbook": "references/surfaces/handbook.md"
+  },
+  "themes": {
+    "swiss": "references/themes/swiss/theme.md"
+  },
+  "dialects": {
+    "de-stijl": "references/themes/swiss/dialects/de-stijl.md",
+    "bauhaus": "references/themes/swiss/dialects/bauhaus.md",
+    "brodovitch": "references/themes/swiss/dialects/brodovitch.md",
+    "polish-poster": "references/themes/swiss/dialects/polish-poster.md",
+    "ulm": "references/themes/swiss/dialects/ulm.md",
+    "swiss-punk": "references/themes/swiss/dialects/swiss-punk.md",
+    "memphis": "references/themes/swiss/dialects/memphis.md",
+    "ma": "references/themes/swiss/dialects/ma.md",
+    "brutalist": "references/themes/swiss/dialects/brutalist.md"
+  },
+  "scripts": {
+    "check": "scripts/folio-check.py",
+    "preview": "scripts/preview.py",
+    "extract": "scripts/extract.py",
+    "generators": "scripts/generators/",
+    "measure": "scripts/measure.py"
+  },
+  "examples": {
+    "board-deck": "examples/board-deck/",
+    "paired": "examples/paired/",
+    "dialects-master": "examples/dialects-master/"
+  },
+  "tests": "tests/"
+}
