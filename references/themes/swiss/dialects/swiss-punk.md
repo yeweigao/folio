@@ -9,6 +9,11 @@ Basel, 1968–1980s: Weingart, April Greiman, Dan Friedman, Willi Kunz; then *Em
 - **Layers overprint off register, not apart.** Two or three inks of one word or shape, slipped by a fraction of a stroke, still read as one form with a vibrating edge, like a misregistered offset proof; screens and montage stack on the same axis; never under reading text.
 - **The process is the image, not a texture.** Film montage, enlarged halftone, early bitmap type.
 
+**Hands in this school** — the DESIGN chooses one to govern; the others guest as moves, never as co-hands:
+- **Wolfgang Weingart — the Kunsthalle Basel posters (1970s–).** Break the baseline, step the text, slip the register, layer the process marks. Suits subjects in productive conflict with their own system. Never: displacement that covers a fact.
+- **April Greiman — Does it make sense? (1986).** Float the layers: type, image and space collaged at different depths. Suits technology and layered evidence. Never: depth faked with shadows.
+- **Dan Friedman — radical modernism (1970s).** Keep the modernist grid and overload it; legibility pushed to its edge, never past it. Suits manifestos and dense programmes. Never: quiet understatement.
+
 **Swiss keeps:** the grotesque, the grid as the reference being tested, and body text, labels, and data horizontal on it.
 
 **Test:** The typographic relations themselves express the subject; remove one tilted word and the dialect survives.

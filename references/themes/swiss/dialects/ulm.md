@@ -9,6 +9,11 @@ The HfG Ulm, 1953–68: Max Bill, Otl Aicher, Tomás Maldonado, Hans Gugelot; Br
 - **Color and pictograms are codes, not accents.** A few mapped colors, decoded by direct labels or a legend, never the only cue; one pictogram set of solid figures built on a modular grid at 0°, 45°, and 90°.
 - **Instruction, not expression.** Short, unambiguous lines; the primary language above, the second below, never in one line.
 
+**Hands in this school** — the DESIGN chooses one to govern; the others guest as moves, never as co-hands:
+- **Max Bill — concrete art, the Ulm building (1953–57).** Form as systematic variation on one statable law. Suits series and identities that must extend. Never: a shape whose rule cannot be stated.
+- **Otl Aicher — the Munich 1972 system.** Color as code with a legend, solid pictograms, the visitor's path drawn as a line. Suits events, places, instructions — systems a stranger must use. Never: three kinds of arrow.
+- **Tomás Maldonado — the Ulm model (1958–66).** Design the problem's structure before its surface: method, semiotics, the grid of decisions. Suits complex information and data. Never: styling applied to an unstructured brief.
+
 **Swiss keeps:** the grid, one grotesque after Univers, asymmetry, and the rule, now used as a code.
 
 **Test:** A stranger knows what to do next, and a designer could apply the rules to a new case.

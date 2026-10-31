@@ -41,6 +41,8 @@ components:
 
 This line governs the file. Where a parameter below and the named hand's evident way of working conflict on atmosphere or composition, the hand wins and the conflict is recorded in Record; the parameters bind absolutely on the facts, the contrast floors, live text, the format, and the bans.
 
+Hands: governed by the Bazaar covers hand. Guesting within the same master: the Ballet hand — the figure's single falling gesture is drawn as motion, not pose. One master, two of his periods; here the school is a person.
+
 ## Overview
 One poster (print-first, read at arm's length and across a foyer) for a fictional public evening, THE GRID — three talks and a poster exhibition on the system behind modern design. It is one of nine dialect master examples in examples/dialects-master/: the source content (content.md) is identical in all nine; only the design changes. All names, the venue, and the times are illustrative. Theme: Swiss; dialect: Brodovitch.
 Governing hand: Make this poster as Brodovitch made the Harper's Bazaar covers: let one Didot word and one figure in motion collide on a centered axis, the crop daring and the apparatus in small tracked capitals; never gold, never a script face, never a photograph that merely sits beside the type.
@@ -132,7 +134,7 @@ Text: title as the collision; the programme in grotesque at the foot, credits na
 The programme is fictional and marked illustrative on the poster itself. No photography is used in this dialect render. Print proof: the HTML is the preview at poster scale; a press proof is unmade and would be checked before any real printing.
 
 ## Record
-Folio version: 0.5.3. Template version: 6. Files read: SKILL.md, craft, Swiss theme, brodovitch dialect, poster surface, design-md template, signature.md. Date: 2026-10-31. Family master: none. Part of the dialects-master set; content source: examples/dialects-master/content.md.
+Folio version: 0.5.4. Template version: 7. Files read: SKILL.md, craft, Swiss theme, brodovitch dialect, poster surface, design-md template, signature.md. Date: 2026-10-31. Family master: none. Part of the dialects-master set; content source: examples/dialects-master/content.md.
 
 ## Overrides
 Empty: no family master.

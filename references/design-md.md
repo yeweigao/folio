@@ -1,6 +1,6 @@
 # DESIGN.md
 
-<!-- folio-template-version: 6 -->
+<!-- folio-template-version: 7 -->
 
 One file per deliverable, beside the work, holds every decision, so each unit, later session, or helper makes the same piece without rereading the theme. It follows the open [DESIGN.md](https://github.com/google-labs-code/design.md) format, tokens in YAML front matter and reasons in prose under its sections in order, and adds Folio's sections after them.
 
@@ -56,7 +56,7 @@ components:
 ---
 
 ## Invocation
-<The tested term or master's name + the named work, as an imperative — this file's first content line. It governs everything below: where a parameter and the named hand's evident way of working conflict on atmosphere or composition, the hand wins and the conflict is recorded in Record; the parameters bind absolutely on facts, contrast floors, live text, format, and the bans.>
+<The tested term or master's name + the named work, as an imperative — this file's first content line. The school is fixed by the dialect; the hand is not: choose the governing hand from the active dialect's Hands roster, for this material, and say why it suits, here or in Overview; a period of the same master is a different hand. Other hands guest as moves (evocation bundles in Sequence), never as co-hands — one governing hand per deliverable. It governs everything below: where a parameter and the named hand's evident way of working conflict on atmosphere or composition, the hand wins and the conflict is recorded in Record; the parameters bind absolutely on facts, contrast floors, live text, format, and the bans.>
 
 ## Overview
 Subject and where its content lives (the file holds decisions, not content); reader, setting, and one reading mode; surface; the central idea; theme and dialect.

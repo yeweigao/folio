@@ -43,6 +43,8 @@ components:
 
 This line governs the file. Where a parameter below and the named hand's evident way of working conflict on atmosphere or composition, the hand wins and the conflict is recorded in Record; the parameters bind absolutely on the facts, the contrast floors, live text, the format, and the bans.
 
+Hands: governed by Tomaszewski — the subject, the grid itself, can be said as one painterly metaphor. No guest: a single-image poster has one metaphor, and Trepkowski's stark symbol or Cieślewicz's montage would split its voice; both stand in the roster, deliberately not taken.
+
 ## Overview
 One poster (print-first, read at arm's length and across a foyer) for a fictional public evening, THE GRID — three talks and a poster exhibition on the system behind modern design. It is one of nine dialect master examples in examples/dialects-master/: the source content (content.md) is identical in all nine; only the design changes. All names, the venue, and the times are illustrative. Theme: Swiss; dialect: Polish Poster School.
 Governing hand: Make this poster as Lenica made the Wozzeck poster: give the picture to one metaphor in one hand's line — here cut paper, a net of black bars falling over loose letters — and give the facts to the grid in live type; never a brush font, never distress as decoration, never a metaphor unrelated to the subject.
@@ -117,7 +119,7 @@ Text: title inside the picture as turned live letters; all facts as live type be
 The programme is fictional and marked illustrative on the poster itself. No photography is used in this dialect render. Print proof: the HTML is the preview at poster scale; a press proof is unmade and would be checked before any real printing.
 
 ## Record
-Folio version: 0.5.3. Template version: 6. Files read: SKILL.md, craft, Swiss theme, polish-poster dialect, poster surface, design-md template, signature.md. Date: 2026-10-31. Family master: none. Part of the dialects-master set; content source: examples/dialects-master/content.md.
+Folio version: 0.5.4. Template version: 7. Files read: SKILL.md, craft, Swiss theme, polish-poster dialect, poster surface, design-md template, signature.md. Date: 2026-10-31. Family master: none. Part of the dialects-master set; content source: examples/dialects-master/content.md.
 
 ## Overrides
 Empty: no family master.

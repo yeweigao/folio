@@ -250,3 +250,32 @@ a failure mode), Ulm's route line explicitly reclassified as
 discipline. The Brodovitch reference is re-rendered at the summoned
 scale. All nine still pass folio-check against their posters and
 Google lint at 0/0.
+
+## 0.5.4 — 2026-10-31 · the roster
+
+The author's refinement of the invocation, the same evening: the
+school may be fixed, but the master inside it must not be — "粗中有细"
+(coarse grain fixed, fine grain free) is where the difference between
+deliverables lives. So the Invocation a DESIGN carries is no longer
+the dialect's one welded hand. Each dialect file gains a **Hands**
+roster: three or four masters, periods, or (for the synthesized
+Brutalist) registers, each with its representative work, its move as
+an imperative, the material it suits, and its ban — Mondrian early
+against Mondrian's Broadway Boogie Woogie, Tomaszewski against
+Trepkowski's near-wordless Nie, the Bazaar covers against Ballet,
+Aicher's code against Bill's concrete law and Maldonado's structure,
+Hara's emptiness against Tanaka's geometric motif and Hara's own
+exformation. Template v7: the Invocation is *chosen* from the roster
+at Directions, for this material, with the reason recorded; a period
+of the same master counts as a different hand. Guests enter as single
+moves under an evocation bundle, never as co-hands — one governing
+hand per deliverable, the philosophy's "a unit has a lead, not a
+crowd" applied to hands themselves; and a guest lends a *method*, not
+its skin, since the skin belongs to another school's constraint
+system. The nine master DESIGNs declare their picks: Bayer's lowercase
+guests inside Kandinsky's construction, Bill's concrete signs inside
+Aicher's system, the Ballet gesture inside the Bazaar collision,
+Greiman's floating layer over Weingart's grid, the Monolith register
+inside the Brutalist document — and, as the same discipline from the
+other side, Polish Poster and Memphis record the guests deliberately
+*not* taken, with reasons.

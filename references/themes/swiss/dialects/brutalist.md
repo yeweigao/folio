@@ -9,6 +9,11 @@ Brutalism's exposed structure, from Le Corbusier's *béton brut* and the Smithso
 - **Dense, not airy.** A working document, not a landing page; every band carries real content; whitespace is structural.
 - **Paper, ink, one hazard, not an accent palette.** Newsprint or grey-white ground, black ink, at most one hazard red on a real alert or figure.
 
+**Hands in this school** — a synthesized school, so its roster is three registers, not three masters; the DESIGN chooses one to govern:
+- **The Document hand.** Everything set as specification: spec strips, ledgers, tabular figures, labelled rows. The dialect's default. Never: a band that carries nothing.
+- **The Monolith hand.** One figure at architectural scale — a time, a number, a word — alone in its band. Suits the one figure the reader must not miss. Never: two monoliths competing.
+- **The Construction hand.** The grid itself drawn — column rules and master lines, the making exposed as the picture. Suits systems and work about structure. Never: rules drawn where they carry nothing.
+
 **Swiss keeps:** twelve columns on one left axis, flush-left setting, and a tight grotesque.
 
 **Test:** Every visible line is a real boundary and every band holds working content; squint, and the text reads before the rules.

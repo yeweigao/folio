@@ -80,3 +80,14 @@ governing the file, and the compositions of the gesture dialects
 summonings with predicates and a ban, while the construction dialects
 keep their coordinates. The parameters remain what they always should
 have been: the discipline underneath the name.
+
+## Hands (v0.5.4)
+
+The school is fixed; the hand is not. Each dialect file in the skill
+now carries a Hands roster — the masters and periods inside the
+school, each with its work, its move, its material, and its ban — and
+each DESIGN.md here declares the hand it chose from its roster and
+why, plus any guest move taken under citation (or the guest
+deliberately not taken, with the reason). Same school, same facts,
+different hands: that is where one deliverable differs from the next
+without leaving its dialect.

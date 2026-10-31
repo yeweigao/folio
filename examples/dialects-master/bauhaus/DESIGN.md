@@ -45,6 +45,8 @@ components:
 
 This line governs the file. Where a parameter below and the named hand's evident way of working conflict on atmosphere or composition, the hand wins and the conflict is recorded in Record; the parameters bind absolutely on the facts, the contrast floors, live text, the format, and the bans.
 
+Hands: governed by Kandinsky — the subject is a three-part construction, so the form–colour law leads. Guesting: Herbert Bayer's universal alphabet — the title 'the grid' is set lowercase, his functional move inside Kandinsky's construction.
+
 ## Overview
 One poster (print-first, read at arm's length and across a foyer) for a fictional public evening, THE GRID — three talks and a poster exhibition on the system behind modern design. It is one of nine dialect master examples in examples/dialects-master/: the source content (content.md) is identical in all nine; only the design changes. All names, the venue, and the times are illustrative. Theme: Swiss; dialect: Bauhaus.
 Governing hand: Make this poster as Joost Schmidt made the 1923 exhibition poster: construct the subject from circle, square, and triangle on the module, let the primaries overlap and overprint, set the type as one shape among shapes; never a photograph, never a shape off the grid, never a fourth hue.
@@ -119,7 +121,7 @@ Text: the title set as a shape, diagonal on the module; facts in the lower field
 The programme is fictional and marked illustrative on the poster itself. No photography is used in this dialect render. Print proof: the HTML is the preview at poster scale; a press proof is unmade and would be checked before any real printing.
 
 ## Record
-Folio version: 0.5.3. Template version: 6. Files read: SKILL.md, craft, Swiss theme, bauhaus dialect, poster surface, design-md template, signature.md. Date: 2026-10-31. Family master: none. Part of the dialects-master set; content source: examples/dialects-master/content.md.
+Folio version: 0.5.4. Template version: 7. Files read: SKILL.md, craft, Swiss theme, bauhaus dialect, poster surface, design-md template, signature.md. Date: 2026-10-31. Family master: none. Part of the dialects-master set; content source: examples/dialects-master/content.md.
 
 ## Overrides
 Empty: no family master.
