@@ -17,6 +17,8 @@ A deck is presented at a distance or read alone; choose one mode per deck.
 | Labels, chart titles | 13–16 | 18–22 |
 | Ticks, sources, page numbers | 12–13 | 16–18 |
 
+Sizes are px at 1280 × 720; PPTX takes pt = px × 0.75, so 44 px is 33 pt.
+
 ## Principles
 
 - **Distance sets size, and size sets the word count, not the reverse.** The last row reads the body; reflow before cutting copy or adding slides.
@@ -38,5 +40,5 @@ A deck is presented at a distance or read alone; choose one mode per deck.
 
 ## Done means
 
-- Every slide viewed at full size in the actual render: title breaks, CJK glyphs, real weights; a PPTX run sets its East Asian face, not only its Latin one.
+- Every slide viewed at full size in the actual render: title breaks, CJK glyphs, real weights; a PPTX run sets its East Asian face, not only its Latin one, and cannot switch OpenType features, so figures are the face's defaults.
 - Text live; charts native or vector; nothing below 16 px when projected.

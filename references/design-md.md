@@ -7,7 +7,7 @@ One file per deliverable, beside the work, holds every decision, so each unit, l
 - **Cite by name, then say how.** Each method cell, variation, and dialect rule appears under its name in the theme, with one line on how this work makes it.
 - **The file changes before the work.** A missing value is added first; a failed unit changes the file, then the unit; changes after the lock go in Record.
 - **A supplied DESIGN.md binds** like a brand: keep its values and fill its gaps in place.
-- **Tokens use px, em, or rem;** print gives CSS px, with pt or mm in the prose. Primary is ink, secondary muted, tertiary accent, neutral paper; other roles keep Folio's names. Each component pairs a foreground with the ground it touches, so `npx @google/design.md lint DESIGN.md` checks its contrast.
+- **Tokens use px, em, or rem;** print gives CSS px, with pt or mm in the prose. Every size and gap a unit uses has a token; none goes unused. Primary is ink, secondary muted, tertiary accent, neutral paper; other roles keep Folio's names. Each component pairs a foreground with the ground it touches, so `npx @google/design.md lint DESIGN.md` checks its contrast.
 - **Headings stay in English** for tools; prose may use the user's language.
 
 ```markdown
@@ -44,7 +44,7 @@ components:
 ---
 
 ## Overview
-Subject, reader and setting, surface; the central idea; theme and dialect.
+Subject and where its content lives (the file holds decisions, not content); reader, setting, and one reading mode; surface; the central idea; theme and dialect.
 
 ## Colors
 Each role: what it marks, the grounds it touches, where it never appears.
