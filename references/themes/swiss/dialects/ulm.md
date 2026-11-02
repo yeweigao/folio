@@ -14,7 +14,7 @@ The HfG Ulm, 1953–68: Max Bill, Otl Aicher, Tomás Maldonado, Hans Gugelot; th
 - **Max Bill — concrete art, the Ulm building (1953–57).** State one law, and produce every form as a systematic variation on it. Suits series and identities that must extend. Never: a shape whose rule cannot be stated.
 - **Tomás Maldonado — the Ulm model (1958–66).** Model the problem's structure (users, tasks, decisions) before any surface, and let the layout follow the model. Suits complex information and data. Never: styling applied to an unstructured brief.
 
-**Swiss keeps:** the grid, one grotesque after Univers, asymmetry, and the rule, now used as a code.
+**Swiss keeps:** the grid, one neo-grotesque, asymmetry, and the rule, now used as a code.
 
 **Test:** A stranger knows what to do next, and a designer could apply the rules to a new case.
 

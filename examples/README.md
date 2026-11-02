@@ -1,24 +1,26 @@
 # Examples
 
-Each folder holds one skeleton (DESIGN.md) and the pieces made from it: a brief, the poster, and its render.
+Nine design systems, one per dialect. Each DESIGN.md stands alone: give it to any agent with your own content and format, and it carries the master's method, how a new subject yields its idea, the forms any content needs, and every size relative to the format. No skeleton holds content.
 
 ![The nine dialects on one programme](dialects.png)
 
-## Nine dialects, one programme
+## Nine systems
 
-Every skeleton is written for one world, The Grid, a museum's evening series on the systems behind modern design. All nine set the same brief, so only the hand changes.
-
-| Folder | Hand | Idea |
+| Folder | Hand | The system |
 |---|---|---|
-| `de-stijl/` | Mondrian, the compositions | Bars on the evening's clock; each plane sized to its duration |
-| `bauhaus/` | Joost Schmidt, 1923 | Twelve columns are the evening in quarter hours |
-| `brodovitch/` | The Bazaar covers | The plate edge crops GRID on a module line |
-| `polish-poster/` | Henryk Tomaszewski | A safety net under a leaping figure; the picture is still a labelled slot |
-| `ulm/` | Otl Aicher, Munich 1972 | One pictogram in three stages of construction |
-| `swiss-punk/` | Wolfgang Weingart | Films slipped off the grid they are printed on |
-| `memphis/` | Ettore Sottsass | Each talk a primitive clad in its own system's laminate |
-| `ma/` | Kenya Hara, *White* | Equal white between the talks; nothing drawn |
-| `brutalist/` | The Construction hand | The running order becomes the row grid |
+| `de-stijl/` | Mondrian, the compositions | Bars on the tracks; the content's measure sizes the planes |
+| `bauhaus/` | Joost Schmidt, 1923 | A figure of the content built from circle, square and bar, hung from one thread |
+| `brodovitch/` | The Bazaar covers | One photograph and one Didone word, cut by the same edge |
+| `polish-poster/` | Henryk Tomaszewski | One hand-made ironic picture over quiet live facts |
+| `ulm/` | Otl Aicher, Munich 1972 | A manual first: module, figures on one grid, colour as code |
+| `swiss-punk/` | Wolfgang Weingart | Films slipped and overprinted by declared amounts |
+| `memphis/` | Ettore Sottsass | Primitives clad in laminate, standing on slabs that carry the words |
+| `ma/` | Kenya Hara, *White* | One whole interval; measures as equal white |
+| `brutalist/` | The Construction hand | The content's measure becomes the row grid; one monolith |
+
+## One programme, nine hands
+
+Each folder also holds one poster for the same programme, The Grid, a museum's evening series on design systems: its content lives in `the-grid/brief.md`, never in the skeleton. The posters were made from an earlier, programme-bound version of each skeleton; the systems they show are unchanged.
 
 ## One skeleton, two makers
 

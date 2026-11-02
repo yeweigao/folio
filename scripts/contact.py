@@ -18,7 +18,6 @@ PAD, LABEL = 24, 34
 
 def font(size):
     for f in ("/usr/share/fonts/opentype/inter/Inter-Medium.otf",
-              "/System/Library/Fonts/Helvetica.ttc",
               "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"):
         if Path(f).exists():
             return ImageFont.truetype(f, size)

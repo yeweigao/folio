@@ -15,11 +15,12 @@ Without Playwright, see the render any way the environment allows; a page never 
 
 ## Check
 
+Where a script can hold a floor ([review](review.md#floors)), it does.
+
 | Tool | Does |
 |---|---|
 | `scripts/factcheck.py brief.md seen.txt` | Every backticked fact present verbatim; typographic changes and numbers not in the brief flagged. |
 | `scripts/folio-check.py DESIGN.md [export…]` | The skeleton complete, no placeholders, contrast held; the export uses only declared colors and faces, no banned charts, no copy tells. |
-| `npx @google/design.md lint DESIGN.md` | Google's lint, where npm is reachable; otherwise report it unverified. |
 | `scripts/extract.py file.pptx\|file.html` | A skeleton drafted from an artifact's real colors, faces and sizes, for critique. |
 
 ## Make

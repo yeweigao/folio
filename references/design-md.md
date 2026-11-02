@@ -1,26 +1,67 @@
 # DESIGN.md — the skeleton, and the brief
 
-<!-- folio-template-version: 13 -->
+<!-- folio-template-version: 14 -->
 
-A world has one DESIGN.md: its aesthetic system, no content. Each piece has a brief. The skeleton follows Google's open [DESIGN.md](https://github.com/google-labs-code/design.md) format, with tokens in YAML front matter and prose under its sections in canonical order. Folio adds Variations and Record.
+A world has one DESIGN.md: its aesthetic system, no content. Each piece has a brief. The skeleton is written for the agent that makes the next piece, so it reads in the order a maker works: the hand's method and material, then construction, type and color, exact values last. Token names follow Google's [DESIGN.md](https://github.com/google-labs-code/design.md) where they overlap.
 
 ## The skeleton
 
-- **A world, not a piece.** A brand, a series, a programme: the scope its content shares. A fact of one piece belongs in that piece's brief.
-- **The invocation opens it.** School, hand, the work that carries the method, the method as an imperative, one ban.
-- **Method as process, not looks.** The first move, the tools and materials, the procedure.
-- **Tokens derived, not inherited.** From the hand and the world. A role only if used, every role used. Primary is ink, secondary muted, tertiary accent, neutral ground. Every text-on-ground pair is a component, so contrast can be checked.
+- **A world, not a piece.** A brand, a series, or a kind of content: the scope its content shares. What every piece keeps and what each piece brings are both stated; no fact of any piece appears, not even as an example.
+- **It stands alone.** With this file and their content, a maker without Folio can make the piece: the method, how a new subject yields its idea, how the method translates to content it was not made for, and the forms any content needs. A master's method has no unsuitable content.
+- **Relative to the format, never one size.** Every size derives from S, the format's short side, and every construction from W × H, so the same file builds a poster, a slide, a phone cover or a page. A size set by a span is derived, never also fixed: one rule per size.
+- **Three tests per line.** Would a maker get it wrong without it? Is it the rule, not one result of it (a ratio, not 336)? Does it say what no other line says? A line that fails one goes; a skeleton of rules, not instances, has nothing to contradict.
+- **No rule against itself.** Every rule holds for Latin and Chinese, for one language or two, for every form; a translation in World is never banned in Forms. Where two rules meet, the file says which wins.
+- **Method before look.** The invocation opens it: school, hand, the work that carries the method, the method as an imperative, one ban. Then the method as process: the first move, the tools and materials, the procedure, and how each piece finds its own idea in its subject. Values read first teach a look.
+- **Images decided once.** Where they come from (photographed, hand-made, computed, or none), crop, treatment, credit.
 - **Layout as construction, not coordinates.** The grid system named, with the rule that derives it from any format.
-- **Components are the forms.** One line each for the forms this world uses: how it is set, and its ban.
+- **Forms, one line each.** How each form this world uses is set, and its ban.
+- **Tokens derived, not inherited.** From the hand and the world, at the end as data. A role only if used, every role used. Every text-on-ground pair is listed under `pairs`, so contrast can be checked.
 - **Written as commands.** After the lock, helpers read this file instead of the theme.
 - **The file changes before the work.**
-- **English headings**, so tools can parse them; the prose may follow the person's language.
+- **English headings**, so scripts can find them; the prose may follow the person's language.
 
-```markdown
----
-version: alpha
-name: <world> · <school, hand>
-description: <the world in one sentence>
+````markdown
+# <World> · <school, hand>
+
+<What this system makes, for which content, in one sentence.>
+
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout; Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. Check the piece against Do's and Don'ts.
+
+## Overview
+<School>, <hand> — <the work>: <the method as an imperative>; never <the ban>.
+World: <the content and surfaces it serves; how the method translates to content it was not made for; what every piece keeps, what each piece brings>.
+Method: <the first move, the tools and materials, the procedure; how each piece finds its idea in its subject>.
+Amplitude: <full, or reduced: what is turned down, and why>.
+Anti-reference: <the default this world refuses>.
+
+## Images
+<Source: photographed, hand-made, computed, or none. Crop, treatment, credit; what stands in, declared, until the real one exists.>
+
+## Layout
+Grid system: <one system from the theme's roster> — <why>.
+<The construction from W × H: unit, margins, tracks; how portrait, landscape and square differ; where the space the content does not need goes.>
+
+## Typography
+<Faces and lineage; the ramp as steps at S = 1000; the smallest reading size; CJK and Latin as one voice; figures.>
+
+## Colors
+<Each role: what it marks, the grounds it touches, where it never appears.>
+
+## Shapes
+<Edges, rules, radius, depth; the drawing grammar of anything made in code.>
+
+## Forms
+<The forms any content brings (cover, statement, exhibit, argument and data, sequence, comparison, collection, reference, close), each as this hand sets it, or refused; its ban.>
+
+## Variations
+<The breaks this world allows at a turn, each with magnitude and keep condition.>
+
+## Do's and Don'ts
+<Look before delivering: what the render must not show. The floors. The school's test; its caricature.>
+
+## Tokens
+
+```yaml
 colors:
   primary: "<ink>"
   neutral: "<ground>"
@@ -29,45 +70,14 @@ typography:
   <role>: { fontFamily: "<face, CJK pair, generic>", fontSize: <px>, fontWeight: <n>, lineHeight: <n> }
 spacing:
   <step>: <px>
-rounded:
-  <name>: <px>
-components:
+pairs:
   <fg>-on-<ground>: { backgroundColor: "{colors.<ground>}", textColor: "{colors.<fg>}" }
----
-
-## Overview
-<School>, <hand> — <the work>: <the method as an imperative>; never <the ban>.
-World: <what this skeleton is for>.
-Method: <the first move, the tools and materials, the procedure>.
-Amplitude: <full, or reduced: what is turned down, and why>.
-Anti-reference: <the default this world refuses>.
-
-## Colors
-<Each role: what it marks, the grounds it touches, where it never appears.>
-
-## Typography
-<Faces and lineage; the ramp as steps; CJK and Latin as one voice; figures.>
-
-## Layout
-Grid system: <one system from the theme's roster> — <why>.
-<The construction rule from any format.>
-
-## Shapes
-<Edges, rules, radius, depth; the drawing grammar of any image made in code.>
-
-## Components
-<One line per form: how it is set; its ban.>
-
-## Do's and Don'ts
-<Up to five named rules; the dialect's test; its caricature.>
-
-## Variations
-<The breaks this world allows at a turn, each with magnitude and keep condition.>
+```
 
 ## Record
-Folio version: <x.y.z>. Template version: 13. Date: <date>.
+Folio version: <x.y.z>. Template version: 14. Date: <date>.
 Pieces: <briefs>. Changes after the lock: <list>.
-```
+````
 
 ## The forms
 
@@ -95,10 +105,11 @@ One `brief.md` per piece, beside the skeleton:
 - **Reader and outcome.** Who reads, where, from how far; what should happen next.
 - **The idea.** "On this surface, *the subject* becomes *the device*." It fails if a rival subject fits the sentence, or a second maker would reach it unaided.
 - **Sequence.** Per unit: form, lead, register (base, turn, pause). Turns sit where the content turns and name their variation.
-- **Assumptions and gaps.**
+- **Assumptions and gaps.** Ask once, only what changes the work; what stays unknown or unverified is reported with the delivery.
 
 A piece that must differ from the skeleton records why in its brief. A difference that holds for every piece changes the skeleton.
 
 ## The test
 
-A fresh session gets the skeleton and a brief for other content in the same world. If what it makes reads as one set with the first piece, and nothing had to be invented, the skeleton holds.
+- **Same world.** A fresh session gets the skeleton and a brief for other content in this world. What it makes reads as one set with the first piece, and only the piece's idea was new, found by the skeleton's method.
+- **Rival world.** The same skeleton with a brief from another world (another subject, the same hand) should not fit. If it fits unchanged, it is the hand's costume, not this world's system.

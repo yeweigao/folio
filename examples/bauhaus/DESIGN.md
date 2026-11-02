@@ -1,7 +1,82 @@
----
-version: alpha
-name: The Grid · Bauhaus, Joost Schmidt
-description: The evening series at the Museum of Design on the systems behind modern design, whose poster is its own programme drawn as a figure of circle, square and bar on a clock-set module.
+# Bauhaus, Joost Schmidt · the constructed figure
+
+A figure of the content built from circle, square and bar on one module, in red, blue, yellow and black, with every line of type hung from the same construction.
+
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. Check the piece against Do's and Don'ts.
+
+## Overview
+
+Bauhaus, Joost Schmidt — the 1923 Bauhaus exhibition poster: draw the content's figure with compass and square from circle, square and bar on one module, in red, blue, yellow and black, then set every line of type into the same construction; never shapes that build nothing.
+
+World: any content, on any surface. Its leading parts (three at most) become shapes, its order or measure becomes the black thread they hang from, their weights set sizes on the doubling scale. Every piece keeps the module, the primaries, the thread, the faces and the construction; each brings its parts, its order and its figure.
+
+Method:
+1. Find the parts, their order, and the axis that orders them (time, a process, a rank, a quantity).
+2. Lay the axis as one black thread; hang each part from it by a drop at its position.
+3. Draw each part with compass, square and rule: square, circle, bar, in that order, sized by weight on the doubling scale.
+4. Where two primaries cross, the overlap is ink.
+5. Hang the type from the same drops.
+
+A fourth term (time, sound, a sequence) takes the line, never a fourth hue. Kandinsky visits once: form and colour go to parts by place in the order, never by meaning.
+
+Amplitude: full: three primaries and black, flat, type at graphic scale.
+
+Anti-reference: the triad recited as pattern; pastel or teal primaries; shapes off the module; the subject's literal pictogram.
+
+## Images
+
+Computed: the figure drawn from the module. Moholy-Nagy may visit once: one real photograph in black and white, cut to a rectangle or circle on the module, in tension with a bar. Never an illustration.
+
+## Layout
+
+Grid system: Modular — one square module; every edge on its lines.
+
+S = min(W, H); margin S ÷ 20; twelve columns without gutters, sixteen where W > 1.4 H; module = column width; rows = whole modules that fit. The thread lies on a row line about a third down (at mid-height in landscape); the shapes hang from the row three below it; the masthead sits above, the ledger below, one row per fact. Sizes double (1, 2, 4, 8 modules); every edge, centre and drop lands on a module line. Rows nobody needs gather into one band of ink at the foot, never between the parts of the figure.
+
+## Typography
+
+- **League Spartan** (OFL; 500, 700), whose round letters echo the circle; **Noto Sans SC** (500, 700) for Chinese.
+- Display at a cap height of two modules, broken by meaning into lines that fit, never tracked or stretched; the Chinese display at the same ink height.
+- Title 36 / 700, name 36 / 500, body and label 26; Chinese body 24. Nothing read smaller.
+- Two weights, lining figures; no italic, outline or letterspacing. Latin may run lowercase, after Bayer.
+
+## Colors
+
+- **Ink `#111111` (primary).** Thread, drops, overlaps, rules, the foot band, everything read.
+- **Muted `#4A4A46` (secondary).** Secondary text.
+- **Ground `#F4F4F0` (neutral).** Paper white, over half the area.
+- **Red `#D7281E`, blue `#1D3E9E`, yellow `#F3B900`.** First, second and last part, in that order; never type. Yellow always carries an ink keyline and never touches red.
+- **Line `#8A8A83`.** The grid, where it is shown.
+- Primaries mark place in the order, never value or emphasis.
+
+## Shapes
+
+Flat, hard-edged, zero radius. Square; circle (at least four modules across); bar (one module thick, four long); a fourth part restarts at the square, one doubling larger. Each shape's left edge sits on its part's column line. Thread 6 ink at 0° or 90°, each drop ending on a corner or the circle's leftmost point. Keyline 3 ink. Ledger rules 2 ink to open, 1 between rows.
+
+## Forms
+
+- **Cover:** masthead, the figure, the ledger.
+- **Statement:** one sentence at title size hung from the thread, one shape as its counterweight.
+- **Exhibit:** one shape at eight modules, or one photograph cut on the module, its label on a drop.
+- **Data:** values as shapes of one kind along the thread; the doubling scale shows magnitude, the ledger the exact figure.
+- **Sequence and comparison:** the thread in order, one drop per step; two figures on one thread at one scale.
+- **Reference and close:** the ledger; the next action on the foot band.
+
+## Variations
+
+- **Vertical Chinese.** The Chinese display in a column two modules wide; once per series.
+- **Typophoto** (Moholy-Nagy). One photograph in diagonal tension with one bar; once per deliverable.
+
+## Do's and Don'ts
+
+- **Look before delivering:** render it, see it full size and as a thumbnail. A shape off the module, type on a primary, a figure that would fit another subject: faults.
+- **Floors:** facts verbatim and live; every pair in Tokens holds its contrast.
+- **Test:** remove the type, and the shapes still build this content's figure, not any content's.
+- **Caricature:** the Kandinsky triad on any subject; shapes scattered off the grid; pastel "Bauhaus"; gradients, shadows, rounded cards.
+
+## Tokens
+
+```yaml
 colors:
   primary: "#111111"
   secondary: "#4A4A46"
@@ -11,120 +86,24 @@ colors:
   yellow: "#F3B900"
   line: "#8A8A83"
 typography:
-  display: { fontFamily: "League Spartan, Noto Sans SC, Noto Sans CJK SC, sans-serif", fontSize: 224, fontWeight: 700, lineHeight: 0.9 }
-  display-zh: { fontFamily: "Noto Sans SC, Noto Sans CJK SC, League Spartan, sans-serif", fontSize: 158, fontWeight: 700, lineHeight: 0.9 }
-  title: { fontFamily: "League Spartan, Noto Sans SC, Noto Sans CJK SC, sans-serif", fontSize: 36, fontWeight: 700, lineHeight: 1.1 }
-  title-zh: { fontFamily: "Noto Sans SC, Noto Sans CJK SC, League Spartan, sans-serif", fontSize: 32, fontWeight: 700, lineHeight: 1.1 }
-  name: { fontFamily: "League Spartan, Noto Sans SC, Noto Sans CJK SC, sans-serif", fontSize: 36, fontWeight: 500, lineHeight: 1.1 }
-  body: { fontFamily: "League Spartan, Noto Sans SC, Noto Sans CJK SC, sans-serif", fontSize: 26, fontWeight: 500, lineHeight: 1.3 }
-  body-zh: { fontFamily: "Noto Sans SC, Noto Sans CJK SC, League Spartan, sans-serif", fontSize: 24, fontWeight: 500, lineHeight: 1.4 }
-  label: { fontFamily: "League Spartan, Noto Sans SC, Noto Sans CJK SC, sans-serif", fontSize: 26, fontWeight: 700, lineHeight: 1.3 }
+  display: { fontFamily: "League Spartan, Noto Sans SC, sans-serif", fontSize: 224, fontWeight: 700, lineHeight: 0.9 }
+  display-zh: { fontFamily: "Noto Sans SC, League Spartan, sans-serif", fontSize: 158, fontWeight: 700, lineHeight: 0.9 }
+  title: { fontFamily: "League Spartan, Noto Sans SC, sans-serif", fontSize: 36, fontWeight: 700, lineHeight: 1.1 }
+  name: { fontFamily: "League Spartan, Noto Sans SC, sans-serif", fontSize: 36, fontWeight: 500, lineHeight: 1.1 }
+  body: { fontFamily: "League Spartan, Noto Sans SC, sans-serif", fontSize: 26, fontWeight: 500, lineHeight: 1.3 }
+  body-zh: { fontFamily: "Noto Sans SC, League Spartan, sans-serif", fontSize: 24, fontWeight: 500, lineHeight: 1.4 }
 spacing:
   module: 75
   margin: 50
   thread: 6
   keyline: 3
-  grid: 2
-  rule: 2
-  hairline: 1
-rounded:
-  none: 0
-components:
+pairs:
   ink-on-ground: { backgroundColor: "{colors.neutral}", textColor: "{colors.primary}" }
   muted-on-ground: { backgroundColor: "{colors.neutral}", textColor: "{colors.secondary}" }
   ground-on-ink: { backgroundColor: "{colors.primary}", textColor: "{colors.neutral}" }
----
-
-## Overview
-
-Bauhaus, Joost Schmidt — the 1923 Bauhaus exhibition poster: draw the evening's figure with compass and square from circle, square and bar on one module, in red, blue, yellow and black, then set every line of type into the same construction; never shapes that build nothing.
-
-World: the poster series of The Grid, the Museum of Design's evening series on the systems behind modern design, in English and Chinese. Any evening is made from this file; its brief holds what is particular.
-
-Method:
-1. The evening's clock is the field: doors to close, twelve columns, a fixed number of minutes each.
-2. Lay the black thread along the clock; hang each talk from it at its start.
-3. Square the drop line to the shape's edge, strike the circle with the compass, cut the bar to the module.
-4. Cut each crossing in ink.
-5. Then hang the type from the same drops.
-
-Time is the fourth term, so it takes the line, never a fourth hue. Kandinsky visits once: form and colour go to talks by place in the evening, not title.
-
-Amplitude: full. Three primaries, one black, flat planes, graphic-scale type; only the exposed grid is turned down.
-
-Anti-reference: a Bauhaus costume (triad recited as pattern, pastel or teal primaries, shapes off the module, gradient, shadow, rounded card); cream ground with one vermilion accent; Newsreader, Plex, Archivo, Jost, Inter; template chrome (tracked kickers, 01/02/03, monospace labels, middle dots); the literal grid of squares.
-
-## Colors
-
-Red, blue, yellow, black on a white card. No other hue; nothing tinted, shaded or translucent.
-
-- **Primary, ink (#111111).** Thread, drops, overlaps, rules, foot band, reading text.
-- **Secondary, muted (#4A4A46).** Speakers and exhibition line; 8.07:1 on ground.
-- **Neutral, ground (#F4F4F0).** Cool paper white; over half the poster; type on the foot band.
-- **Red (#D7281E).** First talk's square. 4.52:1. Never type.
-- **Blue (#1D3E9E).** Second talk's circle. 8.52:1. Never type.
-- **Yellow (#F3B900).** Last talk's bar. 1.62:1, so a 3 px ink keyline always. Never type; never touches red.
-- **Line (#8A8A83).** Exposed grid only, 3.07:1.
-
-Red, blue, yellow are first, second, last talk, in that order. Crossings are ink.
-
-## Typography
-
-- **League Spartan** (OFL; 500, 700). Futura-lineage; round G echoes the circle. Fallback: system sans.
-- **Noto Sans SC** (OFL; 500, 700). Chinese voice. Fallback: Noto Sans CJK SC.
-- **Roles.** Display: THE GRID in capitals, word spacing −0.08 em, ink spanning twelve columns (224 px on 1000), cap height two modules; Chinese masthead at the same ink height (158 px). Title 36/700: time, date, hall. Name 36/500: talk title. Body 26/500: descriptor, speakers. Label 26/700: doors, entry, disclaimer. Chinese at 0.9 (32, 24). No other sizes.
-- Two weights. Lining figures, one time per line. No italic, letterspacing, outline type.
-- Chinese: hand breaks at phrases; full-width punctuation, dash ——.
-
-## Layout
-
-Grid system: Modular. From width W and height H:
-1. Margin W/20 (50 px).
-2. Twelve columns, no gutters; module = column width (75 px).
-3. Rows floor((H − 2 margins) / module): 17 on 1000 × 1414. Remainder falls to the foot: one module of black bleeding off the bottom.
-4. Clock: 15 minutes a column for 19:00–22:00 (20 for four hours). A start off a column line sits on the nearest half module; the brief says so.
-5. Thread on row line 5, full width. Shapes hang from row line 8. Exposed grid: columns 0–12, rows 8–12. Ledger from row line 13, one row per fact.
-6. Masthead on row line 2; Chinese masthead under it; descriptor on column line 5 beside it.
-
-Shape sizes double (1, 2, 4, 8 modules); every edge, centre and drop lands on a module line. Reading: masthead, figure, down each drop to time and name, ledger.
-
-## Shapes
-
-Flat fills, hard edges, zero radius, no shadow, gradient or transparency. Circle diameter four modules or more. Drawn in SVG from the module.
-
-- **Forms**, in order: square, circle, bar (one module thick, four long). A fourth talk restarts at the square, one doubling larger.
-- **Placement.** Left edge on the start's column line, row line 8; the bar's top edge on the circle's centre line. Width is the doubling size, never a talk's length.
-- **Overlap.** Draw lower, upper, then lower again in ink clipped to the upper. Always overlap, never abut.
-- **Thread.** 6 px ink, 0 or 90 degrees, a drop to each start ending on a corner or the circle's leftmost point. Doors drop one module. Nothing else at 6 px.
-- **Keyline.** 3 px ink, yellow only, inset.
-- **Exposed grid.** 2 px line colour on every module line of the field; never under text.
-- **Rules.** 2 px ink opens the ledger; 1 px ink between rows.
-
-## Components
-
-- **Masthead.** THE GRID, then the Chinese name at the same ink height. Ban: tracking changed to fit.
-- **Descriptor.** English above Chinese, body and body-zh, on column line 5, at most seven columns. Ban: English larger than Chinese.
-- **Thread.** Ban: curve, diagonal, arrowhead, second thread.
-- **Talk block.** 14 px right of its drop: time (title), talk (name), speaker (body, muted). Stops short of the next drop; surnames whole. Ban: text on a shape.
-- **Doors mark.** Doors time in label at the thread's start.
-- **Ledger.** One module-high row per fact: Latin left in title (label if secondary), Chinese pair right on the baseline; exhibition line in body, muted, unpaired. Ban: boxes, icons.
-- **Foot band.** One module of ink, full bleed, disclaimer in label, ground colour, if fictional. Ban: logos.
-
-## Do's and Don'ts
-
-1. **Hang everything from the clock.** Starts sit on column lines, never moved for composition.
-2. **Time is line, not hue.**
-3. **No type on a primary shape.**
-4. **Yellow is always keyed.**
-5. **Test.** Remove the type: shapes, thread and grid still build this evening's figure, not any evening's.
-
-## Variations
-
-- **Vertical Chinese.** Masthead top to bottom in a column two modules wide, once per run, four characters at most.
-- **Pause.** One evening per run shows grid, thread and descriptor only.
-- **Bleed.** The last bar may run off the right edge by at most 150 px; keyline on the three visible sides.
+```
 
 ## Record
 
-Folio version: 1.0.0. Template version: 13. Date: 2026-11-02.
-Pieces: the-grid/brief.md.
+Folio version: 1.1.0. Template version: 14. Date: 2026-11-02.
+Pieces: the-grid/brief.md, made from the earlier, programme-bound version of this file; the system it shows is unchanged.

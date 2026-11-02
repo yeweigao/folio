@@ -1,7 +1,82 @@
----
-version: alpha
-name: The Grid · Swiss Brutal, the Construction hand
-description: The Museum of Design's evening series on the systems behind modern design, set as a concrete-grey document of record whose row grid is the evening's clock.
+# Swiss Brutal · the document of record
+
+A working document whose row grid is the content's own measure: visible hairlines, one monolith at architectural scale, dense rows, one hazard colour for a real alert.
+
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. Check the piece against Do's and Don'ts.
+
+## Overview
+
+Swiss Brutal, the Construction hand, after the Modulor cast into the concrete of Le Corbusier's Unité d'Habitation and the grids computed in Müller-Brockmann's *Grid Systems*: compute the rows from the content's own measure, draw only the rules the content uses, and let one word or figure at architectural scale stand on them; never a rule that bounds nothing, never a surface effect.
+
+World: any content, on any surface. Lyrical content is translated, not refused: its sections, sequence or counts become the rows, and its one essential word becomes the monolith. Every piece keeps the ground, ink, rules, faces, the row computation and the monolith; each brings its data, its measure and its word.
+
+Method:
+1. Find the measure (time, count, sequence, sections); its units are the rows.
+2. Cut whole rows and twelve equal columns.
+3. A hairline and an axis tick per row, a longer tick per major unit.
+4. Each item a black cell on its row; a secondary track a grey field beside the main one.
+5. The monolith: the one word or figure the reader must not miss, on whole rows, flush left. Everything else stays document.
+6. A dark footer begins on the closing line. Computed, never nudged.
+
+Amplitude: full on the monolith, quiet elsewhere; the grid quieter than the text.
+
+Anti-reference: neo-brutalist stickers (thick outlines, hard shadows); terminal cosplay; a lattice as wallpaper.
+
+## Images
+
+None by default: rules and cells are the image. A real photograph enters as record: rectangular, whole columns and rows, its source as the caption row beneath.
+
+## Layout
+
+Grid system: Modular — the rows are the content's measure.
+
+N rows = the measure's units plus the header, monolith, description and footer rows; row height = (H − 2 × margin) ÷ N in whole pixels, the margin (at least 0.032 S) taking the halved remainder. Twelve columns without gutters, text inset 0.012 S: the axis on columns 1–2, cells on 3, items on 4–9, a secondary track on 10–12. Heavy rules open and close the field; verticals at columns 3 and 10; a hairline per row. Landscape and web keep the axis left and the rows down. Nothing is centred; no row is empty unless the measure says so.
+
+## Typography
+
+- **Inter** (OFL), with its Display cut for the monolith and titles: a tight grotesque that holds at architectural scale and at 32.
+- **Noto Sans SC** Bold or Black, its em box at 0.9 of the Latin; both scripts at one size and weight.
+- The monolith is derived: whole rows tall, at most the twelve columns wide (276 holds six letters at S = 1000).
+- Titles 56, figures 40, body and labels 32; nothing read below 32. Tabular figures; a text line sits inside one row.
+
+## Colors
+
+- **Ground `#E3E4E1` (neutral).** Concrete grey-white, at least half the area.
+- **Ink `#0B0B0B` (primary).** Text, monolith, cells, footer.
+- **Muted `#454745` (secondary).** Keys and secondary lines.
+- **Field `#C9CBC7`.** The secondary track only.
+- **Line `#7A7C79`.** Grid and ticks; never text.
+- **Hazard `#FFD200` (tertiary).** A real alert only, ink on it.
+- Emphasis is weight or the monolith, never colour.
+
+## Shapes
+
+Zero radius, shadow, gradient or outline. Hairlines 1; table rules 6 ink; the top edge one 8 ink rule. A cell is one column by one row.
+
+## Forms
+
+- **Cover:** the monolith flush left; header rows for what, when, where.
+- **Statement:** the monolith alone on whole rows, one line beneath.
+- **Exhibit:** one photograph as record on whole rows and columns, its caption row beneath.
+- **Data:** rows of label, value, unit and source on the columns; the one number that matters may be the monolith.
+- **Sequence and comparison:** the measure as rows, each item's cell on its starting row; two tracks side by side on one row scale.
+- **Reference and close:** the header ledger and the key, once; the footer in ink, ground text, a hazard cell for a real notice.
+
+## Variations
+
+- **Accent field.** The whole unit in hazard yellow, ink text; once, at a real turn.
+- **Rotation.** The monolith at 90° counter-clockwise on a tall format, from column 1, first row.
+
+## Do's and Don'ts
+
+- **Look before delivering:** render it, see it full size and as a thumbnail; squint, and the text reads before the rules. A line that bounds nothing, a band with no working content, two monoliths: faults.
+- **Floors:** facts verbatim and live; every pair in Tokens holds its contrast.
+- **Test:** every visible line is a real boundary and every band holds working content.
+- **Caricature:** terminal cosplay, green on black, scanlines; stickers with thick outlines and hard shadows; ugliness on purpose; broken layouts called raw.
+
+## Tokens
+
+```yaml
 colors:
   primary: "#0B0B0B"
   secondary: "#454745"
@@ -10,76 +85,25 @@ colors:
   field: "#C9CBC7"
   line: "#7A7C79"
 typography:
-  display: { fontFamily: "Inter Display, Inter, Noto Sans SC, Noto Sans CJK SC, sans-serif", fontSize: 276, fontWeight: 900, lineHeight: 0.76 }
-  title: { fontFamily: "Inter Display, Inter, Noto Sans SC, Noto Sans CJK SC, sans-serif", fontSize: 56, fontWeight: 800, lineHeight: 1 }
-  time: { fontFamily: "Inter, Noto Sans SC, Noto Sans CJK SC, sans-serif", fontSize: 40, fontWeight: 800, lineHeight: 1 }
-  body: { fontFamily: "Inter, Noto Sans SC, Noto Sans CJK SC, sans-serif", fontSize: 32, fontWeight: 700, lineHeight: 1.6 }
-  label: { fontFamily: "Inter, Noto Sans SC, Noto Sans CJK SC, sans-serif", fontSize: 32, fontWeight: 500, lineHeight: 1.5 }
+  monolith: { fontFamily: "Inter Display, Inter, Noto Sans SC, sans-serif", fontSize: 276, fontWeight: 900, lineHeight: 0.76 }
+  title: { fontFamily: "Inter Display, Inter, Noto Sans SC, sans-serif", fontSize: 56, fontWeight: 800, lineHeight: 1 }
+  figure: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 40, fontWeight: 800, lineHeight: 1 }
+  body: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 32, fontWeight: 700, lineHeight: 1.5 }
 spacing:
-  row: 48
-  column: 78
   margin: 32
   inset: 12
-rounded:
-  none: 0
-components:
+  rule: 6
+  edge: 8
+  hairline: 1
+pairs:
   ink-on-ground: { backgroundColor: "{colors.neutral}", textColor: "{colors.primary}" }
   muted-on-ground: { backgroundColor: "{colors.neutral}", textColor: "{colors.secondary}" }
   ink-on-field: { backgroundColor: "{colors.field}", textColor: "{colors.primary}" }
-  muted-on-field: { backgroundColor: "{colors.field}", textColor: "{colors.secondary}" }
   ground-on-ink: { backgroundColor: "{colors.primary}", textColor: "{colors.neutral}" }
   ink-on-hazard: { backgroundColor: "{colors.tertiary}", textColor: "{colors.primary}" }
----
-
-## Overview
-Swiss Brutal, the Construction hand, after the Modulor cast into the concrete of Le Corbusier's Unité d'Habitation and the grids computed in Müller-Brockmann's *Grid Systems*: compute the rows from the clock of the evening, draw only the rules the schedule uses, and let one word at architectural scale stand on top of them; never a rule that bounds nothing, never a surface effect.
-World: the Museum of Design's evening series "The Grid"; two-script title, date, venue, running order, one parallel event, a notice.
-Method: 1. Count quarter hours from doors to close: that is N rows of the time field. 2. Cut whole rows and 12 equal columns. 3. Hairline and axis tick per row, longer tick per hour. 4. Each talk: one black cell, one column by one row, on its start row. 5. Parallel event: grey field beside the talks, open at its far end. 6. Title: the Monolith, one word on whole rows, flush left. 7. Dark footer begins on the closing line. Computed, never nudged.
-Amplitude: full on the title (two to three times the next element), quiet elsewhere; grid quieter than text.
-Anti-reference: neo-brutalist sticker (thick outlines, hard shadows), terminal cosplay, cream and vermilion, a lattice as wallpaper.
-
-## Colors
-Concrete, ink, one signal.
-- Ground #E3E4E1: cool grey-white, not cream; at least half the poster.
-- Ink #0B0B0B: text, Monolith, cells, footer.
-- Muted #454745: keys, secondary lines; 4.5:1.
-- Field #C9CBC7: the parallel event only.
-- Line #7A7C79: grid and ticks, 3:1, never text.
-- Hazard #FFD200: the illustrative notice only, ink text, never on text or lines.
-Footer flips to ground text.
-
-## Typography
-Inter, Display cut for Monolith and titles (OFL; Inter fallback). Noto Sans SC Bold or Black (OFL; CJK fallback), em box 0.9 of Latin. Both scripts same size and weight.
-Four steps at 1000 px: 276 Monolith (900, -0.05em), 56 titles, 40 times, 32 body, speakers, notices, label weight 500 for track and key. Nothing below 32; ramp scales with the row. Tabular figures. A text line sits inside one row; blocks use whole rows.
-
-## Layout
-Grid system: Modular; rows are the time axis. N = quarter-hour rows plus header, title (cap height plus leading, rounded up), tagline, footer; row = (height - 2 x margin) / N, whole pixels, margin the halved remainder. 12 columns, no gutters, 12 px inset. Axis columns 1-2; cells column 3; talks 4-9; parallel event 10-12. Heavy rules at the field's open and close, verticals at columns 3 and 10, hairline per row. Landscape or web: axis left, rows down. Nothing is centred.
-
-## Shapes
-Zero radius, shadow, gradient or outline. Hairlines 1 px; table rules 6 px ink; top edge one 8 px ink rule. Cell one column by one row. Ticks 1 px, 14 px per row, 28 px per hour.
-
-## Components
-- Monolith: display step, ink, flush left; Chinese title on the first line. Ban: second monolith, tint.
-- Header ledger: date and hours in body step, one row each; venue in both scripts at column 7; hairlines above and below.
-- Tagline: two scripts, whole rows, body step.
-- Ruler: hairline and tick per row, 6 px rules. Ban: labels at times that are not facts.
-- Start cell: column 3, time on the axis in the time step. Ban: a cell on a row that starts nothing.
-- Entry: title step, speaker body regular, runs to the next start. Ban: unstated durations.
-- Parallel track: field column, ink left rule, label step, hairlines resuming below. Ban: an unstated end mark.
-- Footer: ink, bleeding to the edges, ground text, closing line as top edge.
-- Notice: hazard cell inside the footer, ink, body size at 800, two lines.
-- Key: muted, "1 row = 15 min", once.
-
-## Do's and Don'ts
-- Derive every position from rows and clock; change the number, not the position.
-- Delete any line that bounds nothing; hazard for the notice only.
-- Squint: text reads before rules.
-- Refused: sticker brutalism, terminal green, cream with one vermilion accent, tracked kickers, 01/02/03, monospace labels, a clock-face pictogram.
-
-## Variations
-- Accent field: the whole poster in hazard yellow, ink text; once, at a turn (a final night).
-- Rotation: Monolith 90 degrees counter-clockwise on a tall web banner; origin column 1, first row.
+```
 
 ## Record
-Folio version: 1.0.0. Template version: 13. Date: 2026-11-02.
-Pieces: the-grid/brief.md.
+
+Folio version: 1.1.0. Template version: 14. Date: 2026-11-02.
+Pieces: the-grid/brief.md, made from the earlier, programme-bound version of this file; the system it shows is unchanged.

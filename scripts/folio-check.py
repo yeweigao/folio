@@ -5,16 +5,17 @@ Usage:
   folio-check.py DESIGN.md [export.html|export.pptx ...]
 
 Skeleton (DESIGN.md):
-  S1 YAML front matter with colors and typography
-  S2 the sections a skeleton needs: Overview, Colors, Typography, Layout,
-     Components, Do's and Don'ts, Record
+  S1 a ## Tokens section with a yaml block holding colors and typography
+  S2 the sections a skeleton needs: Overview, Images, Layout, Typography,
+     Colors, Forms, Do's and Don'ts, Tokens, Record
   S3 no template placeholders left (<...>) anywhere in the file
   S4 the Overview opens with an invocation line and names World and Method
   S5 Layout names its grid system
   S6 Record names the Folio version and the template version
-  T1 every component reference resolves; every color is used by a
+  S7 sizes are relative: the file states its reference (S = <n>)
+  T1 every pair reference resolves; every color is used by a
      component or named in the prose
-  T2 component text pairs meet 4.5:1 (append "-large" to a component's
+  T2 text pairs meet 4.5:1 (append "-large" to a pair's
      name to hold it to the 3:1 large-text floor instead)
 
 Exports (when given):
@@ -33,7 +34,7 @@ import zipfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from folio_lib import parse_front_matter, resolve, contrast
+from folio_lib import parse_tokens, resolve, contrast
 
 fail, warn = [], []
 GENERIC = {"serif", "sans-serif", "monospace", "system-ui", "cursive", "fantasy",
@@ -50,12 +51,12 @@ def section(prose, name):
 
 def check_design(path):
     text = Path(path).read_text(encoding="utf-8")
-    tokens, prose = parse_front_matter(text)
+    tokens, prose = parse_tokens(text)
     if not tokens or "colors" not in tokens or "typography" not in tokens:
-        fail.append("S1 no YAML front matter with colors and typography")
+        fail.append("S1 no ## Tokens yaml block with colors and typography")
         return tokens or {}
-    for s in ("Overview", "Colors", "Typography", "Layout", "Components", "Do's and Don'ts", "Record"):
-        if section(prose, s) is None:
+    for s in ("Overview", "Images", "Layout", "Typography", "Colors", "Forms", "Do's and Don'ts", "Tokens", "Record"):
+        if section(text, s) is None:
             fail.append(f"S2 missing section ## {s}")
     holes = re.findall(r"<[^<>\n]{2,80}>", text)
     holes = [h for h in holes if not re.match(r"</?[a-z][a-z0-9]*[\s>/]", h + ">")]
@@ -70,6 +71,8 @@ def check_design(path):
             fail.append(f"S4 Overview has no '{label}' line")
     if not re.search(r"grid system:\s*\S+", section(prose, "Layout") or "", re.I):
         fail.append("S5 Layout does not name its grid system ('Grid system: …')")
+    if not re.search(r"\bS\s*=\s*\d+", text):
+        fail.append("S7 no reference format stated ('S = 1000'): sizes must derive from the format")
     rec = section(prose, "Record") or ""
     if not re.search(r"folio version:?\s*\d+\.\d+", rec, re.I):
         fail.append("S6 Record does not name a Folio version")
@@ -77,7 +80,7 @@ def check_design(path):
         fail.append("S6 Record does not name a template version")
 
     colors = tokens.get("colors", {})
-    comps = tokens.get("components", {}) or {}
+    comps = tokens.get("pairs", {}) or {}
     used = set()
     for name, c in comps.items():
         if not isinstance(c, dict):
@@ -88,16 +91,16 @@ def check_design(path):
             if m:
                 used.add(m.group(1))
                 if m.group(1) not in colors:
-                    fail.append(f"T1 component {name} refers to missing color {m.group(1)}")
+                    fail.append(f"T1 pair {name} refers to missing color {m.group(1)}")
             elif ref.startswith("{"):
-                fail.append(f"T1 component {name} has an unresolvable reference {ref}")
+                fail.append(f"T1 pair {name} has an unresolvable reference {ref}")
         bg = resolve(c.get("backgroundColor", ""), tokens)
         fg = resolve(c.get("textColor", ""), tokens)
         if bg and fg and str(bg).startswith("#") and str(fg).startswith("#"):
             r = contrast(fg, bg)
             floor = 3.0 if name.endswith("-large") else 4.5
             if r and r < floor:
-                fail.append(f"T2 component {name}: {fg} on {bg} is {r:.2f}:1 (< {floor}:1)")
+                fail.append(f"T2 pair {name}: {fg} on {bg} is {r:.2f}:1 (< {floor}:1)")
     low = prose.lower()
     for cname, cval in colors.items():
         if cname not in used and str(cval).lower() not in low and cname.lower() not in low:

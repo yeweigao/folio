@@ -9,13 +9,13 @@ Stdlib only; borrows VoltAgent awesome-design-md's preview.html convention.
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
-from folio_lib import parse_front_matter, resolve, contrast
+from folio_lib import parse_tokens, resolve, contrast
 
 def esc(s): return str(s).replace("&", "&amp;").replace("<", "&lt;")
 
 def catalog(tokens, dark=False):
     colors = tokens.get("colors", {}); typo = tokens.get("typography", {})
-    comps = tokens.get("components", {})
+    comps = tokens.get("pairs", {})
     ground = colors.get("dark", "#141414") if dark else colors.get("neutral", "#FFFFFF")
     ink = colors.get("neutral", "#FFFFFF") if dark else colors.get("primary", "#111111")
     sw = "".join(f'<div class="sw"><i style="background:{esc(v)}"></i><b>{esc(k)}</b><span>{esc(v)}</span></div>'
@@ -40,7 +40,7 @@ def catalog(tokens, dark=False):
 def main():
     md = Path(sys.argv[1]); out = Path(sys.argv[2]) if len(sys.argv) > 2 else md.parent
     out.mkdir(parents=True, exist_ok=True)
-    tokens, _ = parse_front_matter(md.read_text(encoding="utf-8"))
+    tokens, _ = parse_tokens(md.read_text(encoding="utf-8"))
     (out / "preview.html").write_text(catalog(tokens), encoding="utf-8")
     (out / "preview-dark.html").write_text(catalog(tokens, dark=True), encoding="utf-8")
     css = ":root{\n" + "".join(f"  --{sec}-{k}: {v};\n" for sec in ("colors", "spacing", "rounded")

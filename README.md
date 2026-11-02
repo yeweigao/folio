@@ -2,9 +2,9 @@
 
 # Folio
 
-**Swiss-style design for AI agents.** A skill that art-directs slides, posters, websites, canvases and handbooks so they read as designed, not generated, and writes each world's aesthetic skeleton as a DESIGN.md.
+**Master-level design for AI agents.** A skill that art-directs slides, posters, websites, canvases and handbooks in the hand of a named school, so they read as designed, not generated, and writes each world's aesthetic skeleton as a DESIGN.md.
 
-[Install](#install) · [How it works](#how-it-works) · [Dialects](#dialects) · [中文](#中文)
+[Install](#install) · [How it works](#how-it-works) · [Themes](#themes) · [中文](#中文)
 
 ![Nine dialects on one programme](examples/dialects.png)
 
@@ -23,20 +23,20 @@
 
 - **The author's eye.** Thirteen lines of philosophy outrank everything else.
 - **Names carry methods.** A master is summoned by name and practised by his way of working.
-- **Goals, not procedure.** Understand, go wide, lock the skeleton, judge the render, be judged from outside.
-- **A skeleton per world.** Google's open DESIGN.md format, holding the system and no content; another piece of the world can be made from it alone.
+- **Routes, not steps.** SKILL.md says which file each moment opens, the theme before the first mark; the agent plans its own route.
+- **A skeleton per world.** A DESIGN.md written for the agent that makes the next piece: method before look, values last, no content; another piece of the world can be made from it alone.
 - **Floors by machine.** Facts verbatim, contrast, live text, the export against its tokens.
 - **Tested against no skill.** Fixed briefs, a light maker, a blind judge. In 1.0, Folio placed first on all five briefs against 0.9.0 and no skill.
 
-## Dialects
+## Themes
 
-The mother tongue alone suits material that argues, reports, counts or lists. A dialect overturns a few Swiss rules across the whole work.
+A theme is a school with its masters, grammar and dialects; SKILL.md holds only what is true under every theme. The first theme is **[Swiss](references/themes/swiss/theme.md)**, the International Typographic Style. Alone it suits material that argues, reports, counts or lists; a dialect overturns a few Swiss rules across the whole work.
 
 | Dialect | The material | Departs from Swiss |
 |---|---|---|
 | [De Stijl](references/themes/swiss/dialects/de-stijl.md) | Relates: proportion and balance are the subject | Black bars and primary planes in equilibrium |
 | [Bauhaus](references/themes/swiss/dialects/bauhaus.md) | Celebrates or explains, where geometry can build the subject | Primaries and primitives assembled into figures |
-| [Brodovitch](references/themes/swiss/dialects/brodovitch.md) | Seduces, where the image is the subject | Didot type colliding with a daring crop |
+| [Brodovitch](references/themes/swiss/dialects/brodovitch.md) | Seduces, where the image is the subject | Didone type colliding with a daring crop |
 | [Polish Poster School](references/themes/swiss/dialects/polish-poster.md) | Interprets a cultural subject | One authored, hand-made metaphor |
 | [Ulm](references/themes/swiss/dialects/ulm.md) | Coordinates a system of messages | Rules for every case; color and pictograms as codes |
 | [Swiss Punk](references/themes/swiss/dialects/swiss-punk.md) | Provokes, still readable | The grid tested by rotation, layering, stepped type |
@@ -73,22 +73,23 @@ Claude apps: zip the folder, then go to Customize → Skills → + → Upload a 
 ## Structure
 
 ```
-SKILL.md          goal · philosophy · floors · process · library (v1.0.0)
-references/       design-md · review · tools · craft · signature · steering · extending
+SKILL.md          goal · philosophy · routes · themes (v1.1.0)
+references/       design-md · review · tools · craft · signature · steering
   surfaces/       slides · poster · web · canvas · handbook
   themes/swiss/   theme · 9 dialects
 scripts/          render · contact · factcheck · folio-check · preview · extract · measure · release-check · generators
-examples/         nine dialects on one programme · one series from one skeleton
+examples/         nine standalone design systems · one series from one skeleton
 tests/            fixed briefs for judging changes
+CONTRIBUTING.md   laws, contracts and releases for changing the skill
 ```
 
 ## 中文
 
-Folio 是给 AI agent 用的设计 skill,覆盖 PPT、海报、网页、画布和手册,做出瑞士风格与现代主义各流派的大师水准,并把每个世界的审美骨架写成一份 DESIGN.md。
+Folio 是给 AI agent 用的设计 skill,覆盖 PPT、海报、网页、画布和手册,以具名流派和大师的做法做出大师水准(第一个主题是瑞士风格及其周边的现代主义流派),并把每个世界的审美骨架写成一份 DESIGN.md。
 
 - **作者的眼光**:13 条设计哲学凌驾一切。
 - **名字带方法**:大师以名字召唤,以他的做法实践。
-- **只给目标,不给步骤**:吃透、广开、锁骨架、看渲染、外部审。
+- **给路由,不给步骤**:什么情况打开哪个文件,动手前必读主题;路线由 agent 自己定。
 - **骨架不含内容**:同一个世界的下一件作品,只凭骨架就能做出来。
 - **底线由机器检查**:事实、对比度、活字。
 

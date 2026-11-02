@@ -1,4 +1,20 @@
-# Review — judged from outside
+# Review
+
+Before the work is called done: the floors, then the eye.
+
+## Floors
+
+Below them nothing ships, under any school. A floor is passed, never admired. Scripts hold what they can ([check](tools.md#check)); the export is looked at for the rest.
+
+- **Facts are exact.** Verbatim; nothing invented, renamed or dropped. A missing fact is asked for or reported, never printed as a placeholder.
+- **Nothing invented poses as real.** Illustration is declared; a drawn object never stands in for real material.
+- **Text separates from its ground.** 4.5:1; large text and essential cues 3:1; the surface's size floors at viewing distance.
+- **Reading text is live.**
+- **Static work stays static.**
+- **A new format is recomposed, not scaled.** Trim, bleed and safe area by the surface.
+- **Licenses travel with assets.**
+
+## The eye, from outside
 
 The context that made the work is a poor judge of it. Review comes from contexts that did not make it, and judges the picture, not the files that describe it. Finding faults is easier than making, so critics can run on a lighter model.
 
@@ -31,8 +47,8 @@ The maker decides; a point can be right and still not worth acting on. Fix, rend
 
 Give every reviewer this, and nothing else from the skill:
 
-1. The philosophy and the floors (SKILL.md).
-2. The claimed school's test and caricature: the dialect file, or the theme's anti-patterns.
+1. The philosophy (SKILL.md) and the floors (above).
+2. The claimed school's test and caricature: the dialect file, or the theme's test and anti-patterns.
 3. The surface's "Done means".
 4. Where unexamined choices land, listed below.
 

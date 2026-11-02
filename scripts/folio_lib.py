@@ -1,13 +1,30 @@
 """Shared stdlib-only helpers for Folio scripts: a small DESIGN.md parser
-(front matter subset used by the Folio template) and WCAG contrast math."""
+(the YAML subset of the skeleton's Tokens block) and WCAG contrast math."""
 import re
 
-def parse_front_matter(text):
-    m = re.match(r"^---\n(.*?)\n---\n", text, re.S)
-    if not m:
-        return {}, text
-    body, rest = m.group(1), text[m.end():]
-    tokens, section, key = {}, None, None
+TOKENS = re.compile(r"^## Tokens\s*\n.*?```ya?ml\n(.*?)\n```[^\n]*\n?", re.S | re.M)
+
+
+def parse_tokens(text):
+    """Return (tokens, prose). Tokens come from the ```yaml block under
+    ## Tokens; prose is the file without that section. The title (# ...)
+    and the paragraph under it become tokens['name'] and ['description']."""
+    m = TOKENS.search(text)
+    if m:
+        tokens = _parse_yaml(m.group(1))
+        prose = text[:m.start()] + text[m.end():]
+    else:
+        tokens, prose = {}, text
+    title = re.match(r"^# (.+)\n+([^#\n][^\n]*)?", prose)
+    if title:
+        tokens.setdefault("name", title.group(1).strip())
+        if title.group(2):
+            tokens.setdefault("description", title.group(2).strip())
+    return tokens, prose
+
+
+def _parse_yaml(body):
+    tokens, section = {}, None
     for line in body.split("\n"):
         if not line.strip() or line.strip().startswith("#"):
             continue
@@ -15,17 +32,11 @@ def parse_front_matter(text):
         sub = re.match(r"^\s{2}([\w-]+):\s*(.*)$", line)
         if top and not line.startswith(" "):
             section, val = top.group(1), top.group(2).strip()
-            if val:
-                tokens[section] = _scalar(val)
-            else:
-                tokens[section] = {}
+            tokens[section] = _scalar(val) if val else {}
         elif sub and section:
             k, val = sub.group(1), sub.group(2).strip()
-            if val.startswith("{"):
-                tokens[section][k] = _inline_map(val)
-            else:
-                tokens[section][k] = _scalar(val)
-    return tokens, rest
+            tokens[section][k] = _inline_map(val) if val.startswith("{") else _scalar(val)
+    return tokens
 
 def _scalar(v):
     v = v.strip().strip('"').strip("'")

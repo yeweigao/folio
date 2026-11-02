@@ -10,7 +10,7 @@ prints how to install and exits 2 — an unmeasured claim is reported, not faked
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
-from folio_lib import parse_front_matter
+from folio_lib import parse_tokens
 
 def hex2rgb(h):
     h = h.lstrip("#"); return tuple(int(h[i:i+2], 16) for i in (0, 2, 4))
@@ -25,7 +25,7 @@ def main():
         from PIL import Image
     except ImportError:
         print("Pillow not installed: pip install pillow — field shares unmeasured"); return 2
-    tokens, _ = parse_front_matter(md.read_text(encoding="utf-8"))
+    tokens, _ = parse_tokens(md.read_text(encoding="utf-8"))
     cols = tokens.get("colors", {})
     if "neutral" not in cols:
         print("no neutral (ground) color in DESIGN.md; nothing to measure"); return 2

@@ -1,10 +1,42 @@
 # Swiss — the International Typographic Style
 
-The International Typographic Style, as set for Chinese and Latin. Its sources are Müller-Brockmann's *Grid Systems*, Ruder's *Typographie*, Hofmann's Basel, *Neue Grafik*, the work of Lohse, Vivarelli and Neuburg, and Gerstner's *Designing Programmes*, with Akzidenz, Univers and Helvetica. It governs relationships, so it hosts other movements without becoming a costume. Every dialect inherits this file and replaces only the rules it names.
+The International Typographic Style, as set for Chinese and Latin. Its sources are Müller-Brockmann's *Grid Systems*, Ruder's *Typographie*, Hofmann's Basel, *Neue Grafik*, the work of Lohse, Vivarelli and Neuburg, and Gerstner's *Designing Programmes*, set in the grotesques and neo-grotesques of the 1950s. It governs relationships, so it hosts other movements without becoming a costume. Every dialect inherits this file and replaces only the rules it names.
+
+## Use
+
+Read it once in full, then choose. Each choice is written into the skeleton; what is not chosen holds as house grammar unless a dialect names it.
+
+| Choose | From | Written into DESIGN.md |
+|---|---|---|
+| The school: Swiss alone, or one dialect | Dialects, by the material | Overview, the invocation |
+| The governing hand | The dialect's hands; with none, the hands below | Overview, Method |
+| The grid system | Grammar, the roster | Layout, Grid system |
+| A method per reader need | Methods; construction cards in [signature](../../signature.md) | Forms |
+| How images are made | Images, and the hand's materials | Images |
+| The breaks, where the content turns | Variations | Variations |
+| The test and the caricature | The dialect file; with none, Anti-patterns | Do's and Don'ts |
+
+Going wide means different hands on this subject, not different looks. The test and the caricature also go to the reviewers.
+
+## Dialects
+
+Alone, the mother tongue suits material that argues, reports, testifies, counts or lists. A dialect is a named movement that overturns a few of its rules across the whole work; one per work, or none. Open the one in play before drawing.
+
+| Dialect | The material | Departs from Swiss |
+|---|---|---|
+| [De Stijl](dialects/de-stijl.md) | Relates: parts whose proportions and balance are the subject | Black bars and primary planes in equilibrium |
+| [Bauhaus](dialects/bauhaus.md) | Celebrates or explains, where geometry can build the subject | Primaries and primitives on one module, assembled into figures |
+| [Brodovitch](dialects/brodovitch.md) | Seduces, where the image is the subject | Didone type colliding with a daring crop; spreads paced like film |
+| [Polish Poster School](dialects/polish-poster.md) | Interprets a cultural subject | One authored, hand-made metaphor |
+| [Ulm](dialects/ulm.md) | Coordinates a system of related messages | Rules for every case; color and pictograms as codes |
+| [Swiss Punk](dialects/swiss-punk.md) | Provokes, still readable | The grid tested by rotation, layering and stepped type |
+| [Memphis](dialects/memphis.md) | Delights: products, events, youth culture | Clashing colors and pattern as material |
+| [Kenya Hara, ma 間](dialects/ma.md) | Invites: one object, craft or ceremony | Emptiness as the vessel; small, quiet type |
+| [Swiss Brutal](dialects/brutalist.md) | Specifies: structure is the content | Visible grid rules, zero radius, dense rows |
 
 ## Hands of the mother tongue
 
-Choose one to govern the work; the others visit as single moves. Each is a way of working, not a look.
+With no dialect, one governs and the others visit as single moves; with a dialect, its hands govern and these only visit. Each is a way of working, not a look.
 
 - **Josef Müller-Brockmann — the Tonhalle *musica viva* posters, *Grid Systems* (1950s–81).** Compute the grid from the format before anything is placed. Find a structure inside the subject (a score's form, a building's plan, a schedule's intervals) and build the image from it in the grid's own geometry. Set type flush left, in few sizes. Suits programmes, institutions, music and public information. Never: a grid declared in the file and invisible in the work.
 - **Emil Ruder — *Typographie* (1967), the Basel typography classes.** Compose with type alone. Counters, interletter rhythm, texture and the white of the page are the material, and contrasts of size, weight and direction are the procedure; proof the type as it will really be set. Suits text-led, cultural and bilingual work. Never: an image where type can carry the meaning.
@@ -70,7 +102,7 @@ A variation breaks the grammar on one unit, where the content turns. Each is sta
 
 | Variation | What it does | Keep | Lineage |
 |---|---|---|---|
-| Thin-mode turn | Hairline weights at giant size | Small text keeps its stroke | Frutiger's light Univers |
+| Thin-mode turn | Hairline weights at giant size | Small text keeps its stroke | Frutiger's light neo-grotesque cuts |
 | Mixed-type line | One display line changes size and weight inside a phrase | Display only; one line per unit | Schwitters, Piet Zwart |
 | Type filled with photograph | Letters clipped to an image | The title stays live text | Moholy-Nagy's typophoto |
 | Vertical CJK | Chinese set top to bottom, right to left | Short texts only; Latin figures stand upright (tate-chū-yoko), never rotated | East Asian book tradition, Ikko Tanaka |
@@ -116,10 +148,12 @@ A variation breaks the grammar on one unit, where the content turns. Each is sta
 
 House preferences; a brief, a brand or a dialect may override them.
 
-- **The caricature:** grey minimal skin at one volume; Helvetica, white, a red square as ornament.
+- **The caricature:** grey minimal skin at one volume; a neo-grotesque, white, a red square as ornament.
 - A centered hero, three equal cards, a gradient button, a logo wall.
 - KPI tiles; numbers on unordered content; a giant word with no claim.
 - Two whole dialects on one unit.
 - Gradients, glass, fake grain, fake 3D.
 - Fake luxury: gold, glowing outlines, spaced serif capitals.
 - Fake editorial: drop caps, quote walls, "Vol. 01".
+
+**Test:** the grid can be redrawn from the render alone and argues every size and position; with color removed, the piece still reads.

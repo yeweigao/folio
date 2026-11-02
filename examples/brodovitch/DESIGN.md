@@ -1,90 +1,102 @@
----
-version: alpha
-name: The Grid · Swiss, Brodovitch (the Bazaar covers)
-description: The Museum of Design's evening series on the systems behind modern design, set as a fashion cover that has been cut by a ruler.
+# Swiss, Brodovitch · the Bazaar cover
+
+One photograph of the subject in motion and one Didone word, cut by the same edge, over a quiet Swiss page.
+
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. Check the piece against Do's and Don'ts.
+
+## Overview
+
+Swiss, in Alexey Brodovitch's hand of the *Harper's Bazaar* covers and *Ballet* (1934–58) — crop one photograph of the subject in motion to a single gesture, then set one Didone word across the crop's edge at the scale of the figure, so the line that cuts the picture cuts the word; never a stock figure under a centred serif, never gold, never a script face.
+
+World: any content, on any surface. A subject with no body to photograph is translated: photograph its trace (the object, the hand, the place), or let its strongest form, a number's fall or one word, become the figure. Every piece keeps the cut, the Didone word, the quiet page, ink and paper; each brings its photograph, its word and its facts.
+
+Method:
+1. The figure: the subject in motion, cropped on the contact sheet until one gesture remains.
+2. The word: the subject's name or its one strongest noun; never a slogan.
+3. The cut: one edge through the figure's weight and through the word, paper type above it, ink below.
+4. The page: Swiss beneath the edge; quiet, so the cut stays loud.
+5. In a sequence, pace it like film: a loud unit, then a quiet one.
+
+Amplitude: full above the edge, reduced below.
+
+Anti-reference: a centred serif over a stock model; gold, glass, script; Didone body text.
+
+## Images
+
+A real photograph, credited, never invented; motion blur kept; it may dissolve at one edge. Until it exists, the plate is ink marked "FPO". A number as the figure is the picture, not a headline: its digits in the grotesque, paper on ink, cap height near the plate's height, bleeding off at least two edges and cropped like a photograph; the word and the lockup are set over it. Nothing drawn, rendered or generated poses as a photograph; no chart on the plate.
+
+## Layout
+
+Grid system: Column — tracks under one division of the format into a plate and a page.
+
+S = min(W, H); unit u = S ÷ 72; margin 4u; gutter u; six tracks, twelve where W > 1.4 H. The plate bleeds on three sides; its edge lies on a whole u, a third to two fifths down a portrait, near half a square, 0.5–0.6 across a landscape (a vertical edge). The word spans the margins, and the edge crosses it between 40% and 60% of its height. The page is set from the bottom margin up, so the space it does not need opens under the word and the cut breathes; groups 2u to 4u apart. On the page, the first language and figures hang on track 0, the second language on track 3; one fact, one row.
+
+## Typography
+
+- **The word** fills its span: Latin in Bodoni Moda 800, Chinese in Noto Serif SC 900 at span ÷ characters. One live text element, filled with a hard stop at the edge. If it falls below 0.2 S, choose a shorter word.
+- **The lockup** sits 2u above the word, at a third of the word's size and never wider than half its span: the name in the other language, Latin in Bodoni Moda italic, Chinese in Noto Serif SC.
+- **Titles** 46: Bodoni Moda 700, Chinese in Noto Serif SC 700.
+- **Everything read:** Hanken Grotesk with Noto Sans SC 500, 30 on 42; credits 15. Nothing read below 30.
+- Latin and Chinese as one voice: same size, same track. Tabular figures in data.
+
+## Colors
+
+- **Ink `#0B0B0C` (primary).** The plate, the word below the edge, everything read.
+- **Paper `#F6F7F7` (neutral).** Cold white, never cream; the word above the edge, credits on the plate.
+- **Muted `#55585C` (secondary).** Secondary facts on paper.
+- Emphasis is weight or position, never colour.
+
+## Shapes
+
+No radius, shadow, border or card. At most two 2 ink rules organize the page; rules drawn to scale in data are measures, not organization.
+
+## Forms
+
+- **Cover:** the plate, the word on its edge, the lockup; the page beneath carries the facts or one other form.
+- **Statement:** one sentence in Bodoni Moda italic, flush left, no plate.
+- **Exhibit:** the plate alone, credited.
+- **Data:** the title as the content gives it, then rows at reading size, each at most four tracks long with its value at the row's end; a 2 ink rule per row drawn to scale where the difference must be seen; the key row in 700.
+- **Sequence and comparison:** frames at one crop scale in order, as in *Ballet*, one word crossing them.
+- **Reference and close:** the page alone, rows on the tracks.
+
+## Variations
+
+- **Symmetric axis.** On a cover only, word and lockup centred; once per series.
+- **Sequence strip.** Equal frames of one movement, blur kept, the word across them; once per deliverable.
+
+## Do's and Don'ts
+
+- **Look before delivering:** render the piece and see it at full size and as a thumbnail; space nobody placed and two things leading are faults.
+- **Floors:** facts verbatim and live; credits never invented; every pair in Tokens holds its contrast.
+- **Test:** remove the type and the crop loses its composition; remove the photograph and the type loses its edge.
+- **Caricature:** fake luxury: gold, rose gold, glass, script, a centred serif logo over a stock model.
+
+## Tokens
+
+```yaml
 colors:
   primary: "#0B0B0C"
   secondary: "#55585C"
-  tertiary: "#86C9EE"
   neutral: "#F6F7F7"
-  ash: "#A3A6AA"
 typography:
-  display: { fontFamily: "Bodoni Moda, Didot, Bodoni 72, serif", fontSize: 336, fontWeight: 800, lineHeight: 1 }
-  lockup: { fontFamily: "Bodoni Moda, Noto Serif SC, Noto Serif CJK SC, Didot, serif", fontSize: 160, fontWeight: 400, lineHeight: 1 }
-  lockup-cjk: { fontFamily: "Noto Serif SC, Noto Serif CJK SC, Bodoni Moda, serif", fontSize: 160, fontWeight: 900, lineHeight: 1 }
-  title: { fontFamily: "Bodoni Moda, Didot, Bodoni 72, serif", fontSize: 46, fontWeight: 700, lineHeight: 1.22 }
-  body: { fontFamily: "Hanken Grotesk, Noto Sans SC, Noto Sans CJK SC, sans-serif", fontSize: 30, fontWeight: 500, lineHeight: 1.4 }
-  label: { fontFamily: "Hanken Grotesk, Noto Sans SC, Noto Sans CJK SC, sans-serif", fontSize: 15, fontWeight: 400, lineHeight: 1.4 }
+  word: { fontFamily: "Bodoni Moda, Noto Serif SC, serif", fontSize: 336, fontWeight: 800, lineHeight: 1 }
+  lockup: { fontFamily: "Bodoni Moda, Noto Serif SC, serif", fontSize: 112, fontWeight: 400, lineHeight: 1 }
+  title: { fontFamily: "Bodoni Moda, Noto Serif SC, serif", fontSize: 46, fontWeight: 700, lineHeight: 1.22 }
+  body: { fontFamily: "Hanken Grotesk, Noto Sans SC, sans-serif", fontSize: 30, fontWeight: 500, lineHeight: 1.4 }
+  credit: { fontFamily: "Hanken Grotesk, Noto Sans SC, sans-serif", fontSize: 15, fontWeight: 400, lineHeight: 1.4 }
 spacing:
   unit: 14
   margin: 56
-  gutter: 12
-  column: 138
-  plate-edge: 504
-rounded:
-  none: 0
-components:
-  primary-on-neutral: { backgroundColor: "{colors.neutral}", textColor: "{colors.primary}" }
-  secondary-on-neutral: { backgroundColor: "{colors.neutral}", textColor: "{colors.secondary}" }
-  neutral-on-primary: { backgroundColor: "{colors.primary}", textColor: "{colors.neutral}" }
-  ash-on-primary: { backgroundColor: "{colors.primary}", textColor: "{colors.ash}" }
-  tertiary-on-primary: { backgroundColor: "{colors.primary}", textColor: "{colors.tertiary}" }
----
+  rule: 2
+pairs:
+  ink-on-paper: { backgroundColor: "{colors.neutral}", textColor: "{colors.primary}" }
+  muted-on-paper: { backgroundColor: "{colors.neutral}", textColor: "{colors.secondary}" }
+  paper-on-ink: { backgroundColor: "{colors.primary}", textColor: "{colors.neutral}" }
+```
 
-## Overview
-Swiss, in Alexey Brodovitch's hand of the *Harper's Bazaar* covers (1934–58): work from one commissioned photograph, crop it to a single gesture, then set one Didone word across the edge of that crop at the scale of the figure, so that the ruler that cuts the picture also cuts the word; never a stock figure under a centred serif, never gold, never a script face.
-World: The Grid, the Museum of Design's evening series on the systems behind modern design; one poster per evening, read at two to five metres, English and Simplified Chinese at equal status. Evening specifics live in its brief.
-Method: (1) One photograph of a body in motion, cut to one gesture, near-black plate, shadows where the type falls; until then a labeled FPO plate. (2) Plate edge on a module line, a third down. (3) Display word in Bodoni Moda, full content width, crossing the edge past its middle: paper on the plate, ink on the paper, one live element split by a hard stop. (4) Small word and Chinese title on one baseline above. (5) Below the edge: column grid, grotesque, two hairlines.
-Amplitude: Full on the plate (one word at 336 px, one picture); reduced below.
-Anti-reference: Centred serif logo over a stock model, gold, tracked capitals; the museum-evening default of cream, vermilion, small tasteful sans, giant numeral.
-
-## Colors
-- **Ink `#0B0B0C` (primary).** The plate, the display word's lower half, reading text, the two rules.
-- **Paper `#F6F7F7` (neutral).** Cold coated white, never cream; type colour on the plate.
-- **Muted `#55585C` (secondary).** Speakers' names, on paper only. Never on ink, never a rule.
-- **Ash `#A3A6AA`.** The photograph credit, 15 px, on the plate only.
-- **Non-photo blue `#86C9EE` (tertiary).** The editor's pale pencil: four corner crop marks, twelve column ticks at the trim, the bold word in the credit line; under 1% of the sheet, on the plate only (below 3:1 on paper).
-
-## Typography
-- **Bodoni Moda** (Google Fonts, optical sizes 6–96; fallbacks Didot, Bodoni 72). Display word: 800 at 336 px, tracking −0.012 em, size set by the word to fill 888 px, never tracked to fit. Small word: italic 400 at 160 px, left optical margin −4 px. Titles 700 at 46 px; date 600 at 46 px. Never body.
-- **Noto Serif SC 900**, 160 px, on the small word's baseline, flush right; Song strokes answer the Didone.
-- **Hanken Grotesk** with **Noto Sans SC**: reading 30 px, 500, leading 42 px; credit 15 px, 400.
-- **Ramp:** 336, 160, 46, 30, 15; steps at least 1.5×, no size between.
-- **Chinese and Latin.** One hierarchy, same track, same size. Wrap `white-space: nowrap` phrases; no break inside a fact. The dash pair —— stays whole and ends a line. No added space between scripts. Proportional Bodoni figures in titles and date; en dashes in ranges.
-
-## Layout
-Grid system: Column — six tracks, under a division of the height into a plate and a page.
-Width W, height H: u = H ÷ 101 (14 px at 1414); margin m = 4u; gutter g = W ÷ 83 (12 px at 1000); column c = (W − 2m − 5g) ÷ 6 (138 px); track k starts at m + k(c + g). Verticals are multiples of u.
-1. **Plate:** bleeds on three sides, ends on a module line at 0.356 H (36u; 504 px). Holds photograph, lockup, marks; nothing else.
-2. **Display word:** spans W − 2m. Cap top on 26u; plate edge crosses 56% down the caps. Small word flush left and Chinese title flush right on one baseline above.
-3. **Page:** axis A is track 0 (English, times); axis B track 1 (talk titles); axis D track 3 (Chinese, doors, speakers). English left, Chinese right, same row for the same fact.
-4. **Reading order:** word, what, when and where, running order, foyer and entry. Groups 1.5u–3u apart; two 2 px rules open the dated block and the running order; nothing else ruled.
-5. **Marks:** corner marks inside the plate 2u from the trim, 2u long; ticks at the trim start and end each track.
-
-## Shapes
-No radius, shadow, border or card. Rules: 2 px ink, content width. Marks: 2 px accent, drawn in code. Nothing imitates a photograph. The only gradient is the hard stop: two flat ink fields.
-
-## Components
-- **Plate.** Ink bleed field, photograph detail in the lower and right shadows. Ban: stock picture, drawn figure, gradient, scrim.
-- **Credit line.** Ash, 15 px, 56 px from the left; FPO in the accent until delivery, then model, garment, photographer. Ban: invented name.
-- **Display word.** One live text element, hard-stop split at the plate edge. Ban: two copies, outline, shadow, script, centred axis.
-- **Lockup.** Small italic word left, Chinese title right, one baseline. Ban: third line, size between.
-- **Statement row.** English at A, Chinese at D, 30 px, three lines at most. Ban: kicker.
-- **Dated block.** Date in Bodoni 600 at 46 px, then time and doors, then place; English at A, Chinese or second fact at D. Ban: icons.
-- **Running order.** Rows of 63 px: time at A, title at B in Bodoni 700, speaker at D in muted, one baseline. Ban: numbering, card, portrait.
-- **Foyer and entry.** Reading size, English at A across 564 px, entry in both languages last. Ban: button, badge.
-- **Disclosure.** For an illustrative programme: 30 px paper on the plate, top left, read first. Ban: footnote.
-
-## Do's and Don'ts
-- **Cut the picture and the word with the same line;** both halves legible.
-- **Keep the page quiet:** one grotesque size, one Didone size, white. Every fact 30 px or more.
-- **Test:** remove the type and the crop loses its composition; remove the photograph and the type loses its edge.
-- **Refuse:** centred Didone logo, gold, glass, script, Bodoni body text, the cream-vermilion-numeral default.
-
-## Variations
-- **Symmetric axis.** Opening poster or cover only: display word and lockup centred at x = W ÷ 2; once per series.
-- **Pause.** Reminder or reprint card: plate 0.3 H, display word alone on its edge, one line of reading; one per run, never beside a loud poster.
+Word and lockup are shown for a six-letter Latin word; Typography derives them for any other.
 
 ## Record
-Folio version: 1.0.0. Template version: 13. Date: 2026-11-02.
-Pieces: the-grid/brief.md.
+
+Folio version: 1.1.0. Template version: 14. Date: 2026-11-02.
+Pieces: the-grid/brief.md, made from the earlier, programme-bound version of this file; the system it shows is unchanged.
