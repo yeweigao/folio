@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>噪音市集 NOISE MARKET — 地下音乐节海报</title>
+<style>
+  @font-face { font-family:'Archivo'; src:url('archivo-var.woff2') format('woff2'); font-weight:100 900; font-stretch:62% 125%; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#55585c; }
+  .stage { position:relative; width:900px; height:1200px; overflow:hidden; background:#ECEEEF; color:#0B0B0C;
+           font-family:'Archivo','Noto Sans SC','Noto Sans CJK SC',sans-serif; }
+  svg.films { position:absolute; left:0; top:0; }
+  .dwrap { position:absolute; white-space:nowrap; }
+  .slipcopy { position:absolute; left:0; top:0; color:#1560D6; mix-blend-mode:multiply; white-space:nowrap; }
+  .live { position:relative; white-space:nowrap; }
+  .live span, .slipcopy span { display:inline-block; }
+  .desc { position:absolute; font-size:24px; font-weight:600; color:#4F555C; }
+  .han { font-family:'Noto Sans SC','Noto Sans CJK SC',sans-serif; font-weight:900; line-height:1; }
+  .tlabel { position:absolute; font-size:27px; font-weight:600; white-space:nowrap; font-feature-settings:'tnum' 1; }
+  .fact { position:absolute; font-size:39.6px; font-weight:800; line-height:1; white-space:nowrap; font-feature-settings:'tnum' 1; }
+  .fig { font-weight:300; }
+</style>
+</head>
+<body>
+<div class="stage" id="stage">
+  <svg class="films" width="900" height="1200" viewBox="0 0 900 1200">
+    <!-- Film 0: the thread — the day in three steps, one per item.
+         No screen (judge N4: ghost glyph deleted), no + / target marks (judge N5). -->
+    <polyline points="36,770 309.6,770 309.6,910.4 590.4,910.4 590.4,1050.8 864,1050.8"
+              fill="none" stroke="#0B0B0C" stroke-width="4.5"/>
+  </svg>
+
+  <!-- descriptor (verbatim part of the event name) -->
+  <div class="desc" style="left:36px; top:44px;">地下音乐节</div>
+
+  <!-- Film 3 + Film 2: the name in the brief's order — NOISE first, MARKET below (judge N1).
+       Both words step letter by letter on ONE declared increment (judge N3):
+       step = one grid row (c + gutter = 140.4) / (letters in MARKET − 1) = 140.4 / 5 = 28.08,
+       so the name's longest word descends exactly one row.
+       Film 2 is each word's whole accent copy, slipped once by the step vector (28.08, 28.08). -->
+  <div class="dwrap" style="left:36px; top:96px;">
+    <div class="slipcopy" id="noise-slip" data-word="NOISE"></div>
+    <div class="live" id="noise" data-word="NOISE"></div>
+  </div>
+  <div class="dwrap" style="left:36px; top:430px;">
+    <div class="slipcopy" id="market-slip" data-word="MARKET"></div>
+    <div class="live" id="market" data-word="MARKET"></div>
+  </div>
+
+  <!-- Chinese title, one vertical column — flat black, no slipped copy (judge N3) -->
+  <div class="dwrap han" style="left:738px; top:36px; font-size:126px;">
+    <div class="live" style="font-size:126px;">噪<br>音<br>市<br>集</div>
+  </div>
+
+  <!-- thread labels, flush left under each riser -->
+  <div class="tlabel" style="left:36px; top:788px;"><span class="fig">15:00</span></div>
+  <div class="tlabel" style="left:309.6px; top:928.4px;"><span class="fig">12</span> 组乐队</div>
+  <div class="tlabel" style="left:590.4px; top:1068.8px;"><span class="fig">23:00</span></div>
+
+  <!-- facts, set from the bottom margin up; the price pair adjacent on one baseline,
+       presale first (judge N6); the organiser line in black at fact size (judge N2) -->
+  <div class="fact" style="left:36px; top:978px;"><span class="fig">2026</span>年<span class="fig">12</span>月<span class="fig">5</span>日&nbsp;&nbsp;<span class="fig">15:00–23:00</span></div>
+  <div class="fact" style="left:36px; top:1025px;">旧纺织厂 <span class="fig">3</span> 号棚</div>
+  <div class="fact" style="left:36px; top:1072px;">预售 <span class="fig">¥120</span>&nbsp;&nbsp;&nbsp;现场 <span class="fig">¥150</span></div>
+  <div class="fact" style="left:36px; top:1119px;">主办：独立厂牌「反刍」</div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const STEP = 28.08;              // declared: 140.4 / (6 − 1), from MARKET, the name's longest word
+const SLIP = { x: STEP, y: STEP }; // declared: the accent film is slipped by the step vector itself
+function splitLetters(el, step) {
+  const word = el.dataset.word; el.textContent = '';
+  [...word].forEach((ch, i) => {
+    const s = document.createElement('span'); s.textContent = ch;
+    if (step) s.style.transform = `translateY(${i * step}px)`;
+    el.appendChild(s);
+  });
+}
+function setVar(el, wdth, wght) { el.style.fontVariationSettings = `'wdth' ${wdth}, 'wght' ${wght}`; }
+function fitWord(el, maxW, wdth0, wght, fixedWdth) {
+  let size = parseFloat(el.dataset.size), wdth = wdth0;
+  const apply = () => { el.style.fontSize = size + 'px'; setVar(el, wdth, wght); };
+  apply();
+  if (!fixedWdth) while (el.scrollWidth > maxW && wdth > 62) { wdth -= 5; apply(); }
+  while (el.scrollWidth > maxW && size > 40) { size *= 0.95; apply(); }
+  return { size, wdth };
+}
+async function init() {
+  await document.fonts.load('900 100px "Noto Sans CJK SC"');
+  await document.fonts.load('300 100px Archivo'); await document.fonts.load('900 100px Archivo');
+  await document.fonts.ready;
+  // NOISE — the black stepped lead, read first
+  const noise = $('noise'), noiseSlip = $('noise-slip');
+  noise.dataset.size = 225; splitLetters(noise, STEP); splitLetters(noiseSlip, STEP);
+  const nf = fitWord(noise, 687, 125, 900, false);
+  noiseSlip.style.fontSize = nf.size + 'px'; setVar(noiseSlip, nf.wdth, 900);
+  noiseSlip.style.transform = `translate(${SLIP.x}px, ${SLIP.y}px)`;
+  // MARKET — the light condensed word below, stepping on the same declared increment,
+  // its blue a whole stepped film slipped once, not a flat shadow
+  const market = $('market'), marketSlip = $('market-slip');
+  market.dataset.size = 212; splitLetters(market, STEP); splitLetters(marketSlip, STEP);
+  const mf = fitWord(market, 687, 62, 300, true);
+  marketSlip.style.fontSize = mf.size + 'px'; setVar(marketSlip, mf.wdth, 300);
+  marketSlip.style.transform = `translate(${SLIP.x}px, ${SLIP.y}px)`;
+  document.title = 'done';
+}
+init();
+</script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>衡工重机 · 设备能力页</title>
+<style>
+  :root{
+    --ground:#E3E4E1; --ink:#0B0B0B; --muted:#454745; --field:#C9CBC7; --line:#7A7C79; --hazard:#FFD200;
+    --sans:"Inter Display","Inter","Noto Sans SC",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#fff;}
+  .sheet{position:relative;width:1600px;height:900px;background:var(--ground);
+    font-family:var(--sans);color:var(--ink);overflow:hidden;}
+  .edge{position:absolute;top:0;left:0;width:1600px;height:8px;background:var(--ink);}
+  .heavy{position:absolute;height:6px;background:var(--ink);}
+  .hair{position:absolute;height:1px;background:var(--line);}
+  .vert{position:absolute;width:1px;background:var(--line);}
+  .tick{position:absolute;height:1px;background:var(--line);}
+  .title{font-size:50px;font-weight:800;line-height:1;}
+  .figure{font-size:36px;font-weight:800;line-height:1;}
+  .body{font-size:29px;font-weight:700;line-height:1;}
+  .muted{color:var(--muted);}
+  .tnum{font-variant-numeric:tabular-nums;}
+  .mid{position:absolute;display:flex;align-items:center;}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="edge"></div>
+
+  <!-- rules -->
+  <div class="heavy" style="left:50px;top:50px;width:1500px;"></div>
+  <div class="hair" style="left:50px;top:130px;width:1500px;"></div>
+  <div class="heavy" style="left:50px;top:210px;width:1500px;"></div>
+  <div class="hair" style="left:50px;top:290px;width:1500px;"></div>
+  <div class="vert" style="left:300px;top:290px;height:480px;"></div>
+  <div class="vert" style="left:1175px;top:290px;height:480px;"></div>
+  <div class="hair" style="left:50px;top:450px;width:1125px;"></div>
+  <div class="hair" style="left:50px;top:610px;width:1125px;"></div>
+  <div class="heavy" style="left:50px;top:770px;width:1500px;"></div>
+  <div class="heavy" style="left:50px;top:844px;width:1500px;"></div>
+
+  <!-- axis ticks: one per row of the table zone, longer at the block's edges -->
+  <div class="tick" style="left:62px;top:290px;width:44px;"></div>
+  <div class="tick" style="left:62px;top:370px;width:28px;"></div>
+  <div class="tick" style="left:62px;top:450px;width:28px;"></div>
+  <div class="tick" style="left:62px;top:530px;width:28px;"></div>
+  <div class="tick" style="left:62px;top:610px;width:28px;"></div>
+  <div class="tick" style="left:62px;top:690px;width:28px;"></div>
+  <div class="tick" style="left:62px;top:770px;width:44px;"></div>
+
+  <!-- R1–R2 header -->
+  <div class="mid title" style="left:61px;top:50px;height:80px;">衡工重机</div>
+  <div class="mid body" style="left:61px;top:130px;height:80px;">工程公司</div>
+  <div class="mid body" style="right:61px;top:130px;height:80px;">设备能力页</div>
+
+  <!-- R3 table head: the two units head their own columns -->
+  <div class="mid body muted" style="left:311px;top:210px;height:80px;">设备</div>
+  <div class="mid body muted" style="left:686px;top:210px;height:80px;">吨 t</div>
+  <div class="mid body muted" style="left:936px;top:210px;height:80px;">米 m</div>
+  <div class="mid body muted" style="left:1186px;top:210px;height:80px;">资质</div>
+
+  <!-- the certifications: ONE company field, the full height of the equipment
+       block, undivided — the two facts stand at the field's own two ends,
+       locked to no machine's row. -->
+  <div style="position:absolute;left:1175px;top:290px;width:375px;height:480px;background:var(--field);"></div>
+  <div class="figure" style="position:absolute;left:1186px;top:301px;">ISO 9001</div>
+  <div class="figure" style="position:absolute;left:1186px;top:723px;">特种设备安装 A 级</div>
+
+  <!-- equipment: each capacity locked to its machine, in its unit's column -->
+  <div class="mid figure" style="left:311px;top:290px;height:160px;">汽车起重机</div>
+  <div class="mid title tnum" style="left:686px;top:290px;height:160px;">260&nbsp;t</div>
+
+  <div class="mid figure" style="left:311px;top:450px;height:160px;">塔吊</div>
+  <div class="mid title tnum" style="left:936px;top:450px;height:160px;">80&nbsp;m</div>
+
+  <div class="mid figure" style="left:311px;top:610px;height:160px;">混凝土泵车</div>
+  <div class="mid title tnum" style="left:936px;top:610px;height:160px;">58&nbsp;m</div>
+
+  <!-- R10 closing ledger line: outside the table's columns — its label stands
+       in the axis, its value under no unit column. -->
+  <div class="mid body" style="left:61px;top:770px;height:80px;">累计项目</div>
+  <div class="mid figure tnum" style="left:311px;top:770px;height:80px;">214&nbsp;个</div>
+</div>
+</body>
+</html>

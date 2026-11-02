@@ -34,7 +34,7 @@ S = min(W, H); margin 0.04 S; module u = (W − 2 × margin) ÷ 20, ÷ 32 where 
 ## Typography
 
 - **Archivo** (OFL, variable width 62–125): one neo-grotesque family for every job, by width and weight. Body at width 100, titles at 86.
-- Display at a cap height of three modules, its width axis set between 75 and 125 so the longest line fills the measure.
+- Display at a cap height of three modules, its width axis set between 75 and 125 so the longest line fills the measure; the setting used is stated with the piece — a display left at width 100 by default is unexamined, and a fault.
 - **Noto Sans SC** 500–900: beside Latin, display at 0.72 of it; titles and body at the Latin size.
 - Sizes: display 200, Chinese display 144, title 44, body 28; nothing read smaller. Weight is meaning: 800 display, 700 facts to act on, 500 the rest. No italic or tracking.
 
@@ -43,7 +43,7 @@ S = min(W, H); margin 0.04 S; module u = (W − 2 × margin) ÷ 20, ÷ 32 where 
 - **Ground `#E3E4E0` (neutral).** Concrete grey, at least 70% of the area.
 - **Ink `#101418` (primary).** Type, rules, figures.
 - **Muted `#4B5057` (secondary).** Secondary names and notes.
-- **Line `#B3B6B2`.** Figure construction grids only.
+- **Line `#B3B6B2`.** Figure construction grids only; declared wherever figures are drawn. Every figure is built on it at one construction unit per piece — the module or its half — and the grid stage stands beneath the finished figure in the construction record; a figure with no grid under it is unfinished.
 - **Code one `#0A5AA6`** with a square; **code two `#D4470C`** with a circle. A third category needs a third code written here first. Codes under 2% of the area, never the only cue, never text colour.
 
 ## Shapes

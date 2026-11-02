@@ -29,7 +29,7 @@ None by default: bars and planes are the image. When the content is an object th
 
 Grid system: Hierarchical — zones sized by the weight of their content, drawn as bars.
 
-S = min(W, H); bar b = S ÷ 62; everything snaps to b ÷ 2. Six tracks, twelve where W > 1.4 H; bars fall on track lines. One spine, a full-length bar at about 0.62 of the width (0.38 or 0.62 in landscape), never the centre. Planes bleed off at least two edges; no frame. A measured plane is its value times the scale; a plane too small for its text merges with its neighbour, and the merge is stated. Space is never left over: an empty plane is white or grey by its weight and passes the tuning like any other.
+S = min(W, H); bar b = S ÷ 62; everything snaps to b ÷ 2. Six tracks, twelve where W > 1.4 H; bars fall on track lines. One spine, a full-length bar at about 0.62 of the width (0.38 or 0.62 in landscape), never the centre. On a spread the physical fold is a cut, not a spine: planes stop at it or cross it whole, and nothing mirrors around it. Planes bleed off at least two edges; no frame. A measured plane is its value times the scale; a plane too small for its text merges with its neighbour, and the merge is stated. Space is never left over: an empty plane is white or grey by its weight and passes the tuning like any other.
 
 ## Typography
 

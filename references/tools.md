@@ -21,6 +21,7 @@ Where a script can hold a floor ([review](review.md#floors)), it does.
 |---|---|
 | `scripts/factcheck.py brief.md seen.txt` | Every backticked fact present verbatim; typographic changes and numbers not in the brief flagged. |
 | `scripts/folio-check.py DESIGN.md [export…]` | The skeleton complete, no placeholders, contrast held; the export uses only declared colors and faces, no banned charts, no copy tells. |
+| `scripts/fontcheck.py page.html "Family" […]` | Each named face actually loaded in the rendered page — the fallback a browser never reports, caught. |
 | `scripts/extract.py file.pptx\|file.html` | A skeleton drafted from an artifact's real colors, faces and sizes, for critique. |
 
 ## Make
@@ -40,6 +41,7 @@ Where a script can hold a floor ([review](review.md#floors)), it does.
 
 Faces come from the hand's lineage first, then from what can be installed and licensed. No binaries are bundled.
 
+- **Travel:** a piece that names a face carries the face with it — its file in the piece's own folder, or a webfont the page itself loads. The rendering machine's system fonts are not a source. A family that falls back silently has failed, and the failure is invisible in the code; it is caught only in the render, by `fontcheck.py`.
 - **Web:** Google Fonts are allowed; confirm in the render that the face loaded.
 - **Local:** install, restart the renderer, confirm families, scripts and real weights before export.
 - **Embedding:** static TTF over CFF or variable; open the delivered file on the target machine.

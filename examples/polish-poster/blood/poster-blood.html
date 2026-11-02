@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>一袋血，一次摆渡 — 无偿献血月</title>
+<style>
+  :root{
+    --ground:#CFD4C6; --ink:#16235C; --muted:#454E63; --accent:#F2B61C;
+    --margin:47px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    width:900px;height:1200px;overflow:hidden;
+    background:var(--ground);color:var(--ink);
+    font-family:"Bricolage Grotesque","Noto Sans SC",sans-serif;
+  }
+  .page{width:900px;height:1200px;display:flex;flex-direction:column;}
+  /* PICTURE SLOT — skeleton Method 3 fallback: a labelled slot of the exact crop.
+     The gouache picture (blood bag as the ferry's sail, one blood-red drop riding
+     low inside the bag) is to be generated/painted into this slot; see fix-notes.md. */
+  .slot{
+    width:900px;height:585px;flex:0 0 auto;position:relative;
+  }
+  .slot .frame{
+    position:absolute;left:var(--margin);right:var(--margin);top:47px;bottom:0;
+    border:1px solid var(--ink);
+  }
+  .slot .label{
+    position:absolute;left:calc(var(--margin) + 16px);bottom:16px;
+    font-size:24px;font-weight:500;line-height:1.4;color:var(--muted);
+  }
+  .below{padding:0 var(--margin) 47px;}
+  .rule3{height:3px;background:var(--ink);}
+  h1{
+    margin-top:22px;
+    font-family:"Noto Sans SC","Bricolage Grotesque",sans-serif;
+    font-size:130px;font-weight:900;line-height:0.98;letter-spacing:0;
+  }
+  .campaign{margin-top:14px;font-size:32px;font-weight:700;line-height:1.15;}
+  .facts-rule{margin-top:22px;}
+  .fact{font-size:32px;font-weight:700;line-height:1.25;}
+  .when{margin-top:20px;}
+  .where{margin-top:8px;}
+  .orgblock{margin-top:18px;}
+  .orgblock .fact + .fact{margin-top:6px;}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="slot">
+    <div class="frame"></div>
+    <p class="label">图位 806 × 538 — 血袋为帆 · 水粉画（生成图待补，见 fix-notes）</p>
+  </div>
+
+  <div class="below">
+    <div class="rule3"></div>
+    <h1>一袋血，<br>一次摆渡</h1>
+    <p class="campaign">无偿献血月</p>
+    <div class="rule3 facts-rule"></div>
+    <p class="fact when">2026年12月每个周六 9:00–17:00</p>
+    <p class="fact where">市民广场献血车</p>
+    <div class="orgblock">
+      <p class="fact">主办：市中心血站</p>
+      <p class="fact">须知：年满18岁 · 请携带身份证</p>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

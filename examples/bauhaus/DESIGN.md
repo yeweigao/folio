@@ -31,7 +31,7 @@ Computed: the figure drawn from the module. Moholy-Nagy may visit once: one real
 
 Grid system: Modular — one square module; every edge on its lines.
 
-S = min(W, H); margin S ÷ 20; twelve columns without gutters, sixteen where W > 1.4 H; module = column width; rows = whole modules that fit. The thread lies on a row line about a third down (at mid-height in landscape); the shapes hang from the row three below it; the masthead sits above, the ledger below, one row per fact. Sizes double (1, 2, 4, 8 modules); every edge, centre and drop lands on a module line. Rows nobody needs gather into one band of ink at the foot, never between the parts of the figure.
+S = min(W, H); margin S ÷ 20; twelve columns without gutters, sixteen where W > 1.4 H; module = column width; rows = whole modules that fit. The thread lies on a row line about a third down (at mid-height in landscape); the shapes hang from the row three below it; the masthead sits above, the ledger below, one row per fact. Sizes double (1, 2, 4, 8 modules); every edge, centre and drop lands on a module line. Rows nobody needs gather into one band of ink at the foot, never between the parts of the figure. A fact drawn true — a length, a count, a proportion the brief states — outranks the doubling scale: when the true size cannot fit at the scale a form prescribes, the scale yields to the fact, and the change is recorded; a fact is never redrawn to fit a scale.
 
 ## Typography
 

@@ -30,13 +30,13 @@ None by default: rules and cells are the image. A real photograph enters as reco
 
 Grid system: Modular — the rows are the content's measure.
 
-N rows = the measure's units plus the header, monolith, description and footer rows; row height = (H − 2 × margin) ÷ N in whole pixels, the margin (at least 0.032 S) taking the halved remainder. Twelve columns without gutters, text inset 0.012 S: the axis on columns 1–2, cells on 3, items on 4–9, a secondary track on 10–12. Heavy rules open and close the field; verticals at columns 3 and 10; a hairline per row. Landscape and web keep the axis left and the rows down. Nothing is centred; no row is empty unless the measure says so.
+N rows = the measure's units plus the header, monolith, description and footer rows; row height = (H − 2 × margin) ÷ N in whole pixels, the margin (at least 0.032 S) taking the halved remainder. Twelve columns without gutters, text inset 0.012 S: the axis on columns 1–2, cells on 3, items on 4–9, a secondary track on 10–12. Heavy rules open and close the field; verticals at columns 3 and 10; a hairline per row. Ticks stand on the axis at every row line, one unit long, longer at major units; a lone decorative tick is a fault. Landscape and web keep the axis left and the rows down. Nothing is centred; no row is empty unless the measure says so.
 
 ## Typography
 
 - **Inter** (OFL), with its Display cut for the monolith and titles: a tight grotesque that holds at architectural scale and at 32.
 - **Noto Sans SC** Bold or Black, its em box at 0.9 of the Latin; both scripts at one size and weight.
-- The monolith is derived: whole rows tall, at most the twelve columns wide (276 holds six letters at S = 1000).
+- The monolith is derived by one formula on every piece: its em spans its whole rows exactly — font size = rows × row height — so the digits take the band's height the same way everywhere; at most the twelve columns wide (276 holds six letters at S = 1000).
 - Titles 56, figures 40, body and labels 32; nothing read below 32. Tabular figures; a text line sits inside one row.
 
 ## Colors

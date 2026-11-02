@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>冻品俱乐部 FROZEN CLUB — 冬日限定</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;800;900&family=Noto+Sans+SC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#fff; }
+  .unit { position:relative; width:900px; height:1200px; overflow:hidden;
+          background:#FFFFFF; color:#111111;
+          font-family:"League Spartan","Noto Sans SC",sans-serif; }
+  .abs { position:absolute; }
+  /* title */
+  .display { font-weight:900; font-size:130px; line-height:1; letter-spacing:0; }
+  /* name block — ink slab, rows 0-2, tracks 4-6 */
+  .nameblock { left:457.2px; top:36px; width:406.8px; height:406.8px;
+               background:#111111; color:#FFFFFF; padding:30px 28px; }
+  .nameblock .kind { font-size:26px; font-weight:800; line-height:1.12; }
+  .nameblock .en   { font-size:39.6px; font-weight:800; line-height:1.02; margin-top:16px; }
+  .nameblock .season { font-size:57.6px; font-weight:800; line-height:1.09; margin-top:120px; }
+  /* slabs */
+  .slab { height:126px; padding:0 14px; display:flex; align-items:center; white-space:nowrap;
+          font-size:57.6px; font-weight:800; line-height:1.09; }
+  .slab-caramel { left:36px; top:597.6px; width:266.4px; background:#FFD21F; color:#111111; }
+  .slab-potato  { left:442.8px; top:738px; width:266.4px; background:#FF4FA3; color:#111111; }
+  /* ginger tab — no slab: the name rides a tab above the triangle */
+  .tab-ginger { left:738px; top:457.2px; width:126px; height:126px;
+                background:#2438E0; color:#FFFFFF; padding:14px 16px;
+                font-size:39.6px; font-weight:800; line-height:1.15; }
+  /* deal — mint pillar filling the left column, rows 5-6 */
+  .deal { left:36px; top:738px; width:266.4px; height:266.4px; background:#00C389; color:#111111;
+          display:flex; align-items:center; justify-content:center;
+          font-size:39.6px; font-weight:800; line-height:1.02; }
+  /* base band — solid ink slab over one ink rule */
+  .rule { left:36px; top:1018.8px; width:828px; height:5.4px; background:#111111; }
+  .band { left:36px; top:1024.2px; width:828px; height:139.8px; background:#111111; color:#FFFFFF;
+          padding:24px 28px; }
+  .band .venue { font-size:39.6px; font-weight:800; line-height:1.02; }
+  .band .dates { font-size:26px; font-weight:800; line-height:1.12; margin-top:14px; }
+</style>
+</head>
+<body>
+<div class="unit">
+
+  <!-- title rows -->
+  <div class="abs display" style="left:36px; top:36px;">冻品</div>
+  <div class="abs display" style="left:36px; top:176.4px;">俱乐部</div>
+
+  <!-- name block: kind / English name / the season fact, all on the ink ground -->
+  <div class="abs nameblock">
+    <div class="kind">冰淇淋快闪店</div>
+    <div class="en">FROZEN CLUB</div>
+    <div class="season">冬日限定</div>
+  </div>
+
+  <!-- tower 1 · sea-salt caramel: a whole scoop — disc, amber lemon,
+       coarse half-drop dots = sea-salt crystals on the caramel -->
+  <svg class="abs" style="left:36px; top:316.8px;" width="266.4" height="266.4" viewBox="0 0 266.4 266.4">
+    <defs>
+      <pattern id="salt" width="88.8" height="177.6" patternUnits="userSpaceOnUse">
+        <rect width="88.8" height="177.6" fill="#FFD21F"/>
+        <circle cx="44.4" cy="44.4" r="13" fill="#111111"/>
+        <circle cx="0" cy="133.2" r="13" fill="#111111"/>
+        <circle cx="88.8" cy="133.2" r="13" fill="#111111"/>
+      </pattern>
+    </defs>
+    <circle cx="133.2" cy="133.2" r="133.2" fill="url(#salt)"/>
+    <rect x="99.9" y="99.9" width="66.6" height="66.6" fill="#FFFFFF" transform="rotate(45 133.2 133.2)"/>
+  </svg>
+  <div class="abs slab slab-caramel">海盐焦糖</div>
+
+  <!-- tower 2 · roasted sweet potato: the charred cut face — square, rose skin,
+       coarse grid = the score marks charred into the face.
+       The whole tower stands one full module right of its stair: it was knocked there. -->
+  <svg class="abs" style="left:442.8px; top:457.2px;" width="266.4" height="266.4" viewBox="0 0 266.4 266.4">
+    <defs>
+      <pattern id="char" width="53.28" height="53.28" patternUnits="userSpaceOnUse">
+        <rect width="53.28" height="53.28" fill="#FF4FA3"/>
+        <path d="M53.28 0H0V53.28" fill="none" stroke="#111111" stroke-width="8"/>
+      </pattern>
+    </defs>
+    <rect width="266.4" height="266.4" fill="url(#char)"/>
+  </svg>
+  <div class="abs slab slab-potato">烤红薯</div>
+
+  <!-- tower 3 · ginger milk: the pour strikes — triangle, cobalt, stripes = the
+       two liquids' currents. Its left wall bites into the displaced square and
+       its stripes are cut by the poster's right edge. No slab: a tab carries the name. -->
+  <div class="abs tab-ginger">姜撞奶</div>
+  <svg class="abs" style="left:663.6px; top:597.6px;" width="266.4" height="266.4" viewBox="0 0 266.4 266.4">
+    <defs>
+      <pattern id="currents" width="44.4" height="44.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <rect width="44.4" height="44.4" fill="#2438E0"/>
+        <rect width="22.2" height="44.4" fill="#111111"/>
+      </pattern>
+    </defs>
+    <polygon points="0,0 266.4,0 0,266.4" fill="url(#currents)"/>
+  </svg>
+
+  <!-- the deal: mint, the one named category, standing in the left column -->
+  <div class="abs deal">第二支半价</div>
+
+  <!-- base band: solid ink slab, venue and dates at their own smaller steps -->
+  <div class="abs rule"></div>
+  <div class="abs band">
+    <div class="venue">河岸商场中庭</div>
+    <div class="dates">2026年12月3日—2027年1月3日</div>
+  </div>
+
+</div>
+</body>
+</html>

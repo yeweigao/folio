@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>小小造物主 Little Makers — 儿童编程俱乐部</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;800;900&family=Noto+Sans+SC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#fff; }
+  .unit { position:relative; width:1600px; height:900px; overflow:hidden;
+          background:#FFFFFF; color:#111111;
+          font-family:"League Spartan","Noto Sans SC",sans-serif; }
+  .abs { position:absolute; }
+  .display { font-weight:900; font-size:160px; line-height:1; }
+  .en { font-size:39.6px; font-weight:800; line-height:1.02; }
+  .kind { font-size:26px; font-weight:800; line-height:1.12; }
+  .age { font-size:39.6px; font-weight:800; line-height:1.02; }
+  /* track slabs — one module high, names at headline step */
+  .slab { height:156.98px; padding:0 24px; display:flex; align-items:center;
+          font-size:57.6px; font-weight:800; line-height:1.09; }
+  .slab-robot { left:550.2px; top:378.8px; width:328.4px; background:#2438E0; color:#FFFFFF; }
+  .slab-game  { left:893px; top:535.8px; width:328.4px; background:#FF4FA3; color:#111111; }
+  .slab-anim  { left:1230.6px; top:692.8px; width:328.4px; background:#FFD21F; color:#111111; }
+  /* trial: stated in the field, and again as the base band's one action */
+  .trial-field { left:36px; top:550.2px; width:499.8px; height:156.98px; background:#00C389; color:#111111;
+                 display:flex; align-items:center; padding:0 28px;
+                 font-size:57.6px; font-weight:800; line-height:1.09; }
+  .trial-action { left:36px; top:721.6px; width:499.8px; height:142.4px; background:#00C389; color:#111111;
+                  display:flex; align-items:center; padding:0 28px;
+                  font-size:57.6px; font-weight:800; line-height:1.09; }
+  /* campuses: two distinct cells stacked in the step under robotics */
+  .campus { left:550.2px; width:328.4px; height:71.3px; display:flex; align-items:center;
+            font-size:39.6px; font-weight:800; line-height:1.02; }
+</style>
+</head>
+<body>
+<div class="unit">
+
+  <!-- title and its metadata, at separated steps, the name in its own case -->
+  <div class="abs display" style="left:36px; top:36px;">小小</div>
+  <div class="abs display" style="left:36px; top:196px;">造物主</div>
+  <div class="abs en" style="left:36px; top:368px;">Little Makers</div>
+  <div class="abs kind" style="left:36px; top:424px;">儿童编程俱乐部</div>
+
+  <!-- the age, one unbroken line, colon and all, pulled down against the staircase -->
+  <div class="abs age" style="right:36px; top:207.4px;">招生：5–12 岁</div>
+
+  <!-- track 1 · robotics: built — a square plate, clad as a breadboard
+       (grid with a hole at every node; children build on it) -->
+  <svg class="abs" style="left:550.2px; top:36px;" width="328.4" height="328.4" viewBox="0 0 328.4 328.4">
+    <defs>
+      <pattern id="breadboard" width="41.05" height="41.05" patternUnits="userSpaceOnUse">
+        <rect width="41.05" height="41.05" fill="#2438E0"/>
+        <path d="M41.05 0H0V41.05" fill="none" stroke="#111111" stroke-width="3"/>
+        <circle cx="0" cy="0" r="4.5" fill="#111111"/>
+        <circle cx="41.05" cy="0" r="4.5" fill="#111111"/>
+        <circle cx="0" cy="41.05" r="4.5" fill="#111111"/>
+        <circle cx="41.05" cy="41.05" r="4.5" fill="#111111"/>
+      </pattern>
+    </defs>
+    <rect width="328.4" height="328.4" fill="url(#breadboard)"/>
+  </svg>
+  <div class="abs slab slab-robot">机器人</div>
+
+  <!-- track 2 · games: what moves — a triangle run downhill, stripes = speed -->
+  <svg class="abs" style="left:893px; top:193px;" width="328.4" height="328.4" viewBox="0 0 328.4 328.4">
+    <defs>
+      <pattern id="speed" width="65.7" height="65.7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <rect width="65.7" height="65.7" fill="#FF4FA3"/>
+        <rect width="32.85" height="65.7" fill="#111111"/>
+      </pattern>
+    </defs>
+    <polygon points="0,0 0,328.4 328.4,328.4" fill="url(#speed)"/>
+  </svg>
+  <div class="abs slab slab-game">游戏</div>
+
+  <!-- track 3 · animation: frames, not turning — a drawn frame (graph grid)
+       and the blank next frame offset behind it, caught mid-flip;
+       its slab stands directly under the frames, above the band -->
+  <svg class="abs" style="left:1230.6px; top:309px;" width="369.4" height="369.4" viewBox="0 0 369.4 369.4">
+    <rect x="41" y="0" width="328.4" height="328.4" fill="#FFD21F"/>
+  </svg>
+  <svg class="abs" style="left:1230.6px; top:350px;" width="328.4" height="328.4" viewBox="0 0 328.4 328.4">
+    <defs>
+      <pattern id="graph" width="32.84" height="32.84" patternUnits="userSpaceOnUse">
+        <rect width="32.84" height="32.84" fill="#FFD21F"/>
+        <path d="M32.84 0H0V32.84" fill="none" stroke="#111111" stroke-width="2"/>
+      </pattern>
+    </defs>
+    <rect width="328.4" height="328.4" fill="url(#graph)"/>
+  </svg>
+  <div class="abs slab slab-anim">动画</div>
+
+  <!-- the trial stated in the field -->
+  <div class="abs trial-field">免费试听课</div>
+
+  <!-- campuses: two distinct cells, not a middle-dot string -->
+  <div class="abs campus" style="top:550.2px;">梧桐校区</div>
+  <div class="abs campus" style="top:635.9px;">滨江校区</div>
+
+  <!-- the base band holds one thing only: the action, as a full mint block.
+       No rule: the staircase itself closes the viewport. -->
+  <div class="abs trial-action">免费试听课</div>
+
+</div>
+</body>
+</html>

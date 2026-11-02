@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1600">
+<title>空白之间 Atelier Blank · 建筑工作室</title>
+<style>
+  /* ma 間 skeleton — S = 900, scale 0.9, module M = 64.286.
+     Reconceived per review/panel.md (verdict: BELOW BAR). One declared axis: L = 64.3 — name,
+     statement, rung and email all hang from it and descend it (T2). The page enacts the studio's
+     sentence instead of captioning it: the statement is set at its own comma — clause one,
+     「我们删去一切， (we delete everything), stands high on the axis; then the deletion itself,
+     a whole interval of 4.27 modules that nothing enters; then clause two, 直到空间开始说话」
+     (until space begins to speak), emerges below it. What survives the deletion follows on the
+     same axis: the one work as a single rung, and the one action, the email. Nothing else remains.
+     T1: the statement is the lead at display scale (serif, 200); the name is cut to the quiet
+     register, 19.8 — under a quarter of the statement, not half. T3: year and name in one full ink,
+     one baseline, a half-module gap, immediately following the statement. T4: every quiet role at
+     one size (19.8); the work rung one clear step above (27). T5: the email at its own step (27),
+     underlined, closing the axis in the last quarter, a live mailto.
+     Faces per Tokens, installed locally: statement in Source Serif 4 / Noto Serif SC; all else in
+     Hanken Grotesk / Noto Sans SC. */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #F3F4F2; }
+  .unit {
+    position: relative; width: 1600px; height: 900px; overflow: hidden;
+    background: #F3F4F2; color: #20242A;
+    font-family: "Hanken Grotesk", "Noto Sans SC", sans-serif;
+  }
+  .serif { font-family: "Source Serif 4", "Noto Serif SC", serif; }
+  .name-block { position: absolute; left: 64.3px; top: 64.3px; }
+  .name-block div { font-size: 19.8px; font-weight: 400; line-height: 1.45; }
+  .statement {
+    position: absolute; left: 64.3px;
+    font-size: 79.2px; font-weight: 200; line-height: 1;
+  }
+  .clause-1 { top: 257.1px; }
+  .clause-2 { top: 610.7px; }
+  .rung {
+    position: absolute; left: 64.3px; top: 722px;
+    font-size: 27px; font-weight: 400; line-height: 1;
+    font-variant-numeric: tabular-nums; white-space: nowrap;
+  }
+  .rung .year { margin-right: 32.1px; }
+  .contact {
+    position: absolute; left: 64.3px; top: 781.1px;
+    font-size: 27px; font-weight: 400; line-height: 1;
+  }
+  .contact a { color: #20242A; text-decoration: underline; text-underline-offset: 5px; }
+  .contact a:focus-visible { outline: 2px solid #20242A; outline-offset: 4px; }
+</style>
+</head>
+<body>
+<div class="unit">
+  <div class="name-block">
+    <div>建筑工作室</div>
+    <div>空白之间</div>
+    <div>Atelier Blank</div>
+  </div>
+
+  <div class="statement serif clause-1">「我们删去一切，</div>
+  <div class="statement serif clause-2">直到空间开始说话」</div>
+
+  <div class="rung"><span class="year">2025</span>山地茶室</div>
+
+  <div class="contact"><a href="mailto:studio@atelierblank.cn">studio@atelierblank.cn</a></div>
+</div>
+</body>
+</html>

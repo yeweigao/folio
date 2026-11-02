@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>滨江—云岭线 · 列车时刻表</title>
+<style>
+  :root{
+    --ground:#E3E4E1; --ink:#0B0B0B; --muted:#454745; --field:#C9CBC7; --line:#7A7C79; --hazard:#FFD200;
+    --sans:"Inter Display","Inter","Noto Sans SC",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#fff;}
+  .sheet{position:relative;width:1600px;height:1000px;background:var(--ground);
+    font-family:var(--sans);color:var(--ink);overflow:hidden;}
+  .edge{position:absolute;top:0;left:0;width:1600px;height:8px;background:var(--ink);}
+  .heavy{position:absolute;height:6px;background:var(--ink);}
+  .hair{position:absolute;height:1px;background:var(--line);}
+  .title{font-size:56px;font-weight:800;line-height:1;}
+  .ledger{font-size:32px;font-weight:700;line-height:1.5;}
+  .ledger .muted,.muted{color:var(--muted);}
+  .ptitle{font-size:32px;font-weight:700;color:var(--muted);display:flex;align-items:center;padding-left:12px;}
+  .panels{position:absolute;left:32px;top:188px;width:1536px;height:676px;display:flex;}
+  .panel{width:768px;
+    background:repeating-linear-gradient(to bottom, transparent 0, transparent 51px, var(--line) 51px, var(--line) 52px);}
+  
+  .sheads,.trow{display:grid;grid-template-columns:48px repeat(6,120px);height:52px;align-items:center;}
+  .shead{font-size:32px;font-weight:800;padding-left:12px;}
+  .idx{font-size:32px;font-weight:700;color:var(--muted);padding-left:6px;font-variant-numeric:tabular-nums;}
+  .idx.hz{background:var(--hazard);color:var(--ink);align-self:stretch;display:flex;align-items:center;}
+  .tc{font-size:32px;font-weight:400;padding-left:12px;font-variant-numeric:tabular-nums;}
+  .tc.origin{font-weight:800;}
+  .tc.hz{background:var(--hazard);align-self:stretch;display:flex;align-items:center;}
+  .close{height:52px;display:flex;align-items:center;padding-left:12px;font-size:32px;font-weight:700;color:var(--muted);}
+  .key{font-size:32px;font-weight:700;line-height:1.5;display:flex;align-items:center;padding:0 12px;}
+  .hzseg{background:var(--hazard);color:var(--ink);padding:2px 14px;font-weight:700;}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="edge"></div>
+  <div class="heavy" style="left:32px;top:32px;width:1536px;"></div>
+
+  <!-- R1 title + the direction, stated on the spread itself -->
+  <div style="position:absolute;left:44px;top:32px;height:52px;display:flex;align-items:center;">
+    <span class="title">滨江—云岭线</span>
+  </div>
+  <div style="position:absolute;right:44px;top:32px;height:52px;display:flex;align-items:center;">
+    <span style="font-size:40px;font-weight:800;">滨江 → 云岭（单向）</span>
+  </div>
+
+  <!-- R2 header ledger, the sole statement of the service facts;
+       the fare at the line's own size; no blanket headway rule here. -->
+  <div class="ledger" style="position:absolute;left:44px;top:84px;height:52px;display:flex;align-items:center;">
+    <span class="muted">列车时刻表 · 发车</span>&nbsp;滨江站&nbsp;<span class="muted">· 首班</span>&nbsp;07:20&nbsp;<span class="muted">· 末班</span>&nbsp;21:40&nbsp;<span class="muted">· 全程票价</span>&nbsp;¥86
+  </div>
+  <div class="hair" style="left:32px;top:136px;width:1536px;"></div>
+
+  <!-- R3 panel titles: each panel carries its own departure range -->
+  <div style="position:absolute;left:32px;top:136px;width:1536px;height:52px;display:flex;">
+    <div class="ptitle" style="width:768px;">07:20–14:40</div>
+    <div class="ptitle" style="width:768px;">15:20–21:40</div>
+  </div>
+  <div class="heavy" style="left:32px;top:188px;width:1536px;"></div>
+
+  <!-- R4–R16 the two panels: independent tables, row lines broken at the seam -->
+  <div class="panels">
+    <div class="panel left">
+      <div class="sheads"><div></div><div class="shead">滨江</div><div class="shead">清水</div><div class="shead">石门</div><div class="shead">高原</div><div class="shead">云岭北</div><div class="shead">云岭</div></div>
+      <div class="trow"><div class="idx">01</div><div class="tc origin">07:20</div><div class="tc">07:44</div><div class="tc">08:08</div><div class="tc">08:32</div><div class="tc">08:56</div><div class="tc">09:20</div></div>
+      <div class="trow"><div class="idx">02</div><div class="tc origin">08:00</div><div class="tc">08:24</div><div class="tc">08:48</div><div class="tc">09:12</div><div class="tc">09:36</div><div class="tc">10:00</div></div>
+      <div class="trow"><div class="idx">03</div><div class="tc origin">08:40</div><div class="tc">09:04</div><div class="tc">09:28</div><div class="tc">09:52</div><div class="tc">10:16</div><div class="tc">10:40</div></div>
+      <div class="trow"><div class="idx">04</div><div class="tc origin">09:20</div><div class="tc">09:44</div><div class="tc">10:08</div><div class="tc">10:32</div><div class="tc">10:56</div><div class="tc">11:20</div></div>
+      <div class="trow"><div class="idx">05</div><div class="tc origin">10:00</div><div class="tc">10:24</div><div class="tc">10:48</div><div class="tc">11:12</div><div class="tc">11:36</div><div class="tc">12:00</div></div>
+      <div class="trow"><div class="idx">06</div><div class="tc origin">10:40</div><div class="tc">11:04</div><div class="tc">11:28</div><div class="tc">11:52</div><div class="tc">12:16</div><div class="tc">12:40</div></div>
+      <div class="trow"><div class="idx">07</div><div class="tc origin">11:20</div><div class="tc">11:44</div><div class="tc">12:08</div><div class="tc">12:32</div><div class="tc">12:56</div><div class="tc">13:20</div></div>
+      <div class="trow"><div class="idx">08</div><div class="tc origin">12:00</div><div class="tc">12:24</div><div class="tc">12:48</div><div class="tc">13:12</div><div class="tc">13:36</div><div class="tc">14:00</div></div>
+      <div class="trow"><div class="idx">09</div><div class="tc origin">12:40</div><div class="tc">13:04</div><div class="tc">13:28</div><div class="tc">13:52</div><div class="tc">14:16</div><div class="tc">14:40</div></div>
+      <div class="trow"><div class="idx">10</div><div class="tc origin">13:20</div><div class="tc">13:44</div><div class="tc">14:08</div><div class="tc">14:32</div><div class="tc">14:56</div><div class="tc">15:20</div></div>
+      <div class="trow"><div class="idx">11</div><div class="tc origin">14:00</div><div class="tc">14:24</div><div class="tc">14:48</div><div class="tc">15:12</div><div class="tc">15:36</div><div class="tc">16:00</div></div>
+      <div class="trow"><div class="idx">12</div><div class="tc origin">14:40</div><div class="tc">15:04</div><div class="tc">15:28</div><div class="tc">15:52</div><div class="tc">16:16</div><div class="tc">16:40</div></div>
+    </div>
+    <div class="panel">
+      <div class="sheads"><div></div><div class="shead">滨江</div><div class="shead">清水</div><div class="shead">石门</div><div class="shead">高原</div><div class="shead">云岭北</div><div class="shead">云岭</div></div>
+      <div class="trow"><div class="idx">13</div><div class="tc origin">15:20</div><div class="tc">15:44</div><div class="tc">16:08</div><div class="tc">16:32</div><div class="tc">16:56</div><div class="tc">17:20</div></div>
+      <div class="trow"><div class="idx">14</div><div class="tc origin">16:00</div><div class="tc">16:24</div><div class="tc">16:48</div><div class="tc">17:12</div><div class="tc">17:36</div><div class="tc">18:00</div></div>
+      <div class="trow"><div class="idx">15</div><div class="tc origin">16:40</div><div class="tc">17:04</div><div class="tc">17:28</div><div class="tc">17:52</div><div class="tc">18:16</div><div class="tc">18:40</div></div>
+      <div class="trow"><div class="idx">16</div><div class="tc origin">17:20</div><div class="tc">17:44</div><div class="tc">18:08</div><div class="tc">18:32</div><div class="tc">18:56</div><div class="tc">19:20</div></div>
+      <div class="trow"><div class="idx">17</div><div class="tc origin">18:00</div><div class="tc">18:24</div><div class="tc">18:48</div><div class="tc">19:12</div><div class="tc">19:36</div><div class="tc">20:00</div></div>
+      <div class="trow"><div class="idx">18</div><div class="tc origin">18:40</div><div class="tc">19:04</div><div class="tc">19:28</div><div class="tc">19:52</div><div class="tc">20:16</div><div class="tc">20:40</div></div>
+      <div class="trow"><div class="idx">19</div><div class="tc origin">19:20</div><div class="tc">19:44</div><div class="tc">20:08</div><div class="tc">20:32</div><div class="tc">20:56</div><div class="tc">21:20</div></div>
+      <div class="trow"><div class="idx">20</div><div class="tc origin">20:00</div><div class="tc">20:24</div><div class="tc">20:48</div><div class="tc">21:12</div><div class="tc">21:36</div><div class="tc">22:00</div></div>
+      <div class="trow"><div class="idx">21</div><div class="tc origin">20:40</div><div class="tc">21:04</div><div class="tc">21:28</div><div class="tc">21:52</div><div class="tc">22:16</div><div class="tc">22:40</div></div>
+      <div class="trow"><div class="idx">22</div><div class="tc origin">21:20</div><div class="tc">21:44</div><div class="tc">22:08</div><div class="tc">22:32</div><div class="tc">22:56</div><div class="tc">23:20</div></div>
+      <div class="trow"><div class="idx hz">23</div><div class="tc origin hz">21:40</div><div class="tc hz">22:04</div><div class="tc hz">22:28</div><div class="tc hz">22:52</div><div class="tc hz">23:16</div><div class="tc hz">23:40</div></div>
+      <div class="close">共 23 班 · 完</div>
+    </div>
+  </div>
+  <div style="position:absolute;left:797px;top:188px;width:6px;height:676px;background:var(--ink);"></div>
+  <div class="heavy" style="left:32px;top:864px;width:1536px;"></div>
+
+  <!-- R17 the key: the pattern WITH its exception, and what a column means -->
+  <div class="key muted" style="position:absolute;left:32px;top:864px;width:768px;height:52px;">
+    间隔 40 分钟，末班距前班 20 分钟<span style="margin-left:auto;font-weight:700;">续 →</span>
+  </div>
+  <div class="key muted" style="position:absolute;left:800px;top:864px;width:768px;height:52px;">
+    站间运行 24 分钟 · 全程 120 分钟
+  </div>
+  <div class="hair" style="left:32px;top:916px;width:1536px;"></div>
+
+  <!-- R18 the last-train cue, set as the row is set: ink on hazard;
+       and the continuation mark at the foot of the left panel -->
+  <div style="position:absolute;left:44px;top:916px;height:52px;display:flex;align-items:center;">
+    <span class="hzseg">黄色整行 = 末班，此后无车</span><span class="muted" style="font-size:32px;font-weight:700;margin-left:24px;">各站时刻即该站发车时刻（到发同分）</span>
+  </div>
+
+  <div class="heavy" style="left:32px;top:962px;width:1536px;"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>四季集 · 春 — 古池や</title>
+<style>
+  /* ma 間 skeleton — S = 1000, module M = 71.43. Axes: L = 71.4; the poem's axis x = 857.1 (12M,
+     the first whole module clear of the gutter at 800).
+     Faces per Tokens, installed locally: poem in Source Serif 4 / Noto Serif SC at display 88, weight 200;
+     translation in the serif at body 30, weight 300 (the brief: the same utterance, not apparatus);
+     author and annotation in Hanken Grotesk / Noto Sans SC at label 22.
+     Rework per review/panel.md — H0 (floor): the series line is 四季集 · 春, no 《》.
+     H4: the series line moves to the top of the left page (1M) — the entry point; the left page stays
+     the pond, and the path now begins there. H1: the silences are re-timed — ink-to-ink 145px after
+     古池や (stillness before the jump), 72px after 蛙飛び込む (the splash lands sooner), ratio ≈ 2:1.
+     H3: the gap after 水の音 is 134px before the apparatus. H2: the translation is reset in its three
+     phrases, commas kept, its own gaps echoing the poem's timing (28px / 16px).
+     H5: translation, author, annotation form one ranked sequence on the poem's axis, right page only. */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #F3F4F2; }
+  .unit {
+    position: relative; width: 1600px; height: 1000px; overflow: hidden;
+    background: #F3F4F2; color: #20242A;
+    font-family: "Hanken Grotesk", "Noto Sans SC", sans-serif;
+  }
+  .serif { font-family: "Source Serif 4", "Noto Serif SC", serif; }
+  .series {
+    position: absolute; left: 71.4px; top: 71.4px;
+    font-size: 22px; font-weight: 400; line-height: 1.45;
+  }
+  .poem { position: absolute; left: 857.1px; font-size: 88px; font-weight: 200; line-height: 1; }
+  .poem-1 { top: 71.4px; }
+  .poem-2 { top: 304.4px; }
+  .poem-3 { top: 464.4px; }
+  .translation { position: absolute; left: 857.1px; font-size: 30px; font-weight: 300; line-height: 1.4; }
+  .trans-1 { top: 686.4px; }
+  .trans-2 { top: 744.4px; }
+  .trans-3 { top: 790.4px; }
+  .author {
+    position: absolute; left: 857.1px; top: 834px;
+    font-size: 22px; font-weight: 400; line-height: 1.45;
+  }
+  .note {
+    position: absolute; left: 857.1px; top: 868px;
+    font-size: 22px; font-weight: 400; line-height: 1.45;
+  }
+</style>
+</head>
+<body>
+<div class="unit">
+  <div class="series">四季集 · 春</div>
+
+  <div class="poem serif poem-1">古池や</div>
+  <div class="poem serif poem-2">蛙飛び込む</div>
+  <div class="poem serif poem-3">水の音</div>
+
+  <div class="translation serif trans-1">古池塘，</div>
+  <div class="translation serif trans-2">青蛙跳入，</div>
+  <div class="translation serif trans-3">水声响</div>
+  <div class="author">松尾芭蕉</div>
+
+  <div class="note">季语「蛙」属春；<br>此为芭蕉最广为人知的一首</div>
+</div>
+</body>
+</html>

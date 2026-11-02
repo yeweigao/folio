@@ -103,7 +103,7 @@ One `brief.md` per piece, beside the skeleton:
 
 - **Facts.** A `## Facts` section, every fixed string in backticks, verbatim.
 - **Reader and outcome.** Who reads, where, from how far; what should happen next.
-- **The idea.** "On this surface, *the subject* becomes *the device*." It fails if a rival subject fits the sentence, or a second maker would reach it unaided.
+- **The idea.** "On this surface, *the subject* becomes *the device*." It fails if a rival subject fits the sentence, or a second maker would reach it unaided. The idea names the subject's cause, never its form: no primitive, hue, position or device is decided in the brief — those are found at make time by the skeleton's method and recorded in the piece's notes. A brief that pre-writes form has already made the piece, badly, and hidden the making from review.
 - **Sequence.** Per unit: form, lead, register (base, turn, pause). Turns sit where the content turns and name their variation.
 - **Assumptions and gaps.** Ask once, only what changes the work; what stays unknown or unverified is reported with the delivery.
 

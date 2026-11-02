@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mara Voss — 时尚摄影师</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Hanken+Grotesk:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0B0B0C; --paper:#F6F7F7; --muted:#55585C;
+    --didone:"Bodoni Moda","Noto Serif SC",serif;
+    --grot:"Hanken Grotesk","Noto Sans SC",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#E8E9E9;}
+  .unit{position:relative;width:1600px;height:900px;background:var(--paper);color:var(--ink);overflow:hidden;}
+
+  /* The plate: cropped hard into the turn — face and hem lost, coat and scarf
+     bursting the right and bottom edges. Its left edge (x=830) is the axis of
+     the model's turn: the crop begins at her body's axis, and her outstretched
+     forearm, severed by that edge, meets it across the name's band. */
+  .plate{position:absolute;right:0;top:0;width:770px;height:900px;overflow:hidden;background:var(--ink);}
+  .plate img{width:100%;height:100%;object-fit:cover;display:block;}
+  /* The plate's own caption block, inside its frame: travels with the plate. */
+  .platecap{position:absolute;left:0;bottom:0;width:100%;height:48px;background:var(--ink);color:var(--paper);
+    font-family:var(--grot);font-weight:500;font-size:26px;line-height:48px;padding-left:20px;white-space:nowrap;}
+
+  .role{position:absolute;left:50px;top:44px;font-family:var(--grot);font-weight:500;font-size:27px;color:var(--muted);}
+
+  /* The name: one word, two registered copies, cut at x=830 — where the turn
+     crosses it. Local seam in the name box: 780px from its left. */
+  .namebox{position:absolute;left:50px;top:104px;width:1500px;height:240px;}
+  .name{position:absolute;left:0;top:0;font-family:var(--didone);font-weight:800;
+    font-size:218px;line-height:1;white-space:nowrap;}
+  .name.ink{color:var(--ink);clip-path:inset(0 calc(100% - 780px) 0 0);}
+  .name.paper{color:var(--paper);clip-path:inset(0 0 0 780px);}
+
+  /* One measured block under the name: declaration, series, booking. */
+  .decl{position:absolute;left:50px;top:404px;font-family:var(--grot);font-weight:500;font-size:28px;color:var(--ink);}
+  .series{position:absolute;left:50px;top:468px;display:flex;flex-direction:column;gap:22px;}
+  .srow{font-family:var(--grot);font-weight:700;font-size:34px;line-height:44px;color:var(--ink);}
+  .srow .en{display:inline-block;width:380px;}
+  .booking{position:absolute;left:50px;top:688px;font-family:var(--grot);}
+  .booking .lab{font-weight:500;font-size:27px;color:var(--muted);}
+  .booking .mail{display:block;margin-top:8px;font-weight:700;font-size:34px;color:var(--ink);
+    text-decoration:underline;text-underline-offset:5px;}
+  .booking .base{margin-top:14px;font-weight:500;font-size:27px;color:var(--ink);}
+</style>
+</head>
+<body>
+<div class="unit">
+  <div class="plate">
+    <img src="plate.jpg" alt="Turning model in a long coat, black-and-white (AI-generated image — not the photographer's work)">
+    <div class="platecap">Image: AI-generated — not the photographer's work</div>
+  </div>
+
+  <div class="role">时尚摄影师</div>
+
+  <div class="namebox" aria-label="MARA VOSS">
+    <div class="name ink" aria-hidden="true">MARA VOSS</div>
+    <div class="name paper" aria-hidden="true">MARA VOSS</div>
+  </div>
+
+  <div class="decl">Image: AI-generated — not the photographer's work</div>
+
+  <div class="series">
+    <div class="srow"><span class="en">COAST</span><span class="cn">海岸</span></div>
+    <div class="srow"><span class="en">BACKSTAGE</span><span class="cn">后台</span></div>
+    <div class="srow"><span class="en">PORTRAIT</span><span class="cn">肖像</span></div>
+  </div>
+
+  <div class="booking">
+    <div class="lab">预约拍摄</div>
+    <a class="mail" href="mailto:studio@maravoss.com">studio@maravoss.com</a>
+    <div class="base">Base: Berlin</div>
+  </div>
+</div>
+</body>
+</html>

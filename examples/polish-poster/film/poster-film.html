@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>听海的人 — 第九届江畔电影节开幕片</title>
+<style>
+  :root{
+    --ground:#CFD4C6; --ink:#16235C; --muted:#454E63; --accent:#F2B61C;
+    --margin:47px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    width:900px;height:1200px;overflow:hidden;
+    background:var(--ground);color:var(--ink);
+    font-family:"Bricolage Grotesque","Noto Sans SC",sans-serif;
+  }
+  .page{width:900px;height:1200px;display:flex;flex-direction:column;}
+  .picture{display:block;width:900px;height:747px;}
+  .below{padding:0 var(--margin) 47px;}
+  .rule3{height:3px;background:var(--ink);}
+  h1{
+    margin-top:24px;
+    font-family:"Noto Sans SC","Bricolage Grotesque",sans-serif;
+    font-size:130px;font-weight:900;line-height:0.98;letter-spacing:0;
+  }
+  .desc{margin-top:16px;font-size:29px;font-weight:700;line-height:1.15;}
+  .desc .sep{color:var(--muted);font-weight:500;padding:0 6px;}
+  .facts-rule{margin-top:24px;}
+  .whenrow{
+    margin-top:20px;display:flex;
+    font-size:36px;font-weight:700;line-height:1.25;
+  }
+  .whenrow .span{flex:1;}
+  .whenrow .span + .span{padding-left:14px;}
+  .hairline{height:1px;background:var(--ink);margin-top:16px;}
+  .peers{
+    margin-top:14px;display:flex;
+    font-size:24px;font-weight:500;line-height:1.4;
+  }
+  .peers .span{flex:1;}
+  .peers .span + .span{padding-left:14px;}
+  .decl{margin-top:10px;font-size:24px;font-weight:500;line-height:1.4;color:var(--muted);}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- THE PICTURE — generated gouache painting (declared in the credit block):
+       a conch whose aperture is a human ear; the spiral is the ear's inner coil;
+       one gold dab of sound where the coil closes; the sea one hand-painted band. -->
+  <img class="picture" src="picture-film.png" alt="水粉画：海螺与耳朵合为一体，螺纹即耳廓内旋，旋心一点金。">
+
+  <div class="below">
+    <div class="rule3"></div>
+    <h1>听海的人</h1>
+    <p class="desc">第九届江畔电影节<span class="sep">·</span>开幕片<span class="sep">·</span>剧情片</p>
+    <div class="rule3 facts-rule"></div>
+    <div class="whenrow">
+      <span class="span">2026年11月20日 19:00</span>
+      <span class="span">江畔大剧院</span>
+    </div>
+    <div class="hairline"></div>
+    <div class="peers">
+      <span class="span">导演 沈一苇</span>
+      <span class="span">主演：陈汐、陆则明</span>
+    </div>
+    <p class="decl">插图：水粉画（生成图）</p>
+  </div>
+
+</div>
+</body>
+</html>

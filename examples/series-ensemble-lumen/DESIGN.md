@@ -26,7 +26,7 @@ Host Grotesk (OFL); fallback system sans. Display 161 px / 800, tracking -0.04em
 
 ## Colors
 
-Primary #111111 ink: field, title, facts. Neutral #F3F3F1 off-white stock. Tertiary #3A4BFF cobalt: the traced element only, never text or ground. Accent at most 5%, paper at least 55%. No greys, tints.
+Primary #111111 ink: field, title, facts. Neutral #F3F3F1 off-white stock. Tertiary #3A4BFF cobalt: the traced element only, never text or ground. Accent at most 5%, paper at least 55% on the standard sheet; the premiere sheet keeps its own shares (Variations). No greys, tints.
 
 ## Shapes
 
@@ -43,7 +43,7 @@ Footer: body bold. Ban: button, decorative QR.
 
 ## Variations
 
-Accent field: sheet cobalt, ink and paper in front; premieres only; field still computed.
+Accent field: sheet cobalt, ink and paper in front; premieres only; field still computed. On this sheet the standard caps do not apply: cobalt is the ground, uncapped; the field's cells and every word are paper, the traced element ink, and both pairs hold their contrast.
 Type-only evening: no computable work; title three times at display size, offset one module each, copies cropped by the trim. One break per sheet.
 
 ## Do's and Don'ts

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>岩壁档案 · 本周定线 — 城北攀岩馆</title>
+<style>
+  :root{
+    --ground:#E3E4E1; --ink:#0B0B0B; --muted:#454745; --field:#C9CBC7; --line:#7A7C79; --hazard:#FFD200;
+    --sans:"Inter Display","Inter","Noto Sans SC",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#fff;}
+  .sheet{position:relative;width:900px;height:1200px;background:var(--ground);
+    font-family:var(--sans);color:var(--ink);overflow:hidden;}
+  .edge{position:absolute;top:0;left:0;width:900px;height:8px;background:var(--ink);}
+  .heavy{position:absolute;height:6px;background:var(--ink);}
+  .hair{position:absolute;height:1px;background:var(--line);}
+  .vert{position:absolute;width:1px;background:var(--line);}
+  .tick{position:absolute;height:1px;background:var(--line);}
+  .title{font-size:50px;font-weight:800;line-height:1;}
+  .figure{font-size:36px;font-weight:800;line-height:1;}
+  .body{font-size:29px;font-weight:700;line-height:1;}
+  .muted{color:var(--muted);}
+  .tnum{font-variant-numeric:tabular-nums;}
+  .mid{position:absolute;display:flex;align-items:center;}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="edge"></div>
+
+  <!-- axis ticks: one per row boundary, longer at major units (skeleton, Method 3) -->
+  <div class="tick" style="left:14px;top:30px;width:16px;"></div>
+  <div class="tick" style="left:14px;top:106px;width:16px;"></div>
+  <div class="tick" style="left:14px;top:182px;width:16px;"></div>
+  <div class="tick" style="left:14px;top:258px;width:16px;"></div>
+  <div class="tick" style="left:6px;top:334px;width:24px;"></div>
+  <div class="tick" style="left:14px;top:410px;width:16px;"></div>
+  <div class="tick" style="left:14px;top:486px;width:16px;"></div>
+  <div class="tick" style="left:14px;top:562px;width:16px;"></div>
+  <div class="tick" style="left:6px;top:638px;width:24px;"></div>
+  <div class="tick" style="left:14px;top:714px;width:16px;"></div>
+  <div class="tick" style="left:14px;top:790px;width:16px;"></div>
+  <div class="tick" style="left:14px;top:866px;width:16px;"></div>
+  <div class="tick" style="left:14px;top:942px;width:16px;"></div>
+  <div class="tick" style="left:14px;top:1018px;width:16px;"></div>
+  <div class="tick" style="left:14px;top:1094px;width:16px;"></div>
+  <div class="tick" style="left:6px;top:1170px;width:24px;"></div>
+
+  <!-- rules: every rule spans only the content it bounds -->
+  <div class="heavy" style="left:30px;top:30px;width:840px;"></div>
+  <div class="hair" style="left:30px;top:106px;width:840px;"></div>
+  <div class="hair" style="left:30px;top:182px;width:840px;"></div>
+  <div class="vert" style="left:170px;top:182px;height:152px;"></div>
+  <div class="heavy" style="left:30px;top:334px;width:840px;"></div>
+  <div class="heavy" style="left:30px;top:638px;width:840px;"></div>
+  <div class="vert" style="left:380px;top:638px;height:456px;"></div>
+  <div class="hair" style="left:30px;top:714px;width:350px;"></div>
+  <div class="hair" style="left:30px;top:790px;width:350px;"></div>
+  <div class="hair" style="left:30px;top:866px;width:350px;"></div>
+  <div class="hair" style="left:30px;top:942px;width:350px;"></div>
+  <div class="hair" style="left:30px;top:1018px;width:350px;"></div>
+  <div class="hair" style="left:30px;top:1094px;width:350px;"></div>
+
+  <!-- R1 header: venue from the first cell; the month is the only scope, on plain ground -->
+  <div class="mid title" style="left:41px;top:30px;height:76px;">城北攀岩馆</div>
+  <div class="mid body" style="right:41px;top:30px;height:76px;">2026 年 12 月</div>
+
+  <!-- R2 programme: name, this issue, the setting day -->
+  <div style="position:absolute;left:41px;top:106px;height:76px;display:flex;align-items:baseline;padding-top:18px;">
+    <span class="title">岩壁档案</span><span class="figure" style="margin-left:20px;">本周定线</span>
+  </div>
+  <div class="mid body" style="right:41px;top:106px;height:76px;"><span class="muted" style="margin-right:16px;">定线日</span>每周二</div>
+
+  <!-- R3–R4 the grade span as one unit: label row, then the bar row.
+       Seven filled segments for V2–V8, nothing before them, nothing after. -->
+  <div class="mid body muted" style="left:41px;top:182px;height:76px;">难度</div>
+  <div class="mid figure" style="left:181px;top:182px;height:76px;">V2–V8</div>
+  <div style="position:absolute;left:170px;top:274px;width:490px;height:44px;display:flex;gap:10px;">
+    <div style="flex:1;background:var(--ink);"></div>
+    <div style="flex:1;background:var(--ink);"></div>
+    <div style="flex:1;background:var(--ink);"></div>
+    <div style="flex:1;background:var(--ink);"></div>
+    <div style="flex:1;background:var(--ink);"></div>
+    <div style="flex:1;background:var(--ink);"></div>
+    <div style="flex:1;background:var(--ink);"></div>
+  </div>
+
+  <!-- R5–R8 the count head: one unit bounded by its two edges, no rule inside it.
+       The number, its unit on the same baseline, and the fourteen routes
+       themselves as fourteen counted black cells. -->
+  <div style="position:absolute;left:41px;top:334px;height:304px;display:flex;align-items:flex-end;padding-bottom:16px;">
+    <span style="font-size:330px;font-weight:900;line-height:0.76;letter-spacing:-4px;">14</span><span class="title" style="margin-left:22px;padding-bottom:10px;">条新线</span>
+  </div>
+  <div style="position:absolute;left:520px;top:422px;width:350px;height:128px;display:flex;flex-wrap:wrap;gap:16px 14px;">
+    <div style="width:38px;height:56px;background:var(--ink);"></div>
+    <div style="width:38px;height:56px;background:var(--ink);"></div>
+    <div style="width:38px;height:56px;background:var(--ink);"></div>
+    <div style="width:38px;height:56px;background:var(--ink);"></div>
+    <div style="width:38px;height:56px;background:var(--ink);"></div>
+    <div style="width:38px;height:56px;background:var(--ink);"></div>
+    <div style="width:38px;height:56px;background:var(--ink);"></div>
+    <div style="width:38px;height:56px;background:var(--ink);"></div>
+    <div style="width:38px;height:56px;background:var(--ink);"></div>
+    <div style="width:38px;height:56px;background:var(--ink);"></div>
+    <div style="width:38px;height:56px;background:var(--ink);"></div>
+    <div style="width:38px;height:56px;background:var(--ink);"></div>
+    <div style="width:38px;height:56px;background:var(--ink);"></div>
+    <div style="width:38px;height:56px;background:var(--ink);"></div>
+  </div>
+
+  <!-- R9 ledger head -->
+  <div class="mid body muted" style="left:41px;top:638px;height:76px;">日期</div>
+  <div class="mid body muted" style="left:181px;top:638px;height:76px;">定线</div>
+
+  <!-- R10–R14 the ledger of Tuesdays, standing under the count -->
+  <div class="mid figure tnum" style="left:41px;top:714px;height:76px;">12.01</div>
+  <div class="mid body" style="left:181px;top:714px;height:76px;">定线</div>
+  <div class="mid figure tnum" style="left:41px;top:790px;height:76px;">12.08</div>
+  <div class="mid body" style="left:181px;top:790px;height:76px;">定线</div>
+  <div class="mid figure tnum" style="left:41px;top:866px;height:76px;">12.15</div>
+  <div class="mid body" style="left:181px;top:866px;height:76px;">定线</div>
+  <div class="mid figure tnum" style="left:41px;top:942px;height:76px;">12.22</div>
+  <div class="mid body" style="left:181px;top:942px;height:76px;">定线</div>
+  <div class="mid figure tnum" style="left:41px;top:1018px;height:76px;">12.29</div>
+  <div class="mid body" style="left:181px;top:1018px;height:76px;">定线</div>
+
+  <!-- R15 the fare: one row, a field exactly the size of its content's columns -->
+  <div style="position:absolute;left:30px;top:1094px;width:350px;height:76px;background:var(--field);"></div>
+  <div class="mid body" style="left:41px;top:1094px;height:76px;">月卡</div>
+  <div class="mid figure" style="left:181px;top:1094px;height:76px;">¥499</div>
+  <div class="heavy" style="left:30px;top:1164px;width:350px;"></div>
+</div>
+</body>
+</html>

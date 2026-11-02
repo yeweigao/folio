@@ -12,7 +12,7 @@ World: any content, on any surface. Figures and abstractions are interpreted, no
 
 Method:
 1. The sentence: "*the subject* becomes *the device*." It fails if a rival subject fits it, or if the picture would merely show the subject.
-2. Paint it: gouache on the ground colour, flat and opaque, brush edges visible; ink draws, the accent goes to one figure.
+2. Paint it: gouache on the ground colour, flat and opaque, brush edges visible; ink draws, the accent goes to one figure. The accent is spent last, on the figure the subject itself gives; a metaphor invented to hold the accent is derivation running backwards, and a fault.
 3. Material: scan real hand work; else generate the picture naming master and medium, declared as illustration; with neither, a labelled slot of the exact crop. Never code, CSS shapes, a brush font or stock.
 4. Set the facts as live type on the tracks beneath.
 
@@ -41,7 +41,7 @@ S = min(W, H); margin 0.052 S; gutter 0.016 S; six tracks, twelve where W > 1.4 
 - **Ground `#CFD4C6` (neutral).** Cold grey-green board, the picture's ground, at least half the area.
 - **Ink `#16235C` (primary).** All type, every rule, the drawing.
 - **Muted `#454E63` (secondary).** Secondary headings and notes.
-- **Accent `#F2B61C` (tertiary).** The picture's one figure and one band, under 10%; never type, only ink on it.
+- **Accent `#F2B61C` (tertiary).** The picture's one figure and one band, under 10%; never type, only ink on it. The role is fixed; the hue is the world's gold unless the subject carries a colour it cannot deny — blood is red — in which case the hue follows the subject, the role is unchanged, and the deviation is declared on the piece.
 - Emphasis is weight, never colour.
 
 ## Shapes

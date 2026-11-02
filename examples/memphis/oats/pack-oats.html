@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>跳跳麦片 POP OATS — 蜂蜜味</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;800;900&family=Noto+Sans+SC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#fff; }
+  .unit { position:relative; width:1200px; height:900px; overflow:hidden;
+          background:#FFFFFF; color:#111111;
+          font-family:"League Spartan","Noto Sans SC",sans-serif; }
+  .abs { position:absolute; }
+  .display { font-weight:900; font-size:176px; line-height:1; }
+  .kind { font-size:26px; font-weight:800; line-height:1.12; }
+  .en { font-size:39.6px; font-weight:800; line-height:1.02; }
+  .ref { font-size:26px; font-weight:800; line-height:1.12; }
+  /* the one-pass axis, row 3: flavour -> weight -> age */
+  .axis { top:607.2px; height:176px; }
+  .flavour { left:36px; width:610px; background:#FFD21F; color:#111111;
+             display:flex; align-items:center; padding:0 28px; white-space:nowrap;
+             font-size:57.6px; font-weight:800; line-height:1.09; }
+  .data { left:660.4px; width:215.6px; background:#111111; color:#FFFFFF; padding:26px 18px; }
+  .data .lab { font-size:26px; font-weight:800; line-height:1.12; }
+  .data .fig { font-size:75.6px; font-weight:900; line-height:0.9; margin-top:12px; }
+  .age { left:890.4px; width:273.6px; background:#00C389; color:#111111;
+         display:flex; align-items:center; padding:0 14px; white-space:nowrap;
+         font-size:39.6px; font-weight:800; line-height:1.02; }
+  /* base band */
+  .rule { left:36px; top:797.6px; width:1128px; height:5.4px; background:#111111; }
+  .producer { right:36px; top:822px; font-size:26px; font-weight:800; line-height:1.12; }
+</style>
+</head>
+<body>
+<div class="unit">
+
+  <!-- brand: found first -->
+  <div class="abs display" style="left:36px; top:36px;">跳跳</div>
+  <div class="abs display" style="left:36px; top:226.4px;">麦片</div>
+
+  <!-- identity stack, left column: kind, English name, and whole grain
+       demoted to a quiet reference line under the name block -->
+  <div class="abs kind" style="left:36px; top:424px;">早餐麦片</div>
+  <div class="abs en" style="left:36px; top:458px;">POP OATS</div>
+  <div class="abs ref" style="left:36px; top:516px;">全谷物</div>
+
+  <!-- honey, from its own behaviour: a drip falls from the top edge
+       (triangle = what moves) and strikes the pool (disc = what is whole);
+       the pool dips into its name slab, sharing the edge. -->
+  <svg class="abs" style="left:0; top:0;" width="1200" height="900" viewBox="0 0 1200 900">
+    <defs>
+      <pattern id="fall" width="13" height="13" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <rect width="13" height="13" fill="#FFD21F"/>
+        <rect width="5" height="13" fill="#111111"/>
+      </pattern>
+      <pattern id="bubbles" width="48" height="96" patternUnits="userSpaceOnUse">
+        <rect width="48" height="96" fill="#FFD21F"/>
+        <circle cx="24" cy="24" r="6" fill="#111111"/>
+        <circle cx="0" cy="72" r="6" fill="#111111"/>
+        <circle cx="48" cy="72" r="6" fill="#111111"/>
+      </pattern>
+      <g id="grain">
+        <path d="M0,-19 C7,-10 9,6 0,19 C-9,6 -7,-10 0,-19 Z" fill="#111111"/>
+        <path d="M0,-13 V13" stroke="#FFFFFF" stroke-width="2"/>
+      </g>
+    </defs>
+    <!-- the falling drip, cut by the top edge: the one edge this pack opens -->
+    <polygon points="594,0 646,0 620,382" fill="url(#fall)"/>
+    <!-- the pool -->
+    <circle cx="620" cy="494" r="120" fill="url(#bubbles)"/>
+    <!-- a sown row of drawn grain units closes the front -->
+    <use href="#grain" transform="translate(84 834) rotate(-7) scale(1.3)"/>
+    <use href="#grain" transform="translate(140 834) rotate(6) scale(1.3)"/>
+    <use href="#grain" transform="translate(196 834) rotate(-6) scale(1.3)"/>
+    <use href="#grain" transform="translate(252 834) rotate(7) scale(1.3)"/>
+    <use href="#grain" transform="translate(308 834) rotate(-5) scale(1.3)"/>
+    <use href="#grain" transform="translate(364 834) rotate(6) scale(1.3)"/>
+    <use href="#grain" transform="translate(420 834) rotate(-7) scale(1.3)"/>
+    <use href="#grain" transform="translate(476 834) rotate(5) scale(1.3)"/>
+  </svg>
+
+  <!-- one reading axis: flavour, weight, age -->
+  <div class="abs axis flavour">蜂蜜味</div>
+  <div class="abs axis data">
+    <div class="lab">净含量</div>
+    <div class="fig">480g</div>
+  </div>
+  <div class="abs axis age">适合 4 岁以上</div>
+
+  <!-- base band -->
+  <div class="abs rule"></div>
+  <div class="abs producer">生产商：晨光食品</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>盐与灯塔 — 诗集</title>
+<style>
+  :root{
+    --ground:#CFD4C6; --ink:#16235C; --muted:#454E63; --accent:#F2B61C;
+    --margin:47px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    width:900px;height:1200px;overflow:hidden;
+    background:var(--ground);color:var(--ink);
+    font-family:"Bricolage Grotesque","Noto Sans SC",sans-serif;
+  }
+  .page{width:900px;height:1200px;display:flex;flex-direction:column;}
+  .picture{display:block;width:900px;height:803px;}
+  .below{padding:0 var(--margin) 47px;}
+  .rule3{height:3px;background:var(--ink);}
+  h1{
+    margin-top:24px;
+    font-family:"Noto Sans SC","Bricolage Grotesque",sans-serif;
+    font-size:130px;font-weight:900;line-height:0.98;letter-spacing:0;
+  }
+  .kind{margin-top:12px;font-size:32px;font-weight:700;line-height:1.15;}
+  .author{margin-top:22px;font-size:32px;font-weight:700;line-height:1.25;}
+  .publisher{margin-top:6px;font-size:24px;font-weight:500;line-height:1.4;}
+  .decl{margin-top:10px;font-size:24px;font-weight:500;line-height:1.4;color:var(--muted);}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- THE PICTURE — generated gouache painting (declared below):
+       the lighthouse IS a salt cellar: the perforated shaker cap at large scale
+       is the lamp room, shaking gold grains of salt-light over the sea. -->
+  <img class="picture" src="picture-poems.png" alt="水粉画：巨大的盐瓶多孔瓶盖即是灯塔的灯室，金粒自孔中摇落海上。">
+
+  <div class="below">
+    <div class="rule3"></div>
+    <h1>盐与灯塔</h1>
+    <p class="kind">诗集</p>
+    <p class="author">作者 顾盐生</p>
+    <p class="publisher">海岸文艺出版社</p>
+    <p class="decl">插图：水粉画（生成图）</p>
+  </div>
+
+</div>
+</body>
+</html>

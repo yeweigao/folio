@@ -15,7 +15,7 @@ Method:
 2. Film 0, black: + marks at the gutter crossings, and the thread, a stepped line carrying the content's order, one step per item.
 3. Film 1, screen: one glyph or word of the content as a dot screen from one raster, solid on one side, thinning to a 45% tone.
 4. Film 2, accent: a copy of the display forms, slipped whole by one vector.
-5. Film 3, black: live type; the display baseline steps down letter by letter, a condensed light word over an extended black word; reading text flat.
+5. Film 3, black: live type; the display baseline steps down letter by letter at the derived step, a condensed light word over an extended black word; reading text flat.
 6. Render, look at the slip, and change the declared values, never one element by hand.
 
 Amplitude: full; tempered in the order above, the amplitude stated.
@@ -30,12 +30,12 @@ Computed: the dot screen from a glyph of the content, or from a real photograph 
 
 Grid system: Modular — six by nine in portrait, nine by six in landscape, six by six in a square.
 
-S = min(W, H); margin 0.04 S; gutter 0.4 × margin; column c = (S − 2 × margin − 5 × gutter) ÷ 6; rows along the long side as many whole (c + gutter) as fit. The title and screen take the top four rows, the thread the next three, the facts the lower field, the declaration the bottom margin; landscape runs the same order left to right. The thread steps right by (columns ÷ items) and down one row per item, risers in the gutter. Screen pitch c ÷ 10, dot radius at most 0.72 pitch. The slip vector: 0.014 S right, 0.010 S down. Facts are set from the bottom margin up; the space they leave belongs to the screen.
+S = min(W, H); margin 0.04 S; gutter 0.4 × margin; column c = (S − 2 × margin − 5 × gutter) ÷ 6; rows along the long side as many whole (c + gutter) as fit. The title and screen take the top four rows, the thread the next three, the facts the lower field, the declaration the bottom margin; landscape runs the same order left to right. The thread steps right by (columns ÷ items) and down one row per item, risers in the gutter. Screen pitch c ÷ 10, dot radius at most 0.72 pitch. The slip vector is derived from the step (Typography), never a constant: the accent film slips one full step, or half a step where a full step would land the copy on the next glyph; the amount used is declared with the piece. Facts are set from the bottom margin up; the space they leave belongs to the screen.
 
 ## Typography
 
 - **Archivo** (OFL, variable width 62–125, weight 100–900): width and weight change inside one title, so registers collide within one voice.
-- Display: the black word extended at 250, the light word condensed at 236, stepping 0.062 S per letter; a word too wide narrows on the width axis first, then steps down in size.
+- Display: the black word extended at 250, the light word condensed at 236, stepping by the derived step — one grid row divided by (the letters in the longest stepped word − 1), so the word's fall spans exactly one row; a word too wide narrows on the width axis first, then steps down in size.
 - **Noto Sans SC** at the Latin's weight; the Chinese title upright in one vertical column, at 140.
 - Facts 44 (800, figures 300); reading 26–32; nothing read below 26. Tabular figures; no tracked capitals.
 
@@ -92,8 +92,6 @@ spacing:
   margin: 40
   gutter: 16
   dot-pitch: 14
-  slip-x: 14
-  slip-y: 10
   thread: 5
 pairs:
   ink-on-ground: { backgroundColor: "{colors.neutral}", textColor: "{colors.primary}" }

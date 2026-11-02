@@ -33,7 +33,7 @@ S = min(W, H); margin 0.04 S; gutter 0.4 × margin; six tracks, nine where W > 1
 ## Typography
 
 - **League Spartan** (OFL; 600–900) for titles, figures and facts; **DM Serif Display Italic** (OFL) for voices only, the names of people and quoted words; **Noto Sans SC** (700, 900) for Chinese, never smaller than the Latin it translates.
-- Display at a cap height of one module, one word per row; a word wider than the field drops to two thirds of a module, never compressed.
+- Display at a cap height of one module, one word per row; for Han, the glyph's em is one module. A word wider than the field drops to two thirds of a module, never compressed, and never fitted to its span by eye — the module is the derivation in both scripts.
 - Headline 64, numeral 84, title 44, voice 30, label 26; nothing read below 26.
 
 ## Colors
@@ -41,12 +41,12 @@ S = min(W, H); margin 0.04 S; gutter 0.4 × margin; six tracks, nine where W > 1
 - **Ink `#111111` (primary).** Type on white, the title, ink blocks.
 - **White `#FFFFFF` (neutral).** Ground, at least 40% of the area; type on cobalt and ink.
 - **Cobalt `#2438E0`, rose `#FF4FA3`, lemon `#FFD21F`.** First, second, third part, then the cycle restarts; a hue stays with its part everywhere.
-- **Mint `#00C389`.** One named category, held across the deliverable.
+- **Mint `#00C389`.** One named category, held across the deliverable: the category is named by the brief — the offer or action the piece exists to announce. A fact left over after the parts took their hues is not a category; if the brief names none, there is no mint.
 - White on cobalt and ink; ink on every other hue. Hues mark parts, never value or emphasis.
 
 ## Shapes
 
-Radius zero; flat; no outline or shadow; one 6 ink rule over the base band. Primitives cut from a tower-side square: square; right triangle; disc with a quarter-side square gap turned 45°. Laminates: grid lines for the square, 45° stripes for the triangle, half-drop dots for the disc, each repeat a fraction of the side; cut off by the edge, never fitted, never behind text.
+Radius zero; flat; no outline or shadow; one 6 ink rule over the base band. Primitives cut from a tower-side square: square; right triangle; disc with a quarter-side square gap turned 45°. The triangle's orientation is the content's direction — the way its part moves, pours or strikes — chosen per piece and declared; the same orientation twice in a set is a habit, not a system. Laminates: grid lines for the square, 45° stripes for the triangle, half-drop dots for the disc, each repeat a fraction of the side; cut off by the edge, never fitted, never behind text.
 
 ## Forms
 

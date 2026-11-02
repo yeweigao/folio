@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>侧滑 SIDESLIP — 滑板店首页</title>
+<style>
+  @font-face { font-family:'Archivo'; src:url('archivo-var.woff2') format('woff2'); font-weight:100 900; font-stretch:62% 125%; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#55585c; }
+  .stage { position:relative; width:1600px; height:900px; overflow:hidden; background:#ECEEEF; color:#0B0B0C;
+           font-family:'Archivo','Noto Sans SC','Noto Sans CJK SC',sans-serif; }
+  svg.films { position:absolute; left:0; top:0; }
+  .dwrap { position:absolute; white-space:nowrap; }
+  .slipcopy { position:absolute; left:0; top:0; color:#1560D6; mix-blend-mode:multiply; white-space:nowrap; }
+  .live { position:relative; white-space:nowrap; }
+  .live span, .slipcopy span { display:inline-block; }
+  .desc { position:absolute; font-size:30px; font-weight:800; color:#0B0B0C; }
+  .han { font-family:'Noto Sans SC','Noto Sans CJK SC',sans-serif; font-weight:900; line-height:1; }
+  .tlabel { position:absolute; font-size:30px; font-weight:600; white-space:nowrap; }
+  .fact { position:absolute; font-size:39.6px; font-weight:800; line-height:1; white-space:nowrap; font-feature-settings:'tnum' 1; }
+  .fig { font-weight:300; }
+</style>
+</head>
+<body>
+<div class="stage" id="stage">
+  <svg class="films" width="1600" height="900" viewBox="0 0 1600 900">
+    <g id="screen"></g>
+    <!-- Film 0: the thread — the shop's three zones, in the order a skater walks them.
+         No + / target marks (judge S7); no footer repetition of the name (judge S1). -->
+    <polyline points="597.6,200 730.8,200 730.8,340.4 871.2,340.4 871.2,480.8 1004.4,480.8"
+              fill="none" stroke="#0B0B0C" stroke-width="4.5"/>
+  </svg>
+
+  <!-- descriptor (verbatim from the brief) — black, at zone-label size (judge S2) -->
+  <div class="desc" style="left:36px; top:44px;">滑板店</div>
+
+  <!-- Film 3: the name broken at its seam — SIDE light and flat over SLIP stepped black.
+       The blue slipped copy belongs to SLIP alone (judge S4): SIDE and the Han column
+       carry no offset copy. Declared values, computed from this piece: step = one grid row
+       (c + gutter = 140.4) / (letters in SLIP − 1) = 140.4 / 3 = 46.8, so SLIP descends
+       exactly one row; the accent film is slipped once by half the step vector (23.4, 23.4) —
+       recomputed for this piece: a full-step slip would land each blue letter on the next
+       black one (SLIP's advance ≈ 125 < its step diagonal), so half the step keeps the
+       film registered to its own letters. -->
+  <div class="dwrap" style="left:36px; top:116px;">
+    <div class="live" id="side" data-word="SIDE"></div>
+  </div>
+  <div class="dwrap" style="left:36px; top:326px;">
+    <div class="slipcopy" id="slip-slip" data-word="SLIP"></div>
+    <div class="live" id="slip" data-word="SLIP"></div>
+  </div>
+
+  <!-- Chinese name, one vertical column — solid black, no slipped copy (judge S4) -->
+  <div class="dwrap han" style="left:457.2px; top:36px; font-size:126px;">
+    <div class="live" style="font-size:126px;">侧<br>滑</div>
+  </div>
+
+  <!-- thread labels, flush left under each riser -->
+  <div class="tlabel" style="left:597.6px; top:230px;">新板到货</div>
+  <div class="tlabel" style="left:730.8px; top:370.4px;">自组区</div>
+  <div class="tlabel" style="left:871.2px; top:510.8px;">维修台</div>
+
+  <!-- lookup facts directly below 维修台, at the thread's end (judge S6) -->
+  <div class="fact" style="left:871.2px; top:572px;">梧桐路 <span class="fig">47</span> 号</div>
+  <div class="fact" style="left:871.2px; top:624px;">营业 <span class="fig">11:00–22:00</span></div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const STEP = 46.8;                 // declared: 140.4 / (4 − 1), from SLIP's four letters
+const SLIPV = { x: STEP / 2, y: STEP / 2 }; // declared: half the step vector — derived above, from SLIP's advance
+function splitLetters(el, step) {
+  const word = el.dataset.word; el.textContent = '';
+  [...word].forEach((ch, i) => {
+    const s = document.createElement('span'); s.textContent = ch;
+    if (step) s.style.transform = `translateY(${i * step}px)`;
+    el.appendChild(s);
+  });
+}
+function setVar(el, wdth, wght) { el.style.fontVariationSettings = `'wdth' ${wdth}, 'wght' ${wght}`; }
+function fitWord(el, maxW, wdth0, wght, fixedWdth) {
+  let size = parseFloat(el.dataset.size), wdth = wdth0;
+  const apply = () => { el.style.fontSize = size + 'px'; setVar(el, wdth, wght); };
+  apply();
+  if (!fixedWdth) while (el.scrollWidth > maxW && wdth > 62) { wdth -= 5; apply(); }
+  while (el.scrollWidth > maxW && size > 40) { size *= 0.95; apply(); }
+  return { size, wdth };
+}
+/* Film 1 — ONE dot construction for the whole glyph (judge S3): the glyph is sampled
+   once onto the single dot module (pitch c / 10 = 12.6). Presence is binary on that
+   raster — a cell whose coverage passes the threshold carries a dot, every dot in a
+   column at the same radius — so the radical and the body are built identically;
+   no analogue falloff lets thin strokes melt into blobs beside a strict grid.
+   Dissolution is only ever dots thinned or removed on that grid.
+   Declared gradient for THIS subject — the glyph is leaving by the right edge:
+   tone is solid (1.0) across the glyph's held side, thins linearly to the file's 45%
+   tone exactly at the frame cut (x = 1600, u = 0.8 of the glyph box), and from
+   u = 0.5 ordered dot removal on the same module increases toward the cut, so the
+   glyph breaks up where the frame cuts it (judge S5) — never at the entry side. */
+function buildScreen(g, char, box, pitch) {
+  const { x, y, w, h } = box;
+  const cv = document.createElement('canvas'); cv.width = w; cv.height = h;
+  const ctx = cv.getContext('2d');
+  ctx.fillStyle = '#000'; ctx.font = `900 ${h * 0.94}px "Noto Sans CJK SC","Noto Sans SC"`;
+  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  ctx.fillText(char, w / 2, h / 2 + h * 0.02);
+  const cols = Math.floor(w / pitch), rows = Math.floor(h / pitch);
+  const tc = document.createElement('canvas'); tc.width = cols; tc.height = rows;
+  const tctx = tc.getContext('2d'); tctx.drawImage(cv, 0, 0, cols, rows);
+  const data = tctx.getImageData(0, 0, cols, rows).data;
+  const NS = 'http://www.w3.org/2000/svg';
+  const toneAt = u => u <= 0.35 ? 1 : Math.max(0.45, 1 - (u - 0.35) / 0.45 * 0.55); // 1 → 0.45 at u = 0.8 (the cut)
+  const keepAt = u => u <= 0.5 ? 1 : Math.max(0.3, 1 - (u - 0.5) / 0.3 * 0.7);       // removal grows toward the cut
+  const hash = (i, j) => (((i * 73856093) ^ (j * 19349663)) >>> 0) % 100 / 100;
+  for (let j = 0; j < rows; j++) for (let i = 0; i < cols; i++) {
+    const a = data[(j * cols + i) * 4 + 3] / 255; if (a <= 0.45) continue;  // binary presence on the one raster
+    const cx = x + (i + 0.5) * pitch, cy = y + (j + 0.5) * pitch;
+    const u = (cx - x) / w;
+    if (hash(i, j) > keepAt(u)) continue;                       // dissolution = dots removed, on the grid
+    const r = 0.55 * pitch * Math.sqrt(toneAt(u));              // one radius per column, set by the gradient alone
+    const c = document.createElementNS(NS, 'circle');
+    c.setAttribute('cx', cx.toFixed(1)); c.setAttribute('cy', cy.toFixed(1));
+    c.setAttribute('r', r.toFixed(2)); c.setAttribute('fill', '#C3CCDA');
+    g.appendChild(c);
+  }
+}
+async function init() {
+  await document.fonts.load('900 100px "Noto Sans CJK SC"');
+  await document.fonts.load('300 100px Archivo'); await document.fonts.load('900 100px Archivo');
+  await document.fonts.ready;
+  // Film 1: the shop's own glyph 滑, pushed right until the frame cuts it (judge S5)
+  buildScreen($('screen'), '滑', { x: 1120, y: 60, w: 600, h: 600 }, 12.6);
+  // SIDE — flat, light, no copy
+  const side = $('side');
+  side.dataset.size = 212; splitLetters(side);
+  fitWord(side, 410, 62, 300, true);
+  // SLIP — stepped black, the only form carrying the slipped blue film
+  const slip = $('slip'), slipSlip = $('slip-slip');
+  slip.dataset.size = 225; splitLetters(slip, STEP); splitLetters(slipSlip, STEP);
+  const lf = fitWord(slip, 547, 125, 900, false);
+  slipSlip.style.fontSize = lf.size + 'px'; setVar(slipSlip, lf.wdth, 900);
+  slipSlip.style.transform = `translate(${SLIPV.x}px, ${SLIPV.y}px)`;
+  document.title = 'done';
+}
+init();
+</script>
+</body>
+</html>

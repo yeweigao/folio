@@ -23,13 +23,13 @@ Anti-reference: a centred serif over a stock model; gold, glass, script; Didone 
 
 ## Images
 
-A real photograph, credited, never invented; motion blur kept; it may dissolve at one edge. Until it exists, the plate is ink marked "FPO". A number as the figure is the picture, not a headline: its digits in the grotesque, paper on ink, cap height near the plate's height, bleeding off at least two edges and cropped like a photograph; the word and the lockup are set over it. Nothing drawn, rendered or generated poses as a photograph; no chart on the plate.
+A real photograph, credited, never invented; motion blur kept; it may dissolve at one edge. Until it exists, the plate is ink marked "FPO". A number as the figure is the picture, not a headline: its digits in the grotesque, paper on ink, cap height near the plate's height, bleeding off at least two edges and cropped like a photograph; the word and the lockup are set over it. Nothing drawn, rendered or generated poses as a photograph; no chart on the plate. The plate keeps the photograph's own tones; a duotone, where the subject gives one, is the photograph's single ink taken from the subject (a night blue for a night train), declared on the piece — the page's colours stay ink, paper and muted, and no token colour is invented for a plate.
 
 ## Layout
 
 Grid system: Column — tracks under one division of the format into a plate and a page.
 
-S = min(W, H); unit u = S ÷ 72; margin 4u; gutter u; six tracks, twelve where W > 1.4 H. The plate bleeds on three sides; its edge lies on a whole u, a third to two fifths down a portrait, near half a square, 0.5–0.6 across a landscape (a vertical edge). The word spans the margins, and the edge crosses it between 40% and 60% of its height. The page is set from the bottom margin up, so the space it does not need opens under the word and the cut breathes; groups 2u to 4u apart. On the page, the first language and figures hang on track 0, the second language on track 3; one fact, one row.
+S = min(W, H); unit u = S ÷ 72; margin 4u; gutter u; six tracks, twelve where W > 1.4 H. The plate bleeds on three sides; its edge lies on a whole u where the photograph's gesture falls — the limb's line, the turn's axis, the line of travel. A third to two fifths down a portrait, near half a square, 0.5–0.6 across a landscape are where it usually lands, never a position taken from the format alone. The word spans the margins, and the edge crosses it between 40% and 60% of its height. The page is set from the bottom margin up, so the space it does not need opens under the word and the cut breathes; groups 2u to 4u apart. On the page, the first language and figures hang on track 0, the second language on track 3; one fact, one row.
 
 ## Typography
 

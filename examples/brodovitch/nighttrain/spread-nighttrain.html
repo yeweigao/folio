@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>夜行列车 — 宿 SU · 客房杂志 · 2026 冬</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Hanken+Grotesk:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0B0B0C; --paper:#F6F7F7; --muted:#55585C;
+    --serif:"Noto Serif SC","Bodoni Moda",serif;
+    --grot:"Hanken Grotesk","Noto Sans SC",sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#E8E9E9;}
+  .unit{position:relative;width:1600px;height:1000px;background:var(--paper);color:var(--ink);overflow:hidden;}
+
+  /* Masthead: one line, one size, all ink — nothing in it can vanish. */
+  .mast{position:absolute;left:56px;top:44px;font-family:var(--grot);font-size:32px;line-height:1.2;color:var(--ink);}
+  .mast b{font-weight:700;}
+  .mast span{font-weight:500;}
+  .nt{position:absolute;right:56px;top:46px;font-family:var(--grot);font-weight:500;font-size:30px;color:var(--ink);}
+  .decl{position:absolute;left:56px;top:98px;font-family:var(--grot);font-weight:500;font-size:30px;color:var(--ink);}
+
+  /* The word: cut horizontally at y=411 — the train's line of travel raised to
+     the title's baseline. Local seam in the word box: 251px from its top.
+     The fold (x=800) falls in the gap between 行 and 列: the word crosses the
+     gutter at a character boundary, knowingly. */
+  .wordbox{position:absolute;left:56px;top:160px;width:1488px;height:344px;z-index:2;}
+  .word{position:absolute;left:0;top:0;font-family:var(--serif);font-weight:900;
+    font-size:344px;line-height:1;letter-spacing:37px;white-space:nowrap;}
+  .word.ink{color:var(--ink);clip-path:inset(0 0 93px 0);}
+  .word.paper{color:var(--paper);clip-path:inset(251px 0 0 0);}
+
+  /* The plate: a horizontal band across both pages. The train runs the full
+     width immediately under the seam — its lit windows at band y 62-73, just
+     below the characters' baseline — crossing the centre fold (x=800) as one
+     continuous line. Sky survives only as the narrow band above the train. */
+  .plate{position:absolute;left:0;top:411px;width:1600px;height:389px;overflow:hidden;background:var(--ink);}
+  .plate img{width:100%;height:100%;object-fit:cover;display:block;}
+  .platecap{position:absolute;left:0;bottom:0;width:100%;height:46px;background:var(--ink);color:var(--paper);
+    font-family:var(--grot);font-weight:500;font-size:26px;line-height:46px;padding-left:56px;white-space:nowrap;}
+
+  /* The routes: each row crosses the gutter — name on the left page,
+     descriptor on the right page, its column starting at the fold measure
+     (x=806) on the same baseline, one size, weight alone separating them. */
+  .routes{position:absolute;left:56px;top:824px;display:flex;flex-direction:column;gap:2px;}
+  .rrow{font-family:var(--grot);font-size:30px;line-height:40px;color:var(--ink);white-space:nowrap;}
+  .rrow .rn{display:inline-block;width:750px;font-weight:700;}
+  .rrow .rd{font-weight:500;}
+</style>
+</head>
+<body>
+<div class="unit">
+  <div class="mast"><b>宿 SU</b><span> · 客房杂志 · 2026 冬</span></div>
+  <div class="nt">Night Trains</div>
+  <div class="decl">影像为 AI 生成示意 · AI-generated image</div>
+
+  <div class="plate">
+    <img src="plate.jpg" alt="雪原上亮着车窗灯的夜行列车，蓝调影像（AI 生成示意）">
+    <div class="platecap">影像为 AI 生成示意 · AI-generated image</div>
+  </div>
+
+  <div class="wordbox" aria-label="夜行列车">
+    <div class="word ink" aria-hidden="true">夜行列车</div>
+    <div class="word paper" aria-hidden="true">夜行列车</div>
+  </div>
+
+  <div class="routes">
+    <div class="rrow"><span class="rn">哈尔滨—漠河</span><span class="rd">雪原与极光</span></div>
+    <div class="rrow"><span class="rn">拉萨—西宁</span><span class="rd">高原星空</span></div>
+    <div class="rrow"><span class="rn">大理—丽江</span><span class="rd">洱海清晨</span></div>
+  </div>
+</div>
+</body>
+</html>
