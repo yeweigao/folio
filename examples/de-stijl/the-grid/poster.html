@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=1000">
+<title>The Grid — Museum of Design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,100..900&family=Noto+Sans+SC:wght@500;700;900&display=swap">
+<style>
+:root{--ink:#111111;--ground:#F2F1EC;--red:#D02A1E;--yellow:#F5C400;--blue:#1F3F9A;--grey:#D6D5CF}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--ground)}
+body{display:flex;justify-content:center}
+.unit{position:relative;width:1000px;height:1414px;background:var(--ink);overflow:hidden;
+ font-family:'Anybody','Noto Sans SC',sans-serif;font-stretch:90%;font-weight:600;font-synthesis:none}
+.plane{position:absolute;overflow:hidden;padding:20px 22px;display:flex;flex-direction:column;gap:8px;font-size:30px;line-height:1.25}
+.latin{font-weight:900;font-stretch:100%;font-size:200px;line-height:.86;letter-spacing:0}
+.han{font-family:'Noto Sans SC','Anybody',sans-serif;font-weight:900;font-size:150px;line-height:172px;margin-top:-20px;width:1.1em;word-break:break-all}
+.key{font-size:40px;font-weight:800;line-height:1.08;font-stretch:78%}
+.time{font-size:62px;font-weight:900;font-stretch:64%;line-height:.95;margin-top:12px}
+.title{font-size:40px;font-weight:800;line-height:1.12;font-stretch:84%}
+.body{font-size:28px;font-weight:600;line-height:1.3;font-stretch:84%}
+.zh,.han{font-stretch:100%}
+.zh{font-family:'Noto Sans SC','Anybody',sans-serif;font-weight:700}
+.strong{font-weight:800}
+.zh span{white-space:nowrap}
+.title{text-wrap:balance}
+.p-title{justify-content:space-between}
+.clock{font-size:62px;font-weight:900;font-stretch:100%;line-height:.9;font-variant-numeric:tabular-nums}
+.p-doors,.p-entry{justify-content:center}
+</style></head><body>
+<div class="unit">
+<div class="plane p-title" style="left:0px;top:0px;width:624px;height:432px;background:#D02A1E;color:#F2F1EC"><div class="latin">THE<br>GRID</div><div class="title">Illustrative example</div></div>
+<div class="plane p-han" style="left:640px;top:0px;width:360px;height:432px;background:#1F3F9A;color:#F2F1EC"><div class="han">格网</div></div>
+<div class="plane p-when" style="left:0px;top:448px;width:352px;height:264px;background:#F5C400;color:#111111"><div class="key">Saturday 14 November 2026</div><div class="key time">19:30–22:00</div></div>
+<div class="plane p-where" style="left:368px;top:448px;width:256px;height:264px;background:#F2F1EC;color:#111111"><div class="title">Hall 2, Museum of Design</div><div class="body zh"><span>设计博物馆</span> <span>二号厅</span></div></div>
+<div class="plane p-about" style="left:640px;top:448px;width:360px;height:264px;background:#D6D5CF;color:#111111"><div class="body">Three talks and a poster exhibition on the system behind modern design.</div><div class="body zh"><span>三场讲座，</span><span>一场海报展——</span><span>现代设计背后的系统</span></div></div>
+<div class="plane p-doors" style="left:0px;top:728px;width:624px;height:77px;background:#F2F1EC;color:#111111"><div class="title">Doors 19:00</div></div>
+<div class="plane p-t1" style="left:0px;top:821px;width:256px;height:123px;background:#F5C400;color:#111111"><div class="clock">19:30</div></div>
+<div class="plane p-c1" style="left:272px;top:821px;width:352px;height:123px;background:#F2F1EC;color:#111111"><div class="title">The Module</div><div class="body">Josef Müller-Brockmann</div></div>
+<div class="plane p-t2" style="left:0px;top:960px;width:256px;height:124px;background:#F5C400;color:#111111"><div class="clock">20:15</div></div>
+<div class="plane p-c2" style="left:272px;top:960px;width:352px;height:124px;background:#F2F1EC;color:#111111"><div class="title">The System</div><div class="body">Otl Aicher</div></div>
+<div class="plane p-t3" style="left:0px;top:1100px;width:256px;height:170px;background:#F5C400;color:#111111"><div class="clock">21:00</div></div>
+<div class="plane p-c3" style="left:272px;top:1100px;width:352px;height:170px;background:#F2F1EC;color:#111111"><div class="title">The Interval</div><div class="body">Kenya Hara</div></div>
+<div class="plane p-foyer" style="left:640px;top:728px;width:360px;height:686px;background:#D6D5CF;color:#111111"><div class="title">Foyer, from 19:00: poster exhibition, nine dialects, one mother tongue</div></div>
+<div class="plane p-entry" style="left:0px;top:1286px;width:624px;height:128px;background:#1F3F9A;color:#F2F1EC"><div class="body">Free entry, seats unreserved</div><div class="body zh">免费入场，不设座位预订</div></div>
+</div></body></html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1000">
+<title>The Grid — Museum of Design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&amp;family=Noto+Sans+SC:wght@500;700&amp;display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #111111; --ground: #F4F4F0; --muted: #4A4A46;
+  --red: #D7281E; --blue: #1D3E9E; --yellow: #F3B900; --line: #8A8A83;
+  --m: 75px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: var(--ground); }
+body { font-family: "League Spartan", "Noto Sans SC", "Noto Sans CJK SC", sans-serif; color: var(--ink); }
+.unit { position: relative; width: 1000px; height: 1414px; background: var(--ground); overflow: hidden; }
+.fig { position: absolute; left: 0; top: 0; }
+.fig text { font-family: "League Spartan", "Noto Sans SC", "Noto Sans CJK SC", sans-serif; }
+.fig text.zh { font-family: "Noto Sans SC", "Noto Sans CJK SC", "League Spartan", sans-serif; }
+.t { position: absolute; }
+.zh, .t :lang(zh) { font-family: "Noto Sans SC", "Noto Sans CJK SC", "League Spartan", sans-serif; }
+.l2 { font-size: 36px; font-weight: 700; line-height: 1.1; }
+.l3 { font-size: 26px; font-weight: 500; line-height: 1.3; }
+.l2.zh, .l2 .zh { font-size: 32px; }
+.l3.zh, .l3 .zh, .l3b .zh { font-size: 24px; }
+.nb { white-space: nowrap; }
+.talk { width: 205px; }
+.talk .time { font-size: 36px; font-weight: 700; line-height: 1.1; }
+.talk .name { font-size: 36px; font-weight: 500; line-height: 1.1; margin-bottom: 8px; }
+.talk .who  { font-size: 26px; font-weight: 500; line-height: 1.25; color: var(--muted); }
+.rule { position: absolute; left: 50px; width: 900px; height: 2px; background: var(--ink); }
+.hair { position: absolute; left: 50px; width: 900px; height: 1px; background: var(--ink); }
+.row { position: absolute; left: 50px; width: 900px; height: 75px; padding-top: 19px; display: flex; justify-content: space-between; align-items: baseline; }
+.l3b { font-size: 26px; font-weight: 700; line-height: 1.3; padding-top: 22px; }
+.l3m { font-size: 26px; font-weight: 500; line-height: 1.3; padding-top: 22px; color: var(--muted); }
+.foot { position: absolute; left: 50px; top: 1339px; height: 75px; display: flex; align-items: center; color: var(--ground); font-size: 26px; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="unit" id="poster">
+<svg class="fig" width="1000" height="1414" viewBox="0 0 1000 1414" aria-hidden="true">
+  <defs>
+    <clipPath id="c-sq"><rect x="200" y="650" width="300" height="300"/></clipPath>
+    <clipPath id="c-bar"><rect x="650" y="800" width="300" height="75"/></clipPath>
+  </defs>
+  <g stroke="#8A8A83" stroke-width="2"><line x1="50" y1="650" x2="50" y2="950"/><line x1="125" y1="650" x2="125" y2="950"/><line x1="200" y1="650" x2="200" y2="950"/><line x1="275" y1="650" x2="275" y2="950"/><line x1="350" y1="650" x2="350" y2="950"/><line x1="425" y1="650" x2="425" y2="950"/><line x1="500" y1="650" x2="500" y2="950"/><line x1="575" y1="650" x2="575" y2="950"/><line x1="650" y1="650" x2="650" y2="950"/><line x1="725" y1="650" x2="725" y2="950"/><line x1="800" y1="650" x2="800" y2="950"/><line x1="875" y1="650" x2="875" y2="950"/><line x1="950" y1="650" x2="950" y2="950"/><line x1="50" y1="650" x2="950" y2="650"/><line x1="50" y1="725" x2="950" y2="725"/><line x1="50" y1="800" x2="950" y2="800"/><line x1="50" y1="875" x2="950" y2="875"/><line x1="50" y1="950" x2="950" y2="950"/></g>
+  <rect x="200" y="650" width="300" height="300" fill="#D7281E"/>
+  <circle cx="575.0" cy="800.0" r="150.0" fill="#1D3E9E"/>
+  <rect x="651.5" y="801.5" width="297" height="72" fill="#F3B900" stroke="#111111" stroke-width="3"/>
+  <circle cx="575.0" cy="800.0" r="150.0" fill="#111111" clip-path="url(#c-sq)"/>
+  <circle cx="575.0" cy="800.0" r="150.0" fill="#111111" clip-path="url(#c-bar)"/>
+  <g stroke="#111111" stroke-width="6" fill="none" stroke-linecap="butt">
+    <line x1="50" y1="425" x2="950" y2="425"/>
+    <line x1="50" y1="425" x2="50" y2="500"/>
+    <line x1="200" y1="425" x2="200" y2="650"/>
+    <line x1="425" y1="425" x2="425" y2="800.0"/>
+    <line x1="650" y1="425" x2="650" y2="800"/>
+  </g>
+  <rect x="0" y="1339" width="1000" height="75" fill="#111111"/>
+  <text class="d" x="49" y="200" font-size="224" font-weight="700" word-spacing="-0.08em" fill="#111111">THE GRID</text>
+  <text class="zh" x="45" y="361" font-size="158" font-weight="700" fill="#111111">格网</text>
+</svg>
+  <p class="t l3" style="left:425px; top:238px; width:525px;">Three talks and a poster exhibition on the system behind modern design.</p>
+  <p class="t l3 zh" style="left:425px; top:320px; width:525px; line-height:1.4;">三场讲座，一场海报展——现代设计背后的系统</p>
+
+  <p class="t" style="left:64px; top:441px; font-size:26px; font-weight:700; line-height:1.2; width:110px;">Doors 19:00</p>
+
+  <div class="t talk" style="left:214px; top:439px;">
+    <p class="time">19:30</p><p class="name">The Module</p><p class="who">Josef <span class="nb">Müller-Brockmann</span></p>
+  </div>
+  <div class="t talk" style="left:439px; top:439px;">
+    <p class="time">20:15</p><p class="name">The System</p><p class="who">Otl Aicher</p>
+  </div>
+  <div class="t talk" style="left:664px; top:439px;">
+    <p class="time">21:00</p><p class="name">The Interval</p><p class="who">Kenya Hara</p>
+  </div>
+
+  <div class="rule" style="top:1025px"></div>
+  <div class="row l2" style="top:1025px"><span>Saturday 14 November 2026</span><span>19:30–22:00</span></div>
+  <div class="hair" style="top:1100px"></div>
+  <div class="row l2" style="top:1100px"><span>Hall 2, Museum of Design</span><span class="zh">设计博物馆 二号厅</span></div>
+  <div class="hair" style="top:1175px"></div>
+  <div class="row l3b" style="top:1175px"><span>Free entry, seats unreserved</span><span class="zh">免费入场，不设座位预订</span></div>
+  <div class="hair" style="top:1250px"></div>
+  <div class="row l3m" style="top:1250px"><span>Foyer, from 19:00: poster exhibition, nine dialects, one mother tongue</span></div>
+
+  <p class="foot">Illustrative example</p>
+</div>
+</body>
+</html>

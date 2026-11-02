@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=1000">
+<title>The Grid</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300&family=Noto+Serif+SC:wght@200;300&family=Hanken+Grotesk:wght@400&family=Noto+Sans+SC:wght@400&display=swap" rel="stylesheet">
+<style>
+/* Skeleton: DESIGN.md. Module M = 1000/14 across, 1414/20 down. Ladder: 3M = 45 minutes. */
+:root{--ground:#F3F4F2;--ink:#20242A;--muted:#5C626B;--mx:calc(1000px/14);--my:calc(1414px/20)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--ground)}
+.unit{position:relative;width:1000px;height:1414px;background:var(--ground);color:var(--ink);overflow:hidden}
+.unit>*{position:absolute}
+.serif{font-family:"Source Serif 4","Noto Serif SC",serif;font-weight:300}
+.sans{font-family:"Hanken Grotesk","Noto Sans SC",sans-serif;font-weight:400}
+.display{font-size:88px;line-height:1}
+.display.cn{font-size:80px;line-height:1.15;font-weight:200;margin-top:6px}
+.title{font-size:56px;line-height:1.1}
+.text{font-size:30px;line-height:1.4}
+.credit{font-size:22px;line-height:1.45}
+.zh{line-height:1.5}
+.muted{color:var(--muted)}
+.blk>*{display:block}
+.gap{margin-top:16px}
+.nb{display:inline-block}
+.foyer{max-width:17em}
+.talk{display:grid;grid-template-columns:calc(var(--mx)*2) 1fr}
+.talk .time{grid-row:1;grid-column:1;align-self:baseline;font-variant-numeric:tabular-nums}
+.talk .title{grid-row:1;grid-column:2;align-self:baseline}
+.talk .name{grid-row:2;grid-column:2}
+</style></head><body>
+<div class="unit">
+<div class="blk" style="left:calc(var(--mx)*1);top:calc(var(--my)*1);"><span class="display serif">THE GRID</span><span class="display cn serif" lang="zh-CN">格网</span></div>
+<div class="blk sans text" style="left:calc(var(--mx)*7);top:calc(var(--my)*1);width:calc(var(--mx)*6);"><span>Three talks and a poster exhibition on the system behind modern design.</span><span class="zh gap" lang="zh-CN"><span class="nb">三场讲座，一场海报展——</span><span class="nb">现代设计背后的系统</span></span></div>
+<div class="talk" style="left:calc(var(--mx)*5);top:calc(var(--my)*6);width:calc(var(--mx)*8);"><span class="time sans text muted">19:30</span><span class="title serif">The Module</span><span class="name sans text">Josef Müller-Brockmann</span></div>
+<div class="talk" style="left:calc(var(--mx)*5);top:calc(var(--my)*9);width:calc(var(--mx)*8);"><span class="time sans text muted">20:15</span><span class="title serif">The System</span><span class="name sans text">Otl Aicher</span></div>
+<div class="talk" style="left:calc(var(--mx)*5);top:calc(var(--my)*12);width:calc(var(--mx)*8);"><span class="time sans text muted">21:00</span><span class="title serif">The Interval</span><span class="name sans text">Kenya Hara</span></div>
+<div class="blk sans" style="left:calc(var(--mx)*1);top:calc(var(--my)*15);width:calc(var(--mx)*6);"><span class="text">Saturday 14 November 2026</span><span class="text">19:30–22:00</span><span class="text">Doors 19:00</span><span class="credit gap foyer"><span class="nb">Foyer, from 19:00:</span> <span class="nb">poster exhibition,</span> <span class="nb">nine dialects, one mother tongue</span></span></div>
+<div class="blk sans" style="left:calc(var(--mx)*7);top:calc(var(--my)*15);width:calc(var(--mx)*6);"><span class="text">Hall 2, Museum of Design</span><span class="text zh" lang="zh-CN">设计博物馆 二号厅</span><span class="text gap">Free entry, seats unreserved</span><span class="text zh" lang="zh-CN">免费入场，不设座位预订</span><span class="credit muted gap">Illustrative example</span></div>
+</div>
+</body></html>

@@ -1,0 +1,20 @@
+.DS_Store
+.workbuddy/
+*.tmp
+__pycache__/
+node_modules/
+
+# 生成物：由生成引擎与生成记录复现，不入库
+*.pptx
+
+# 示例工程不随仓库分发（已移至 ../folio-examples/，含二进制与公开教材改编练习）
+
+# 工具缓存与日志
+.cache/
+.slidep/
+
+# 调试与测评产物：skill 运行用不上
+.folio_dialect_debug/
+docs/
+exports/
+.tmpcheck/

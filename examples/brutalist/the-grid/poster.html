@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1000">
+<title>The Grid — poster</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500;14..32,700;14..32,800;14..32,900&family=Noto+Sans+SC:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #0B0B0B; --muted: #454745; --hazard: #FFD200;
+  --ground: #E3E4E1; --field: #C9CBC7; --line: #7A7C79;
+  --row: 48px; --col: 78px; --margin: 32px; --inset: 12px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; border-radius: 0; }
+html, body { background: var(--ground); }
+body { font-family: "Inter", "Noto Sans SC", "Noto Sans CJK SC", sans-serif; color: var(--ink);
+  font-variant-numeric: tabular-nums; -webkit-font-smoothing: antialiased; }
+.unit { position: relative; width: 1000px; height: 1414px; overflow: hidden; background: var(--ground); color: var(--ink); }
+.unit i { position: absolute; display: block; }
+.hl, .vl, .tk { background: var(--line); }
+.ink, .inkv, .cell { background: var(--ink); }
+.field { background: var(--field); }
+.t { position: absolute; display: flex; align-items: center; font-size: 30px; font-weight: 700; line-height: 1; white-space: nowrap; }
+.t.body { font-size: 32px; font-weight: 700; }
+.who, .time, .t { font-variant-numeric: tabular-nums; }
+.who { font-variant-numeric: normal; }
+.zh { font-family: "Noto Sans SC", "Noto Sans CJK SC", "Inter", sans-serif; font-weight: 700; font-size: 32px; }
+.time { font-size: 40px; font-weight: 800; letter-spacing: -0.01em; }
+.key { font-size: 32px; font-weight: 500; line-height: 1.25; color: var(--muted); align-items: center; }
+.label { font-size: 32px; font-weight: 500; line-height: 48px; align-items: flex-start; white-space: normal; color: var(--ink); }
+.entry { flex-direction: column; align-items: flex-start; justify-content: center; }
+.entry .title { font-family: "Inter Display", "Inter", sans-serif; font-size: 56px; font-weight: 800; line-height: 1; letter-spacing: -0.02em; }
+.entry .who { font-size: 32px; font-weight: 500; margin-top: 7px; line-height: 1; }
+.mono { position: absolute; font-family: "Inter Display", "Inter", sans-serif; font-weight: 900; font-size: 276px; line-height: 0.76; letter-spacing: -0.05em; margin-left: -6px; margin-top: 6px; }
+.mono span { display: block; }
+.mono-zh { position: absolute; font-family: "Noto Sans SC", "Noto Sans CJK SC", sans-serif; font-weight: 900; font-size: 196px; line-height: 1; margin-top: 12px; letter-spacing: -0.02em; white-space: nowrap; }
+.footer { position: absolute; background: var(--ink); }
+.inv { color: var(--ground); }
+.notice { position: absolute; background: var(--hazard); color: var(--ink); display: flex; align-items: center; padding-left: var(--inset); }
+.notice span { font-size: 32px; font-weight: 800; line-height: 1.2; letter-spacing: -0.01em; }
+.t.body, .t.zh, .t.time, .t.label, .t.key { padding-left: 0; }
+.t.inv { }
+</style>
+</head>
+<body>
+<div class="unit" id="poster">
+<i class="field" style="left:737px;top:713px;width:231px;height:570px"></i>
+<i class="hl" style="left:32px;top:83px;width:936px;height:1px"></i>
+<i class="hl" style="left:32px;top:131px;width:936px;height:1px"></i>
+<i class="hl" style="left:32px;top:563px;width:936px;height:1px"></i>
+<i class="hl" style="left:32px;top:611px;width:936px;height:1px"></i>
+<i class="hl" style="left:32px;top:659px;width:936px;height:1px"></i>
+<i class="hl" style="left:188px;top:755px;width:546px;height:1px"></i>
+<i class="hl" style="left:188px;top:803px;width:546px;height:1px"></i>
+<i class="hl" style="left:188px;top:899px;width:546px;height:1px"></i>
+<i class="hl" style="left:188px;top:947px;width:546px;height:1px"></i>
+<i class="hl" style="left:188px;top:1043px;width:780px;height:1px"></i>
+<i class="hl" style="left:188px;top:1091px;width:780px;height:1px"></i>
+<i class="hl" style="left:188px;top:1187px;width:780px;height:1px"></i>
+<i class="hl" style="left:188px;top:1235px;width:780px;height:1px"></i>
+<i class="ink" style="left:32px;top:27px;width:936px;height:8px"></i>
+<i class="ink" style="left:32px;top:707px;width:936px;height:6px"></i>
+<i class="tk" style="left:160px;top:707px;width:28px;height:1px"></i>
+<i class="tk" style="left:174px;top:755px;width:14px;height:1px"></i>
+<i class="tk" style="left:174px;top:803px;width:14px;height:1px"></i>
+<i class="tk" style="left:174px;top:851px;width:14px;height:1px"></i>
+<i class="tk" style="left:160px;top:899px;width:28px;height:1px"></i>
+<i class="tk" style="left:174px;top:947px;width:14px;height:1px"></i>
+<i class="tk" style="left:174px;top:995px;width:14px;height:1px"></i>
+<i class="tk" style="left:174px;top:1043px;width:14px;height:1px"></i>
+<i class="tk" style="left:160px;top:1091px;width:28px;height:1px"></i>
+<i class="tk" style="left:174px;top:1139px;width:14px;height:1px"></i>
+<i class="tk" style="left:174px;top:1187px;width:14px;height:1px"></i>
+<i class="tk" style="left:174px;top:1235px;width:14px;height:1px"></i>
+<i class="tk" style="left:160px;top:1283px;width:28px;height:1px"></i>
+<i class="vl" style="left:188px;top:707px;width:1px;height:576px"></i>
+<i class="inkv" style="left:734px;top:707px;width:3px;height:576px"></i>
+<i class="cell" style="left:188px;top:713px;width:78px;height:42px"></i>
+<i class="cell" style="left:188px;top:803px;width:78px;height:48px"></i>
+<i class="cell" style="left:188px;top:947px;width:78px;height:48px"></i>
+<i class="cell" style="left:188px;top:1091px;width:78px;height:48px"></i>
+<div class="t body" style="left:32px;top:35px;width:468px;height:48px">Saturday 14 November 2026</div>
+<div class="t body" style="left:32px;top:83px;width:468px;height:48px">19:30–22:00</div>
+<div class="t body" style="left:500px;top:35px;width:468px;height:48px">Hall 2, Museum of Design</div>
+<div class="t body zh" style="left:500px;top:83px;width:468px;height:48px">设计博物馆 二号厅</div>
+<h1 class="mono" style="left:32px;top:131px"><span>THE</span><span>GRID</span></h1>
+<div class="mono-zh" style="left:574px;top:131px">格网</div>
+<div class="t body" style="left:32px;top:563px;width:936px;height:48px">Three talks and a poster exhibition</div>
+<div class="t body" style="left:32px;top:611px;width:936px;height:48px">on the system behind modern design.</div>
+<div class="t body zh" style="left:32px;top:659px;width:936px;height:48px">三场讲座，一场海报展——现代设计背后的系统</div>
+<div class="t time" style="left:32px;top:803px;width:156px;height:48px">19:30</div>
+<div class="t time" style="left:32px;top:947px;width:156px;height:48px">20:15</div>
+<div class="t time" style="left:32px;top:1091px;width:156px;height:48px">21:00</div>
+<div class="t time" style="left:32px;top:1235px;width:156px;height:48px;align-items:flex-end;padding-bottom:4px">22:00</div>
+<div class="t key" style="left:278px;top:755px;width:300px;height:48px">Row = 15 min</div>
+<div class="t body" style="left:278px;top:713px;width:450px;height:42px">Doors 19:00</div>
+<div class="t entry" style="left:278px;top:803px;width:456px;height:96px"><b class="title">The Module</b><span class="who">Josef Müller-Brockmann</span></div>
+<div class="t entry" style="left:278px;top:947px;width:456px;height:96px"><b class="title">The System</b><span class="who">Otl Aicher</span></div>
+<div class="t entry" style="left:278px;top:1091px;width:456px;height:96px"><b class="title">The Interval</b><span class="who">Kenya Hara</span></div>
+<div class="t label" style="left:749px;top:717px;width:207px;height:288px">Foyer, from 19:00: poster exhibition, nine dialects, one mother tongue</div>
+<div class="footer" style="left:0;top:1283px;width:1000px;height:131px"></div>
+<div class="t body inv" style="left:32px;top:1283px;width:640px;height:48px">Free entry, seats unreserved</div>
+<div class="t body zh inv" style="left:32px;top:1331px;width:640px;height:48px">免费入场，不设座位预订</div>
+<div class="notice" style="left:734px;top:1283px;width:234px;height:96px"><span>Illustrative<br>example</span></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1000">
+<title>THE GRID — poster</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=League+Spartan:wght@600;800;900&family=Noto+Sans+SC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#111111; --ground:#FFFFFF;
+  --cobalt:#2438E0; --rose:#FF4FA3; --lemon:#FFD21F; --mint:#00C389;
+  --m:40px; --g:16px; --c:140px; --t:296px;            /* margin, gutter, module, tower side = 2c+g */
+  --sans:"League Spartan","Noto Sans SC","Noto Sans CJK SC",sans-serif;
+  --cjk:"Noto Sans SC","Noto Sans CJK SC","League Spartan",sans-serif;
+  --serif:"DM Serif Display","Noto Sans SC",serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--ground)}
+body{display:flex;justify-content:center}
+.unit{
+  width:1000px;height:1414px;position:relative;overflow:hidden;background:var(--ground);color:var(--ink);
+  padding:var(--m);display:grid;
+  grid-template-columns:repeat(6,var(--c));
+  grid-template-rows:repeat(8,var(--c)) 86px;
+  gap:var(--g);
+  font-family:var(--sans);
+  -webkit-font-smoothing:antialiased;
+}
+.unit > *{min-width:0;min-height:0}
+/* title: one word per row, cap height = one module, baseline on the row line */
+h1{grid-column:1 / span 4;grid-row:1 / span 2;font-weight:900;font-size:212px;line-height:156px;letter-spacing:-.01em;
+   width:608px;margin-top:13px;font-feature-settings:"kern"}
+h1 .w{display:inline-block}
+.w1{margin-left:-1px}.w2{margin-left:-7px}
+.cjk-title{grid-column:5 / span 2;grid-row:1;background:var(--ink);color:var(--ground);
+   display:flex;align-items:center;justify-content:center;font-family:var(--cjk);font-weight:900;font-size:136px;line-height:1;padding-bottom:6px;letter-spacing:0}
+.tag{grid-column:5 / span 2;grid-row:2;display:flex;flex-direction:column;justify-content:flex-start;gap:6px;padding-top:2px}
+.tag .en{font-weight:600;font-size:23px;line-height:1.14}
+.nb{display:inline-block}
+.tag .zh{font-family:var(--cjk);font-weight:700;font-size:22px;line-height:1.2}
+.when{grid-column:3 / span 4;grid-row:3;font-weight:800;font-size:64px;line-height:70px;align-self:end;padding-bottom:0}
+.hours{grid-column:5 / span 2;grid-row:4;display:flex;flex-direction:column;justify-content:flex-end}
+.hours .t{font-weight:900;font-size:49px;line-height:1;white-space:nowrap;letter-spacing:-.01em}
+.hours .d{font-weight:800;font-size:34px;line-height:1.1;margin-top:8px}
+/* towers */
+.prim{width:var(--t);height:var(--t);display:block}
+.prim svg{display:block;width:100%;height:100%}
+.slab{padding:22px 10px 20px 24px;display:flex;flex-direction:column;justify-content:space-between}
+.slab .time{font-weight:900;font-size:84px;line-height:.9;letter-spacing:-.02em}
+.slab .title{font-weight:800;font-size:44px;line-height:1.02;margin-top:14px}
+.slab .who{font-family:var(--serif);font-style:italic;font-weight:400;font-size:30px;line-height:1.05}
+.nb{white-space:nowrap}
+.slab.cobalt{background:var(--cobalt);color:var(--ground)}
+.slab.rose{background:var(--rose);color:var(--ink)}
+.slab.lemon{background:var(--lemon);color:var(--ink)}
+.t0p{grid-column:1 / span 2;grid-row:3 / span 2}
+.t0s{grid-column:1 / span 2;grid-row:5 / span 2}
+.t1p{grid-column:3 / span 2;grid-row:4 / span 2}
+.t1s{grid-column:3 / span 2;grid-row:6 / span 2}
+.t2p{grid-column:5 / span 2;grid-row:5 / span 2}
+.t2s{grid-column:5 / span 2;grid-row:7 / span 2}
+/* place and exhibition */
+.place{grid-column:1 / span 2;grid-row:7 / span 2;background:var(--ink);color:var(--ground);padding:22px 24px 20px;display:flex;flex-direction:column;justify-content:space-between}
+.place .en{font-weight:800;font-size:46px;line-height:1.02}
+.place .zh{font-family:var(--cjk);font-weight:900;font-size:40px;line-height:1.1}
+.expo{grid-column:3 / span 2;grid-row:8;background:var(--mint);color:var(--ink);padding:12px 18px;display:flex;align-items:center;
+   font-weight:800;font-size:26px;line-height:1.1}
+/* base band */
+.base{grid-column:1 / span 6;grid-row:9;border-top:6px solid var(--ink);display:grid;grid-template-columns:608px 1fr;column-gap:16px;align-items:center;padding-top:6px}
+.base .l{font-weight:800;font-size:29px;line-height:1.18}
+.base .l span{font-family:var(--cjk);font-weight:700}
+.base .r{font-family:var(--serif);font-style:italic;font-size:34px;line-height:1;text-align:left;padding-left:0}
+</style>
+</head>
+<body>
+<main class="unit" id="poster">
+
+  <h1><span class="w w1">THE</span> <span class="w w2">GRID</span></h1>
+  <div class="cjk-title" lang="zh-Hans">格网</div>
+  <div class="tag">
+    <p class="en">Three talks and a poster exhibition on the system behind modern design.</p>
+    <p class="zh" lang="zh-Hans"><span class="nb">三场讲座，一场海报展——</span><span class="nb">现代设计背后的系统</span></p>
+  </div>
+
+  <p class="when">Saturday 14 November 2026</p>
+  <div class="hours"><p class="t">19:30–22:00</p><p class="d">Doors 19:00</p></div>
+
+  <!-- Tower 1 : The Module — square, graph-paper laminate, repeat = side/4 -->
+  <div class="prim t0p" aria-hidden="true">
+    <svg viewBox="0 0 296 296" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="lam-grid" x="-3" y="-3" width="74" height="74" patternUnits="userSpaceOnUse">
+          <rect width="74" height="74" fill="#2438E0"/>
+          <rect x="0" y="0" width="74" height="6" fill="#FFFFFF"/>
+          <rect x="0" y="0" width="6" height="74" fill="#FFFFFF"/>
+          <rect x="37" y="37" width="12" height="12" fill="#111111"/>
+        </pattern>
+      </defs>
+      <rect width="296" height="296" fill="url(#lam-grid)"/>
+      <path d="M0 0H296V296H0Z M3 3V293H293V3Z" fill="#2438E0" fill-rule="evenodd"/>
+    </svg>
+  </div>
+  <div class="slab cobalt t0s">
+    <p class="time">19:30</p>
+    <div><p class="title">The Module</p><p class="who">Josef <span class="nb">Müller-Brockmann</span></p></div>
+  </div>
+
+  <!-- Tower 2 : The System — right triangle on the 45-degree, stripe laminate, repeat = side/8 -->
+  <div class="prim t1p" aria-hidden="true">
+    <svg viewBox="0 0 296 296" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="lam-diag" width="37" height="37" patternUnits="userSpaceOnUse">
+          <rect width="37" height="37" fill="#FF4FA3"/>
+          <g stroke="#111111" stroke-width="11" fill="none">
+            <path d="M-4 -4L41 41"/><path d="M-41 -4L4 41"/><path d="M-4 -41L41 4"/>
+          </g>
+        </pattern>
+        <clipPath id="tri"><path d="M0 0L296 296L0 296Z"/></clipPath>
+      </defs>
+      <path d="M0 0L296 296L0 296Z" fill="url(#lam-diag)"/>
+    </svg>
+  </div>
+  <div class="slab rose t1s">
+    <p class="time">20:15</p>
+    <div><p class="title">The System</p><p class="who">Otl Aicher</p></div>
+  </div>
+
+  <!-- Tower 3 : The Interval — disc with a square gap, dot laminate, repeat = side/8 (half-drop) -->
+  <div class="prim t2p" aria-hidden="true">
+    <svg viewBox="0 0 296 296" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="lam-dots" width="37" height="74" patternUnits="userSpaceOnUse">
+          <rect width="37" height="74" fill="#FFD21F"/>
+          <circle cx="18.5" cy="18.5" r="8" fill="#111111"/>
+          <circle cx="0" cy="55.5" r="8" fill="#111111"/>
+          <circle cx="37" cy="55.5" r="8" fill="#111111"/>
+        </pattern>
+      </defs>
+      <path fill-rule="evenodd" fill="url(#lam-dots)" d="M148 0A148 148 0 1 0 148 296A148 148 0 1 0 148 0ZM185 133L237 185L185 237L133 185Z"/>
+    </svg>
+  </div>
+  <div class="slab lemon t2s">
+    <p class="time">21:00</p>
+    <div><p class="title">The Interval</p><p class="who">Kenya Hara</p></div>
+  </div>
+
+  <div class="place">
+    <p class="en">Hall 2, Museum of Design</p>
+    <p class="zh" lang="zh-Hans">设计博物馆 二号厅</p>
+  </div>
+  <div class="expo"><p>Foyer, from 19:00: poster exhibition, nine dialects, one mother tongue</p></div>
+
+  <div class="base">
+    <p class="l">Free entry, seats unreserved<br><span lang="zh-Hans">免费入场，不设座位预订</span></p>
+    <p class="r">Illustrative example</p>
+  </div>
+</main>
+</body>
+</html>
