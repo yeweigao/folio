@@ -14,13 +14,13 @@ Nine design systems, one per dialect. Each DESIGN.md stands alone: give it to an
 | `polish-poster/` | Henryk Tomaszewski | One hand-made ironic picture over quiet live facts |
 | `ulm/` | Otl Aicher, Munich 1972 | A manual first: module, figures on one grid, colour as code |
 | `swiss-punk/` | Wolfgang Weingart | Films slipped and overprinted by declared amounts |
-| `memphis/` | Ettore Sottsass | Primitives clad in laminate, standing on slabs that carry the words |
+| `memphis/` | The tile system, after Sottsass and Du Pasquier | A kit drawn for the subject, tiled whole in clashing hues; type as a block |
 | `ma/` | Kenya Hara, *White* | One whole interval; measures as equal white |
 | `brutalist/` | The Construction hand | The content's measure becomes the row grid; one monolith |
 
 ## One programme, nine hands
 
-Each folder also holds one poster for the same programme, The Grid, a museum's evening series on design systems: its content lives in `the-grid/brief.md`, never in the skeleton. The posters were made from an earlier, programme-bound version of each skeleton; the systems they show are unchanged.
+Each folder also holds one poster for the same programme, The Grid, a museum's evening series on design systems: its content lives in `the-grid/brief.md`, never in the skeleton. The posters were made from an earlier, programme-bound version of each skeleton; the systems they show are unchanged, except Memphis, whose poster predates its tile system.
 
 ## One skeleton, two makers
 

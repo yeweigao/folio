@@ -30,7 +30,7 @@ Alone, the mother tongue suits material that argues, reports, testifies, counts 
 | [Polish Poster School](dialects/polish-poster.md) | Interprets a cultural subject | One authored, hand-made metaphor |
 | [Ulm](dialects/ulm.md) | Coordinates a system of related messages | Rules for every case; color and pictograms as codes |
 | [Swiss Punk](dialects/swiss-punk.md) | Provokes, still readable | The grid tested by rotation, layering and stepped type |
-| [Memphis](dialects/memphis.md) | Delights: products, events, youth culture | Clashing colors and pattern as material |
+| [Memphis](dialects/memphis.md) | Delights: products, events, launches, youth culture | One square field tiled whole with a kit drawn for the subject, in clashing hues; type as a block |
 | [Kenya Hara, ma 間](dialects/ma.md) | Invites: one object, craft or ceremony | Emptiness as the vessel; small, quiet type |
 | [Swiss Brutal](dialects/brutalist.md) | Specifies: structure is the content | Visible grid rules, zero radius, dense rows |
 

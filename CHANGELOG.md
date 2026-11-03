@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- **Memphis becomes the tile system.** The dialect follows Memphis graphics as practised now: a kit of flat primitives, two to four of them drawn from the subject, tiled whole across one square module in clashing hues, the type as a block among blocks. Sottsass and Du Pasquier remain its source; Camille Walala and Peter Shire visit. A kit that would fit any subject is the caricature. Its earlier pieces (the-grid, gelato, makers, oats) predate it.
+
 ## 1.1.0 — 2026-11-02
 
 - **SKILL.md is theme-agnostic.** Goal, philosophy, floors, process and a one-line theme index; the description names no style. The dialect table moves into the Swiss theme.

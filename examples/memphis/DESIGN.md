@@ -1,106 +1,103 @@
-# Memphis, Sottsass · the clad primitive
+# Memphis · the tile system
 
-Flat primitives cut from drawn laminates, clad in clashing hues, each standing on a solid slab that carries its words, assembled whole on a square module field.
+A kit of flat primitives, some drawn from the subject's own forms, tiled whole across one square module in clashing hues, with the type set as a block among the blocks.
 
 > Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. Check the piece against Do's and Don'ts.
 
 ## Overview
 
-Memphis, Ettore Sottsass — the Bacterio laminate (1978) and the Carlton bookcase (1981): draw the pattern first as a tileable laminate, cut flat primitives from it, and assemble them on the module field until the format is the furniture; never a pattern that carries information, never a pattern behind reading text.
+Memphis, as its graphics are made now, after Sottsass and Du Pasquier's laminates (1978–87): draw a kit of flat primitives, some abstracted from the subject's own forms, tile one square module field whole in clashing hues, and set the type as a block among the blocks; never a kit that would fit any subject, never pattern behind reading text.
 
-World: any content, on any surface. Serious content is translated, not refused: the clash marks its parts honestly, and its facts stay on solid ground. Every piece keeps the module, laminates, hues by role, faces and the tower; each brings its parts, their order, and the primitive each takes.
+World: any content, on any surface: decks, posters, covers, identities, merchandise. Serious content is translated, not refused: the clash marks its parts honestly, and its facts stay on solid blocks. Every piece keeps the module, the palette, the base kit, the faces and its field shapes; each brings its subject tiles and its words.
 
 Method:
-1. Draw the laminates as tileable patterns, each repeat derived from the primitive's side.
-2. Cut one primitive per leading part; the part's subject picks it: square for what is built, triangle for what moves, disc for what turns or is whole.
-3. Clad it in its laminate and its part's hue, and stand it on a solid slab of that hue carrying the words.
-4. Tile the field whole: towers in the content's order, left to right, one module lower each; every other cell a solid fact block or a deliberate white.
+1. Draw the kit: six base tiles, and two to four drawn from the subject, its outlines abstracted onto the module as Ikko Tanaka abstracted a motif.
+2. Choose the field: one shape per unit (an L, a band, a column, a corner); a series keeps its shapes.
+3. Tile it whole: one tile per cell, never the same ground beside or above; the subject tiles where the eye lands first, at the field's corner or end.
+4. Merge cells for the type block, on one solid hue.
+5. Set the facts on solid blocks of whole cells.
 
-Amplitude: full: hues clash, laminates run coarse, type is heavy; only the white and the text on solid ground stay quiet.
+Amplitude: full in the field, quiet in the blocks.
 
-Anti-reference: the grey Swiss poster with one red square; Memphis as wallpaper; CSS objects with shadows.
+Anti-reference: a generic flower-and-star kit; squiggle confetti; an 80s pastel palette; CSS objects with shadows.
 
 ## Images
 
-Computed: laminates cut into primitives. Branzi may visit once: one real photograph cut to a primitive's outline, no pattern on it. Never an illustration.
+Computed: the kit, drawn flat on the module. A real photograph may fill a block of whole cells, framed by tiles. Characters and illustrations are hand-made, or generated and declared; never drawn in code.
 
 ## Layout
 
-Grid system: Modular — every fact, form and block takes whole modules.
+Grid system: Modular — one square tile; every block is whole tiles.
 
-S = min(W, H); margin 0.04 S; gutter 0.4 × margin; six tracks, nine where W > 1.4 H; module = track width, square; rows = whole modules that fit, the rest a base band of at least 0.06 S. A tower is two modules plus a gutter square: primitive above, slab below. Two parts take three tracks each, three parts two; more parts start a second staircase. The title stands in the first rows at the left, one word per row; facts fill free cells in reading order. A cell with nothing to carry is white on purpose; none is left white by accident.
+S = min(W, H); tile M = S ÷ 8. Columns and rows are the whole tiles that fit; the remainder is one solid band at the foot (portrait) or the right edge (landscape). The field runs to the trim. Field shapes: an L (three columns down one side, two rows along the foot), a band (one or two rows across), a column (two or three columns down one side), a corner (two by two to three by three). Every cell outside the field belongs to a solid block that carries type; no cell is empty by accident.
 
 ## Typography
 
-- **League Spartan** (OFL; 600–900) for titles, figures and facts; **DM Serif Display Italic** (OFL) for voices only, the names of people and quoted words; **Noto Sans SC** (700, 900) for Chinese, never smaller than the Latin it translates.
-- Display at a cap height of one module, one word per row; for Han, the glyph's em is one module. A word wider than the field drops to two thirds of a module, never compressed, and never fitted to its span by eye — the module is the derivation in both scripts.
-- Headline 64, numeral 84, title 44, voice 30, label 26; nothing read below 26.
+- **League Spartan** (OFL, variable 100–900): the title as a hairline line (200) over black lines (800) at one size, the largest line filling the type block's width; facts 800 at 64; body 500 at 30; labels 500 at 26.
+- **Noto Sans SC** (OFL): titles 900, body 500; never smaller than the Latin it translates.
+- Inset 0.3 M inside a block; flush left; no tracking; tabular figures. Nothing read below 26.
 
 ## Colors
 
-- **Ink `#111111` (primary).** Type on white, the title, ink blocks.
-- **White `#FFFFFF` (neutral).** Ground, at least 40% of the area; type on cobalt and ink.
-- **Cobalt `#2438E0`, rose `#FF4FA3`, lemon `#FFD21F`.** First, second, third part, then the cycle restarts; a hue stays with its part everywhere.
-- **Mint `#00C389`.** One named category, held across the deliverable: the category is named by the brief — the offer or action the piece exists to announce. A fact left over after the parts took their hues is not a category; if the brief names none, there is no mint.
-- White on cobalt and ink; ink on every other hue. Hues mark parts, never value or emphasis.
+- **Cobalt `#2D3A9E`, rose `#E8124F`, orange `#F47A20`.** Tiles, the type block and fact blocks; a hue that names a category keeps it everywhere.
+- **Cream `#FCE6B4` and white `#FFFFFF`.** Tiles and quiet blocks.
+- **Ink `#141414` (primary).** Type on orange, cream and white; the foot band.
+- White on cobalt and rose; ink on everything else. Emphasis is a block's hue or size, never a new colour.
 
 ## Shapes
 
-Radius zero; flat; no outline or shadow; one 6 ink rule over the base band. Primitives cut from a tower-side square: square; right triangle; disc with a quarter-side square gap turned 45°. The triangle's orientation is the content's direction — the way its part moves, pours or strikes — chosen per piece and declared; the same orientation twice in a set is a habit, not a system. Laminates: grid lines for the square, 45° stripes for the triangle, half-drop dots for the disc, each repeat a fraction of the side; cut off by the edge, never fitted, never behind text.
+Flat; no outline, shadow or gradient. One figure per tile, its edges on the tile's quarters, turned by 90°. Base kit: quarter disc, half disc, disc, four-petal flower, star, rounded cross, leaf, arch, four-by-four checker, stripes. A subject tile follows the same rules and joins the kit before use.
 
 ## Forms
 
-- **Cover:** the title rows, the towers, the main facts in the free cells.
-- **Statement:** one sentence at headline size on white, one tower as its counterweight.
-- **Exhibit:** one tower at double size, its slab carrying the name.
-- **Data:** each value on its part's slab, the figure at numeral size, the label beneath; the primitive says which part, never how much.
-- **Sequence and comparison:** the staircase in order; two towers at one height on one row.
-- **Reference and close:** label size on white cells; the next action on the base band.
+- **Cover:** an L field, the title block, the facts on solid blocks.
+- **Statement:** one sentence in the type block, the field a column.
+- **Exhibit:** a photograph or one subject tile at two by two, framed by the field.
+- **Data:** each value on its own block, the figure at fact size; a quantity may be a count of whole tiles, never a tile's size or pattern.
+- **Sequence and comparison:** a band of tiles marks the order, one tile above each step's block; comparisons side by side on one row.
+- **Reference and close:** body text on cream blocks; the next action on a rose block.
 
 ## Variations
 
-- **Night field.** The whole unit on ink, type white, towers unchanged.
-- **Gap turned.** A second primitive turned 45° off axis.
+- **Pixel Chinese.** The Chinese title in an open pixel face (Fusion Pixel or Ark Pixel, OFL) at display size only; once per series.
+- **Isometric volume** (Peter Shire). One unit's figure built as a volume of clashing parts in isometric projection, the type on its faces.
+- **Night field.** The ground blocks in ink, the tiles unchanged.
 
 ## Do's and Don'ts
 
-- **Look before delivering:** render it, see it full size and as a thumbnail. Text on pattern, a hue recoloured for balance, white nobody placed: faults.
-- **Floors:** facts verbatim and live; every pair in Tokens holds its contrast; pattern never says anything.
-- **Test:** remove the laminates and the staircase; if a neat table of coloured boxes remains, the clash was decoration.
-- **Caricature:** squiggle confetti, black outlines everywhere, an 80s pastel palette, Memphis as wallpaper behind a Swiss page.
+- **Look before delivering:** render it, see it full size and as a thumbnail. A kit that would fit any subject, two neighbours on one ground, text on a pattern, a cell nobody placed: faults.
+- **Floors:** facts verbatim and live; every pair in Tokens holds its contrast.
+- **Test:** swap in another subject's content, and the kit no longer fits; remove the clash and the tiling, and the character goes.
+- **Caricature:** a generic flower-and-star kit on any subject; squiggle confetti; Memphis as wallpaper behind a Swiss page.
 
 ## Tokens
 
 ```yaml
 colors:
-  primary: "#111111"
+  primary: "#141414"
   neutral: "#FFFFFF"
-  cobalt: "#2438E0"
-  rose: "#FF4FA3"
-  lemon: "#FFD21F"
-  mint: "#00C389"
+  cream: "#FCE6B4"
+  cobalt: "#2D3A9E"
+  rose: "#E8124F"
+  orange: "#F47A20"
 typography:
-  display: { fontFamily: "League Spartan, Noto Sans SC, sans-serif", fontSize: 212, fontWeight: 900, lineHeight: 0.74 }
-  headline: { fontFamily: "League Spartan, Noto Sans SC, sans-serif", fontSize: 64, fontWeight: 800, lineHeight: 1.09 }
-  numeral: { fontFamily: "League Spartan, Noto Sans SC, sans-serif", fontSize: 84, fontWeight: 900, lineHeight: 0.9 }
-  title: { fontFamily: "League Spartan, Noto Sans SC, sans-serif", fontSize: 44, fontWeight: 800, lineHeight: 1.02 }
-  voice: { fontFamily: "DM Serif Display, Noto Sans SC, serif", fontSize: 30, fontWeight: 400, lineHeight: 1.05 }
-  label: { fontFamily: "League Spartan, Noto Sans SC, sans-serif", fontSize: 26, fontWeight: 800, lineHeight: 1.12 }
+  title: { fontFamily: "League Spartan, Noto Sans SC, sans-serif", fontSize: 104, fontWeight: 800, lineHeight: 0.98 }
+  title-light: { fontFamily: "League Spartan, Noto Sans SC, sans-serif", fontSize: 104, fontWeight: 200, lineHeight: 0.98 }
+  fact: { fontFamily: "League Spartan, Noto Sans SC, sans-serif", fontSize: 64, fontWeight: 800, lineHeight: 1 }
+  body: { fontFamily: "League Spartan, Noto Sans SC, sans-serif", fontSize: 30, fontWeight: 500, lineHeight: 1.35 }
+  label: { fontFamily: "League Spartan, Noto Sans SC, sans-serif", fontSize: 26, fontWeight: 500, lineHeight: 1.3 }
 spacing:
-  margin: 40
-  gutter: 16
-  module: 140
-  rule: 6
+  tile: 125
+  inset: 38
 pairs:
-  ink-on-ground: { backgroundColor: "{colors.neutral}", textColor: "{colors.primary}" }
-  ground-on-ink: { backgroundColor: "{colors.primary}", textColor: "{colors.neutral}" }
-  ground-on-cobalt: { backgroundColor: "{colors.cobalt}", textColor: "{colors.neutral}" }
-  ink-on-rose: { backgroundColor: "{colors.rose}", textColor: "{colors.primary}" }
-  ink-on-lemon: { backgroundColor: "{colors.lemon}", textColor: "{colors.primary}" }
-  ink-on-mint: { backgroundColor: "{colors.mint}", textColor: "{colors.primary}" }
+  ink-on-white: { backgroundColor: "{colors.neutral}", textColor: "{colors.primary}" }
+  ink-on-cream: { backgroundColor: "{colors.cream}", textColor: "{colors.primary}" }
+  ink-on-orange: { backgroundColor: "{colors.orange}", textColor: "{colors.primary}" }
+  white-on-cobalt: { backgroundColor: "{colors.cobalt}", textColor: "{colors.neutral}" }
+  white-on-rose: { backgroundColor: "{colors.rose}", textColor: "{colors.neutral}" }
 ```
 
 ## Record
 
-Folio version: 1.1.0. Template version: 14. Date: 2026-11-02.
-Pieces: the-grid/brief.md, made from the earlier, programme-bound version of this file; the system it shows is unchanged.
+Folio version: 1.1.0. Template version: 14. Date: 2026-11-03.
+Pieces: the-grid/brief.md, made from an earlier version of this file (primitives clad in laminate on slabs); it does not show the tile system.
