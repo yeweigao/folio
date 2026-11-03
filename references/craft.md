@@ -1,6 +1,6 @@
 # Craft
 
-Technique shared by every school. The theme sets relationships, the surface sets sizes.
+Technique shared by every school. The theme sets relationships, the surface sets sizes. Where the theme or a dialect names a technique, its rule wins; the rest holds here.
 
 ## Grid
 

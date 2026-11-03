@@ -47,7 +47,7 @@ The maker decides; a point can be right and still not worth acting on. Fix, rend
 
 Give every reviewer this, and nothing else from the skill:
 
-1. The philosophy (SKILL.md) and the floors (above).
+1. The philosophy (SKILL.md) and the floors (above). Both hold under every school; a dialect changes only how they are met.
 2. The claimed school's test and caricature: the dialect file, or the theme's test and anti-patterns.
 3. The surface's "Done means".
 4. Where unexamined choices land, listed below.

@@ -16,7 +16,7 @@ An unnamed request is read for the move it describes.
 
 ## Client language — aesthetic adjectives, translated
 
-Clients rarely name a move; they point at a dial (colour, type size, whitespace, alignment) with a fuzzy word. The word is a direction without parameters: translate it into declared changes in the skeleton before anything is made, grant the translatable part, and refuse, with a reason, what conflicts with the governing dialect.
+Clients rarely name a move; they point at a dial (colour, type size, whitespace, alignment) with a fuzzy word. The word is a direction without parameters: translate it into declared changes in the skeleton before anything is made, grant the translatable part, and refuse, with a reason, what conflicts with the Philosophy or the governing dialect.
 
 | The client says | It points at | The translation (declared, with numbers) | Folio's keeping |
 |---|---|---|---|
@@ -33,4 +33,5 @@ Clients rarely name a move; they point at a dial (colour, type size, whitespace,
 | 要有设计感 · more "designed" | Alignment | A grid system is declared from the roster and governs; the asymmetry is of MASSES (the fields themselves unequal, not merely flush-left text); and the title is treated as a figure that PARTITIONS the field — its glyphs carve the zones, and the other elements answer them (an image steps around the title, a fact block keys to its measure, a colour field ends where a glyph ends) | The complaint means "placed, not composed" — and a declared grid is not evidence: the test is removal. Delete the title in proof; if the layout still stands, the title was placed, not composed, and the translation has not happened. Structure must be visible with the DESIGN.md closed. |
 
 - **Each adjective moves only its own dials.** Where two contest one dial, the adjective whose primary dial it is wins.
+- **Another school is another world.** A request that needs a different dialect rewrites the skeleton from the invocation down; it is never patched in as a guest look.
 - **No dial, no change.** "你懂的，弄好看点" delegates taste: exercise it through the dialect, invent nothing in its name.
