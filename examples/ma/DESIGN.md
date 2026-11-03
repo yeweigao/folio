@@ -2,11 +2,11 @@
 
 The stock and one whole interval as the medium; a few lines of Song and quiet sans where the white is most felt; measures as equal intervals of white.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. Check the piece against Do's and Don'ts.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
-Swiss, ma 間 — Kenya Hara's *White* (2008), the paper works and MUJI Horizon (2003): make the stock and the interval the medium, set a few lines where the white is most felt, and let equal intervals of white do the measuring; never draw a horizon, a stone, a paper grain or any object in code.
+ma 間, Kenya Hara — *White* (2008), the paper works and MUJI Horizon (2003): make the stock and the interval the medium, set a few lines where the white is most felt, and let equal intervals of white do the measuring; never draw a horizon, a stone, a paper grain or any object in code.
 
 World: any content, on any surface. Dense content is translated, not refused: it gathers into one block so a single interval stays whole, and its measures become equal steps of white. Every piece keeps the stock, the ink, the whole interval, the axes and the faces; each brings its words, its measure and, when one exists, a real photograph.
 
@@ -19,7 +19,7 @@ Method:
 
 Amplitude: reduced: few, wide size steps; movement only down the ladder.
 
-Anti-reference: the template timetable (bold title, coloured band, equal cards); the Zen costume (stones, bamboo, brush ink, a rendered bowl on beige).
+Anti-reference: the template timetable (bold title, coloured band, equal cards).
 
 ## Images
 
@@ -91,5 +91,5 @@ pairs:
 
 ## Record
 
-Folio version: 1.1.0. Template version: 14. Date: 2026-11-02.
+Folio version: 1.1.0. Template version: 14. Date: 2026-11-03.
 Pieces: the-grid/brief.md, made from the earlier, programme-bound version of this file; the system it shows is unchanged.

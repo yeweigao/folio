@@ -2,7 +2,7 @@
 
 Separate films on one module grid (type, screen, accent), slipped and overprinted by declared amounts, every fact left flat and readable.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. Check the piece against Do's and Don'ts.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
@@ -20,7 +20,7 @@ Method:
 
 Amplitude: full; tempered in the order above, the amplitude stated.
 
-Anti-reference: grey Swiss minimum with one red square; distressed punk: glitch, scatter, one rotated word, a drop shadow as a slip.
+Anti-reference: grey Swiss minimum with one red square; a centred title over a stock image.
 
 ## Images
 
@@ -68,10 +68,10 @@ Zero radius; no boxes, shadows or gradients. Thread 5; + marks 1.5 thick, 14 lon
 
 ## Do's and Don'ts
 
-- **Look before delivering:** render it, see it full size and as a thumbnail. A fact slipped, stepped or over the screen, a single word slipped alone: faults.
+- **Look before delivering:** render it, see it full size and as a thumbnail. A fact slipped, stepped or over the screen; a slip or step without its declared value: faults.
 - **Floors:** facts verbatim and live; every pair in Tokens holds its contrast; no shadow or glow as a second ink.
 - **Test:** the typographic relations themselves express the subject; remove one tilted word, and the system survives.
-- **Caricature:** glitch filters, random distress, illegible stacks; one rotated word on an otherwise Swiss page.
+- **Caricature:** glitch filters, random distress, illegible stacks; one rotated word on an otherwise Swiss page; a drop shadow as a slip.
 
 ## Tokens
 
@@ -102,5 +102,5 @@ pairs:
 
 ## Record
 
-Folio version: 1.1.0. Template version: 14. Date: 2026-11-02.
+Folio version: 1.1.0. Template version: 14. Date: 2026-11-03.
 Pieces: the-grid/brief.md, made from the earlier, programme-bound version of this file; the system it shows is unchanged.

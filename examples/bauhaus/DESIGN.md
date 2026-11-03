@@ -1,12 +1,12 @@
 # Bauhaus, Joost Schmidt · the constructed figure
 
-A figure of the content built from point, line and plane (circle, line, square and their kin) on one module, in red, blue, yellow and black, the planes overlapping so the inks mix, with every line of type hung from the same construction.
+A figure of the content built from point, line and plane (circle, line, square and their kin) on one module, in red, blue, yellow and black, planes overlapping only where parts share something, with every line of type hung from the same construction.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. Check the piece against Do's and Don'ts.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
-Bauhaus, Joost Schmidt — the 1923 Bauhaus exhibition poster: draw the content's figure with compass and square from point, line and plane on one module, in red, blue, yellow and black, the planes overlapping so the inks mix, then set every line of type into the same construction; never shapes that build nothing.
+Bauhaus, Joost Schmidt — the 1923 Bauhaus exhibition poster: draw the content's figure with compass and square from point, line and plane on one module, in red, blue, yellow and black, planes overlapping only where two parts share something, then set every line of type into the same construction; never shapes that build nothing.
 
 World: any content, on any surface. Its leading parts (three at most) become shapes, its order or measure becomes the black thread they hang from, their weights set sizes on the doubling scale. Every piece keeps the module, the primaries, the thread, the faces and the construction; each brings its parts, its order and its figure.
 
@@ -17,11 +17,11 @@ Method:
 4. Draw each part from the elements (circle, square, line, then triangle, bar, half and quarter circle), sized by weight on the doubling scale.
 5. Overlap two planes only where two parts truly share something; the overlap shows their mixture as a transparency, and names what they share. Hang the type from the same drops.
 
-A fourth term (time, sound, a sequence) takes the line, never a fourth hue. Kandinsky visits once: form and colour go to parts by place in the order, never by meaning. Malevich and Lissitzky visit with floating planes (Variations).
+A fourth term (time, sound, a sequence) takes the line, never a fourth hue. Kandinsky visits once: on that unit his law (yellow triangle, red square, blue circle) replaces the order, given to three real parts. Malevich and Lissitzky visit with floating planes (Variations).
 
 Amplitude: full: three primaries and black, flat, type at graphic scale.
 
-Anti-reference: the triad recited as pattern; pastel or teal primaries; shapes off the module; the subject's literal pictogram.
+Anti-reference: the subject's literal pictogram; an infographic of icons and arrows.
 
 ## Images
 
@@ -72,10 +72,10 @@ Flat, hard-edged, zero radius. The kit: square; circle (at least four modules ac
 
 ## Do's and Don'ts
 
-- **Look before delivering:** render it, see it full size and as a thumbnail. A shape off the module, a second diagonal family, type on a primary or a mix, a mix used as a flat fill, an overlap for prettiness, a diagonal on content at rest, a figure that would fit another subject: faults.
+- **Look before delivering:** render it, see it full size and as a thumbnail. A shape off the module, a second diagonal family, type on a primary or a mix, a mix used as a flat fill: faults.
 - **Floors:** facts verbatim and live; every pair in Tokens holds its contrast.
 - **Test:** remove the type, and the shapes still build this content's figure, not any content's; every overlap names what two parts share; the direction matches whether the content rests or moves.
-- **Caricature:** the Kandinsky triad on any subject; primaries floating on a ground, building nothing; every shape at its own angle; a borrowed "Bauhaus" display face; fake halftone or grain; gradients, shadows, rounded cards.
+- **Caricature:** the Kandinsky triad on any subject; primaries floating on a ground, building nothing; pastel or teal primaries; overlaps for prettiness; every shape at its own angle; a borrowed "Bauhaus" display face; fake halftone or grain; gradients, shadows, rounded cards.
 
 ## Tokens
 

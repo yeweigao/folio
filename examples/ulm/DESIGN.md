@@ -2,7 +2,7 @@
 
 The rules written before any case: one module, figures drawn on it at 0°, 45° and 90°, colour only as a labelled code, every fact an instruction in one neo-grotesque.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. Check the piece against Do's and Don'ts.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
@@ -19,7 +19,7 @@ Method:
 
 Amplitude: reduced: one figure per unit, at most three codes.
 
-Anti-reference: the Munich palette or sports pictograms pasted onto an ordinary page; UI line icons; a grid as wallpaper.
+Anti-reference: a deck of icons and bullet points, each slide coloured by taste; a grid as wallpaper.
 
 ## Images
 
@@ -101,5 +101,5 @@ pairs:
 
 ## Record
 
-Folio version: 1.1.0. Template version: 14. Date: 2026-11-02.
+Folio version: 1.1.0. Template version: 14. Date: 2026-11-03.
 Pieces: the-grid/brief.md, made from the earlier, programme-bound version of this file; the system it shows is unchanged.

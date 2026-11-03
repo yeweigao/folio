@@ -2,7 +2,7 @@
 
 One hand-made, ironic picture in gouache on a muted ground, with every fact beneath it as quiet live type on the tracks.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. Check the piece against Do's and Don'ts.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
@@ -64,9 +64,9 @@ Radius 0; no shadow, card or plate. Ink rules: 3 closes the picture or opens the
 
 ## Do's and Don'ts
 
-- **Look before delivering:** render it, see it full size and as a thumbnail. A picture that only shows the subject, two hands, a fact painted rather than set: faults.
+- **Look before delivering:** render it, see it full size and as a thumbnail. Two hands, a fact painted rather than set, a drawn title without its live twin, the accent on a second figure: faults.
 - **Floors:** facts verbatim and live; a generated picture declared; every pair in Tokens holds its contrast.
-- **Test:** the picture says something about this subject that a photograph of it could not.
+- **Test:** the picture says something about this subject that a photograph of it could not, and says it once.
 - **Caricature:** a brush font, distressed paper, and a surreal object unrelated to the subject.
 
 ## Tokens
@@ -96,5 +96,5 @@ pairs:
 
 ## Record
 
-Folio version: 1.1.0. Template version: 14. Date: 2026-11-02.
+Folio version: 1.1.0. Template version: 14. Date: 2026-11-03.
 Pieces: the-grid/brief.md, made from the earlier, programme-bound version of this file; the system it shows is unchanged.

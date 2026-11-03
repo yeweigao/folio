@@ -26,14 +26,14 @@ A world has one DESIGN.md: its aesthetic system, no content. Each piece has a br
 
 <What this system makes, for which content, in one sentence.>
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout; Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. Check the piece against Do's and Don'ts.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 <School>, <hand> — <the work>: <the method as an imperative>; never <the ban>.
 World: <the content and surfaces it serves; how the method translates to content it was not made for; what every piece keeps, what each piece brings>.
 Method: <the first move, the tools and materials, the procedure; how each piece finds its idea in its subject>.
 Amplitude: <full, or reduced: what is turned down, and why>.
-Anti-reference: <the default this world refuses>.
+Anti-reference: <the default a maker reaches for with no school, which this world refuses; the school's own costume goes to Caricature>.
 
 ## Images
 <Source: photographed, hand-made, computed, or none. Crop, treatment, credit; what stands in, declared, until the real one exists.>
@@ -58,7 +58,7 @@ Grid system: <one system from the theme's roster> — <why>.
 <The breaks this world allows at a turn, each with magnitude and keep condition.>
 
 ## Do's and Don'ts
-<Look before delivering: what the render must not show. The floors. The school's test; its caricature.>
+<Look before delivering: what the render must not show that the test does not already catch. The floors. The school's test, as proof; its caricature, the school's look without its method. Each said once, and once only across the file.>
 
 ## Tokens
 

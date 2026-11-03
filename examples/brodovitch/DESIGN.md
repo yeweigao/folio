@@ -2,7 +2,7 @@
 
 Photographs in black and white, one saturated colour that is the subject's own, a serif that speaks and a grotesque that labels, the figure cut against the word.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. Check the piece against Do's and Don'ts.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
@@ -19,7 +19,7 @@ Method:
 
 Amplitude: full on loud units, reduced on quiet ones.
 
-Anti-reference: fake luxury; a borrowed house's logo, monogram or colour; rounded cards, pill buttons, checkmarks, arrows, KPI tiles.
+Anti-reference: colour stock photographs under a dark scrim, a centred headline, a button.
 
 ## Images
 
@@ -68,10 +68,10 @@ Zero radius; no shadow, outline, pill or card. Hairlines 1 where a page needs an
 
 ## Do's and Don'ts
 
-- **Look before delivering:** render it, see it full size and as a thumbnail. Rounded cards, pills, arrows, checkmarks, KPI tiles, grey text too small to read, two loud units in a row, a borrowed mark: faults.
+- **Look before delivering:** render it, see it full size and as a thumbnail. Grey text too small to read, two loud units in a row, a collision on a quiet unit, a crop that cuts the gesture: faults.
 - **Floors:** facts verbatim and live; credits never invented; no generated person posing as real; every pair in Tokens holds its contrast.
 - **Test:** remove the colour, and the series still reads as one house; remove the photographs, and the type loses its reason.
-- **Caricature:** fake luxury, gold, glass, script; a borrowed house's logo, monogram or colour; template chrome.
+- **Caricature:** fake luxury, gold, glass, script; a borrowed house's logo, monogram or colour; template chrome: rounded cards, pills, checkmarks, arrows, KPI tiles.
 
 ## Tokens
 

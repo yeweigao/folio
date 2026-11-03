@@ -2,7 +2,7 @@
 
 A kit of flat primitives, some drawn from the subject's own forms, tiled whole across one square module in clashing hues, with the type set as a block among the blocks.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. Check the piece against Do's and Don'ts.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
@@ -11,7 +11,7 @@ Memphis, as its graphics are made now, after Sottsass and Du Pasquier's laminate
 World: any content, on any surface: decks, posters, covers, identities, merchandise. Serious content is translated, not refused: the clash marks its parts honestly, and its facts stay on solid blocks. Every piece keeps the module, the palette, the base kit, the faces and its field shapes; each brings its subject tiles and its words.
 
 Method:
-1. Draw the kit: six base tiles, and two to four drawn from the subject, its outlines abstracted onto the module as Ikko Tanaka abstracted a motif.
+1. Draw the kit: six base tiles, and two to four drawn from the subject, its outlines abstracted onto the module as Sottsass abstracted bacteria into *Bacterio* (1978).
 2. Choose the field: one shape per unit (an L, a band, a column, a corner); a series keeps its shapes.
 3. Tile it whole: one tile per cell, never the same ground beside or above; the subject tiles where the eye lands first, at the field's corner or end.
 4. Merge cells for the type block, on one solid hue.
@@ -19,7 +19,7 @@ Method:
 
 Amplitude: full in the field, quiet in the blocks.
 
-Anti-reference: a generic flower-and-star kit; squiggle confetti; an 80s pastel palette; CSS objects with shadows.
+Anti-reference: the cheerful template: a pastel gradient, emoji, rounded cards, a mascot.
 
 ## Images
 
@@ -65,10 +65,10 @@ Flat; no outline, shadow or gradient. One figure per tile, its edges on the tile
 
 ## Do's and Don'ts
 
-- **Look before delivering:** render it, see it full size and as a thumbnail. A kit that would fit any subject, two neighbours on one ground, text on a pattern, a cell nobody placed: faults.
+- **Look before delivering:** render it, see it full size and as a thumbnail. Two neighbours on one ground, text on a pattern, a cell nobody placed, a subject tile off the module: faults.
 - **Floors:** facts verbatim and live; every pair in Tokens holds its contrast.
 - **Test:** swap in another subject's content, and the kit no longer fits; remove the clash and the tiling, and the character goes.
-- **Caricature:** a generic flower-and-star kit on any subject; squiggle confetti; Memphis as wallpaper behind a Swiss page.
+- **Caricature:** a generic flower-and-star kit on any subject; squiggle confetti; an 80s pastel palette; CSS objects with shadows; Memphis as wallpaper behind a Swiss page.
 
 ## Tokens
 

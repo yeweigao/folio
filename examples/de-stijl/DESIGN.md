@@ -2,7 +2,7 @@
 
 Black bars on the tracks and unequal planes of red, yellow, blue, white and grey, each plane carrying one fact, tuned one bar at a time until the balance holds.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. Check the piece against Do's and Don'ts.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
@@ -15,11 +15,11 @@ Method:
 2. Place the bars the measure fixes, then free bars by eye.
 3. Colour by job: red leads, blue answers, yellow measures, white and grey are read.
 4. Set type flush left inside the planes, never on a bar.
-5. Tune: one bar or one plane per render, until no move improves the balance. A plane whose change alters nothing is decoration; remove it.
+5. Tune by opposition: every vertical answered by a horizontal, colour by non-colour, large by small; move one bar or one plane per render until no move improves the balance. A plane whose change alters nothing is decoration; remove it.
 
 Amplitude: full in structure; every plane carries a fact or a weight the balance needs.
 
-Anti-reference: a cream sheet with one red square; a black lattice over an ordinary page; Mondrian as a border.
+Anti-reference: a cream sheet with one red square; equal cards on a template grid.
 
 ## Images
 
@@ -35,7 +35,7 @@ S = min(W, H); bar b = S ÷ 62; everything snaps to b ÷ 2. Six tracks, twelve w
 
 - **Anybody** (OFL, variable width): display 900, width 100, at 200; numerals 900 at 62 (width 64 for ranges); text 800, width 84, at 40; body 600, width 84, at 28.
 - **Noto Sans SC** 700 and 900: display at 150, text and body at the Latin size.
-- A title too wide for its plane steps down by 8, never compressed. Latin titles in capitals; no italic, no tracking; tabular figures. Nothing read below 28.
+- A title too wide for its plane breaks by meaning, or the planes rebalance to give it room; only a single word that still overflows steps down by 8, never compressed. Latin titles in capitals; no italic, no tracking; tabular figures. Nothing read below 28.
 
 ## Colors
 
@@ -69,10 +69,10 @@ Radius 0. Bars in ink, b thick, horizontal or vertical, each ending on a bar or 
 
 ## Do's and Don'ts
 
-- **Look before delivering:** render it, see it full size and as a thumbnail. Two equal cells, a plane that holds nothing, a plane whose change alters nothing: faults.
+- **Look before delivering:** render it, see it full size and as a thumbnail. Two equal cells, a plane that holds nothing, type on a bar, a bar that ends in space: faults.
 - **Floors:** facts verbatim and live; every pair in Tokens holds its contrast.
 - **Test:** resize or recolour one plane, and the balance of the whole shifts.
-- **Caricature:** a card grid filled red, yellow and blue; a black lattice laid over an ordinary page; Mondrian as a border.
+- **Caricature:** a card grid filled red, yellow and blue; a black lattice laid over an ordinary page; Mondrian as a border or a pattern.
 
 ## Tokens
 
@@ -104,5 +104,5 @@ pairs:
 
 ## Record
 
-Folio version: 1.1.0. Template version: 14. Date: 2026-11-02.
+Folio version: 1.1.0. Template version: 14. Date: 2026-11-03.
 Pieces: the-grid/brief.md, made from the earlier, programme-bound version of this file; the system it shows is unchanged. The abstracted figure and the built title are not yet proven by a piece.
