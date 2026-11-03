@@ -1,6 +1,6 @@
 # Review
 
-Before the work is called done: the floors, then the eye.
+Before the work is called done: the floors, then the eye. A new or changed skeleton is read before its first piece.
 
 ## Floors
 
@@ -23,6 +23,7 @@ The context that made the work is a poor judge of it. Review comes from contexts
 | Critics, three to five | Renders at viewing size, the brief, the rubric | The maker's reasoning, the skeleton, the intended hand |
 | Judge | The critics' points, the renders, the rubric | The maker's reasoning |
 | Process reader | The skeleton, the brief, the renders | The maker's reasoning |
+| Skeleton reader | The skeleton, the dialect file, the philosophy | The maker's reasoning, the renders |
 | Maker | The judge's kept points | — |
 
 Where helpers cannot be spawned, run each role as a clean pass that reads only what its row allows.
@@ -35,13 +36,17 @@ Give each critic one angle: the reader at distance; the school and its master; t
 
 ## Judge
 
-> Keep a point only if it names a rubric line, the fault is visible, and the fix breaks no other line. Merge, then rank, floors first. Then answer: would a master of the claimed school sign it? Is it interchangeable with a rival subject? Which line would the most valuable change serve?
+> Keep a point only if it names a rubric line, the fault is visible, and the fix breaks no other line. Merge, then rank, floors first. Name the layer each point breaks (floor, philosophy, school, skeleton, piece) and fix it there: a fault every piece would share is fixed in the skeleton before the piece. Then answer: would a master of the claimed school sign it? Is it interchangeable with a rival subject? Which line would the most valuable change serve?
 
 The maker decides; a point can be right and still not worth acting on. Fix, render, and review again while a kept point is within reach. Report what remains.
 
 ## Process reader
 
 > A right-looking result reached by habit fails. Check that the grid is derived from the format, the idea from the subject, the palette and faces from the hand and the world, and that the method in the file is visible in the render. Name every value that looks inherited.
+
+## Skeleton reader
+
+> Read the file as the world it claims to be, layer by layer. The philosophy: every line answered in this world's terms, none bent. The school: each rule the dialect overturns appears only in its form, what Swiss keeps is present, and no hand or term from another school has leaked in. The file: each line a rule, said once; Anti-reference is the default with no school, Caricature the school's look without its method. Name every line that breaks a layer, and the layer.
 
 ## Rubric
 

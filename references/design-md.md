@@ -18,7 +18,7 @@ A world has one DESIGN.md: its aesthetic system, no content. Each piece has a br
 - **Forms, one line each.** How each form this world uses is set, and its ban.
 - **Tokens derived, not inherited.** From the hand and the world, at the end as data. A role only if used, every role used. Every text-on-ground pair is listed under `pairs`, so contrast can be checked.
 - **Written as commands.** After the lock, helpers read this file instead of the theme.
-- **The file changes before the work.**
+- **The file changes before the work.** A new or changed file is read by the skeleton reader ([review](review.md#skeleton-reader)) before its first piece.
 - **English headings**, so scripts can find them; the prose may follow the person's language.
 
 ````markdown
