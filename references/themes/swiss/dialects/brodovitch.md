@@ -1,24 +1,22 @@
-# Brodovitch — the fashion magazine
+# Brodovitch — the house editorial
 
-**Invocation:** Alexey Brodovitch, *Harper's Bazaar* 1934–58 — Make work as Brodovitch made the Bazaar spreads: one commissioned photograph of a body in motion, cropped hard and collided with one Didone word at theatrical scale; never polite scale, never gold, never a script face.
+**Invocation:** Brodovitch and the fashion houses after him — Make work as a house's campaign book is made now: photographs in black and white, one saturated colour that is the subject's own, a serif that speaks in sentences and a grotesque that labels, the figure cut against the word; never a borrowed house's marks, never template chrome.
 
-Alexey Brodovitch's *Harper's Bazaar*, New York, 1934–58, with Munkácsi and Avedon; later Liberman's *Vogue* and Fabien Baron's 1992 *Bazaar*. Spoken in Swiss, Brodovitch keeps the grid and the white, and lets desire lead.
+Alexey Brodovitch's *Harper's Bazaar*, New York, 1934–58, with Munkácsi and Avedon; Liberman's *Vogue*; Fabien Baron's 1992 *Bazaar*; then the campaign books and decks of today's houses, photograph series in black and white under one house colour, as Burberry's under Daniel Lee (2023). Spoken in Swiss, it keeps the grid and the white, and lets desire lead.
 
-- **Type and image collide; they do not sit side by side.** A Didone display word covers, cuts, or yields to the photograph.
-- **The photograph is desire, not fact.** The body in motion, a daring crop that keeps one gesture. Credits name the model, the garment and the photographer, and never invent one.
-- **The issue is paced like film, not stacked as pages.** Scale, crop and white change from spread to spread; a quiet spread prepares a loud one.
-- **Black and white is the palette, not a restraint.** Deep black and paper white, with one cool accent or one duotone at most.
-- **A centered axis is allowed** on covers and openers.
+- **The photograph leads, in black and white.** People, objects or places, whatever the subject is; a daring crop that keeps one gesture. Credits name the photographer and never invent one.
+- **One colour, the subject's own, not an accent palette.** A saturated field, a duotone over a photograph, a knockout; everything else ink, paper and grey. The colour comes from the subject (its material, its place, its own mark), never from another house.
+- **Two voices, not a ramp of styles.** A sharp serif of moderate contrast that speaks: sentence-case headlines, or one word or numeral at architectural scale; the Didone only for the Bazaar cut. A grotesque that labels, in small capitals. Nothing between.
+- **Type and figure collide; they do not sit side by side.** The figure stands in front of the word, the crop cuts the word, or a letter becomes the photograph's window.
 
-**Hands in this school.** One master in three periods; one governs.
-- **The Bazaar covers and spreads (1934–58).** Commission the photograph, or take the strongest real one available. Crop it with scissors on the contact sheet until one gesture remains. Then set one Didone word against it at the scale of the figure. Suits covers and single-image units. Never: a stock model under a centered serif.
-- **Ballet (1945).** Shoot in motion and keep the blur. Sequence the frames so the gesture falls across the spread. Suits movement and performance. Never: a frozen, centered pose.
-- **The editor's hand: "Astonish me."** Lay the whole sequence out as thumbnails and pace it like music: a shock, then a whisper. Suits the rhythm of any multi-unit work. Never: two loud units in a row.
+**Hands in this school.** One governs; the others visit as single moves.
+- **The house campaign book (2010s–).** A synthesized register. Shoot or gather one photograph series at one crop scale; find the subject's colour; then give each unit one collision: the cut-out figure in front of the word, a giant serif numeral cropped in a panel, the colour as a field or a duotone, a letter as the photograph's window. Pages in between are white and quiet. Suits brand books, decks, launches, lookbooks. Never: a house's logo, monogram, crest or colour borrowed.
+- **Alexey Brodovitch — the Bazaar covers (1934–58).** Crop the photograph on the contact sheet until one gesture remains, then set one Didone word across the crop's edge at the scale of the figure, so the line that cuts the picture cuts the word. Suits covers and openers. Never: a stock figure under a centred serif.
+- **Alexey Brodovitch — *Ballet* (1945) and the editor's pacing.** Lay the whole sequence out as thumbnails and pace it like film: a shock, then a whisper; keep the blur. Suits any multi-unit work. Never: two loud units in a row.
+- **Fabien Baron — *Harper's Bazaar* (1992–99).** One Didone word at full width, the photograph full bleed, white space as the luxury. Suits covers and openers. Never: a crowded page.
 
-**The photograph may dissolve at one edge.** The ban on gradients binds type, ground and drawn shapes, not a photograph's edge entering the collision.
+**Swiss keeps:** the column grid, white as structure, facts flush left, reading text and labels in the grotesque.
 
-**Swiss keeps:** the column grid, white as structure, and reading text and credits in a quiet grotesque.
+**Test:** Remove the colour, and the series still reads as one house; remove the photographs, and the type loses its reason.
 
-**Test:** Remove the type, and the photograph loses its composition; remove the photograph, and the type loses its reason.
-
-**Caricature:** Fake luxury: gold gradients, rose gold, glass, script fonts, a centered serif logo over a stock model; a Didone as body text.
+**Caricature:** fake luxury (gold, rose gold, glass, script); a borrowed house's logo, monogram, crest or colour; template chrome: rounded cards, pill buttons, checkmark lists, arrows, KPI tiles, grey body text too small to read, placeholder copy.

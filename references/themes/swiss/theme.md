@@ -26,7 +26,7 @@ Alone, the mother tongue suits material that argues, reports, testifies, counts 
 |---|---|---|
 | [De Stijl](dialects/de-stijl.md) | Relates: parts whose proportions and balance are the subject | Black bars and primary planes in equilibrium |
 | [Bauhaus](dialects/bauhaus.md) | Celebrates or explains, where geometry can build the subject | Primaries and primitives on one module, assembled into figures |
-| [Brodovitch](dialects/brodovitch.md) | Seduces, where the image is the subject | Didone type colliding with a daring crop; spreads paced like film |
+| [Brodovitch](dialects/brodovitch.md) | Seduces, where people or images are the subject | Black-and-white photographs under one colour of the subject's own; the figure cut against a serif word; paced like film |
 | [Polish Poster School](dialects/polish-poster.md) | Interprets a cultural subject | One authored, hand-made metaphor |
 | [Ulm](dialects/ulm.md) | Coordinates a system of related messages | Rules for every case; color and pictograms as codes |
 | [Swiss Punk](dialects/swiss-punk.md) | Provokes, still readable | The grid tested by rotation, layering and stepped type |

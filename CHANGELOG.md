@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- **Brodovitch becomes the house editorial.** The dialect follows today's fashion campaign books after the Bazaar: photographs in black and white, one saturated colour that is the subject's own, a serif that speaks and a grotesque that labels, one collision of figure and word per loud unit. The Bazaar cut remains as a cover. The serif that speaks is a sharp one of moderate contrast (Instrument Serif), the Didone kept for the cut; Section and Gallery join the forms. A borrowed house's marks and template chrome (rounded cards, pills, checkmarks, KPI tiles) are the caricature. Its earlier pieces (the-grid, ballet, nighttrain, portfolio) predate it.
 - **Memphis becomes the tile system.** The dialect follows Memphis graphics as practised now: a kit of flat primitives, two to four of them drawn from the subject, tiled whole across one square module in clashing hues, the type as a block among blocks. Sottsass and Du Pasquier remain its source; Camille Walala and Peter Shire visit. A kit that would fit any subject is the caricature. Its earlier pieces (the-grid, gelato, makers, oats) predate it.
 
 ## 1.1.0 — 2026-11-02

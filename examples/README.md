@@ -10,7 +10,7 @@ Nine design systems, one per dialect. Each DESIGN.md stands alone: give it to an
 |---|---|---|
 | `de-stijl/` | Mondrian, the compositions | Bars on the tracks; the content's measure sizes the planes |
 | `bauhaus/` | Joost Schmidt, 1923 | A figure of the content built from circle, square and bar, hung from one thread |
-| `brodovitch/` | The Bazaar covers | One photograph and one Didone word, cut by the same edge |
+| `brodovitch/` | The house campaign book, after the Bazaar covers | Black-and-white photographs, the subject's own colour, the figure cut against the word |
 | `polish-poster/` | Henryk Tomaszewski | One hand-made ironic picture over quiet live facts |
 | `ulm/` | Otl Aicher, Munich 1972 | A manual first: module, figures on one grid, colour as code |
 | `swiss-punk/` | Wolfgang Weingart | Films slipped and overprinted by declared amounts |
@@ -20,7 +20,7 @@ Nine design systems, one per dialect. Each DESIGN.md stands alone: give it to an
 
 ## One programme, nine hands
 
-Each folder also holds one poster for the same programme, The Grid, a museum's evening series on design systems: its content lives in `the-grid/brief.md`, never in the skeleton. The posters were made from an earlier, programme-bound version of each skeleton; the systems they show are unchanged, except Memphis, whose poster predates its tile system.
+Each folder also holds one poster for the same programme, The Grid, a museum's evening series on design systems: its content lives in `the-grid/brief.md`, never in the skeleton. The posters were made from an earlier, programme-bound version of each skeleton; the systems they show are unchanged, except Memphis and Brodovitch, whose pieces predate their current systems.
 
 ## One skeleton, two makers
 
