@@ -1,22 +1,26 @@
-# De Stijl — the grid as the picture
+# De Stijl — relations in balance
 
-**Invocation:** 荷兰风格派 De Stijl — Make work as Mondrian made the compositions: black bars on the tracks, unequal planes of the three primaries, the balance tuned by moving one bar at a time; never a diagonal, never symmetry.
+**Invocation:** 荷兰风格派 De Stijl — Make work as Mondrian made the compositions: black bars on the tracks, unequal planes of the three primaries against white and grey, the balance tuned by moving one bar at a time; lines only horizontal and vertical, never a curve, never symmetry.
 
-The Netherlands, 1917–31: Mondrian, van Doesburg, Rietveld, van der Leck. Spoken in Swiss, De Stijl draws the grid: the Swiss tracks become black bars, and the fields between them become planes of color.
+The Netherlands, 1917–31: Mondrian, van Doesburg, van der Leck, Huszár, Rietveld, and the magazine *De Stijl*. Where the Bauhaus builds a figure from its elements, De Stijl depicts nothing: it shows relations, which Mondrian held to be the universal. Spoken in Swiss, De Stijl draws the grid: the tracks become the picture, and the fields between them planes of colour.
 
-- **The grid is the picture, not the scaffold.** Black bars on the tracks divide the field; text and images live inside its planes.
-- **The lead is a balance, not an object.** The largest plane leads against unequal counterweights; never symmetry, never equal cells.
-- **Primaries are planes, not an accent.** Red, yellow and blue build the structure beside white, grey and black.
-- **Right angles, not rotation,** unless the brief names van Doesburg, who turns the whole field 45°.
+- **Relations are the picture, not things.** Content enters as the proportion, place and colour of rectangles. A figure the subject needs is abstracted until only its relations remain, or stands as one photograph filling one plane.
+- **The grid is drawn and open, not a hidden scaffold.** Bars on the tracks divide the field and run off the trim, so the piece reads as a section of a field that continues; type lives inside the planes, never on a bar.
+- **Balance by opposition, not symmetry.** Each element is answered by its opposite: vertical by horizontal, colour by non-colour, large by small. Never two equal cells, never a central axis.
+- **Primaries pure, against non-colour.** Red, yellow and blue as flat planes beside white, grey and black; never mixed, tinted or spent as an accent.
 
 **Hands in this school.** One governs; the others visit as single moves.
-- **Piet Mondrian — the compositions (1921–30).** Place the bars on the tracks, then move one bar or resize one plane at a time and re-render, until no change improves the balance. Mondrian worked with tape on canvas; you work with re-renders. Suits subjects that are themselves a system of weights. Never: a centered title block.
-- **Piet Mondrian — *Broadway Boogie Woogie* (1942–43).** Break the bars into colored segments that beat like a rhythm. Suits turns, closers, the urban and the rhythmic. Never: the early bars quoted beside it.
-- **Theo van Doesburg — the counter-compositions (1924–26).** Tilt the whole construction to the diagonal: energy over equilibrium. Suits rupture and arguments in motion. Never: inside a Mondrian-governed work.
-- **Bart van der Leck — the Delftsche Slaolie poster (1919).** Flatten the content itself into color blocks, so that a fact or a product becomes a plane. Suits planes that must carry whole blocks of facts. Never: illustration drawn inside a plane.
+- **Piet Mondrian — the compositions (1921–30).** Place the bars on the tracks, then move one bar or resize one plane at a time and re-render, until no change improves the balance. Mondrian worked with tape on canvas; you work with re-renders. Suits subjects that are themselves a system of weights. Never: a centred title block.
+- **Piet Mondrian — *Broadway Boogie Woogie* (1942–43).** Drop the black: the bars become chains of small squares in the primaries and grey that beat like a rhythm. Suits turns, closers, the urban and the rhythmic. Never: black bars beside it.
+- **Theo van Doesburg — the counter-compositions (1924–26).** Turn the lines to 45° against the frame: tension over equilibrium. Mondrian turned the frame (the lozenges), never the lines; this is where the movement split. Suits rupture and arguments in motion. Never: inside a Mondrian-governed unit.
+- **Bart van der Leck — the Batavier Line poster (1916) and the *Mine Triptych* (1916).** Take one real figure from the subject and break it into separate flat bars of the primaries and black floating on white, with no black lines, until only its gesture is recognisable. Suits people and objects the reader should feel rather than see. Never: a contour drawn around the bars.
 
-**Swiss keeps:** asymmetry, the tracks the bars fall on, and flush-left type inside the planes.
+**Visitors, single moves only.**
+- **Gerrit Rietveld — the Red-Blue Chair (1918–23) and the Schröder House (1924).** Bars overrun their crossings and planes slide past each other at the joint, so no junction closes. Never: a bar that ends in space having crossed nothing.
+- **Vilmos Huszár and Theo van Doesburg — the *De Stijl* masthead (1917) and van Doesburg's alphabet (1919).** A display word built from rectangles on a square grid, no curve, its strokes as heavy as the bars. Never: a borrowed geometric font standing in for construction.
 
-**Test:** Resize or recolor one plane, and the balance of the whole shifts.
+**Swiss keeps:** the tracks the bars fall on, one sans for every word, and flush-left setting inside the planes.
 
-**Caricature:** A card grid filled red, yellow and blue; a black lattice laid over an ordinary page; Mondrian as a border.
+**Test:** Resize or recolour one plane, and the balance of the whole shifts. Remove the type, and what remains depicts nothing yet still holds.
+
+**Caricature:** A card grid filled red, yellow and blue; a black lattice laid over an ordinary page; Mondrian as a border or a pattern; a primary as a button colour; a rounded corner.

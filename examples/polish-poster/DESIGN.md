@@ -6,12 +6,12 @@ One hand-made, ironic picture in gouache on a muted ground, with every fact bene
 
 ## Overview
 
-Polish Poster School, Henryk Tomaszewski — the *Cyrk* and film posters (1947–): find the one ironic image the content can be said in, paint it in gouache on a muted ground, and set every fact under it as live type flush left on the grid; never a ruled mechanical image, never a brush font standing in for a hand.
+Polish Poster School, Henryk Tomaszewski — the film posters (1947–) and *Henry Moore* (1959): fuse two things the content joins into one ironic image, paint it in gouache on a muted ground, and set every fact under it as live type flush left on the grid; never a ruled mechanical image, never a brush font standing in for a hand.
 
 World: any content, on any surface. Figures and abstractions are interpreted, not illustrated: what the content says becomes the picture, and the figures stand beneath it as type. Every piece keeps the ground, ink, accent, faces, the picture over the facts, and one hand; each brings its picture and its facts.
 
 Method:
-1. The sentence: "*the subject* becomes *the device*." It fails if a rival subject fits it, or if the picture would merely show the subject.
+1. The sentence: "*the subject* becomes *the device*": two things the content joins, one form. It fails if a rival subject fits it, or if the picture would merely show the subject.
 2. Paint it: gouache on the ground colour, flat and opaque, brush edges visible; ink draws, the accent goes to one figure. The accent is spent last, on the figure the subject itself gives; a metaphor invented to hold the accent is derivation running backwards, and a fault.
 3. Material: scan real hand work; else generate the picture naming master and medium, declared as illustration; with neither, a labelled slot of the exact crop. Never code, CSS shapes, a brush font or stock.
 4. Set the facts as live type on the tracks beneath.
@@ -22,7 +22,7 @@ Anti-reference: a cream sheet with one red square; a stock photograph; a code-dr
 
 ## Images
 
-Hand-made, one picture per unit, one artist's hand: Tomaszewski's by default. Drawn lettering may join the picture only when the same words stand as live type. A visiting hand is named and used alone: Lenica's cut paper, Trepkowski's silhouette, Cieślewicz's photomontage. A generated picture is declared; nothing poses as documentary proof.
+Hand-made, one picture per unit, one artist's hand: Tomaszewski's by default. Drawn lettering may join the picture only when the same words stand as live type. A visiting hand is named and used alone: Lenica's swelling line, Trepkowski's silhouette, Cieślewicz's photomontage. A generated picture is declared; nothing poses as documentary proof.
 
 ## Layout
 
@@ -59,7 +59,7 @@ Radius 0; no shadow, card or plate. Ink rules: 3 closes the picture or opens the
 
 ## Variations
 
-- **Full picture** (Trepkowski, *Nie*). The picture takes the whole unit, near-wordless; the facts move to the band. Once per series.
+- **Full picture** (Trepkowski, *Nie!*). The picture takes the whole unit, near-wordless; the facts move to the band. Once per series.
 - **Figure across the rule.** The accent figure crosses the closing rule by up to six baselines, never touching type.
 
 ## Do's and Don'ts

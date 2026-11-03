@@ -34,15 +34,15 @@ A theme is a school with its masters, grammar and dialects; SKILL.md holds only 
 
 | Dialect | The material | Departs from Swiss |
 |---|---|---|
-| [De Stijl](references/themes/swiss/dialects/de-stijl.md) | Relates: proportion and balance are the subject | Black bars and primary planes in equilibrium |
+| [De Stijl](references/themes/swiss/dialects/de-stijl.md) | Relates: proportion and balance are the subject | Relations, not things: drawn bars and pure primaries balanced by opposition |
 | [Bauhaus](references/themes/swiss/dialects/bauhaus.md) | Celebrates or explains, where geometry can build the subject | Primaries and primitives assembled into figures |
 | [Brodovitch](references/themes/swiss/dialects/brodovitch.md) | Seduces, where people or images are the subject | Black-and-white photographs under the subject's own colour; figure cut against the word |
-| [Polish Poster School](references/themes/swiss/dialects/polish-poster.md) | Interprets a cultural subject | One authored, hand-made metaphor |
-| [Ulm](references/themes/swiss/dialects/ulm.md) | Coordinates a system of messages | Rules for every case; color and pictograms as codes |
+| [Polish Poster School](references/themes/swiss/dialects/polish-poster.md) | Interprets a cultural subject | One authored metaphor, two things in one hand-made form |
+| [Ulm](references/themes/swiss/dialects/ulm.md) | Coordinates a system of messages | Rules before cases; colour and pictograms as codes |
 | [Swiss Punk](references/themes/swiss/dialects/swiss-punk.md) | Provokes, still readable | The grid tested by rotation, layering, stepped type |
 | [Memphis](references/themes/swiss/dialects/memphis.md) | Delights | A field tiled whole with the subject's own kit, in clashing hues |
-| [Kenya Hara, ma 間](references/themes/swiss/dialects/ma.md) | Invites: one object, craft or ceremony | Emptiness as the vessel |
-| [Swiss Brutal](references/themes/swiss/dialects/brutalist.md) | Specifies: structure is the content | Visible grid rules, zero radius, dense rows |
+| [Kenya Hara, ma 間](references/themes/swiss/dialects/ma.md) | Invites: one object, craft or ceremony | The charged interval, in space and in time |
+| [Swiss Brutal](references/themes/swiss/dialects/brutalist.md) | Specifies: structure is the content | Structure shown, material as found |
 
 ## Install
 

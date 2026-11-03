@@ -23,7 +23,7 @@ Anti-reference: a cream sheet with one red square; a black lattice over an ordin
 
 ## Images
 
-None by default: bars and planes are the image. When the content is an object the reader must recognize, one real photograph may fill one plane edge to edge, as van der Leck flattened a product into a plane; never an illustration inside a plane.
+None by default: bars and planes are the image. When the content holds an object the reader must recognise, one real photograph fills one plane edge to edge; a figure the reader should feel rather than see is abstracted (Variations); never an illustration inside a plane.
 
 ## Layout
 
@@ -63,6 +63,8 @@ Radius 0. Bars in ink, b thick, horizontal or vertical, each ending on a bar or 
 ## Variations
 
 - **Boogie bar** (*Broadway Boogie Woogie*, 1942–43). One bar that measures nothing breaks into segments of the primaries and grey, each at least 2.5b; once per deliverable, at a close.
+- **Abstracted figure** (van der Leck). The subject's one figure broken into separate bars of the primaries and ink, on the snap grid, floating on one white plane with no bar around them; once per deliverable.
+- **Built title** (van Doesburg's alphabet). A title of up to eight Latin letters or four Han characters built from rectangles on the snap grid, strokes b or 2b, no curve; it replaces the display face for that title only.
 - **Counter-composition** (van Doesburg). The whole field turned 45°, the scale dropped; only for content that is itself a rupture.
 
 ## Do's and Don'ts
@@ -103,4 +105,4 @@ pairs:
 ## Record
 
 Folio version: 1.1.0. Template version: 14. Date: 2026-11-02.
-Pieces: the-grid/brief.md, made from the earlier, programme-bound version of this file; the system it shows is unchanged.
+Pieces: the-grid/brief.md, made from the earlier, programme-bound version of this file; the system it shows is unchanged. The abstracted figure and the built title are not yet proven by a piece.

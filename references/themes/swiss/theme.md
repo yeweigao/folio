@@ -24,15 +24,15 @@ Alone, the mother tongue suits material that argues, reports, testifies, counts 
 
 | Dialect | The material | Departs from Swiss |
 |---|---|---|
-| [De Stijl](dialects/de-stijl.md) | Relates: parts whose proportions and balance are the subject | Black bars and primary planes in equilibrium |
+| [De Stijl](dialects/de-stijl.md) | Relates: parts whose proportions and balance are the subject | Relations, not things: a drawn, open grid of bars and pure primaries balanced by opposition |
 | [Bauhaus](dialects/bauhaus.md) | Celebrates or explains, where point, line and plane can build the subject | Elements as forces built into a figure; direction as meaning; primaries mixing only where parts meet |
 | [Brodovitch](dialects/brodovitch.md) | Seduces, where people or images are the subject | Black-and-white photographs under one colour of the subject's own; the figure cut against a serif word; paced like film |
-| [Polish Poster School](dialects/polish-poster.md) | Interprets a cultural subject | One authored, hand-made metaphor |
-| [Ulm](dialects/ulm.md) | Coordinates a system of related messages | Rules for every case; color and pictograms as codes |
+| [Polish Poster School](dialects/polish-poster.md) | Interprets a cultural subject | One authored metaphor, two things in one hand-made form, lettered in the same hand |
+| [Ulm](dialects/ulm.md) | Coordinates a system of related messages | Rules before cases, analysis before form; colour and pictograms as codes |
 | [Swiss Punk](dialects/swiss-punk.md) | Provokes, still readable | The grid tested by rotation, layering and stepped type |
 | [Memphis](dialects/memphis.md) | Delights: products, events, launches, youth culture | One square field tiled whole with a kit drawn for the subject, in clashing hues; type as a block |
-| [Kenya Hara, ma 間](dialects/ma.md) | Invites: one object, craft or ceremony | Emptiness as the vessel; small, quiet type |
-| [Swiss Brutal](dialects/brutalist.md) | Specifies: structure is the content | Visible grid rules, zero radius, dense rows |
+| [Kenya Hara, ma 間](dialects/ma.md) | Invites: one object, craft or ceremony | The charged interval, in space and in time; small, quiet type |
+| [Swiss Brutal](dialects/brutalist.md) | Specifies: structure is the content | Structure shown, material as found: visible rules, zero radius, dense rows |
 
 ## Hands of the mother tongue
 

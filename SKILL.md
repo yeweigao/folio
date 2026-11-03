@@ -51,6 +51,6 @@ Goals, not steps: the route is yours, the map is here. Your memory of a name bri
 
 ## Themes
 
-The theme sets the grammar, the hand the way of working, the subject the idea. A theme is a folder under `references/themes/` holding its hands, grammar, methods, dialects and caricature.
+The Philosophy is the eye, the theme the grammar, a dialect the rules it overturns, the hand the way of working, the subject the idea. Nothing overrides the eye: a dialect changes how a lead, an axis or a space is made, never that the unit has one. A theme is a folder under `references/themes/` holding its hands, grammar, methods, dialects and caricature.
 
 - [Swiss](references/themes/swiss/theme.md): the International Typographic Style, and nine movements spoken in it.

@@ -24,7 +24,7 @@ Anti-reference: neo-brutalist stickers (thick outlines, hard shadows); terminal 
 
 ## Images
 
-None by default: rules and cells are the image. A real photograph enters as record: rectangular, whole columns and rows, its source as the caption row beneath.
+None by default: rules and cells are the image. A real photograph enters as found and as record: as taken, never filtered, rectangular, whole columns and rows, its source as the caption row beneath.
 
 ## Layout
 

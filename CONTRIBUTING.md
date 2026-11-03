@@ -16,7 +16,7 @@ For editing the skill, not for making a deliverable. The agent never reads this 
 
 ## Contracts
 
-- **Dialect** (`references/themes/<theme>/dialects/<name>.md`): invocation; four lines correcting the mother tongue; three or four hands, each as process, tools and material, with what it suits and one ban; what Swiss keeps; test; caricature. Proven by a skeleton in `examples/` and a second piece made from it alone.
+- **Dialect** (`references/themes/<theme>/dialects/<name>.md`): invocation; four lines correcting the mother tongue, stating only what the school changes (the Philosophy and the theme are never restated); three or four hands, each as process, tools and material, with what it suits and one ban; what Swiss keeps; test; caricature. Proven by a skeleton in `examples/` and a second piece made from it alone.
 - **Hand:** work and date, first move, tools and materials, what it suits, one ban.
 - **Signature card:** construction, parameters, test, caricature; proven by a build from the card alone.
 - **Grid system:** construction, material, discipline; proven by a build where it visibly governs.

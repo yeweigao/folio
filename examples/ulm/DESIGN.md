@@ -61,6 +61,7 @@ Radius 0 except circles. A figure sheet is 12 × 18 units of half a module: band
 
 ## Variations
 
+- **Variation series** (Max Bill). One figure or form carried through a law written in the manual, one step per unit; for series.
 - **Sign field.** One figure in ground colour on a code-one field of six by nine modules; once per unit.
 
 ## Do's and Don'ts
