@@ -78,8 +78,8 @@ SKILL.md          goal · philosophy · routes · themes (v1.1.0)
 references/       design-md · review · tools · craft · signature · steering
   surfaces/       slides · poster · web · canvas · handbook
   themes/swiss/   theme · 9 dialects
-scripts/          render · contact · factcheck · folio-check · preview · extract · measure · release-check · generators
-examples/         nine standalone design systems · one series from one skeleton
+scripts/          render · contact · factcheck · folio-check · imagecheck · preview · extract · measure · release-check · generators
+examples/         Swiss mother tongue · nine dialect systems · independent same-world pieces
 tests/            fixed briefs for judging changes
 CONTRIBUTING.md   laws, contracts and releases for changing the skill
 ```

@@ -34,6 +34,8 @@ Where helpers cannot be spawned, run each role as a clean pass that reads only w
 
 Give each critic one angle: the reader at distance; the school and its master; the idea and its interchangeability; craft and floors; the set as a contact sheet.
 
+The craft critic checks visible-ink gaps within paired type and between reading groups at reading size; the lead's presence in its field, through the school's method, at thumbnail size; and image edges, crop identity and natural proportions in the actual delivered render. No overflow is not proof of comfortable spacing; a browser preview is not proof of another export.
+
 ## Judge
 
 > Keep a point only if it names a rubric line, the fault is visible, and the fix breaks no other line. Merge, then rank, floors first. Name the layer each point breaks (floor, philosophy, school, skeleton, piece) and fix it there: a fault every piece would share is fixed in the skeleton before the piece. Then answer: would a master of the claimed school sign it? Is it interchangeable with a rival subject? Which line would the most valuable change serve?
@@ -42,11 +44,11 @@ The maker decides; a point can be right and still not worth acting on. Fix, rend
 
 ## Process reader
 
-> A right-looking result reached by habit fails. Check that the grid is derived from the format, the idea from the subject, the palette and faces from the hand and the world, and that the method in the file is visible in the render. Name every value that looks inherited.
+> A right-looking result reached by habit fails. Check that the grid is derived from the format, the idea from the subject, the palette and faces from the hand and the world, and that the method in the file is visible in the render. Name every value that looks inherited. Compare the declared type hierarchy, clear gaps and image-to-frame choices with the delivered render; identify whether a fault comes from the rule or from its execution.
 
 ## Skeleton reader
 
-> Read the file as the world it claims to be, layer by layer. The philosophy: every line answered in this world's terms, none bent. The school: each rule the dialect overturns appears only in its form, what Swiss keeps is present, and no hand or term from another school has leaked in. The file: each line a rule, said once; Anti-reference is the default with no school, Caricature the school's look without its method. Name every line that breaks a layer, and the layer.
+> Read the file as the world it claims to be, layer by layer. The philosophy: every line answered in this world's terms, none bent. The school: each rule the dialect overturns appears only in its form, what Swiss keeps is present, and no hand or term from another school has leaked in. The file: each line a rule, said once; Anti-reference is the default with no school, Caricature the school's look without its method. Name every line that breaks a layer, and the layer. Trace a lead with its supporting text and an image in another intended format from this file alone, where used: name any missing size/weight relationship, visible clearance or image-frame/crop decision that would force the next maker to invent a world rule.
 
 ## Rubric
 

@@ -1,0 +1,151 @@
+{
+  "format": {
+    "width": 1000,
+    "height": 1418.90625,
+    "A5mm": [
+      148,
+      210
+    ]
+  },
+  "fontsLoaded": "loaded",
+  "specs": [
+    {
+      "text": "岩序",
+      "x": 100,
+      "y": 80,
+      "width": 480,
+      "height": 240,
+      "font": "Noto, sans-serif",
+      "fontWeight": "700",
+      "fontSize": "240px",
+      "lineHeight": "240px",
+      "inkAscent": 205.9199981689453,
+      "inkDescent": 22.560012817382812,
+      "inBounds": true
+    },
+    {
+      "text": "YANXU",
+      "x": 100,
+      "y": 395,
+      "width": 141.09375,
+      "height": 50,
+      "font": "Inter, sans-serif",
+      "fontWeight": "500",
+      "fontSize": "40px",
+      "lineHeight": "50px",
+      "inkAscent": 29.1015625,
+      "inkDescent": 0.44921875,
+      "inBounds": true
+    },
+    {
+      "text": "茶席体验",
+      "x": 653.328125,
+      "y": 112,
+      "width": 246.65625,
+      "height": 30,
+      "font": "Noto, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "24px",
+      "lineHeight": "30px",
+      "inkAscent": 20.327999114990234,
+      "inkDescent": 1.9920024871826172,
+      "inBounds": true
+    },
+    {
+      "text": "TEA EXPERIENCE",
+      "x": 653.328125,
+      "y": 156,
+      "width": 246.65625,
+      "height": 23.75,
+      "font": "Inter, sans-serif",
+      "fontWeight": "500",
+      "fontSize": "19px",
+      "lineHeight": "23.75px",
+      "inkAscent": 14.0087890625,
+      "inkDescent": 0.185546875,
+      "inBounds": true
+    },
+    {
+      "text": "概念推广样张",
+      "x": 653.328125,
+      "y": 224.75,
+      "width": 246.65625,
+      "height": 23.75,
+      "font": "Noto, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "19px",
+      "lineHeight": "23.75px",
+      "inkAscent": 16.28299903869629,
+      "inkDescent": 1.710000991821289,
+      "inBounds": true
+    },
+    {
+      "text": "从触感，到回甘。",
+      "x": 100,
+      "y": 510,
+      "width": 640,
+      "height": 89.59375,
+      "font": "Noto, sans-serif",
+      "fontWeight": "700",
+      "fontSize": "80px",
+      "lineHeight": "89.6px",
+      "inkAscent": 68.31999969482422,
+      "inkDescent": 11.040000915527344,
+      "inBounds": true
+    },
+    {
+      "text": "以器物、茶汤与留白，展开一场感官练习。看茶色，闻茶香，细品一盏茶的层次。",
+      "x": 100,
+      "y": 635,
+      "width": 532,
+      "height": 84,
+      "font": "Noto, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "28px",
+      "lineHeight": "42px",
+      "inkAscent": 23.65999984741211,
+      "inkDescent": 2.996002197265625,
+      "inBounds": true
+    },
+    {
+      "text": "材质概念插画 · 陶、石与茶汤",
+      "x": 100,
+      "y": 1378,
+      "width": 242.078125,
+      "height": 22.5,
+      "font": "Noto, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "18px",
+      "lineHeight": "22.5px",
+      "inkAscent": 15.425999641418457,
+      "inkDescent": 1.494002342224121,
+      "inBounds": true
+    },
+    {
+      "text": "AI 生成 / 概念示意",
+      "x": 653.328125,
+      "y": 1378,
+      "width": 146.9375,
+      "height": 22.5,
+      "font": "Inter, Noto, sans-serif",
+      "fontWeight": "400",
+      "fontSize": "18px",
+      "lineHeight": "22.5px",
+      "inkAscent": 15.425999641418457,
+      "inkDescent": 1.9687509536743164,
+      "inBounds": true
+    }
+  ],
+  "image": {
+    "natural": [
+      1536,
+      1024
+    ],
+    "frame": [
+      1000,
+      602
+    ],
+    "objectFit": "cover",
+    "objectPosition": "50% 52%"
+  }
+}

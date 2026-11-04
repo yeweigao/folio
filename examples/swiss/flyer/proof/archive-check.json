@@ -1,0 +1,210 @@
+{
+  "original": {
+    "faces": {
+      ".identity": [
+        {
+          "familyName": "Noto Sans SC",
+          "postScriptName": "NotoSansSC-Bold",
+          "isCustomFont": true,
+          "glyphCount": 2
+        }
+      ],
+      ".brand-name": [
+        {
+          "familyName": "Inter Medium",
+          "postScriptName": "Inter-Medium",
+          "isCustomFont": true,
+          "glyphCount": 5
+        }
+      ],
+      ".copy": [
+        {
+          "familyName": "Noto Sans SC",
+          "postScriptName": "NotoSansSC-Regular",
+          "isCustomFont": true,
+          "glyphCount": 36
+        }
+      ],
+      ".translation": [
+        {
+          "familyName": "Inter Medium",
+          "postScriptName": "Inter-Medium",
+          "isCustomFont": true,
+          "glyphCount": 14
+        }
+      ]
+    },
+    "geometry": [
+      [
+        "岩序",
+        100,
+        80,
+        480,
+        240
+      ],
+      [
+        "YANXU",
+        100,
+        395,
+        141.09375,
+        50
+      ],
+      [
+        "茶席体验",
+        653.328125,
+        112,
+        246.65625,
+        30
+      ],
+      [
+        "TEA EXPERIENCE",
+        653.328125,
+        156,
+        246.65625,
+        23.75
+      ],
+      [
+        "概念推广样张",
+        653.328125,
+        224.75,
+        246.65625,
+        23.75
+      ],
+      [
+        "从触感，到回甘。",
+        100,
+        510,
+        640,
+        89.59375
+      ],
+      [
+        "以器物、茶汤与留白，展开一场感官练习。看茶色，闻茶香，细品一盏茶的层次。",
+        100,
+        635,
+        532,
+        84
+      ],
+      [
+        "材质概念插画 · 陶、石与茶汤",
+        100,
+        1378,
+        242.078125,
+        22.5
+      ],
+      [
+        "AI 生成 / 概念示意",
+        653.328125,
+        1378,
+        146.9375,
+        22.5
+      ]
+    ]
+  },
+  "archived": {
+    "faces": {
+      ".identity": [
+        {
+          "familyName": "Noto Sans SC",
+          "postScriptName": "NotoSansSC-Bold",
+          "isCustomFont": true,
+          "glyphCount": 2
+        }
+      ],
+      ".brand-name": [
+        {
+          "familyName": "Inter Medium",
+          "postScriptName": "Inter-Medium",
+          "isCustomFont": true,
+          "glyphCount": 5
+        }
+      ],
+      ".copy": [
+        {
+          "familyName": "Noto Sans SC",
+          "postScriptName": "NotoSansSC-Regular",
+          "isCustomFont": true,
+          "glyphCount": 36
+        }
+      ],
+      ".translation": [
+        {
+          "familyName": "Inter Medium",
+          "postScriptName": "Inter-Medium",
+          "isCustomFont": true,
+          "glyphCount": 14
+        }
+      ]
+    },
+    "geometry": [
+      [
+        "岩序",
+        100,
+        80,
+        480,
+        240
+      ],
+      [
+        "YANXU",
+        100,
+        395,
+        141.09375,
+        50
+      ],
+      [
+        "茶席体验",
+        653.328125,
+        112,
+        246.65625,
+        30
+      ],
+      [
+        "TEA EXPERIENCE",
+        653.328125,
+        156,
+        246.65625,
+        23.75
+      ],
+      [
+        "概念推广样张",
+        653.328125,
+        224.75,
+        246.65625,
+        23.75
+      ],
+      [
+        "从触感，到回甘。",
+        100,
+        510,
+        640,
+        89.59375
+      ],
+      [
+        "以器物、茶汤与留白，展开一场感官练习。看茶色，闻茶香，细品一盏茶的层次。",
+        100,
+        635,
+        532,
+        84
+      ],
+      [
+        "材质概念插画 · 陶、石与茶汤",
+        100,
+        1378,
+        242.078125,
+        22.5
+      ],
+      [
+        "AI 生成 / 概念示意",
+        653.328125,
+        1378,
+        146.9375,
+        22.5
+      ]
+    ]
+  },
+  "comparison": {
+    "sameGeometry": true,
+    "changedChannels": 13341,
+    "maxChannelDifference": 59,
+    "meanChannelDifference": 0.0010522778720996038
+  }
+}

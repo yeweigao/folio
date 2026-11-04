@@ -11,6 +11,7 @@ Read it once in full, then choose. Each choice is written into the skeleton; wha
 | The school: Swiss alone, or one dialect | Dialects, by the material | Overview, the invocation |
 | The governing hand | The dialect's hands; with none, the hands below | Overview, Method |
 | The grid system | Grammar, the roster | Layout, Grid system |
+| How groups separate and connect | Space or selective horizontal/vertical rules; for a leading link, shared support, exact target or ordered states, consider [the Thread](../../signature.md#the-thread--the-editorial-line-swiss-brochure-work) | Layout, Shapes |
 | A method per reader need | Methods; construction cards in [signature](../../signature.md) | Forms |
 | How images are made | Images, and the hand's materials | Images |
 | The breaks, where the content turns | Variations | Variations |
@@ -54,7 +55,7 @@ With no dialect, one governs and the others visit as single moves; with a dialec
   - *Diagonal*: one family of parallel angles organizes the field. For motion and rupture. Fact bands close inside the frame.
   - *Radial*: rings from one centre carry the type. For music, launches, one strong centre. Sequence maps to radius; bottom arcs read upright.
 - **Asymmetry is the default.** Flush left, ragged right; centering needs a reason.
-- **Rules, not boxes.** Group by space, rules or one field. No floating cards, shadows, glow or plates.
+- **Rules, not boxes.** Group by space, selective horizontal or vertical rules, or one field; keep the unused construction grid invisible. No floating cards, shadows, glow or plates.
 - **A field resets every foreground.** Each ground carries a complete palette.
 - **One module, few axes.** Half a module within a group, one between peers, two between sections.
 - **Furniture earns its place by function.** *Kopfzeile* locates, *Verzeichnis* serves lookup, *Bildlegende* ties evidence to source, *Kennzahl* shows a consequential quantity.
@@ -83,8 +84,8 @@ Cite a cell by name with its method: the work, the move as an imperative, its pa
 | The reader must | Text | Image | Data | Space and frame |
 |---|---|---|---|---|
 | Find the lead | **Scale contrast** (Müller-Brockmann, *Der Film*); **sign as anchor** (Max Bill); **grid alphabet** (Crouwel, *New Alphabet*); **calligram** | **Close-up** (Herbert Matter, *Pontresina*) | **Preattentive highlight**: the titled mark in accent, the rest grey | **Negative space**; **leader line**; **the Thread** |
-| See the groups | **Hanging indent**; **typographic color** | **Contact sheet** | **Ledger**: tabular figures on the decimal | **Gestalt proximity**; **Unigrid** (Vignelli); **exposed grid** (Crouwel) |
-| Follow the order | **Numbered hanging indent** (Bringhurst) | **Horizon line**; **photo-essay** (W. Eugene Smith) | **Timeline** | **Route line** (Vignelli and Noorda, *New York Subway Map*) |
+| See the groups | **Hanging indent**; **typographic color** | **Contact sheet** | **Ledger**: tabular figures on the decimal | **Gestalt proximity**; **selective rules**; **Unigrid** (Vignelli); **exposed grid** (Crouwel) |
+| Follow the order | **Numbered hanging indent** (Bringhurst) | **Horizon line**; **photo-essay** (W. Eugene Smith) | **Timeline** | **Route line** (Vignelli and Noorda, *New York Subway Map*); **the Thread: String** when the path carries a changing state |
 | Compare | **Parallel-column grid** | **Becher typology** | **Shared baseline**; **small multiples** (Tufte); **bullet graph** (Few); **Isotype** (Neurath and Arntz) | **Modular grid** (*Grid Systems*) |
 | Tell figure from ground | **Figure–ground** by value | **Cut-out** (Brodovitch); **color blocking** | **Reference band** | **Knockout** |
 | Know where they are | **Running heads**, **folios** | **Bildlegende** | **IBCS title**: scope, measure, unit, period | **Thumb index** |

@@ -13,7 +13,7 @@ A world has one DESIGN.md: its aesthetic system, no content. Each piece has a br
 - **Three tests per line.** Would a maker get it wrong without it? Is it the rule, not one result of it (a ratio, not 336)? Does it say what no other line says? A line that fails one goes; a skeleton of rules, not instances, has nothing to contradict.
 - **No rule against itself.** Every rule holds for Latin and Chinese, for one language or two, for every form; a translation in World is never banned in Forms. Where two rules meet, the file says which wins.
 - **Method before look.** The invocation opens it: school, hand, the work that carries the method, the method as an imperative, one ban. Then the method as process: the first move, the tools and materials, the procedure, and how each piece finds its own idea in its subject. Values read first teach a look.
-- **Images decided once.** Where they come from (photographed, hand-made, computed, or none), crop, treatment, credit.
+- **Images decided once.** Source, treatment and credit; how each image role meets the frame (full bleed, trim-connected panel or inset), what must survive the crop, and how proportions are preserved.
 - **Layout as construction, not coordinates.** The grid system named, with the rule that derives it from any format.
 - **Forms, one line each.** How each form this world uses is set, and its ban.
 - **Tokens derived, not inherited.** From the hand and the world, at the end as data. A role only if used, every role used. Every text-on-ground pair is listed under `pairs`, so contrast can be checked.
@@ -36,14 +36,14 @@ Amplitude: <full, or reduced: what is turned down, and why>.
 Anti-reference: <the default a maker reaches for with no school, which this world refuses; the school's own costume goes to Caricature>.
 
 ## Images
-<Source: photographed, hand-made, computed, or none. Crop, treatment, credit; what stands in, declared, until the real one exists.>
+<Source: photographed, hand-made, computed, or none; treatment and credit. For each image role, state whether it meets the trim or sits within it, and how that changes with format. Name what the crop must preserve; scale uniformly from the source ratio when fitting its frame. What stands in, declared, until the real one exists.>
 
 ## Layout
 Grid system: <one system from the theme's roster> — <why>.
-<The construction from W × H: unit, margins, tracks; how portrait, landscape and square differ; where the space the content does not need goes.>
+<The construction from W × H: unit, margins, tracks; how portrait, landscape and square differ; where unused space goes. Resolve clear gaps within paired type, between reading groups and between text and image, relative to the relevant type or module. Say which visible ink or image edges they separate; text-box clearance alone is not the measure.>
 
 ## Typography
-<Faces and lineage; the ramp as steps at S = 1000; the smallest reading size; CJK and Latin as one voice; figures.>
+<Faces and lineage; the ramp as size/weight steps at S = 1000; the smallest reading size; CJK and Latin as one voice; figures. Where display type leads, say how its scale and weight hold the field at thumbnail size. Recompose a long title within that hierarchy instead of shrinking its declared role to preserve empty space.>
 
 ## Colors
 <Each role: what it marks, the grounds it touches, where it never appears.>

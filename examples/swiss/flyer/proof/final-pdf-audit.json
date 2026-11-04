@@ -1,0 +1,110 @@
+{
+  "page_count": 1,
+  "page_points": [
+    0.0,
+    0.0,
+    419.5275573730469,
+    595.2755737304688
+  ],
+  "page_mm": [
+    147.99999940660263,
+    209.9999940660265
+  ],
+  "png_size": [
+    1748,
+    2480
+  ],
+  "png_dpi": [
+    300,
+    300
+  ],
+  "text_selectable": true,
+  "missing_text": [],
+  "pdf_fonts": [
+    [
+      10,
+      "ttf",
+      "Type0",
+      "AAAAAA+NotoSansSC-Bold",
+      "F4",
+      "Identity-H",
+      7
+    ],
+    [
+      15,
+      "ttf",
+      "Type0",
+      "BAAAAA+Inter-Medium",
+      "F5",
+      "Identity-H",
+      7
+    ],
+    [
+      20,
+      "ttf",
+      "Type0",
+      "CAAAAA+NotoSansSC-Regular",
+      "F6",
+      "Identity-H",
+      7
+    ],
+    [
+      25,
+      "ttf",
+      "Type0",
+      "DAAAAA+Inter-Regular",
+      "F9",
+      "Identity-H",
+      7
+    ]
+  ],
+  "ink_bounds_reference_units": {
+    "identity": [
+      104.0045766590389,
+      98.30663615560641,
+      569.1075514874142,
+      325.9954233409611
+    ],
+    "latin": [
+      101.1441647597254,
+      405.2974828375286,
+      237.87185354691076,
+      435.045766590389
+    ],
+    "statement": [
+      102.2883295194508,
+      521.441647597254,
+      688.1006864988558,
+      600.3890160183066
+    ],
+    "body_first_line": [
+      102.8604118993135,
+      644.725400457666,
+      613.1578947368421,
+      671.0411899313501
+    ],
+    "body_second_line": [
+      101.1441647597254,
+      686.725400457666,
+      557.6659038901602,
+      713.0411899313501
+    ]
+  },
+  "measured_gaps_reference_units": {
+    "identity_to_latin": 79.3020594965675,
+    "statement_to_body": 44.336384439359335,
+    "body_to_image": 46.95881006864988
+  },
+  "contrast": {
+    "primary_on_white": 17.863267489223915,
+    "muted_on_white": 5.689674608163102,
+    "white_on_charcoal": 17.863267489223915
+  },
+  "normalization": "Page box corrected to exact A5 without scaling live source content; charcoal footer extended to cover Chromium rounding gap.",
+  "text": "岩序\nYANXU\n茶席体验\nTEA EXPERIENCE\n概念推广样张\n从触感，到回甘。\n以器物、茶汤与留白，展开一场感官练习。\n看茶色，闻茶香，细品一盏茶的层次。\n材质概念插画 · 陶、石与茶汤\nAI 生成 / 概念示意\n",
+  "deliverable_hashes": {
+    "flyer.html": "33a8b579224e346c13195bcb135f52b34f09022bcd7c9d5cd20599f7283aafd9",
+    "flyer.png": "a5f351e53665b613587f558c5e88eba9f359ae760e2a3a5a8b3a0e5d3607b41c",
+    "flyer.pdf": "ee2b0ad4ab9826d88580dadafe8b33c0610b69a28d6b0a7f476e72def8e0aac3"
+  }
+}

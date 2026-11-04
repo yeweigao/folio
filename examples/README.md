@@ -1,6 +1,12 @@
 # Examples
 
-Nine design systems, one per dialect. Each DESIGN.md stands alone: give it to any agent with your own content and format, and it carries the master's method, how a new subject yields its idea, the forms any content needs, and every size relative to the format. No skeleton holds content.
+The Swiss mother tongue and nine dialect systems. Each DESIGN.md stands alone: give it to any agent with your own content and format, and it carries the master's method, how a new subject yields its idea, the forms any content needs, and every size relative to the format. No skeleton holds content.
+
+## Swiss mother tongue
+
+[Swiss · 岩序 / YANXU](swiss/README.md): Müller-Brockmann's grid and reading relationships, without a dialect. A sixteen-page tea identity portfolio and an independently made illustrated A5 flyer share one [DESIGN.md](swiss/DESIGN.md). The example includes finished previews, the flyer's live HTML, image provenance, licensed font subsets and its exact input snapshot. It demonstrates transfer to another format, not average generation reliability. The earlier `yanxu-line-world/` path redirects here.
+
+![The independent A5 flyer](swiss/flyer/flyer.png)
 
 ![The nine dialects on one programme](dialects.png)
 
@@ -25,3 +31,5 @@ Each folder also holds one poster for the same programme, The Grid, a museum's e
 ## One skeleton, two makers
 
 `series-ensemble-lumen/`: two concert posters from one skeleton. The second maker saw only the skeleton and its own brief.
+
+`swiss/`: the portfolio's revised heavy/light typography, optical gaps and edge images were transferred to a portrait flyer by a maker given only the skeleton and new content. Its [input snapshot](swiss/flyer/proof/DESIGN-input.md) and [independent review](swiss/flyer/proof/independent-review.md) preserve the scope of that evidence. The earlier tasting sheet predates this revision. The [world review](swiss/REVIEW.md) records both, along with the line experiments and their limits.

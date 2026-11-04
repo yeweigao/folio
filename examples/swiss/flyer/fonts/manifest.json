@@ -1,0 +1,37 @@
+{
+  "faces": [
+    {
+      "file": "NotoSansSC-Regular.woff2",
+      "source": "NotoSansSC-Regular.ttf",
+      "sourceSha256": "fd40df26d482c87db4bb7086079967c95914593c52a8f567aebc1e9f38bfa834",
+      "license": "OFL 1.1",
+      "scope": "Glyph subset for this fixed flyer; use full source faces for new content."
+    },
+    {
+      "file": "NotoSansSC-Bold.woff2",
+      "source": "NotoSansSC-Bold.ttf",
+      "sourceSha256": "cf6250e428f94b3f59dfd9adea0ec963a736d6be5d3ed538fb8bbd80ca81f74f",
+      "license": "OFL 1.1",
+      "scope": "Glyph subset for this fixed flyer; use full source faces for new content."
+    },
+    {
+      "file": "Inter-Regular.woff2",
+      "source": "Inter-Regular.ttf",
+      "sourceSha256": "c4192a3041948bd5e851b44b59ce7b4163b4da8ffec802fad77ee6d31cc5bce5",
+      "license": "OFL 1.1",
+      "scope": "Glyph subset for this fixed flyer; use full source faces for new content."
+    },
+    {
+      "file": "Inter-Medium.woff2",
+      "source": "Inter-Medium.ttf",
+      "sourceSha256": "f764e23db7306b36e255e551051da8823c3b1baec4eaec5b33f128c88761e126",
+      "license": "OFL 1.1",
+      "scope": "Glyph subset for this fixed flyer; use full source faces for new content."
+    }
+  ],
+  "sourceFamilies": {
+    "Inter": "https://github.com/rsms/inter",
+    "Noto Sans SC": "https://github.com/notofonts/noto-cjk"
+  },
+  "originalDelivery": "exports/yanxu-design-only-flyer/fonts/ (local full static and variable sources)"
+}

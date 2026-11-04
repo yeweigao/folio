@@ -1,0 +1,66 @@
+{
+  "design_input": {
+    "path": "../DESIGN.md (canonical world; input snapshot below preserves the tested revision)",
+    "snapshot": "proof/DESIGN-input.md",
+    "sha256": "f3843b18cd34e546507615a8924628c9198b7a7c25e3bf5c54f79cfa3bf283ea"
+  },
+  "asset": "assets/material-concept.png",
+  "type": "AI-generated original material concept illustration",
+  "generator": "built-in image_gen.imagegen",
+  "generation_date": "2026-11-04",
+  "prompt": "assets/image-prompt.txt",
+  "source_file": "/Users/apple/.codex/generated_images/01a1a578-0078-71b2-bf32-172a22db52d4/exec-d29ff2d1-7836-425b-b82f-473025c5f6ce.png",
+  "sha256": "e03654656c649c9cf6025087eede694a82683e0612dbdb354b4c0aba948c85f4",
+  "use": "Atmosphere / conceptual tea experience; no documentary, manufacture or location claim.",
+  "on_piece_caption": [
+    "材质概念插画 · 陶、石与茶汤",
+    "AI 生成 / 概念示意"
+  ],
+  "external_assets": "None. No web images or references used.",
+  "fonts": {
+    "source_directory": "/Users/apple/Documents/GitHub/folio/exports/yanxu-line-world/fonts",
+    "copied": [
+      "Inter-VF.ttf",
+      "Inter-Light.ttf",
+      "NotoSansSC-VF.ttf",
+      "NotoSansSC-Bold.ttf",
+      "inter-OFL.txt",
+      "noto-sans-sc-OFL.txt"
+    ],
+    "derived_instances": {
+      "Inter-Regular.ttf": "Inter-VF.ttf, wght=400, opsz=14, fully static; font names updated",
+      "Inter-Medium.ttf": "Inter-VF.ttf, wght=500, opsz=14, fully static; font names updated",
+      "NotoSansSC-Regular.ttf": "NotoSansSC-VF.ttf, wght=400, fully static; font names updated"
+    },
+    "example_distribution": "fonts/manifest.json; WOFF2 glyph subsets replace full TTFs for the archived specimen only."
+  },
+  "crop": {
+    "natural_pixels": [
+      1536,
+      1024
+    ],
+    "frame_reference_units": [
+      1000,
+      602
+    ],
+    "uniform_scale": 0.6510416666666666,
+    "scaled_dimensions": [
+      1000,
+      666.6666666666666
+    ],
+    "crop_anchor": "50% 52%",
+    "declared_subject": "Complete bowl rim and front stratified stone edge",
+    "visible_source_rectangle": [
+      0,
+      51.65056,
+      1536,
+      976.32256
+    ]
+  },
+  "generation_parameters": {
+    "transparent_background": false,
+    "reference_images": null,
+    "prompt_file": "assets/image-prompt.txt",
+    "model": "Not exposed by built-in tool"
+  }
+}
