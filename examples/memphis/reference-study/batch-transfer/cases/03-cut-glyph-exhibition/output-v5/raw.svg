@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="poster-title poster-desc">
+<title id="poster-title">共生设计展 — COEXIST DESIGN EXHIBITION</title>
+<desc id="poster-desc">虚构展览海报。共与生的白色切割字形在绿场相接，黑场承接粉色曲笔、紫色并列弯钩和橙色双碗腰体。日期、策展、展名与地点进入字形开口。</desc>
+<defs><!-- FONTS --></defs>
+<g id="continuous-fields">
+  <path id="green-field" fill="#07964F" d="M0 0H470V1200H0Z"/>
+  <path id="ink-field" fill="#050505" d="M470 0H900V1200H470Z"/>
+</g>
+<g id="shared-life-white-glyphs" fill="#FFFFFF">
+  <g id="glyph-gong" aria-label="共" data-module="410" data-stroke="92">
+    <path id="gong-uprights-and-split-crossbar" d="M82 20H174V265H276V20H368V110H430V202H368V265H430V357H20V265H82V202H20V110H82Z"/>
+    <path id="gong-left-curved-foot" d="M225 325A155 155 0 0 1 70 480H20V388H70A63 63 0 0 0 133 325Z"/>
+    <path id="gong-right-curved-foot" d="M225 325A155 155 0 0 0 380 480H430V388H380A63 63 0 0 1 317 325Z"/>
+  </g>
+  <path id="shared-left-spine" d="M20 388H108V861H20Z"/>
+  <g id="glyph-sheng" aria-label="生" data-module="410" data-stroke="92">
+    <path id="sheng-falling-curve" d="M151 720H245A141 141 0 0 1 104 861H22V770H104A50 50 0 0 0 154 720Z"/>
+    <path id="sheng-stem-and-three-crossbars" d="M224 720H318V800H430V891H318V950H430V1041H318V1089H430V1180H20V1089H224V1041H20V950H224V891H104V800H224Z"/>
+  </g>
+</g>
+<g id="segmented-right-glyphs">
+  <path id="pink-open-shared-shoulder" fill="#F3579D" data-module="400" data-stroke="88" d="M490 20H714A186 186 0 0 1 900 206V420H772V333H812V206A98 98 0 0 0 714 108H490Z"/>
+  <g id="joined-arc-teeth-and-nodes">
+    <path id="pink-quarter-tooth" fill="#F3579D" d="M490 333H570A80 80 0 0 1 490 413Z"/>
+    <path id="blue-quarter-joint" fill="#0759FD" d="M570 333H650V413A80 80 0 0 1 570 333Z"/>
+    <circle id="upper-node" fill="#FFFFFF" cx="683" cy="354" r="21"/>
+    <circle id="lower-node" fill="#FFF035" cx="683" cy="399" r="21"/>
+    <path id="short-bars" fill="#FFFFFF" d="M722 358H731.75V420H722Z M741.5 358H751.25V420H741.5Z M761 358H770.75V420H761Z"/>
+  </g>
+  <g id="purple-parallel-hooks" fill="#9B38ED" data-module="390" data-stroke="70">
+    <path id="hook-one" d="M480 520 H570 V699 A63 63 0 0 0 633 762 V832 A133 133 0 0 1 500 699 V547 H480 Z"/>
+    <path id="hook-two" d="M596 520 H686 V699 A63 63 0 0 0 749 762 V832 A133 133 0 0 1 616 699 V547 H596 Z"/>
+    <path id="hook-three" d="M712 520 H802 V699 A63 63 0 0 0 865 762 V832 A133 133 0 0 1 732 699 V547 H712 Z"/>
+  </g>
+  <path id="orange-double-bowl-waist" fill="#FF7829" fill-rule="evenodd" data-module="390" d="M490 851H880A117 117 0 0 1 763 968H742V1007A138 138 0 0 1 880 1145V1178H490V1145A138 138 0 0 1 628 1007V968H607A117 117 0 0 1 490 851Z M734 1118A49 22 0 1 0 636 1118A49 22 0 1 0 734 1118Z"/>
+</g>
+<g id="editable-facts">
+  <text id="curator" font-family="Study CJK, sans-serif" font-size="21.6" font-weight="400" fill="#050505"><tspan x="191" y="131">策展：</tspan><tspan x="202" y="169">林岚</tspan></text>
+  <g id="dates" font-family="Study Sans, sans-serif" font-size="43.2" font-weight="700" fill="#FFF035">
+    <text id="start-date" x="126" y="531">12 JUNE</text>
+    <text id="end-date" x="126" y="588">28 AUGUST</text>
+  </g>
+  <text id="cjk-title" x="117.5" y="691" font-family="Study CJK, sans-serif" font-size="68.4" font-weight="900" fill="#050505">共生设计展</text>
+  <text id="english-title" font-family="Study Sans, sans-serif" font-size="53.1" font-weight="900" fill="#FFFFFF" xml:space="preserve"><tspan x="486" y="174">COEXIST </tspan><tspan x="486" y="238">DESIGN </tspan><tspan x="486" y="302">EXHIBITION</tspan></text>
+  <text id="hours" x="500" y="483" font-family="Study Sans, sans-serif" font-size="43.2" font-weight="700" fill="#FFFFFF">09:00–18:00</text>
+  <text id="venue" x="35" y="929" font-family="Study CJK, sans-serif" font-size="21.6" font-weight="400" fill="#050505">城市设计馆</text>
+</g>
+</svg>

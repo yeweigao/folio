@@ -1,0 +1,34 @@
+{
+  "generate.py": {
+    "sha256": "02c3ed160a3aff7fe2357d81b53424672aeb1934350a8f61a34be2057d45bacd",
+    "bytes": 5901
+  },
+  "poster.svg": {
+    "sha256": "8fff98b7be1806bdf08255882ea2cb6c5904667daf3357ea69a579b3421f7266",
+    "bytes": 153445
+  },
+  "preview.png": {
+    "sha256": "74690f056b9307e82845612e658ac2c7c807d481814d9658569559dca2d4d377",
+    "bytes": 86369
+  },
+  "qa.cjs": {
+    "sha256": "8bca44941409d913aaf6793a69de9c9d1815f7c4b1f63c54e2e3bd7c609210de",
+    "bytes": 1377
+  },
+  "qa.json": {
+    "sha256": "d27db0a33242e45b3fea9ec3e2fb23169f7ec13173f19bb5a49d4fa6cb9cf519",
+    "bytes": 2520
+  },
+  "raw.svg": {
+    "sha256": "b9c4998f2be61240f3afa8c5b6c4aa46fc250067a77b08e030f3518b76893bc5",
+    "bytes": 15317
+  },
+  "uncertainties.md": {
+    "sha256": "90507cdeaa679e71ecd4889594b478ac8196f6a13a2aa128dbb58f13893263e1",
+    "bytes": 2010
+  },
+  "verification.json": {
+    "sha256": "1fdedfd780649b174c87bee6db020539f1e0046a12fc0004e2c21da25974a0ff",
+    "bytes": 253
+  }
+}

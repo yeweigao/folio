@@ -1,0 +1,26 @@
+{
+  "first-completed.svg": {
+    "sha256": "ec5b0660db508654bc333ce56c6a5e25d3340d010fac9eceb3ac4a02d57eef8e",
+    "bytes": 148331
+  },
+  "generate.py": {
+    "sha256": "86c1112c826638476e273bee7484bc5765ec594436bb4fef6906422c872d59c9",
+    "bytes": 4019
+  },
+  "poster.svg": {
+    "sha256": "ec5b0660db508654bc333ce56c6a5e25d3340d010fac9eceb3ac4a02d57eef8e",
+    "bytes": 148331
+  },
+  "preview.png": {
+    "sha256": "d62fb62f1ed30dc7caac83cb63c5dbdd0b1cc08e8c4b238061c8b62cc6b7b2bc",
+    "bytes": 52102
+  },
+  "raw.svg": {
+    "sha256": "8027ce303a68b18742ac94b15cf809b5aa58f44e6b6f5bca5388420833f7dbea",
+    "bytes": 3435
+  },
+  "uncertainties.md": {
+    "sha256": "cd9383d1f163ef1ff031461a490f81747298715abe384c0b01c1c16680a3f538",
+    "bytes": 961
+  }
+}

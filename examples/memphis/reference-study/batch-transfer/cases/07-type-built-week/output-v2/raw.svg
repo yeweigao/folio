@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="poster-title poster-desc">
+<title id="poster-title">TAIPEI DESIGN WEEK 2027</title>
+<desc id="poster-desc">October 4–10. Architecture, craft, food, music and public space. City Design Museum with Open City Lab. taipeidesignweek.example.</desc>
+<!-- FONTS -->
+<style>text{font-family:"Study Sans",sans-serif;font-kerning:none;font-variant-ligatures:none} </style>
+<rect x="0.000" y="0.000" width="900.000" height="1200.000" fill="#F6F0E5" />
+<g id="city" transform="translate(20.91713 218.00000) scale(0.991868 1)">
+<text x="0" y="0" font-size="261.15436" font-weight="900" fill="#1C1A1B">TAIPEI</text>
+</g>
+<g id="theme" transform="translate(17.37251 421.00000) scale(0.868145 1)">
+<text x="0" y="0" font-size="261.15436" font-weight="900" fill="#1C1A1B">DESIGN</text>
+</g>
+<g id="d-counter-square">
+<rect x="72.724" y="296.544" width="54.000" height="54.000" fill="#258CB4" />
+<path d="M72.724 296.544h54v54z" fill="#554699"/>
+</g>
+<g id="event-type" transform="translate(21.72693 624.00000) scale(1.069436 1)">
+<text x="0" y="0" font-size="261.15436" font-weight="900" fill="#1C1A1B">WEEK</text>
+</g>
+<rect x="392.111" y="507.705" width="83.732" height="40.550" fill="#F6F0E5" />
+<rect x="392.111" y="507.705" width="83.732" height="13.517" fill="#FF5205" />
+<rect x="392.111" y="521.221" width="83.732" height="13.517" fill="#FDC442" />
+<rect x="392.111" y="534.738" width="83.732" height="13.517" fill="#F5AAA4" />
+<defs><mask id="zero-substitution" maskUnits="userSpaceOnUse" x="-100" y="-1800" width="6200" height="2200">
+<rect x="-100" y="-1800" width="6200" height="2200" fill="white"/>
+<rect x="213.26174" y="-246.44295" width="234.52349" height="252.88591" fill="black"/>
+</mask></defs>
+<g id="year" transform="translate(16.62972 879.00000) scale(1.008436 1)">
+<text x="0" y="0" font-size="329.87919" font-weight="900" fill="#1C1A1B" mask="url(#zero-substitution)">2027</text>
+</g>
+<circle cx="349.9415" cy="759.0000" r="120" fill="#F54D05"/>
+<g id="programme" aria-label="Programme categories">
+<text x="29.000" y="935.000" font-size="22.000" font-weight="400" fill="#1C1A1B" >ARCHITECTURE</text>
+<text x="29.000" y="966.000" font-size="22.000" font-weight="400" fill="#1C1A1B" >CRAFT</text>
+<text x="337.000" y="935.000" font-size="22.000" font-weight="400" fill="#1C1A1B" >FOOD</text>
+<text x="337.000" y="966.000" font-size="22.000" font-weight="400" fill="#1C1A1B" >MUSIC</text>
+<text x="595.000" y="935.000" font-size="22.000" font-weight="400" fill="#1C1A1B" >PUBLIC SPACE</text>
+</g>
+<rect x="28.000" y="1000.000" width="844.000" height="1.500" fill="#1C1A1B" />
+<g id="event-facts">
+<text x="28.000" y="1053.000" font-size="31.500" font-weight="700" fill="#1C1A1B" >OCTOBER 4–10</text>
+<text x="28.000" y="1093.000" font-size="23.500" font-weight="700" fill="#1C1A1B" >TAIPEIDESIGNWEEK.EXAMPLE</text>
+<text x="28.000" y="1170.000" font-size="24.500" font-weight="400" fill="#1C1A1B" >City Design Museum</text>
+<text x="595.000" y="1170.000" font-size="24.500" font-weight="400" fill="#1C1A1B" >Open City Lab</text>
+</g>
+</svg>

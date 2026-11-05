@@ -1,0 +1,29 @@
+{
+  "exit_code": 0,
+  "unchanged_design_files": 10,
+  "before": {
+    "examples/memphis/reference-study/systems/01-report-tiles/DESIGN.md": "40dd4f54cdccf06c2bd5adfaf9dc25869f593f3c2af2e847cf2d131527efc397",
+    "examples/memphis/reference-study/systems/02-streetwise-collage/DESIGN.md": "9e40e7175fa77f4c198b4c6d5d14b0f29ab8d32d77bada89631c19272e189ae9",
+    "examples/memphis/reference-study/systems/03-cut-glyph-exhibition/DESIGN.md": "823240574af640b986468035ca84d01d1e5e9d72f99f6db6e674f6c014b2385d",
+    "examples/memphis/reference-study/systems/04-club-partitions/DESIGN.md": "7f69474e9d054a4d0b9353aee1c505b2432d5156a60a8868e4062c9c86657fc9",
+    "examples/memphis/reference-study/systems/05-culture-monsters/DESIGN.md": "b5063123e7a907989ede1022818d59faae086bf3efd55aa7d753ad4c740e6583",
+    "examples/memphis/reference-study/systems/06-hackathon-space/DESIGN.md": "e44be7d72581e87fb0b5c16e79df66238e0a2b7677e6f649780babbfedf2346c",
+    "examples/memphis/reference-study/systems/07-type-built-week/DESIGN.md": "effc98adee39db73d8375513e50358f07c1087705140e44f0cf4bbb45d23e483",
+    "examples/memphis/reference-study/systems/08-forest-character/DESIGN.md": "80aa8ac53a7c3d682a8c9a4f1d4162208c8d16dd3c635d8c7def5cf7bdde68a2",
+    "examples/memphis/reference-study/systems/09-isometric-letter-stage/DESIGN.md": "84082e504c0ff016732e10c5cf5ec6e4667496400d797d56bab3cb8eb3c850d7",
+    "examples/memphis/reference-study/systems/10-molly-scenery/DESIGN.md": "06cc558cee8df7cbd328eeaa83a022fb99cd72165289f1da15a795d1b4a0b86b"
+  },
+  "after": {
+    "examples/memphis/reference-study/systems/01-report-tiles/DESIGN.md": "40dd4f54cdccf06c2bd5adfaf9dc25869f593f3c2af2e847cf2d131527efc397",
+    "examples/memphis/reference-study/systems/02-streetwise-collage/DESIGN.md": "9e40e7175fa77f4c198b4c6d5d14b0f29ab8d32d77bada89631c19272e189ae9",
+    "examples/memphis/reference-study/systems/03-cut-glyph-exhibition/DESIGN.md": "823240574af640b986468035ca84d01d1e5e9d72f99f6db6e674f6c014b2385d",
+    "examples/memphis/reference-study/systems/04-club-partitions/DESIGN.md": "7f69474e9d054a4d0b9353aee1c505b2432d5156a60a8868e4062c9c86657fc9",
+    "examples/memphis/reference-study/systems/05-culture-monsters/DESIGN.md": "b5063123e7a907989ede1022818d59faae086bf3efd55aa7d753ad4c740e6583",
+    "examples/memphis/reference-study/systems/06-hackathon-space/DESIGN.md": "e44be7d72581e87fb0b5c16e79df66238e0a2b7677e6f649780babbfedf2346c",
+    "examples/memphis/reference-study/systems/07-type-built-week/DESIGN.md": "effc98adee39db73d8375513e50358f07c1087705140e44f0cf4bbb45d23e483",
+    "examples/memphis/reference-study/systems/08-forest-character/DESIGN.md": "80aa8ac53a7c3d682a8c9a4f1d4162208c8d16dd3c635d8c7def5cf7bdde68a2",
+    "examples/memphis/reference-study/systems/09-isometric-letter-stage/DESIGN.md": "84082e504c0ff016732e10c5cf5ec6e4667496400d797d56bab3cb8eb3c850d7",
+    "examples/memphis/reference-study/systems/10-molly-scenery/DESIGN.md": "06cc558cee8df7cbd328eeaa83a022fb99cd72165289f1da15a795d1b4a0b86b"
+  },
+  "output": "Preserved reviewed system: 01-report-tiles\nPreserved reviewed system: 02-streetwise-collage\nPreserved reviewed system: 03-cut-glyph-exhibition\nPreserved reviewed system: 04-club-partitions\nPreserved reviewed system: 05-culture-monsters\nPreserved reviewed system: 06-hackathon-space\nPreserved reviewed system: 07-type-built-week\nPreserved reviewed system: 08-forest-character\nPreserved reviewed system: 09-isometric-letter-stage\nPreserved reviewed system: 10-molly-scenery\nExtracted 10 design-system hypotheses from the reviewed reconstruction set.\n"
+}

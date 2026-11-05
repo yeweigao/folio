@@ -1,0 +1,22 @@
+[
+  {
+    "id": "02-streetwise-collage",
+    "exit_code": 0,
+    "output": "PASS  folio-check: all gates hold\n"
+  },
+  {
+    "id": "03-cut-glyph-exhibition",
+    "exit_code": 0,
+    "output": "PASS  folio-check: all gates hold\n"
+  },
+  {
+    "id": "05-culture-monsters",
+    "exit_code": 0,
+    "output": "PASS  folio-check: all gates hold\n"
+  },
+  {
+    "id": "07-type-built-week",
+    "exit_code": 0,
+    "output": "PASS  folio-check: all gates hold\n"
+  }
+]

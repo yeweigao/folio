@@ -41,7 +41,7 @@ A theme is a school with its masters, grammar and dialects; SKILL.md holds only 
 | [Polish Poster School](references/themes/swiss/dialects/polish-poster.md) | Interprets a cultural subject | One authored metaphor, two things in one hand-made form |
 | [Ulm](references/themes/swiss/dialects/ulm.md) | Coordinates a system of messages | Rules before cases; colour and pictograms as codes |
 | [Swiss Punk](references/themes/swiss/dialects/swiss-punk.md) | Provokes, still readable | The grid tested by rotation, layering, stepped type |
-| [Memphis](references/themes/swiss/dialects/memphis.md) | Delights | A field tiled whole with the subject's own kit, in clashing hues |
+| [Memphis](references/themes/swiss/dialects/memphis.md) | Delights | Clashing colour, a constructed vocabulary and fields made from tiles, partitions, letters or projected parts |
 | [Kenya Hara, ma 間](references/themes/swiss/dialects/ma.md) | Invites: one object, craft or ceremony | The charged interval, in space and in time |
 | [Swiss Brutal](references/themes/swiss/dialects/brutalist.md) | Specifies: structure is the content | Structure shown, material as found |
 
@@ -84,6 +84,8 @@ tests/            fixed briefs for judging changes
 CONTRIBUTING.md   laws, contracts and releases for changing the skill
 ```
 
+[Memphis reference study](examples/memphis/reference-study/README.md): 28 reconstructions, ten extracted worlds and independent same-world transfer tests.
+
 ## 中文
 
 Folio 是给 AI agent 用的设计 skill,覆盖 PPT、海报、网页、画布和手册,以具名流派和大师的做法做出大师水准(第一个主题是瑞士风格及其周边的现代主义流派),并把每个世界的审美骨架写成一份 DESIGN.md。
@@ -110,4 +112,4 @@ Folio 是给 AI agent 用的设计 skill,覆盖 PPT、海报、网页、画布�
 
 ## License
 
-MIT. No fonts are bundled; each keeps its own license.
+MIT for the skill and code. Example font assets retain their own licenses and accompanying notices; supplied reference works are not covered by this code license.

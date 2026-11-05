@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="poster-title poster-description">
+<title id="poster-title">集合散步 — CITY WALKS</title>
+<desc id="poster-description">在城里发现。Small discoveries, shared streets. 2027.05.14–05.16，河岸街区，一起走进街角的日常。</desc>
+<!-- FONTS -->
+<metadata>Native editable SVG. Text pairs: #19191D on #EAE8E6; #19191D on #FFDE00. Canvas 900 × 1200.</metadata>
+<defs>
+<clipPath id="top-bars"><rect x="300" y="0" width="150" height="150"/></clipPath>
+<clipPath id="top-grid"><rect x="450" y="0" width="450" height="150"/></clipPath>
+<clipPath id="slants"><rect x="150" y="150" width="300" height="150"/></clipPath>
+<clipPath id="right-bars"><rect x="750" y="600" width="150" height="300"/></clipPath>
+<clipPath id="bottom-slants"><rect x="0" y="900" width="150" height="300"/></clipPath>
+<clipPath id="lower-semis"><rect x="600" y="1050" width="300" height="150"/></clipPath>
+</defs>
+<rect x="0" y="0" width="900" height="1200" fill="#EAE8E6"/>
+<rect x="0" y="0" width="300" height="150" fill="#FFDE00"/>
+<polygon points="24,28 67,28 123,75 67,122 24,122 80,75" fill="#19191D"/>
+<polygon points="150,28 193,28 249,75 193,122 150,122 206,75" fill="#19191D"/>
+<rect x="300" y="0" width="150" height="150" fill="#19191D"/>
+<g clip-path="url(#top-bars)">
+<rect x="311" y="0" width="14" height="150" fill="#EAE8E6"/>
+<rect x="341" y="0" width="14" height="150" fill="#EAE8E6"/>
+<rect x="371" y="0" width="14" height="150" fill="#EAE8E6"/>
+<rect x="401" y="0" width="14" height="150" fill="#EAE8E6"/>
+<rect x="431" y="0" width="14" height="150" fill="#EAE8E6"/>
+</g>
+<rect x="450" y="0" width="450" height="150" fill="#008BCD"/>
+<g clip-path="url(#top-grid)">
+<path d="M450 0L450 150" fill="none" stroke="#19191D" stroke-width="1.5"/>
+<path d="M480 0L480 150" fill="none" stroke="#19191D" stroke-width="1.5"/>
+<path d="M510 0L510 150" fill="none" stroke="#19191D" stroke-width="1.5"/>
+<path d="M540 0L540 150" fill="none" stroke="#19191D" stroke-width="1.5"/>
+<path d="M570 0L570 150" fill="none" stroke="#19191D" stroke-width="1.5"/>
+<path d="M600 0L600 150" fill="none" stroke="#19191D" stroke-width="1.5"/>
+<path d="M630 0L630 150" fill="none" stroke="#19191D" stroke-width="1.5"/>
+<path d="M660 0L660 150" fill="none" stroke="#19191D" stroke-width="1.5"/>
+<path d="M690 0L690 150" fill="none" stroke="#19191D" stroke-width="1.5"/>
+<path d="M720 0L720 150" fill="none" stroke="#19191D" stroke-width="1.5"/>
+<path d="M750 0L750 150" fill="none" stroke="#19191D" stroke-width="1.5"/>
+<path d="M780 0L780 150" fill="none" stroke="#19191D" stroke-width="1.5"/>
+<path d="M810 0L810 150" fill="none" stroke="#19191D" stroke-width="1.5"/>
+<path d="M840 0L840 150" fill="none" stroke="#19191D" stroke-width="1.5"/>
+<path d="M870 0L870 150" fill="none" stroke="#19191D" stroke-width="1.5"/>
+<path d="M900 0L900 150" fill="none" stroke="#19191D" stroke-width="1.5"/>
+<path d="M450 0L900 0" fill="none" stroke="#19191D" stroke-width="1.5"/>
+<path d="M450 30L900 30" fill="none" stroke="#19191D" stroke-width="1.5"/>
+<path d="M450 60L900 60" fill="none" stroke="#19191D" stroke-width="1.5"/>
+<path d="M450 90L900 90" fill="none" stroke="#19191D" stroke-width="1.5"/>
+<path d="M450 120L900 120" fill="none" stroke="#19191D" stroke-width="1.5"/>
+<path d="M450 150L900 150" fill="none" stroke="#19191D" stroke-width="1.5"/>
+</g>
+<rect x="0" y="150" width="150" height="150" fill="#76258D"/>
+<path d="M75 168 C75 207 57 225 18 225 C57 225 75 243 75 282 C75 243 93 225 132 225 C93 225 75 207 75 168Z" fill="#FFDE00" />
+<rect x="150" y="150" width="300" height="150" fill="#F68CBC"/>
+<g clip-path="url(#slants)">
+<polygon points="65,300 102,300 202,150 165,150" fill="#19191D"/>
+<polygon points="129,300 166,300 266,150 229,150" fill="#19191D"/>
+<polygon points="193,300 230,300 330,150 293,150" fill="#19191D"/>
+<polygon points="257,300 294,300 394,150 357,150" fill="#19191D"/>
+<polygon points="321,300 358,300 458,150 421,150" fill="#19191D"/>
+<polygon points="385,300 422,300 522,150 485,150" fill="#19191D"/>
+<polygon points="449,300 486,300 586,150 549,150" fill="#19191D"/>
+</g>
+<rect x="450" y="150" width="150" height="300" fill="#087C4A"/>
+<polygon points="525,168 582,225 525,282 468,225" fill="#FFDE00"/>
+<polygon points="525,318 582,375 525,432 468,375" fill="#FFDE00"/>
+<rect x="600" y="150" width="300" height="150" fill="#F52B20"/>
+<rect x="600" y="300" width="300" height="150" fill="#76258D"/>
+<circle cx="750" cy="300" r="123" fill="#EAE8E6"/>
+<rect x="0" y="300" width="450" height="300" fill="#EAE8E6"/>
+<text x="24" y="411" font-family="Study CJK" font-size="100" font-weight="900" fill="#19191D">集合散步</text>
+<text x="26" y="468" font-family="Study CJK" font-size="41" font-weight="700" fill="#19191D">在城里发现</text>
+<text x="27" y="542" font-family="Study Condensed" font-size="68" font-weight="700" fill="#19191D" letter-spacing="1.0">CITY WALKS</text>
+<text x="27" y="577" font-family="Study Sans" font-size="21" font-weight="400" fill="#19191D">Small discoveries, shared streets.</text>
+<rect x="450" y="450" width="450" height="150" fill="#087C4A"/>
+<polygon points="580,478 537,478 481,525 537,572 580,572 524,525" fill="#F68CBC"/>
+<polygon points="718,478 675,478 619,525 675,572 718,572 662,525" fill="#F68CBC"/>
+<polygon points="856,478 813,478 757,525 813,572 856,572 800,525" fill="#F68CBC"/>
+<rect x="0" y="600" width="150" height="300" fill="#F52B20"/>
+<path d="M18 675 A57 57 0 0 1 132 675Z" fill="#EAE8E6" />
+<path d="M18 825 A57 57 0 0 1 132 825Z" fill="#EAE8E6" />
+<rect x="150" y="600" width="300" height="150" fill="#FFDE00"/>
+<polygon points="225,618 282,675 225,732 168,675" fill="#19191D"/>
+<polygon points="375,618 432,675 375,732 318,675" fill="#19191D"/>
+<rect x="150" y="750" width="300" height="150" fill="#008BCD"/>
+<circle cx="300" cy="825" r="57" fill="#EAE8E6"/>
+<rect x="450" y="600" width="300" height="300" fill="#F68CBC"/>
+<path d="M450 600L450 900" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M475 600L475 900" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M500 600L500 900" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M525 600L525 900" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M550 600L550 900" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M575 600L575 900" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M600 600L600 900" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M625 600L625 900" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M650 600L650 900" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M675 600L675 900" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M700 600L700 900" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M725 600L725 900" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M750 600L750 900" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M450 600L750 600" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M450 625L750 625" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M450 650L750 650" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M450 675L750 675" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M450 700L750 700" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M450 725L750 725" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M450 750L750 750" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M450 775L750 775" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M450 800L750 800" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M450 825L750 825" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M450 850L750 850" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M450 875L750 875" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<path d="M450 900L750 900" fill="none" stroke="#19191D" stroke-width="1.25"/>
+<rect x="750" y="600" width="150" height="300" fill="#EAE8E6"/>
+<g clip-path="url(#right-bars)">
+<rect x="750" y="600" width="20" height="300" fill="#19191D"/>
+<rect x="788" y="600" width="20" height="300" fill="#19191D"/>
+<rect x="826" y="600" width="20" height="300" fill="#19191D"/>
+<rect x="864" y="600" width="20" height="300" fill="#19191D"/>
+</g>
+<rect x="0" y="900" width="150" height="300" fill="#76258D"/>
+<g clip-path="url(#bottom-slants)">
+<polygon points="0,774 0,809 150,909 150,874" fill="#FFDE00"/>
+<polygon points="0,840 0,875 150,975 150,940" fill="#FFDE00"/>
+<polygon points="0,906 0,941 150,1041 150,1006" fill="#FFDE00"/>
+<polygon points="0,972 0,1007 150,1107 150,1072" fill="#FFDE00"/>
+<polygon points="0,1038 0,1073 150,1173 150,1138" fill="#FFDE00"/>
+<polygon points="0,1104 0,1139 150,1239 150,1204" fill="#FFDE00"/>
+<polygon points="0,1170 0,1205 150,1305 150,1270" fill="#FFDE00"/>
+<polygon points="0,1236 0,1271 150,1371 150,1336" fill="#FFDE00"/>
+</g>
+<rect x="150" y="900" width="300" height="300" fill="#087C4A"/>
+<circle cx="300" cy="1050" r="132" fill="#F68CBC"/>
+<rect x="450" y="900" width="450" height="150" fill="#FFDE00"/>
+<text x="477" y="939" font-family="Study Sans" font-size="25" font-weight="700" fill="#19191D">2027.05.14–05.16</text>
+<text x="477" y="978" font-family="Study CJK" font-size="25" font-weight="700" fill="#19191D">河岸街区</text>
+<text x="477" y="1017" font-family="Study CJK" font-size="25" font-weight="700" fill="#19191D">一起走进街角的日常</text>
+<rect x="450" y="1050" width="150" height="150" fill="#F52B20"/>
+<path d="M525 1068 C525 1107 507 1125 468 1125 C507 1125 525 1143 525 1182 C525 1143 543 1125 582 1125 C543 1125 525 1107 525 1068Z" fill="#EAE8E6" />
+<rect x="600" y="1050" width="300" height="150" fill="#19191D"/>
+<g clip-path="url(#lower-semis)">
+<path d="M600 1050 A150 150 0 0 0 900 1050Z" fill="#EAE8E6" />
+</g>
+</svg>

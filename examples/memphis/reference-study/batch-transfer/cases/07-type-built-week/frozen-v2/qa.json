@@ -1,0 +1,130 @@
+{
+  "width": "900",
+  "height": "1200",
+  "fonts": "loaded",
+  "text": [
+    {
+      "text": "TAIPEI",
+      "box": {
+        "x": 20.917129516601562,
+        "y": -35.026702880859375,
+        "width": 863.2197875976562,
+        "height": 316.28338623046875
+      }
+    },
+    {
+      "text": "DESIGN",
+      "box": {
+        "x": 17.37251091003418,
+        "y": 167.90200805664062,
+        "width": 865.24267578125,
+        "height": 316.1054992675781
+      }
+    },
+    {
+      "text": "WEEK",
+      "box": {
+        "x": 21.726930618286133,
+        "y": 370.9333190917969,
+        "width": 856.5433959960938,
+        "height": 315.8503723144531
+      }
+    },
+    {
+      "text": "2027",
+      "box": {
+        "x": 16.62972068786621,
+        "y": 559.35107421875,
+        "width": 864.4675903320312,
+        "height": 399.31219482421875
+      }
+    },
+    {
+      "text": "ARCHITECTURE",
+      "box": {
+        "x": 29,
+        "y": 914,
+        "width": 169.125,
+        "height": 26
+      }
+    },
+    {
+      "text": "CRAFT",
+      "box": {
+        "x": 29,
+        "y": 945,
+        "width": 72.609375,
+        "height": 26
+      }
+    },
+    {
+      "text": "FOOD",
+      "box": {
+        "x": 337,
+        "y": 914,
+        "width": 62.515625,
+        "height": 26
+      }
+    },
+    {
+      "text": "MUSIC",
+      "box": {
+        "x": 337,
+        "y": 945,
+        "width": 72.34375,
+        "height": 26
+      }
+    },
+    {
+      "text": "PUBLIC SPACE",
+      "box": {
+        "x": 595,
+        "y": 914,
+        "width": 158.0625,
+        "height": 26
+      }
+    },
+    {
+      "text": "OCTOBER 4\u201310",
+      "box": {
+        "x": 28,
+        "y": 1022,
+        "width": 232.875,
+        "height": 39
+      }
+    },
+    {
+      "text": "TAIPEIDESIGNWEEK.EXAMPLE",
+      "box": {
+        "x": 28,
+        "y": 1070,
+        "width": 356.25,
+        "height": 29
+      }
+    },
+    {
+      "text": "City Design Museum",
+      "box": {
+        "x": 28,
+        "y": 1146,
+        "width": 239.515625,
+        "height": 30
+      }
+    },
+    {
+      "text": "Open City Lab",
+      "box": {
+        "x": 595,
+        "y": 1146,
+        "width": 164.515625,
+        "height": 30
+      }
+    }
+  ],
+  "validation": {
+    "all_fixed_facts_live_text": true,
+    "embedded_font_faces": 3,
+    "native_vector_only": true,
+    "render_visually_inspected": true
+  }
+}

@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="poster-title poster-description">
+<title id="poster-title">TTXC 2027 — 城市游乐场 · City Play!</title>
+<desc id="poster-description">A culture and technology event poster with three original monster characters, striped and radiating pattern tiles, a white bilingual theme band, and red event information panel.</desc>
+<!-- FONTS -->
+<defs>
+<clipPath id="clip-bend"><rect x="0" y="0" width="340" height="300"/></clipPath>
+<clipPath id="clip-rays"><rect x="340" y="0" width="335" height="200"/></clipPath>
+<clipPath id="clip-teeth"><rect x="675" y="0" width="225" height="305"/></clipPath>
+<clipPath id="clip-stripes"><rect x="0" y="300" width="340" height="200"/></clipPath>
+<clipPath id="clip-jelly"><rect x="340" y="200" width="335" height="300"/></clipPath>
+<clipPath id="clip-facets"><rect x="675" y="305" width="225" height="195"/></clipPath>
+</defs>
+<rect x="0" y="0" width="900" height="1200" fill="#FFFFFF" />
+<g clip-path="url(#clip-bend)">
+<rect x="0" y="0" width="340" height="300" fill="#1768F6" />
+<path d="M-27 264 C-11 237 13 210 42 197 C76 180 67 140 64 106 C59 59 94 15 148 16 C199 17 211 56 233 83 C255 110 283 95 314 111 C350 129 363 168 337 194 C308 224 283 199 260 204 C226 211 239 254 203 275 C161 302 132 276 112 249 C89 219 76 225 59 245 C34 274 2 292-27 264 Z" fill="#FD8CE5" />
+<ellipse cx="158" cy="110" rx="45" ry="56" fill="#FFFFFF" transform="rotate(-17 158 110)"/>
+<ellipse cx="171" cy="113" rx="20" ry="31" fill="#030303" transform="rotate(-17 171 113)"/>
+<ellipse cx="177" cy="103" rx="5" ry="8" fill="#FFFFFF" transform="rotate(-17 177 103)"/>
+<path d="M141 191 C157 207 184 206 199 188" fill="none" stroke="#030303" stroke-width="12" stroke-linecap="round"/>
+</g>
+<g clip-path="url(#clip-rays)">
+<rect x="340" y="0" width="335" height="200" fill="#FFE42C" />
+<path d="M530.50 100.32 L742.48 103.29" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M530.22 103.59 L739.62 136.70" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M529.48 106.79 L732.03 169.36" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M528.29 109.85 L719.88 200.61" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M526.67 112.70 L703.40 229.81" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M524.67 115.30 L682.93 256.36" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M522.32 117.59 L658.89 279.74" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M519.66 119.52 L631.77 299.45" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M516.76 121.05 L602.12 315.11" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M513.67 122.16 L570.54 326.39" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M510.45 122.81 L537.68 333.05" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M507.18 123.00 L504.21 334.98" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M503.91 122.72 L470.80 332.12" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M500.71 121.98 L438.14 324.53" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M497.65 120.79 L406.89 312.38" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M494.80 119.17 L377.69 295.90" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M492.20 117.17 L351.14 275.43" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M489.91 114.82 L327.76 251.39" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M487.98 112.16 L308.05 224.27" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M486.45 109.26 L292.39 194.62" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M485.34 106.17 L281.11 163.04" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M484.69 102.95 L274.45 130.18" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M484.50 99.68 L272.52 96.71" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M484.78 96.41 L275.38 63.30" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M485.52 93.21 L282.97 30.64" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M486.71 90.15 L295.12 -0.61" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M488.33 87.30 L311.60 -29.81" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M490.33 84.70 L332.07 -56.36" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M492.68 82.41 L356.11 -79.74" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M495.34 80.48 L383.23 -99.45" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M498.24 78.95 L412.88 -115.11" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M501.33 77.84 L444.46 -126.39" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M504.55 77.19 L477.32 -133.05" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M507.82 77.00 L510.79 -134.98" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M511.09 77.28 L544.20 -132.12" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M514.29 78.02 L576.86 -124.53" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M517.35 79.21 L608.11 -112.38" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M520.20 80.83 L637.31 -95.90" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M522.80 82.83 L663.86 -75.43" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M525.09 85.18 L687.24 -51.39" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M527.02 87.84 L706.95 -24.27" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M528.55 90.74 L722.61 5.38" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M529.66 93.83 L733.89 36.96" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M530.31 97.05 L740.55 69.82" fill="none" stroke="#030303" stroke-width="3.3"/>
+<path d="M507.50,24.00 L513.98,77.93 L548.59,36.06 L524.88,84.94 L576.63,68.43 L530.27,96.73 L582.73,110.82 L528.42,109.55 L564.94,149.77 L519.93,119.35 L528.91,172.92 L507.50,123.00 L486.09,172.92 L495.07,119.35 L450.06,149.77 L486.58,109.55 L432.27,110.82 L484.73,96.73 L438.37,68.43 L490.12,84.94 L466.41,36.06 L501.02,77.93 Z" fill="#FD8CE5" />
+<ellipse cx="507.5" cy="100" rx="10" ry="10" fill="#030303" />
+</g>
+<g clip-path="url(#clip-teeth)">
+<rect x="675" y="0" width="225" height="305" fill="#FD8CE5" />
+<path d="M673 299 L690 266 C680 245 671 236 677 219 L692 197 C678 177 684 161 699 148 L690 123 L711 111 C703 87 705 65 723 44 L737 58 C741 20 762 2 780-12 L792 32 C811 17 830 22 842 45 L861 23 C872 39 878 60 873 80 L902 75 L896 115 C919 133 921 160 909 184 L925 210 L905 228 C911 251 903 269 888 279 L905 310 L852 316 L825 288 L801 312 L766 296 L735 320 Z" fill="#030303" />
+<ellipse cx="745" cy="108" rx="19" ry="30" fill="#FFFFFF" transform="rotate(-11 745 108)"/>
+<ellipse cx="745" cy="115" rx="9" ry="15" fill="#030303" />
+<ellipse cx="840" cy="119" rx="28" ry="22" fill="#FFFFFF" transform="rotate(13 840 119)"/>
+<ellipse cx="830" cy="123" rx="12" ry="12" fill="#030303" />
+<path d="M711 179 Q789 151 872 185 L863 241 Q785 269 718 233 Z" fill="#FF354A" />
+<path d="M716 178 L744 171 L742 199 L725 201 Z M759 168 L786 166 L784 198 L764 197 Z M804 168 L830 172 L823 202 L805 200 Z M847 176 L870 184 L862 208 L844 202 Z" fill="#FFFFFF" />
+<path d="M726 239 L747 246 L751 222 L735 218 Z M771 251 L796 253 L793 224 L775 223 Z M817 250 L840 245 L834 219 L818 222 Z M852 242 L865 237 L864 220 L852 223 Z" fill="#FFFFFF" />
+</g>
+<g clip-path="url(#clip-stripes)">
+<rect x="0" y="300" width="340" height="200" fill="#FF354A" />
+<path d="M-230 504 L-20 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M-206 504 L4 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M-182 504 L28 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M-158 504 L52 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M-134 504 L76 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M-110 504 L100 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M-86 504 L124 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M-62 504 L148 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M-38 504 L172 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M-14 504 L196 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M10 504 L220 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M34 504 L244 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M58 504 L268 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M82 504 L292 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M106 504 L316 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M130 504 L340 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M154 504 L364 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M178 504 L388 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M202 504 L412 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M226 504 L436 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M250 504 L460 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M274 504 L484 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M298 504 L508 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M322 504 L532 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M346 504 L556 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M370 504 L580 294" fill="none" stroke="#030303" stroke-width="9"/>
+<path d="M394 504 L604 294" fill="none" stroke="#030303" stroke-width="9"/>
+</g>
+<g clip-path="url(#clip-jelly)">
+<rect x="340" y="200" width="335" height="300" fill="#FFE42C" />
+<path d="M389 352 C379 391 409 405 389 438 C371 469 381 488 398 511" fill="none" stroke="#1768F6" stroke-width="24" stroke-linecap="round"/>
+<path d="M439 365 C457 396 417 420 439 448 C459 473 442 492 435 514" fill="none" stroke="#1768F6" stroke-width="24" stroke-linecap="round"/>
+<path d="M501 367 C488 403 519 419 500 448 C483 473 504 489 505 514" fill="none" stroke="#1768F6" stroke-width="24" stroke-linecap="round"/>
+<path d="M558 363 C576 396 541 416 561 448 C581 478 565 489 554 513" fill="none" stroke="#1768F6" stroke-width="24" stroke-linecap="round"/>
+<path d="M611 350 C598 390 626 409 607 440 C587 471 621 493 622 511" fill="none" stroke="#1768F6" stroke-width="24" stroke-linecap="round"/>
+<path d="M362 360 C366 292 408 228 483 222 C560 214 629 260 653 356 C639 376 622 379 605 363 C585 384 567 385 548 368 C530 386 510 386 492 368 C472 385 451 383 434 365 C411 381 392 379 376 363 Z" fill="#1768F6" />
+<ellipse cx="440" cy="292" rx="13" ry="25" fill="#FFFFFF" transform="rotate(12 440 292)"/>
+<ellipse cx="439" cy="296" rx="5" ry="17" fill="#030303" transform="rotate(12 439 296)"/>
+<ellipse cx="559" cy="293" rx="13" ry="25" fill="#FFFFFF" transform="rotate(-12 559 293)"/>
+<ellipse cx="560" cy="297" rx="5" ry="17" fill="#030303" transform="rotate(-12 560 297)"/>
+<ellipse cx="500" cy="329" rx="31" ry="39" fill="#030303" />
+<ellipse cx="500" cy="338" rx="13" ry="20" fill="#FD8CE5" />
+</g>
+<g clip-path="url(#clip-facets)">
+<rect x="675" y="305" width="225" height="195" fill="#1768F6" />
+<path d="M784 312 L875 359 L875 448 L784 496 L693 448 L693 359 Z" fill="#FD8CE5" />
+<path d="M784 312 L784 404 L875 359 Z" fill="#030303" />
+<path d="M784 404 L875 448 L784 496 Z" fill="#030303" />
+<path d="M784 404 L693 448 L693 359 Z" fill="#030303" />
+<path d="M784 337 L850 371 L850 434 L784 470 L718 434 L718 371 Z" fill="none" stroke="#1768F6" stroke-width="8"/>
+<ellipse cx="784" cy="404" rx="18" ry="18" fill="#FFE42C" />
+</g>
+<rect x="0" y="500" width="900" height="240" fill="#FFFFFF" />
+<text x="26" y="610" font-family="Study CJK" font-size="112" font-weight="900" fill="#030303" >城市游乐场</text>
+<text x="26" y="717" font-family="Study Sans" font-size="100" font-weight="900" fill="#030303" letter-spacing="-3">City Play!</text>
+<text x="626" y="665" font-family="Study Sans" font-size="24" font-weight="700" fill="#030303"><tspan x="626" y="665">ART × SOUND × </tspan><tspan x="626" y="698">TECHNOLOGY</tspan></text>
+<rect x="0" y="740" width="900" height="460" fill="#FF354A" />
+<text x="25" y="876" font-family="Study Sans" font-size="150" font-weight="900" fill="#030303" letter-spacing="-1.2">TTXC 2027</text>
+<text x="30" y="935" font-family="Study CJK" font-size="35" font-weight="700" fill="#030303" letter-spacing="1">一起把城市玩出新花样</text>
+<text x="26" y="1062" font-family="Study Sans" font-size="110" font-weight="900" fill="#030303" letter-spacing="-2">2027.09.10–12</text>
+<text x="30" y="1132" font-family="Study CJK" font-size="43" font-weight="900" fill="#030303" >海岸文化中心</text>
+<text x="31" y="1173" font-family="Study Sans" font-size="29" font-weight="700" fill="#030303" letter-spacing="-.3">Coast Culture Center</text>
+</svg>

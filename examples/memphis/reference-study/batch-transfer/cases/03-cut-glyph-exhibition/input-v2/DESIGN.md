@@ -1,0 +1,94 @@
+# 展览 · 切割字形与双栏色场
+
+以大圆弧构字、深切负形和嵌入字形凹口的展览事实构成双场海报。
+
+> Use alone: 先读 Overview、Shapes 与 Colors，再建立 Layout。S = 1000 是短边参考尺度；尺寸乘实际短边 / 1000，由栏宽推导的字形尺寸不再缩放。展示构字与阅读活字分工，长内容先扩大切口或增页，不压扁圆弧或缩小事实。
+
+## Overview
+Memphis-derived exhibition graphics, curved cut-letter construction — Build the exhibition's subject as joined curved masses and deep cuts that also hold its facts; never place ordinary block letters between separate ornament and footer bands. 原作者不详，不作个人归属。
+World: 用于以少量主题字开启观看、以展名和参与事实完成辨认的设计与文化展览。每件保留 green／ink 双场、跨栏尺度的构字、多色大笔画和字内事实；主题决定提取的字、笔画连接与切口位置。
+Method: 从主题提取两个至四个识别字或字母组，保留关键笔画关系。先给策展或署名留纵向深槽、给日期或时间留横向断笔区，再以大半径外弧、厚直笔和空洞造字。让展名、地点沿字的平口与凹边排列；固定文字仍用活字完整写出，不能只靠抽象字形传达事实。
+Amplitude: 大字形承担整个双场的结构；短内容放大曲面与切口，密内容扩张负形或分成系列，不能把构字缩为顶边装饰。
+Anti-reference: 两个普通等粗白字占中段，上排彩色半圆、下排独立资料，彼此没有构造关系。
+
+## Images
+用原生矢量路径构字与几何、活字设置事实，不用照片或截图。构字可接栏边、互相咬合或在画幅边裁切，关键字形骨架与事实必须完整。整体等比缩放；换幅时重连笔画与负形，不横向拉伸圆弧。主构字和补充弧块用同一半径与笔宽体系。
+
+## Layout
+Grid system: Hierarchical — 将 W 分成两条近等宽连续色场，栏宽比在 0.9:1–1.1:1；一场 green、一场 ink，不留白沟槽。栏宽 c 定义各自字形模块 g = 0.80–0.95c。
+大字形在每栏承接至少一半可用高度，允许一至两个构字上下接续；大弧、断笔区与直笔沿栏边接壤。横幅仍并置双场，通过上下连接减少字组；竖幅延伸构字，方幅扩大转弯与内凹，不改成等大图案砖。
+至少两类事实进入构字负形：一组沿纵向深凹排成窄栏，一组嵌入横向断笔或平口弧下。展名可放在另一个朝外开口的宽凹处；事实不统一退到完整大字下方。负形须由相邻笔画围出至少两边，不能给字旁另画资料卡充当切口。
+先量活字实际墨迹：文字距切口边至少 12，组内净距 12，不同事实组净距至少 24。槽宽至少为该组最长行墨迹宽加 24；放不下时加深或加宽切口并重构字形，不移除事实。阅读区只露单一底色。
+允许一条窄平面框与字形错开，框线厚 4–6、距画幅边 20–30；框不穿事实、不形成卡片，字形接近边缘时先让框退让。
+
+## Typography
+主展示字按 Shapes 构造路径，不调用现成字库放大，不以描边或斜切笔端冒充构字。完整展名另用活字确认抽象字形的读法。
+阅读文字的 Study Sans 映射 Inter 400/700/900；Study CJK 映射 Noto Sans SC variable，使用 400/700/900。均为 SIL OFL 1.1；来源与授权见 ../../assets/fonts.json，新内容嵌入全部所需字形。Latin 保持正常宽度，不用窄体挤进槽中。
+中文展名 76／900，Latin 展名 59／900，日期与时间 48／700，事实与署名 24／400、行高 1.25；这是最小阅读级。中英文在同一负形共享可见边界，不强求同字号。纵向署名按读序逐行排，Latin 可整体旋转，不把字母逐个竖堆。
+长展名在宽凹处换行、保留文字级别；主要识别字形尺寸只由 g 与笔画结构推导，不叠加固定字号。
+
+## Colors
+green `#07964F` 与 ink `#050505` 是连续背景场。paper `#FFFFFF` 是 green 上的浅色主构字及 ink 上的小字；pink `#F3579D` 是 ink 上的另一主构字；purple `#9B38ED` 和 orange `#FF7829` 分别承担 ink 上的大弯笔、杯形或延伸笔。至少三个前景色进入主构字，其中必须包含 paper 与 pink，并让 purple 或 orange 承担整段主要笔画；不把多色全部集中在装饰带。
+blue `#0759FD` 只承担弧形与直笔间的紧凑结构填块；yellow `#FFF035` 承担窄外框、节点和大级别强调文字。小圆与短条沿用主字前景色，不另建色彩主题。pink 构字跨入 green 场时须有与 ink 场相接的 ink 承底，保持字形与底色分离。
+green 内小字用 ink，paper 与 yellow 只供大字；ink 内阅读文字用 paper，主要构字可用 paper／pink／purple／orange。事实不放在花纹或跨色切口上。实际阅读配对至少 4.5:1，大字至少 3:1；大字在最终输出至少为普通字 24px 或粗字 18.7px。paper-on-green 不作小字配对，pink-on-green 不作任何文字配对。
+
+## Shapes
+用局部字形模块 g 与笔厚 t = 0.22–0.28g 建造，不规定特定字的页面坐标。
+- 外轮廓：每个主构字至少有一个半径 0.25–0.50g 的四分之一圆转弯或半圆端；圆弧须改变整段笔画方向。厚直笔与弧相切连接，不用少量切角或给普通方字统一加小圆角。
+- 内负形：至少一个宽 0.18–0.30g、深不小于 0.35g 的槽或开口，与外轮廓形成明显厚薄差。内弯半径 0.10–0.22g，部分内角可平切，使圆外轮廓与直内槽共存。不要把全部内腔画成封闭矩形洞。
+- 构字关系：按主题字的识别笔画连接两至四个块；至少一条曲面笔与直笔共享边界，至少一个断笔直接容纳事实。外弧、内孔、深槽共同决定骨架，不能用同粗直条拼普通字后再挂弧块。
+- 直立半圆柱：宽 0.5g、高 g，一边为直径平切边，另一边为半径 0.5g 的半圆，直立连接邻笔；不能旋转成对角透镜叶。
+- 半圆碗：宽 g、高 0.5g，直口与主体字笔齐平；可接厚 t 的直颈或下弧，承担一段主字笔画。
+- 弧齿与节点：四分之一圆按边长 0.18–0.22g 重复；圆点直径 0.10–0.14g，短条宽 0.025g、节距 0.05g。只沿主字切边或转弯使用，不形成与正文分离的满幅顶栏。
+大块平填，无描边、渐变或阴影；每个弧与内槽保留可编辑路径。
+
+## Forms
+Cover / Exhibit：主题构字为主形，展名与参与事实进入凹口；不把普通字夹在顶饰与页脚之间。
+Statement：一个构字连接两场，短主张嵌入主要断笔；不增加并列口号抢读。
+Collection / Reference：多个开口负形按读序承接事实，各组共享字形边界；密度超出可读槽宽时增页，不把字缩成边注。
+Sequence：曲面笔与切口跨页接续，每页只改变内容需要的连接；不固定复用某字或弧块坐标。
+
+## Variations
+可交换双场左右关系、改变字组数量与上下连接；可将直立半圆柱或碗形接成主要笔画。保留近等宽双场、大圆弧／深槽反差、主构字多色分工及至少两类字内事实。只有一个短主题词时，以其不同识别笔画跨场连接，完整词仍由活字写明。
+
+## Do's and Don'ts
+缩略图先见接近栏宽的多色曲面字形；灰度中仍见弧面、深槽与直笔咬合。放大检查策展或署名与日期确实嵌在字的开口中，文字不触笔画、事实完整。不得让主构字全白、多色只留在小装饰。
+Caricature: 绿黑双底加一排彩色半圆，却以普通方字和独立页脚承担所有信息。
+
+## Tokens
+
+```yaml
+colors:
+  paper: "#FFFFFF"
+  ink: "#050505"
+  green: "#07964F"
+  pink: "#F3579D"
+  yellow: "#FFF035"
+  blue: "#0759FD"
+  orange: "#FF7829"
+  purple: "#9B38ED"
+typography:
+  exhibition-cjk: { fontFamily: "Study CJK, sans-serif", fontSize: 76, fontWeight: 900, lineHeight: 1 }
+  exhibition-latin: { fontFamily: "Study Sans, sans-serif", fontSize: 59, fontWeight: 900, lineHeight: 1 }
+  date: { fontFamily: "Study Sans, Study CJK, sans-serif", fontSize: 48, fontWeight: 700, lineHeight: 1 }
+  body: { fontFamily: "Study Sans, Study CJK, sans-serif", fontSize: 24, fontWeight: 400, lineHeight: 1.25 }
+spacing:
+  within: 12
+  between: 24
+  frame-inset: 24
+pairs:
+  ink-on-green: { backgroundColor: "{colors.green}", textColor: "{colors.ink}" }
+  paper-on-ink: { backgroundColor: "{colors.ink}", textColor: "{colors.paper}" }
+  paper-on-green-large: { backgroundColor: "{colors.green}", textColor: "{colors.paper}" }
+  yellow-on-green-large: { backgroundColor: "{colors.green}", textColor: "{colors.yellow}" }
+  pink-on-ink-large: { backgroundColor: "{colors.ink}", textColor: "{colors.pink}" }
+  purple-on-ink-large: { backgroundColor: "{colors.ink}", textColor: "{colors.purple}" }
+  orange-on-ink-large: { backgroundColor: "{colors.ink}", textColor: "{colors.orange}" }
+```
+
+## Record
+Folio version: 1.1.0. Template version: 14. Date: 2026-11-05.
+Pieces: [posters/02-new-design.svg](../../posters/02-new-design.svg)。
+Baseline: batch-transfer/evaluation/identity-v1.json = 部分通过；structure-v1.json = 部分通过；craft-v1.json = 通过。已查看 v1 彩色与灰度对照和 cases/03-cut-glyph-exhibition/frozen-v1/poster.png；基线保留双场与事实完整性，但主字等粗、全白，弧面退到独立顶饰，事实未进字形凹口。
+Revision: 补齐大半径构字、深槽与事实的联合构造、多色主笔角色和合格阅读配色；为 pink 等主笔安排 ink 承底以维持对比。修订尚待新内容独立生成与重新评估，不宣称身份或结构已通过。
+Static verification: 已运行 scripts/folio-check.py，本文件 schema 与声明配对对比度通过；阅读配对最低 5.32:1，大字配对最低 3.24:1。未生成或验证修订版作品。

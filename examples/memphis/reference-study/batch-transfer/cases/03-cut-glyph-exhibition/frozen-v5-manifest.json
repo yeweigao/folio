@@ -1,0 +1,18 @@
+{
+  "generate.py": {
+    "sha256": "ca07813218ec13516b0f8329a9788516ab1e7cac18a6850ed7da4ca3a75d49a9",
+    "bytes": 8012
+  },
+  "poster.svg": {
+    "sha256": "38a2423f386b2abd4410e3671525ada7c52462275af90ed113ca98c35d032ea2",
+    "bytes": 75106
+  },
+  "raw.svg": {
+    "sha256": "fdd715679d96d5a23ab9c16155da600459ea9ef1281d7fe89f3dfbcc1af510e3",
+    "bytes": 4078
+  },
+  "uncertainties.md": {
+    "sha256": "209b35d7023c9c57d201dbe09996f6d581bbe9af1f574e3354b3982865d1824c",
+    "bytes": 2651
+  }
+}

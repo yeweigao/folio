@@ -1,0 +1,12 @@
+[
+  {
+    "arm": "previous",
+    "exit_code": 1,
+    "output": "Unexpected key(s) in SKILL.md frontmatter: version. Allowed properties are: allowed-tools, description, license, metadata, name\n"
+  },
+  {
+    "arm": "current",
+    "exit_code": 1,
+    "output": "Unexpected key(s) in SKILL.md frontmatter: version. Allowed properties are: allowed-tools, description, license, metadata, name\n"
+  }
+]

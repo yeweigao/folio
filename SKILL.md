@@ -41,13 +41,14 @@ Goals, not steps: the route is yours, the map is here. Your memory of a name bri
 |---|---|
 | Before the first mark | The theme (below), and the dialect and hand it leads you to; the surface: [slides](references/surfaces/slides.md) · [poster](references/surfaces/poster.md) · [web](references/surfaces/web.md) · [canvas](references/surfaces/canvas.md) · [handbook](references/surfaces/handbook.md) |
 | Writing the brief or the skeleton | [design-md](references/design-md.md) |
+| Reconstructing supplied work or extracting its world | [design-md](references/design-md.md), From supplied work; inspect the selected reference before deriving its rules |
 | Choosing type, color, copy, data or imagery | [craft](references/craft.md) |
 | Rendering, checking, sourcing material or faces | [tools](references/tools.md) |
 | Before calling it done | [review](references/review.md), floors first |
 | Changing delivered work | [steering](references/steering.md) |
 | Critiquing existing work | [design-md](references/design-md.md), then `extract.py` in tools |
 
-**Go wide, then show before you sign.** Each direction is one hand's method on this subject. Cut the first idea, the default and the costume; show the user two or three roughs to choose the feel before one is built out. With no one to ask, build the strongest and say why.
+**For a new direction, go wide, then show before you sign.** Each direction is one hand's method on this subject. Cut the first idea, the default and the costume; show the user two or three roughs to choose the feel before one is built out. With no one to ask, build the strongest and say why. A supplied reference selected for reconstruction already establishes the direction; preserve it and inspect the reconstruction against it.
 
 ## Themes
 

@@ -1,0 +1,245 @@
+{
+  "texts": [
+    {
+      "text": "集合散步",
+      "x": 24,
+      "y": 295,
+      "width": 400,
+      "height": 145,
+      "fill": "rgb(25, 25, 29)",
+      "size": "100px",
+      "weight": "900",
+      "font": "\"Study CJK\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "在城里发现",
+      "x": 26,
+      "y": 420,
+      "width": 205,
+      "height": 60,
+      "fill": "rgb(25, 25, 29)",
+      "size": "41px",
+      "weight": "700",
+      "font": "\"Study CJK\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "CITY WALKS",
+      "x": 27,
+      "y": 461,
+      "width": 335.796875,
+      "height": 101,
+      "fill": "rgb(25, 25, 29)",
+      "size": "68px",
+      "weight": "700",
+      "font": "\"Study Condensed\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "Small discoveries, shared streets.",
+      "x": 27,
+      "y": 557,
+      "width": 332.71875,
+      "height": 25,
+      "fill": "rgb(25, 25, 29)",
+      "size": "21px",
+      "weight": "400",
+      "font": "\"Study Sans\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "2027.05.14–05.16",
+      "x": 477,
+      "y": 915,
+      "width": 210.4375,
+      "height": 30,
+      "fill": "rgb(25, 25, 29)",
+      "size": "25px",
+      "weight": "700",
+      "font": "\"Study Sans\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "河岸街区",
+      "x": 477,
+      "y": 949,
+      "width": 100,
+      "height": 36,
+      "fill": "rgb(25, 25, 29)",
+      "size": "25px",
+      "weight": "700",
+      "font": "\"Study CJK\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "一起走进街角的日常",
+      "x": 477,
+      "y": 988,
+      "width": 225,
+      "height": 36,
+      "fill": "rgb(25, 25, 29)",
+      "size": "25px",
+      "weight": "700",
+      "font": "\"Study CJK\"",
+      "outOfFrame": false
+    }
+  ],
+  "fonts": [
+    {
+      "family": "Study Sans",
+      "weight": "400"
+    },
+    {
+      "family": "Study Sans",
+      "weight": "700"
+    },
+    {
+      "family": "Study CJK",
+      "weight": "100 900"
+    },
+    {
+      "family": "Study Condensed",
+      "weight": "700"
+    }
+  ],
+  "fontErrors": [],
+  "rasterImages": 0,
+  "actualFonts": [
+    {
+      "text": "集合散步",
+      "fonts": [
+        {
+          "familyName": "Noto Sans SC Thin",
+          "postScriptName": "NotoSansSC-Thin_Black",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    },
+    {
+      "text": "在城里发现",
+      "fonts": [
+        {
+          "familyName": "Noto Sans SC Thin",
+          "postScriptName": "NotoSansSC-Thin_Bold",
+          "isCustomFont": true,
+          "glyphCount": 5
+        }
+      ]
+    },
+    {
+      "text": "CITY WALKS",
+      "fonts": [
+        {
+          "familyName": "Oswald",
+          "postScriptName": "Oswald-Bold",
+          "isCustomFont": true,
+          "glyphCount": 10
+        }
+      ]
+    },
+    {
+      "text": "Small discoveries, shared streets.",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular",
+          "isCustomFont": true,
+          "glyphCount": 34
+        }
+      ]
+    },
+    {
+      "text": "2027.05.14–05.16",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Bold",
+          "isCustomFont": true,
+          "glyphCount": 16
+        }
+      ]
+    },
+    {
+      "text": "河岸街区",
+      "fonts": [
+        {
+          "familyName": "Noto Sans SC Thin",
+          "postScriptName": "NotoSansSC-Thin_Bold",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    },
+    {
+      "text": "一起走进街角的日常",
+      "fonts": [
+        {
+          "familyName": "Noto Sans SC Thin",
+          "postScriptName": "NotoSansSC-Thin_Bold",
+          "isCustomFont": true,
+          "glyphCount": 9
+        }
+      ]
+    }
+  ],
+  "contrast": [
+    {
+      "text": "集合散步",
+      "samples": 5123,
+      "min": 14.342,
+      "p05": 14.342,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "在城里发现",
+      "samples": 879,
+      "min": 14.342,
+      "p05": 14.342,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "CITY WALKS",
+      "samples": 2377,
+      "min": 14.342,
+      "p05": 14.342,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "Small discoveries, shared streets.",
+      "samples": 194,
+      "min": 14.342,
+      "p05": 14.342,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "2027.05.14–05.16",
+      "samples": 320,
+      "min": 13.104,
+      "p05": 13.104,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "河岸街区",
+      "samples": 202,
+      "min": 13.104,
+      "p05": 13.104,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "一起走进街角的日常",
+      "samples": 440,
+      "min": 13.104,
+      "p05": 13.104,
+      "below3": 0,
+      "below4_5": 0
+    }
+  ]
+}

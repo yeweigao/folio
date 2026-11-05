@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" version="1.1" role="img" aria-labelledby="poster-title poster-description">
+  <title id="poster-title">KONBIN STAGE — 17.07</title>
+  <desc id="poster-description">An isometric open-air stage made from editable type and shared-edge colored architecture. KONBIN STAGE. 17.07. OPEN AIR. WE MAKE NOISE. RINA VEIL. LAGO. MOTIF CLUB. NEON PALMS.</desc>
+  <!-- FONTS -->
+  <rect x="0" y="0" width="900" height="1200" fill="#FFDF06" />
+  <g id="isometric-architecture" shape-rendering="geometricPrecision">
+    <g id="left-ink-pier">
+      <polygon points="148,854.1 253,898.725 155,940.375 50,895.75" fill="#000000" />
+      <polygon points="50,895.75 155,940.375 155,1005.375 50,960.75" fill="#000000" />
+      <polygon points="155,940.375 253,898.725 253,963.725 155,1005.375" fill="#2836B5" />
+      <g id="left-ink-pier-front" transform="matrix(1 .425 0 1 50 895.75)" />
+      <g id="left-ink-pier-side" transform="matrix(1 -.425 0 1 155 940.375)" />
+      <g id="left-ink-pier-roof" transform="matrix(1 .425 -1 .425 148 854.1)" />
+    </g>
+    <g id="right-red-pier">
+      <polygon points="483,987.975 588,1032.6 480,1078.5 375,1033.875" fill="#FF2E05" />
+      <polygon points="375,1033.875 480,1078.5 480,1143.5 375,1098.875" fill="#FF2E05" />
+      <polygon points="480,1078.5 588,1032.6 588,1097.6 480,1143.5" fill="#000000" />
+      <g id="right-red-pier-front" transform="matrix(1 .425 0 1 375 1033.875)" />
+      <g id="right-red-pier-side" transform="matrix(1 -.425 0 1 480 1078.5)" />
+      <g id="right-red-pier-roof" transform="matrix(1 .425 -1 .425 483 987.975)" />
+    </g>
+    <g id="white-title-bridge">
+      <polygon points="440,540 870,722.75 480,888.5 50,705.75" fill="#22B88A" />
+      <polygon points="50,705.75 480,888.5 480,1078.5 50,895.75" fill="#FFFFF3" />
+      <polygon points="480,888.5 870,722.75 870,912.75 480,1078.5" fill="#FFFFF3" />
+      <g id="white-title-bridge-front" transform="matrix(1 .425 0 1 50 705.75)" aria-label="KONBIN">
+        <text id="title-konbin" fill="#000000" font-family="Study Condensed" font-weight="700" font-size="126.5" xml:space="preserve" x="13" y="146">KONBIN</text>
+      </g>
+      <g id="white-title-bridge-side" transform="matrix(1 -.425 0 1 480 888.5)" aria-label="STAGE">
+        <text id="title-stage" fill="#000000" font-family="Study Condensed" font-weight="700" font-size="126.5" xml:space="preserve" letter-spacing="10.70412" x="13" y="146">STAGE</text>
+      </g>
+      <g id="white-title-bridge-roof" transform="matrix(1 .425 -1 .425 440 540)" aria-label="WE MAKE NOISE">
+        <text id="slogan-we-make" fill="#000000" font-family="Study Condensed" font-weight="700" font-size="59.14418" xml:space="preserve" x="202" y="250">WE MAKE</text>
+        <text id="slogan-noise" fill="#000000" font-family="Study Condensed" font-weight="700" font-size="90.07887" xml:space="preserve" x="202" y="348">NOISE</text>
+      </g>
+    </g>
+    <g id="high-letter-tower">
+      <polygon points="440,110 550,156.75 430,207.75 320,161" fill="#22B88A" />
+      <polygon points="320,161 430,207.75 430,637.75 320,591" fill="#2836B5" />
+      <polygon points="430,207.75 550,156.75 550,586.75 430,637.75" fill="#000000" />
+      <g id="high-letter-tower-front" transform="matrix(1 .425 0 1 320 161)">
+        <text id="artist-rina-veil" fill="#FFDF06" font-family="Study Condensed" font-weight="700" font-size="80" xml:space="preserve" transform="translate(96 350) rotate(-90)" x="0" y="0">RINA VEIL</text>
+      </g>
+      <g id="high-letter-tower-side" transform="matrix(1 -.425 0 1 430 207.75)">
+        <text id="artist-lago" fill="#FFDF06" font-family="Study Condensed" font-weight="700" font-size="105" xml:space="preserve" transform="translate(113 243) rotate(-90)" x="0" y="0">LAGO</text>
+      </g>
+      <g id="high-letter-tower-roof" transform="matrix(1 .425 -1 .425 440 110)">
+        <text id="date" fill="#000000" font-family="Study Condensed" font-weight="700" font-size="47.5" xml:space="preserve" x="6" y="88">17.07</text>
+      </g>
+    </g>
+    <g id="wide-blue-stage">
+      <polygon points="650,389.25 870,482.75 720,546.5 500,453" fill="#000000" />
+      <polygon points="500,453 720,546.5 720,786.5 500,693" fill="#2836B5" />
+      <polygon points="720,546.5 870,482.75 870,722.75 720,786.5" fill="#FF2E05" />
+      <g id="wide-blue-stage-front" transform="matrix(1 .425 0 1 500 453)" aria-label="MOTIF CLUB">
+        <text id="artist-motif" fill="#FFDF06" font-family="Study Condensed" font-weight="700" font-size="83.40081" xml:space="preserve" x="7" y="112">MOTIF</text>
+        <text id="artist-club" fill="#FFDF06" font-family="Study Condensed" font-weight="700" font-size="83.40081" xml:space="preserve" x="7" y="195.55466">CLUB</text>
+      </g>
+      <g id="wide-blue-stage-side" transform="matrix(1 -.425 0 1 720 546.5)" />
+      <g id="wide-blue-stage-roof" transform="matrix(1 .425 -1 .425 650 389.25)">
+        <text id="venue-type" fill="#FFDF06" font-family="Study Condensed" font-weight="700" font-size="53.18874" xml:space="preserve" x="7" y="112">OPEN AIR</text>
+      </g>
+    </g>
+    <g id="low-green-stage">
+      <polygon points="190,511.25 360,583.5 220,643 50,570.75" fill="#FF2E05" />
+      <polygon points="50,570.75 220,643 220,778 50,705.75" fill="#22B88A" />
+      <polygon points="220,643 360,583.5 360,718.5 220,778" fill="#2836B5" />
+      <g id="low-green-stage-front" transform="matrix(1 .425 0 1 50 570.75)" aria-label="NEON PALMS">
+        <text id="artist-neon" fill="#000000" font-family="Study Condensed" font-weight="700" font-size="56.77327" xml:space="preserve" x="6" y="53">NEON</text>
+        <text id="artist-palms" fill="#000000" font-family="Study Condensed" font-weight="700" font-size="56.77327" xml:space="preserve" x="6" y="117">PALMS</text>
+      </g>
+      <g id="low-green-stage-side" transform="matrix(1 -.425 0 1 220 643)" />
+      <g id="low-green-stage-roof" transform="matrix(1 .425 -1 .425 190 511.25)" />
+    </g>
+  </g>
+</svg>

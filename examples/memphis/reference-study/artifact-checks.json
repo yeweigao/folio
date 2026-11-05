@@ -1,0 +1,198 @@
+[
+  {
+    "file": "slides/01-cover.svg",
+    "sha256": "dfd9c5d06b90f9b928d6a1954ad85501eebb8bb265ec644c076085bbcb47c020",
+    "bytes": 264089,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "slides/02-contents.svg",
+    "sha256": "8370aa90588c8048dda8d22c8a117a19c8596178987c1cde2868d3834aee982f",
+    "bytes": 266013,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "slides/03-background.svg",
+    "sha256": "1284fbe6fe41cad9776bc48cf98fe31219210d4250917bae4ddd317b906447c3",
+    "bytes": 262955,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "slides/04-profile.svg",
+    "sha256": "d0a59d30ee6c86c01efa637eb9b5f9a46c461d0c5904ad74d8f9d1e861e699cb",
+    "bytes": 265160,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "slides/05-vision.svg",
+    "sha256": "5e8e5f73734dd8ea204b4c94e64bdcc18d22119e37444822cd56b3b6d9b898cb",
+    "bytes": 265874,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "slides/06-history.svg",
+    "sha256": "c120b0a07084508f54af795f05ff7d1119b2c0a50e622f1315d58ba8b7d43c77",
+    "bytes": 267932,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "slides/07-work.svg",
+    "sha256": "b8b063ab9e7164c6ae773d81dc381cb80065cdf9aeb4abfb7b465230ff7398b7",
+    "bytes": 265688,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "slides/08-responsibilities.svg",
+    "sha256": "ec57855d23273c601f47123def683d73fc8564671ac0f22973a26506edb1d111",
+    "bytes": 266183,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "posters/01-collection-of-acts.svg",
+    "sha256": "317cdb5b001256597071a652a9e6564793537e51571fa1637ae4a617b3863029",
+    "bytes": 239600,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "posters/02-new-design.svg",
+    "sha256": "b4c5b301a1ecd21f0a9f469b1dd622f29139413fc36755c98402c6abd6e758ca",
+    "bytes": 229605,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "posters/03-tresor.svg",
+    "sha256": "98cab67391b7d14b1c26c7dca46c0aa7ebaf9e1cb5d27a120e5ea33aa1571669",
+    "bytes": 229333,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "posters/04-ttxc.svg",
+    "sha256": "daa0a0b2da47e4b9d0d56f6fd7b457517477720f216476362ac86c9aeb10df5b",
+    "bytes": 251973,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "posters/05-hackathon-windows.svg",
+    "sha256": "dd40deb7a7ffdda8f6c1b57af132e4c7a7da5109be46ad1671b4e7af8fbd137b",
+    "bytes": 236793,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "posters/06-san-diego.svg",
+    "sha256": "004d873287d9d027cf8407a0bff02dfe935e043949df221d32437d8faaae59ab",
+    "bytes": 228397,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "posters/07-forest.svg",
+    "sha256": "6c4ae9482da582e6ff4c0b47c1a06615552075c2d3cc889496bf6317cb337583",
+    "bytes": 232136,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "posters/08-hackathon-blocks.svg",
+    "sha256": "13796f28c0f01fa41fb55dbb0b15cb65166a63d5032721aea8464cf6e1998ff7",
+    "bytes": 233974,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "posters/09-konbin.svg",
+    "sha256": "eb107b338c472cf3e0902054667577ff0c589b0d484e334b4a753eb07bada5bd",
+    "bytes": 231232,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "brand/01-banner.svg",
+    "sha256": "21aa7f789e1170e7d732cd06f8b7a3d42c3cf5829393b61ecb4382ca98c87ec7",
+    "bytes": 281504,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "brand/02-ribbon.svg",
+    "sha256": "14bb55d8814dbb8fb7c825baf143b698a0c20dec72f86884be9b6b22e644ba71",
+    "bytes": 231520,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "brand/03-ribbon.svg",
+    "sha256": "49dc5513794c7a826840e137e159ee7cad56da6af1740f6e38fdcaef05ed021e",
+    "bytes": 249369,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "brand/04-ribbon.svg",
+    "sha256": "3a8f083c6d04ce18e16ddc226b1b99c09ed1450ea3782f7873f70ec20126480f",
+    "bytes": 231036,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "brand/05-invitation-white.svg",
+    "sha256": "03db31e0f6bdbeb8ee0c15921cb17455d11f67481ad86f8d5e2ff45ae328c688",
+    "bytes": 280771,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "brand/06-invitation-blue.svg",
+    "sha256": "bdefad6322e193b4a8cd28c3eec41f3fd7947ed038e6ea4112ed961c85cd36ab",
+    "bytes": 294365,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "brand/07-bag.svg",
+    "sha256": "c40d980eefa007329c4171a8dc9ba6fd45be3de0ee833a9eed760da271d6f613",
+    "bytes": 275813,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "brand/08-bag.svg",
+    "sha256": "b8c472d29fa291715745c0c010a9f7d6f263df3e77d6ec0880012a633b3d941f",
+    "bytes": 247345,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "brand/09-badge.svg",
+    "sha256": "614dbca86fe2ddb7bcea04a6869ad87b36f2e3b7ee503e822165a7babc698386",
+    "bytes": 229549,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "brand/10-badge.svg",
+    "sha256": "6d826e458161aa5851baeb1ba9d2a7aea41408c532b1db361dce40c3cc1958a3",
+    "bytes": 312866,
+    "native_vectors": true,
+    "font_embedded": true
+  },
+  {
+    "file": "brand/11-leaflet.svg",
+    "sha256": "5f66ef83cfbeceab75542c4b31f6db3d3c1474731cab8e9c83847c3452b74db3",
+    "bytes": 275775,
+    "native_vectors": true,
+    "font_embedded": true
+  }
+]

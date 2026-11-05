@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="poster-title poster-description">
+<title id="poster-title">TAIPEI DESIGN WEEK 2027</title>
+<desc id="poster-description">Four tightly stacked letter walls introduce Taipei Design Week, October 4–10, 2027. Native E bars, a geometric G, and a circular zero form parts of the lettering. Event details follow below.</desc>
+<metadata id="font-license">Copyright 2020 The Inter Project Authors (https://github.com/rsms/inter)
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+https://scripts.sil.org/OFL
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded,
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+&quot;Font Software&quot; refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+&quot;Reserved Font Name&quot; refers to any names specified as such after the
+copyright statement(s).
+
+&quot;Original Version&quot; refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+&quot;Modified Version&quot; refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+&quot;Author&quot; refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION &amp; CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+</metadata>
+<defs><!-- FONTS --></defs>
+<g font-family="Study Sans" fill="#1C1A1B" style="font-kerning:none;font-variant-ligatures:none">
+<rect x="0" y="0" width="900" height="1200" fill="#F6F0E5"/>
+<g id="letter-walls">
+<g id="city-wall" transform="translate(26 204) scale(1.063753 1)"><text x="-6.689933" y="0" font-size="244.660403" font-weight="900">TAIPEI</text></g>
+<g id="theme-wall" aria-label="DESIGN">
+<g id="theme-d" transform="translate(26 394) scale(0.923717 1)"><text x="-11.468456" y="0" font-size="244.660403" font-weight="900">D</text></g>
+<g id="theme-e" aria-label="E">
+<rect x="181" y="216" width="124" height="35.6" fill="#1C1A1B"/>
+<rect x="181" y="287.2" width="124" height="35.6" fill="#554699"/>
+<rect x="181" y="358.4" width="124" height="35.6" fill="#1C1A1B"/>
+</g>
+<g id="theme-s" transform="translate(315 394) scale(0.985982 1)"><text x="-6.928859" y="0" font-size="244.660403" font-weight="900">S</text></g>
+<g id="theme-i" transform="translate(472 394) scale(1.015269 1)"><text x="-11.468456" y="0" font-size="244.660403" font-weight="900">I</text></g>
+<g id="theme-g" aria-label="G">
+<circle cx="620" cy="305" r="89" fill="#258CB4"/>
+<circle cx="620" cy="305" r="43" fill="#F6F0E5"/>
+<rect x="620" y="278" width="89" height="45" fill="#F6F0E5"/>
+<rect x="620" y="305" width="89" height="34" fill="#1C1A1B"/>
+<rect x="675" y="305" width="34" height="55" fill="#1C1A1B"/>
+</g>
+<g id="theme-n" transform="translate(719 394) scale(0.93748 1)"><text x="-11.468456" y="0" font-size="244.660403" font-weight="900">N</text></g>
+</g>
+<g id="event-wall" transform="translate(26 584) scale(1.146942 1)"><text x="-5.495302" y="0" font-size="244.660403" font-weight="900">WEEK</text></g>
+<g id="year-wall" aria-label="2027">
+<g id="year-first-two" transform="translate(26 801) scale(1.277533 1)"><text x="-9.630872" y="0" font-size="281.771812" font-weight="900">2</text></g>
+<g id="year-zero" aria-label="0">
+<circle cx="346.5" cy="698.5" r="102.5" fill="#F54D05"/>
+</g>
+<g id="year-second-two" transform="translate(461 801) scale(1.277533 1)"><text x="-9.630872" y="0" font-size="281.771812" font-weight="900">2</text></g>
+<g id="year-seven" transform="translate(679 801) scale(1.28148 1)"><text x="-7.704698" y="0" font-size="281.771812" font-weight="900">7</text></g>
+</g></g>
+<g id="event-details">
+<text x="26" y="855" font-size="22" font-weight="400" fill="#1C1A1B">ARCHITECTURE</text>
+<text x="26" y="886" font-size="22" font-weight="400" fill="#1C1A1B">CRAFT</text>
+<text x="26" y="917" font-size="22" font-weight="400" fill="#1C1A1B">FOOD</text>
+<text x="26" y="948" font-size="22" font-weight="400" fill="#1C1A1B">MUSIC</text>
+<text x="26" y="979" font-size="22" font-weight="400" fill="#1C1A1B">PUBLIC SPACE</text>
+<text x="385" y="855" font-size="24" font-weight="700" fill="#1C1A1B">TAIPEI DESIGN WEEK 2027</text>
+<text x="385" y="914" font-size="33" font-weight="700" fill="#1C1A1B">OCTOBER 4–10</text>
+<text x="385" y="966" font-size="16" font-weight="700" fill="#1C1A1B">HOST</text>
+<text x="475" y="966" font-size="25" font-weight="400" fill="#1C1A1B">City Design Museum</text>
+<text x="385" y="1013" font-size="16" font-weight="700" fill="#1C1A1B">PARTNER</text>
+<text x="475" y="1013" font-size="25" font-weight="400" fill="#1C1A1B">Open City Lab</text>
+</g>
+<g id="website-band">
+<rect x="0" y="1074" width="900" height="126" fill="#1C1A1B"/>
+<text id="website" x="26" y="1158" font-size="54" font-weight="700" fill="#F6F0E5">TAIPEIDESIGNWEEK.EXAMPLE</text>
+</g></g></svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="poster-title poster-description">
+<title id="poster-title">BUILD-ATHON</title>
+<desc id="poster-description">A developer event poster with stacked interface windows on a drawing grid. TYO, SEL, SIN, SYD. 06.18.27 and 06.19.27. Remote teams welcome. Make what connects us. stripe.</desc>
+<!-- FONTS -->
+<defs>
+  <pattern id="drawing-grid" width="50" height="50" patternUnits="userSpaceOnUse">
+    <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#1900F5" stroke-width="0.85" opacity="0.3"/>
+  </pattern>
+</defs>
+<rect width="900" height="1200" fill="#FFFFF2"/>
+<rect width="900" height="1200" fill="url(#drawing-grid)"/>
+
+<text x="75" y="81" font-family="Study Sans" font-size="43" font-weight="900" fill="#1900F5" text-anchor="start" letter-spacing="-1.9">stripe</text>
+<g id="main-window-stack">
+<rect x="145" y="135" width="630" height="470" fill="#FFFFF2" stroke="#1900F5" stroke-width="2.3"/>
+<path d="M145,183 H775" fill="none" stroke="#1900F5" stroke-width="2.3"/>
+<rect x="131" y="149" width="630" height="470" fill="#FA4EF5" stroke="#1900F5" stroke-width="2.3"/>
+<path d="M131,197 H761" fill="none" stroke="#1900F5" stroke-width="2.3"/>
+<rect x="117" y="163" width="630" height="470" fill="#FBFF08" stroke="#1900F5" stroke-width="2.3"/>
+<path d="M117,211 H747" fill="none" stroke="#1900F5" stroke-width="2.3"/>
+<rect x="103" y="177" width="630" height="470" fill="#FFFFF2" stroke="#1900F5" stroke-width="2.3"/>
+<path d="M103,225 H733" fill="none" stroke="#1900F5" stroke-width="2.3"/>
+<rect x="89" y="191" width="630" height="470" fill="#00ECA9" stroke="#1900F5" stroke-width="2.3"/>
+<path d="M89,239 H719" fill="none" stroke="#1900F5" stroke-width="2.3"/>
+<rect x="75" y="205" width="630" height="470" fill="#7C42FF" stroke="#1900F5" stroke-width="2.3"/>
+<path d="M75,255 V205 H705 V255 Z" fill="#00ECA9" stroke="#1900F5" stroke-width="2.3"/>
+<text x="106" y="238" font-family="Study Sans" font-size="24" font-weight="700" fill="#1900F5" text-anchor="start" letter-spacing="0.15">REMOTE TEAMS WELCOME</text>
+<path d="M644,229 H657 M675,222 L689,236 M689,222 L675,236" fill="none" stroke="#1900F5" stroke-width="2.3"/>
+<text font-family="Study Condensed" font-size="150" font-weight="700" fill="#FFFFF2" letter-spacing="0.3"><tspan x="109" y="421">BUILD-</tspan><tspan x="254" y="587">ATHON</tspan></text>
+</g>
+<g id="city-window-stack">
+<rect x="568" y="662" width="250" height="400" fill="#FFFFF2" stroke="#1900F5" stroke-width="2.3"/>
+<path d="M568,702 H818" fill="none" stroke="#1900F5" stroke-width="2.3"/>
+<rect x="556" y="674" width="250" height="400" fill="#FBFF08" stroke="#1900F5" stroke-width="2.3"/>
+<path d="M556,714 H806" fill="none" stroke="#1900F5" stroke-width="2.3"/>
+<rect x="544" y="686" width="250" height="400" fill="#FA4EF5" stroke="#1900F5" stroke-width="2.3"/>
+<path d="M544,726 H794" fill="none" stroke="#1900F5" stroke-width="2.3"/>
+<rect x="532" y="698" width="250" height="400" fill="#FFFFF2" stroke="#1900F5" stroke-width="2.3"/>
+<path d="M532,738 H782" fill="none" stroke="#1900F5" stroke-width="2.3"/>
+<rect x="520" y="710" width="250" height="400" fill="#00ECA9" stroke="#1900F5" stroke-width="2.3"/>
+<path d="M520,750 V710 H770 V750 Z" fill="#FA4EF5" stroke="#1900F5" stroke-width="2.3"/>
+<path d="M538,724 H550 V736 H538 Z M561,724 H573 V736 H561 Z M584,724 H596 V736 H584 Z M736,730 H752" fill="none" stroke="#1900F5" stroke-width="2"/>
+<text x="645" y="824" font-family="Study Condensed" font-size="70" font-weight="700" fill="#1900F5" text-anchor="middle" letter-spacing="1.1">TYO</text>
+<text x="645" y="901" font-family="Study Condensed" font-size="70" font-weight="700" fill="#1900F5" text-anchor="middle" letter-spacing="1.1">SEL</text>
+<text x="645" y="978" font-family="Study Condensed" font-size="70" font-weight="700" fill="#1900F5" text-anchor="middle" letter-spacing="1.1">SIN</text>
+<text x="645" y="1055" font-family="Study Condensed" font-size="70" font-weight="700" fill="#1900F5" text-anchor="middle" letter-spacing="1.1">SYD</text>
+</g>
+<g id="date-window-stack">
+<rect x="119" y="621" width="330" height="185" fill="#FFFFF2" stroke="#1900F5" stroke-width="2.3"/>
+<path d="M119,651 H449" fill="none" stroke="#1900F5" stroke-width="2.3"/>
+<rect x="107" y="633" width="330" height="185" fill="#FA4EF5" stroke="#1900F5" stroke-width="2.3"/>
+<path d="M107,663 H437" fill="none" stroke="#1900F5" stroke-width="2.3"/>
+<rect x="95" y="645" width="330" height="185" fill="#FBFF08" stroke="#1900F5" stroke-width="2.3"/>
+<path d="M95,675 V645 H425 V675 Z" fill="#7C42FF" stroke="#1900F5" stroke-width="2.3"/>
+<path d="M112,660 H125 M133,660 H146 M392,654 L404,666 M404,654 L392,666" fill="none" stroke="#FFFFF2" stroke-width="2"/>
+<text x="260" y="735" font-family="Study Condensed" font-size="44" font-weight="700" fill="#1900F5" text-anchor="middle" letter-spacing="1.4">06.18.27</text>
+<text x="260" y="796" font-family="Study Condensed" font-size="44" font-weight="700" fill="#1900F5" text-anchor="middle" letter-spacing="1.4">06.19.27</text>
+</g>
+<text font-family="Study Condensed" font-size="45" font-weight="700" fill="#1900F5" letter-spacing="0.5"><tspan x="75" y="1009">MAKE WHAT</tspan><tspan x="75" y="1063">CONNECTS US</tspan></text>
+</svg>

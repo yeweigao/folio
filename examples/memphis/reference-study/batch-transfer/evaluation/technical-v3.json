@@ -1,0 +1,448 @@
+[
+  {
+    "id": "02-streetwise-collage",
+    "facts": {
+      "exit_code": 0,
+      "output": "\n7 facts · 0 missing · 0 warning(s)\n"
+    },
+    "bounds": [],
+    "font_errors": [],
+    "font_fallback": [],
+    "contrast": [
+      {
+        "text": "集合散步",
+        "samples": 5096,
+        "min": 14.342,
+        "p05": 14.342,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "在城里发现",
+        "samples": 2094,
+        "min": 14.342,
+        "p05": 14.342,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "CITY WALKS",
+        "samples": 784,
+        "min": 14.342,
+        "p05": 14.342,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "Small discoveries, shared streets.",
+        "samples": 1018,
+        "min": 13.104,
+        "p05": 13.104,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "2027.05.14–05.16",
+        "samples": 289,
+        "min": 13.104,
+        "p05": 13.104,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "河岸街区",
+        "samples": 176,
+        "min": 13.104,
+        "p05": 13.104,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "一起走进街角的日常",
+        "samples": 224,
+        "min": 13.104,
+        "p05": 13.104,
+        "below3": 0,
+        "below4_5": 0
+      }
+    ]
+  },
+  {
+    "id": "03-cut-glyph-exhibition",
+    "facts": {
+      "exit_code": 0,
+      "output": "\n8 facts · 0 missing · 0 warning(s)\n"
+    },
+    "bounds": [],
+    "font_errors": [],
+    "font_fallback": [],
+    "contrast": [
+      {
+        "text": "12 JUNE",
+        "samples": 552,
+        "min": 5.323,
+        "p05": 5.323,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "28 AUGUST",
+        "samples": 823,
+        "min": 5.323,
+        "p05": 5.323,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "09:00–18:00",
+        "samples": 890,
+        "min": 5.323,
+        "p05": 5.323,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "策展：",
+        "samples": 65,
+        "min": 20.381,
+        "p05": 20.381,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "林岚",
+        "samples": 47,
+        "min": 20.381,
+        "p05": 20.381,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "城市",
+        "samples": 55,
+        "min": 20.381,
+        "p05": 20.381,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "设计馆",
+        "samples": 85,
+        "min": 20.381,
+        "p05": 20.381,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "共生",
+        "samples": 1060,
+        "min": 3.24,
+        "p05": 3.24,
+        "below3": 0,
+        "below4_5": 1060
+      },
+      {
+        "text": "设计展",
+        "samples": 1750,
+        "min": 3.24,
+        "p05": 3.24,
+        "below3": 0,
+        "below4_5": 1750
+      },
+      {
+        "text": "COEXIST",
+        "samples": 1348,
+        "min": 20.381,
+        "p05": 20.381,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "DESIGN",
+        "samples": 1278,
+        "min": 20.381,
+        "p05": 20.381,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "EXHIBITION",
+        "samples": 1883,
+        "min": 20.381,
+        "p05": 20.381,
+        "below3": 0,
+        "below4_5": 0
+      }
+    ]
+  },
+  {
+    "id": "05-culture-monsters",
+    "facts": {
+      "exit_code": 0,
+      "output": "\n8 facts · 0 missing · 0 warning(s)\n"
+    },
+    "bounds": [],
+    "font_errors": [],
+    "font_fallback": [],
+    "contrast": [
+      {
+        "text": "ART × SOUND × TECHNOLOGY",
+        "samples": 739,
+        "min": 5.755,
+        "p05": 5.755,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "TTXC 2027",
+        "samples": 5555,
+        "min": 20.624,
+        "p05": 20.624,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "城市游乐场",
+        "samples": 4661,
+        "min": 5.755,
+        "p05": 5.755,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "City Play!",
+        "samples": 3346,
+        "min": 5.755,
+        "p05": 5.755,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "一起把城市玩出新花样",
+        "samples": 195,
+        "min": 5.755,
+        "p05": 5.755,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "2027.09.10–12",
+        "samples": 1915,
+        "min": 5.755,
+        "p05": 5.755,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "海岸文化中心",
+        "samples": 1833,
+        "min": 5.755,
+        "p05": 5.755,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "Coast Culture Center",
+        "samples": 447,
+        "min": 5.755,
+        "p05": 5.755,
+        "below3": 0,
+        "below4_5": 0
+      }
+    ]
+  },
+  {
+    "id": "07-type-built-week",
+    "facts": {
+      "exit_code": 0,
+      "output": "WARN  numbers not in the brief: 2, 7\n\n13 facts · 0 missing · 1 warning(s)\n"
+    },
+    "bounds": [
+      {
+        "text": "TAIPEI",
+        "rawText": "TAIPEI",
+        "x": 18.883563995361328,
+        "y": -33.31829833984375,
+        "width": 867.2910766601562,
+        "height": 296.40570068359375,
+        "fill": "rgb(28, 26, 27)",
+        "size": "244.66px",
+        "weight": "900",
+        "font": "\"Study Sans\"",
+        "outOfFrame": true
+      }
+    ],
+    "font_errors": [],
+    "font_fallback": [],
+    "contrast": [
+      {
+        "text": "TAIPEI",
+        "samples": 21830,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "D",
+        "samples": 4545,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "S",
+        "samples": 4454,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "I",
+        "samples": 2225,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "N",
+        "samples": 5267,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "WEEK",
+        "samples": 23441,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "2",
+        "samples": 6612,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "2",
+        "samples": 6612,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "7",
+        "samples": 5059,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "ARCHITECTURE",
+        "samples": 158,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "CRAFT",
+        "samples": 49,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "FOOD",
+        "samples": 50,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "MUSIC",
+        "samples": 65,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "PUBLIC SPACE",
+        "samples": 116,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "TAIPEI DESIGN WEEK 2027",
+        "samples": 540,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "OCTOBER 4–10",
+        "samples": 578,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "HOST",
+        "samples": 39,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "City Design Museum",
+        "samples": 227,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "PARTNER",
+        "samples": 67,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "Open City Lab",
+        "samples": 153,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "TAIPEIDESIGNWEEK.EXAMPLE",
+        "samples": 3952,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      }
+    ]
+  }
+]

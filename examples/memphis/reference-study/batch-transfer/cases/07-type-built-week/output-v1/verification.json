@@ -1,0 +1,26 @@
+{
+  "canvas": [
+    "900",
+    "1200"
+  ],
+  "fixed_facts": {
+    "TAIPEI": true,
+    "DESIGN": true,
+    "WEEK": true,
+    "2027": true,
+    "ARCHITECTURE": true,
+    "CRAFT": true,
+    "FOOD": true,
+    "MUSIC": true,
+    "PUBLIC SPACE": true,
+    "OCTOBER 4\u201310": true,
+    "TAIPEIDESIGNWEEK.EXAMPLE": true,
+    "City Design Museum": true,
+    "Open City Lab": true
+  },
+  "native_text_nodes": 15,
+  "embedded_faces": 6,
+  "raster_images": 0,
+  "first_completed_svg_preserved": true,
+  "sha256": "1e8a02b0bcbdd873aeffcb4a62cc2e999c5118968546d78f0cceeb1cdce3ac82"
+}

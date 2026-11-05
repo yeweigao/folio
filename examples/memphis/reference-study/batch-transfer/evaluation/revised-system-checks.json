@@ -1,0 +1,52 @@
+[
+  {
+    "path": "examples/memphis/reference-study/systems/01-report-tiles/DESIGN.md",
+    "exit_code": 0,
+    "output": "PASS  folio-check: all gates hold\n"
+  },
+  {
+    "path": "examples/memphis/reference-study/systems/02-streetwise-collage/DESIGN.md",
+    "exit_code": 0,
+    "output": "PASS  folio-check: all gates hold\n"
+  },
+  {
+    "path": "examples/memphis/reference-study/systems/03-cut-glyph-exhibition/DESIGN.md",
+    "exit_code": 0,
+    "output": "PASS  folio-check: all gates hold\n"
+  },
+  {
+    "path": "examples/memphis/reference-study/systems/04-club-partitions/DESIGN.md",
+    "exit_code": 0,
+    "output": "PASS  folio-check: all gates hold\n"
+  },
+  {
+    "path": "examples/memphis/reference-study/systems/05-culture-monsters/DESIGN.md",
+    "exit_code": 0,
+    "output": "PASS  folio-check: all gates hold\n"
+  },
+  {
+    "path": "examples/memphis/reference-study/systems/06-hackathon-space/DESIGN.md",
+    "exit_code": 0,
+    "output": "PASS  folio-check: all gates hold\n"
+  },
+  {
+    "path": "examples/memphis/reference-study/systems/07-type-built-week/DESIGN.md",
+    "exit_code": 0,
+    "output": "PASS  folio-check: all gates hold\n"
+  },
+  {
+    "path": "examples/memphis/reference-study/systems/08-forest-character/DESIGN.md",
+    "exit_code": 0,
+    "output": "PASS  folio-check: all gates hold\n"
+  },
+  {
+    "path": "examples/memphis/reference-study/systems/09-isometric-letter-stage/DESIGN.md",
+    "exit_code": 0,
+    "output": "PASS  folio-check: all gates hold\n"
+  },
+  {
+    "path": "examples/memphis/reference-study/systems/10-molly-scenery/DESIGN.md",
+    "exit_code": 0,
+    "output": "PASS  folio-check: all gates hold\n"
+  }
+]

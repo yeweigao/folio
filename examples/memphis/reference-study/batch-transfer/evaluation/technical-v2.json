@@ -1,0 +1,946 @@
+[
+  {
+    "id": "01-report-tiles",
+    "facts": {
+      "exit_code": 0,
+      "output": "\n9 facts · 0 missing · 0 warning(s)\n"
+    },
+    "bounds": [],
+    "font_errors": [],
+    "font_fallback": [],
+    "raster_images": 0,
+    "contrast": [
+      {
+        "text": "Laporan Proyek Komunikasi Visual",
+        "samples": 661,
+        "min": 8.382,
+        "p05": 8.382,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "2027",
+        "samples": 32,
+        "min": 8.382,
+        "p05": 8.382,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "Eksplorasi",
+        "samples": 1539,
+        "min": 8.382,
+        "p05": 8.382,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "Ruang Kota",
+        "samples": 5398,
+        "min": 8.382,
+        "p05": 8.382,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "Observasi",
+        "samples": 198,
+        "min": 8.382,
+        "p05": 8.382,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "Mengamati tanda, warna, dan kebiasaan di ruang publik sebagai dasar sistem komunikasi visual.",
+        "samples": 600,
+        "min": 8.382,
+        "p05": 8.382,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "Eksperimen",
+        "samples": 246,
+        "min": 8.382,
+        "p05": 8.382,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "Menguji bentuk dan bahasa visual melalui prototipe yang dekat dengan kehidupan sehari-hari.",
+        "samples": 596,
+        "min": 8.382,
+        "p05": 8.382,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "Nadia Putri",
+        "samples": 62,
+        "min": 8.382,
+        "p05": 8.382,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "Studio Sekolah",
+        "samples": 90,
+        "min": 8.382,
+        "p05": 8.382,
+        "below3": 0,
+        "below4_5": 0
+      }
+    ]
+  },
+  {
+    "id": "02-streetwise-collage",
+    "facts": {
+      "exit_code": 0,
+      "output": "\n7 facts · 0 missing · 0 warning(s)\n"
+    },
+    "bounds": [],
+    "font_errors": [],
+    "font_fallback": [],
+    "raster_images": 0,
+    "contrast": [
+      {
+        "text": "集合散步",
+        "samples": 5096,
+        "min": 14.342,
+        "p05": 14.342,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "在城里发现",
+        "samples": 2090,
+        "min": 14.342,
+        "p05": 14.342,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "CITY WALKS",
+        "samples": 784,
+        "min": 14.342,
+        "p05": 14.342,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "Small discoveries,",
+        "samples": 577,
+        "min": 14.342,
+        "p05": 14.342,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "shared streets.",
+        "samples": 474,
+        "min": 14.342,
+        "p05": 14.342,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "2027.05.14–05.16",
+        "samples": 289,
+        "min": 13.104,
+        "p05": 13.104,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "河岸街区",
+        "samples": 176,
+        "min": 13.104,
+        "p05": 13.104,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "一起走进街角的日常",
+        "samples": 224,
+        "min": 13.104,
+        "p05": 13.104,
+        "below3": 0,
+        "below4_5": 0
+      }
+    ]
+  },
+  {
+    "id": "03-cut-glyph-exhibition",
+    "facts": {
+      "exit_code": 0,
+      "output": "\n8 facts · 0 missing · 0 warning(s)\n"
+    },
+    "bounds": [],
+    "font_errors": [],
+    "font_fallback": [],
+    "raster_images": 0,
+    "contrast": [
+      {
+        "text": "共生",
+        "samples": 991,
+        "min": 5.323,
+        "p05": 5.323,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "设计展",
+        "samples": 1563,
+        "min": 5.323,
+        "p05": 5.323,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "城市",
+        "samples": 43,
+        "min": 5.323,
+        "p05": 5.323,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "设计馆",
+        "samples": 42,
+        "min": 5.323,
+        "p05": 5.323,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "策",
+        "samples": 20,
+        "min": 5.323,
+        "p05": 5.323,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "展",
+        "samples": 20,
+        "min": 5.323,
+        "p05": 5.323,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "：",
+        "samples": 2,
+        "min": 5.323,
+        "p05": 5.323,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "林",
+        "samples": 10,
+        "min": 5.323,
+        "p05": 5.323,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "岚",
+        "samples": 10,
+        "min": 5.323,
+        "p05": 5.323,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "COEXIST",
+        "samples": 1168,
+        "min": 20.381,
+        "p05": 20.381,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "DESIGN",
+        "samples": 1118,
+        "min": 20.381,
+        "p05": 20.381,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "EXHIBITION",
+        "samples": 1674,
+        "min": 20.381,
+        "p05": 20.381,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "12 JUNE",
+        "samples": 484,
+        "min": 20.381,
+        "p05": 20.381,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "28 AUGUST",
+        "samples": 707,
+        "min": 20.381,
+        "p05": 20.381,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "09:00–18:00",
+        "samples": 762,
+        "min": 20.381,
+        "p05": 20.381,
+        "below3": 0,
+        "below4_5": 0
+      }
+    ]
+  },
+  {
+    "id": "04-club-partitions",
+    "facts": {
+      "exit_code": 0,
+      "output": "\n11 facts · 0 missing · 0 warning(s)\n"
+    },
+    "bounds": [],
+    "font_errors": [],
+    "font_fallback": [],
+    "raster_images": 0,
+    "contrast": [
+      {
+        "text": "Night Assembly",
+        "samples": 4549,
+        "min": 19.909,
+        "p05": 19.909,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "Rosa Flux Mika Lo",
+        "samples": 1863,
+        "min": 19.909,
+        "p05": 19.909,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "B2B until dawn",
+        "samples": 129,
+        "min": 19.909,
+        "p05": 19.909,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "LOWER ROOM",
+        "samples": 238,
+        "min": 19.909,
+        "p05": 19.909,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "Alba Phase Dorian East NEX",
+        "samples": 2947,
+        "min": 19.909,
+        "p05": 19.909,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "17.07.27",
+        "samples": 628,
+        "min": 19.909,
+        "p05": 19.909,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "23:00",
+        "samples": 537,
+        "min": 19.909,
+        "p05": 19.909,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "FORMA CLUB",
+        "samples": 1282,
+        "min": 19.909,
+        "p05": 19.909,
+        "below3": 0,
+        "below4_5": 0
+      }
+    ]
+  },
+  {
+    "id": "05-culture-monsters",
+    "facts": {
+      "exit_code": 0,
+      "output": "\n8 facts · 0 missing · 0 warning(s)\n"
+    },
+    "bounds": [],
+    "font_errors": [],
+    "font_fallback": [],
+    "raster_images": 0,
+    "contrast": [
+      {
+        "text": "TTXC 2027",
+        "samples": 5543,
+        "min": 20.624,
+        "p05": 20.624,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "城市游乐场",
+        "samples": 4661,
+        "min": 20.624,
+        "p05": 20.624,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "City Play!",
+        "samples": 3346,
+        "min": 20.624,
+        "p05": 20.624,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "ART × SOUND × TECHNOLOGY",
+        "samples": 720,
+        "min": 5.755,
+        "p05": 5.755,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "2027.09.10–12",
+        "samples": 1915,
+        "min": 5.755,
+        "p05": 5.755,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "海岸文化中心",
+        "samples": 1898,
+        "min": 5.755,
+        "p05": 5.755,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "Coast Culture Center",
+        "samples": 2661,
+        "min": 5.755,
+        "p05": 5.755,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "一起把城市玩出新花样",
+        "samples": 623,
+        "min": 5.755,
+        "p05": 5.755,
+        "below3": 0,
+        "below4_5": 0
+      }
+    ]
+  },
+  {
+    "id": "06-hackathon-space",
+    "facts": {
+      "exit_code": 0,
+      "output": "\n10 facts · 0 missing · 0 warning(s)\n"
+    },
+    "bounds": [],
+    "font_errors": [],
+    "font_fallback": [],
+    "raster_images": 0,
+    "contrast": [
+      {
+        "text": "REMOTE TEAMS",
+        "samples": 152,
+        "min": 8.225,
+        "p05": 8.225,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "WELCOME",
+        "samples": 91,
+        "min": 8.225,
+        "p05": 8.225,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "TYO",
+        "samples": 774,
+        "min": 5.751,
+        "p05": 5.751,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "SEL",
+        "samples": 702,
+        "min": 5.751,
+        "p05": 5.751,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "SIN",
+        "samples": 773,
+        "min": 5.751,
+        "p05": 5.751,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "SYD",
+        "samples": 828,
+        "min": 5.751,
+        "p05": 5.751,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "06.18.27",
+        "samples": 1608,
+        "min": 8.225,
+        "p05": 8.225,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "06.19.27",
+        "samples": 1600,
+        "min": 8.225,
+        "p05": 8.225,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "BUILD-ATHON",
+        "samples": 13688,
+        "min": 8.83,
+        "p05": 8.83,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "MAKE WHAT CONNECTS US",
+        "samples": 263,
+        "min": 8.83,
+        "p05": 8.83,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "stripe",
+        "samples": 138,
+        "min": 8.83,
+        "p05": 8.83,
+        "below3": 0,
+        "below4_5": 0
+      }
+    ]
+  },
+  {
+    "id": "07-type-built-week",
+    "facts": {
+      "exit_code": 0,
+      "output": "\n13 facts · 0 missing · 0 warning(s)\n"
+    },
+    "bounds": [
+      {
+        "text": "TAIPEI",
+        "rawText": "TAIPEI",
+        "x": 20.917129516601562,
+        "y": -35.026702880859375,
+        "width": 863.2197875976562,
+        "height": 316.28338623046875,
+        "fill": "rgb(28, 26, 27)",
+        "size": "261.154px",
+        "weight": "900",
+        "font": "\"Study Sans\", sans-serif",
+        "outOfFrame": true
+      }
+    ],
+    "font_errors": [],
+    "font_fallback": [],
+    "raster_images": 0,
+    "contrast": [
+      {
+        "text": "TAIPEI",
+        "samples": 23173,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "DESIGN",
+        "samples": 25904,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "WEEK",
+        "samples": 24055,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "2027",
+        "samples": 19643,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "ARCHITECTURE",
+        "samples": 158,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "CRAFT",
+        "samples": 49,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "FOOD",
+        "samples": 50,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "MUSIC",
+        "samples": 65,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "PUBLIC SPACE",
+        "samples": 116,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "OCTOBER 4–10",
+        "samples": 530,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "TAIPEIDESIGNWEEK.EXAMPLE",
+        "samples": 635,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "City Design Museum",
+        "samples": 233,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "Open City Lab",
+        "samples": 149,
+        "min": 15.264,
+        "p05": 15.264,
+        "below3": 0,
+        "below4_5": 0
+      }
+    ]
+  },
+  {
+    "id": "08-forest-character",
+    "facts": {
+      "exit_code": 0,
+      "output": "\n7 facts · 0 missing · 0 warning(s)\n"
+    },
+    "bounds": [],
+    "font_errors": [],
+    "font_fallback": [],
+    "raster_images": 0,
+    "contrast": [
+      {
+        "text": "forest",
+        "samples": 5291,
+        "min": 16.869,
+        "p05": 16.869,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "After Hours",
+        "samples": 4345,
+        "min": 5.708,
+        "p05": 5.708,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "Riverside Forest Stage",
+        "samples": 637,
+        "min": 5.708,
+        "p05": 5.708,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "18:30–22:00",
+        "samples": 354,
+        "min": 5.708,
+        "p05": 5.708,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "\nOpen-air music returns to the riverside forest.\nBring your friends, follow the lights, and spend\na summer evening among the trees.\n",
+        "samples": 1669,
+        "min": 5.708,
+        "p05": 5.708,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "07.03–07.24",
+        "samples": 925,
+        "min": 10.858,
+        "p05": 10.858,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "2027",
+        "samples": 208,
+        "min": 21,
+        "p05": 21,
+        "below3": 0,
+        "below4_5": 0
+      }
+    ]
+  },
+  {
+    "id": "09-isometric-letter-stage",
+    "facts": {
+      "exit_code": 0,
+      "output": "\n8 facts · 0 missing · 0 warning(s)\n"
+    },
+    "bounds": [],
+    "font_errors": [],
+    "font_fallback": [],
+    "raster_images": 0,
+    "contrast": [
+      {
+        "text": "WE MAKE NOISE",
+        "samples": 1771,
+        "min": 6.919,
+        "p05": 6.919,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "KONBIN",
+        "samples": 6771,
+        "min": 20.85,
+        "p05": 20.85,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "STAGE",
+        "samples": 4507,
+        "min": 20.85,
+        "p05": 20.85,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "MOTIF CLUB",
+        "samples": 2193,
+        "min": 6.919,
+        "p05": 6.919,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "NEON PALMS",
+        "samples": 2198,
+        "min": 8.291,
+        "p05": 8.291,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "RINA VEIL",
+        "samples": 1611,
+        "min": 8.291,
+        "p05": 8.291,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "LAGO",
+        "samples": 949,
+        "min": 6.919,
+        "p05": 6.919,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "17.07",
+        "samples": 1325,
+        "min": 15.81,
+        "p05": 15.81,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "OPEN AIR",
+        "samples": 2097,
+        "min": 6.919,
+        "p05": 6.919,
+        "below3": 0,
+        "below4_5": 0
+      }
+    ]
+  },
+  {
+    "id": "10-molly-scenery",
+    "facts": {
+      "exit_code": 0,
+      "output": "\n9 facts · 0 missing · 0 warning(s)\n"
+    },
+    "bounds": [],
+    "font_errors": [],
+    "font_fallback": [],
+    "raster_images": 0,
+    "contrast": [
+      {
+        "text": "MOLLY",
+        "samples": 637,
+        "min": 20.027,
+        "p05": 20.027,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "艺术在场",
+        "samples": 5744,
+        "min": 20.027,
+        "p05": 20.027,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "日常发光",
+        "samples": 6481,
+        "min": 20.027,
+        "p05": 20.027,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "ART IN",
+        "samples": 858,
+        "min": 5.351,
+        "p05": 5.351,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "EVERYDAY LIFE",
+        "samples": 1665,
+        "min": 5.351,
+        "p05": 5.351,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "2027.04.17—05.05",
+        "samples": 702,
+        "min": 20.027,
+        "p05": 20.027,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "10:00–20:00",
+        "samples": 179,
+        "min": 20.027,
+        "p05": 20.027,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "城市艺术中心 · 一层展厅",
+        "samples": 354,
+        "min": 20.027,
+        "p05": 20.027,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "免费入场",
+        "samples": 257,
+        "min": 20.027,
+        "p05": 20.027,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "把街角的颜色、声音与相遇，",
+        "samples": 341,
+        "min": 20.027,
+        "p05": 20.027,
+        "below3": 0,
+        "below4_5": 0
+      },
+      {
+        "text": "变成每个人都能参与的艺术现场。",
+        "samples": 478,
+        "min": 20.027,
+        "p05": 20.027,
+        "below3": 0,
+        "below4_5": 0
+      }
+    ]
+  }
+]

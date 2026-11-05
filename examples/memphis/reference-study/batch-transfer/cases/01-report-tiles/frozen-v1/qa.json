@@ -1,0 +1,119 @@
+{
+  "width": 1280,
+  "height": 720,
+  "text": [
+    {
+      "text": "Laporan Proyek Komunikasi Visual",
+      "x": 52,
+      "y": 42,
+      "width": 373.34375,
+      "height": 28,
+      "family": "\"Study Sans\", sans-serif"
+    },
+    {
+      "text": "Eksplorasi",
+      "x": 41.220001220703125,
+      "y": 113,
+      "width": 456.375,
+      "height": 120,
+      "family": "\"Study Light\", sans-serif"
+    },
+    {
+      "text": "Ruang Kota",
+      "x": 46.75,
+      "y": 217,
+      "width": 604.65625,
+      "height": 136,
+      "family": "\"Study Sans\", sans-serif"
+    },
+    {
+      "text": "Observasi",
+      "x": 52,
+      "y": 399,
+      "width": 159.390625,
+      "height": 39,
+      "family": "\"Study Sans\", sans-serif"
+    },
+    {
+      "text": "Mengamati tanda, warna, dan kebiasaan di ruang publik sebagai dasar sistem komunikasi visual.",
+      "x": 52,
+      "y": 451,
+      "width": 326.4375,
+      "height": 80,
+      "family": "\"Study Sans\", sans-serif"
+    },
+    {
+      "text": "Eksperimen",
+      "x": 480,
+      "y": 399,
+      "width": 185.1875,
+      "height": 39,
+      "family": "\"Study Sans\", sans-serif"
+    },
+    {
+      "text": "Menguji bentuk dan bahasa visual melalui prototipe yang dekat dengan kehidupan sehari-hari.",
+      "x": 480,
+      "y": 451,
+      "width": 350.109375,
+      "height": 80,
+      "family": "\"Study Sans\", sans-serif"
+    },
+    {
+      "text": "Nadia Putri",
+      "x": 52,
+      "y": 625,
+      "width": 139.90625,
+      "height": 31,
+      "family": "\"Study Sans\", sans-serif"
+    },
+    {
+      "text": "Studio Sekolah",
+      "x": 52,
+      "y": 662,
+      "width": 140.828125,
+      "height": 24,
+      "family": "\"Study Sans\", sans-serif"
+    },
+    {
+      "text": "2027",
+      "x": 700.1160278320312,
+      "y": 614,
+      "width": 160.364013671875,
+      "height": 83,
+      "family": "\"Study Light\", sans-serif"
+    }
+  ],
+  "outOfBounds": [],
+  "embeddedFaces": [
+    {
+      "family": "Study Sans",
+      "weight": "400",
+      "status": "loaded"
+    },
+    {
+      "family": "Study Sans",
+      "weight": "700",
+      "status": "loaded"
+    },
+    {
+      "family": "Study Sans",
+      "weight": "900",
+      "status": "loaded"
+    },
+    {
+      "family": "Study Light",
+      "weight": "100 900",
+      "status": "loaded"
+    },
+    {
+      "family": "Study CJK",
+      "weight": "100 900",
+      "status": "unloaded"
+    },
+    {
+      "family": "Study Condensed",
+      "weight": "700",
+      "status": "unloaded"
+    }
+  ]
+}

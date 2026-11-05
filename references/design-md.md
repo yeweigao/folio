@@ -4,6 +4,16 @@
 
 A world has one DESIGN.md: its aesthetic system, no content. Each piece has a brief. The skeleton is written for the agent that makes the next piece, so it reads in the order a maker works: the hand's method and material, then construction, type and color, exact values last. Token names follow Google's [DESIGN.md](https://github.com/google-labs-code/design.md) where they overlap.
 
+## From supplied work
+
+Inspect the finished images before deriving the system. When reconstruction is requested, make and compare that reconstruction first; for extraction alone, inspect the supplied work directly. A selected reference establishes the direction. Describe the construction actually present, including a hybrid, and identify an author only when the source establishes one.
+
+Group worlds by shared construction and identity, not by a shared palette or movement label. Separate what must survive in every piece from what a new piece may change. Infer the module, pattern frequency, type hierarchy and colour roles from the material; the template's fields are questions to answer, not values or paragraphs to copy.
+
+A motif name is not its construction. Put its distinguishing silhouette, internal parts, relative dimensions and permitted transformations in Shapes, or declare the exact supplied asset that carries them. Put colour functions in Colors and face/weight assignments by role in Typography. State the conditions for a change of field or format; a narrow strip does not establish the rule for every portrait. Keep unsupported extensions identifiable as inferences.
+
+Read the draft as a maker who cannot see the images: which missing decision could change the identity? Resolve those decisions in the file while leaving placement free where it does not define the world. Record reconstruction evidence and independent transfer evidence separately. Use The test below before calling a reference-derived system transferable.
+
 ## The skeleton
 
 - **A world, not a piece.** A brand, a series, or a kind of content: the scope its content shares. What every piece keeps and what each piece brings are both stated; no fact of any piece appears, not even as an example.
@@ -18,7 +28,7 @@ A world has one DESIGN.md: its aesthetic system, no content. Each piece has a br
 - **Forms, one line each.** How each form this world uses is set, and its ban.
 - **Tokens derived, not inherited.** From the hand and the world, at the end as data. A role only if used, every role used. Every text-on-ground pair is listed under `pairs`, so contrast can be checked.
 - **Written as commands.** After the lock, helpers read this file instead of the theme.
-- **The file changes before the work.** A new or changed file is read by the skeleton reader ([review](review.md#skeleton-reader)) before its first piece.
+- **The file changes before work made from it.** A new or changed file is read by the skeleton reader ([review](review.md#skeleton-reader)) before its first new piece. Reference reconstruction precedes extraction as described above.
 - **English headings**, so scripts can find them; the prose may follow the person's language.
 
 ````markdown
@@ -40,16 +50,16 @@ Anti-reference: <the default a maker reaches for with no school, which this worl
 
 ## Layout
 Grid system: <one system from the theme's roster> — <why>.
-<The construction from W × H: unit, margins, tracks; how portrait, landscape and square differ; where unused space goes. Resolve clear gaps within paired type, between reading groups and between text and image, relative to the relevant type or module. Say which visible ink or image edges they separate; text-box clearance alone is not the measure.>
+<The construction from W × H: module, margins, tracks, pattern frequency and adjoining fields. Name the stable relationships and the free positions; state the conditions for each format or field change and where unused space goes. Resolve gaps between actual type/image ink relative to type or module; text-box clearance alone is not the measure.>
 
 ## Typography
-<Faces and lineage; the ramp as size/weight steps at S = 1000; the smallest reading size; CJK and Latin as one voice; figures. Where display type leads, say how its scale and weight hold the field at thumbnail size. Recompose a long title within that hierarchy instead of shrinking its declared role to preserve empty space.>
+<Assign a face and real weight to each role, with licensed sources or supplied files and the glyph coverage needed for new content. Give the size/weight ramp at S = 1000 or a span-derived rule, the smallest reading size, CJK/Latin relationship and figures. Where display leads, state its scale and weight in the field. Recompose long titles within the hierarchy.>
 
 ## Colors
 <Each role: what it marks, the grounds it touches, where it never appears.>
 
 ## Shapes
-<Edges, rules, radius, depth; the drawing grammar of anything made in code.>
+<Edges, rules, radius and depth. For identity-bearing motifs or constructed letters, define intrinsic counts, relative proportions, inner parts/negative shapes, joins and allowed transformations so another maker can construct them without the reference; or name the supplied asset. Repeated-instance counts and order stay variable unless they establish the identity. Pattern pitch follows the module rather than being re-scaled to each container. Keep page coordinates and piece content out.>
 
 ## Forms
 <The forms any content brings (cover, statement, exhibit, argument and data, sequence, comparison, collection, reference, close), each as this hand sets it, or refused; its ban.>
@@ -112,5 +122,5 @@ A piece that must differ from the skeleton records why in its brief. A differenc
 
 ## The test
 
-- **Same world.** A fresh session gets the skeleton and a brief for other content in this world. What it makes reads as one set with the first piece, and only the piece's idea was new, found by the skeleton's method.
-- **Rival world.** The same skeleton with a brief from another world (another subject, the same hand) should not fit. If it fits unchanged, it is the hand's costume, not this world's system.
+- **Same world.** Freeze the skeleton and a new-content brief. A fresh maker gets only these and declared production assets, without the references, previous artwork or its drawing code. Inspect the new render beside the existing set: identity, composition and content transfer are separate from craft/fact compliance. Declare which assets were supplied; a handed-over motif component is not proof that its written construction is sufficient. Keep failures before revising the file and test a revision with a fresh maker. One successful piece establishes one transfer, not general reliability.
+- **Rival world.** Change the identity or governing relationships, not merely the title or subject within the same series. If the file still fits without changing its construction, it may describe the hand's generic look rather than this world. New topics within a world's declared scope are expected to fit.

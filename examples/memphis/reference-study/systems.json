@@ -1,0 +1,100 @@
+[
+  {
+    "id": "01-report-tiles",
+    "title": "方砖报告系统",
+    "pieces": [
+      "slides/01-cover.svg",
+      "slides/02-contents.svg",
+      "slides/03-background.svg",
+      "slides/04-profile.svg",
+      "slides/05-vision.svg",
+      "slides/06-history.svg",
+      "slides/07-work.svg",
+      "slides/08-responsibilities.svg"
+    ],
+    "design": "systems/01-report-tiles/DESIGN.md"
+  },
+  {
+    "id": "02-streetwise-collage",
+    "title": "街头行动 · 不等跨模块拼贴",
+    "pieces": [
+      "posters/01-collection-of-acts.svg"
+    ],
+    "design": "systems/02-streetwise-collage/DESIGN.md"
+  },
+  {
+    "id": "03-cut-glyph-exhibition",
+    "title": "展览 · 切割字形与双栏色场",
+    "pieces": [
+      "posters/02-new-design.svg"
+    ],
+    "design": "systems/03-cut-glyph-exhibition/DESIGN.md"
+  },
+  {
+    "id": "04-club-partitions",
+    "title": "俱乐部 · 黑框与曲面分区",
+    "pieces": [
+      "posters/03-tresor.svg"
+    ],
+    "design": "systems/04-club-partitions/DESIGN.md"
+  },
+  {
+    "id": "05-culture-monsters",
+    "title": "文化科技 · 角色拼贴",
+    "pieces": [
+      "posters/04-ttxc.svg"
+    ],
+    "design": "systems/05-culture-monsters/DESIGN.md"
+  },
+  {
+    "id": "06-hackathon-space",
+    "title": "技术活动 · 网格、窗口与积木",
+    "pieces": [
+      "posters/05-hackathon-windows.svg",
+      "posters/08-hackathon-blocks.svg"
+    ],
+    "design": "systems/06-hackathon-space/DESIGN.md"
+  },
+  {
+    "id": "07-type-built-week",
+    "title": "设计周 · 字母即版面",
+    "pieces": [
+      "posters/06-san-diego.svg"
+    ],
+    "design": "systems/07-type-built-week/DESIGN.md"
+  },
+  {
+    "id": "08-forest-character",
+    "title": "森林活动 · 角色与棋盘",
+    "pieces": [
+      "posters/07-forest.svg"
+    ],
+    "design": "systems/08-forest-character/DESIGN.md"
+  },
+  {
+    "id": "09-isometric-letter-stage",
+    "title": "舞台 · 等轴文字建筑",
+    "pieces": [
+      "posters/09-konbin.svg"
+    ],
+    "design": "systems/09-isometric-letter-stage/DESIGN.md"
+  },
+  {
+    "id": "10-molly-scenery",
+    "title": "艺术活动 · 模块景观身份",
+    "pieces": [
+      "brand/01-banner.svg",
+      "brand/02-ribbon.svg",
+      "brand/03-ribbon.svg",
+      "brand/04-ribbon.svg",
+      "brand/05-invitation-white.svg",
+      "brand/06-invitation-blue.svg",
+      "brand/07-bag.svg",
+      "brand/08-bag.svg",
+      "brand/09-badge.svg",
+      "brand/10-badge.svg",
+      "brand/11-leaflet.svg"
+    ],
+    "design": "systems/10-molly-scenery/DESIGN.md"
+  }
+]

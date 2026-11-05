@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="poster-title poster-desc">
+<title id="poster-title">Night Assembly — 17.07.27 — FORMA CLUB</title>
+<desc id="poster-desc">Night Assembly. Rosa Flux, Mika Lo. B2B until dawn. LOWER ROOM: Alba Phase, Dorian East, NEX. 17.07.27, 23:00. FORMA CLUB.</desc>
+<!-- FONTS -->
+<style>
+  text { font-family: 'Study Sans', sans-serif; fill: #000000; font-weight: 700; }
+  .lead { font-size: 86.4px; }
+  .names { font-size: 54px; }
+  .facts { font-size: 48.6px; }
+  .label { font-size: 21.6px; }
+  .body { font-size: 21.6px; font-weight: 400; }
+</style>
+<defs>
+  <clipPath id="upper-field"><path d="M560 0H900V640H330V530H560Z"/></clipPath>
+  <clipPath id="lower-field"><rect x="0" y="530" width="320" height="670"/></clipPath>
+</defs>
+<rect id="shared-ink-field" width="900" height="1200" fill="#000000"/>
+<!-- A clipped arc and widening diagonal channel share the upper colour field. -->
+<g id="upper-graphic" clip-path="url(#upper-field)">
+  <rect x="330" y="0" width="570" height="640" fill="#0969F9"/>
+  <path d="M560 435L900 340V640H330V530H560Z" fill="#000000"/>
+  <path d="M560 540L900 374V640H330V530H560Z" fill="#FF3A06"/>
+  <circle cx="1010" cy="40" r="347" fill="#000000"/>
+  <circle cx="1010" cy="40" r="335" fill="#F9F9F6"/>
+</g>
+<!-- The lower trim carries a different contact: a broad paper cut and a local black lobe. -->
+<g id="lower-graphic" clip-path="url(#lower-field)">
+  <rect x="0" y="530" width="320" height="670" fill="#FF3A06"/>
+  <circle cx="-85" cy="1120" r="332" fill="#000000"/>
+  <circle cx="-85" cy="1120" r="320" fill="#F9F9F6"/>
+  <path d="M320 920H260C207.533 920 165 962.533 165 1015C165 1067.467 207.533 1110 260 1110H320Z" fill="#000000"/>
+</g>
+<!-- Reading rectangles are cut directly out of the shared ink field. -->
+<g id="event-name">
+  <rect x="10" y="10" width="540" height="240" fill="#F9F9F6"/>
+  <text class="lead" x="30" y="112"><tspan x="30" y="112">Night</tspan><tspan x="30" y="202">Assembly</tspan></text>
+</g>
+<g id="main-artists">
+  <rect x="10" y="260" width="540" height="260" fill="#F9F9F6"/>
+  <text class="names" x="30" y="334"><tspan x="30" y="334">Rosa Flux</tspan><tspan x="30" y="393">Mika Lo</tspan></text>
+  <text class="body" x="30" y="467">B2B until dawn</text>
+</g>
+<g id="lower-room">
+  <rect x="330" y="650" width="560" height="300" fill="#F9F9F6"/>
+  <text class="label" x="350" y="686">LOWER ROOM</text>
+  <text class="names" x="350" y="754"><tspan x="350" y="754">Alba Phase</tspan><tspan x="350" y="811">Dorian East</tspan><tspan x="350" y="868">NEX</tspan></text>
+</g>
+<g id="event-facts">
+  <rect x="330" y="960" width="560" height="230" fill="#F9F9F6"/>
+  <text class="facts" x="350" y="1030">17.07.27</text>
+  <text class="facts" x="870" y="1030" text-anchor="end">23:00</text>
+  <text class="facts" x="350" y="1120">FORMA CLUB</text>
+</g>
+</svg>

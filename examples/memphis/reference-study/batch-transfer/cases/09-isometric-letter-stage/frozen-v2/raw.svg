@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="poster-title poster-description">
+<title id="poster-title">KONBIN STAGE</title>
+<desc id="poster-description">An open-air stage built from stacked isometric letter-bearing blocks. 17.07. OPEN AIR. RINA VEIL, LAGO, MOTIF CLUB, NEON PALMS. WE MAKE NOISE.</desc>
+<!-- FONTS -->
+<style>text{font-family:"Study Condensed",sans-serif;font-weight:700;font-kerning:none}</style>
+<rect width="900" height="1200" fill="#FFDF06"/>
+
+<g id="foundation" aria-label="foundation">
+<polygon points="155,775.875 485,916.125 485,1116.125 155,975.875" fill="#2836B5"/>
+<polygon points="485,916.125 745,805.625 745,1005.625 485,1116.125" fill="#FF2E05"/>
+<polygon points="415,665.375 745,805.625 485,916.125 155,775.875" fill="#000000"/>
+</g>
+<g transform="matrix(1 0.425 0 1 155 775.875)">
+<text id="slogan" x="9.9" y="166" font-size="48.9738" fill="#FFDF06">WE MAKE NOISE</text>
+</g>
+<g id="title-bridge" aria-label="title bridge">
+<polygon points="60,594.5 500,781.5 500,956.5 60,769.5" fill="#FFFFF3"/>
+<polygon points="500,781.5 840,637 840,812 500,956.5" fill="#FFFFF3"/>
+<polygon points="400,450 840,637 500,781.5 60,594.5" fill="#000000"/>
+</g>
+<g transform="matrix(1 0.425 0 1 60 594.5)">
+<text id="event-name-one" x="13.2" y="140.4418" font-size="130.7206" fill="#000000">KONBIN</text>
+</g>
+<g transform="matrix(1 -0.425 0 1 500 781.5)">
+<text id="event-name-two" x="10.2" y="138.4799" font-size="125.8763" fill="#000000">STAGE</text>
+</g>
+<g id="lower-lineup" aria-label="lower lineup">
+<polygon points="115,502.875 445,643.125 445,758.125 115,617.875" fill="#2836B5"/>
+<polygon points="445,643.125 785,498.625 785,613.625 445,758.125" fill="#22B88A"/>
+<polygon points="455,358.375 785,498.625 445,643.125 115,502.875" fill="#FF2E05"/>
+</g>
+<g transform="matrix(1 0.425 0 1 115 502.875)">
+<text id="artist-three" x="9.9" y="83.0972" font-size="63.2029" fill="#FFDF06">MOTIF CLUB</text>
+</g>
+<g transform="matrix(1 -0.425 0 1 445 643.125)">
+<text id="artist-four" x="10.2" y="82.4207" font-size="61.5325" fill="#000000">NEON PALMS</text>
+</g>
+<g id="upper-lineup" aria-label="upper lineup">
+<polygon points="270,348.25 530,458.75 530,568.75 270,458.25" fill="#22B88A"/>
+<polygon points="530,458.75 670,399.25 670,509.25 530,568.75" fill="#2836B5"/>
+<polygon points="410,288.75 670,399.25 530,458.75 270,348.25" fill="#000000"/>
+</g>
+<g transform="matrix(1 0.425 0 1 270 348.25)">
+<text id="artist-one" x="7.8" y="79.8324" font-size="61.3146" fill="#000000">RINA VEIL</text>
+</g>
+<g transform="matrix(1 -0.425 0 1 530 458.75)">
+<text id="artist-two" x="4.2" y="79.6522" font-size="60.8696" fill="#FFDF06">LAGO</text>
+</g>
+<g id="date-and-venue" aria-label="date and venue">
+<polygon points="295,214.625 475,291.125 475,431.125 295,354.625" fill="#000000"/>
+<polygon points="475,291.125 605,235.875 605,375.875 475,431.125" fill="#2836B5"/>
+<polygon points="425,159.375 605,235.875 475,291.125 295,214.625" fill="#FF2E05"/>
+</g>
+<g transform="matrix(1 0.425 0 1 295 214.625)">
+<text id="date" x="5.4" y="103.3136" font-size="82.2557" fill="#FFDF06">17.07</text>
+</g>
+<g transform="matrix(1 -0.425 0 1 475 291.125)">
+<text id="venue-type" fill="#FFDF06" aria-label="OPEN AIR"><tspan x="3.9" y="54.2749" font-size="56.4434">OPEN</tspan> <tspan x="3.9" y="131.4443" font-size="84.1598">AIR</tspan></text></g>
+</svg>

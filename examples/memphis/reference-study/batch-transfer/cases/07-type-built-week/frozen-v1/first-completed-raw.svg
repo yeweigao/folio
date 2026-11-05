@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="poster-title poster-description">
+<title id="poster-title">Taipei Design Week 2027</title>
+<desc id="poster-description">Taipei Design Week. October 4–10, 2027. Architecture, craft, food, music, and public space. Hosted by City Design Museum with Open City Lab. TAIPEIDESIGNWEEK.EXAMPLE.</desc>
+<!-- FONTS -->
+<rect width="900" height="1200" fill="#F6F0E5"/>
+<g fill="#1C1A1B" font-family="Study Sans, sans-serif" style="font-kerning:none;font-feature-settings:'kern' 0">
+<text id="city" font-size="288.644295" font-weight="900" transform="translate(22.95070 240.00000) scale(0.89315151 1)">TAIPEI</text>
+<text id="theme" font-size="288.644295" font-weight="900" transform="translate(19.42288 466.00000) scale(0.78174187 1)">DESIGN</text>
+<text id="event" font-size="288.644295" font-weight="900" transform="translate(23.75667 692.00000) scale(0.96299887 1)">WEEK</text>
+<text id="year" font-size="288.644295" font-weight="900" transform="translate(18.68360 918.00000) scale(1.14703618 1)">2027</text>
+</g>
+<defs>
+<clipPath id="city-glyphs"><text font-family="Study Sans, sans-serif" font-size="288.644295" font-weight="900" transform="translate(22.95070 240.00000) scale(0.89315151 1)" style="font-kerning:none">TAIPEI</text></clipPath>
+<clipPath id="theme-glyphs"><text font-family="Study Sans, sans-serif" font-size="288.644295" font-weight="900" transform="translate(19.42288 466.00000) scale(0.78174187 1)" style="font-kerning:none">DESIGN</text></clipPath>
+</defs>
+<g clip-path="url(#city-glyphs)">
+<rect x="205.7291" y="30.0000" width="193.3523" height="210.0000" fill="#005B32"/>
+<path d="M 205.7291 240.0000 L 399.0814 30.0000 L 399.0814 240.0000 Z" fill="#554699"/>
+</g>
+<g clip-path="url(#theme-glyphs)">
+<rect x="224.0640" y="256.0000" width="87.3316" height="45.5000" fill="#554699"/>
+<rect x="224.0640" y="338.2500" width="87.3316" height="45.5000" fill="#FF5205"/>
+<rect x="224.0640" y="420.5000" width="87.3316" height="45.5000" fill="#258CB4"/>
+</g>
+<rect x="243.04157" y="704.18121" width="214.74827" height="217.63758" fill="#F6F0E5"/>
+<circle cx="350.41570" cy="813.00000" r="105" fill="#FF5205"/>
+<g fill="#1C1A1B" font-family="Study Sans, sans-serif">
+<text x="30" y="994" font-size="23" font-weight="400">ARCHITECTURE</text>
+<text x="30" y="1029" font-size="23" font-weight="400">CRAFT</text>
+<text x="30" y="1064" font-size="23" font-weight="400">FOOD</text>
+<text x="30" y="1099" font-size="23" font-weight="400">MUSIC</text>
+<text x="30" y="1134" font-size="23" font-weight="400">PUBLIC SPACE</text>
+<text x="380" y="998" font-size="36" font-weight="900">OCTOBER 4–10</text>
+<text x="380" y="1041" font-size="22" font-weight="700">TAIPEIDESIGNWEEK.EXAMPLE</text>
+<text x="380" y="1112" font-size="23" font-weight="400">City Design Museum</text>
+<text x="380" y="1146" font-size="23" font-weight="400">Open City Lab</text>
+</g>
+</svg>

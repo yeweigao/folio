@@ -1,0 +1,135 @@
+{
+  "fontStatus": "loaded",
+  "fonts": [
+    {
+      "family": "Study Sans",
+      "weight": "400",
+      "status": "loaded"
+    },
+    {
+      "family": "Study Sans",
+      "weight": "700",
+      "status": "loaded"
+    },
+    {
+      "family": "Study Sans",
+      "weight": "900",
+      "status": "loaded"
+    },
+    {
+      "family": "Study CJK",
+      "weight": "100 900",
+      "status": "loaded"
+    },
+    {
+      "family": "Study Pixel",
+      "weight": "400",
+      "status": "loaded"
+    }
+  ],
+  "text": [
+    {
+      "text": "MOLLY",
+      "bounds": {
+        "x": 78,
+        "y": 73,
+        "width": 141.50274658203125,
+        "height": 51
+      }
+    },
+    {
+      "text": "艺术在场",
+      "bounds": {
+        "x": 76,
+        "y": 198,
+        "width": 430.78125,
+        "height": 125
+      }
+    },
+    {
+      "text": "日常发光",
+      "bounds": {
+        "x": 76,
+        "y": 317,
+        "width": 430.78125,
+        "height": 125
+      }
+    },
+    {
+      "text": "ART IN",
+      "bounds": {
+        "x": 80,
+        "y": 505,
+        "width": 174.25,
+        "height": 51
+      }
+    },
+    {
+      "text": "EVERYDAY LIFE",
+      "bounds": {
+        "x": 80,
+        "y": 562,
+        "width": 396,
+        "height": 51
+      }
+    },
+    {
+      "text": "2027.04.17—05.05",
+      "bounds": {
+        "x": 80,
+        "y": 752,
+        "width": 305.265625,
+        "height": 41
+      }
+    },
+    {
+      "text": "10:00–20:00",
+      "bounds": {
+        "x": 80,
+        "y": 803,
+        "width": 164.59375,
+        "height": 34
+      }
+    },
+    {
+      "text": "城市艺术中心 · 一层展厅",
+      "bounds": {
+        "x": 80,
+        "y": 887,
+        "width": 320.53125,
+        "height": 40
+      }
+    },
+    {
+      "text": "免费入场",
+      "bounds": {
+        "x": 80,
+        "y": 932,
+        "width": 112,
+        "height": 40
+      }
+    },
+    {
+      "text": "把街角的颜色、声音与相遇，",
+      "bounds": {
+        "x": 80,
+        "y": 1042,
+        "width": 351,
+        "height": 39
+      }
+    },
+    {
+      "text": "变成每个人都能参与的艺术现场。",
+      "bounds": {
+        "x": 80,
+        "y": 1084,
+        "width": 405,
+        "height": 39
+      }
+    }
+  ],
+  "svg": {
+    "width": "1080",
+    "height": "1528"
+  }
+}

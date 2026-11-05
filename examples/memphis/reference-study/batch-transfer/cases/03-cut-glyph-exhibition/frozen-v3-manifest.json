@@ -1,0 +1,22 @@
+{
+  "generate.py": {
+    "sha256": "78000b22493a02ca8428e141e141804405bf7ada436ef8c5951b18f76daacde0",
+    "bytes": 6934
+  },
+  "poster.svg": {
+    "sha256": "f8516e3c6d84da9ea8c2318a7a15d1b63d7d9d639493011100a29d524d816681",
+    "bytes": 84463
+  },
+  "preview.png": {
+    "sha256": "080905110678e627c64db760bb5e87c43a114577b28767294d73fae80129f7db",
+    "bytes": 57401
+  },
+  "raw.svg": {
+    "sha256": "65d86611a78ea4f9065abfa46b32682f3d6120b2292344b89839cd274581f90b",
+    "bytes": 13435
+  },
+  "uncertainties.md": {
+    "sha256": "0e83a397ce206d4508a0a5c9e86ec16540b5dc7eef814f856d590df6358b3039",
+    "bytes": 3097
+  }
+}

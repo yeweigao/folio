@@ -1,0 +1,72 @@
+[
+  {
+    "id": "01-report-tiles",
+    "stage": "v2",
+    "construction_body_matches_frozen": true,
+    "clarification": false,
+    "body_sha256": "4a175dceca22d1f9ab2ede887c1af1ca5c450b192a8b3cbdb45cd49dc555f99a"
+  },
+  {
+    "id": "02-streetwise-collage",
+    "stage": "v3",
+    "construction_body_matches_frozen": false,
+    "clarification": true,
+    "body_sha256": "b5c1fcf3e4f75ed932526c9ffc7b866f54188b4d5f8301035fa033e5ef3a32af"
+  },
+  {
+    "id": "03-cut-glyph-exhibition",
+    "stage": "v6",
+    "construction_body_matches_frozen": true,
+    "clarification": false,
+    "body_sha256": "297fda6529e0b46f4c4f6f4e339e8978ec4be5d38ffa316ff8ba28dd2c5d9860"
+  },
+  {
+    "id": "04-club-partitions",
+    "stage": "v2",
+    "construction_body_matches_frozen": true,
+    "clarification": false,
+    "body_sha256": "fb295fd0be89d4d05584068dfe200e1a6603a9180bc522567ad14774ed55ae29"
+  },
+  {
+    "id": "05-culture-monsters",
+    "stage": "v4",
+    "construction_body_matches_frozen": true,
+    "clarification": false,
+    "body_sha256": "e8dd33e5956ab26563291fb3f802bea24f41f3bc997a9b5405888a424e78f43a"
+  },
+  {
+    "id": "06-hackathon-space",
+    "stage": "v2",
+    "construction_body_matches_frozen": true,
+    "clarification": false,
+    "body_sha256": "0153ca1cf2f15be5abe1877c2103582585b39d4ef7e7147494c36bab6bcbe00f"
+  },
+  {
+    "id": "07-type-built-week",
+    "stage": "v3",
+    "construction_body_matches_frozen": true,
+    "clarification": false,
+    "body_sha256": "a171888c0a4da2fba1137ae4758a101f00a2f30bc4d908407f6af578ac470cf9"
+  },
+  {
+    "id": "08-forest-character",
+    "stage": "v2",
+    "construction_body_matches_frozen": true,
+    "clarification": false,
+    "body_sha256": "6c3c74825bc94f439171e18ada072fe7ee9fe414c1b32c4531249afb6abbbd01"
+  },
+  {
+    "id": "09-isometric-letter-stage",
+    "stage": "v4",
+    "construction_body_matches_frozen": true,
+    "clarification": false,
+    "body_sha256": "82c30a6942bd415491ed849d120c1a4fe4d3eebd95f0b910b539d25856bdc982"
+  },
+  {
+    "id": "10-molly-scenery",
+    "stage": "v2",
+    "construction_body_matches_frozen": true,
+    "clarification": false,
+    "body_sha256": "8cc0154d7e341dbd6c36e3d5b93b79abfc4af6b1e51e70950c32809efa527bef"
+  }
+]

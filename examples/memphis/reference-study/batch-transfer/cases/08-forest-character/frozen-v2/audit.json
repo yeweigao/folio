@@ -1,0 +1,248 @@
+{
+  "texts": [
+    {
+      "text": "forest",
+      "rawText": "forest",
+      "x": 224,
+      "y": 87,
+      "width": 392.7392578125,
+      "height": 166,
+      "fill": "rgb(0, 0, 0)",
+      "size": "137px",
+      "weight": "900",
+      "font": "\"Study Sans\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "After Hours",
+      "rawText": "After Hours",
+      "x": 34,
+      "y": 738,
+      "width": 497.509765625,
+      "height": 109,
+      "fill": "rgb(255, 255, 255)",
+      "size": "90px",
+      "weight": "900",
+      "font": "\"Study Sans\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "Riverside Forest Stage",
+      "rawText": "Riverside Forest Stage",
+      "x": 36,
+      "y": 891,
+      "width": 306.6875,
+      "height": 34,
+      "fill": "rgb(255, 255, 255)",
+      "size": "28px",
+      "weight": "700",
+      "font": "\"Study Sans\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "18:30–22:00",
+      "rawText": "18:30–22:00",
+      "x": 36,
+      "y": 931,
+      "width": 173,
+      "height": 34,
+      "fill": "rgb(255, 255, 255)",
+      "size": "28px",
+      "weight": "700",
+      "font": "\"Study Sans\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "\nOpen-air music returns to the riverside forest.\nBring your friends, follow the lights, and spend\na summer evening among the trees.\n",
+      "rawText": "\nOpen-air music returns to the riverside forest.\nBring your friends, follow the lights, and spend\na summer evening among the trees.\n",
+      "x": 36,
+      "y": 1012,
+      "width": 557.171875,
+      "height": 100,
+      "fill": "rgb(255, 255, 255)",
+      "size": "25px",
+      "weight": "400",
+      "font": "\"Study Sans\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "07.03–07.24",
+      "rawText": "07.03–07.24",
+      "x": 644,
+      "y": 822.6484375,
+      "width": 56,
+      "height": 274.703125,
+      "fill": "rgb(0, 0, 0)",
+      "size": "46px",
+      "weight": "700",
+      "font": "\"Study Sans\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "2027",
+      "rawText": "2027",
+      "x": 787.75,
+      "y": 761,
+      "width": 80.5,
+      "height": 39,
+      "fill": "rgb(255, 255, 255)",
+      "size": "32px",
+      "weight": "700",
+      "font": "\"Study Sans\"",
+      "outOfFrame": false
+    }
+  ],
+  "fonts": [
+    {
+      "family": "Study Sans",
+      "weight": "400"
+    },
+    {
+      "family": "Study Sans",
+      "weight": "700"
+    },
+    {
+      "family": "Study Sans",
+      "weight": "900"
+    }
+  ],
+  "fontErrors": [],
+  "rasterImages": 0,
+  "actualFonts": [
+    {
+      "text": "forest",
+      "fonts": [
+        {
+          "familyName": "Inter Black",
+          "postScriptName": "Inter-Black",
+          "isCustomFont": true,
+          "glyphCount": 6
+        }
+      ]
+    },
+    {
+      "text": "After Hours",
+      "fonts": [
+        {
+          "familyName": "Inter Black",
+          "postScriptName": "Inter-Black",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "text": "Riverside Forest Stage",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Bold",
+          "isCustomFont": true,
+          "glyphCount": 22
+        }
+      ]
+    },
+    {
+      "text": "18:30–22:00",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Bold",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "text": "\nOpen-air music returns to the riverside forest.\nBring your friends, follow the lights, and spend\na summer evening among the trees.\n",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular",
+          "isCustomFont": true,
+          "glyphCount": 130
+        }
+      ]
+    },
+    {
+      "text": "07.03–07.24",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Bold",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "text": "2027",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Bold",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    }
+  ],
+  "contrast": [
+    {
+      "text": "forest",
+      "samples": 5291,
+      "min": 16.869,
+      "p05": 16.869,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "After Hours",
+      "samples": 4345,
+      "min": 5.708,
+      "p05": 5.708,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "Riverside Forest Stage",
+      "samples": 637,
+      "min": 5.708,
+      "p05": 5.708,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "18:30–22:00",
+      "samples": 354,
+      "min": 5.708,
+      "p05": 5.708,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "\nOpen-air music returns to the riverside forest.\nBring your friends, follow the lights, and spend\na summer evening among the trees.\n",
+      "samples": 1669,
+      "min": 5.708,
+      "p05": 5.708,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "07.03–07.24",
+      "samples": 925,
+      "min": 10.858,
+      "p05": 10.858,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "2027",
+      "samples": 208,
+      "min": 21,
+      "p05": 21,
+      "below3": 0,
+      "below4_5": 0
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "review": "skeleton-03-color-field-review",
+  "date": "2026-11-05",
+  "scope": {
+    "read": [
+      "examples/memphis/reference-study/systems/03-cut-glyph-exhibition/DESIGN.md"
+    ],
+    "method": "仅依据当前 DESIGN 的施工正文，检查新增多格小群、功能配色与 pink 连接肩是否导致实质矛盾或无法施工。未打开图片、作品代码、其他评审或评论。"
+  },
+  "id": "03-cut-glyph-exhibition",
+  "verdict": "没有发现实质矛盾或无法施工之处",
+  "findings": [],
+  "checks": [
+    {
+      "rule": "分节场多格小群",
+      "result": "四至五列给出约 0.20–0.25g 的格宽，符合此前约 0.18–0.30g 的小尺度层级；两至三层及合并格允许形成实质拼块群。整个群、窄事实带与大弯钩之间保留明确尺度差，未要求小群内各件成为主字块。"
+    },
+    {
+      "rule": "功能色彩与文字层级",
+      "result": "中文展名 yellow-on-green、Latin 展名及小字 ink-on-green、日期与时间 paper-on-ink 均已有对应 pairs。中文第一层、Latin 从属及日期紧凑事实带的规则相互一致，没有将小字安排到仅允许大字的配对上。"
+    },
+    {
+      "rule": "pink 主构字角色",
+      "result": "pink 可作为主构字的连接肩、横笔或与 purple 合成的主块，仍满足它进入主构字的要求；规则未要求它另占一个完整巨拱，因此可与实质小群及已有并列弯钩、双碗腰体同时施工。"
+    },
+    {
+      "rule": "位置自由",
+      "result": "列数、层数与格宽定义内部构造，而非页面坐标；允许合并格、改变模块和事实带顺序、交换双场关系，未将某张作品的位置写死。"
+    }
+  ],
+  "limits": "这是纯文字自洽性与可施工检查，不是新渲染、身份或迁移效果验证；未修改 DESIGN 或既有评审文件。"
+}

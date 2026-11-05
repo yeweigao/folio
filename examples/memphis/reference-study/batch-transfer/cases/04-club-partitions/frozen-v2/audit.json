@@ -1,0 +1,276 @@
+{
+  "texts": [
+    {
+      "text": "Night Assembly",
+      "rawText": "NightAssembly",
+      "x": 30,
+      "y": 28,
+      "width": 421.421875,
+      "height": 195,
+      "fill": "rgb(0, 0, 0)",
+      "size": "86.4px",
+      "weight": "700",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "Rosa Flux Mika Lo",
+      "rawText": "Rosa FluxMika Lo",
+      "x": 30,
+      "y": 282,
+      "width": 253.578125,
+      "height": 124,
+      "fill": "rgb(0, 0, 0)",
+      "size": "54px",
+      "weight": "700",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "B2B until dawn",
+      "rawText": "B2B until dawn",
+      "x": 30,
+      "y": 446,
+      "width": 152.453125,
+      "height": 26,
+      "fill": "rgb(0, 0, 0)",
+      "size": "21.6px",
+      "weight": "400",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "LOWER ROOM",
+      "rawText": "LOWER ROOM",
+      "x": 350,
+      "y": 665,
+      "width": 150.15625,
+      "height": 26,
+      "fill": "rgb(0, 0, 0)",
+      "size": "21.6px",
+      "weight": "700",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "Alba Phase Dorian East NEX",
+      "rawText": "Alba PhaseDorian EastNEX",
+      "x": 350,
+      "y": 702,
+      "width": 300.90625,
+      "height": 179,
+      "fill": "rgb(0, 0, 0)",
+      "size": "54px",
+      "weight": "700",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "17.07.27",
+      "rawText": "17.07.27",
+      "x": 350,
+      "y": 983,
+      "width": 187.078125,
+      "height": 59,
+      "fill": "rgb(0, 0, 0)",
+      "size": "48.6px",
+      "weight": "700",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "23:00",
+      "rawText": "23:00",
+      "x": 726.234375,
+      "y": 983,
+      "width": 143.765625,
+      "height": 59,
+      "fill": "rgb(0, 0, 0)",
+      "size": "48.6px",
+      "weight": "700",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "FORMA CLUB",
+      "rawText": "FORMA CLUB",
+      "x": 350,
+      "y": 1073,
+      "width": 322.125,
+      "height": 59,
+      "fill": "rgb(0, 0, 0)",
+      "size": "48.6px",
+      "weight": "700",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    }
+  ],
+  "fonts": [
+    {
+      "family": "Study Sans",
+      "weight": "400"
+    },
+    {
+      "family": "Study Sans",
+      "weight": "700"
+    }
+  ],
+  "fontErrors": [],
+  "rasterImages": 0,
+  "actualFonts": [
+    {
+      "text": "Night Assembly",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Bold",
+          "isCustomFont": true,
+          "glyphCount": 13
+        }
+      ]
+    },
+    {
+      "text": "Rosa Flux Mika Lo",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Bold",
+          "isCustomFont": true,
+          "glyphCount": 16
+        }
+      ]
+    },
+    {
+      "text": "B2B until dawn",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular",
+          "isCustomFont": true,
+          "glyphCount": 14
+        }
+      ]
+    },
+    {
+      "text": "LOWER ROOM",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Bold",
+          "isCustomFont": true,
+          "glyphCount": 10
+        }
+      ]
+    },
+    {
+      "text": "Alba Phase Dorian East NEX",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Bold",
+          "isCustomFont": true,
+          "glyphCount": 24
+        }
+      ]
+    },
+    {
+      "text": "17.07.27",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Bold",
+          "isCustomFont": true,
+          "glyphCount": 8
+        }
+      ]
+    },
+    {
+      "text": "23:00",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Bold",
+          "isCustomFont": true,
+          "glyphCount": 5
+        }
+      ]
+    },
+    {
+      "text": "FORMA CLUB",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Bold",
+          "isCustomFont": true,
+          "glyphCount": 10
+        }
+      ]
+    }
+  ],
+  "contrast": [
+    {
+      "text": "Night Assembly",
+      "samples": 4549,
+      "min": 19.909,
+      "p05": 19.909,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "Rosa Flux Mika Lo",
+      "samples": 1863,
+      "min": 19.909,
+      "p05": 19.909,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "B2B until dawn",
+      "samples": 129,
+      "min": 19.909,
+      "p05": 19.909,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "LOWER ROOM",
+      "samples": 238,
+      "min": 19.909,
+      "p05": 19.909,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "Alba Phase Dorian East NEX",
+      "samples": 2947,
+      "min": 19.909,
+      "p05": 19.909,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "17.07.27",
+      "samples": 628,
+      "min": 19.909,
+      "p05": 19.909,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "23:00",
+      "samples": 537,
+      "min": 19.909,
+      "p05": 19.909,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "FORMA CLUB",
+      "samples": 1282,
+      "min": 19.909,
+      "p05": 19.909,
+      "below3": 0,
+      "below4_5": 0
+    }
+  ]
+}

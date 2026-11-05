@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="poster-title poster-description">
+<title id="poster-title">Eksplorasi Ruang Kota</title>
+<desc id="poster-description">Laporan Proyek Komunikasi Visual. Nadia Putri, Studio Sekolah, 2027.</desc>
+<!-- FONTS -->
+<rect width="1280" height="720" fill="#343D9F"/>
+<g id="continuous-tile-field" aria-hidden="true">
+<g id="tile-1-1" transform="translate(920 0)">
+<rect width="180" height="180" fill="#FF7619"/>
+<g transform="scale(180) rotate(0 .5 .5)" fill="#343D9F">
+<path d="M 0 0 H .32 V .5 A .18 .18 0 0 0 .5 .68 H 1 V 1 H .5 A .5 .5 0 0 1 0 .5 Z"/>
+</g>
+</g>
+<g id="tile-1-2" transform="translate(1100 0)">
+<rect width="180" height="180" fill="#343D9F"/>
+<g transform="scale(180) rotate(0 .5 .5)" fill="#FFE5A6">
+<path d="M 0.5 0.07 C 0.63 0.07 0.5654 0.3068 0.6 0.3268 C 0.6346 0.3468 0.8074 0.1724 0.8724 0.285 C 0.9374 0.3976 0.7 0.46 0.7 0.5 C 0.7 0.54 0.9374 0.6024 0.8724 0.715 C 0.8074 0.8276 0.6346 0.6532 0.6 0.6732 C 0.5654 0.6932 0.63 0.93 0.5 0.93 C 0.37 0.93 0.4346 0.6932 0.4 0.6732 C 0.3654 0.6532 0.1926 0.8276 0.1276 0.715 C 0.0626 0.6024 0.3 0.54 0.3 0.5 C 0.3 0.46 0.0626 0.3976 0.1276 0.285 C 0.1926 0.1724 0.3654 0.3468 0.4 0.3268 C 0.4346 0.3068 0.37 0.07 0.5 0.07 Z"/>
+</g>
+</g>
+<g id="tile-2-1" transform="translate(920 180)">
+<rect width="180" height="180" fill="#FA0056"/>
+<g transform="scale(180) rotate(90 .5 .5)" fill="#FFE5A6">
+<path d="M .16 .16 H .56 A .28 .28 0 0 1 .84 .44 V .84 H .44 A .28 .28 0 0 1 .16 .56 Z"/>
+</g>
+</g>
+<g id="tile-2-2" transform="translate(1100 180)">
+<rect width="180" height="180" fill="#FFE5A6"/>
+<g transform="scale(180) rotate(0 .5 .5)" fill="#343D9F">
+<path d="M 0.6273 0.1747 A .14 .14 0 0 1 0.8253 0.3727 L 0.698 0.5 L 0.8253 0.6273 A .14 .14 0 0 1 0.6273 0.8253 L 0.5 0.698 L 0.3727 0.8253 A .14 .14 0 0 1 0.1747 0.6273 L 0.302 0.5 L 0.1747 0.3727 A .14 .14 0 0 1 0.3727 0.1747 L 0.5 0.302 Z"/>
+</g>
+</g>
+<g id="tile-3-1" transform="translate(920 360)">
+<rect width="180" height="180" fill="#F8F6ED"/>
+<g transform="scale(180) rotate(0 .5 .5)" fill="#FA0056">
+<circle cx="0.25" cy="0.25" r=".24"/>
+<circle cx="0.75" cy="0.25" r=".24"/>
+<circle cx="0.25" cy="0.75" r=".24"/>
+<circle cx="0.75" cy="0.75" r=".24"/>
+</g>
+</g>
+<g id="tile-3-2" transform="translate(1100 360)">
+<rect width="180" height="180" fill="#343D9F"/>
+<g transform="scale(180) rotate(180 .5 .5)" fill="#FF7619">
+<path d="M 0 1 A 1 1 0 0 0 1 0 H .52 A .52 .52 0 0 1 0 .52 Z"/>
+</g>
+</g>
+<g id="tile-4-1" transform="translate(920 540)">
+<rect width="180" height="180" fill="#FA0056"/>
+<g transform="scale(180) rotate(0 .5 .5)" fill="#FFE5A6">
+<path d="M 0.5 0.04 C 0.537 0.04 0.5516 0.1126 0.5761 0.1175 C 0.6006 0.1224 0.6419 0.0609 0.676 0.075 C 0.7102 0.0892 0.6959 0.1618 0.7167 0.1757 C 0.7375 0.1896 0.7991 0.1486 0.8253 0.1747 C 0.8514 0.2009 0.8104 0.2625 0.8243 0.2833 C 0.8382 0.3041 0.9108 0.2898 0.925 0.324 C 0.9391 0.3581 0.8776 0.3994 0.8825 0.4239 C 0.8874 0.4484 0.96 0.463 0.96 0.5 C 0.96 0.537 0.8874 0.5516 0.8825 0.5761 C 0.8776 0.6006 0.9391 0.6419 0.925 0.676 C 0.9108 0.7102 0.8382 0.6959 0.8243 0.7167 C 0.8104 0.7375 0.8514 0.7991 0.8253 0.8253 C 0.7991 0.8514 0.7375 0.8104 0.7167 0.8243 C 0.6959 0.8382 0.7102 0.9108 0.676 0.925 C 0.6419 0.9391 0.6006 0.8776 0.5761 0.8825 C 0.5516 0.8874 0.537 0.96 0.5 0.96 C 0.463 0.96 0.4484 0.8874 0.4239 0.8825 C 0.3994 0.8776 0.3581 0.9391 0.324 0.925 C 0.2898 0.9108 0.3041 0.8382 0.2833 0.8243 C 0.2625 0.8104 0.2009 0.8514 0.1747 0.8253 C 0.1486 0.7991 0.1896 0.7375 0.1757 0.7167 C 0.1618 0.6959 0.0892 0.7102 0.075 0.676 C 0.0609 0.6419 0.1224 0.6006 0.1175 0.5761 C 0.1126 0.5516 0.04 0.537 0.04 0.5 C 0.04 0.463 0.1126 0.4484 0.1175 0.4239 C 0.1224 0.3994 0.0609 0.3581 0.075 0.324 C 0.0892 0.2898 0.1618 0.3041 0.1757 0.2833 C 0.1896 0.2625 0.1486 0.2009 0.1747 0.1747 C 0.2009 0.1486 0.2625 0.1896 0.2833 0.1757 C 0.3041 0.1618 0.2898 0.0892 0.324 0.075 C 0.3581 0.0609 0.3994 0.1224 0.4239 0.1175 C 0.4484 0.1126 0.463 0.04 0.5 0.04 Z"/>
+</g>
+</g>
+<g id="tile-4-2" transform="translate(1100 540)">
+<rect width="180" height="180" fill="#FFE5A6"/>
+<g transform="scale(180) rotate(0 .5 .5)" fill="#343D9F">
+<path d="M 0.5 0.05 C 0.59 0.05 0.5702 0.226 0.6072 0.2413 C 0.6441 0.2566 0.7546 0.1182 0.8182 0.1818 C 0.8818 0.2454 0.7434 0.3559 0.7587 0.3928 C 0.774 0.4298 0.95 0.41 0.95 0.5 C 0.95 0.59 0.774 0.5702 0.7587 0.6072 C 0.7434 0.6441 0.8818 0.7546 0.8182 0.8182 C 0.7546 0.8818 0.6441 0.7434 0.6072 0.7587 C 0.5702 0.774 0.59 0.95 0.5 0.95 C 0.41 0.95 0.4298 0.774 0.3928 0.7587 C 0.3559 0.7434 0.2454 0.8818 0.1818 0.8182 C 0.1182 0.7546 0.2566 0.6441 0.2413 0.6072 C 0.226 0.5702 0.05 0.59 0.05 0.5 C 0.05 0.41 0.226 0.4298 0.2413 0.3928 C 0.2566 0.3559 0.1182 0.2454 0.1818 0.1818 C 0.2454 0.1182 0.3559 0.2566 0.3928 0.2413 C 0.4298 0.226 0.41 0.05 0.5 0.05 Z"/>
+</g>
+</g>
+</g>
+<g id="report-reading-field" fill="#F8F6ED">
+<text x="52" y="65" font-family="Study Sans" font-size="24.48" font-weight="700" >Laporan Proyek Komunikasi Visual</text>
+<text x="866" y="65" font-family="Study Sans" font-size="15.84" font-weight="400" text-anchor="end">2027</text>
+<g id="theme-title">
+<text x="42.4038" y="188" font-family="Study Light" font-size="97.92" font-weight="100" style="font-variation-settings: &quot;wght&quot; 100, &quot;wdth&quot; 100">Eksplorasi</text>
+<text x="47.41" y="285.92" font-family="Study Sans" font-size="97.92" font-weight="900" >Ruang Kota</text>
+</g>
+<g id="observasi">
+<text x="50.7" y="391" font-family="Study Sans" font-size="24.48" font-weight="700" >Observasi</text>
+<text font-family="Study Sans" font-size="17.28" font-weight="400" xml:space="preserve"><tspan x="52" y="433">Mengamati tanda, warna, dan kebiasaan di </tspan><tspan x="52" y="457.192">ruang publik sebagai dasar sistem </tspan><tspan x="52" y="481.384">komunikasi visual.</tspan></text>
+</g>
+<g id="eksperimen">
+<text x="485" y="391" font-family="Study Sans" font-size="24.48" font-weight="700" >Eksperimen</text>
+<text font-family="Study Sans" font-size="17.28" font-weight="400" xml:space="preserve"><tspan x="486" y="433">Menguji bentuk dan bahasa visual melalui </tspan><tspan x="486" y="457.192">prototipe yang dekat dengan kehidupan </tspan><tspan x="486" y="481.384">sehari-hari.</tspan></text>
+</g>
+<g id="report-credits">
+<text x="52" y="656" font-family="Study Sans" font-size="17.28" font-weight="400" >Nadia Putri</text>
+<text x="486" y="656" font-family="Study Sans" font-size="17.28" font-weight="400" >Studio Sekolah</text>
+</g>
+</g>
+</svg>

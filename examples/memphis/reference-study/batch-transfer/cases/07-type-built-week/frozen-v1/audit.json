@@ -1,0 +1,481 @@
+{
+  "texts": [
+    {
+      "text": "TAIPEI",
+      "x": 22.950700759887695,
+      "y": -39.511627197265625,
+      "width": 859.1156616210938,
+      "height": 349.1258239746094,
+      "fill": "rgb(28, 26, 27)",
+      "size": "288.644px",
+      "weight": "900",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": true
+    },
+    {
+      "text": "DESIGN",
+      "x": 19.422880172729492,
+      "y": 186.34359741210938,
+      "width": 861.1392822265625,
+      "height": 348.7348937988281,
+      "fill": "rgb(28, 26, 27)",
+      "size": "288.644px",
+      "weight": "900",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "WEEK",
+      "x": 23.756669998168945,
+      "y": 412.8848876953125,
+      "width": 852.4837646484375,
+      "height": 348.384521484375,
+      "fill": "rgb(28, 26, 27)",
+      "size": "288.644px",
+      "weight": "900",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "2027",
+      "x": 18.6835994720459,
+      "y": 638.2686767578125,
+      "width": 860.3677368164062,
+      "height": 349.43182373046875,
+      "fill": "rgb(28, 26, 27)",
+      "size": "288.644px",
+      "weight": "900",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "TAIPEI",
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "fill": "rgb(0, 0, 0)",
+      "size": "288.644px",
+      "weight": "900",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "DESIGN",
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0,
+      "fill": "rgb(0, 0, 0)",
+      "size": "288.644px",
+      "weight": "900",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "ARCHITECTURE",
+      "x": 30,
+      "y": 972,
+      "width": 176.8125,
+      "height": 28,
+      "fill": "rgb(28, 26, 27)",
+      "size": "23px",
+      "weight": "400",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "CRAFT",
+      "x": 30,
+      "y": 1007,
+      "width": 75.90625,
+      "height": 28,
+      "fill": "rgb(28, 26, 27)",
+      "size": "23px",
+      "weight": "400",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "FOOD",
+      "x": 30,
+      "y": 1042,
+      "width": 65.359375,
+      "height": 28,
+      "fill": "rgb(28, 26, 27)",
+      "size": "23px",
+      "weight": "400",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "MUSIC",
+      "x": 30,
+      "y": 1077,
+      "width": 75.640625,
+      "height": 28,
+      "fill": "rgb(28, 26, 27)",
+      "size": "23px",
+      "weight": "400",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "PUBLIC SPACE",
+      "x": 30,
+      "y": 1112,
+      "width": 162.765625,
+      "height": 28,
+      "fill": "rgb(28, 26, 27)",
+      "size": "23px",
+      "weight": "400",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "OCTOBER 4–10",
+      "x": 380,
+      "y": 963,
+      "width": 268.71875,
+      "height": 44,
+      "fill": "rgb(28, 26, 27)",
+      "size": "36px",
+      "weight": "900",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "TAIPEIDESIGNWEEK.EXAMPLE",
+      "x": 380,
+      "y": 1020,
+      "width": 331.546875,
+      "height": 26,
+      "fill": "rgb(28, 26, 27)",
+      "size": "22px",
+      "weight": "700",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "City Design Museum",
+      "x": 380,
+      "y": 1090,
+      "width": 225.296875,
+      "height": 28,
+      "fill": "rgb(28, 26, 27)",
+      "size": "23px",
+      "weight": "400",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "Open City Lab",
+      "x": 380,
+      "y": 1124,
+      "width": 154.890625,
+      "height": 28,
+      "fill": "rgb(28, 26, 27)",
+      "size": "23px",
+      "weight": "400",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    }
+  ],
+  "fonts": [
+    {
+      "family": "Study Sans",
+      "weight": "400"
+    },
+    {
+      "family": "Study Sans",
+      "weight": "700"
+    },
+    {
+      "family": "Study Sans",
+      "weight": "900"
+    }
+  ],
+  "fontErrors": [],
+  "rasterImages": 0,
+  "actualFonts": [
+    {
+      "text": "TAIPEI",
+      "fonts": [
+        {
+          "familyName": "Inter Black",
+          "postScriptName": "Inter-Black",
+          "isCustomFont": true,
+          "glyphCount": 6
+        }
+      ]
+    },
+    {
+      "text": "DESIGN",
+      "fonts": [
+        {
+          "familyName": "Inter Black",
+          "postScriptName": "Inter-Black",
+          "isCustomFont": true,
+          "glyphCount": 6
+        }
+      ]
+    },
+    {
+      "text": "WEEK",
+      "fonts": [
+        {
+          "familyName": "Inter Black",
+          "postScriptName": "Inter-Black",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    },
+    {
+      "text": "2027",
+      "fonts": [
+        {
+          "familyName": "Inter Black",
+          "postScriptName": "Inter-Black",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    },
+    {
+      "text": "TAIPEI",
+      "fonts": [
+        {
+          "familyName": "Inter Black",
+          "postScriptName": "Inter-Black",
+          "isCustomFont": true,
+          "glyphCount": 6
+        }
+      ]
+    },
+    {
+      "text": "DESIGN",
+      "fonts": [
+        {
+          "familyName": "Inter Black",
+          "postScriptName": "Inter-Black",
+          "isCustomFont": true,
+          "glyphCount": 6
+        }
+      ]
+    },
+    {
+      "text": "ARCHITECTURE",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular",
+          "isCustomFont": true,
+          "glyphCount": 12
+        }
+      ]
+    },
+    {
+      "text": "CRAFT",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular",
+          "isCustomFont": true,
+          "glyphCount": 5
+        }
+      ]
+    },
+    {
+      "text": "FOOD",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    },
+    {
+      "text": "MUSIC",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular",
+          "isCustomFont": true,
+          "glyphCount": 5
+        }
+      ]
+    },
+    {
+      "text": "PUBLIC SPACE",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular",
+          "isCustomFont": true,
+          "glyphCount": 12
+        }
+      ]
+    },
+    {
+      "text": "OCTOBER 4–10",
+      "fonts": [
+        {
+          "familyName": "Inter Black",
+          "postScriptName": "Inter-Black",
+          "isCustomFont": true,
+          "glyphCount": 12
+        }
+      ]
+    },
+    {
+      "text": "TAIPEIDESIGNWEEK.EXAMPLE",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Bold",
+          "isCustomFont": true,
+          "glyphCount": 24
+        }
+      ]
+    },
+    {
+      "text": "City Design Museum",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular",
+          "isCustomFont": true,
+          "glyphCount": 18
+        }
+      ]
+    },
+    {
+      "text": "Open City Lab",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular",
+          "isCustomFont": true,
+          "glyphCount": 13
+        }
+      ]
+    }
+  ],
+  "contrast": [
+    {
+      "text": "TAIPEI",
+      "samples": 25600,
+      "min": 15.264,
+      "p05": 15.264,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "DESIGN",
+      "samples": 28475,
+      "min": 15.264,
+      "p05": 15.264,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "WEEK",
+      "samples": 27353,
+      "min": 15.264,
+      "p05": 15.264,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "2027",
+      "samples": 17129,
+      "min": 15.264,
+      "p05": 15.264,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "TAIPEI",
+      "unsupported": true
+    },
+    {
+      "text": "DESIGN",
+      "unsupported": true
+    },
+    {
+      "text": "ARCHITECTURE",
+      "samples": 153,
+      "min": 15.264,
+      "p05": 15.264,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "CRAFT",
+      "samples": 78,
+      "min": 15.264,
+      "p05": 15.264,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "FOOD",
+      "samples": 72,
+      "min": 15.264,
+      "p05": 15.264,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "MUSIC",
+      "samples": 76,
+      "min": 15.264,
+      "p05": 15.264,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "PUBLIC SPACE",
+      "samples": 172,
+      "min": 15.264,
+      "p05": 15.264,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "OCTOBER 4–10",
+      "samples": 889,
+      "min": 15.264,
+      "p05": 15.264,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "TAIPEIDESIGNWEEK.EXAMPLE",
+      "samples": 513,
+      "min": 15.264,
+      "p05": 15.264,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "City Design Museum",
+      "samples": 197,
+      "min": 15.264,
+      "p05": 15.264,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "Open City Lab",
+      "samples": 131,
+      "min": 15.264,
+      "p05": 15.264,
+      "below3": 0,
+      "below4_5": 0
+    }
+  ]
+}

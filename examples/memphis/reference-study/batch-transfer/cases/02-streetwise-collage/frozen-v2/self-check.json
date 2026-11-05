@@ -1,0 +1,100 @@
+{
+  "width": "900",
+  "height": "1200",
+  "fonts": [
+    {
+      "family": "Study Sans",
+      "weight": "400",
+      "status": "loaded"
+    },
+    {
+      "family": "Study Sans",
+      "weight": "700",
+      "status": "loaded"
+    },
+    {
+      "family": "Study Sans",
+      "weight": "900",
+      "status": "loaded"
+    },
+    {
+      "family": "Study CJK",
+      "weight": "100 900",
+      "status": "loaded"
+    }
+  ],
+  "text": [
+    {
+      "text": "集合散步",
+      "x": 29.30699920654297,
+      "y": 155.239013671875,
+      "width": 396,
+      "height": 144,
+      "family": "\"Study CJK\"",
+      "weight": "900"
+    },
+    {
+      "text": "在城里发现",
+      "x": 25.608200073242188,
+      "y": 265.27569580078125,
+      "width": 468,
+      "height": 136,
+      "family": "\"Study CJK\"",
+      "weight": "300"
+    },
+    {
+      "text": "CITY WALKS",
+      "x": 28.70800018310547,
+      "y": 404.8700866699219,
+      "width": 244.671875,
+      "height": 46,
+      "family": "\"Study Sans\"",
+      "weight": "900"
+    },
+    {
+      "text": "Small discoveries,",
+      "x": 27.858999252319336,
+      "y": 463.0054016113281,
+      "width": 322.484375,
+      "height": 46,
+      "family": "\"Study Sans\"",
+      "weight": "400"
+    },
+    {
+      "text": "shared streets.",
+      "x": 28.00659942626953,
+      "y": 508.0009765625,
+      "width": 265.78125,
+      "height": 46,
+      "family": "\"Study Sans\"",
+      "weight": "400"
+    },
+    {
+      "text": "2027.05.14–05.16",
+      "x": 328.7431945800781,
+      "y": 922.2529296875,
+      "width": 196.98434448242188,
+      "height": 29,
+      "family": "\"Study Sans\"",
+      "weight": "700"
+    },
+    {
+      "text": "河岸街区",
+      "x": 329.53619384765625,
+      "y": 956.8886108398438,
+      "width": 93.609375,
+      "height": 34,
+      "family": "\"Study CJK\"",
+      "weight": "700"
+    },
+    {
+      "text": "一起走进街角的日常",
+      "x": 328.9668884277344,
+      "y": 992.751220703125,
+      "width": 210.60940551757812,
+      "height": 34,
+      "family": "\"Study CJK\"",
+      "weight": "400"
+    }
+  ]
+}

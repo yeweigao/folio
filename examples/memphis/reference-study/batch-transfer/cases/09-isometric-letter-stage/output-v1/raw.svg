@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="poster-title poster-desc">
+<title id="poster-title">KONBIN STAGE — 17.07 — OPEN AIR</title>
+<desc id="poster-desc">WE MAKE NOISE. RINA VEIL, LAGO, MOTIF CLUB, NEON PALMS. An isometric stage of colored blocks, with the event name across a white bridge.</desc>
+<!-- FONTS -->
+<rect width="900" height="1200" fill="#FFDF06"/>
+<polygon id="west-pier-left" points="50,796.75 160,843.5 160,975.5 50,928.75" fill="#000000"/>
+<polygon id="west-pier-right" points="160,843.5 210,822.25 210,954.25 160,975.5" fill="#2836B5"/>
+<polygon id="west-pier-roof" points="100,775.5 210,822.25 160,843.5 50,796.75" fill="#000000"/>
+<polygon id="east-pier-left" points="700,860.5 750,881.75 750,1013.75 700,992.5" fill="#FF2E05"/>
+<polygon id="east-pier-right" points="750,881.75 860,835 860,967 750,1013.75" fill="#000000"/>
+<polygon id="east-pier-roof" points="810,813.75 860,835 750,881.75 700,860.5" fill="#000000"/>
+<polygon id="center-pier-left" points="410,949.75 500,988 500,1120 410,1081.75" fill="#000000"/>
+<polygon id="center-pier-right" points="500,988 590,949.75 590,1081.75 500,1120" fill="#2836B5"/>
+<polygon id="center-pier-roof" points="500,911.5 590,949.75 500,988 410,949.75" fill="#000000"/>
+<polygon id="rear-stage-left" points="230,258.75 520,382 520,572 230,448.75" fill="#000000"/>
+<polygon id="rear-stage-right" points="520,382 730,292.75 730,482.75 520,572" fill="#2836B5"/>
+<polygon id="rear-stage-roof" points="440,169.5 730,292.75 520,382 230,258.75" fill="#FF2E05"/>
+<text id="slogan-one" transform="matrix(1 0.425 0 1 230 258.75)" x="11" y="70" font-family="Study Condensed" font-size="73" font-weight="700" fill="#FFDF06" font-kerning="none">WE MAKE</text>
+<text id="slogan-two" transform="matrix(1 0.425 0 1 230 258.75)" x="11" y="163" font-family="Study Condensed" font-size="110" font-weight="700" fill="#FFDF06" font-kerning="none">NOISE</text>
+<polygon id="date-tower-left" points="320,150.5 490,222.75 490,360.75 320,288.5" fill="#000000"/>
+<polygon id="date-tower-right" points="490,222.75 650,154.75 650,292.75 490,360.75" fill="#2836B5"/>
+<polygon id="date-tower-roof" points="480,82.5 650,154.75 490,222.75 320,150.5" fill="#22B88A"/>
+<text id="date" transform="matrix(1 0.425 0 1 320 150.5)" x="8" y="96" font-family="Study Condensed" font-size="74.8" font-weight="700" fill="#FFDF06" font-kerning="none">17.07</text>
+<text id="venue-type" transform="matrix(1 -.425 0 1 490 222.75)" font-family="Study Condensed" font-size="52" font-weight="700" fill="#FFDF06" font-kerning="none"><tspan x="10" y="56">OPEN </tspan><tspan x="10" y="116">AIR</tspan></text>
+<polygon id="artist-roof-left" points="230,436.25 500,551 410,589.25 140,474.5" fill="#22B88A"/>
+<polygon id="artist-roof-right" points="410,589.25 740,449 830,487.25 500,627.5" fill="#FF2E05"/>
+<polygon id="artist-wall-left" points="140,474.5 500,627.5 500,777.5 140,624.5" fill="#2836B5"/>
+<polygon id="artist-wall-right" points="500,627.5 830,487.25 830,637.25 500,777.5" fill="#22B88A"/>
+<text id="artist-rina" transform="matrix(1 0.425 0 1 140 474.5)" x="12" y="63" font-family="Study Condensed" font-size="60" font-weight="700" fill="#FFDF06" font-kerning="none">RINA VEIL</text>
+<text id="artist-lago" transform="matrix(1 0.425 0 1 140 474.5)" x="12" y="127" font-family="Study Condensed" font-size="60" font-weight="700" fill="#FFDF06" font-kerning="none">LAGO</text>
+<text id="artist-motif" transform="matrix(1 -0.425 0 1 500 627.5)" x="10" y="63" font-family="Study Condensed" font-size="60" font-weight="700" fill="#000000" font-kerning="none">MOTIF CLUB</text>
+<text id="artist-neon" transform="matrix(1 -0.425 0 1 500 627.5)" x="10" y="127" font-family="Study Condensed" font-size="60" font-weight="700" fill="#000000" font-kerning="none">NEON PALMS</text>
+<polygon id="bridge-deck-left" points="100,607.5 500,777.5 450,798.75 50,628.75" fill="#000000"/>
+<polygon id="bridge-deck-right" points="450,798.75 810,645.75 860,667 500,820" fill="#000000"/>
+<polygon id="title-wall-left" points="50,628.75 500,820 500,988 50,796.75" fill="#FFFFF3"/>
+<polygon id="title-wall-right" points="500,820 860,667 860,835 500,988" fill="#FFFFF3"/>
+<text id="event-konbin" transform="matrix(1 0.425 0 1 50 628.75)" x="14.1985" y="132" font-family="Study Condensed" font-size="133.25" font-weight="700" fill="#000000" font-kerning="none">KONBIN</text>
+<text id="event-stage" transform="matrix(1 -0.425 0 1 500 820)" x="10.83912" y="132" font-family="Study Condensed" font-size="133.25" font-weight="700" fill="#000000" font-kerning="none">STAGE</text>
+</svg>

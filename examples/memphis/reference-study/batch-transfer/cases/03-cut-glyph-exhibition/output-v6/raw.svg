@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="poster-title poster-description">
+<title id="poster-title">共生设计展 — COEXIST DESIGN EXHIBITION</title>
+<desc id="poster-description">共生主题的切割字形海报，绿色与黑色双场。左侧为连笔白色共、生构字；右侧以小拼块、日期切口、紫色弯钩和橙色双碗腰体组成另一组共生结构。</desc>
+<!-- FONTS -->
+<g id="continuous-color-fields">
+<rect id="green-field" x="0" y="0" width="450" height="1200" fill="#07964F"/>
+<rect id="ink-field" x="450" y="0" width="450" height="1200" fill="#050505"/>
+</g>
+<g id="continuous-coexist-glyphs" aria-label="共、生的连笔构字">
+<path id="gong-left-curved-shoulder" d="M105 24 H158 V250 H0 V129 A105 105 0 0 1 105 24 Z" fill="#FFFFFF"/>
+<path id="gong-right-curved-shoulder" d="M292 24 H345 A105 105 0 0 1 450 129 V250 H292 Z" fill="#FFFFFF"/>
+<rect id="gong-shared-crossbar" x="0" y="250" width="450" height="95" fill="#FFFFFF"/>
+<path id="gong-left-arc-foot" d="M100 320 H205 V330 A150 150 0 0 1 55 480 H0 V375 H55 A45 45 0 0 0 100 330 Z" fill="#FFFFFF"/>
+<path id="gong-right-arc-foot" d="M245 320 H350 V330 A45 45 0 0 0 395 375 H450 V480 H395 A150 150 0 0 1 245 330 Z" fill="#FFFFFF"/>
+<rect id="continuous-left-spine" x="0" y="345" width="60" height="855" fill="#FFFFFF"/>
+<rect id="sheng-central-upright" x="200" y="780" width="100" height="350" fill="#FFFFFF"/>
+<path id="sheng-upper-curved-stroke" d="M30 970 A150 150 0 0 1 180 820 H450 V920 H180 A50 50 0 0 0 130 970 Z" fill="#FFFFFF"/>
+<rect id="sheng-middle-crossbar" x="60" y="980" width="390" height="100" fill="#FFFFFF"/>
+<path id="sheng-lower-curved-baseline" d="M0 1095 H345 A105 105 0 0 1 450 1200 H0 Z" fill="#FFFFFF"/>
+</g>
+<g id="segmented-glyph-cluster" aria-label="与主字连接的五列三层弧齿拼块">
+<path id="cluster-r1-c1" d="M470 24 H552 V106 A82 82 0 0 1 470 24 Z" fill="#F3579D"/>
+<path id="cluster-r1-c2" d="M552 24 H634 V106 H593 A41 41 0 0 1 552 65 Z" fill="#0759FD"/>
+<path id="cluster-r1-c3" d="M634 24 H716 A41 41 0 0 1 634 24 Z" fill="#FFFFFF"/>
+<rect id="cluster-r1-c4-a" x="730" y="24" width="12" height="82" fill="#FF7829"/>
+<rect id="cluster-r1-c4-b" x="756" y="24" width="12" height="82" fill="#FF7829"/>
+<rect id="cluster-r1-c4-c" x="782" y="24" width="12" height="82" fill="#FF7829"/>
+<path id="cluster-r1-c5" d="M798 24 H880 V65 A41 41 0 0 1 798 65 Z" fill="#F3579D"/>
+<path id="cluster-r2-c1" d="M470 106 H511 A41 41 0 0 1 511 188 H470 Z" fill="#FFFFFF"/>
+<path id="cluster-r2-c2" d="M552 106 H634 V188 A82 82 0 0 1 552 106 Z" fill="#FF7829"/>
+<path id="cluster-r2-c3" d="M634 106 H716 V147 A41 41 0 0 1 634 147 Z" fill="#F3579D"/>
+<path id="cluster-r2-c4" d="M716 106 H798 V188 A82 82 0 0 1 716 106 Z" fill="#0759FD"/>
+<circle id="cluster-r2-c5-dot-a" cx="819" cy="127" r="17" fill="#FFFFFF"/>
+<circle id="cluster-r2-c5-dot-b" cx="859" cy="167" r="17" fill="#FFFFFF"/>
+<path id="cluster-r3-c1" d="M470 188 H552 V270 A82 82 0 0 1 470 188 Z" fill="#F3579D"/>
+<path id="cluster-r3-c2" d="M552 188 H634 A41 41 0 0 1 552 188 Z" fill="#FFFFFF"/>
+<rect id="cluster-r3-c3-a" x="640" y="188" width="10" height="54" fill="#FFFFFF"/>
+<rect id="cluster-r3-c3-b" x="660" y="188" width="10" height="54" fill="#FFFFFF"/>
+<rect id="cluster-r3-c3-c" x="680" y="188" width="10" height="54" fill="#FFFFFF"/>
+<rect id="cluster-r3-c3-d" x="700" y="188" width="10" height="54" fill="#FFFFFF"/>
+<path id="cluster-r3-c4" d="M716 188 H798 V270 A82 82 0 0 0 716 188 Z" fill="#FF7829"/>
+<path id="cluster-r3-c5" d="M798 188 H880 V270 H798 Z" fill="#F3579D"/>
+</g>
+<g id="pink-main-shoulder">
+<path id="pink-cut-bearing-shoulder" d="M450 242 H900 V540 H450 V500 H850 V325 H450 Z" fill="#F3579D"/>
+</g>
+<g id="purple-parallel-hooks" aria-label="三根并列紫色弯钩">
+<path id="purple-hook-1" d="M475 518 H575 V592 H549 V733 A52 52 0 0 0 601 785 V859 A126 126 0 0 1 475 733 Z" fill="#9B38ED"/>
+<path id="purple-hook-2" d="M597 518 H697 V592 H671 V733 A52 52 0 0 0 723 785 V859 A126 126 0 0 1 597 733 Z" fill="#9B38ED"/>
+<path id="purple-hook-3" d="M719 518 H819 V592 H793 V733 A52 52 0 0 0 845 785 V859 A126 126 0 0 1 719 733 Z" fill="#9B38ED"/>
+</g>
+<g id="orange-double-bowl" aria-label="带窄腰与内孔的橙色双碗体">
+<path id="orange-upper-bowl-waist-and-lower-bell" d="M470 870 H886 C886 934 817 995 742 995 V1035 C823 1035 886 1107 886 1200 H470 C470 1107 533 1035 614 1035 V995 C539 995 470 934 470 870 Z" fill="#FF7829"/>
+<ellipse id="orange-horizontal-counter" cx="678" cy="1122" rx="51" ry="22" fill="#050505"/>
+</g>
+<g id="editable-facts">
+<text id="curator" x="170" y="145" font-family="Study CJK" font-size="21.6" font-weight="400" fill="#050505" xml:space="preserve">策展：林岚</text>
+<text id="venue" x="170" y="218" font-family="Study CJK" font-size="21.6" font-weight="400" fill="#050505" xml:space="preserve">城市设计馆</text>
+<text id="exhibition-cjk" x="77" y="553" font-family="Study CJK" font-size="68.4" font-weight="900" fill="#FFF035" xml:space="preserve">共生设计展</text>
+<text id="exhibition-en-line-1" x="78" y="627" font-family="Study Sans" font-size="53.1" font-weight="900" fill="#050505" xml:space="preserve">COEXIST</text>
+<text id="exhibition-en-line-2" x="78" y="690" font-family="Study Sans" font-size="53.1" font-weight="900" fill="#050505" xml:space="preserve">DESIGN</text>
+<text id="exhibition-en-line-3" x="78" y="753" font-family="Study Sans" font-size="53.1" font-weight="900" fill="#050505" xml:space="preserve">EXHIBITION</text>
+<text id="date-start" x="480" y="370" font-family="Study Sans" font-size="43.2" font-weight="700" fill="#FFFFFF" xml:space="preserve">12 JUNE</text>
+<text id="date-end" x="480" y="427" font-family="Study Sans" font-size="43.2" font-weight="700" fill="#FFFFFF" xml:space="preserve">28 AUGUST</text>
+<text id="opening-hours" x="480" y="484" font-family="Study Sans" font-size="43.2" font-weight="700" fill="#FFFFFF" xml:space="preserve">09:00–18:00</text>
+</g>
+</svg>

@@ -1,0 +1,163 @@
+{
+  "factcheck": {
+    "exit_code": 0,
+    "output": "\n9 facts · 0 missing · 0 warning(s)\n"
+  },
+  "folio_check": {
+    "exit_code": 1,
+    "output": "FAIL  E2 poster.svg: font 'poster brand' is not in any type stack\nFAIL  E2 poster.svg: font 'poster numerals' is not in any type stack\nFAIL  E2 poster.svg: font 'poster pixel' is not in any type stack\nFAIL  E2 poster.svg: font 'poster sans' is not in any type stack\n\n4 failure(s)\n",
+    "interpretation": "Four export font aliases differ from token family strings; browser CDP confirms actual embedded fonts match supplied licensed font files. Do not claim folio-check passed."
+  },
+  "contrasts": [
+    {
+      "text": "MOLLY",
+      "foreground": "#080808",
+      "background": "#FFFFFF",
+      "ratio": 20.027,
+      "passes_4_5": true
+    },
+    {
+      "text": "艺术在场",
+      "foreground": "#080808",
+      "background": "#FFFFFF",
+      "ratio": 20.027,
+      "passes_4_5": true
+    },
+    {
+      "text": "日常发光",
+      "foreground": "#080808",
+      "background": "#FFFFFF",
+      "ratio": 20.027,
+      "passes_4_5": true
+    },
+    {
+      "text": "ART IN",
+      "foreground": "#276DB3",
+      "background": "#FFFFFF",
+      "ratio": 5.351,
+      "passes_4_5": true
+    },
+    {
+      "text": "EVERYDAY",
+      "foreground": "#276DB3",
+      "background": "#FFFFFF",
+      "ratio": 5.351,
+      "passes_4_5": true
+    },
+    {
+      "text": "LIFE",
+      "foreground": "#276DB3",
+      "background": "#FFFFFF",
+      "ratio": 5.351,
+      "passes_4_5": true
+    },
+    {
+      "text": "2027.04.17—05.05",
+      "foreground": "#080808",
+      "background": "#FFFFFF",
+      "ratio": 20.027,
+      "passes_4_5": true
+    },
+    {
+      "text": "10:00–20:00",
+      "foreground": "#080808",
+      "background": "#FFFFFF",
+      "ratio": 20.027,
+      "passes_4_5": true
+    },
+    {
+      "text": "城市艺术中心 · 一层展厅",
+      "foreground": "#080808",
+      "background": "#FFFFFF",
+      "ratio": 20.027,
+      "passes_4_5": true
+    },
+    {
+      "text": "免费入场",
+      "foreground": "#FFFFFF",
+      "background": "#276DB3",
+      "ratio": 5.351,
+      "passes_4_5": true
+    },
+    {
+      "text": "把街角的颜色、声音与相遇，变成每个人都能参与的艺术现场。",
+      "foreground": "#080808",
+      "background": "#FFFFFF",
+      "ratio": 20.027,
+      "passes_4_5": true
+    }
+  ],
+  "actual_fonts": [
+    {
+      "text": "MOLLY",
+      "actual_fonts": [
+        "Inter Black"
+      ]
+    },
+    {
+      "text": "艺术在场",
+      "actual_fonts": [
+        "Folio Pixel Study"
+      ]
+    },
+    {
+      "text": "日常发光",
+      "actual_fonts": [
+        "Folio Pixel Study"
+      ]
+    },
+    {
+      "text": "ART IN",
+      "actual_fonts": [
+        "Folio Pixel Study"
+      ]
+    },
+    {
+      "text": "EVERYDAY",
+      "actual_fonts": [
+        "Folio Pixel Study"
+      ]
+    },
+    {
+      "text": "LIFE",
+      "actual_fonts": [
+        "Folio Pixel Study"
+      ]
+    },
+    {
+      "text": "2027.04.17—05.05",
+      "actual_fonts": [
+        "Inter"
+      ]
+    },
+    {
+      "text": "10:00–20:00",
+      "actual_fonts": [
+        "Inter"
+      ]
+    },
+    {
+      "text": "城市艺术中心 · 一层展厅",
+      "actual_fonts": [
+        "Noto Sans SC Thin"
+      ]
+    },
+    {
+      "text": "免费入场",
+      "actual_fonts": [
+        "Noto Sans SC Thin"
+      ]
+    },
+    {
+      "text": "把街角的颜色、声音与相遇，变成每个人都能参与的艺术现场。",
+      "actual_fonts": [
+        "Noto Sans SC Thin"
+      ]
+    }
+  ],
+  "out_of_frame": [],
+  "page_errors": [],
+  "font_failures": [],
+  "live_text_elements": 11,
+  "raster_images": 0
+}

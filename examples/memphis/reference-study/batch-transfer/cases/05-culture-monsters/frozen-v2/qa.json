@@ -1,0 +1,97 @@
+{
+  "fonts": "loaded",
+  "size": [
+    "900",
+    "1200"
+  ],
+  "text": [
+    {
+      "text": "TTXC 2027",
+      "box": [
+        22,
+        448,
+        593.5,
+        127
+      ],
+      "font": "\"Study Sans\", \"Study CJK\", sans-serif",
+      "weight": "900"
+    },
+    {
+      "text": "城市游乐场",
+      "box": [
+        22,
+        546,
+        432,
+        125
+      ],
+      "font": "\"Study CJK\", \"Study Sans\", sans-serif",
+      "weight": "900"
+    },
+    {
+      "text": "City Play!",
+      "box": [
+        22,
+        651,
+        418.890625,
+        105
+      ],
+      "font": "\"Study Sans\", \"Study CJK\", sans-serif",
+      "weight": "900"
+    },
+    {
+      "text": "ART × SOUND × TECHNOLOGY",
+      "box": [
+        22,
+        795,
+        406.953125,
+        33
+      ],
+      "font": "\"Study Sans\", \"Study CJK\", sans-serif",
+      "weight": "700"
+    },
+    {
+      "text": "2027.09.10–12",
+      "box": [
+        22,
+        853,
+        389.296875,
+        65
+      ],
+      "font": "\"Study Sans\", \"Study CJK\", sans-serif",
+      "weight": "900"
+    },
+    {
+      "text": "海岸文化中心",
+      "box": [
+        22,
+        932,
+        324,
+        79
+      ],
+      "font": "\"Study CJK\", \"Study Sans\", sans-serif",
+      "weight": "900"
+    },
+    {
+      "text": "Coast Culture Center",
+      "box": [
+        22,
+        1016,
+        570.40625,
+        65
+      ],
+      "font": "\"Study Sans\", \"Study CJK\", sans-serif",
+      "weight": "900"
+    },
+    {
+      "text": "一起把城市玩出新花样",
+      "box": [
+        22,
+        1121,
+        270,
+        39
+      ],
+      "font": "\"Study CJK\", \"Study Sans\", sans-serif",
+      "weight": "700"
+    }
+  ]
+}

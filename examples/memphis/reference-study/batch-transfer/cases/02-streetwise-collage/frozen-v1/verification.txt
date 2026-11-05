@@ -1,0 +1,8 @@
+XML parse: passed
+Canvas: 900 × 1200
+Visible editable text nodes: 7 of 7 supplied facts, exact string equality
+Embedded WOFF2 font faces: 6
+Raster image elements: 0
+Chrome render: completed in preview.png
+Chrome fonts: all used font faces loaded
+First completed SVG preserved unchanged after self-QA.

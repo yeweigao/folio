@@ -1,0 +1,33 @@
+{
+  "change": "Removed contradictory independent 0.62u width; final formula matches the maker-disclosed resolution already rendered in v3. No new maker run after this numerical clarification.",
+  "measurements": [
+    {
+      "group": "upper-arrow-street",
+      "width": 75.83500000000004,
+      "height": 105.0,
+      "tip_degrees": 90.0,
+      "expected_width": 75.83452377915607
+    },
+    {
+      "group": "upper-arrow-street",
+      "width": 75.83500000000004,
+      "height": 105.0,
+      "tip_degrees": 90.0,
+      "expected_width": 75.83452377915607
+    },
+    {
+      "group": "lower-arrow-street",
+      "width": 75.83499999999998,
+      "height": 105.0,
+      "tip_degrees": 90.00000000000004,
+      "expected_width": 75.83452377915607
+    },
+    {
+      "group": "lower-arrow-street",
+      "width": 75.83499999999998,
+      "height": 105.0,
+      "tip_degrees": 90.0,
+      "expected_width": 75.83452377915607
+    }
+  ]
+}

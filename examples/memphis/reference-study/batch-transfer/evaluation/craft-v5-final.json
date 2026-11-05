@@ -1,0 +1,10 @@
+{
+  "id": "03-cut-glyph-exhibition",
+  "verdict": "pass",
+  "reasons": [],
+  "files_read": [
+    "/Users/vicoye/Documents/GitHub/folio/examples/memphis/reference-study/batch-transfer/evaluation/final-review-v5/sample.png",
+    "/Users/vicoye/Documents/GitHub/folio/examples/memphis/reference-study/batch-transfer/evaluation/final-review-v5/brief.md",
+    "/Users/vicoye/Documents/GitHub/folio/examples/memphis/reference-study/batch-transfer/evaluation/final-review-v5/RUBRIC.md"
+  ]
+}

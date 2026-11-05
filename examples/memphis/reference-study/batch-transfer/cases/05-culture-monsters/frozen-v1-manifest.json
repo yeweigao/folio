@@ -1,0 +1,34 @@
+{
+  "generate.py": {
+    "sha256": "35f5f032318eedda1cd2cb773c6a3eb5d730449724f5cd0816cdcc576dd999dc",
+    "bytes": 7320
+  },
+  "poster.svg": {
+    "sha256": "e0a00d3afa57ab1c6515fbdd4fed94de47d3e755b4661f5f1bbc12b55e8e04ca",
+    "bytes": 160614
+  },
+  "preview.png": {
+    "sha256": "5f00e2bef8c43e21979d41ba46935e30d396353c2fa06422489dfe2ac43f130a",
+    "bytes": 150389
+  },
+  "raw.svg": {
+    "sha256": "064e8312ca5d17c72e4281942dc9d44dc30f080b4a6640ea261f9a73bf9177e9",
+    "bytes": 12950
+  },
+  "read-access-inventory.md": {
+    "sha256": "ee5b3db8205dc9bc0e9dd48fc6fc3bfe9ef7e00aaae76e7aac4c5e2f08353242",
+    "bytes": 1824
+  },
+  "render.cjs": {
+    "sha256": "fa09d0cde03182313a8dbee0fd80f18339da46cbcfee7312d5cec714226f0991",
+    "bytes": 1070
+  },
+  "uncertainties.md": {
+    "sha256": "019014e9db8de34276aa810916a0ec25ceb6d8d946d8e7aa49f9899daa2f8ffd",
+    "bytes": 1047
+  },
+  "verification.json": {
+    "sha256": "0d0dede5e643ceb6f1a060b93d328a71780eb6e3fccc4c01ede2fdd08ddcba47",
+    "bytes": 517
+  }
+}

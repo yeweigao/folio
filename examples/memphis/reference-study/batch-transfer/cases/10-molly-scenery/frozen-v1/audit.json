@@ -1,0 +1,380 @@
+{
+  "texts": [
+    {
+      "text": "MOLLY",
+      "rawText": "MOLLY",
+      "x": 60,
+      "y": 59,
+      "width": 222.704345703125,
+      "height": 80,
+      "fill": "rgb(8, 8, 8)",
+      "size": "66px",
+      "weight": "900",
+      "font": "\"Poster Brand\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "艺术在场",
+      "rawText": "艺术在场",
+      "x": 60,
+      "y": 782,
+      "width": 614.203125,
+      "height": 175,
+      "fill": "rgb(8, 8, 8)",
+      "size": "166px",
+      "weight": "400",
+      "font": "\"Poster Pixel\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "日常发光",
+      "rawText": "日常发光",
+      "x": 60,
+      "y": 948,
+      "width": 614.203125,
+      "height": 175,
+      "fill": "rgb(8, 8, 8)",
+      "size": "166px",
+      "weight": "400",
+      "font": "\"Poster Pixel\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "ART IN",
+      "rawText": "ART IN",
+      "x": 739,
+      "y": 795,
+      "width": 177.875,
+      "height": 52,
+      "fill": "rgb(39, 109, 179)",
+      "size": "49px",
+      "weight": "400",
+      "font": "\"Poster Pixel\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "EVERYDAY",
+      "rawText": "EVERYDAY",
+      "x": 739,
+      "y": 856,
+      "width": 258.734375,
+      "height": 52,
+      "fill": "rgb(39, 109, 179)",
+      "size": "49px",
+      "weight": "400",
+      "font": "\"Poster Pixel\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "LIFE",
+      "rawText": "LIFE",
+      "x": 739,
+      "y": 917,
+      "width": 129.375,
+      "height": 52,
+      "fill": "rgb(39, 109, 179)",
+      "size": "49px",
+      "weight": "400",
+      "font": "\"Poster Pixel\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "2027.04.17—05.05",
+      "rawText": "2027.04.17—05.05",
+      "x": 60,
+      "y": 1187,
+      "width": 506.875,
+      "height": 64,
+      "fill": "rgb(8, 8, 8)",
+      "size": "53px",
+      "weight": "700",
+      "font": "\"Poster Numerals\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "10:00–20:00",
+      "rawText": "10:00–20:00",
+      "x": 827.515625,
+      "y": 1208,
+      "width": 192.484375,
+      "height": 37,
+      "fill": "rgb(8, 8, 8)",
+      "size": "31px",
+      "weight": "700",
+      "font": "\"Poster Numerals\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "城市艺术中心 · 一层展厅",
+      "rawText": "城市艺术中心 · 一层展厅",
+      "x": 60,
+      "y": 1282,
+      "width": 354.890625,
+      "height": 45,
+      "fill": "rgb(8, 8, 8)",
+      "size": "31px",
+      "weight": "400",
+      "font": "\"Poster Sans\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "免费入场",
+      "rawText": "免费入场",
+      "x": 864,
+      "y": 1285,
+      "width": 112,
+      "height": 40,
+      "fill": "rgb(255, 255, 255)",
+      "size": "28px",
+      "weight": "400",
+      "font": "\"Poster Sans\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "把街角的颜色、声音与相遇，变成每个人都能参与的艺术现场。",
+      "rawText": "把街角的颜色、声音与相遇，变成每个人都能参与的艺术现场。",
+      "x": 60,
+      "y": 1401,
+      "width": 784,
+      "height": 40,
+      "fill": "rgb(8, 8, 8)",
+      "size": "28px",
+      "weight": "400",
+      "font": "\"Poster Sans\"",
+      "outOfFrame": false
+    }
+  ],
+  "fonts": [
+    {
+      "family": "Poster Pixel",
+      "weight": "400"
+    },
+    {
+      "family": "Poster Sans",
+      "weight": "400"
+    },
+    {
+      "family": "Poster Numerals",
+      "weight": "700"
+    },
+    {
+      "family": "Poster Brand",
+      "weight": "900"
+    }
+  ],
+  "fontErrors": [],
+  "rasterImages": 0,
+  "actualFonts": [
+    {
+      "text": "MOLLY",
+      "fonts": [
+        {
+          "familyName": "Inter Black",
+          "postScriptName": "Inter-Black",
+          "isCustomFont": true,
+          "glyphCount": 5
+        }
+      ]
+    },
+    {
+      "text": "艺术在场",
+      "fonts": [
+        {
+          "familyName": "Folio Pixel Study",
+          "postScriptName": "FolioPixelStudy-Regular",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    },
+    {
+      "text": "日常发光",
+      "fonts": [
+        {
+          "familyName": "Folio Pixel Study",
+          "postScriptName": "FolioPixelStudy-Regular",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    },
+    {
+      "text": "ART IN",
+      "fonts": [
+        {
+          "familyName": "Folio Pixel Study",
+          "postScriptName": "FolioPixelStudy-Regular",
+          "isCustomFont": true,
+          "glyphCount": 6
+        }
+      ]
+    },
+    {
+      "text": "EVERYDAY",
+      "fonts": [
+        {
+          "familyName": "Folio Pixel Study",
+          "postScriptName": "FolioPixelStudy-Regular",
+          "isCustomFont": true,
+          "glyphCount": 8
+        }
+      ]
+    },
+    {
+      "text": "LIFE",
+      "fonts": [
+        {
+          "familyName": "Folio Pixel Study",
+          "postScriptName": "FolioPixelStudy-Regular",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    },
+    {
+      "text": "2027.04.17—05.05",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Bold",
+          "isCustomFont": true,
+          "glyphCount": 16
+        }
+      ]
+    },
+    {
+      "text": "10:00–20:00",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Bold",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "text": "城市艺术中心 · 一层展厅",
+      "fonts": [
+        {
+          "familyName": "Noto Sans SC Thin",
+          "postScriptName": "NotoSansSC-Thin",
+          "isCustomFont": true,
+          "glyphCount": 13
+        }
+      ]
+    },
+    {
+      "text": "免费入场",
+      "fonts": [
+        {
+          "familyName": "Noto Sans SC Thin",
+          "postScriptName": "NotoSansSC-Thin",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    },
+    {
+      "text": "把街角的颜色、声音与相遇，变成每个人都能参与的艺术现场。",
+      "fonts": [
+        {
+          "familyName": "Noto Sans SC Thin",
+          "postScriptName": "NotoSansSC-Thin",
+          "isCustomFont": true,
+          "glyphCount": 28
+        }
+      ]
+    }
+  ],
+  "contrast": [
+    {
+      "text": "MOLLY",
+      "samples": 1517,
+      "min": 20.027,
+      "p05": 20.027,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "艺术在场",
+      "samples": 10974,
+      "min": 20.027,
+      "p05": 20.027,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "日常发光",
+      "samples": 12107,
+      "min": 20.027,
+      "p05": 20.027,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "ART IN",
+      "samples": 958,
+      "min": 5.351,
+      "p05": 5.351,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "EVERYDAY",
+      "samples": 1292,
+      "min": 5.351,
+      "p05": 5.351,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "LIFE",
+      "samples": 586,
+      "min": 5.351,
+      "p05": 5.351,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "2027.04.17—05.05",
+      "samples": 1878,
+      "min": 20.027,
+      "p05": 20.027,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "10:00–20:00",
+      "samples": 409,
+      "min": 20.027,
+      "p05": 20.027,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "城市艺术中心 · 一层展厅",
+      "samples": 469,
+      "min": 20.027,
+      "p05": 20.027,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "免费入场",
+      "samples": 196,
+      "min": 5.351,
+      "p05": 5.351,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "把街角的颜色、声音与相遇，变成每个人都能参与的艺术现场。",
+      "samples": 1033,
+      "min": 20.027,
+      "p05": 20.027,
+      "below3": 0,
+      "below4_5": 0
+    }
+  ]
+}

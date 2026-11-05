@@ -1,0 +1,142 @@
+[
+  {
+    "id": "01-report-tiles",
+    "adopted_stage": "v2",
+    "verdicts": {
+      "identity": "pass",
+      "structure": "pass",
+      "craft": "pass"
+    },
+    "evidence": {
+      "identity": "source-identity-final.json",
+      "structure": "structure-final-blind.json",
+      "craft": "craft-final-blind.json"
+    }
+  },
+  {
+    "id": "02-streetwise-collage",
+    "adopted_stage": "v3",
+    "verdicts": {
+      "identity": "pass",
+      "structure": "pass",
+      "craft": "pass"
+    },
+    "evidence": {
+      "identity": "source-identity-final.json",
+      "structure": "structure-v3-final.json",
+      "craft": "craft-v3-final.json"
+    }
+  },
+  {
+    "id": "03-cut-glyph-exhibition",
+    "adopted_stage": "v6",
+    "verdicts": {
+      "identity": "pass",
+      "structure": "pass",
+      "craft": "pass"
+    },
+    "evidence": {
+      "identity": "identity-v6-final.json",
+      "structure": "structure-v6-final.json",
+      "craft": "craft-v6-final.json"
+    }
+  },
+  {
+    "id": "04-club-partitions",
+    "adopted_stage": "v2",
+    "verdicts": {
+      "identity": "pass",
+      "structure": "pass",
+      "craft": "pass"
+    },
+    "evidence": {
+      "identity": "source-identity-final.json",
+      "structure": "structure-final-blind.json",
+      "craft": "craft-final-blind.json"
+    }
+  },
+  {
+    "id": "05-culture-monsters",
+    "adopted_stage": "v4",
+    "verdicts": {
+      "identity": "pass",
+      "structure": "pass",
+      "craft": "pass"
+    },
+    "evidence": {
+      "identity": "identity-v4-final.json",
+      "structure": "structure-v4-final.json",
+      "craft": "craft-v4-final.json"
+    }
+  },
+  {
+    "id": "06-hackathon-space",
+    "adopted_stage": "v2",
+    "verdicts": {
+      "identity": "pass",
+      "structure": "pass",
+      "craft": "pass"
+    },
+    "evidence": {
+      "identity": "source-identity-final.json",
+      "structure": "structure-final-blind.json",
+      "craft": "craft-final-blind.json"
+    }
+  },
+  {
+    "id": "07-type-built-week",
+    "adopted_stage": "v3",
+    "verdicts": {
+      "identity": "pass",
+      "structure": "pass",
+      "craft": "pass"
+    },
+    "evidence": {
+      "identity": "source-identity-final.json",
+      "structure": "structure-v3-final.json",
+      "craft": "craft-v3-final.json"
+    }
+  },
+  {
+    "id": "08-forest-character",
+    "adopted_stage": "v2",
+    "verdicts": {
+      "identity": "pass",
+      "structure": "pass",
+      "craft": "pass"
+    },
+    "evidence": {
+      "identity": "source-identity-final.json",
+      "structure": "structure-final-blind.json",
+      "craft": "craft-final-blind.json"
+    }
+  },
+  {
+    "id": "09-isometric-letter-stage",
+    "adopted_stage": "v4",
+    "verdicts": {
+      "identity": "pass",
+      "structure": "pass",
+      "craft": "pass"
+    },
+    "evidence": {
+      "identity": "identity-v4-final.json",
+      "structure": "structure-v4-final.json",
+      "craft": "craft-v4-final.json"
+    }
+  },
+  {
+    "id": "10-molly-scenery",
+    "adopted_stage": "v2",
+    "verdicts": {
+      "identity": "pass",
+      "structure": "pass",
+      "craft": "pass"
+    },
+    "evidence": {
+      "identity": "source-identity-final.json",
+      "structure": "structure-final-blind.json",
+      "craft": "craft-final-blind.json"
+    }
+  }
+]

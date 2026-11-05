@@ -1,0 +1,226 @@
+[
+  {
+    "group": "slides",
+    "name": "01-cover",
+    "title": "Laporan Hasil · Cover",
+    "width": 1280,
+    "height": 720,
+    "file": "slides/01-cover.svg"
+  },
+  {
+    "group": "slides",
+    "name": "02-contents",
+    "title": "Daftar Isi",
+    "width": 1280,
+    "height": 720,
+    "file": "slides/02-contents.svg"
+  },
+  {
+    "group": "slides",
+    "name": "03-background",
+    "title": "Latar Belakang",
+    "width": 1280,
+    "height": 720,
+    "file": "slides/03-background.svg"
+  },
+  {
+    "group": "slides",
+    "name": "04-profile",
+    "title": "Profil Perusahaan",
+    "width": 1280,
+    "height": 720,
+    "file": "slides/04-profile.svg"
+  },
+  {
+    "group": "slides",
+    "name": "05-vision",
+    "title": "Visi & Misi Perusahaan",
+    "width": 1280,
+    "height": 720,
+    "file": "slides/05-vision.svg"
+  },
+  {
+    "group": "slides",
+    "name": "06-history",
+    "title": "Sejarah Perusahaan",
+    "width": 1280,
+    "height": 720,
+    "file": "slides/06-history.svg"
+  },
+  {
+    "group": "slides",
+    "name": "07-work",
+    "title": "Bidang Pekerjaan",
+    "width": 1280,
+    "height": 720,
+    "file": "slides/07-work.svg"
+  },
+  {
+    "group": "slides",
+    "name": "08-responsibilities",
+    "title": "Tugas & Tanggung Jawab",
+    "width": 1280,
+    "height": 720,
+    "file": "slides/08-responsibilities.svg"
+  },
+  {
+    "group": "posters",
+    "name": "01-collection-of-acts",
+    "title": "Collection of Acts · 街頭小事",
+    "width": 900,
+    "height": 1200,
+    "file": "posters/01-collection-of-acts.svg"
+  },
+  {
+    "group": "posters",
+    "name": "02-new-design",
+    "title": "新锐设计展 · New Design Exhibition",
+    "width": 900,
+    "height": 1200,
+    "file": "posters/02-new-design.svg"
+  },
+  {
+    "group": "posters",
+    "name": "03-tresor",
+    "title": "Tresor · Klubnacht",
+    "width": 900,
+    "height": 1200,
+    "file": "posters/03-tresor.svg"
+  },
+  {
+    "group": "posters",
+    "name": "04-ttxc",
+    "title": "TTXC 2024 · Takao Rock!",
+    "width": 900,
+    "height": 1200,
+    "file": "posters/04-ttxc.svg"
+  },
+  {
+    "group": "posters",
+    "name": "05-hackathon-windows",
+    "title": "Hackathon · Windows",
+    "width": 900,
+    "height": 1200,
+    "file": "posters/05-hackathon-windows.svg"
+  },
+  {
+    "group": "posters",
+    "name": "06-san-diego",
+    "title": "San Diego Design Week · 2020",
+    "width": 900,
+    "height": 1200,
+    "file": "posters/06-san-diego.svg"
+  },
+  {
+    "group": "posters",
+    "name": "07-forest",
+    "title": "Forest · Open-air Concert",
+    "width": 900,
+    "height": 1200,
+    "file": "posters/07-forest.svg"
+  },
+  {
+    "group": "posters",
+    "name": "08-hackathon-blocks",
+    "title": "Hackathon · Blocks",
+    "width": 900,
+    "height": 1200,
+    "file": "posters/08-hackathon-blocks.svg"
+  },
+  {
+    "group": "posters",
+    "name": "09-konbin",
+    "title": "Konbin Stage · We Love Green",
+    "width": 900,
+    "height": 1200,
+    "file": "posters/09-konbin.svg"
+  },
+  {
+    "group": "brand",
+    "name": "01-banner",
+    "title": "Molly · 主视觉横幅",
+    "width": 1600,
+    "height": 770,
+    "file": "brand/01-banner.svg"
+  },
+  {
+    "group": "brand",
+    "name": "02-ribbon",
+    "title": "Molly · 竖幅 1",
+    "width": 250,
+    "height": 915,
+    "file": "brand/02-ribbon.svg"
+  },
+  {
+    "group": "brand",
+    "name": "03-ribbon",
+    "title": "Molly · 竖幅 2",
+    "width": 250,
+    "height": 915,
+    "file": "brand/03-ribbon.svg"
+  },
+  {
+    "group": "brand",
+    "name": "04-ribbon",
+    "title": "Molly · 竖幅 3",
+    "width": 250,
+    "height": 915,
+    "file": "brand/04-ribbon.svg"
+  },
+  {
+    "group": "brand",
+    "name": "05-invitation-white",
+    "title": "Molly · 白色邀请卡",
+    "width": 700,
+    "height": 480,
+    "file": "brand/05-invitation-white.svg"
+  },
+  {
+    "group": "brand",
+    "name": "06-invitation-blue",
+    "title": "Molly · 蓝色邀请卡",
+    "width": 700,
+    "height": 480,
+    "file": "brand/06-invitation-blue.svg"
+  },
+  {
+    "group": "brand",
+    "name": "07-bag",
+    "title": "Molly · 手提袋 1",
+    "width": 330,
+    "height": 550,
+    "file": "brand/07-bag.svg"
+  },
+  {
+    "group": "brand",
+    "name": "08-bag",
+    "title": "Molly · 手提袋 2",
+    "width": 330,
+    "height": 550,
+    "file": "brand/08-bag.svg"
+  },
+  {
+    "group": "brand",
+    "name": "09-badge",
+    "title": "Molly · 挂牌 1",
+    "width": 240,
+    "height": 500,
+    "file": "brand/09-badge.svg"
+  },
+  {
+    "group": "brand",
+    "name": "10-badge",
+    "title": "Molly · 挂牌 2",
+    "width": 240,
+    "height": 500,
+    "file": "brand/10-badge.svg"
+  },
+  {
+    "group": "brand",
+    "name": "11-leaflet",
+    "title": "Molly · 活动长卡",
+    "width": 340,
+    "height": 550,
+    "file": "brand/11-leaflet.svg"
+  }
+]

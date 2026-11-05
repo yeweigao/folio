@@ -1,0 +1,101 @@
+{
+  "width": "900",
+  "height": "1200",
+  "fonts": [
+    {
+      "family": "Study Sans",
+      "weight": "400",
+      "status": "loaded"
+    },
+    {
+      "family": "Study Sans",
+      "weight": "700",
+      "status": "loaded"
+    },
+    {
+      "family": "Study Sans",
+      "weight": "900",
+      "status": "loaded"
+    },
+    {
+      "family": "Study Light",
+      "weight": "100 900",
+      "status": "unloaded"
+    },
+    {
+      "family": "Study CJK",
+      "weight": "100 900",
+      "status": "unloaded"
+    },
+    {
+      "family": "Study Condensed",
+      "weight": "700",
+      "status": "unloaded"
+    }
+  ],
+  "texts": [
+    {
+      "id": "brand",
+      "text": "forest",
+      "x": 289,
+      "y": -4,
+      "width": 312.421875,
+      "height": 136,
+      "withinPage": false
+    },
+    {
+      "id": "event-theme",
+      "text": "After Hours",
+      "x": 291,
+      "y": 276,
+      "width": 465.28717041015625,
+      "height": 104,
+      "withinPage": true
+    },
+    {
+      "id": "event-time",
+      "text": "18:30–22:00",
+      "x": 35,
+      "y": 825,
+      "width": 209.640625,
+      "height": 42,
+      "withinPage": true
+    },
+    {
+      "id": "event-location",
+      "text": "Riverside Forest Stage",
+      "x": 35,
+      "y": 879,
+      "width": 273.78125,
+      "height": 31,
+      "withinPage": true
+    },
+    {
+      "id": "event-description",
+      "text": "Open-air music returns to the riverside forest. Bring your friends, follow the lights, and spend a summer evening among the trees.",
+      "x": 35,
+      "y": 933,
+      "width": 401.421875,
+      "height": 131,
+      "withinPage": true
+    },
+    {
+      "id": "event-year",
+      "text": "2027",
+      "x": 31,
+      "y": 1079,
+      "width": 249.4140625,
+      "height": 126,
+      "withinPage": false
+    },
+    {
+      "id": "event-date",
+      "text": "07.03–07.24",
+      "x": 532.8400268554688,
+      "y": 880.21875,
+      "width": 54,
+      "height": 249.5625,
+      "withinPage": true
+    }
+  ]
+}

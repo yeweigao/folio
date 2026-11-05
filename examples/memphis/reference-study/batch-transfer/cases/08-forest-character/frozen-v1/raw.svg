@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="poster-title poster-description">
+<title id="poster-title">forest — After Hours, 2027</title>
+<desc id="poster-description">An open-air music poster with a pink, three-lobed forest character, large asymmetric eyes, a pink and black checkerboard, a yellow upper field, and a blue information field with a green tree.</desc>
+<!-- FONTS -->
+<defs>
+  <clipPath id="checker-clip"><path d="M0 0H252V126H900V252H252V800H0Z"/></clipPath>
+</defs>
+
+<rect id="upper-yellow-field" width="900" height="800" fill="#FFE840"/>
+<rect id="lower-blue-field" y="800" width="900" height="400" fill="#4B53E6"/>
+<g id="checkerboard-frame" clip-path="url(#checker-clip)">
+<rect x="0" y="0" width="126" height="126" fill="#F4A2C9"/>
+<rect x="126" y="0" width="126" height="126" fill="#000000"/>
+<rect x="252" y="0" width="126" height="126" fill="#F4A2C9"/>
+<rect x="378" y="0" width="126" height="126" fill="#000000"/>
+<rect x="504" y="0" width="126" height="126" fill="#F4A2C9"/>
+<rect x="630" y="0" width="126" height="126" fill="#000000"/>
+<rect x="756" y="0" width="126" height="126" fill="#F4A2C9"/>
+<rect x="882" y="0" width="126" height="126" fill="#000000"/>
+<rect x="0" y="126" width="126" height="126" fill="#000000"/>
+<rect x="126" y="126" width="126" height="126" fill="#F4A2C9"/>
+<rect x="252" y="126" width="126" height="126" fill="#000000"/>
+<rect x="378" y="126" width="126" height="126" fill="#F4A2C9"/>
+<rect x="504" y="126" width="126" height="126" fill="#000000"/>
+<rect x="630" y="126" width="126" height="126" fill="#F4A2C9"/>
+<rect x="756" y="126" width="126" height="126" fill="#000000"/>
+<rect x="882" y="126" width="126" height="126" fill="#F4A2C9"/>
+<rect x="0" y="252" width="126" height="126" fill="#F4A2C9"/>
+<rect x="126" y="252" width="126" height="126" fill="#000000"/>
+<rect x="252" y="252" width="126" height="126" fill="#F4A2C9"/>
+<rect x="378" y="252" width="126" height="126" fill="#000000"/>
+<rect x="504" y="252" width="126" height="126" fill="#F4A2C9"/>
+<rect x="630" y="252" width="126" height="126" fill="#000000"/>
+<rect x="756" y="252" width="126" height="126" fill="#F4A2C9"/>
+<rect x="882" y="252" width="126" height="126" fill="#000000"/>
+<rect x="0" y="378" width="126" height="126" fill="#000000"/>
+<rect x="126" y="378" width="126" height="126" fill="#F4A2C9"/>
+<rect x="252" y="378" width="126" height="126" fill="#000000"/>
+<rect x="378" y="378" width="126" height="126" fill="#F4A2C9"/>
+<rect x="504" y="378" width="126" height="126" fill="#000000"/>
+<rect x="630" y="378" width="126" height="126" fill="#F4A2C9"/>
+<rect x="756" y="378" width="126" height="126" fill="#000000"/>
+<rect x="882" y="378" width="126" height="126" fill="#F4A2C9"/>
+<rect x="0" y="504" width="126" height="126" fill="#F4A2C9"/>
+<rect x="126" y="504" width="126" height="126" fill="#000000"/>
+<rect x="252" y="504" width="126" height="126" fill="#F4A2C9"/>
+<rect x="378" y="504" width="126" height="126" fill="#000000"/>
+<rect x="504" y="504" width="126" height="126" fill="#F4A2C9"/>
+<rect x="630" y="504" width="126" height="126" fill="#000000"/>
+<rect x="756" y="504" width="126" height="126" fill="#F4A2C9"/>
+<rect x="882" y="504" width="126" height="126" fill="#000000"/>
+<rect x="0" y="630" width="126" height="126" fill="#000000"/>
+<rect x="126" y="630" width="126" height="126" fill="#F4A2C9"/>
+<rect x="252" y="630" width="126" height="126" fill="#000000"/>
+<rect x="378" y="630" width="126" height="126" fill="#F4A2C9"/>
+<rect x="504" y="630" width="126" height="126" fill="#000000"/>
+<rect x="630" y="630" width="126" height="126" fill="#F4A2C9"/>
+<rect x="756" y="630" width="126" height="126" fill="#000000"/>
+<rect x="882" y="630" width="126" height="126" fill="#F4A2C9"/>
+<rect x="0" y="756" width="126" height="126" fill="#F4A2C9"/>
+<rect x="126" y="756" width="126" height="126" fill="#000000"/>
+<rect x="252" y="756" width="126" height="126" fill="#F4A2C9"/>
+<rect x="378" y="756" width="126" height="126" fill="#000000"/>
+<rect x="504" y="756" width="126" height="126" fill="#F4A2C9"/>
+<rect x="630" y="756" width="126" height="126" fill="#000000"/>
+<rect x="756" y="756" width="126" height="126" fill="#F4A2C9"/>
+<rect x="882" y="756" width="126" height="126" fill="#000000"/>
+</g>
+<g id="masthead" fill="#000000" font-family="Study Sans, sans-serif" font-weight="900">
+  <text id="brand" x="289" y="105" font-size="112" letter-spacing="-5">forest</text>
+  <text id="event-theme" x="291" y="359" font-size="86" letter-spacing="-3.4">After Hours</text>
+</g>
+<g id="forest-character">
+  <g id="three-lobed-body" fill="#F4A2C9">
+    <ellipse cx="614" cy="486" rx="216" ry="82"/>
+    <ellipse cx="612" cy="584" rx="255" ry="88"/>
+    <ellipse cx="615" cy="684" rx="232" ry="80"/>
+  </g>
+  <g id="asymmetric-eyes" fill="#FFFFFF">
+    <ellipse cx="565" cy="475" rx="49" ry="61"/>
+    <ellipse cx="674" cy="465" rx="33" ry="44"/>
+  </g>
+  <g id="pupils" fill="#000000">
+    <ellipse cx="579" cy="477" rx="19" ry="30"/>
+    <ellipse cx="685" cy="467" rx="12" ry="22"/>
+  </g>
+</g>
+<g id="event-information" fill="#FFFFFF" font-family="Study Sans, sans-serif">
+  <text id="event-time" x="35" y="859" font-size="35" font-weight="700" letter-spacing="-0.6">18:30–22:00</text>
+  <text id="event-location" x="35" y="904" font-size="26" font-weight="700" letter-spacing="-0.5">Riverside Forest Stage</text>
+  <text id="event-description" font-size="24" font-weight="400"><tspan x="35" y="956">Open-air music returns to the </tspan><tspan x="35" y="990">riverside forest. Bring your friends, </tspan><tspan x="35" y="1024">follow the lights, and spend a </tspan><tspan x="35" y="1058">summer evening among the trees.</tspan></text>
+  <text id="event-year" x="31" y="1180" font-size="104" font-weight="900" letter-spacing="-6">2027</text>
+</g>
+<g id="vertical-date-capsule">
+  <rect x="521" y="840" width="78" height="330" rx="39" fill="#F4A2C9"/>
+  <text id="event-date" transform="translate(560 1005) rotate(-90)" x="0" y="0" dy="0.36em" text-anchor="middle" fill="#000000" font-family="Study Sans, sans-serif" font-size="44" font-weight="700" letter-spacing="-1.2">07.03–07.24</text>
+</g>
+<g id="forest-tree">
+  <rect x="755" y="1090" width="33" height="110" fill="#000000"/>
+  <path d="M771 835 L824 910 H801 L851 974 H826 L879 1043 H850 L900 1114 H867 L900 1161 H642 L675 1114 H642 L692 1043 H663 L716 974 H691 L741 910 H718 Z" fill="#20A90D"/>
+</g>
+</svg>

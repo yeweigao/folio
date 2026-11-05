@@ -1,0 +1,10 @@
+version 1.1.0 · template v14 · 35 files routed · 31 skeletons · 34 briefs
+RELEASE CHECK FAILED
+ - folio-check FAIL examples/memphis/reference-study/batch-transfer/cases/01-report-tiles/input/DESIGN.md: FAIL  T2 pair paper-on-pink: #F8F6ED on #FA0056 is 3.73:1 (< 4.5:1)
+ - folio-check FAIL examples/memphis/reference-study/batch-transfer/cases/03-cut-glyph-exhibition/input/DESIGN.md: FAIL  T2 pair paper-on-green: #FFFFFF on #07964F is 3.83:1 (< 4.5:1)
+ - folio-check FAIL examples/memphis/reference-study/batch-transfer/cases/04-club-partitions/input/DESIGN.md: FAIL  T2 pair ink-on-blue: #000000 on #0969F9 is 4.40:1 (< 4.5:1)
+ - folio-check FAIL examples/memphis/reference-study/batch-transfer/cases/09-isometric-letter-stage/input/DESIGN.md: FAIL  T2 pair paper-on-green-large: #FFFFF3 on #22B88A is 2.51:1 (< 3.0:1)
+ - folio-check FAIL examples/memphis/reference-study/systems/01-report-tiles/DESIGN.md: FAIL  T2 pair paper-on-pink: #F8F6ED on #FA0056 is 3.73:1 (< 4.5:1)
+ - folio-check FAIL examples/memphis/reference-study/systems/03-cut-glyph-exhibition/DESIGN.md: FAIL  T2 pair paper-on-green: #FFFFFF on #07964F is 3.83:1 (< 4.5:1)
+ - folio-check FAIL examples/memphis/reference-study/systems/04-club-partitions/DESIGN.md: FAIL  T2 pair ink-on-blue: #000000 on #0969F9 is 4.40:1 (< 4.5:1)
+ - folio-check FAIL examples/memphis/reference-study/systems/09-isometric-letter-stage/DESIGN.md: FAIL  T2 pair paper-on-green-large: #FFFFF3 on #22B88A is 2.51:1 (< 3.0:1)

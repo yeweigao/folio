@@ -1,0 +1,12 @@
+import { chromium } from '/Users/vicoye/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/index.mjs';
+import { writeFile } from 'node:fs/promises';
+const base = new URL('.',import.meta.url);
+const browser=await chromium.launch({headless:true,executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'});
+const page=await browser.newPage({viewport:{width:900,height:1200},deviceScaleFactor:1});
+await page.goto(new URL('poster.svg',base).href);
+await page.evaluate(()=>document.fonts.ready);
+await page.screenshot({path:new URL('self-check.png',base).pathname});
+const info=await page.evaluate(()=>({width:document.documentElement.getAttribute('width'),height:document.documentElement.getAttribute('height'),fonts:[...document.fonts].map(f=>({family:f.family,weight:f.weight,status:f.status})),text:[...document.querySelectorAll('text')].map(el=>{const b=el.getBBox();return {text:el.textContent,x:b.x,y:b.y,width:b.width,height:b.height,family:getComputedStyle(el).fontFamily,weight:getComputedStyle(el).fontWeight};})}));
+await writeFile(new URL('self-check.json',base),JSON.stringify(info,null,2)+'\n');
+console.log(JSON.stringify(info,null,2));
+await browser.close();

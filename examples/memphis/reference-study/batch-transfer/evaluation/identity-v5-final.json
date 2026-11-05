@@ -1,0 +1,14 @@
+{
+  "id": "03-cut-glyph-exhibition",
+  "verdict": "partial",
+  "reasons": [
+    "右上原有的蓝黑重复圆弧、白横条与橙色半圆组成紧密模块，和下方巨型字形形成细密与巨大的尺度对照；样本以单个巨型粉色拱带包围三行英文，小圆弧与条纹退成点缀，这种模块密度和尺度关系明显减弱。",
+    "原作以黄色中文展名、绿色底上的黑色英文、黑色底上的白色日期建立文字与功能色彩的分工；样本将三行白色英文提升为右栏主标题，并把黄色分配给日期、黑色分配给中文展名，文字层级与色彩角色发生明显漂移。"
+  ],
+  "files_read": [
+    "/Users/vicoye/Documents/GitHub/folio/examples/memphis/reference-study/batch-transfer/evaluation/final-review-v5/reference.jpg",
+    "/Users/vicoye/Documents/GitHub/folio/examples/memphis/reference-study/batch-transfer/evaluation/final-review-v5/sample.png",
+    "/Users/vicoye/Documents/GitHub/folio/examples/memphis/reference-study/batch-transfer/evaluation/final-review-v5/brief.md",
+    "/Users/vicoye/Documents/GitHub/folio/examples/memphis/reference-study/batch-transfer/evaluation/final-review-v5/RUBRIC.md"
+  ]
+}

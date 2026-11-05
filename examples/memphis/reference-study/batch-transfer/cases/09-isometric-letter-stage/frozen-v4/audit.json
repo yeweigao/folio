@@ -1,0 +1,400 @@
+{
+  "texts": [
+    {
+      "text": "KONBIN",
+      "rawText": "KONBIN",
+      "x": 63,
+      "y": 705.9601440429688,
+      "width": 397.3212585449219,
+      "height": 356.56854248046875,
+      "fill": "rgb(0, 0, 0)",
+      "size": "126.5px",
+      "weight": "700",
+      "font": "\"Study Condensed\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "STAGE",
+      "rawText": "STAGE",
+      "x": 493,
+      "y": 721.5369873046875,
+      "width": 367.34857177734375,
+      "height": 343.8302001953125,
+      "fill": "rgb(0, 0, 0)",
+      "size": "126.5px",
+      "weight": "700",
+      "font": "\"Study Condensed\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "WE MAKE",
+      "rawText": "WE MAKE",
+      "x": 374.51373291015625,
+      "y": 701.982177734375,
+      "width": 305.3485107421875,
+      "height": 129.77313232421875,
+      "fill": "rgb(0, 0, 0)",
+      "size": "59.1442px",
+      "weight": "700",
+      "font": "\"Study Condensed\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "NOISE",
+      "rawText": "NOISE",
+      "x": 268.230712890625,
+      "y": 727.986572265625,
+      "width": 350.44476318359375,
+      "height": 148.93902587890625,
+      "fill": "rgb(0, 0, 0)",
+      "size": "90.0789px",
+      "weight": "700",
+      "font": "\"Study Condensed\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "RINA VEIL",
+      "rawText": "RINA VEIL",
+      "x": 320.2310791015625,
+      "y": 192.23265075683594,
+      "width": 118.75344848632812,
+      "height": 369.33575439453125,
+      "fill": "rgb(255, 223, 6)",
+      "size": "80px",
+      "weight": "700",
+      "font": "\"Study Condensed\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "LAGO",
+      "rawText": "LAGO",
+      "x": 417.542724609375,
+      "y": 164.05990600585938,
+      "width": 156.10333251953125,
+      "height": 291.98443603515625,
+      "fill": "rgb(255, 223, 6)",
+      "size": "105px",
+      "weight": "700",
+      "font": "\"Study Condensed\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "17.07",
+      "rawText": "17.07",
+      "x": 344.1950378417969,
+      "y": 125.69927978515625,
+      "width": 168.33425903320312,
+      "height": 71.54206848144531,
+      "fill": "rgb(0, 0, 0)",
+      "size": "47.5px",
+      "weight": "700",
+      "font": "\"Study Condensed\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "MOTIF",
+      "rawText": "MOTIF",
+      "x": 507,
+      "y": 468.3753356933594,
+      "width": 205.33453369140625,
+      "height": 210.80905151367188,
+      "fill": "rgb(255, 223, 6)",
+      "size": "83.4008px",
+      "weight": "700",
+      "font": "\"Study Condensed\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "CLUB",
+      "rawText": "CLUB",
+      "x": 507,
+      "y": 551.9299926757812,
+      "width": 180.4794921875,
+      "height": 200.24566650390625,
+      "fill": "rgb(255, 223, 6)",
+      "size": "83.4008px",
+      "weight": "700",
+      "font": "\"Study Condensed\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "OPEN AIR",
+      "rawText": "OPEN AIR",
+      "x": 529.3543701171875,
+      "y": 412.8363037109375,
+      "width": 285.1444091796875,
+      "height": 121.18634033203125,
+      "fill": "rgb(255, 223, 6)",
+      "size": "53.1887px",
+      "weight": "700",
+      "font": "\"Study Condensed\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "NEON",
+      "rawText": "NEON",
+      "x": 56,
+      "y": 558.3040771484375,
+      "width": 122.34475708007812,
+      "height": 136.27313232421875,
+      "fill": "rgb(0, 0, 0)",
+      "size": "56.7733px",
+      "weight": "700",
+      "font": "\"Study Condensed\"",
+      "outOfFrame": false
+    },
+    {
+      "text": "PALMS",
+      "rawText": "PALMS",
+      "x": 56,
+      "y": 622.3040771484375,
+      "width": 154.5470733642578,
+      "height": 149.95916748046875,
+      "fill": "rgb(0, 0, 0)",
+      "size": "56.7733px",
+      "weight": "700",
+      "font": "\"Study Condensed\"",
+      "outOfFrame": false
+    }
+  ],
+  "fonts": [
+    {
+      "family": "Study Condensed",
+      "weight": "700"
+    }
+  ],
+  "fontErrors": [],
+  "rasterImages": 0,
+  "actualFonts": [
+    {
+      "text": "KONBIN",
+      "fonts": [
+        {
+          "familyName": "Oswald",
+          "postScriptName": "Oswald-Bold",
+          "isCustomFont": true,
+          "glyphCount": 6
+        }
+      ]
+    },
+    {
+      "text": "STAGE",
+      "fonts": [
+        {
+          "familyName": "Oswald",
+          "postScriptName": "Oswald-Bold",
+          "isCustomFont": true,
+          "glyphCount": 5
+        }
+      ]
+    },
+    {
+      "text": "WE MAKE",
+      "fonts": [
+        {
+          "familyName": "Oswald",
+          "postScriptName": "Oswald-Bold",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ]
+    },
+    {
+      "text": "NOISE",
+      "fonts": [
+        {
+          "familyName": "Oswald",
+          "postScriptName": "Oswald-Bold",
+          "isCustomFont": true,
+          "glyphCount": 5
+        }
+      ]
+    },
+    {
+      "text": "RINA VEIL",
+      "fonts": [
+        {
+          "familyName": "Oswald",
+          "postScriptName": "Oswald-Bold",
+          "isCustomFont": true,
+          "glyphCount": 9
+        }
+      ]
+    },
+    {
+      "text": "LAGO",
+      "fonts": [
+        {
+          "familyName": "Oswald",
+          "postScriptName": "Oswald-Bold",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    },
+    {
+      "text": "17.07",
+      "fonts": [
+        {
+          "familyName": "Oswald",
+          "postScriptName": "Oswald-Bold",
+          "isCustomFont": true,
+          "glyphCount": 5
+        }
+      ]
+    },
+    {
+      "text": "MOTIF",
+      "fonts": [
+        {
+          "familyName": "Oswald",
+          "postScriptName": "Oswald-Bold",
+          "isCustomFont": true,
+          "glyphCount": 5
+        }
+      ]
+    },
+    {
+      "text": "CLUB",
+      "fonts": [
+        {
+          "familyName": "Oswald",
+          "postScriptName": "Oswald-Bold",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    },
+    {
+      "text": "OPEN AIR",
+      "fonts": [
+        {
+          "familyName": "Oswald",
+          "postScriptName": "Oswald-Bold",
+          "isCustomFont": true,
+          "glyphCount": 8
+        }
+      ]
+    },
+    {
+      "text": "NEON",
+      "fonts": [
+        {
+          "familyName": "Oswald",
+          "postScriptName": "Oswald-Bold",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    },
+    {
+      "text": "PALMS",
+      "fonts": [
+        {
+          "familyName": "Oswald",
+          "postScriptName": "Oswald-Bold",
+          "isCustomFont": true,
+          "glyphCount": 5
+        }
+      ]
+    }
+  ],
+  "contrast": [
+    {
+      "text": "KONBIN",
+      "samples": 6345,
+      "min": 20.85,
+      "p05": 20.85,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "STAGE",
+      "samples": 4569,
+      "min": 20.85,
+      "p05": 20.85,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "WE MAKE",
+      "samples": 1089,
+      "min": 8.291,
+      "p05": 8.291,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "NOISE",
+      "samples": 1873,
+      "min": 8.291,
+      "p05": 8.291,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "RINA VEIL",
+      "samples": 2781,
+      "min": 6.919,
+      "p05": 6.919,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "LAGO",
+      "samples": 2764,
+      "min": 15.81,
+      "p05": 15.81,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "17.07",
+      "samples": 313,
+      "min": 8.291,
+      "p05": 8.291,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "MOTIF",
+      "samples": 2055,
+      "min": 6.919,
+      "p05": 6.919,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "CLUB",
+      "samples": 1802,
+      "min": 6.919,
+      "p05": 6.919,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "OPEN AIR",
+      "samples": 955,
+      "min": 15.81,
+      "p05": 15.81,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "NEON",
+      "samples": 849,
+      "min": 8.291,
+      "p05": 8.291,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "PALMS",
+      "samples": 985,
+      "min": 8.291,
+      "p05": 8.291,
+      "below3": 0,
+      "below4_5": 0
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "texts": [
+    {
+      "text": "Laporan Proyek Komunikasi Visual",
+      "x": 52,
+      "y": 42,
+      "width": 373.34375,
+      "height": 28,
+      "fill": "rgb(248, 246, 237)",
+      "size": "23px",
+      "weight": "400",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "Eksplorasi",
+      "x": 41.220001220703125,
+      "y": 113,
+      "width": 456.375,
+      "height": 120,
+      "fill": "rgb(248, 246, 237)",
+      "size": "110px",
+      "weight": "100",
+      "font": "\"Study Light\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "Ruang Kota",
+      "x": 46.75,
+      "y": 217,
+      "width": 604.65625,
+      "height": 136,
+      "fill": "rgb(248, 246, 237)",
+      "size": "112px",
+      "weight": "900",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "Observasi",
+      "x": 52,
+      "y": 399,
+      "width": 159.390625,
+      "height": 39,
+      "fill": "rgb(248, 246, 237)",
+      "size": "32px",
+      "weight": "700",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "\nMengamati tanda, warna, dan\nkebiasaan di ruang publik sebagai\ndasar sistem komunikasi visual.\n",
+      "x": 52,
+      "y": 451,
+      "width": 326.4375,
+      "height": 80,
+      "fill": "rgb(248, 246, 237)",
+      "size": "20px",
+      "weight": "400",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "Eksperimen",
+      "x": 480,
+      "y": 399,
+      "width": 185.1875,
+      "height": 39,
+      "fill": "rgb(248, 246, 237)",
+      "size": "32px",
+      "weight": "700",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "\nMenguji bentuk dan bahasa visual\nmelalui prototipe yang dekat dengan\nkehidupan sehari-hari.\n",
+      "x": 480,
+      "y": 451,
+      "width": 350.109375,
+      "height": 80,
+      "fill": "rgb(248, 246, 237)",
+      "size": "20px",
+      "weight": "400",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "Nadia Putri",
+      "x": 52,
+      "y": 625,
+      "width": 139.90625,
+      "height": 31,
+      "fill": "rgb(248, 246, 237)",
+      "size": "26px",
+      "weight": "700",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "Studio Sekolah",
+      "x": 52,
+      "y": 662,
+      "width": 140.828125,
+      "height": 24,
+      "fill": "rgb(248, 246, 237)",
+      "size": "20px",
+      "weight": "400",
+      "font": "\"Study Sans\", sans-serif",
+      "outOfFrame": false
+    },
+    {
+      "text": "2027",
+      "x": 700.1160278320312,
+      "y": 614,
+      "width": 160.364013671875,
+      "height": 83,
+      "fill": "rgb(248, 246, 237)",
+      "size": "76px",
+      "weight": "100",
+      "font": "\"Study Light\", sans-serif",
+      "outOfFrame": false
+    }
+  ],
+  "fonts": [
+    {
+      "family": "Study Sans",
+      "weight": "400"
+    },
+    {
+      "family": "Study Sans",
+      "weight": "700"
+    },
+    {
+      "family": "Study Sans",
+      "weight": "900"
+    },
+    {
+      "family": "Study Light",
+      "weight": "100 900"
+    }
+  ],
+  "fontErrors": [],
+  "rasterImages": 0,
+  "actualFonts": [
+    {
+      "text": "Laporan Proyek Komunikasi Visual",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular",
+          "isCustomFont": true,
+          "glyphCount": 32
+        }
+      ]
+    },
+    {
+      "text": "Eksplorasi",
+      "fonts": [
+        {
+          "familyName": "Archivo SemiBold",
+          "postScriptName": "ArchivoRoman-Thin",
+          "isCustomFont": true,
+          "glyphCount": 10
+        }
+      ]
+    },
+    {
+      "text": "Ruang Kota",
+      "fonts": [
+        {
+          "familyName": "Inter Black",
+          "postScriptName": "Inter-Black",
+          "isCustomFont": true,
+          "glyphCount": 10
+        }
+      ]
+    },
+    {
+      "text": "Observasi",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Bold",
+          "isCustomFont": true,
+          "glyphCount": 9
+        }
+      ]
+    },
+    {
+      "text": "\nMengamati tanda, warna, dan\nkebiasaan di ruang publik sebagai\ndasar sistem komunikasi visual.\n",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular",
+          "isCustomFont": true,
+          "glyphCount": 93
+        }
+      ]
+    },
+    {
+      "text": "Eksperimen",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Bold",
+          "isCustomFont": true,
+          "glyphCount": 10
+        }
+      ]
+    },
+    {
+      "text": "\nMenguji bentuk dan bahasa visual\nmelalui prototipe yang dekat dengan\nkehidupan sehari-hari.\n",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular",
+          "isCustomFont": true,
+          "glyphCount": 91
+        }
+      ]
+    },
+    {
+      "text": "Nadia Putri",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Bold",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ]
+    },
+    {
+      "text": "Studio Sekolah",
+      "fonts": [
+        {
+          "familyName": "Inter",
+          "postScriptName": "Inter-Regular",
+          "isCustomFont": true,
+          "glyphCount": 14
+        }
+      ]
+    },
+    {
+      "text": "2027",
+      "fonts": [
+        {
+          "familyName": "Archivo SemiBold",
+          "postScriptName": "ArchivoRoman-Thin",
+          "isCustomFont": true,
+          "glyphCount": 4
+        }
+      ]
+    }
+  ],
+  "contrast": [
+    {
+      "text": "Laporan Proyek Komunikasi Visual",
+      "samples": 390,
+      "min": 8.382,
+      "p05": 8.382,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "Eksplorasi",
+      "samples": 2027,
+      "min": 8.382,
+      "p05": 8.382,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "Ruang Kota",
+      "samples": 7163,
+      "min": 8.382,
+      "p05": 8.382,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "Observasi",
+      "samples": 384,
+      "min": 8.382,
+      "p05": 8.382,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "\nMengamati tanda, warna, dan\nkebiasaan di ruang publik sebagai\ndasar sistem komunikasi visual.\n",
+      "samples": 814,
+      "min": 8.382,
+      "p05": 8.382,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "Eksperimen",
+      "samples": 482,
+      "min": 8.382,
+      "p05": 8.382,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "\nMenguji bentuk dan bahasa visual\nmelalui prototipe yang dekat dengan\nkehidupan sehari-hari.\n",
+      "samples": 783,
+      "min": 8.382,
+      "p05": 8.382,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "Nadia Putri",
+      "samples": 284,
+      "min": 8.382,
+      "p05": 8.382,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "Studio Sekolah",
+      "samples": 127,
+      "min": 8.382,
+      "p05": 8.382,
+      "below3": 0,
+      "below4_5": 0
+    },
+    {
+      "text": "2027",
+      "samples": 471,
+      "min": 8.382,
+      "p05": 8.382,
+      "below3": 0,
+      "below4_5": 0
+    }
+  ]
+}

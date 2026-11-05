@@ -1,0 +1,38 @@
+{
+  "generate.py": {
+    "sha256": "ea3145c079b9fd183544f04d178d8650aaac91a840076dcca0a2f6a859ed42fe",
+    "bytes": 5017
+  },
+  "poster.svg": {
+    "sha256": "4da5be9e5aabfc05cd907e32f89ff25c58d2af48411de7e23075aad8a4aefb4c",
+    "bytes": 157284
+  },
+  "preview.png": {
+    "sha256": "65b609d1503b0653b57320089decfd52fed6012e8873e5799156e9d20b963f7c",
+    "bytes": 73819
+  },
+  "qa.cjs": {
+    "sha256": "12a33a78b87f819af24b544bc941b8525e8a2ce4e3d8b0491da0d057902c39f0",
+    "bytes": 1290
+  },
+  "qa.json": {
+    "sha256": "b6377ca07ad3dbcba2badd149953da24f91398b6bed3b04a2d34764c9fd88776",
+    "bytes": 1730
+  },
+  "raw.svg": {
+    "sha256": "26adcb1a7d32c7d42e9548fb610a837a27bdf6bda4f5f8663356bc6a714e349e",
+    "bytes": 9956
+  },
+  "read-access-inventory.md": {
+    "sha256": "743c3ac2882e216af5b0b45d204fed0f19bd5a2a0f11f3a60a0094ec965e5a25",
+    "bytes": 1042
+  },
+  "uncertainties.md": {
+    "sha256": "de62d05865df9499451e7324fe6b1497ffd908947a5379ea6fb99961b048ba04",
+    "bytes": 1167
+  },
+  "verification.txt": {
+    "sha256": "38f62852473f1dff1e092c978f96f1c6e23da218b8f2957324d070789bcc1325",
+    "bytes": 302
+  }
+}
