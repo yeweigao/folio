@@ -1,35 +1,23 @@
 # Apple + Engineering style — the mechanism as proof
 
-**Invocation:** Make work as an engineering product's page is made: Apple as the base, then one brand from this school as the governing hand, chosen by what mechanism the input proves; show how it works, not just how it looks — a cutaway, an exploded view, a diagram, a figure — and let the mechanism be the hero; never a lifestyle mood without a mechanism inside it, never a performance claim without a figure or a section to check it on.
+**Invocation:** Apple + Engineering — Make the page as an engineering product's is made: show how it works — a section, an exploded view, a diagram, a figure — and let the mechanism be the hero; never a mood without a mechanism, or a performance claim with nothing to check it by.
 
-The engineering school, from airflow and motors to exposed kits and modular systems. What separates it from other schools is that its proof is a mechanism: how air moves, how a motor spins, how parts fit, how a system performs. Spoken in Apple, it keeps the single-accent discipline, the product as sculpture and one lead per screen, and turns the gallery into a workshop: the photograph is replaced, or joined, by a section, a diagram and a figure that can be checked.
+Airflow and motors, exposed kits, modular systems: the proof is a mechanism — how air moves, how parts fit, how a system performs. Spoken in Apple, the gallery becomes a workshop, where section, diagram and figure join the photograph. Subtraction alone is Minimalist; a workflow, Developer.
 
-Choose this dialect when the input is a motor, an airflow product, a kit, a modular system, or any subject whose claim is a mechanism or a performance figure. Then choose one brand inside it as the governing hand, by what mechanism it is — airflow, exposed kit, or modular system — not by which brand is most famous, and not by picking two at once. Where the input's claim is subtraction with no mechanism to show, that is Minimalist, not Engineering; where it is a tool's workflow, that is Developer, not Engineering; where it is craft, that is Luxury, not Engineering.
-
-- **The school is the router; the brand is the look.** Engineering names the kind of proof — a section, a diagram, a figure — and the brand hand supplies the philosophy: ground, accent, type voice, button shape, chrome. An engineering dialect that names no brand has no look; a brand used without the school's mechanism has no reason.
-- **One governing hand per work.** The chosen brand governs the whole work; other brands in this school visit only as single moves, one detail each. Two governing brands on one unit — Dyson's airflow over Teenage Engineering's exposed kit, for example — is two dialects, not one.
-- **The mechanism is the hero, in section or in diagram.** A cutaway, an exploded view, a technical diagram at one line weight, a product shown in use with its mechanism visible. A lifestyle photograph alone, however beautiful, proves nothing about how the thing works.
-- **Every performance claim carries a figure or a section.** A claim about airflow, power, speed or efficiency is stated with a figure on a shared baseline, or with a section that shows where the figure comes from. A claim without either is marketing, not engineering, whatever the type size.
-- **Diagrams are native and flat, at one line weight.** Drawing explains: flat, one line weight, on the field, few node types, deliberate connectors. A rendered 3D explosion that cannot be read as a diagram is decoration, not proof.
-- **Play, where it belongs, is engineering play.** An exposed screw, a visible joint, a kit that can be taken apart — play is allowed only where it shows how the thing is made or how it works. Play that hides the mechanism has mistaken a toy for a tool.
-- **No values are specified here.** Ground, accent, type and button shape are drawn from the chosen brand's own knowledge, checked against that brand's philosophy below. A value that contradicts the philosophy is wrong even if it matches a remembered brand detail.
+- **The mechanism is the hero,** in section or diagram, or the product in use with its mechanism visible. A lifestyle photograph alone proves nothing about how it works.
+- **Every performance claim carries a figure or a section,** the figure on a shared baseline.
+- **Diagrams are native.** Flat, one line weight, few node types, cropped tight so the mechanism holds its size; a rendered explosion that cannot be read is decoration.
+- **A system too wide for its slot shows part on the cover and the whole on the proof unit.** A crop never cuts through a structural member.
+- **Play is engineering play.** An exposed screw, a visible joint, a kit that comes apart; play that hides the mechanism is a toy.
 
 **Hands in this school.** One governs; the others visit as single moves.
-- **Dyson — airflow as story.** Engineering as narrative: airflow, motor and filtration shown in section and in diagram, the product in use with its mechanism visible, performance figures as the proof that the story is true. Suits airflow products, motors, vacuums and any product whose claim is performance. Never: a lifestyle photograph without a section or a figure inside it, a performance claim without a baseline, a diagram that cannot be read.
-- **Teenage Engineering — the exposed kit.** Minimal products with their engineering exposed: visible screws and joints, a product that reads as a kit or a tool, playful engineering that still shows how it works, a small set of strong colours used as product signals rather than decoration. Suits kits, instruments, small electronics and any product whose claim is that it can be understood by looking at it. Never: a hidden mechanism, a playful detail that hides how the thing works, a colour used as decoration rather than signal.
-- **Vitsoe — the modular system as proof.** A shelving system where the proof is that parts combine without fitting: one module, every part a whole multiple of it, the system shown assembled and disassembled. Suits modular systems, furniture and kits. Never: a dimension off the module, a part that fits only one configuration, a system shown only assembled.
+- **Dyson — airflow as story.** Airflow, motor and filtration in section and diagram; the product in use with its mechanism visible; performance figures as proof the story is true. Suits airflow, motors and performance claims. Never: a lifestyle photograph without a section or figure.
+- **Teenage Engineering — the exposed kit.** Visible screws and joints; a product that reads as a kit or tool; a few strong colours as product signals, never decoration. Suits kits, instruments and small electronics. Never: a hidden mechanism, a playful detail that hides how it works.
+- **Vitsoe — the modular system as proof.** One module, every part a whole multiple of it; the system shown assembled and disassembled. Suits shelving, furniture and kits. Never: a dimension off the module, a system shown only assembled.
+- **Visitor:** Braun, one Rams move — a modular part, a control that does exactly one thing.
 
-**Visitors, single moves only.**
-- **Braun — the functional detail.** One Rams move: a modular part, a functional detail, a control that does exactly one thing. Never: the whole Braun system governing an engineering work twice.
+**Apple keeps:** the single accent, the product as sculpture, one lead per screen, drawing native when it explains.
 
-**Master edition rules.** Internal padding is never zero: text never touches its box edge, and title boxes are taller than their type so titles never overflow into body text and detail titles never sit underneath their images. A diagram source is cropped tight to the diagram, never left with wide margins that shrink the mechanism below hero photographs. A cover slot too narrow for a system shows part of the system on the cover and the whole system on the proof unit; a crop that cuts through uprights or shelves is rejected. A cover hero that is small and lost in whitespace is replaced with a tight crop that fills its slot. A subtitle never grazes the mechanism it names. Where tabular setting is unavailable, it is never claimed.
+**Test:** Cover the lifestyle photograph: section, diagram and figure still prove how it works. Cover the figure: the section alone still shows the mechanism.
 
-**Alignment and accent, restated.** When a hand from this dialect governs, its single accent replaces every Apple blue role for that work, and Apple blues retire for that work. Body, leads, captions, card names and prices are flush left, ragged right, in every surface and format; only a hero, vista or cover headline may centre.
-
-**continuous corner:** A hand may choose square forms; every nonzero radius uses Apple continuous corner. Radius sets size, not contour. Nested corners share their centre and subtract the gap from the outer radius for the inner one. Use the theme's native API or continuous corner path; plain circular rounding and a superellipse are forbidden. Write this construction into the standalone DESIGN.md.
-
-**Apple keeps:** the single-accent discipline, the product as sculpture, one lead per screen, drawing native when it explains.
-
-**Test:** Cover the lifestyle photograph: the section, the diagram and the figure still prove how the thing works. Cover the figure: the section alone still shows the mechanism. A work that fails both tests is a mood page, not engineering.
-
-**Caricature:** a lifestyle mood without a mechanism; a performance claim without a figure or a section; a 3D explosion that cannot be read as a diagram; a playful detail that hides how the thing works; a second accent colour; a diagram with every node type at once.
+**Caricature:** a mood without a mechanism; a performance claim without figure or section; a 3D explosion that cannot be read; play that hides the mechanism; every node type in one diagram.

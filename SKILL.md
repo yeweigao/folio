@@ -54,9 +54,7 @@ Goals, not steps: the route is yours, the map is here. Your memory of a name bri
 
 The Philosophy is the eye, the theme the grammar, a dialect the rules it overturns, the hand the way of working, the subject the idea. Nothing overrides the eye: a dialect changes how a lead, an axis or a space is made, never that the unit has one. A theme is a folder under `references/themes/` holding its hands, grammar, methods, dialects and caricature.
 
-Choose the theme from the user's named direction or selected reference first. When no direction is named, choose a theme suited to the subject and reader; do not treat an Apple device, an apple as subject, or a Keynote file alone as a request for Apple's marketing style. A selected reference for reconstruction governs the direction.
+Choose the theme from the user's named direction or selected reference; with none, from the subject and reader. A device, a file format or a namesake subject is not a direction. A selected reference for reconstruction governs the direction.
 
 - [Swiss](references/themes/swiss/theme.md): the International Typographic Style and nine movements; for typographic, editorial and information-led work.
-- [Apple](references/themes/apple/theme.md): Apple's public marketing and launch language; for product, feature and launch work led by the object or its evidence. This is not Apple's official product-interface guidance.
-
-For Apple, read its theme, the chosen industry dialect if any, the applicable Keynote, Store or Editorial file, and Bento when the content calls for its feature grid. These are separate choices: the theme defines their precedence. Also read the matching delivery surface in Routes; the Apple surface file does not replace it.
+- [Apple](references/themes/apple/theme.md): Apple's public marketing and launch language, with industry dialects, surfaces and Bento; for product, feature and launch work led by the object or its evidence.

@@ -1,81 +1,66 @@
 /* continuous-corner.js — Apple continuous corner, as a vector path.
  *
- * The control points below are not a mathematical squircle and not a circular
- * border-radius. They are normalised from an actual macOS SwiftUI
- *   RoundedRectangle(cornerRadius: 22, style: .continuous)
- * export kept in exports/apple-continuous-corner/native/paths.json, verified in
- * AUDIT.md. Coordinates (u, v) run inward from a corner, in units of R:
+ * Native constants, symmetric about the corner's diagonal. Coordinates (u, v)
+ * run inward from a corner, in units of R:
  *
- *   A = (0, 1)                     the point where the straight edge ends
- *   C (0, .96) (0, .82) (.07491, .63149)
- *   C (.16906, .37282) (.37282, .16906) (.63149, .07491)
- *   C (.86841, 0) (1.08849, 0) (1.52866, 0)
- *   B = (1.52866, 0)              the point where the next straight edge begins
+ *   M 0 1.52866
+ *   C 0 1.08849  0 .86841  .07491 .63149
+ *   C .16906 .37282  .37282 .16906  .63149 .07491
+ *   C .86841 0  1.08849 0  1.52866 0
  *
- * The 1.52866R shoulder extent is the measured native value. Fill, stroke and
- * image clip use this one path. Plain CSS border-radius, SVG rect rx and
- * superellipses are not substitutes.
+ * A side shorter than 2 x 1.52866R cannot hold two shoulders: its shoulder
+ * shortens to half the side, easing toward the native saturated form
+ * (half the side = R: from 0 1 through 0 .96 and 0 .82). Fill, stroke and
+ * clip share one path. border-radius, rect rx and superellipses are other curves.
  *
- * Use: <div class="card" data-cc="18" data-cc-fill="#ffffff"
- *           data-cc-stroke="#e0e0e0" data-cc-stroke-width="1"> live text </div>
- *      <div class="media" data-cc="18" data-cc-clip> <img ...> </div>
- *
- * Scripts are loaded from ../../_shared/continuous-corner.js relative to a
- * piece folder (examples/<world>/<slug>/). No build step, no network.
+ * Use: <div data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#e0e0e0"
+ *           data-cc-stroke-width="1"> live text </div>
+ *      <div data-cc="18" data-cc-clip> <img ...> </div>
+ * Loaded from ../../_shared/continuous-corner.js relative to a piece folder.
  */
 (function () {
   'use strict';
   var EXT = 1.52866;
-  var SEG = [
-    [[0, 0.96], [0, 0.82], [0.07491, 0.63149]],
-    [[0.16906, 0.37282], [0.37282, 0.16906], [0.63149, 0.07491]],
-    [[0.86841, 0], [1.08849, 0], [EXT, 0]]
-  ];
-  var A = [0, 1], B = [EXT, 0];
+  var MID = [[0.07491, 0.63149], [0.16906, 0.37282], [0.37282, 0.16906], [0.63149, 0.07491]];
 
   function n(v) { return Math.round(v * 1000) / 1000; }
-  function pt(cx, cy, dx, dy, r, p) {
-    return n(cx + dx * r * p[0]) + ' ' + n(cy + dy * r * p[1]);
+
+  // The straight-edge end of a shoulder whose extent is e (in R, 1..EXT):
+  // [end, control near end, control near middle].
+  function end(e) {
+    var s = (e - 1) / (EXT - 1);
+    return [e, 0.96 + s * (1.08849 - 0.96), 0.82 + s * (0.86841 - 0.82)];
   }
 
-  // One 90-degree turn. forward: A -> B; reverse: B -> A.
-  function corner(cx, cy, dx, dy, r, forward) {
-    var f = function (p) { return pt(cx, cy, dx, dy, r, p); };
-    var out = [], i, s, triples;
-    if (forward) {
-      for (i = 0; i < 3; i++) {
-        s = SEG[i];
-        out.push('C ' + f(s[0]) + ' ' + f(s[1]) + ' ' + f(s[2]));
-      }
-    } else {
-      triples = [
-        [A, SEG[0][0], SEG[0][1], SEG[0][2]],
-        [SEG[0][2], SEG[1][0], SEG[1][1], SEG[1][2]],
-        [SEG[1][2], SEG[2][0], SEG[2][1], B]
-      ];
-      for (i = 2; i >= 0; i--) {
-        s = triples[i];
-        out.push('C ' + f(s[2]) + ' ' + f(s[1]) + ' ' + f(s[0]));
-      }
-    }
+  // One corner from the vertical edge (extent ev) to the horizontal edge (eh),
+  // as cubic triples in (u, v); reversed when the path runs the other way.
+  function corner(cx, cy, dx, dy, r, ev, eh, forward) {
+    var a = end(ev), b = end(eh);
+    var P = [[0, a[0]], [0, a[1]], [0, a[2]], MID[0], MID[1], MID[2], MID[3],
+             [b[2], 0], [b[1], 0], [b[0], 0]];
+    if (!forward) P.reverse();
+    var f = function (p) { return n(cx + dx * r * p[0]) + ' ' + n(cy + dy * r * p[1]); };
+    var out = [];
+    for (var i = 1; i < 10; i += 3) out.push('C ' + f(P[i]) + ' ' + f(P[i + 1]) + ' ' + f(P[i + 2]));
     return out.join(' ');
   }
 
-  // Fit the shoulder to the available dimensions, so adjacent shoulders never
-  // overlap on narrow or saturated controls.
   function ccPath(w, h, radius) {
-    var r = Math.min(radius, h / 2, w / (2 * EXT));
+    var r = Math.min(radius, w / 2, h / 2);
     if (r <= 0) return 'M 0 0 H ' + n(w) + ' V ' + n(h) + ' H 0 Z';
-    var e = EXT * r;
-    return 'M ' + n(e) + ' 0 ' +
-      'L ' + n(w - e) + ' 0 ' +
-      corner(w, 0, -1, 1, r, false) +
-      'L ' + n(w) + ' ' + n(h - r) + ' ' +
-      corner(w, h, -1, -1, r, true) +
-      'L ' + n(e) + ' ' + n(h) + ' ' +
-      corner(0, h, 1, -1, r, false) +
-      'L 0 ' + n(r) + ' ' +
-      corner(0, 0, 1, 1, r, true) + ' Z';
+    var eh = Math.min(EXT, w / 2 / r), ev = Math.min(EXT, h / 2 / r);
+    var x = eh * r, y = ev * r;
+    // A straight run is drawn only where one remains between two shoulders.
+    var L = function (len, px, py) { return len > 0.001 ? 'L ' + n(px) + ' ' + n(py) + ' ' : ''; };
+    return 'M ' + n(x) + ' 0 ' +
+      L(w - 2 * x, w - x, 0) +
+      corner(w, 0, -1, 1, r, ev, eh, false) + ' ' +
+      L(h - 2 * y, w, h - y) +
+      corner(w, h, -1, -1, r, ev, eh, true) + ' ' +
+      L(w - 2 * x, x, h) +
+      corner(0, h, 1, -1, r, ev, eh, false) + ' ' +
+      L(h - 2 * y, 0, y) +
+      corner(0, 0, 1, 1, r, ev, eh, true) + ' Z';
   }
 
   function draw(el) {

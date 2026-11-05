@@ -1,27 +1,21 @@
 # Apple + Store style — the shop and configurator
 
-**Invocation:** Make work as a shop is made: white utility cards on a hairline grid, chips for choices, a price beside every name, one buy action per card; never a gallery tile forced to sell, never chrome that outshouts the product.
+**Invocation:** Apple + Store — Make the page as a shop is made: white cards on a hairline grid, chips for choices, a price beside every name, one buy action that never moves; never a gallery tile forced to sell, or chrome louder than the product.
 
-The apple.com store, the product buy pages and the accessories grid. Spoken in Apple, it keeps the single blue and the type ramp, and lets density rise: the field becomes a grid, the tile becomes a card, and comparison becomes the work.
+The apple.com store, buy pages and accessories grid: the denser tool mode of the same grammar. The field becomes a grid, the tile a card, and comparison becomes the work. A surface, not an industry: it governs structure, and the dialect's hand governs look.
 
-- **Cards, not tiles.** White cards on parchment, a 1 px hairline, an 18 px radius, 24 px of padding; the product image takes the top of the card at a square crop, the name and price sit below it in body size.
-- **Chips for choices.** A pill per option, thumbnail plus label plus price difference; the selected chip carries a 2 px focus-blue border and nothing else changes.
-- **Comparison is shared scale.** Variants in one row, same crop, same scale, direct labels; the decisive difference alone takes the blue.
-- **The buy action stays put.** A frosted sticky bar holds the running price on the left and the buy pill on the right, so the action is never hunted for.
+- **Cards, not tiles.** White on parchment, a 1 px hairline, radius 18, padding 24. The image slot on top takes the dialect's proof at one shared square crop — photograph, interface, dashboard or material; name and price below at body size, flush left. Where there is no price, the second line carries a plan, a figure or an action.
+- **Chips for choices.** A pill per option: thumbnail, label, price difference. The selected chip takes a 2 px border in the action colour, and nothing else changes.
+- **Comparison is shared scale.** Variants in one row, one crop, one scale, direct labels; the decisive difference alone takes the accent.
+- **The buy action stays put.** A frosted sticky bar: the running price left, the buy pill right.
 
 **Hands in this school.** One governs; the others visit as single moves.
-- **The configurator hand — the buy page.** Lay out every choice as a chip, every consequence as a price, and let the buyer build the product by choosing, not by reading. Suits configurators, options and bundles. Never: a choice hidden behind a paragraph.
-- **The accessories hand — the grid.** One square crop per product, one name, one price, one link; the grid does the selling, the card does not decorate. Suits catalogues and accessory ranges. Never: a card with two products, or a product without a price.
-- **The gallery hand — the product pages.** One hero tile above the grid, to remind the buyer what the product is before the choices begin. Suits store landings. Never: a hero that repeats the grid.
+- **The configurator hand — the buy page.** Every choice a chip, every consequence a price; the buyer builds by choosing, not reading. Suits configurators, options and bundles. Never: a choice hidden in a paragraph.
+- **The accessories hand — the grid.** One square crop, one name, one price, one link per card; the grid sells, the card does not decorate. Suits catalogues and ranges. Never: two products in a card, a product without a price.
+- **The gallery hand — the product pages.** One hero tile above the grid, to show what the product is before the choices begin. Suits store landings. Never: a hero that repeats the grid.
 
-**Master edition rules.** Internal padding is never zero inside cards: card text never touches a card edge. On the web a store unit is left text with right image, price row plus total, with card names and prices flush left. A card that repeats a photograph at a new crop declares the reuse; a reused image is a second use, not a second proof.
+**Apple keeps:** the single accent for links, chips and buy; the Text cut for names, prices and labels; the parchment ground; the product shadow inside the card.
 
-**Alignment and accent, restated.** Card names and prices stay flush left inside their cards; a centred container is never centred text. When a hand governs, its single accent replaces every Apple blue role for that work. Body, leads, captions, card names and prices are flush left, ragged right, in every surface and format; only a hero, vista or cover headline may centre.
+**Test:** Cover the prices: the grid still reads as one product family. Cover the photographs: name, price and choice still let a buyer decide.
 
-**continuous corner:** A hand may choose square forms; every nonzero radius uses Apple continuous corner. Radius sets size, not contour. Nested corners share their centre and subtract the gap from the outer radius for the inner one. Use the theme's native API or continuous corner path; plain circular rounding and a superellipse are forbidden. Write this construction into the standalone DESIGN.md.
-
-**Apple keeps:** the single blue for links, chips and the buy action, SF Pro Text for names, prices and labels, the parchment ground, the single product shadow on the render inside the card.
-
-**Test:** Cover the prices: the grid still reads as one range of one product family; cover the photographs: name, price and choice still let a buyer decide.
-
-**Caricature:** a discount banner in red; a star rating as decoration; a card with a shadow, a badge and a gradient; a configurator that needs a manual; a price in a larger size than the product name.
+**Caricature:** a red discount banner; stars as decoration; a card with a shadow, a badge and a gradient; a configurator that needs a manual; a price larger than the product name.
