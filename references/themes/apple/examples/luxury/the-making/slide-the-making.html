@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1600">
+<title>Atelier — The making</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#ffffff; --panel:#f7f3eb; --dark:#24211d; --ink:#24211d;
+    --muted:#67615a; --action:#a74b00; --onAction:#ffffff; --onDark:#ffffff;
+    --hairline:#d2d2d7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#e7e5e1}
+  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
+  .unit{position:relative;width:1600px;height:900px;overflow:hidden;background:var(--canvas)}
+  .serif{font-family:"Cormorant Garamond","Noto Serif SC",Georgia,serif}
+  .zhserif{font-family:"Noto Serif SC","Cormorant Garamond",serif}
+  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
+  .pad{padding:12px}
+  .t{position:absolute}
+  [data-cc]{position:relative;isolation:isolate}
+  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+  svg{display:block}
+  a{text-decoration:none}
+
+  .left{left:96px;top:80px;width:720px}
+  .mark{font-family:"Cormorant Garamond",Georgia,serif;font-size:23px;font-weight:600;letter-spacing:.01em}
+  .head{margin-top:32px;font-family:"Cormorant Garamond","Noto Serif SC",Georgia,serif;
+    font-size:66px;font-weight:400;line-height:1.05;letter-spacing:-.01em}
+  .headzh{margin-top:16px;font-size:26px;font-weight:400;line-height:1.5;color:var(--muted)}
+  .lead{margin-top:30px;width:560px;font-size:17px;font-weight:400;line-height:1.6;color:var(--ink)}
+  .cta{margin-top:34px;display:inline-flex;align-items:center;justify-content:center;
+    height:44px;padding:0 28px;font-size:17px;font-weight:400;color:var(--onAction)}
+  .price{margin-top:24px;font-size:14px;font-weight:400;color:var(--muted)}
+
+  .dark{left:880px;top:0;width:720px;height:600px;overflow:hidden;background:var(--dark)}
+  .dcap{position:absolute;left:32px;bottom:26px;font-size:14px;font-weight:400;color:rgba(255,255,255,.66)}
+
+  .band{left:0;top:600px;width:1600px;height:300px;background:var(--panel)}
+  .sect{left:96px;top:648px;width:1400px;height:170px}
+  .foot{left:96px;top:856px;width:1408px;display:flex;justify-content:space-between;
+    font-size:12px;font-weight:400;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="unit" id="slide">
+
+  <div class="t left pad">
+    <p class="mark">Atelier</p>
+    <h1 class="head">The order is the value.</h1>
+    <p class="headzh zhserif">顺序，就是价值</p>
+    <p class="lead">Four moves, taken in order, are all that stand between a hide and an edge that will outlast it.</p>
+    <a class="cta" href="#" data-cc="22" data-cc-fill="#a74b00">Read the making note</a>
+    <p class="price">The Solstice · ¥12,800</p>
+  </div>
+
+  <div class="t dark">
+    <svg viewBox="0 0 720 600" width="720" height="600" aria-hidden="true">
+      <defs>
+        <linearGradient id="hide" x1="0" y1="0" x2="0.25" y2="1">
+          <stop offset="0" stop-color="#efe7d8"/>
+          <stop offset=".5" stop-color="#d8cebc"/>
+          <stop offset="1" stop-color="#b9ab96"/>
+        </linearGradient>
+        <pattern id="grain" width="14" height="14" patternUnits="userSpaceOnUse">
+          <circle cx="3" cy="4" r=".9" fill="#7a6f5e" opacity=".22"/>
+          <circle cx="10" cy="10" r=".7" fill="#7a6f5e" opacity=".16"/>
+          <ellipse cx="7" cy="2" rx="2.6" ry=".5" fill="#ffffff" opacity=".10"/>
+        </pattern>
+      </defs>
+      <rect width="720" height="600" fill="url(#hide)"/>
+      <rect width="720" height="600" fill="url(#grain)"/>
+      <path d="M0 0 L720 0 L720 296 L0 288 Z" fill="#ffffff" opacity=".09"/>
+      <rect x="0" y="0" width="720" height="300" fill="#ffffff" opacity=".05"/>
+      <rect x="0" y="300" width="720" height="300" fill="#000000" opacity=".045"/>
+      <rect x="0" y="296" width="720" height="8" fill="#5d5346" opacity=".30"/>
+      <line x1="0" y1="300" x2="720" y2="300" stroke="#6f6455" stroke-width="2.5" opacity=".7"/>
+      <g stroke="#4a4136" stroke-width="6" stroke-linecap="round">
+        <line x1="40" y1="286" x2="62" y2="314"/>
+        <line x1="100" y1="286" x2="122" y2="314"/>
+        <line x1="160" y1="286" x2="182" y2="314"/>
+        <line x1="220" y1="286" x2="242" y2="314"/>
+        <line x1="280" y1="286" x2="302" y2="314"/>
+        <line x1="340" y1="286" x2="362" y2="314"/>
+        <line x1="400" y1="286" x2="422" y2="314"/>
+        <line x1="460" y1="286" x2="482" y2="314"/>
+        <line x1="520" y1="286" x2="542" y2="314"/>
+        <line x1="580" y1="286" x2="602" y2="314"/>
+        <line x1="640" y1="286" x2="662" y2="314"/>
+      </g>
+      <g stroke="#f4ead8" stroke-width="1.6" stroke-linecap="round" opacity=".28">
+        <line x1="41" y1="288" x2="61" y2="312"/><line x1="101" y1="288" x2="121" y2="312"/>
+        <line x1="161" y1="288" x2="181" y2="312"/><line x1="221" y1="288" x2="241" y2="312"/>
+        <line x1="281" y1="288" x2="301" y2="312"/><line x1="341" y1="288" x2="361" y2="312"/>
+        <line x1="401" y1="288" x2="421" y2="312"/><line x1="461" y1="288" x2="481" y2="312"/>
+        <line x1="521" y1="288" x2="541" y2="312"/><line x1="581" y1="288" x2="601" y2="312"/>
+        <line x1="641" y1="288" x2="661" y2="312"/>
+      </g>
+      <g fill="#2b251d" opacity=".4">
+        <circle cx="51" cy="300" r="3"/><circle cx="111" cy="300" r="3"/>
+        <circle cx="171" cy="300" r="3"/><circle cx="231" cy="300" r="3"/>
+        <circle cx="291" cy="300" r="3"/><circle cx="351" cy="300" r="3"/>
+        <circle cx="411" cy="300" r="3"/><circle cx="471" cy="300" r="3"/>
+        <circle cx="531" cy="300" r="3"/><circle cx="591" cy="300" r="3"/>
+        <circle cx="651" cy="300" r="3"/>
+      </g>
+      <rect x="0" y="532" width="720" height="6" fill="#8a7f6e" opacity=".55"/>
+      <rect x="0" y="536" width="720" height="64" fill="#3a342c"/>
+      <rect x="0" y="536" width="720" height="3" fill="#ffffff" opacity=".08"/>
+    </svg>
+    <p class="dcap">Illustrative render, not a photograph</p>
+  </div>
+
+  <div class="t band"></div>
+  <div class="t sect">
+    <svg width="1400" height="170" viewBox="0 0 1400 170" aria-hidden="true">
+      <defs>
+        <pattern id="sgrain" width="12" height="12" patternUnits="userSpaceOnUse">
+          <circle cx="3" cy="4" r=".8" fill="#7a6f5e" opacity=".18"/>
+          <circle cx="8" cy="9" r=".6" fill="#7a6f5e" opacity=".12"/>
+        </pattern>
+      </defs>
+
+      <!-- 1 · cut: two clean layers, square edge -->
+      <g>
+        <rect x="0" y="10" width="300" height="40" fill="#e6dfd2"/>
+        <rect x="0" y="50" width="300" height="40" fill="#c9bda9"/>
+        <rect x="0" y="10" width="300" height="80" fill="url(#sgrain)"/>
+        <line x1="0" y1="50" x2="300" y2="50" stroke="#8a7f6e" stroke-width="1" opacity=".5"/>
+        <line x1="299" y1="10" x2="299" y2="90" stroke="#8a7f6e" stroke-width="1.4" opacity=".7"/>
+      </g>
+
+      <!-- 2 · skive: the top layer thinned to the edge -->
+      <g transform="translate(350 0)">
+        <path d="M0 10 H300 V34 L150 50 H0 Z" fill="#e6dfd2"/>
+        <path d="M0 10 H300 V34 L150 50 H0 Z" fill="url(#sgrain)"/>
+        <rect x="0" y="50" width="300" height="40" fill="#c9bda9"/>
+        <rect x="0" y="50" width="300" height="40" fill="url(#sgrain)"/>
+        <line x1="0" y1="50" x2="300" y2="50" stroke="#8a7f6e" stroke-width="1" opacity=".5"/>
+        <line x1="299" y1="34" x2="299" y2="90" stroke="#8a7f6e" stroke-width="1.4" opacity=".7"/>
+        <path d="M150 50 H300" stroke="#b3a58f" stroke-width="1" opacity=".5"/>
+      </g>
+
+      <!-- 3 · stitch: two rows through both layers -->
+      <g transform="translate(700 0)">
+        <rect x="0" y="10" width="300" height="40" fill="#e6dfd2"/>
+        <rect x="0" y="50" width="300" height="40" fill="#c9bda9"/>
+        <rect x="0" y="10" width="300" height="80" fill="url(#sgrain)"/>
+        <line x1="0" y1="50" x2="300" y2="50" stroke="#8a7f6e" stroke-width="1" opacity=".5"/>
+        <line x1="299" y1="10" x2="299" y2="90" stroke="#8a7f6e" stroke-width="1.4" opacity=".7"/>
+        <g stroke="#4a4136" stroke-width="4" stroke-linecap="round">
+          <line x1="40" y1="26" x2="58" y2="42"/><line x1="80" y1="26" x2="98" y2="42"/>
+          <line x1="120" y1="26" x2="138" y2="42"/><line x1="160" y1="26" x2="178" y2="42"/>
+          <line x1="200" y1="26" x2="218" y2="42"/><line x1="240" y1="26" x2="258" y2="42"/>
+          <line x1="40" y1="58" x2="58" y2="74"/><line x1="80" y1="58" x2="98" y2="74"/>
+          <line x1="120" y1="58" x2="138" y2="74"/><line x1="160" y1="58" x2="178" y2="74"/>
+          <line x1="200" y1="58" x2="218" y2="74"/><line x1="240" y1="58" x2="258" y2="74"/>
+        </g>
+      </g>
+
+      <!-- 4 · burnish: the edge sealed and rounded -->
+      <g transform="translate(1050 0)">
+        <rect x="0" y="10" width="286" height="40" fill="#e6dfd2"/>
+        <rect x="0" y="50" width="286" height="40" fill="#c9bda9"/>
+        <rect x="0" y="10" width="286" height="80" fill="url(#sgrain)"/>
+        <line x1="0" y1="50" x2="286" y2="50" stroke="#8a7f6e" stroke-width="1" opacity=".5"/>
+        <path d="M286 10 H292 C299 10 300 16 300 22 V78 C300 84 299 90 292 90 H286 Z" fill="#3a342c"/>
+        <path d="M288 14 C293 16 294 22 294 28" stroke="#ffffff" stroke-width="1.4" fill="none" opacity=".22"/>
+      </g>
+
+      <g font-family="Inter, 'Noto Sans SC', sans-serif" font-size="17" fill="#24211d">
+        <text x="0" y="116">Cut 裁</text>
+        <text x="350" y="116">Skive 削</text>
+        <text x="700" y="116">Stitch 缝</text>
+        <text x="1050" y="116">Burnish 封</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="t foot pad">
+    <span>Illustrative example</span>
+    <span class="zh">2026 年秋季</span>
+    <span>Atelier making note · Autumn 2026</span>
+  </div>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

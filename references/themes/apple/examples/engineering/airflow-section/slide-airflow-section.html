@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1600">
+<title>Aero — airflow section</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#f7f7f5; --panel:#ffffff; --dark:#25272a;
+    --ink:#25272a; --muted:#62666b; --action:#6525a0;
+    --onAction:#ffffff; --onDark:#ffffff; --hairline:#d2d2d7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#e4e4e0}
+  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
+  .unit{position:relative;width:1600px;height:900px;overflow:hidden;background:var(--canvas)}
+  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
+  [data-cc]{position:relative;isolation:isolate}
+  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+  .t{position:absolute}
+  svg{display:block}
+
+  .brand{left:80px;top:52px;display:flex;align-items:baseline;gap:16px}
+  .brand .nm{font-size:17px;font-weight:600;letter-spacing:-.2px}
+  .brand .k{font-size:14px;font-weight:400;color:var(--muted)}
+
+  .claim{left:80px;top:94px;width:1000px;font-size:56px;font-weight:600;line-height:1.08;letter-spacing:-1.8px}
+  .zhline{left:80px;top:232px;width:760px;font-size:24px;font-weight:400;line-height:1.5;color:var(--ink)}
+  .note{left:1180px;top:112px;width:340px;font-size:14px;font-weight:400;line-height:1.55;color:var(--muted)}
+
+  .rule{position:absolute;left:80px;top:670px;width:1440px;height:1px;background:var(--hairline)}
+  .stn{position:absolute;top:682px;width:300px}
+  .stn .nm{font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
+  .stn .fig{margin-top:6px;font-size:32px;font-weight:600;line-height:1.05;letter-spacing:-.8px}
+  .stn .fig .u{font-size:15px;font-weight:400;letter-spacing:0}
+  .stn .ctx{margin-top:7px;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
+  .stn.out .fig{color:var(--action)}
+
+  .source{left:80px;top:790px;width:900px;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
+  .foot{left:80px;top:820px;width:1440px;display:flex;justify-content:space-between;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="unit" id="slide">
+
+  <div class="t brand"><span class="nm">Aero</span><span class="k">Airflow section</span></div>
+
+  <h1 class="t claim">Every figure hangs from the<br>station that measured it.</h1>
+  <p class="t zhline zh">每个数字都挂在测量它的那一段上</p>
+  <p class="t note">Cutaway at the horizontal axis. The wall is shown solid, at its full thickness.</p>
+
+  <svg width="1440" height="336" viewBox="0 0 1440 336" aria-hidden="true" style="position:absolute;left:80px;top:316px">
+    <defs>
+      <marker id="tipIn" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 Z" fill="#62666b"/>
+      </marker>
+      <marker id="tipOut" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 Z" fill="#6525a0"/>
+      </marker>
+    </defs>
+
+    <!-- centre line: the axis the cut is taken on -->
+    <line x1="12" y1="168" x2="1400" y2="168" stroke="#b9bcc0" stroke-width="1" stroke-dasharray="8 7"/>
+
+    <!-- inlet air, three streamlines entering -->
+    <g stroke="#62666b" stroke-width="1.4" fill="none">
+      <line x1="0" y1="118" x2="28" y2="118" marker-end="url(#tipIn)"/>
+      <line x1="0" y1="168" x2="28" y2="168" marker-end="url(#tipIn)"/>
+      <line x1="0" y1="218" x2="28" y2="218" marker-end="url(#tipIn)"/>
+    </g>
+
+    <!-- casing, cut: solid wall section, top and bottom -->
+    <path d="M 40 44 C 80 44 118 56 150 60 L 1090 60 L 1180 106 L 1180 118 L 1090 72 L 150 72 C 122 68 82 56 40 56 Z" fill="#25272a"/>
+    <path d="M 40 292 C 80 292 118 280 150 276 L 1090 276 L 1180 230 L 1180 218 L 1090 264 L 150 264 C 122 268 82 280 40 280 Z" fill="#25272a"/>
+
+    <!-- motor: pod behind the impeller, on two short struts -->
+    <path d="M 460 128 C 492 130 516 148 536 168 C 516 188 492 206 460 208 Z" fill="#25272a"/>
+
+    <!-- impeller: nine swept blades in a shroud ring -->
+    <circle cx="460" cy="168" r="92" fill="none" stroke="#25272a" stroke-width="1.3"/>
+    <g stroke="#25272a" stroke-width="2.2" fill="none" stroke-linecap="round">
+      <g transform="rotate(0 460 168)"><path d="M 460 128 C 474 112 482 98 486 86"/></g>
+      <g transform="rotate(40 460 168)"><path d="M 460 128 C 474 112 482 98 486 86"/></g>
+      <g transform="rotate(80 460 168)"><path d="M 460 128 C 474 112 482 98 486 86"/></g>
+      <g transform="rotate(120 460 168)"><path d="M 460 128 C 474 112 482 98 486 86"/></g>
+      <g transform="rotate(160 460 168)"><path d="M 460 128 C 474 112 482 98 486 86"/></g>
+      <g transform="rotate(200 460 168)"><path d="M 460 128 C 474 112 482 98 486 86"/></g>
+      <g transform="rotate(240 460 168)"><path d="M 460 128 C 474 112 482 98 486 86"/></g>
+      <g transform="rotate(280 460 168)"><path d="M 460 128 C 474 112 482 98 486 86"/></g>
+      <g transform="rotate(320 460 168)"><path d="M 460 128 C 474 112 482 98 486 86"/></g>
+    </g>
+    <circle cx="460" cy="168" r="40" fill="#25272a"/>
+    <circle cx="460" cy="168" r="9" fill="#f7f7f5" stroke="#25272a" stroke-width="1.7"/>
+    <circle cx="460" cy="168" r="2.6" fill="#25272a"/>
+
+    <!-- diffuser: four vanes, two above the axis, two below -->
+    <g stroke="#25272a" stroke-width="4.6" stroke-linecap="butt">
+      <line x1="748" y1="72" x2="786" y2="110"/>
+      <line x1="806" y1="72" x2="844" y2="110"/>
+      <line x1="748" y1="264" x2="786" y2="226"/>
+      <line x1="806" y1="264" x2="844" y2="226"/>
+    </g>
+
+    <!-- air leaving, at the measured outlet -->
+    <g stroke="#6525a0" stroke-width="1.4" fill="none">
+      <line x1="1200" y1="134" x2="1340" y2="134" marker-end="url(#tipOut)"/>
+      <line x1="1200" y1="168" x2="1340" y2="168" marker-end="url(#tipOut)"/>
+      <line x1="1200" y1="202" x2="1340" y2="202" marker-end="url(#tipOut)"/>
+    </g>
+
+    <!-- station leaders: one type, from the wall to one baseline -->
+    <g stroke="#b9bcc0" stroke-width="1">
+      <path d="M 100 287 L 100 326 M 95 326 L 105 326"/>
+      <path d="M 470 276 L 470 326 M 465 326 L 475 326"/>
+      <path d="M 830 276 L 830 326 M 825 326 L 835 326"/>
+      <path d="M 1180 231 L 1180 326 M 1175 326 L 1185 326"/>
+    </g>
+    <circle cx="100" cy="326" r="2.4" fill="#b9bcc0"/>
+    <circle cx="470" cy="326" r="2.4" fill="#b9bcc0"/>
+    <circle cx="830" cy="326" r="2.4" fill="#b9bcc0"/>
+    <circle cx="1180" cy="326" r="2.4" fill="#6525a0"/>
+  </svg>
+
+  <div class="rule"></div>
+
+  <div class="t stn" style="left:180px">
+    <p class="nm">Inlet</p>
+    <p class="fig">96 <span class="u">mm</span></p>
+    <p class="ctx">throat at the bell mouth</p>
+  </div>
+
+  <div class="t stn" style="left:550px">
+    <p class="nm">Impeller</p>
+    <p class="fig">2,100 <span class="u">rpm</span></p>
+    <p class="ctx">nine blades, one speed</p>
+  </div>
+
+  <div class="t stn" style="left:910px">
+    <p class="nm">Diffuser</p>
+    <p class="fig">38 <span class="u">Pa</span></p>
+    <p class="ctx">pressure recovered</p>
+  </div>
+
+  <div class="t stn out" style="left:1260px">
+    <p class="nm">Outlet</p>
+    <p class="fig">420 <span class="u">L/s</span></p>
+    <p class="ctx">airflow, 1 m from the grille</p>
+  </div>
+
+  <p class="t source">Fictional test figures at 44 dB(A), Aero engineering note, 2026.</p>
+
+  <div class="t foot"><span>Illustrative example</span><span>Illustrative render, not a photograph</span></div>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

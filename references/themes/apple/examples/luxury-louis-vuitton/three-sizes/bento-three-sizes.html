@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Voyager — One bag, three sizes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@400;600&amp;family=Noto+Serif+SC:wght@400&amp;family=Noto+Sans+SC:wght@400&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#ffffff; --panel:#f5f1e9; --dark:#30271d; --ink:#30271d;
+    --muted:#686056; --action:#30271d; --onAction:#ffffff; --onDark:#ffffff;
+    --hairline:#d2d2d7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#e9e6e0}
+  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
+  .unit{position:relative;width:1440px;height:1000px;overflow:hidden;background:var(--canvas)}
+  .serif{font-family:"Cormorant Garamond","Noto Serif SC",Georgia,serif}
+  .zhserif{font-family:"Noto Serif SC","Cormorant Garamond",serif}
+  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
+  .t{position:absolute}
+  .pad{padding:12px}
+  a{text-decoration:none;color:inherit}
+  svg{display:block}
+  [data-cc]{position:relative;isolation:isolate}
+  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+
+  .hdr{left:80px;top:44px;width:1280px;display:flex;align-items:baseline;justify-content:space-between}
+  .hdr .mk{font-size:26px;font-weight:600;line-height:1.2}
+  .hdr .se{font-size:13px;font-weight:400;line-height:1.5;color:var(--muted)}
+  .rule{left:80px;top:96px;width:1280px;height:1px;background:var(--hairline)}
+
+  .title{left:80px;top:118px;width:1280px;display:flex;align-items:baseline;gap:22px}
+  .title h1{font-size:40px;font-weight:400;line-height:1.1;letter-spacing:-.005em}
+  .title .zhsub{font-size:19px;font-weight:400;line-height:1.5;color:var(--muted)}
+
+  .grid{left:80px;top:236px;width:1280px;display:grid;
+        grid-template-columns:repeat(12,1fr);grid-template-rows:340px 300px;gap:16px}
+  .lead{grid-column:span 6;padding:26px;display:flex;flex-direction:column}
+  .lead h2{font-size:26px;font-weight:400;line-height:1.2;letter-spacing:-.005em}
+  .lead .sub{margin-top:8px;font-size:13px;font-weight:400;line-height:1.5;color:var(--muted)}
+  .lead .art{margin-top:2px;flex:1;min-height:0}
+
+  .num{grid-column:span 3;padding:28px;display:flex;flex-direction:column;justify-content:center}
+  .num .big{font-size:128px;font-weight:400;line-height:1;letter-spacing:-.03em;color:var(--onDark)}
+  .num .lab{margin-top:14px;font-size:15px;font-weight:400;line-height:1.4;color:var(--onDark)}
+  .num .ctx{margin-top:8px;font-size:13px;font-weight:400;line-height:1.5;color:#cdc2ae}
+
+  .mat{grid-column:span 3;padding:28px;display:flex;flex-direction:column}
+  .mat .sw{width:112px;height:112px;overflow:hidden;line-height:0}
+  .mat .nm{margin-top:26px;font-size:21px;font-weight:400;line-height:1.25}
+  .mat .ln{margin-top:10px;font-size:13px;font-weight:400;line-height:1.6;color:var(--muted)}
+
+  .item{grid-column:span 4;padding:24px;display:flex;flex-direction:column}
+  .item .art{height:118px;display:flex;align-items:flex-end}
+  .item .nm{margin-top:12px;font-size:21px;font-weight:400;line-height:1.25}
+  .item .sp{margin-top:4px;font-size:13px;font-weight:400;line-height:1.6;color:var(--muted)}
+  .item .row{margin-top:auto;padding-top:14px;display:flex;align-items:baseline;justify-content:space-between}
+  .item .pr{font-size:16px;font-weight:400;line-height:1.4}
+  .item .by{font-size:13px;font-weight:400;line-height:1.4;padding-bottom:3px;
+            border-bottom:1px solid var(--ink)}
+
+  .foot{left:80px;top:916px;width:1280px;display:flex;align-items:baseline;
+        justify-content:space-between;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
+  .foot .r{display:flex;gap:36px}
+</style>
+</head>
+<body>
+<div class="unit" id="page">
+
+  <div class="t hdr">
+    <span class="mk serif">Voyager</span>
+    <span class="se">The Voyage line · Automne 2026</span>
+  </div>
+  <div class="t rule"></div>
+
+  <div class="t title pad">
+    <h1 class="serif">One bag, three sizes.</h1>
+    <span class="zhsub zhserif">一只包，三种尺寸</span>
+  </div>
+
+  <div class="t grid">
+
+    <div class="lead" data-cc="18" data-cc-fill="#f5f1e9" data-cc-stroke="#d2d2d7">
+      <h2 class="serif">Only the panels grow.</h2>
+      <p class="sub">All three drawn at 1:2, from the same side view.</p>
+      <div class="art">
+        <svg width="580" height="228" viewBox="0 0 580 228" aria-hidden="true">
+          <defs>
+            <linearGradient id="calf" x1="0" y1="0" x2=".3" y2="1">
+              <stop offset="0" stop-color="#d6c1a0"/>
+              <stop offset=".42" stop-color="#c0a67f"/>
+              <stop offset=".78" stop-color="#a98c64"/>
+              <stop offset="1" stop-color="#94764f"/>
+            </linearGradient>
+            <linearGradient id="calfTop" x1="0" y1="0" x2=".3" y2="1">
+              <stop offset="0" stop-color="#e0cdae"/>
+              <stop offset="1" stop-color="#c6ad86"/>
+            </linearGradient>
+            <linearGradient id="shadow" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#30271d" stop-opacity=".16"/>
+              <stop offset="1" stop-color="#30271d" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+
+          <!-- 28 cm · 140 × 100 at 1:2 -->
+          <g>
+            <ellipse cx="70" cy="181" rx="72" ry="7" fill="#30271d" opacity=".09"/>
+            <path d="M36 78 C36 55 64 55 64 78" fill="none" stroke="#7a5d3d" stroke-width="6"/>
+            <path d="M76 78 C76 55 104 55 104 78" fill="none" stroke="#7a5d3d" stroke-width="6"/>
+            <path d="M0 78 L140 78 L130 178 L10 178 Z" fill="url(#calf)" stroke="#7a5d3d" stroke-width="1" stroke-opacity=".45"/>
+            <path d="M0 78 L140 78 L138 97 L2 97 Z" fill="url(#calfTop)"/>
+            <path d="M0 78 L140 78 L140 81 L0 81 Z" fill="#7a5d3d" opacity=".55"/>
+            <path d="M14 78 L12.4 178" stroke="#7a5d3d" stroke-width="1.2" opacity=".45"/>
+            <path d="M126 78 L127.6 178" stroke="#7a5d3d" stroke-width="1.2" opacity=".45"/>
+            <g stroke="#5b442c" stroke-width="2" stroke-linecap="round" opacity=".9" fill="none">
+              <line x1="14" y1="104" x2="19" y2="112"/><line x1="30" y1="104" x2="35" y2="112"/>
+              <line x1="46" y1="104" x2="51" y2="112"/><line x1="62" y1="104" x2="67" y2="112"/>
+              <line x1="78" y1="104" x2="83" y2="112"/><line x1="94" y1="104" x2="99" y2="112"/>
+              <line x1="110" y1="104" x2="115" y2="112"/>
+            </g>
+            <rect x="60" y="73" width="20" height="17" fill="#4a3722"/>
+            <rect x="64" y="78" width="12" height="3" fill="#e0cdae" opacity=".75"/>
+            <path d="M10 177 L130 177" stroke="#5b442c" stroke-width="2" opacity=".5"/>
+            <path d="M2 81 L2 176" stroke="#f0e2c9" stroke-width="1.4" opacity=".35"/>
+          </g>
+
+          <!-- 36 cm · 180 × 122 at 1:2 -->
+          <g>
+            <ellipse cx="248" cy="181" rx="92" ry="8" fill="#30271d" opacity=".09"/>
+            <path d="M204 56 C204 30 242 30 242 56" fill="none" stroke="#7a5d3d" stroke-width="7"/>
+            <path d="M254 56 C254 30 292 30 292 56" fill="none" stroke="#7a5d3d" stroke-width="7"/>
+            <path d="M158 56 L338 56 L325 178 L171 178 Z" fill="url(#calf)" stroke="#7a5d3d" stroke-width="1" stroke-opacity=".45"/>
+            <path d="M158 56 L338 56 L336 79 L160 79 Z" fill="url(#calfTop)"/>
+            <path d="M158 56 L338 56 L338 59.5 L158 59.5 Z" fill="#7a5d3d" opacity=".55"/>
+            <path d="M174 56 L172 178" stroke="#7a5d3d" stroke-width="1.4" opacity=".45"/>
+            <path d="M322 56 L324 178" stroke="#7a5d3d" stroke-width="1.4" opacity=".45"/>
+            <g stroke="#5b442c" stroke-width="2.4" stroke-linecap="round" opacity=".9" fill="none">
+              <line x1="174" y1="87" x2="180" y2="97"/><line x1="194" y1="87" x2="200" y2="97"/>
+              <line x1="214" y1="87" x2="220" y2="97"/><line x1="234" y1="87" x2="240" y2="97"/>
+              <line x1="254" y1="87" x2="260" y2="97"/><line x1="274" y1="87" x2="280" y2="97"/>
+              <line x1="294" y1="87" x2="300" y2="97"/><line x1="314" y1="87" x2="320" y2="97"/>
+            </g>
+            <rect x="237" y="50" width="22" height="19" fill="#4a3722"/>
+            <rect x="241" y="55" width="14" height="3" fill="#e0cdae" opacity=".75"/>
+            <path d="M173 177 L323 177" stroke="#5b442c" stroke-width="2" opacity=".5"/>
+            <path d="M160.5 60 L160.5 176" stroke="#f0e2c9" stroke-width="1.6" opacity=".35"/>
+          </g>
+
+          <!-- 44 cm · 220 × 145 at 1:2 -->
+          <g>
+            <ellipse cx="466" cy="181" rx="112" ry="9" fill="#30271d" opacity=".09"/>
+            <path d="M414 33 C414 2 466 2 466 33" fill="none" stroke="#7a5d3d" stroke-width="8"/>
+            <path d="M470 33 C470 2 522 2 522 33" fill="none" stroke="#7a5d3d" stroke-width="8"/>
+            <path d="M356 33 L576 33 L560 178 L372 178 Z" fill="url(#calf)" stroke="#7a5d3d" stroke-width="1" stroke-opacity=".45"/>
+            <path d="M356 33 L576 33 L573 60 L359 60 Z" fill="url(#calfTop)"/>
+            <path d="M356 33 L576 33 L576 37 L356 37 Z" fill="#7a5d3d" opacity=".55"/>
+            <path d="M376 33 L374 178" stroke="#7a5d3d" stroke-width="1.6" opacity=".45"/>
+            <path d="M556 33 L558 178" stroke="#7a5d3d" stroke-width="1.6" opacity=".45"/>
+            <g stroke="#5b442c" stroke-width="3" stroke-linecap="round" opacity=".9" fill="none">
+              <line x1="375" y1="70" x2="382" y2="82"/><line x1="400" y1="70" x2="407" y2="82"/>
+              <line x1="425" y1="70" x2="432" y2="82"/><line x1="450" y1="70" x2="457" y2="82"/>
+              <line x1="475" y1="70" x2="482" y2="82"/><line x1="500" y1="70" x2="507" y2="82"/>
+              <line x1="525" y1="70" x2="532" y2="82"/><line x1="550" y1="70" x2="557" y2="82"/>
+            </g>
+            <rect x="454" y="26" width="24" height="21" fill="#4a3722"/>
+            <rect x="459" y="32" width="14" height="3" fill="#e0cdae" opacity=".75"/>
+            <path d="M374 177 L558 177" stroke="#5b442c" stroke-width="2" opacity=".5"/>
+            <path d="M359 38 L359 176" stroke="#f0e2c9" stroke-width="1.8" opacity=".35"/>
+          </g>
+
+          <!-- one scale for all three -->
+          <g stroke="#8b8378" stroke-width="1" opacity=".8" fill="none">
+            <path d="M0 196 H140"/><path d="M0 191 V201"/><path d="M140 191 V201"/>
+            <path d="M158 196 H338"/><path d="M158 191 V201"/><path d="M338 191 V201"/>
+            <path d="M356 196 H576"/><path d="M356 191 V201"/><path d="M576 191 V201"/>
+          </g>
+          <g font-family="Inter, 'Noto Sans SC', sans-serif" font-size="13" fill="#686056" text-anchor="middle">
+            <text x="70" y="218">28 cm</text>
+            <text x="248" y="218">36 cm</text>
+            <text x="466" y="218">44 cm</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="num" data-cc="18" data-cc-fill="#30271d">
+      <div class="big serif">9</div>
+      <div class="lab">hours of hand work</div>
+      <div class="ctx">The same in all three sizes.</div>
+    </div>
+
+    <div class="mat" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
+      <div class="sw">
+        <svg width="112" height="112" viewBox="0 0 112 112" aria-hidden="true">
+          <rect width="112" height="112" fill="#c0a67f"/>
+
+          <g fill="#94764f" opacity=".35">
+            <ellipse cx="22" cy="30" rx="3" ry="2"/><ellipse cx="60" cy="18" rx="2.6" ry="1.8"/>
+            <ellipse cx="86" cy="52" rx="3" ry="2"/><ellipse cx="38" cy="78" rx="2.4" ry="1.6"/>
+            <ellipse cx="72" cy="88" rx="3.2" ry="2"/>
+          </g>
+          <g stroke="#5b442c" stroke-width="3" stroke-linecap="round" fill="none">
+            <line x1="20" y1="84" x2="26" y2="92"/><line x1="40" y1="84" x2="46" y2="92"/>
+            <line x1="60" y1="84" x2="66" y2="92"/><line x1="80" y1="84" x2="86" y2="92"/>
+          </g>
+          <rect y="96" width="112" height="16" fill="#8a6d49"/>
+          <rect y="96" width="112" height="2" fill="#e0cdae" opacity=".5"/>
+        </svg>
+      </div>
+      <div class="nm serif">Calf, 3.2 mm</div>
+      <div class="ln">One hide per bag, cut by one maker.</div>
+      <div class="ln">The edge is painted, never folded.</div>
+    </div>
+
+    <div class="item" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
+      <div class="art">
+        <svg width="368" height="140" viewBox="0 0 368 140" aria-hidden="true">
+          <g transform="translate(133.5 3.8) scale(.72)">
+            <ellipse cx="70" cy="181" rx="72" ry="7" fill="#30271d" opacity=".1"/>
+            <path d="M36 78 C36 55 64 55 64 78" fill="none" stroke="#7a5d3d" stroke-width="6"/>
+            <path d="M76 78 C76 55 104 55 104 78" fill="none" stroke="#7a5d3d" stroke-width="6"/>
+            <path d="M0 78 L140 78 L130 178 L10 178 Z" fill="#c0a67f"/>
+            <path d="M0 78 L140 78 L138 97 L2 97 Z" fill="#d6c1a0"/>
+            <g stroke="#5b442c" stroke-width="2" stroke-linecap="round" opacity=".9" fill="none">
+              <line x1="14" y1="104" x2="19" y2="112"/><line x1="30" y1="104" x2="35" y2="112"/>
+              <line x1="46" y1="104" x2="51" y2="112"/><line x1="62" y1="104" x2="67" y2="112"/>
+              <line x1="78" y1="104" x2="83" y2="112"/><line x1="94" y1="104" x2="99" y2="112"/>
+              <line x1="110" y1="104" x2="115" y2="112"/>
+            </g>
+            <rect x="60" y="73" width="20" height="17" fill="#4a3722"/>
+          </g>
+        </svg>
+      </div>
+      <div class="nm">Voyage 28</div>
+      <p class="sp">28 × 20 × 12 cm<br>6.7 L · 520 g</p>
+      <div class="row"><span class="pr">¥14,800</span><a class="by" href="#">Add to bag</a></div>
+    </div>
+
+    <div class="item" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
+      <div class="art">
+        <svg width="368" height="140" viewBox="0 0 368 140" aria-hidden="true">
+          <g transform="translate(5.4 3.8) scale(.72)">
+            <ellipse cx="248" cy="181" rx="92" ry="8" fill="#30271d" opacity=".1"/>
+            <path d="M204 56 C204 30 242 30 242 56" fill="none" stroke="#7a5d3d" stroke-width="7"/>
+            <path d="M254 56 C254 30 292 30 292 56" fill="none" stroke="#7a5d3d" stroke-width="7"/>
+            <path d="M158 56 L338 56 L325 178 L171 178 Z" fill="#c0a67f"/>
+            <path d="M158 56 L338 56 L336 79 L160 79 Z" fill="#d6c1a0"/>
+            <g stroke="#5b442c" stroke-width="2.4" stroke-linecap="round" opacity=".9" fill="none">
+              <line x1="174" y1="87" x2="180" y2="97"/><line x1="194" y1="87" x2="200" y2="97"/>
+              <line x1="214" y1="87" x2="220" y2="97"/><line x1="234" y1="87" x2="240" y2="97"/>
+              <line x1="254" y1="87" x2="260" y2="97"/><line x1="274" y1="87" x2="280" y2="97"/>
+              <line x1="294" y1="87" x2="300" y2="97"/><line x1="314" y1="87" x2="320" y2="97"/>
+            </g>
+            <rect x="237" y="50" width="22" height="19" fill="#4a3722"/>
+          </g>
+        </svg>
+      </div>
+      <div class="nm">Voyage 36</div>
+      <p class="sp">36 × 26 × 15 cm<br>14.0 L · 690 g</p>
+      <div class="row"><span class="pr">¥17,600</span><a class="by" href="#">Add to bag</a></div>
+    </div>
+
+    <div class="item" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
+      <div class="art">
+        <svg width="368" height="140" viewBox="0 0 368 140" aria-hidden="true">
+          <g transform="translate(-151.5 5) scale(.72)">
+            <ellipse cx="466" cy="181" rx="112" ry="9" fill="#30271d" opacity=".1"/>
+            <path d="M414 33 C414 2 466 2 466 33" fill="none" stroke="#7a5d3d" stroke-width="8"/>
+            <path d="M470 33 C470 2 522 2 522 33" fill="none" stroke="#7a5d3d" stroke-width="8"/>
+            <path d="M356 33 L576 33 L560 178 L372 178 Z" fill="#c0a67f"/>
+            <path d="M356 33 L576 33 L573 60 L359 60 Z" fill="#d6c1a0"/>
+            <g stroke="#5b442c" stroke-width="3" stroke-linecap="round" opacity=".9" fill="none">
+              <line x1="375" y1="70" x2="382" y2="82"/><line x1="400" y1="70" x2="407" y2="82"/>
+              <line x1="425" y1="70" x2="432" y2="82"/><line x1="450" y1="70" x2="457" y2="82"/>
+              <line x1="475" y1="70" x2="482" y2="82"/><line x1="500" y1="70" x2="507" y2="82"/>
+              <line x1="525" y1="70" x2="532" y2="82"/><line x1="550" y1="70" x2="557" y2="82"/>
+            </g>
+            <rect x="454" y="26" width="24" height="21" fill="#4a3722"/>
+          </g>
+        </svg>
+      </div>
+      <div class="nm">Voyage 44</div>
+      <p class="sp">44 × 31 × 18 cm<br>24.6 L · 880 g</p>
+      <div class="row"><span class="pr">¥21,400</span><a class="by" href="#">Add to bag</a></div>
+    </div>
+
+  </div>
+
+  <div class="t foot">
+    <span>Illustrative example</span>
+    <span class="r"><span>Prices include tax</span><span>Illustrative render, not a photograph</span></span>
+  </div>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

@@ -29,12 +29,14 @@ def main(argv):
         print(__doc__)
         return 2
     out, rest = Path(argv[0]), argv[1:]
-    height, rows, cur = 420, [], None
+    height, rows, cur, cols = 420, [], None, 0
     i = 0
     while i < len(rest):
         a = rest[i]
         if a == "--height":
             height = int(rest[i + 1]); i += 2; continue
+        if a == "--cols":
+            cols = int(rest[i + 1]); i += 2; continue
         if a == "--row":
             cur = (rest[i + 1], []); rows.append(cur); i += 2; continue
         if cur is None:
@@ -50,7 +52,11 @@ def main(argv):
             im = Image.open(p).convert("RGB")
             w = round(im.width * height / im.height)
             thumbs.append((label, im.resize((w, height), Image.LANCZOS)))
-        laid.append((title, thumbs))
+        if cols > 0 and len(thumbs) > cols:
+            for k in range(0, len(thumbs), cols):
+                laid.append((title if k == 0 else "", thumbs[k:k + cols]))
+        else:
+            laid.append((title, thumbs))
     width = max(PAD + sum(t.width + PAD for _, t in th) for _, th in laid)
     row_h = height + LABEL + PAD
     title_h = 36

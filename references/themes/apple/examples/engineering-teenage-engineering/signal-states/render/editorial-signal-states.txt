@@ -1,0 +1,43 @@
+Kit
+Kit One · panel states
+One colour carries four states.
+Nothing else on the panel is coloured.
+
+一种颜色承担四种状态，面板上别的地方不上色
+
+States
+
+Live
+
+sounding now
+
+Armed
+
+queued for the next bar
+
+Waiting
+
+in the pattern, not reached
+
+Off
+
+not in the pattern
+
+No state is carried by colour alone.
+
+The panel at one moment. 12 keys, 4 knobs, four states, one colour. Drawn at 3×. Illustrative render, not a photograph.
+
+The panel spends its one colour on state, and on nothing else.
+
+Four states, one hue, and the difference is drawn. The colour sits in the same place on every key — a light at the top-left corner — and the state is how that light is filled.
+
+Filled is live: the key is sounding now. An outline is armed: the key is queued for the next bar. A dashed outline is waiting: it is in the pattern, but the pattern has not reached it. A hairline is off: the key is not in the pattern at all.
+
+Four keys, one grey ink. The states still separate, because they were never separated by colour.
+
+With the colour removed, the four states still read.
+
+The colour marks four states. Everything else on the panel is an edge.
+
+Illustrative example
+Illustrative render, not a photograph

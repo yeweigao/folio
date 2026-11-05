@@ -1,0 +1,50 @@
+Shelf
+Disassembly
+The whole bay comes apart
+into five parts.
+
+整个单元拆开，只有五种零件
+
+assembled
+one module, 45 mm
+drawn at 1:4
+Upright ×2
+1,800 mm, 40 × 45
+Shelf ×3
+900 × 270 mm, 20 × 6
+Bracket ×6
+135 mm, 3 × 45
+Cross-tie ×1
+450 mm, 10 × 45
+Foot ×2
+90 mm, 2 × 45
+
+Illustrative render, not a photograph
+
+A bay is not assembled. It is stacked.
+
+一套搁架不是装起来的，是叠起来的
+
+Five parts leave the factory. Two uprights carry the load, shelves hang on brackets, one cross-tie holds the pair, and two feet take the floor. No part is left- or right-handed, and no part is cut for one wall.
+
+The brackets hook into slots at 45 mm intervals, so a shelf's height is a decision rather than a dimension. Move it two slots and it is still the same bracket, in the same hole, at the same price.
+
+The parts on this sheet are the whole system. A longer wall is not a longer part; it is one more bay of the same five, and the ruler under them is why.
+
+That is the only claim the system makes: the parts are few enough to count, and a count is the only thing a longer wall changes.
+
+Illustrative example
+Shelf parts note, 2026
+assembled
+one module, 45 mm
+drawn at 1:4
+Upright ×2
+1,800 mm, 40 × 45
+Shelf ×3
+900 × 270 mm, 20 × 6
+Bracket ×6
+135 mm, 3 × 45
+Cross-tie ×1
+450 mm, 10 × 45
+Foot ×2
+90 mm, 2 × 45

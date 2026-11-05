@@ -16,18 +16,18 @@ For editing the skill, not for making a deliverable. The agent never reads this 
 
 ## Contracts
 
-- **Dialect** (`references/themes/<theme>/dialects/<name>.md`): invocation; four lines correcting the mother tongue, stating only what the school changes (the Philosophy and the theme are never restated); three or four hands, each as process, tools and material, with what it suits and one ban; what Swiss keeps; test; caricature. Proven by a skeleton in `examples/` and a second piece made from it alone.
+- **Dialect** (`references/themes/<theme>/dialects/<name>.md`): invocation; four lines correcting the mother tongue, stating only what the school changes (the Philosophy and the theme are never restated); three or four hands, each as process, tools and material, with what it suits and one ban; what the selected theme keeps; test; caricature. A theme may route distinct industry, surface and method choices and must specify their precedence. Proven by a skeleton in `references/themes/<theme>/examples/` and a second piece made from it alone.
 - **Hand:** work and date, first move, tools and materials, what it suits, one ban.
 - **Signature card:** construction, parameters, test, caricature; proven by a build from the card alone.
 - **Grid system:** construction, material, discipline; proven by a build where it visibly governs.
 - **Client-language row:** the phrase, the dials, the translation as parameters, Folio's keeping.
 - **Surface:** reader conditions, size floors, starting values, "Done means".
-- **Theme:** a folder under `references/themes/`; `theme.md` opening with a Use table (each choice, where it is made, where it lands in the skeleton), then its dialect table, hands, grammar, grid roster, methods, variations, anti-patterns and test. One line in SKILL.md's Themes index.
+- **Theme:** a folder under `references/themes/`; `theme.md` opening with a Use table (each choice, where it is made, where it lands in the skeleton), then its choice tables, hands, grammar, grid roster, methods, variations, anti-patterns and test. One line in SKILL.md's Themes index.
 - **Fonts:** only faces whose license travels (OFL and the like) are named; lineages are named by class (grotesque, neo-grotesque, Didone), never by a commercial face.
 - **Gate:** added to `folio-check.py` when a floor breaks in a test; deterministic, stdlib only.
 
 ## Releases
 
 - The version lives in SKILL.md's frontmatter; README mirrors it.
-- `python3 scripts/release-check.py` passes: versions agree, every file under `references/` and `scripts/` is reached from a SKILL.md step, every example skeleton passes folio-check, every example piece passes factcheck.
+- `python3 scripts/release-check.py` passes: versions agree, every file under `references/` and `scripts/` is reached from a SKILL.md step, every example skeleton, including theme-local examples, passes folio-check, every example piece passes factcheck.
 - A change to SKILL.md, the theme or a dialect ships with a test against the previous version and no skill; the CHANGELOG states the result and what remains unproven.

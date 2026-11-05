@@ -1,0 +1,38 @@
+Mono
+Mono 2 · inside
+Nine parts. One control.
+
+九个零件，一个旋钮
+
+Cabinet 2 mm aluminium
+
+Antenna 1 m rod
+
+Speaker 76 mm
+
+Board one band
+
+Pointer rides the cord
+
+Knob Ø 60 mm
+
+Pulley one ratio
+
+Dial cord 0.8 mm
+
+Socket 6 V
+
+Back removed. The knob is dashed because it sits on the front face. Illustrative render, not a photograph.
+
+The tuning is a length of cord, and a cord needs no second control.
+
+Nine parts, and one of them is a control. The tuning is not a second circuit: a cord leaves the knob, turns a pulley, and clamps a pointer to a scale on the front.
+
+That is why there is nothing else to set. A radio with a motorised tuner needs a memory, a display and a way to set them; a radio tuned by a cord needs a knob, and the hand supplies the memory.
+
+What remains is what a function needs: a cabinet, a driver, a rod, a board, a pulley, a cord, a pointer, a knob and a socket. Nothing is in the case to fill an interval.
+
+Take the cord away and the radio needs a display. Keep it, and the interface stops at one control.
+
+Illustrative example
+Illustrative render, not a photograph

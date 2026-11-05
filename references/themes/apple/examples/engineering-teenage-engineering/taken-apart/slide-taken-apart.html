@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1600">
+<title>Kit One — taken apart</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#f4f4ef; --panel:#ffffff; --dark:#272823;
+    --ink:#272823; --muted:#62635c; --action:#9a4100;
+    --onAction:#ffffff; --onDark:#ffffff; --hairline:#d2d2d7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#e4e4e0}
+  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
+  .unit{position:relative;width:1600px;height:900px;overflow:hidden;background:var(--canvas)}
+  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
+  [data-cc]{position:relative;isolation:isolate}
+  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+  .t{position:absolute}
+  svg{display:block}
+
+  .brand{left:80px;top:46px;display:flex;align-items:baseline;gap:16px}
+  .brand .nm{font-size:17px;font-weight:600;letter-spacing:-.2px}
+  .brand .k{font-size:14px;font-weight:400;color:var(--muted)}
+
+  .claim{left:80px;top:92px;width:880px;font-size:56px;font-weight:600;line-height:1.08;letter-spacing:-1.8px}
+  .zhline{left:80px;top:228px;width:860px;font-size:22px;font-weight:400;line-height:1.5;color:var(--muted)}
+
+  .note{right:80px;top:96px;width:430px;text-align:left}
+  .note .h{font-size:17px;font-weight:600;line-height:1.4;letter-spacing:-.2px}
+  .note .l{margin-top:6px;font-size:14px;font-weight:400;line-height:1.5;color:var(--muted)}
+  .note .dim{margin-top:14px;font-size:14px;font-weight:400;line-height:1.5;color:var(--muted)}
+
+  .part{position:absolute;width:190px}
+  .part .nm{font-size:14px;font-weight:600;line-height:1.35;letter-spacing:-.1px}
+  .part .ct{margin-top:3px;font-size:12px;font-weight:400;line-height:1.4;color:var(--muted)}
+  .part .ct .sig{color:var(--action)}
+
+  .foot{left:80px;top:812px;width:1440px;display:flex;justify-content:space-between;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="unit" id="slide">
+
+  <div class="t brand"><span class="nm">Kit</span><span class="k">Kit One · exploded</span></div>
+
+  <h1 class="t claim">Sixteen pieces.<br>One path carries the sound.</h1>
+  <p class="t zhline zh">十六个零件，只有一条路把声音送出去</p>
+
+  <div class="t note">
+    <p class="h">Eight part numbers.</p>
+    <p class="l">Every part is numbered on its own face.</p>
+    <p class="dim">240 × 150 × 32 mm · 620 g</p>
+  </div>
+
+  <svg width="1600" height="900" viewBox="0 0 1600 900" aria-hidden="true" style="position:absolute;left:0;top:0">
+    <g stroke="#272823" fill="none" stroke-linecap="square" stroke-linejoin="miter">
+
+      <!-- tier 1 · faceplate -->
+      <g stroke-width="1.5">
+        <rect x="120" y="310" width="260" height="180" fill="#272823" fill-opacity=".06"/>
+        <circle cx="150" cy="342" r="11" fill="#f4f4ef"/><circle cx="196" cy="342" r="11" fill="#f4f4ef"/>
+        <circle cx="242" cy="342" r="11" fill="#f4f4ef"/><circle cx="288" cy="342" r="11" fill="#f4f4ef"/>
+        <rect x="132" y="372" width="196" height="64"/>
+        <path d="M 148.3 372 V 436 M 164.6 372 V 436 M 180.9 372 V 436 M 197.2 372 V 436 M 213.5 372 V 436 M 229.8 372 V 436 M 246.1 372 V 436 M 262.4 372 V 436 M 278.7 372 V 436 M 295 372 V 436 M 311.3 372 V 436"/>
+        <rect x="336" y="372" width="32" height="64"/>
+        <path d="M 342 380 H 362 M 342 388 H 362 M 342 396 H 362 M 342 404 H 362 M 342 412 H 362 M 342 420 H 362 M 342 428 H 362"/>
+        <circle cx="130" cy="320" r="3.4"/><circle cx="370" cy="320" r="3.4"/>
+        <circle cx="130" cy="480" r="3.4"/><circle cx="370" cy="480" r="3.4"/>
+      </g>
+
+      <!-- tier 1 · key bed -->
+      <g stroke-width="1.5">
+        <rect x="495" y="356" width="250" height="88" fill="#272823" fill-opacity=".06"/>
+        <rect x="505" y="366" width="230" height="68" fill="#f4f4ef"/>
+        <path d="M 524.2 366 V 434 M 543.4 366 V 434 M 562.6 366 V 434 M 581.8 366 V 434 M 601 366 V 434 M 620.2 366 V 434 M 639.4 366 V 434 M 658.6 366 V 434 M 677.8 366 V 434 M 697 366 V 434 M 716.2 366 V 434"/>
+      </g>
+
+      <!-- tier 1 · main board -->
+      <g stroke-width="1.5">
+        <rect x="860" y="320" width="260" height="160" fill="#272823" fill-opacity=".05"/>
+        <rect x="892" y="352" width="72" height="52"/>
+        <path d="M 892 360 H 882 M 892 372 H 882 M 892 384 H 882 M 892 396 H 882 M 964 360 H 974 M 964 372 H 974 M 964 384 H 974 M 964 396 H 974"/>
+        <circle cx="900" cy="432" r="9"/><circle cx="928" cy="432" r="9"/><circle cx="956" cy="432" r="9"/>
+        <rect x="1046" y="340" width="30" height="52"/>
+        <path d="M 1052 348 H 1070 M 1052 360 H 1070 M 1052 372 H 1070 M 1052 384 H 1070"/>
+        <path d="M 870 452 H 1110 M 878 458 V 452 M 894 458 V 452 M 910 458 V 452 M 926 458 V 452 M 942 458 V 452 M 958 458 V 452 M 974 458 V 452 M 990 458 V 452 M 1006 458 V 452 M 1022 458 V 452 M 1038 458 V 452 M 1054 458 V 452 M 1070 458 V 452 M 1086 458 V 452 M 1102 458 V 452"/>
+        <path d="M 1010 352 H 1036 V 400 H 1046"/>
+      </g>
+
+      <!-- tier 1 · speaker -->
+      <g stroke-width="1.5">
+        <circle cx="1360" cy="400" r="90" fill="#272823" fill-opacity=".05"/>
+        <circle cx="1360" cy="400" r="80"/>
+        <circle cx="1360" cy="400" r="56"/>
+        <circle cx="1360" cy="400" r="34" fill="#272823" fill-opacity=".1"/>
+        <circle cx="1360" cy="400" r="14"/>
+        <circle cx="1360" cy="337" r="3.6"/><circle cx="1360" cy="463" r="3.6"/>
+        <circle cx="1297" cy="400" r="3.6"/><circle cx="1423" cy="400" r="3.6"/>
+        <path d="M 1306 337 L 1312 343 M 1408 337 L 1402 343 M 1306 463 L 1312 457 M 1408 463 L 1402 457"/>
+        <rect x="1319" y="474" width="16" height="9" fill="#f4f4ef"/>
+        <rect x="1385" y="474" width="16" height="9" fill="#f4f4ef"/>
+      </g>
+
+      <!-- tier 2 · four knobs -->
+      <g stroke-width="1.5">
+        <circle cx="145" cy="632" r="28" fill="#272823" fill-opacity=".08"/>
+        <circle cx="215" cy="632" r="28" fill="#272823" fill-opacity=".08"/>
+        <circle cx="285" cy="632" r="28" fill="#272823" fill-opacity=".08"/>
+        <circle cx="355" cy="632" r="28" fill="#272823" fill-opacity=".08"/>
+        <circle cx="145" cy="632" r="18"/><circle cx="215" cy="632" r="18"/>
+        <circle cx="285" cy="632" r="18"/><circle cx="355" cy="632" r="18"/>
+        <path d="M 145 614 V 628 M 215 614 V 628 M 285 614 V 628 M 355 614 V 628"/>
+        <g stroke-width="1">
+          <path d="M 145 604 V 608 M 215 604 V 608 M 285 604 V 608 M 355 604 V 608"/>
+          <path d="M 145 660 V 656 M 215 660 V 656 M 285 660 V 656 M 355 660 V 656"/>
+        </g>
+      </g>
+
+      <!-- tier 2 · six screws -->
+      <g stroke-width="1.5">
+        <circle cx="580" cy="606" r="13" fill="#272823" fill-opacity=".1"/>
+        <circle cx="620" cy="606" r="13" fill="#272823" fill-opacity=".1"/>
+        <circle cx="660" cy="606" r="13" fill="#272823" fill-opacity=".1"/>
+        <circle cx="580" cy="648" r="13" fill="#272823" fill-opacity=".1"/>
+        <circle cx="620" cy="648" r="13" fill="#272823" fill-opacity=".1"/>
+        <circle cx="660" cy="648" r="13" fill="#272823" fill-opacity=".1"/>
+        <path d="M 571 606 H 589 M 611 606 H 629 M 651 606 H 669 M 571 648 H 589 M 611 648 H 629 M 651 648 H 669"/>
+      </g>
+
+      <!-- tier 2 · battery door -->
+      <g stroke-width="1.5">
+        <rect x="905" y="587" width="170" height="90" fill="#272823" fill-opacity=".06"/>
+        <rect x="917" y="599" width="146" height="66"/>
+        <path d="M 968 677 A 22 12 0 0 0 1012 677"/>
+        <path d="M 940 587 V 578 M 1040 587 V 578"/>
+      </g>
+
+      <!-- tier 2 · output jack, the one part the signal leaves by -->
+      <g stroke-width="1.5">
+        <rect x="1321" y="606" width="78" height="50" fill="#272823" fill-opacity=".06"/>
+        <circle cx="1356" cy="631" r="13" stroke="#9a4100" stroke-width="2.6"/>
+        <path d="M 1310 618 H 1321 M 1310 644 H 1321"/>
+      </g>
+    </g>
+
+    <!-- signal leaving, the only accent on the slide -->
+    <g stroke="#9a4100" stroke-width="1.8" fill="none">
+      <path d="M 1408 631 H 1462"/>
+      <path d="M 1452 624 L 1464 631 L 1452 638"/>
+    </g>
+  </svg>
+
+  <div class="t part" style="left:155px;top:512px">
+    <p class="nm">Faceplate</p><p class="ct">×1</p>
+  </div>
+  <div class="t part" style="left:525px;top:512px">
+    <p class="nm">Key bed</p><p class="ct">×1 · 12 keys</p>
+  </div>
+  <div class="t part" style="left:895px;top:512px">
+    <p class="nm">Main board</p><p class="ct">×1</p>
+  </div>
+  <div class="t part" style="left:1265px;top:512px">
+    <p class="nm">Speaker</p><p class="ct">×1</p>
+  </div>
+
+  <div class="t part" style="left:155px;top:692px">
+    <p class="nm">Knob</p><p class="ct">×4</p>
+  </div>
+  <div class="t part" style="left:525px;top:692px">
+    <p class="nm">Screw</p><p class="ct">×6</p>
+  </div>
+  <div class="t part" style="left:895px;top:692px">
+    <p class="nm">Battery door</p><p class="ct">×1</p>
+  </div>
+  <div class="t part" style="left:1265px;top:692px">
+    <p class="nm">Output jack</p><p class="ct">×1 · <span class="sig">signal out</span></p>
+  </div>
+
+  <div class="t foot"><span>Illustrative example</span><span>Illustrative render, not a photograph</span></div>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

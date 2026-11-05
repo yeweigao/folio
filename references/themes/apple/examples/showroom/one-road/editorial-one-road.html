@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200">
+<title>Volt — One road</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#171a20; --panel:#30343b; --ink:#f5f5f7; --muted:#d2d4d8;
+    --action:#1559b7; --hairline:#d2d2d7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#0e1014}
+  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
+  .unit{position:relative;width:1200px;height:1600px;overflow:hidden;background:var(--canvas)}
+  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
+  .zhserif{font-family:"Noto Serif SC","Noto Sans SC",serif}
+  .pad{padding:12px}
+  .t{position:absolute}
+  [data-cc]{position:relative;isolation:isolate}
+  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+  svg{display:block}
+  a{text-decoration:none}
+
+  .vista{left:0;top:0;width:1200px;height:700px;overflow:hidden}
+  .vhead{left:100px;top:152px;width:1000px;text-align:center}
+  .vhead h1{font-size:52px;font-weight:600;line-height:1.1;letter-spacing:normal}
+  .vhead .zhline{margin-top:20px;font-size:26px;font-weight:400;line-height:1.5;color:var(--muted)}
+  .vista .cap{left:100px;top:656px;width:1000px;font-size:14px;font-weight:400;color:var(--muted);letter-spacing:normal}
+
+  .column{left:110px;top:700px;width:980px;padding:64px 12px 0 12px}
+  .lead{font-size:28px;font-weight:400;line-height:1.5;letter-spacing:normal}
+  .leadzh{margin-top:14px;font-size:28px;font-weight:400;line-height:1.6;color:var(--muted)}
+  .body{margin-top:40px;font-size:17px;font-weight:400;line-height:1.6;width:720px;letter-spacing:normal}
+  .body + .body{margin-top:20px}
+
+  .figure{margin-top:40px}
+  .figure .big{font-size:56px;font-weight:600;line-height:1.07;letter-spacing:normal}
+  .figure .lbl{margin-top:12px;font-size:14px;font-weight:400;color:var(--muted);letter-spacing:normal}
+  .figure svg{margin-top:20px}
+  .waypoints{margin-top:8px;display:flex;justify-content:space-between;font-size:14px;color:var(--muted);letter-spacing:normal}
+  .figure .src{margin-top:18px;font-size:14px;font-weight:400;color:var(--muted);line-height:1.6;letter-spacing:normal}
+
+  .link{margin-top:28px;display:inline-block;font-size:21px;font-weight:400;color:var(--action);letter-spacing:normal}
+  .link .arw{margin-left:8px}
+  .price{margin-top:16px;font-size:14px;font-weight:400;color:var(--muted);letter-spacing:normal}
+
+  .foot{left:110px;top:1528px;width:980px;display:flex;justify-content:space-between;font-size:12px;color:var(--muted);letter-spacing:normal}
+</style>
+</head>
+<body>
+<div class="unit" id="page">
+
+  <div class="t vista">
+    <svg width="1200" height="700" viewBox="0 0 1200 700" aria-hidden="true">
+      <rect y="0" width="1200" height="280" fill="#20242b"/>
+      <rect y="280" width="1200" height="80" fill="#262b33"/>
+      <rect y="360" width="1200" height="30" fill="#3a3f47"/>
+      <path d="M0 390 L0 352 L150 342 L300 360 L450 338 L600 356 L750 334 L900 358 L1050 340 L1200 354 L1200 390 Z" fill="#30343b"/>
+      <rect y="390" width="1200" height="310" fill="#171a20"/>
+      <path d="M0 390 L0 700 L340 700 Z" fill="#1c2027"/>
+      <path d="M1200 390 L1200 700 L860 700 Z" fill="#1c2027"/>
+      <g stroke="#262b33" stroke-width="1.5" opacity=".8">
+        <line x1="0" y1="520" x2="564" y2="390"/>
+        <line x1="0" y1="610" x2="564" y2="390"/>
+        <line x1="1200" y1="520" x2="636" y2="390"/>
+        <line x1="1200" y1="610" x2="636" y2="390"/>
+      </g>
+      <path d="M120 700 L1080 700 L636 390 L564 390 Z" fill="#4a505a"/>
+      <path d="M120 700 L564 390" stroke="#8a9099" stroke-width="3" opacity=".45" fill="none"/>
+      <path d="M1080 700 L636 390" stroke="#8a9099" stroke-width="3" opacity=".45" fill="none"/>
+      <g stroke="#d2d4d8" stroke-width="5" opacity=".5">
+        <line x1="600" y1="694" x2="600" y2="656"/>
+        <line x1="600" y1="626" x2="600" y2="596"/>
+        <line x1="600" y1="566" x2="600" y2="542"/>
+        <line x1="600" y1="516" x2="600" y2="496"/>
+        <line x1="600" y1="474" x2="600" y2="457"/>
+        <line x1="600" y1="440" x2="600" y2="425"/>
+      </g>
+      <g transform="translate(567 444)">
+        <path d="M0 18 C-2 18 -3 15 -3 12 L-1 7 C1 4 5 3 9 3 L16 1 C19 0 23 0 27 0 L44 0 C48 0 51 2 54 5 L60 9 C64 10 66 12 66 15 L66 18 Z" fill="#171a20"/>
+        <circle cx="14" cy="18" r="5" fill="#0e1014"/>
+        <circle cx="50" cy="18" r="5" fill="#0e1014"/>
+        <rect x="62" y="11" width="4" height="3" fill="#d2d4d8"/>
+      </g>
+      <rect x="0" y="646" width="1200" height="54" fill="#171a20"/>
+    </svg>
+    <div class="t vhead pad">
+      <h1>The road a single charge can finish.</h1>
+      <p class="zhline zhserif">一次充电走得完的一段路</p>
+    </div>
+    <p class="t cap pad">Illustrative render, not a photograph</p>
+  </div>
+
+  <div class="t column">
+    <p class="lead">A figure says how far. A road says what far is.</p>
+    <p class="leadzh zhserif">数字说多远，路说远是什么</p>
+    <p class="body">The Coast Road runs from the harbour to the north cape with no town in between. It is the length we set the range against.</p>
+    <p class="body">There is no charger along it. One charge, read against a place a driver can picture, not a laboratory cycle.</p>
+
+    <div class="figure">
+      <div class="big">402 km</div>
+      <div class="lbl">one charge, measured along the Coast Road</div>
+      <svg width="980" height="120" viewBox="0 0 980 120" aria-hidden="true">
+        <line x1="0" y1="96" x2="980" y2="96" stroke="#5a6068" stroke-width="1"/>
+        <path d="M0 90 L120 80 L240 56 L360 34 L480 46 L600 74 L720 83 L840 77 L980 86 L980 96 L0 96 Z" fill="#30343b"/>
+        <path d="M0 90 L120 80 L240 56 L360 34 L480 46 L600 74 L720 83 L840 77 L980 86" fill="none" stroke="#f5f5f7" stroke-width="2"/>
+        <line x1="0" y1="91" x2="0" y2="101" stroke="#d2d4d8" stroke-width="1"/>
+        <line x1="360" y1="91" x2="360" y2="101" stroke="#d2d4d8" stroke-width="1"/>
+        <line x1="979" y1="91" x2="979" y2="101" stroke="#d2d4d8" stroke-width="1"/>
+      </svg>
+      <div class="waypoints"><span>Harbour 0 km</span><span>Ridgeway 148 km</span><span>North Cape 402 km</span></div>
+      <p class="src">Illustrative render, not a photograph<br>
+      Volt route study, 2026</p>
+    </div>
+
+    <a class="link" href="#">Read the route note <span class="arw">›</span></a>
+    <p class="price">Volt · from ¥80,400</p>
+  </div>
+
+  <div class="t foot pad"><span>Illustrative example</span><span>Volt route note · 2026</span></div>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

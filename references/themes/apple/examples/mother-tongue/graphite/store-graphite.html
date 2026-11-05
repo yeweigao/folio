@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Lumen Graphite — store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+  :root { --canvas:#ffffff; --panel:#f5f5f7; --ink:#1d1d1f; --muted:#6e6e73; --action:#0071e3; --link:#0066cc; --line:#e0e0e0; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html,body { background:#dedee2; }
+  body { font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif; color:var(--ink); }
+  .unit { position:relative; width:1440px; height:1000px; overflow:hidden; background:var(--panel); }
+  .zh { font-family:"Noto Sans SC","Inter",sans-serif; }
+  [data-cc] { position:relative; isolation:isolate; }
+  .cc-bg { position:absolute; left:0; top:0; z-index:-1; pointer-events:none; }
+  a { text-decoration:none; color:var(--link); }
+
+  .nav { position:absolute; left:0; top:0; width:1440px; height:44px; background:#161617; color:#d2d2d7; display:flex; align-items:center; justify-content:center; gap:44px; font-size:12px; }
+  .subnav { position:absolute; left:0; top:44px; width:1440px; height:52px; background:rgba(245,245,247,.82); backdrop-filter:blur(18px); border-bottom:1px solid #e3e3e6; display:flex; align-items:center; justify-content:space-between; padding:0 80px; font-size:14px; }
+  .subnav .right { display:flex; align-items:center; gap:28px; }
+  .pill { display:inline-flex; align-items:center; justify-content:center; height:36px; padding:0 22px; font-size:14px; font-weight:400; color:#ffffff; background:transparent; }
+  .pill-lg { height:44px; padding:0 26px; font-size:17px; }
+
+  .hero { position:absolute; left:80px; top:96px; width:1280px; height:480px; display:grid; grid-template-columns:600px 1fr; gap:40px; align-items:center; }
+  .hero .copy { padding:12px; }
+  .hero h1 { font-size:56px; font-weight:600; line-height:1.07; letter-spacing:-1.6px; }
+  .hero .tag { margin-top:20px; font-size:21px; font-weight:600; line-height:1.19; letter-spacing:-.3px; }
+  .hero .tagzh { margin-top:8px; font-size:17px; font-weight:400; line-height:1.47; color:var(--muted); }
+  .price-row { margin-top:44px; display:flex; align-items:baseline; justify-content:space-between; width:520px; font-size:17px; font-weight:400; border-top:1px solid var(--line); padding-top:16px; }
+  .price-row .name { font-weight:600; }
+  .hero .status { margin-top:14px; font-size:14px; color:var(--muted); display:flex; gap:24px; }
+  .hero .shot { width:560px; height:440px; }
+  .hero .shot svg { width:100%; height:100%; }
+
+  .choices { position:absolute; left:80px; top:588px; width:1280px; display:flex; align-items:center; gap:16px; }
+  .choices .label { font-size:14px; color:var(--muted); margin-right:8px; padding:12px; }
+  .chip { display:inline-flex; align-items:center; justify-content:center; height:44px; min-width:120px; padding:0 24px; font-size:17px; font-weight:400; }
+  .chip.on { font-weight:600; }
+
+  .cards { position:absolute; left:80px; top:660px; width:1280px; display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .card { height:220px; padding:24px; display:flex; flex-direction:column; justify-content:space-between; }
+  .card .thumb { height:96px; display:flex; align-items:center; }
+  .card .thumb svg { width:96px; height:96px; }
+  .card .line1 { display:flex; align-items:baseline; justify-content:space-between; font-size:17px; font-weight:400; }
+  .card .line1 .nm { font-weight:600; }
+  .card .buy { font-size:14px; align-self:flex-start; }
+
+  .foot { position:absolute; left:80px; top:912px; width:1280px; display:flex; justify-content:space-between; font-size:12px; color:var(--muted); padding:6px 12px; }
+  .bar { position:absolute; left:0; top:940px; width:1440px; height:60px; background:rgba(245,245,247,.86); backdrop-filter:blur(20px); border-top:1px solid #e3e3e6; display:flex; align-items:center; justify-content:space-between; padding:0 80px; font-size:17px; }
+  .bar .left { display:flex; gap:20px; align-items:baseline; }
+  .bar .left .nm { font-weight:600; }
+</style>
+</head>
+<body>
+<div class="unit" id="page">
+
+  <div class="nav"><span>Lumen</span><span>Graphite</span><span>Buy</span></div>
+  <div class="subnav"><span>Graphite</span><div class="right"><span>¥1,280</span><span class="pill" data-cc="18" data-cc-fill="#0071e3">Buy</span></div></div>
+
+  <div class="hero">
+    <div class="copy">
+      <h1>Graphite</h1>
+      <p class="tag">A finish that keeps the room quiet.</p>
+      <p class="tagzh zh">一种不打扰房间的表面</p>
+      <div class="price-row"><span class="name">Lumen</span><span>¥1,280</span></div>
+      <p class="status"><span>In stock</span><span>Free delivery</span></p>
+    </div>
+    <div class="shot">
+      <svg viewBox="0 0 560 440" aria-hidden="true">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#1c1c20"/><stop offset=".14" stop-color="#5b5b62"/>
+            <stop offset=".34" stop-color="#8e8e96"/><stop offset=".52" stop-color="#4a4a50"/>
+            <stop offset=".72" stop-color="#6f6f77"/><stop offset=".9" stop-color="#9b9ba2"/>
+            <stop offset="1" stop-color="#26262b"/>
+          </linearGradient>
+          <linearGradient id="gt" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#4a4a51"/><stop offset="1" stop-color="#151518"/>
+          </linearGradient>
+          <pattern id="m" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="1.1" fill="#0d0d10" opacity=".38"/></pattern>
+          <clipPath id="bc"><path d="M150 112 A130 36 0 0 0 410 112 L410 382 A130 36 0 0 1 150 382 Z"/></clipPath>
+          <clipPath id="tc"><ellipse cx="280" cy="112" rx="130" ry="36"/></clipPath>
+          <filter id="sh" x="-60%" y="-300%" width="220%" height="700%"><feGaussianBlur stdDeviation="14"/></filter>
+        </defs>
+        <ellipse cx="280" cy="396" rx="146" ry="15" fill="#000000" opacity=".22" filter="url(#sh)"/>
+        <path d="M150 112 A130 36 0 0 0 410 112 L410 382 A130 36 0 0 1 150 382 Z" fill="url(#g)"/>
+        <g clip-path="url(#bc)"><rect x="150" y="112" width="260" height="270" fill="url(#m)"/>
+          <rect x="150" y="112" width="16" height="270" fill="#ffffff" opacity=".06"/>
+          <rect x="394" y="112" width="16" height="270" fill="#000000" opacity=".16"/></g>
+        <ellipse cx="280" cy="112" rx="130" ry="36" fill="url(#gt)"/>
+        <g clip-path="url(#tc)"><rect x="150" y="76" width="260" height="72" fill="url(#m)" opacity=".55"/></g>
+        <ellipse cx="280" cy="112" rx="104" ry="28" fill="none" stroke="#b7b7be" stroke-width="1.2" opacity=".4"/>
+        <ellipse cx="280" cy="112" rx="40" ry="11" fill="none" stroke="#d9d9df" stroke-width="1.6" opacity=".45"/>
+        <ellipse cx="280" cy="112" rx="22" ry="6" fill="#0c0c0f" opacity=".85"/>
+        <ellipse cx="280" cy="110" rx="130" ry="36" fill="none" stroke="#e6e6ea" stroke-width="1.2" opacity=".3"/>
+        <path d="M150 382 A130 36 0 0 0 410 382" fill="none" stroke="#d8d8de" stroke-width="1.5" opacity=".25"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="choices">
+    <span class="label">Choose a finish</span>
+    <span class="chip" data-cc="22" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">Satin</span>
+    <span class="chip" data-cc="22" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">Chalk</span>
+    <span class="chip on" data-cc="22" data-cc-fill="#ffffff" data-cc-stroke="#0071e3" data-cc-stroke-width="2">Graphite</span>
+  </div>
+
+  <div class="cards">
+    <div class="card" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#e0e0e0">
+      <div class="thumb"><svg viewBox="0 0 96 96" aria-hidden="true">
+        <ellipse cx="48" cy="68" rx="34" ry="10" fill="#c9c9cf"/><ellipse cx="48" cy="64" rx="34" ry="10" fill="#e6e6ea"/>
+        <rect x="42" y="34" width="12" height="30" fill="#8e8e96"/><ellipse cx="48" cy="34" rx="16" ry="5" fill="#b4b4bb"/>
+      </svg></div>
+      <div class="line1"><span class="nm">Lumen Stand</span><span>¥240</span></div>
+      <a class="buy" href="#">Buy</a>
+    </div>
+    <div class="card" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#e0e0e0">
+      <div class="thumb"><svg viewBox="0 0 96 96" aria-hidden="true">
+        <ellipse cx="48" cy="48" rx="30" ry="22" fill="none" stroke="#8e8e96" stroke-width="9"/>
+        <ellipse cx="48" cy="48" rx="30" ry="22" fill="none" stroke="#d8d8de" stroke-width="2" opacity=".7"/>
+      </svg></div>
+      <div class="line1"><span class="nm">Lumen Loop</span><span>¥120</span></div>
+      <a class="buy" href="#">Buy</a>
+    </div>
+    <div class="card" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#e0e0e0">
+      <div class="thumb"><svg viewBox="0 0 96 96" aria-hidden="true">
+        <rect x="24" y="26" width="48" height="50" rx="12" fill="#d7d7dc"/>
+        <rect x="29" y="31" width="38" height="40" rx="9" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-dasharray="3 4" opacity=".85"/>
+        <ellipse cx="48" cy="27" rx="24" ry="7" fill="#b9b9c0"/>
+      </svg></div>
+      <div class="line1"><span class="nm">Lumen Case</span><span>¥160</span></div>
+      <a class="buy" href="#">Buy</a>
+    </div>
+  </div>
+
+  <div class="foot"><span>Illustrative example</span><span>Illustrative render, not a photograph</span></div>
+  <div class="bar">
+    <div class="left"><span class="nm">Lumen</span><span>¥1,280</span></div>
+    <span class="pill pill-lg" data-cc="22" data-cc-fill="#0071e3">Buy</span>
+  </div>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1600">
+<title>Relay — deploy slide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;family=Noto+Sans+Mono:wght@400&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#fafafa; --panel:#ffffff; --dark:#171717;
+    --ink:#171717; --muted:#626262; --action:#171717;
+    --onAction:#ffffff; --onDark:#ffffff; --hairline:#d2d2d7; --link:#005cc5;
+    --sans:"Manrope","Noto Sans SC",sans-serif;
+    --mono:"Noto Sans Mono","Noto Sans SC",monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#e4e4e6}
+  body{font-family:var(--sans);color:var(--ink)}
+  .unit{position:relative;width:1600px;height:900px;overflow:hidden;background:var(--canvas)}
+  .zh{font-family:"Noto Sans SC",var(--sans)}
+  .mono{font-family:var(--mono)}
+  [data-cc]{position:relative;isolation:isolate}
+  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+
+  .wm{position:absolute;left:88px;top:72px;font-size:21px;font-weight:600;letter-spacing:-.3px}
+  .claim{position:absolute;left:88px;top:140px;width:1080px;font-size:56px;font-weight:600;line-height:1.1;letter-spacing:-1.6px}
+  .grad{background:linear-gradient(100deg,#004a9f 0%,#005cc5 42%,#2f8fd8 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+  .zhline{position:absolute;left:88px;top:226px;font-size:26px;font-weight:400;line-height:1.5;color:var(--muted)}
+
+  .num{position:absolute;left:80px;top:330px;font-size:220px;font-weight:600;line-height:1;letter-spacing:-10px}
+  .lbl{position:absolute;left:88px;top:572px;font-size:28px;font-weight:400;color:var(--ink)}
+  .ctx{position:absolute;left:88px;top:624px;width:560px;font-size:17px;font-weight:400;line-height:1.55;color:var(--muted)}
+  .action{position:absolute;left:88px;top:734px;font-size:21px;font-weight:400;color:var(--link);text-decoration:none;border-bottom:1px solid var(--link);padding-bottom:4px}
+  .action .arrow{font-size:22px}
+  .foot{position:absolute;left:88px;top:852px;font-size:12px;color:var(--muted)}
+
+  .eyebrow{position:absolute;left:820px;top:162px;width:700px;font-size:14px;color:var(--muted)}
+  .panel{position:absolute;left:820px;top:200px;width:700px;height:520px;padding:36px;display:flex;flex-direction:column;justify-content:space-between}
+  .panel .phead{display:flex;justify-content:space-between;font-size:14px;color:var(--muted)}
+  .panel .rule{height:1px;background:var(--hairline);margin:20px 0 8px}
+  .panel .r{display:flex;justify-content:space-between;align-items:center;height:74px;border-bottom:1px solid var(--hairline);font-size:14px}
+  .panel .r .d{color:var(--muted)}
+  .panel .r.total{border-bottom:0;font-weight:600}
+  .panel .r.total .d{color:var(--link)}
+  .panel .pfoot{display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--muted)}
+  .panel .pfoot .live{display:flex;align-items:center;gap:10px;color:var(--ink);font-weight:600}
+  .panel .pfoot .dot{display:inline-block;width:9px;height:9px;background:var(--link)}
+  .cap{position:absolute;left:820px;top:734px;width:700px;font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="unit" id="slide">
+
+  <p class="wm">Relay</p>
+  <h1 class="claim">It <span class="grad">deploys</span> while you watch.</h1>
+  <p class="zhline zh">一次部署，八秒上线</p>
+
+  <div class="num">8</div>
+  <p class="lbl">seconds</p>
+  <p class="ctx">from a push to a live URL, on one illustrative build</p>
+  <a class="action" href="#">Read the deploy log<span class="arrow"> ›</span></a>
+  <p class="foot">Illustrative example</p>
+
+  <p class="eyebrow">Relay interface · illustrative</p>
+  <div class="panel mono" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
+    <div class="top">
+      <div class="phead"><span>deploy log</span><span>main</span></div>
+      <div class="rule"></div>
+      <div class="r"><span>install</span><span class="d">1s</span></div>
+      <div class="r"><span>build</span><span class="d">3s</span></div>
+      <div class="r"><span>edge upload</span><span class="d">3s</span></div>
+      <div class="r"><span>ready</span><span class="d">1s</span></div>
+      <div class="r total"><span>total</span><span class="d">8s</span></div>
+    </div>
+    <div class="pfoot"><span class="live"><i class="dot"></i>live</span><span>checkout</span></div>
+  </div>
+  <p class="cap">Illustrative render, not a photograph</p>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

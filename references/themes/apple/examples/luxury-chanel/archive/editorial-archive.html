@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200">
+<title>Noir — A timeless house argues with dates</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@300;400;600&amp;family=Noto+Sans+SC:wght@300;400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#ffffff; --panel:#f5f5f5; --dark:#111111; --ink:#111111;
+    --muted:#626262; --action:#111111; --onAction:#ffffff; --onDark:#ffffff;
+    --hairline:#d2d2d7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{background:#dedee2;}
+  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink);}
+  .unit{position:relative;width:1200px;height:1600px;overflow:hidden;background:var(--canvas);}
+  .serif{font-family:"Cormorant Garamond","Noto Serif SC",serif;}
+  .zh{font-family:"Noto Serif SC","Noto Sans SC",serif;}
+  .t{position:absolute;}
+  .pad{padding:12px;}
+
+  .vista{position:absolute;left:0;top:0;width:1200px;height:700px;overflow:hidden;background:var(--dark);}
+  .vista svg{display:block;}
+  .vover{left:86px;top:272px;width:660px;color:var(--onDark);}
+  .vover h1{font-family:"Cormorant Garamond","Noto Serif SC",serif;font-size:62px;font-weight:400;line-height:1.07;letter-spacing:-.6px;}
+  .vover .zhline{margin-top:22px;font-size:28px;font-weight:400;line-height:1.5;color:#ededed;}
+  .vover .act{margin-top:46px;}
+  .pill{display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 28px;font-size:17px;font-weight:400;color:var(--ink);}
+  .vcredit{left:98px;top:648px;width:1000px;font-size:12px;line-height:1.5;color:var(--onDark);opacity:.55;}
+
+  .column{position:absolute;left:110px;top:700px;width:980px;padding:88px 12px 0 12px;}
+  .lead{font-family:"Cormorant Garamond","Noto Serif SC",serif;font-size:30px;font-weight:400;line-height:1.35;}
+  .leadzh{margin-top:12px;font-size:24px;font-weight:400;line-height:1.6;color:var(--muted);}
+  .body{margin-top:52px;width:760px;font-size:17px;font-weight:400;line-height:1.47;}
+  .body + .body{margin-top:22px;}
+
+  .figure{margin-top:48px;border-top:1px solid var(--hairline);padding-top:24px;}
+  .fttl{font-size:14px;font-weight:400;color:var(--muted);}
+  .reg{margin-top:18px;}
+  .row{display:grid;grid-template-columns:120px 1fr 160px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--hairline);}
+  .yr{font-size:17px;font-weight:400;font-variant-numeric:tabular-nums;}
+  .pc{font-size:17px;font-weight:400;}
+  .fg{font-size:15px;font-weight:400;text-align:right;color:var(--muted);font-variant-numeric:tabular-nums;}
+  .src{margin-top:18px;font-size:14px;font-weight:400;color:var(--muted);}
+  .cap{margin-top:12px;font-size:14px;font-weight:400;color:var(--muted);}
+
+  .foot{position:absolute;left:110px;top:1520px;width:980px;font-size:12px;line-height:1.5;color:var(--muted);}
+
+  svg{display:block;}
+  [data-cc]{position:relative;isolation:isolate}
+  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+</style>
+</head>
+<body>
+<div class="unit" id="page">
+
+  <div class="vista">
+    <svg width="1200" height="700" viewBox="0 0 1200 700" aria-hidden="true">
+      <!-- one archival garment, drawn as a white line stand-in on black -->
+      <g fill="none" stroke="#ffffff" stroke-width="1.6" opacity=".7" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M 900 66 C 900 54 890 50 882 54 C 876 57 876 66 882 68"/>
+        <path d="M 900 66 V 96"/>
+        <path d="M 900 96 L 812 148 H 988 Z"/>
+        <path d="M 852 150 C 838 150 830 158 824 170 L 792 316 L 820 324 L 840 214 L 828 610 L 972 610 L 960 214 L 980 324 L 1008 316 L 976 170 C 970 158 962 150 948 150 Z"/>
+        <path d="M 852 150 L 900 204 L 948 150"/>
+        <path d="M 900 204 V 610"/>
+      </g>
+    </svg>
+    <div class="t vover pad">
+      <h1>A timeless house
+<br>argues with dates.</h1>
+      <p class="zhline zh">永恒的屋子，用年份说话</p>
+      <div class="act"><span class="pill" data-cc="23" data-cc-fill="#ffffff">Read the archive</span></div>
+    </div>
+    <p class="t vcredit pad">Illustrative render, not a photograph</p>
+  </div>
+
+  <div class="column">
+    <p class="lead">The archive is kept as a register, not a mood.</p>
+    <p class="leadzh zh">档案是一份登记，不是一种情绪</p>
+
+    <p class="body">The archive is not a room of beautiful things. It is a set of dated entries: what was made, in which year, and the one measure that changed. A house that claims to be timeless has to keep a record that can be checked.</p>
+    <p class="body">Nothing in the register is a season. Each line is a piece held to the same cut, and the figure beside it is the only thing that differs. Read down the years and the argument makes itself: the clothes did not need to change.</p>
+
+    <div class="figure">
+      <div class="fttl">House register</div>
+      <div class="reg">
+        <div class="row"><span class="yr">1955</span><span class="pc">The One Seam</span><span class="fg">1 seam</span></div>
+        <div class="row"><span class="yr">1971</span><span class="pc">The White Shirt</span><span class="fg">2 panels</span></div>
+        <div class="row"><span class="yr">1998</span><span class="pc">The Trouser</span><span class="fg">6 mm</span></div>
+        <div class="row"><span class="yr">2026</span><span class="pc">The Collection</span><span class="fg">6 pieces</span></div>
+      </div>
+      <p class="src">Noir house register, 2026</p>
+      <p class="cap">Illustrative render, not a photograph</p>
+    </div>
+  </div>
+
+  <div class="foot">Illustrative example</div>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

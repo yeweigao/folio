@@ -1,0 +1,45 @@
+Relay
+Teams
+Ship as one team.
+
+One queue, twelve people, no waiting for a turn to deploy.
+
+12
+
+people who can deploy at once
+
+on the Team plan, with one shared queue.
+
+Team activity
+
+Mira
+deployed
+checkout
+just now
+Otis
+previewed
+api-edge
+moments ago
+June
+deployed
+landing
+earlier
+
+Illustrative render, not a photograph
+
+99.99%
+
+of deploys reached the edge
+
+measured on illustrative builds
+
+Team
+¥320 / month
+Choose Team
+Every deploy gets a preview link.
+
+Shared with the whole team before it goes live.
+
+See how previews work
+Illustrative example
+Illustrative render, not a photograph

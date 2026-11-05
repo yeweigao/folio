@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1600">
+<title>Pebble sleep report — keynote</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&amp;family=Inter:wght@400;600&amp;family=Noto+Sans+SC:wght@400&amp;family=Noto+Serif+SC:wght@400&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#f9f5ed; --panel:#eee7db; --dark:#243329;
+    --ink:#263028; --muted:#5a625b; --action:#215a8a;
+    --onAction:#ffffff; --onDark:#ffffff; --hairline:#d2d2d7;
+    --serif:"Fraunces","Noto Serif SC",serif;
+    --sans:"Inter","Noto Sans SC",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#e6e0d4}
+  body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}
+  .unit{position:relative;width:1600px;height:900px;overflow:hidden;background:var(--canvas)}
+  .zh{font-family:"Noto Sans SC",var(--sans)}
+  .t{position:absolute}
+  .num{font-variant-numeric:tabular-nums}
+
+  .brand{left:88px;top:56px;font-size:21px;font-weight:600;letter-spacing:-.2px}
+  .kicker{right:88px;top:60px;font-size:14px;line-height:1.4;color:var(--muted);text-align:right}
+
+  .title{left:88px;top:112px;width:700px;font-family:var(--serif);font-size:56px;font-weight:400;
+         line-height:1.07;letter-spacing:-1.4px}
+  .zhline{left:88px;top:306px;font-family:var(--serif);font-size:24px;line-height:1.5;color:var(--muted)}
+  .lead{left:88px;top:368px;width:760px;font-size:21px;font-weight:400;line-height:1.6;color:var(--muted)}
+
+  .bigwrap{right:88px;top:140px;width:400px}
+  .big{font-family:var(--serif);font-size:72px;font-weight:400;line-height:1.02;letter-spacing:-2px}
+  .biglab{margin-top:16px;font-size:21px;line-height:1.5;color:var(--muted)}
+  .bigctx{margin-top:10px;font-size:17px;line-height:1.55;color:var(--muted)}
+
+  .chhead{left:88px;top:480px;width:1424px;display:flex;justify-content:space-between;
+          font-size:14px;line-height:1.4;color:var(--muted)}
+  .chrule{left:88px;top:508px;width:1424px;height:1px;background:var(--hairline)}
+
+  .rows{left:88px;top:524px;width:1424px}
+  .row{position:relative;height:51px}
+  .row .lab{position:absolute;left:0;top:12px;width:190px;font-size:21px;line-height:1.3}
+  .row .track{position:absolute;left:192px;top:13px;width:1100px;height:24px;background:var(--hairline);opacity:.34}
+  .row .bar{position:absolute;left:192px;top:13px;height:24px;background:var(--ink);opacity:.62}
+  .row .val{position:absolute;left:1312px;top:11px;width:112px;text-align:right;font-size:21px;line-height:1.3}
+  .row.deep .bar{background:var(--action);opacity:1}
+  .row.deep .val{color:var(--action);font-weight:600}
+
+  .note{left:88px;top:742px;width:1000px;font-size:17px;line-height:1.55;color:var(--muted)}
+  .src{left:88px;top:816px;width:900px;font-size:12px;line-height:1.5;color:var(--muted)}
+  .ill{right:88px;top:816px;font-size:12px;line-height:1.5;color:var(--muted);text-align:right}
+</style>
+</head>
+<body>
+<div class="unit" id="slide">
+
+  <p class="t brand">Pebble</p>
+  <p class="t kicker num">Sleep report, 12–13 October 2026</p>
+
+  <h1 class="t title">Seven hours asleep,<br>seventy-six minutes<br>of it deep.</h1>
+  <p class="t zhline zh">七小时睡眠，其中七十六分钟是深睡</p>
+  <p class="t lead">The ring separates awake, light, deep and REM. This is one night, printed as it was recorded, with nothing smoothed.</p>
+
+  <div class="t bigwrap">
+    <p class="big num">7 h 12 m</p>
+    <p class="biglab">asleep, after 46 minutes awake</p>
+    <p class="bigctx num">478 minutes in bed, 432 of them asleep.</p>
+  </div>
+
+  <p class="t chhead num"><span>Stage totals</span><span>for 7 h 58 m in bed</span></p>
+  <div class="t chrule"></div>
+
+  <div class="t rows">
+    <div class="row">
+      <span class="lab">Awake</span>
+      <span class="track"></span>
+      <span class="bar" style="width:106px"></span>
+      <span class="val num">46 m</span>
+    </div>
+    <div class="row">
+      <span class="lab">REM</span>
+      <span class="track"></span>
+      <span class="bar" style="width:225px"></span>
+      <span class="val num">1 h 38 m</span>
+    </div>
+    <div class="row">
+      <span class="lab">Light</span>
+      <span class="track"></span>
+      <span class="bar" style="width:594px"></span>
+      <span class="val num">4 h 18 m</span>
+    </div>
+    <div class="row deep">
+      <span class="lab">Deep</span>
+      <span class="track"></span>
+      <span class="bar" style="width:175px"></span>
+      <span class="val num">1 h 16 m</span>
+    </div>
+  </div>
+
+  <p class="t note">The four stages add up to the 478 minutes in bed. Asleep is that total minus the 46 awake: 432 minutes, or 7 h 12 m.</p>
+
+  <p class="t src">Source: one illustrative night, 12–13 October 2026, Pebble app export. Each bar is drawn to the same 478-minute scale.</p>
+  <p class="t ill">Illustrative example · Illustrative render, not a photograph</p>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

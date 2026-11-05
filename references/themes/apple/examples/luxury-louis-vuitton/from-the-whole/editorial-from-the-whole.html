@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200">
+<title>Voyager — From the whole bag to the grain</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@400;600&amp;family=Noto+Serif+SC:wght@400&amp;family=Noto+Sans+SC:wght@400&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#ffffff; --panel:#f5f1e9; --dark:#30271d; --ink:#30271d;
+    --muted:#686056; --action:#30271d; --onAction:#ffffff; --onDark:#ffffff;
+    --hairline:#d2d2d7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#e9e6e0}
+  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
+  .unit{position:relative;width:1200px;height:1600px;overflow:hidden;background:var(--canvas)}
+  .serif{font-family:"Cormorant Garamond","Noto Serif SC",Georgia,serif}
+  .zhserif{font-family:"Noto Serif SC","Cormorant Garamond",serif}
+  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
+  .t{position:absolute}
+  .pad{padding:12px}
+  a{text-decoration:none;color:inherit}
+  svg{display:block}
+  [data-cc]{position:relative;isolation:isolate}
+  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+
+  .vista{position:absolute;left:0;top:0;width:1200px;height:680px;overflow:hidden}
+  .mark{left:110px;top:64px;font-size:26px;font-weight:600;line-height:1.2}
+  .vhead{left:110px;top:150px;width:520px}
+  .vhead h1{font-size:52px;font-weight:400;line-height:1.08;letter-spacing:-.01em}
+  .vhead .zh{font-family:"Noto Serif SC","Cormorant Garamond",serif;
+             margin-top:20px;font-size:22px;font-weight:400;line-height:1.55;color:var(--muted)}
+  .vhead a{display:inline-block;margin-top:34px;font-size:17px;font-weight:400;line-height:1.4;
+           color:var(--action);border-bottom:1px solid var(--action);padding-bottom:3px}
+
+  .cap{left:110px;top:700px;width:980px;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
+  .lead{left:110px;top:740px;width:900px;font-size:30px;font-weight:400;line-height:1.34;letter-spacing:-.005em}
+  .leadzh{left:110px;top:800px;width:880px;font-family:"Noto Serif SC","Cormorant Garamond",serif;
+          font-size:19px;font-weight:400;line-height:1.65;color:var(--muted)}
+  .body{left:110px;top:872px;width:760px;font-size:17px;font-weight:400;line-height:1.62}
+
+  .plateh{left:110px;top:1010px;font-size:14px;font-weight:400;line-height:1.5}
+  .plates{left:110px;top:1046px;display:flex;gap:20px}
+  .panel{width:300px;height:300px;overflow:hidden}
+  .pnote{width:300px;margin-top:14px;font-size:13px;font-weight:400;line-height:1.55;color:var(--muted)}
+  .pnote b{font-weight:400;color:var(--ink)}
+  .prow{left:110px;top:1360px;display:flex;gap:20px}
+
+  .close{left:110px;top:1424px;width:700px;font-size:22px;font-weight:400;line-height:1.4}
+  .price{left:110px;top:1470px;font-size:14px;font-weight:400;line-height:1.5;color:var(--muted)}
+  .foot{left:110px;top:1522px;width:980px;display:flex;justify-content:space-between;
+        font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="unit" id="page">
+
+  <div class="vista">
+    <svg width="1200" height="680" viewBox="0 0 1200 680" aria-hidden="true">
+      <defs>
+        <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#f6f2e9"/>
+          <stop offset=".7" stop-color="#efe9dd"/>
+          <stop offset="1" stop-color="#e7dfd2"/>
+        </linearGradient>
+        <linearGradient id="bench" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#7d5f40"/>
+          <stop offset=".18" stop-color="#6a5036"/>
+          <stop offset="1" stop-color="#4f3b26"/>
+        </linearGradient>
+        <linearGradient id="calf" x1="0" y1="0" x2=".3" y2="1">
+          <stop offset="0" stop-color="#d6c1a0"/>
+          <stop offset=".42" stop-color="#c0a67f"/>
+          <stop offset=".78" stop-color="#a98c64"/>
+          <stop offset="1" stop-color="#8f724b"/>
+        </linearGradient>
+        <linearGradient id="calfTop" x1="0" y1="0" x2=".3" y2="1">
+          <stop offset="0" stop-color="#e2cfb1"/>
+          <stop offset="1" stop-color="#c8af88"/>
+        </linearGradient>
+      </defs>
+
+      <rect width="1200" height="680" fill="url(#wall)"/>
+      <rect y="560" width="1200" height="120" fill="url(#bench)"/>
+      <rect y="560" width="1200" height="4" fill="#a2825c" opacity=".75"/>
+      <rect y="564" width="1200" height="8" fill="#3a2b1a" opacity=".18"/>
+
+      <!-- a hide, folded twice, waiting on the bench -->
+      <path d="M566 560 C582 532 664 526 704 541 C724 549 720 560 700 560 Z" fill="#c9b191"/>
+      <path d="M566 560 C582 532 664 526 704 541" fill="none" stroke="#a88a63" stroke-width="1.6"/>
+
+      <!-- a spool of linen thread -->
+      <rect x="620" y="508" width="40" height="52" fill="#e6d8bd"/>
+      <rect x="620" y="508" width="40" height="6" fill="#cdbb99"/>
+      <rect x="620" y="554" width="40" height="6" fill="#cdbb99"/>
+      <path d="M626 515 V551 M636 515 V551 M646 515 V551 M656 515 V551" stroke="#bda98a" stroke-width="1.2" opacity=".7"/>
+      <ellipse cx="640" cy="508" rx="20" ry="4.6" fill="#f0e4cc"/>
+      <ellipse cx="640" cy="508" rx="7" ry="1.8" fill="#8a7250"/>
+
+      <!-- the bag, standing -->
+      <ellipse cx="880" cy="562" rx="132" ry="9" fill="#2b2015" opacity=".16"/>
+      <path d="M816 246 C816 200 872 200 872 246" fill="none" stroke="#7a5d3d" stroke-width="10"/>
+      <path d="M888 246 C888 200 944 200 944 246" fill="none" stroke="#7a5d3d" stroke-width="10"/>
+      <path d="M760 246 L1000 246 L984 560 L776 560 Z" fill="url(#calf)" stroke="#7a5d3d"
+            stroke-width="1.2" stroke-opacity=".45"/>
+      <path d="M760 246 L1000 246 L996 284 L764 284 Z" fill="url(#calfTop)"/>
+      <path d="M760 246 L1000 246 L1000 251 L760 251 Z" fill="#7a5d3d" opacity=".55"/>
+      <path d="M782 246 L779 560" stroke="#7a5d3d" stroke-width="1.6" opacity=".4"/>
+      <path d="M978 246 L981 560" stroke="#7a5d3d" stroke-width="1.6" opacity=".4"/>
+      <g stroke="#5b442c" stroke-width="3.2" stroke-linecap="round" opacity=".9" fill="none">
+        <line x1="786" y1="298" x2="793" y2="312"/><line x1="816" y1="298" x2="823" y2="312"/>
+        <line x1="846" y1="298" x2="853" y2="312"/><line x1="876" y1="298" x2="883" y2="312"/>
+        <line x1="906" y1="298" x2="913" y2="312"/><line x1="936" y1="298" x2="943" y2="312"/>
+        <line x1="966" y1="298" x2="973" y2="312"/>
+      </g>
+      <rect x="868" y="238" width="26" height="24" fill="#4a3722"/>
+      <rect x="873" y="244" width="16" height="3" fill="#e2cfb1" opacity=".7"/>
+      <path d="M779 559 L981 559" stroke="#5b442c" stroke-width="2" opacity=".45"/>
+      <path d="M763 252 L763 556" stroke="#f2e5cd" stroke-width="1.8" opacity=".3"/>
+    </svg>
+
+    <p class="t mark serif">Voyager</p>
+    <div class="t vhead">
+      <h1 class="serif">From the whole bag<br>to the grain.</h1>
+      <p class="zh">从整只包，到一粒皮纹</p>
+      <a href="#">Read the material note</a>
+    </div>
+  </div>
+
+  <p class="t cap">Illustrative render, not a photograph</p>
+
+  <p class="t lead serif">A bag is three distances at once: the object, the seam, the edge.</p>
+  <p class="t leadzh">一只包，三个距离：整只、缝线、边</p>
+  <p class="t body">At 1:2 the bag is a proportion. At 8:1 the seam is a pitch, 3.17 mm, and eleven stitches can be counted across the panel. At 24:1 the edge is a thickness — 3.2 mm of calf under 0.6 mm of paint — and there is nothing behind it.</p>
+
+  <p class="t plateh">The same bag, read at three distances. Scale bars are in millimetres.</p>
+  <div class="t plates">
+
+    <div class="panel" data-cc="18" data-cc-fill="#f5f1e9" data-cc-stroke="#d2d2d7" data-cc-clip>
+      <svg width="300" height="300" viewBox="0 0 300 300" aria-hidden="true">
+        <g transform="translate(12 26)">
+          <ellipse cx="138" cy="254" rx="96" ry="6" fill="#30271d" opacity=".1"/>
+          <path d="M96 120 C96 94 130 94 130 120" fill="none" stroke="#7a5d3d" stroke-width="7"/>
+          <path d="M146 120 C146 94 180 94 180 120" fill="none" stroke="#7a5d3d" stroke-width="7"/>
+          <path d="M60 120 L240 120 L226 252 L74 252 Z" fill="#c0a67f" stroke="#7a5d3d"
+                stroke-width="1" stroke-opacity=".45"/>
+          <path d="M60 120 L240 120 L238 144 L62 144 Z" fill="#d6c1a0"/>
+          <g stroke="#5b442c" stroke-width="2.4" stroke-linecap="round" opacity=".9" fill="none">
+            <line x1="74" y1="152" x2="81" y2="163"/><line x1="102" y1="152" x2="109" y2="163"/>
+            <line x1="130" y1="152" x2="137" y2="163"/><line x1="158" y1="152" x2="165" y2="163"/>
+            <line x1="186" y1="152" x2="193" y2="163"/><line x1="214" y1="152" x2="221" y2="163"/>
+          </g>
+          <rect x="128" y="113" width="24" height="20" fill="#4a3722"/>
+        </g>
+        <g stroke="#686056" stroke-width="1" opacity=".8" fill="none">
+          <path d="M24 276 H74"/><path d="M24 271 V281"/><path d="M74 271 V281"/>
+        </g>
+        <text x="24" y="294" font-family="Inter, 'Noto Sans SC', sans-serif" font-size="11"
+              fill="#686056">10 cm</text>
+      </svg>
+    </div>
+
+    <div class="panel" data-cc="18" data-cc-fill="#6b5138" data-cc-stroke="#d2d2d7" data-cc-clip>
+      <svg width="300" height="300" viewBox="0 0 300 300" aria-hidden="true">
+        <defs>
+          <linearGradient id="m1" x1="0" y1="0" x2=".4" y2="1">
+            <stop offset="0" stop-color="#96754e"/>
+            <stop offset=".45" stop-color="#7d5f3e"/>
+            <stop offset="1" stop-color="#4d3823"/>
+          </linearGradient>
+        </defs>
+        <rect width="300" height="300" fill="url(#m1)"/>
+        <g fill="#2e2318" opacity=".18">
+          <ellipse cx="46" cy="60" rx="2.6" ry="1.8"/><ellipse cx="120" cy="42" rx="2" ry="1.4"/>
+          <ellipse cx="210" cy="86" rx="2.8" ry="1.9"/><ellipse cx="70" cy="196" rx="2.2" ry="1.5"/>
+          <ellipse cx="248" cy="214" rx="2.4" ry="1.6"/><ellipse cx="176" cy="256" rx="2" ry="1.4"/>
+        </g>
+        <path d="M150 0 V300" stroke="#2b2015" stroke-width="3" opacity=".5"/>
+        <path d="M153 0 V300" stroke="#cfb28c" stroke-width="1.2" opacity=".3"/>
+        <g stroke="#efe0c4" stroke-width="7" stroke-linecap="round" fill="none">
+          <line x1="134" y1="18" x2="166" y2="28"/>
+          <line x1="134" y1="43.4" x2="166" y2="53.4"/>
+          <line x1="134" y1="68.7" x2="166" y2="78.7"/>
+          <line x1="134" y1="94.1" x2="166" y2="104.1"/>
+          <line x1="134" y1="119.4" x2="166" y2="129.4"/>
+          <line x1="134" y1="144.8" x2="166" y2="154.8"/>
+          <line x1="134" y1="170.1" x2="166" y2="180.1"/>
+          <line x1="134" y1="195.5" x2="166" y2="205.5"/>
+          <line x1="134" y1="220.9" x2="166" y2="230.9"/>
+          <line x1="134" y1="246.2" x2="166" y2="256.2"/>
+          <line x1="134" y1="271.6" x2="166" y2="281.6"/>
+        </g>
+        <g stroke="#ecdfc7" stroke-width="1" opacity=".8" fill="none">
+          <path d="M22 268 H102"/><path d="M22 263 V273"/><path d="M102 263 V273"/>
+        </g>
+        <text x="22" y="290" font-family="Inter, 'Noto Sans SC', sans-serif" font-size="11"
+              fill="#f0e5cf">10 mm</text>
+      </svg>
+    </div>
+
+    <div class="panel" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7" data-cc-clip>
+      <svg width="300" height="300" viewBox="0 0 300 300" aria-hidden="true">
+        <defs>
+          <linearGradient id="ply" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#d3bd9b"/>
+            <stop offset=".35" stop-color="#bda37d"/>
+            <stop offset="1" stop-color="#9c7f58"/>
+          </linearGradient>
+        </defs>
+        <!-- one ply in section; the cut face is at the right -->
+        <rect x="86" y="104" width="198" height="74" fill="url(#ply)"/>
+        <path d="M86 104 H284" stroke="#e6d4b6" stroke-width="1.4" opacity=".75"/>
+        <path d="M86 178 H284" stroke="#6d5438" stroke-width="1.4" opacity=".5"/>
+        <g fill="#8a6c47" opacity=".26">
+          <ellipse cx="112" cy="122" rx="2.4" ry="1.6"/><ellipse cx="196" cy="132" rx="2" ry="1.4"/>
+          <ellipse cx="242" cy="114" rx="2.6" ry="1.8"/><ellipse cx="132" cy="164" rx="2.2" ry="1.5"/>
+        </g>
+        <!-- the thread seen through the cut: hidden inside the leather -->
+        <path d="M148 104 L164 178" stroke="#efe0c4" stroke-width="20" stroke-linecap="butt" opacity=".55"/>
+        <ellipse cx="148" cy="104" rx="10" ry="3.6" fill="#6d5438"/>
+        <ellipse cx="164" cy="178" rx="10" ry="3.6" fill="#4a3722"/>
+        <!-- painted edge over the cut face -->
+        <rect x="284" y="104" width="14" height="74" fill="#4f3a24"/>
+        <rect x="284" y="104" width="14" height="4" fill="#8a6c47"/>
+        <path d="M296 108 V174" stroke="#d8bd95" stroke-width="1.6" opacity=".55"/>
+        <!-- dimensions -->
+        <g stroke="#686056" stroke-width="1" opacity=".85" fill="none">
+          <path d="M64 104 V178"/><path d="M58 104 H70"/><path d="M58 178 H70"/>
+        </g>
+        <text x="4" y="145" font-family="Inter, 'Noto Sans SC', sans-serif" font-size="11"
+              fill="#30271d">3.2 mm</text>
+        <g stroke="#686056" stroke-width="1" opacity=".85" fill="none">
+          <path d="M291 178 V202 H196"/><path d="M196 196 V208"/>
+        </g>
+        <text x="192" y="206" text-anchor="end" font-family="Inter, 'Noto Sans SC', sans-serif"
+              font-size="11" fill="#30271d">0.6 mm</text>
+        <g stroke="#686056" stroke-width="1" opacity=".8" fill="none">
+          <path d="M24 268 H48"/><path d="M24 263 V273"/><path d="M48 263 V273"/>
+        </g>
+        <text x="24" y="290" font-family="Inter, 'Noto Sans SC', sans-serif" font-size="11"
+              fill="#686056">1 mm</text>
+      </svg>
+    </div>
+
+  </div>
+
+  <div class="t prow">
+    <p class="pnote"><b>The whole bag</b><br>1:2 · 36 cm wide, 26 cm tall</p>
+    <p class="pnote"><b>The seam</b><br>8:1 · 3.17 mm pitch</p>
+    <p class="pnote"><b>The edge</b><br>24:1 · 3.2 mm ply</p>
+  </div>
+
+  <p class="t close serif">Nothing is hidden between the three.</p>
+  <p class="t price">The Voyage 36 · ¥17,600</p>
+
+  <div class="t foot"><span>Illustrative example</span><span>Voyager material note · 2026</span></div>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1600">
+<title>Shelf — one module</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#f8f7f3; --panel:#ffffff; --dark:#2b302d;
+    --ink:#2b302d; --muted:#626a64; --action:#345c5c;
+    --onAction:#ffffff; --onDark:#ffffff; --hairline:#d2d2d7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#e6e5e0}
+  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
+  .unit{position:relative;width:1600px;height:900px;overflow:hidden;background:var(--canvas)}
+  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
+  [data-cc]{position:relative;isolation:isolate}
+  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+  .t{position:absolute}
+  svg{display:block}
+
+  .brand{left:80px;top:50px;display:flex;align-items:baseline;gap:16px}
+  .brand .nm{font-size:17px;font-weight:600;letter-spacing:-.2px}
+  .brand .k{font-size:14px;font-weight:400;color:var(--muted)}
+
+  .claim{left:80px;top:100px;width:560px;font-size:56px;font-weight:600;line-height:1.08;letter-spacing:-1.8px}
+  .claim .acc{color:var(--action)}
+  .zhline{left:80px;top:300px;width:600px;font-size:24px;font-weight:400;line-height:1.5}
+
+  .body{left:80px;top:420px;width:560px;font-size:17px;font-weight:400;line-height:1.65}
+  .body p+p{margin-top:16px}
+
+  .close{left:80px;top:640px;width:520px;font-size:21px;font-weight:600;line-height:1.45;letter-spacing:-.3px}
+
+  .foot{left:80px;top:800px;width:1440px;display:flex;justify-content:space-between;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="unit" id="slide">
+
+  <div class="t brand"><span class="nm">Shelf</span><span class="k">Module</span></div>
+
+  <h1 class="t claim">Every part is a<br>whole number of<br><span class="acc">45 mm.</span></h1>
+  <p class="t zhline zh">每个零件，都是 45 毫米的整数倍</p>
+
+  <div class="t body">
+    <p>A bay stands 1,800 mm tall: forty modules of 45. A shelf is 900 mm wide and 270 mm deep: twenty by six. A bracket is 135 mm: three.</p>
+    <p>Nothing is cut to length on site, so a longer wall is more modules rather than a new part.</p>
+  </div>
+
+  <p class="t close">Change the length and the count changes; nothing new is made.</p>
+
+  <svg width="860" height="640" viewBox="0 0 860 640" aria-hidden="true" style="position:absolute;left:660px;top:140px">
+    <!-- uprights, slotted on the module -->
+    <rect x="136" y="70" width="14" height="470" fill="#2b302d"/>
+    <rect x="385" y="70" width="14" height="470" fill="#2b302d"/>
+    <g stroke="#f8f7f3" stroke-width="1">
+      <line x1="138.5" y1="76" x2="147.5" y2="76"/>
+      <line x1="138.5" y1="87.8" x2="147.5" y2="87.8"/>
+      <line x1="138.5" y1="99.5" x2="147.5" y2="99.5"/>
+      <line x1="138.5" y1="111.3" x2="147.5" y2="111.3"/>
+      <line x1="138.5" y1="123" x2="147.5" y2="123"/>
+      <line x1="138.5" y1="134.8" x2="147.5" y2="134.8"/>
+      <line x1="138.5" y1="146.5" x2="147.5" y2="146.5"/>
+      <line x1="138.5" y1="158.3" x2="147.5" y2="158.3"/>
+      <line x1="138.5" y1="170" x2="147.5" y2="170"/>
+      <line x1="138.5" y1="181.8" x2="147.5" y2="181.8"/>
+      <line x1="138.5" y1="193.5" x2="147.5" y2="193.5"/>
+      <line x1="138.5" y1="205.3" x2="147.5" y2="205.3"/>
+      <line x1="138.5" y1="217" x2="147.5" y2="217"/>
+      <line x1="138.5" y1="228.8" x2="147.5" y2="228.8"/>
+      <line x1="138.5" y1="240.5" x2="147.5" y2="240.5"/>
+      <line x1="138.5" y1="252.3" x2="147.5" y2="252.3"/>
+      <line x1="138.5" y1="264" x2="147.5" y2="264"/>
+      <line x1="138.5" y1="275.8" x2="147.5" y2="275.8"/>
+      <line x1="138.5" y1="287.5" x2="147.5" y2="287.5"/>
+      <line x1="138.5" y1="299.3" x2="147.5" y2="299.3"/>
+      <line x1="138.5" y1="311" x2="147.5" y2="311"/>
+      <line x1="138.5" y1="322.8" x2="147.5" y2="322.8"/>
+      <line x1="138.5" y1="334.5" x2="147.5" y2="334.5"/>
+      <line x1="138.5" y1="346.3" x2="147.5" y2="346.3"/>
+      <line x1="138.5" y1="358" x2="147.5" y2="358"/>
+      <line x1="138.5" y1="369.8" x2="147.5" y2="369.8"/>
+      <line x1="138.5" y1="381.5" x2="147.5" y2="381.5"/>
+      <line x1="138.5" y1="393.3" x2="147.5" y2="393.3"/>
+      <line x1="138.5" y1="405" x2="147.5" y2="405"/>
+      <line x1="138.5" y1="416.8" x2="147.5" y2="416.8"/>
+      <line x1="138.5" y1="428.5" x2="147.5" y2="428.5"/>
+      <line x1="138.5" y1="440.3" x2="147.5" y2="440.3"/>
+      <line x1="138.5" y1="452" x2="147.5" y2="452"/>
+      <line x1="138.5" y1="463.8" x2="147.5" y2="463.8"/>
+      <line x1="138.5" y1="475.5" x2="147.5" y2="475.5"/>
+      <line x1="138.5" y1="487.3" x2="147.5" y2="487.3"/>
+      <line x1="138.5" y1="499" x2="147.5" y2="499"/>
+      <line x1="138.5" y1="510.8" x2="147.5" y2="510.8"/>
+      <line x1="138.5" y1="522.5" x2="147.5" y2="522.5"/>
+      <line x1="138.5" y1="534.3" x2="147.5" y2="534.3"/>
+      <line x1="387.5" y1="76" x2="396.5" y2="76"/>
+      <line x1="387.5" y1="87.8" x2="396.5" y2="87.8"/>
+      <line x1="387.5" y1="99.5" x2="396.5" y2="99.5"/>
+      <line x1="387.5" y1="111.3" x2="396.5" y2="111.3"/>
+      <line x1="387.5" y1="123" x2="396.5" y2="123"/>
+      <line x1="387.5" y1="134.8" x2="396.5" y2="134.8"/>
+      <line x1="387.5" y1="146.5" x2="396.5" y2="146.5"/>
+      <line x1="387.5" y1="158.3" x2="396.5" y2="158.3"/>
+      <line x1="387.5" y1="170" x2="396.5" y2="170"/>
+      <line x1="387.5" y1="181.8" x2="396.5" y2="181.8"/>
+      <line x1="387.5" y1="193.5" x2="396.5" y2="193.5"/>
+      <line x1="387.5" y1="205.3" x2="396.5" y2="205.3"/>
+      <line x1="387.5" y1="217" x2="396.5" y2="217"/>
+      <line x1="387.5" y1="228.8" x2="396.5" y2="228.8"/>
+      <line x1="387.5" y1="240.5" x2="396.5" y2="240.5"/>
+      <line x1="387.5" y1="252.3" x2="396.5" y2="252.3"/>
+      <line x1="387.5" y1="264" x2="396.5" y2="264"/>
+      <line x1="387.5" y1="275.8" x2="396.5" y2="275.8"/>
+      <line x1="387.5" y1="287.5" x2="396.5" y2="287.5"/>
+      <line x1="387.5" y1="299.3" x2="396.5" y2="299.3"/>
+      <line x1="387.5" y1="311" x2="396.5" y2="311"/>
+      <line x1="387.5" y1="322.8" x2="396.5" y2="322.8"/>
+      <line x1="387.5" y1="334.5" x2="396.5" y2="334.5"/>
+      <line x1="387.5" y1="346.3" x2="396.5" y2="346.3"/>
+      <line x1="387.5" y1="358" x2="396.5" y2="358"/>
+      <line x1="387.5" y1="369.8" x2="396.5" y2="369.8"/>
+      <line x1="387.5" y1="381.5" x2="396.5" y2="381.5"/>
+      <line x1="387.5" y1="393.3" x2="396.5" y2="393.3"/>
+      <line x1="387.5" y1="405" x2="396.5" y2="405"/>
+      <line x1="387.5" y1="416.8" x2="396.5" y2="416.8"/>
+      <line x1="387.5" y1="428.5" x2="396.5" y2="428.5"/>
+      <line x1="387.5" y1="440.3" x2="396.5" y2="440.3"/>
+      <line x1="387.5" y1="452" x2="396.5" y2="452"/>
+      <line x1="387.5" y1="463.8" x2="396.5" y2="463.8"/>
+      <line x1="387.5" y1="475.5" x2="396.5" y2="475.5"/>
+      <line x1="387.5" y1="487.3" x2="396.5" y2="487.3"/>
+      <line x1="387.5" y1="499" x2="396.5" y2="499"/>
+      <line x1="387.5" y1="510.8" x2="396.5" y2="510.8"/>
+      <line x1="387.5" y1="522.5" x2="396.5" y2="522.5"/>
+      <line x1="387.5" y1="534.3" x2="396.5" y2="534.3"/>
+    </g>
+
+    <!-- four shelves, each on two brackets -->
+    <g fill="#2b302d">
+      <rect x="150" y="150" width="235" height="6"/>
+      <rect x="150" y="268" width="235" height="6"/>
+      <rect x="150" y="386" width="235" height="6"/>
+      <rect x="150" y="504" width="235" height="6"/>
+      <path d="M 150 157 L 176 157 L 176 163 L 160 163 L 160 173 L 150 173 Z"/>
+      <path d="M 385 157 L 359 157 L 359 163 L 375 163 L 375 173 L 385 173 Z"/>
+      <path d="M 150 275 L 176 275 L 176 281 L 160 281 L 160 291 L 150 291 Z"/>
+      <path d="M 385 275 L 359 275 L 359 281 L 375 281 L 375 291 L 385 291 Z"/>
+      <path d="M 150 393 L 176 393 L 176 399 L 160 399 L 160 409 L 150 409 Z"/>
+      <path d="M 385 393 L 359 393 L 359 399 L 375 399 L 375 409 L 385 409 Z"/>
+      <path d="M 150 511 L 176 511 L 176 517 L 160 517 L 160 527 L 150 527 Z"/>
+      <path d="M 385 511 L 359 511 L 359 517 L 375 517 L 375 527 L 385 527 Z"/>
+    </g>
+
+    <!-- 1,800 mm down the upright -->
+    <g stroke="#b9bcc0" stroke-width="1">
+      <line x1="112" y1="70" x2="112" y2="540"/>
+      <line x1="106" y1="70" x2="118" y2="70"/>
+      <line x1="106" y1="540" x2="118" y2="540"/>
+    </g>
+    <text x="102" y="308" text-anchor="end" font-family="Inter, sans-serif" font-size="13" fill="#626a64">1,800 mm</text>
+
+    <!-- the module chain under the bay -->
+    <g stroke="#2b302d" stroke-width="1">
+      <line x1="150" y1="580" x2="385" y2="580"/>
+      <line x1="150" y1="574" x2="150" y2="586"/>
+      <line x1="161.8" y1="577" x2="161.8" y2="583"/>
+      <line x1="173.5" y1="577" x2="173.5" y2="583"/>
+      <line x1="185.3" y1="577" x2="185.3" y2="583"/>
+      <line x1="197" y1="577" x2="197" y2="583"/>
+      <line x1="208.8" y1="574" x2="208.8" y2="586"/>
+      <line x1="220.5" y1="577" x2="220.5" y2="583"/>
+      <line x1="232.3" y1="577" x2="232.3" y2="583"/>
+      <line x1="244" y1="577" x2="244" y2="583"/>
+      <line x1="255.8" y1="577" x2="255.8" y2="583"/>
+      <line x1="267.5" y1="574" x2="267.5" y2="586"/>
+      <line x1="279.3" y1="577" x2="279.3" y2="583"/>
+      <line x1="291" y1="577" x2="291" y2="583"/>
+      <line x1="302.8" y1="577" x2="302.8" y2="583"/>
+      <line x1="314.5" y1="577" x2="314.5" y2="583"/>
+      <line x1="326.3" y1="574" x2="326.3" y2="586"/>
+      <line x1="338" y1="577" x2="338" y2="583"/>
+      <line x1="349.8" y1="577" x2="349.8" y2="583"/>
+      <line x1="361.5" y1="577" x2="361.5" y2="583"/>
+      <line x1="373.3" y1="577" x2="373.3" y2="583"/>
+      <line x1="385" y1="574" x2="385" y2="586"/>
+    </g>
+    <text x="150" y="608" font-family="Inter, sans-serif" font-size="13" fill="#2b302d">900 mm (20 × 45)</text>
+
+    <!-- part counts, one label per type -->
+    <g stroke="#b9bcc0" stroke-width="1" fill="none">
+      <path d="M 399 80 L 462 96"/>
+      <path d="M 392 271 L 462 254"/>
+      <path d="M 380 402 L 462 394"/>
+    </g>
+    <g font-family="Inter, sans-serif">
+      <text x="470" y="101" font-size="16" font-weight="600" fill="#2b302d">Upright</text>
+      <text x="470" y="121" font-size="12.5" fill="#626a64">two per bay</text>
+      <text x="470" y="259" font-size="16" font-weight="600" fill="#2b302d">Shelf</text>
+      <text x="470" y="279" font-size="12.5" fill="#626a64">four per bay</text>
+      <text x="470" y="399" font-size="16" font-weight="600" fill="#2b302d">Bracket</text>
+      <text x="470" y="419" font-size="12.5" fill="#626a64">two per shelf</text>
+    </g>
+  </svg>
+
+  <div class="t foot"><span>Illustrative example</span><span>Illustrative render, not a photograph</span></div>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

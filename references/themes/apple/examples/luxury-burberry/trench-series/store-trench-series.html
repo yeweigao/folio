@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Highland — The Trench Series</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@300;400;600&amp;family=Noto+Sans+SC:wght@300;400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#ffffff; --panel:#f7f4ed; --dark:#202124; --ink:#202124;
+    --muted:#626269; --action:#1936c8; --onAction:#ffffff; --onDark:#ffffff;
+    --hairline:#d2d2d7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{background:#dedee2;}
+  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink);}
+  .unit{position:relative;width:1440px;height:1000px;overflow:hidden;background:var(--canvas);}
+  .serif{font-family:"Cormorant Garamond","Noto Serif SC",serif;}
+  .zh{font-family:"Noto Serif SC","Noto Sans SC",serif;}
+  .t{position:absolute;}
+  .pad{padding:12px;}
+
+  .hdr{left:68px;top:38px;display:flex;align-items:baseline;gap:26px;}
+  .hdr .wm{font-size:30px;font-weight:400;letter-spacing:.4px;}
+  .hdr .series,.hdr .serieszh{font-size:14px;font-weight:400;color:var(--muted);}
+  .rule{left:80px;top:100px;width:1280px;height:1px;background:var(--hairline);}
+
+  .claim{left:68px;top:144px;width:1200px;font-size:54px;font-weight:400;line-height:1.1;letter-spacing:-.6px;}
+  .claimzh{left:68px;top:222px;font-size:24px;font-weight:400;line-height:1.5;color:var(--muted);}
+  .lead{left:68px;top:272px;width:1000px;font-size:20px;font-weight:400;line-height:1.47;color:var(--muted);}
+
+  .choicelbl{left:68px;top:338px;font-size:14px;font-weight:400;color:var(--muted);}
+  .chips{left:68px;top:364px;display:flex;gap:16px;}
+  .chip{display:inline-flex;align-items:center;justify-content:center;height:44px;min-width:132px;padding:0 24px;font-size:17px;font-weight:400;}
+  .chip.on{font-weight:600;}
+
+  /* one field turn: the range sits on the house's panel field */
+  .band{left:0;top:430px;width:1440px;height:376px;background:var(--panel);}
+
+  .cards{left:80px;top:446px;width:1280px;display:grid;grid-template-columns:repeat(3,1fr);gap:40px;}
+  .card{height:344px;padding:24px;display:flex;flex-direction:column;}
+  .coat{height:176px;display:flex;align-items:center;justify-content:center;}
+  .coat svg{width:100%;height:100%;}
+  .nm{margin-top:6px;font-size:21px;font-weight:600;line-height:1.3;}
+  .desc{margin-top:4px;font-size:14px;font-weight:400;line-height:1.4;color:var(--muted);}
+  .price{margin-top:8px;font-size:17px;font-weight:400;line-height:1.4;color:var(--muted);}
+  .buy{margin-top:10px;font-size:14px;font-weight:400;color:var(--action);align-self:flex-start;}
+
+  .cap{left:68px;top:818px;font-size:12px;line-height:1.5;color:var(--muted);}
+  .foot{left:68px;top:840px;font-size:12px;line-height:1.5;color:var(--muted);}
+
+  .bar{left:0;top:940px;width:1440px;height:60px;background:var(--canvas);border-top:1px solid var(--hairline);display:flex;align-items:center;justify-content:space-between;padding:0 80px;}
+  .bar .left{display:flex;align-items:baseline;gap:24px;}
+  .bar .nm{font-size:17px;font-weight:600;}
+  .bar .pr{font-size:17px;font-weight:400;color:var(--muted);}
+  .pill{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 26px;font-size:17px;font-weight:400;color:var(--onAction);}
+
+  svg{display:block;}
+  [data-cc]{position:relative;isolation:isolate}
+  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+</style>
+</head>
+<body>
+<div class="unit" id="page">
+
+  <div class="t hdr pad">
+    <span class="wm serif">Highland</span>
+    <span class="series">The Trench Series</span>
+    <span class="serieszh zh">风衣系列</span>
+  </div>
+  <div class="t rule"></div>
+
+  <h1 class="t claim pad serif">Three coats, three kinds of British rain.</h1>
+  <p class="t claimzh pad zh">三件风衣，三种英国的雨</p>
+  <p class="t lead pad">Choose the weather you walk in, and the coat follows.</p>
+
+  <p class="t choicelbl pad">Choose your weather</p>
+  <div class="t chips pad">
+    <span class="chip" data-cc="22" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">Drizzle</span>
+    <span class="chip on" data-cc="22" data-cc-fill="#ffffff" data-cc-stroke="#1936c8" data-cc-stroke-width="2">Steady rain</span>
+    <span class="chip" data-cc="22" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">Driving rain</span>
+  </div>
+
+  <div class="t band"></div>
+
+  <div class="t cards">
+    <div class="card" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
+      <div class="coat"><svg viewBox="0 0 320 360" aria-hidden="true">
+        <ellipse cx="160" cy="300" rx="94" ry="7" fill="#202124" opacity=".07"/>
+        <path d="M110 34 C 96 34 88 40 82 52 L 54 196 L 78 202 L 98 118 L 86 286 L 234 286 L 222 118 L 242 202 L 266 196 L 238 52 C 232 40 224 34 210 34 Z" fill="#f7f4ed" stroke="#626269" stroke-opacity=".72" stroke-width="1.4" stroke-linejoin="round"/>
+        <path d="M110 34 L 160 84 L 210 34" fill="none" stroke="#626269" stroke-opacity=".72" stroke-width="1.4"/>
+        <path d="M110 34 L 160 84 L 136 98 L 116 60 Z" fill="#d2d2d7" fill-opacity=".7"/>
+        <path d="M210 34 L 160 84 L 184 98 L 204 60 Z" fill="#d2d2d7" fill-opacity=".7"/>
+        <path d="M210 34 L 160 84 L 160 128 L 196 96 Z" fill="#d2d2d7" fill-opacity=".38" stroke="#626269" stroke-opacity=".4" stroke-width=".8"/>
+        <path d="M160 84 V 286" stroke="#d2d2d7" stroke-width="1.2"/>
+        <path d="M86 182 H 234 V 198 H 86 Z" fill="#d2d2d7" fill-opacity=".8"/>
+        <path d="M148 182 H 172 V 198 H 148 Z" fill="#626269" fill-opacity=".68"/>
+        <g fill="#626269" fill-opacity=".68"><circle cx="168" cy="118" r="3"/><circle cx="168" cy="146" r="3"/><circle cx="168" cy="226" r="3"/></g>
+      </svg></div>
+      <div class="nm">The Kestrel</div>
+      <div class="desc">For a short shower</div>
+      <div class="price">£890</div>
+      <a class="buy" href="#">Buy</a>
+    </div>
+
+    <div class="card" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#1936c8" data-cc-stroke-width="2">
+      <div class="coat"><svg viewBox="0 0 320 360" aria-hidden="true">
+        <ellipse cx="160" cy="320" rx="94" ry="7" fill="#202124" opacity=".07"/>
+        <path d="M110 34 C 96 34 88 40 82 52 L 54 196 L 78 202 L 98 118 L 86 306 L 234 306 L 222 118 L 242 202 L 266 196 L 238 52 C 232 40 224 34 210 34 Z" fill="#f7f4ed" stroke="#626269" stroke-opacity=".72" stroke-width="1.4" stroke-linejoin="round"/>
+        <path d="M110 34 L 160 84 L 210 34" fill="none" stroke="#626269" stroke-opacity=".72" stroke-width="1.4"/>
+        <path d="M110 34 L 160 84 L 136 98 L 116 60 Z" fill="#d2d2d7" fill-opacity=".7"/>
+        <path d="M210 34 L 160 84 L 184 98 L 204 60 Z" fill="#d2d2d7" fill-opacity=".7"/>
+        <path d="M210 34 L 160 84 L 160 128 L 196 96 Z" fill="#d2d2d7" fill-opacity=".38" stroke="#626269" stroke-opacity=".4" stroke-width=".8"/>
+        <path d="M160 84 V 306" stroke="#d2d2d7" stroke-width="1.2"/>
+        <path d="M86 182 H 234 V 198 H 86 Z" fill="#d2d2d7" fill-opacity=".8"/>
+        <path d="M148 182 H 172 V 198 H 148 Z" fill="#626269" fill-opacity=".68"/>
+        <g fill="#626269" fill-opacity=".68"><circle cx="168" cy="118" r="3"/><circle cx="168" cy="146" r="3"/><circle cx="168" cy="238" r="3"/></g>
+      </svg></div>
+      <div class="nm">The Glen</div>
+      <div class="desc">For a full day of rain</div>
+      <div class="price">£1,140</div>
+      <a class="buy" href="#">Buy</a>
+    </div>
+
+    <div class="card" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
+      <div class="coat"><svg viewBox="0 0 320 360" aria-hidden="true">
+        <ellipse cx="160" cy="340" rx="94" ry="7" fill="#202124" opacity=".07"/>
+        <path d="M110 34 C 96 34 88 40 82 52 L 54 196 L 78 202 L 98 118 L 86 326 L 234 326 L 222 118 L 242 202 L 266 196 L 238 52 C 232 40 224 34 210 34 Z" fill="#f7f4ed" stroke="#626269" stroke-opacity=".72" stroke-width="1.4" stroke-linejoin="round"/>
+        <path d="M110 34 L 160 84 L 210 34" fill="none" stroke="#626269" stroke-opacity=".72" stroke-width="1.4"/>
+        <path d="M110 34 L 160 84 L 136 98 L 116 60 Z" fill="#d2d2d7" fill-opacity=".7"/>
+        <path d="M210 34 L 160 84 L 184 98 L 204 60 Z" fill="#d2d2d7" fill-opacity=".7"/>
+        <path d="M210 34 L 160 84 L 160 128 L 196 96 Z" fill="#d2d2d7" fill-opacity=".38" stroke="#626269" stroke-opacity=".4" stroke-width=".8"/>
+        <path d="M160 84 V 326" stroke="#d2d2d7" stroke-width="1.2"/>
+        <path d="M86 182 H 234 V 198 H 86 Z" fill="#d2d2d7" fill-opacity=".8"/>
+        <path d="M148 182 H 172 V 198 H 148 Z" fill="#626269" fill-opacity=".68"/>
+        <g fill="#626269" fill-opacity=".68"><circle cx="168" cy="118" r="3"/><circle cx="168" cy="146" r="3"/><circle cx="168" cy="250" r="3"/></g>
+      </svg></div>
+      <div class="nm">The Moor</div>
+      <div class="desc">For an Atlantic front</div>
+      <div class="price">£1,460</div>
+      <a class="buy" href="#">Buy</a>
+    </div>
+  </div>
+
+  <div class="t cap pad">Illustrative render, not a photograph</div>
+  <div class="t foot pad">Illustrative example</div>
+
+  <div class="t bar">
+    <div class="left"><span class="nm">The Glen</span><span class="pr">£1,140</span></div>
+    <span class="pill" data-cc="22" data-cc-fill="#1936c8">Add to bag</span>
+  </div>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

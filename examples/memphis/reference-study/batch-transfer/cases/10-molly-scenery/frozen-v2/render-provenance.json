@@ -1,9 +1,0 @@
-{
-  "renderer": "Independent Chrome/Playwright render of frozen poster.svg",
-  "svg_sha256": "f3638e660e64cb3a77ffb0d8c28410bb1756e5b5b23b0062e6d1606e0dd7a225",
-  "render_sha256": "5ea0f9f6efa7286419c5c5d17570e832a80b9256f3a3677bdb691cdfc2110d02",
-  "maker_preview": {
-    "path": "maker-poster.png",
-    "sha256": "ae60d434ba52ffac6ef3be8a509cc9be6e7c7c7af9c38f08686f5144b4a25fa4"
-  }
-}

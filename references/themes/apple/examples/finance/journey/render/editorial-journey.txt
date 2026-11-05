@@ -1,0 +1,64 @@
+Ledger
+
+What leaves the card
+is not what reaches the shop.
+
+离开卡的钱，不等于到店的钱
+
+Card charged
+
+¥392.00
+
+14:02
+
+Authorised
+
+¥392.00
+
+14:02
+
+Shop balance
+
+¥386.02
+
+credited 14:03
+
+Shop's bank
+
+¥386.02
+
+09:00 next day
+
+Ledger fee
+
+−¥5.98
+
+1.45% + ¥0.30
+
+The fee leaves before the balance is credited, so the shop is never owed the full ¥392.00.
+
+Illustrative render, not a photograph
+
+A sale is not one movement of money. It is four balances in sequence.
+
+一笔钱不是一次移动，而是四个余额依次出现
+
+At 14:02 the card is charged ¥392.00, and in the same second Ledger authorises it. The amount is already two amounts: ¥5.98 is the fee, and ¥386.02 is what the shop has earned.
+
+That balance is not a bank account. It is a number Ledger keeps, and it moves to the bank once a day, on the next working day.
+
+Every figure in the diagram is one sale, not an average, so the parts have to add back to the charge: ¥392.00 minus ¥5.98 is ¥386.02.
+
+The same sale, three ways
+
+Charged to the card
+¥392.00
+Taken as the fee
+−¥5.98
+Reached the shop
+¥386.02
+
+Source: one illustrative sale on a Shop rate, 1.45% + ¥0.30, rounded to the nearest fen. No average and no other sale is included.
+
+Ledger, money note 07 · 2026
+Illustrative example

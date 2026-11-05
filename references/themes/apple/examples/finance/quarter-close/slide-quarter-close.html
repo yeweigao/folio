@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1600">
+<title>Ledger quarter close — keynote</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;family=Noto+Sans+SC:wght@300;400&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#ffffff; --panel:#f8f5ef; --dark:#172b4d;
+    --ink:#172b4d; --muted:#5c6574; --action:#5140c9;
+    --onAction:#ffffff; --onDark:#ffffff; --hairline:#d2d2d7;
+    --sans:"Inter","Noto Sans SC",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#e8e8ea}
+  body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}
+  .unit{position:relative;width:1600px;height:900px;overflow:hidden;background:var(--canvas)}
+  .zh{font-family:"Noto Sans SC",var(--sans)}
+  .num{font-variant-numeric:tabular-nums}
+  .t{position:absolute}
+  [data-cc]{position:relative;isolation:isolate}
+  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+
+  .brand{left:88px;top:56px;font-size:21px;font-weight:600;letter-spacing:-.2px}
+  .kicker{right:88px;top:60px;font-size:14px;line-height:1.4;color:var(--muted);text-align:right}
+
+  .title{left:88px;top:130px;width:660px;font-size:58px;font-weight:300;line-height:1.08;letter-spacing:-1.6px}
+  .title .hl{color:var(--action)}
+  .zhline{left:88px;top:290px;font-size:24px;line-height:1.5;color:var(--muted)}
+  .lead{left:88px;top:352px;width:600px;font-size:21px;line-height:1.6;color:var(--muted)}
+  .units{left:88px;top:494px;font-size:17px;line-height:1.5}
+  .charge{left:88px;top:526px;font-size:17px;line-height:1.5;color:var(--muted)}
+  .note{left:88px;top:582px;width:600px;font-size:17px;line-height:1.6;color:var(--muted)}
+  .note2{left:88px;top:684px;width:600px;font-size:17px;line-height:1.6;color:var(--muted)}
+
+  .statement{left:820px;top:120px;width:692px;height:620px;padding:44px;
+             display:flex;flex-direction:column;justify-content:space-between}
+  .sh{display:flex;justify-content:space-between;font-size:14px;color:rgba(255,255,255,.62)}
+  .st{color:var(--onDark)}
+  .rule{height:1px;background:rgba(255,255,255,.18)}
+  .rows{margin-top:6px}
+  .r{display:flex;justify-content:space-between;align-items:baseline;height:96px;
+     border-bottom:1px solid rgba(255,255,255,.14);font-size:17px;color:rgba(255,255,255,.72)}
+  .r b{font-weight:400;font-size:30px;letter-spacing:-.6px;color:var(--onDark)}
+  .tot{display:flex;justify-content:space-between;align-items:baseline;height:128px;font-size:17px;color:rgba(255,255,255,.72)}
+  .tot b{font-weight:400;font-size:46px;letter-spacing:-1.2px;color:var(--onDark)}
+  .sf{display:flex;justify-content:space-between;font-size:14px;color:rgba(255,255,255,.62)}
+
+  .cap{left:820px;top:758px;font-size:12px;line-height:1.5;color:var(--muted)}
+  .src{left:88px;top:824px;width:900px;font-size:12px;line-height:1.5;color:var(--muted)}
+  .ill{right:88px;top:824px;font-size:12px;line-height:1.5;color:var(--muted);text-align:right}
+</style>
+</head>
+<body>
+<div class="unit" id="slide">
+
+  <p class="t brand">Ledger</p>
+  <p class="t kicker num">Quarter close, Q3 2026</p>
+
+  <h1 class="t title"><span class="hl num">¥16,660</span> of the quarter never reached the shop.</h1>
+  <p class="t zhline zh num">这个季度有 ¥16,660 没有到店</p>
+  <p class="t lead">Gross takings less refunds and fees is what was paid out. The statement holds the whole of that arithmetic, line by line, in one column.</p>
+
+  <p class="t units num">CNY, 1 July – 30 September 2026</p>
+  <p class="t charge num">1,250 charges at ¥392</p>
+  <p class="t note">The ¥16,660 is the two deductions added: ¥9,180 in refunds and ¥7,480 in fees. Fees are 1.45% of gross plus ¥0.30 a charge.</p>
+  <p class="t note2">A refunded sale returns the customer's money, not the fee that was taken when it was charged.</p>
+
+  <div class="t statement" data-cc="18" data-cc-fill="#172b4d">
+    <div>
+      <div class="sh"><span>Settlement statement</span><span class="num">Q3 2026</span></div>
+      <div class="rule" style="margin-top:22px"></div>
+      <div class="rows">
+        <div class="r"><span>Gross takings</span><b class="num">¥490,000</b></div>
+        <div class="r"><span>Refunds</span><b class="num">−¥9,180</b></div>
+        <div class="r"><span>Ledger fees</span><b class="num">−¥7,480</b></div>
+      </div>
+      <div class="rule" style="margin-top:26px"></div>
+      <div class="tot"><span>Paid to the shop</span><b class="num">¥473,340</b></div>
+    </div>
+    <div class="sf"><span class="num">1,250 charges, 1.45% + ¥0.30</span><span class="num">Paid 2 October 2026</span></div>
+  </div>
+
+  <p class="t cap">Illustrative render, not a photograph</p>
+  <p class="t src">Source: Ledger settlement statement, illustrative shop, 1 July – 30 September 2026. Figures cover 1,250 charges.</p>
+  <p class="t ill">Illustrative example</p>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

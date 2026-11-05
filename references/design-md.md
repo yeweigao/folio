@@ -18,14 +18,14 @@ Read the draft as a maker who cannot see the images: which missing decision coul
 
 - **A world, not a piece.** A brand, a series, or a kind of content: the scope its content shares. What every piece keeps and what each piece brings are both stated; no fact of any piece appears, not even as an example.
 - **It stands alone.** With this file and their content, a maker without Folio can make the piece: the method, how a new subject yields its idea, how the method translates to content it was not made for, and the forms any content needs. A master's method has no unsuitable content.
-- **Three layers, one voice.** The Philosophy, the theme and the dialect are written merged, never side by side. A rule the dialect overturns is written only in the dialect's form; what it does not name is written from the theme as this world's values, since the file stands alone; what it says Swiss keeps stays. The Philosophy is never quoted and never bent: each line is answered by a rule in this world's terms.
+- **Three layers, one voice.** The Philosophy, the theme and the dialect are written merged, never side by side. A rule the dialect overturns is written only in the dialect's form; what it does not name is written from the theme as this world's values, since the file stands alone; what the chosen theme says its dialect keeps stays. Where a theme combines an industry dialect, a surface and a method, resolve their precedence there and write the resulting rules as one voice. The Philosophy is never quoted and never bent: each line is answered by a rule in this world's terms.
 - **Relative to the format, never one size.** Every size derives from S, the format's short side, and every construction from W × H, so the same file builds a poster, a slide, a phone cover or a page. A size set by a span is derived, never also fixed: one rule per size.
 - **Three tests per line.** Would a maker get it wrong without it? Is it the rule, not one result of it (a ratio, not 336)? Does it say what no other line says? A line that fails one goes; a skeleton of rules, not instances, has nothing to contradict.
 - **No rule against itself.** Every rule holds for Latin and Chinese, for one language or two, for every form; a translation in World is never banned in Forms. Where two rules meet, the file says which wins.
 - **Method before look.** The invocation opens it: school, hand, the work that carries the method, the method as an imperative, one ban. Then the method as process: the first move, the tools and materials, the procedure, and how each piece finds its own idea in its subject. Values read first teach a look.
 - **Images decided once.** Source, treatment and credit; how each image role meets the frame (full bleed, trim-connected panel or inset), what must survive the crop, and how proportions are preserved.
 - **Layout as construction, not coordinates.** The grid system named, with the rule that derives it from any format.
-- **Forms, one line each.** How each form this world uses is set, and its ban.
+- **Forms, one line each.** How each form this world uses is set, and its ban. For a text-heavy world, specify paragraph measure and continuation, how genuine peers share columns, and how table/data rules differ from graphic framing; test these with new text rather than infer them from a cover.
 - **Tokens derived, not inherited.** From the hand and the world, at the end as data. A role only if used, every role used. Every text-on-ground pair is listed under `pairs`, so contrast can be checked.
 - **Written as commands.** After the lock, helpers read this file instead of the theme.
 - **The file changes before work made from it.** A new or changed file is read by the skeleton reader ([review](review.md#skeleton-reader)) before its first new piece. Reference reconstruction precedes extraction as described above.
@@ -50,10 +50,10 @@ Anti-reference: <the default a maker reaches for with no school, which this worl
 
 ## Layout
 Grid system: <one system from the theme's roster> — <why>.
-<The construction from W × H: module, margins, tracks, pattern frequency and adjoining fields. Name the stable relationships and the free positions; state the conditions for each format or field change and where unused space goes. Resolve gaps between actual type/image ink relative to type or module; text-box clearance alone is not the measure.>
+<The construction from W × H: module, margins, tracks, pattern frequency and adjoining fields. Name the stable relationships and the free positions; state the conditions for each format or field change and where unused space goes. Resolve gaps between actual type/image ink relative to type or module; text-box clearance alone is not the measure. For recurring groups, name the shared alignment, spacing or motif, and how size or density changes with importance or content length. Genuine peers retain shared measures; add no element solely to produce a beat.>
 
 ## Typography
-<Assign a face and real weight to each role, with licensed sources or supplied files and the glyph coverage needed for new content. Give the size/weight ramp at S = 1000 or a span-derived rule, the smallest reading size, CJK/Latin relationship and figures. Where display leads, state its scale and weight in the field. Recompose long titles within the hierarchy.>
+<Assign a face and real weight to each role, with licensed sources or supplied files and the glyph coverage needed for new content. Give the size/weight ramp at S = 1000 or a span-derived rule, the smallest reading size, CJK/Latin relationship and figures. Name what visibly separates the levels; where scale leads, state the role-to-role size ratios. Where display leads, state its scale and weight in the field. Recompose long titles within the hierarchy.>
 
 ## Colors
 <Each role: what it marks, the grounds it touches, where it never appears.>
@@ -65,7 +65,7 @@ Grid system: <one system from the theme's roster> — <why>.
 <The forms any content brings (cover, statement, exhibit, argument and data, sequence, comparison, collection, reference, close), each as this hand sets it, or refused; its ban.>
 
 ## Variations
-<The breaks this world allows at a turn, each with magnitude and keep condition.>
+<The breaks this world allows at a turn, each with magnitude and keep condition. These depart from the grammar; ordinary within-unit cadence belongs in Layout.>
 
 ## Do's and Don'ts
 <Look before delivering: what the render must not show that the test does not already catch. The floors. The school's test, as proof; its caricature, the school's look without its method. Each said once, and once only across the file.>

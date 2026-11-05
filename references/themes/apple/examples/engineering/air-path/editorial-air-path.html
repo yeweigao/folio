@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200">
+<title>Aero — one length of air</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#f7f7f5; --panel:#ffffff; --dark:#25272a;
+    --ink:#25272a; --muted:#62666b; --action:#6525a0;
+    --onAction:#ffffff; --onDark:#ffffff; --hairline:#d2d2d7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#e4e4e0}
+  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
+  .unit{position:relative;width:1200px;height:1600px;overflow:hidden;background:var(--canvas)}
+  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
+  [data-cc]{position:relative;isolation:isolate}
+  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+  .t{position:absolute}
+  svg{display:block}
+
+  .brand{left:100px;top:42px;display:flex;align-items:baseline;gap:14px}
+  .brand .nm{font-size:14px;font-weight:600}
+  .brand .k{font-size:12px;font-weight:400;color:var(--muted)}
+
+  .claim{left:100px;top:84px;width:1000px;font-size:48px;font-weight:600;line-height:1.1;letter-spacing:-1.5px}
+  .zhline{left:100px;top:208px;width:900px;font-size:24px;font-weight:400;line-height:1.5}
+
+  .vista{position:absolute;left:0;top:0;width:1200px;height:820px;background:var(--panel)}
+  .cut{position:absolute;left:0;top:820px;width:1200px;height:1px;background:var(--hairline)}
+
+  .cap{left:100px;top:736px;width:900px;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
+
+  .col{left:100px;top:880px;width:620px}
+  .lead{font-size:28px;font-weight:400;line-height:1.4;letter-spacing:-.4px}
+  .leadzh{margin-top:14px;font-size:22px;font-weight:400;line-height:1.6;color:var(--muted)}
+  .body{margin-top:34px;font-size:17px;font-weight:400;line-height:1.7}
+
+  .foot{left:100px;top:1500px;width:1000px;display:flex;justify-content:space-between;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="unit" id="page">
+
+  <div class="vista"></div>
+
+  <div class="t brand"><span class="nm">Aero</span><span class="k">Airflow note</span></div>
+
+  <h1 class="t claim">The air's route is fixed.<br>Its pressure is lost in one place.</h1>
+  <p class="t zhline zh">风只走一条路，压力只在一个地方下降</p>
+
+  <svg width="1000" height="432" viewBox="0 0 1000 432" aria-hidden="true" style="position:absolute;left:100px;top:280px">
+    <!-- station names, on the same five positions as the curve below -->
+    <g font-family="Inter, sans-serif" font-size="14" fill="#62666b">
+      <text x="120" y="18">Inlet</text>
+      <text x="340" y="18" fill="#6525a0" font-weight="600">Filter</text>
+      <text x="560" y="18">Impeller</text>
+      <text x="760" y="18">Diffuser</text>
+      <text x="940" y="18">Outlet</text>
+    </g>
+
+    <!-- the route: one line, five nodes, one node filled -->
+    <line x1="80" y1="62" x2="980" y2="62" stroke="#25272a" stroke-width="1.5"/>
+    <g fill="#f7f7f5" stroke="#25272a" stroke-width="1.5">
+      <circle cx="120" cy="62" r="6"/>
+      <circle cx="560" cy="62" r="6"/>
+      <circle cx="760" cy="62" r="6"/>
+      <circle cx="940" cy="62" r="6"/>
+    </g>
+    <circle cx="340" cy="62" r="7" fill="#6525a0"/>
+
+    <!-- guides: one station, two registers -->
+    <g stroke="#d2d2d7" stroke-width="1" stroke-dasharray="2 6">
+      <line x1="120" y1="74" x2="120" y2="400"/>
+      <line x1="340" y1="74" x2="340" y2="400"/>
+      <line x1="560" y1="74" x2="560" y2="400"/>
+      <line x1="760" y1="74" x2="760" y2="400"/>
+      <line x1="940" y1="74" x2="940" y2="400"/>
+    </g>
+
+    <!-- pressure levels -->
+    <line x1="84" y1="144" x2="980" y2="144" stroke="#d2d2d7" stroke-width="1" stroke-dasharray="4 6"/>
+    <line x1="84" y1="270" x2="980" y2="270" stroke="#d2d2d7" stroke-width="1"/>
+    <line x1="84" y1="396" x2="980" y2="396" stroke="#d2d2d7" stroke-width="1" stroke-dasharray="4 6"/>
+
+    <g font-family="Inter, sans-serif" font-size="13" fill="#62666b" text-anchor="end">
+      <text x="64" y="148">+38 Pa</text>
+      <text x="64" y="274">0 Pa</text>
+      <text x="64" y="400">−38 Pa</text>
+    </g>
+
+    <!-- static pressure along the route -->
+    <polyline points="120,270 340,396 560,396 560,144 760,144 940,270"
+              fill="none" stroke="#25272a" stroke-width="2" stroke-linejoin="miter"/>
+    <circle cx="340" cy="396" r="5.5" fill="#6525a0"/>
+    <circle cx="560" cy="144" r="5" fill="#25272a"/>
+  </svg>
+
+  <p class="t cap">Static pressure along the route, measured from the bell mouth to the grille, one run.<br>Illustrative render, not a photograph</p>
+
+  <div class="cut"></div>
+
+  <div class="t col">
+    <p class="lead">A filter is the only part of Aero<br>that removes something.</p>
+    <p class="leadzh zh">滤网是 Aero 唯一取走东西的部件</p>
+
+    <p class="body">Air enters at the bell mouth and leaves at the grille without being turned aside. Between those two points the path is fixed: one throat, one rotor, one diffuser, one nozzle. Nothing branches, and nothing is stored.</p>
+
+    <p class="body">At the filter the static pressure falls by 38 Pa and does not come back on its own. The rotor has to pay for it: 76 Pa across the blade disc, at 2,100 rpm. Everything the fan does downstream is the recovery of that one debt.</p>
+
+    <p class="body">The outlet figure is what remains after the debt is settled. 420 L/s leaves the grille because the machine has already spent the pressure it took to clean the air.</p>
+  </div>
+
+  <div class="t foot"><span>Illustrative example</span><span>Aero airflow note, 2026</span></div>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

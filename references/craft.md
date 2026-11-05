@@ -21,7 +21,7 @@ Technique shared by every school. The theme sets relationships, the surface sets
 
 - **Three roles carry the reading:** display, body, label. Add a level only for a real navigation task.
 - **When type leads, start at graphic scale.**
-- **One hierarchy per deliverable.** Weight leads, scale leads, or one weight. Declare size and weight together.
+- **One hierarchy per deliverable.** Declare size and weight together, and which contrast establishes each level: scale, weight or placement. When scale leads, use visibly distinct size ratios; tiny increments count as one level. Close sizes need another clear distinction, or the levels merge.
 - **Weight is judged by eye.** One family's 700 is not another's; small text needs stroke, not bold.
 - **Measure follows the reader.**
 

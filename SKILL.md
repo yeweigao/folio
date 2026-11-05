@@ -25,9 +25,9 @@ The author's eye. It outranks every other file, and every judgment of the work n
 - **Layout serves the content, not the other way round.** Recompose first, then edit or paginate within scope; never hide content or shrink type to make it fit.
 - **Measure is shared, not improvised.** Columns, spacing, baselines, and proportions belong to one system, fitted to the surface.
 - **Space is placed, not left over.** Judge it by its job (group, separate, focus), not its amount; fix accidental gaps with scale or placement, never filler.
-- **Hierarchy is steps, not slopes.** Few faces, few levels, wide gaps, one treatment per role.
+- **Hierarchy is steps, not slopes.** Few faces, few levels, wide gaps, one treatment per role. Differences used to establish rank must be clear at the intended viewing size; merge levels that still look alike.
 - **Color is a role, not a decoration.** Hue carries meaning; every foreground stays distinct from the ground it actually touches.
-- **A deliverable has rhythm, not monotony.** Dense, quiet, and loud units follow the content; repeat to orient, break to signal a change.
+- **A deliverable has rhythm, within and between units.** Recurring groups share a recognizable arrangement; changes in size, spacing or density mark importance, a change of subject or a pause. Dense, quiet and loud units follow the content. Genuine peers may stay regular.
 - **Information is encoded, not decorated.** Data takes a readable form; decoration never poses as evidence; meaning never depends on color alone.
 - **An image is information, not filler.** Evidence, explanation, setting, or atmosphere; illustration never poses as documentary proof.
 - **Style is a constraint system, not an element set.** Strip away colors and fonts, and the piece is still recognizable.
@@ -39,7 +39,7 @@ Goals, not steps: the route is yours, the map is here. Your memory of a name bri
 
 | When | Open |
 |---|---|
-| Before the first mark | The theme (below), and the dialect and hand it leads you to; the surface: [slides](references/surfaces/slides.md) · [poster](references/surfaces/poster.md) · [web](references/surfaces/web.md) · [canvas](references/surfaces/canvas.md) · [handbook](references/surfaces/handbook.md) |
+| Before the first mark | The chosen theme (below), its governing hand and applicable dialects or methods; the delivery surface: [slides](references/surfaces/slides.md) · [poster](references/surfaces/poster.md) · [web](references/surfaces/web.md) · [canvas](references/surfaces/canvas.md) · [handbook](references/surfaces/handbook.md) |
 | Writing the brief or the skeleton | [design-md](references/design-md.md) |
 | Reconstructing supplied work or extracting its world | [design-md](references/design-md.md), From supplied work; inspect the selected reference before deriving its rules |
 | Choosing type, color, copy, data or imagery | [craft](references/craft.md) |
@@ -54,4 +54,9 @@ Goals, not steps: the route is yours, the map is here. Your memory of a name bri
 
 The Philosophy is the eye, the theme the grammar, a dialect the rules it overturns, the hand the way of working, the subject the idea. Nothing overrides the eye: a dialect changes how a lead, an axis or a space is made, never that the unit has one. A theme is a folder under `references/themes/` holding its hands, grammar, methods, dialects and caricature.
 
-- [Swiss](references/themes/swiss/theme.md): the International Typographic Style, and nine movements spoken in it.
+Choose the theme from the user's named direction or selected reference first. When no direction is named, choose a theme suited to the subject and reader; do not treat an Apple device, an apple as subject, or a Keynote file alone as a request for Apple's marketing style. A selected reference for reconstruction governs the direction.
+
+- [Swiss](references/themes/swiss/theme.md): the International Typographic Style and nine movements; for typographic, editorial and information-led work.
+- [Apple](references/themes/apple/theme.md): Apple's public marketing and launch language; for product, feature and launch work led by the object or its evidence. This is not Apple's official product-interface guidance.
+
+For Apple, read its theme, the chosen industry dialect if any, the applicable Keynote, Store or Editorial file, and Bento when the content calls for its feature grid. These are separate choices: the theme defines their precedence. Also read the matching delivery surface in Routes; the Apple surface file does not replace it.

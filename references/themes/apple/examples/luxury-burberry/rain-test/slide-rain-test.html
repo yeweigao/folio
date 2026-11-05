@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1600">
+<title>Highland — The Highland Rain Test</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@300;400;600&amp;family=Noto+Sans+SC:wght@300;400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#ffffff; --panel:#f7f4ed; --dark:#202124; --ink:#202124;
+    --muted:#626269; --action:#1936c8; --onAction:#ffffff; --onDark:#ffffff;
+    --hairline:#d2d2d7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{background:#dedee2;}
+  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink);}
+  .unit{position:relative;width:1600px;height:900px;overflow:hidden;background:var(--canvas);}
+  .serif{font-family:"Cormorant Garamond","Noto Serif SC",serif;}
+  .zh{font-family:"Noto Serif SC","Noto Sans SC",serif;}
+  .zhbody{font-family:"Noto Sans SC","Inter",sans-serif;}
+  .t{position:absolute;}
+  .pad{padding:12px;}
+
+  .brand{left:76px;top:52px;}
+  .brand .wm{font-size:34px;font-weight:400;letter-spacing:.4px;line-height:1;}
+  .brand .sub{margin-top:10px;font-size:14px;line-height:1.4;color:var(--muted);}
+  .brand .zhline{margin-top:2px;font-size:14px;line-height:1.4;color:var(--muted);}
+
+  .claim{left:76px;top:146px;width:724px;font-size:80px;font-weight:400;line-height:1.05;letter-spacing:-1px;}
+  .claim .zhsub{display:block;margin-top:26px;font-size:26px;font-weight:400;line-height:1.5;letter-spacing:0;color:var(--muted);}
+
+  .figure{left:76px;top:392px;width:664px;}
+  .figure .num{font-family:"Cormorant Garamond","Noto Serif SC",serif;font-size:138px;font-weight:400;line-height:.98;letter-spacing:-2px;color:var(--action);}
+  .figure .numlbl{margin-top:18px;font-size:19px;font-weight:600;line-height:1.3;}
+  .figure .numctx{margin-top:10px;width:540px;font-size:17px;font-weight:400;line-height:1.47;color:var(--muted);}
+
+  .log{left:76px;top:624px;width:664px;border-top:1px solid var(--hairline);padding-top:16px;}
+  .log .date{font-size:14px;font-weight:400;color:var(--muted);}
+  .log .grid{margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:10px 40px;}
+  .log .cell{display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid var(--hairline);padding:5px 0 6px;}
+  .log .k{font-size:14px;font-weight:400;color:var(--muted);}
+  .log .v{font-size:17px;font-weight:400;font-variant-numeric:tabular-nums;}
+  .log .src{margin-top:10px;font-size:14px;font-weight:400;color:var(--muted);}
+
+  .actionwrap{left:76px;top:790px;}
+  .pill{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 26px;font-size:17px;font-weight:400;color:var(--onAction);}
+
+  .foot{left:76px;top:858px;font-size:12px;line-height:1.5;color:var(--muted);}
+
+  .ptitle{left:844px;top:78px;width:700px;font-family:"Cormorant Garamond","Noto Serif SC",serif;font-size:30px;font-weight:400;color:var(--onDark);}
+  .lbl{font-size:15px;font-weight:400;color:var(--onDark);}
+  .lbl1{left:928px;top:366px;}
+  .lbl2{left:928px;top:422px;}
+  .lbl3{left:928px;top:478px;}
+  .pnote{left:928px;top:544px;width:560px;font-size:14px;line-height:1.5;color:#c9c9cf;}
+  .pcaption{left:844px;top:838px;width:700px;font-size:12px;line-height:1.5;color:#9a9aa1;}
+  svg{display:block;}
+  [data-cc]{position:relative;isolation:isolate}
+  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+</style>
+</head>
+<body>
+<div class="unit" id="slide">
+
+  <!-- Proof field: a dark polarity field on the right, and a drawn cloth
+       section. Every drawn object is an illustrative stand-in, declared in
+       the caption; nothing here is a photograph or a real material sample. -->
+  <svg width="1600" height="900" viewBox="0 0 1600 900" aria-hidden="true" style="position:absolute;left:0;top:0">
+    <defs>
+      <pattern id="weave1" width="8" height="6" patternUnits="userSpaceOnUse">
+        <path d="M0 3 H8" stroke="#ffffff" stroke-width=".6" opacity=".14"/>
+      </pattern>
+      <pattern id="weave2" width="6" height="6" patternUnits="userSpaceOnUse">
+        <path d="M0 3 H6 M3 0 V6" stroke="#ffffff" stroke-width=".6" opacity=".12"/>
+      </pattern>
+      <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse">
+        <path d="M0 8 L8 0" stroke="#ffffff" stroke-width=".8" opacity=".22"/>
+      </pattern>
+    </defs>
+
+    <rect x="800" y="0" width="800" height="900" fill="#202124"/>
+
+    <!-- a small trench coat, drawn as a line stand-in, with a leader to the section -->
+    <g stroke="#ffffff" stroke-width="1.5" fill="none" opacity=".72" stroke-linejoin="round">
+      <path d="M 918 128 C 906 128 898 134 892 146 L 872 232 L 892 238 L 906 182 L 898 262 L 1042 262 L 1034 182 L 1048 238 L 1068 232 L 1048 146 C 1042 134 1034 128 1022 128 Z"/>
+      <path d="M 918 128 L 970 168 L 1022 128"/>
+      <path d="M 900 200 L 1040 200"/>
+      <path d="M 970 168 L 970 262"/>
+    </g>
+    <g fill="#ffffff" opacity=".6">
+      <circle cx="982" cy="210" r="2.4"/><circle cx="982" cy="230" r="2.4"/><circle cx="982" cy="250" r="2.4"/>
+    </g>
+    <path d="M 1000 262 L 1000 320 L 952 348" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="3 5" opacity=".4"/>
+
+    <!-- rain pressure: fine vertical strokes ending in arrow heads, above the cloth -->
+    <g stroke="#ffffff" stroke-width="1" opacity=".28">
+      <path d="M 968 292 V 344"/><path d="M 1008 292 V 344"/><path d="M 1048 292 V 344"/>
+      <path d="M 1088 292 V 344"/><path d="M 1128 292 V 344"/><path d="M 1168 292 V 344"/>
+      <path d="M 1208 292 V 344"/><path d="M 1248 292 V 344"/><path d="M 1288 292 V 344"/>
+      <path d="M 1328 292 V 344"/><path d="M 1368 292 V 344"/><path d="M 1408 292 V 344"/>
+    </g>
+    <g fill="#ffffff" opacity=".38">
+      <path d="M 962 344 l 6 9 l 6 -9 Z"/><path d="M 1002 344 l 6 9 l 6 -9 Z"/>
+      <path d="M 1042 344 l 6 9 l 6 -9 Z"/><path d="M 1082 344 l 6 9 l 6 -9 Z"/>
+      <path d="M 1122 344 l 6 9 l 6 -9 Z"/><path d="M 1162 344 l 6 9 l 6 -9 Z"/>
+      <path d="M 1202 344 l 6 9 l 6 -9 Z"/><path d="M 1242 344 l 6 9 l 6 -9 Z"/>
+      <path d="M 1282 344 l 6 9 l 6 -9 Z"/><path d="M 1322 344 l 6 9 l 6 -9 Z"/>
+      <path d="M 1362 344 l 6 9 l 6 -9 Z"/><path d="M 1402 344 l 6 9 l 6 -9 Z"/>
+    </g>
+
+    <!-- the cloth, cut open: three contiguous layers with a hatched cut face -->
+    <rect x="940" y="360" width="540" height="160" fill="#45454c"/>
+    <rect x="940" y="360" width="540" height="56" fill="#4c4c54"/>
+    <rect x="940" y="416" width="540" height="44" fill="#5b5b65"/>
+    <rect x="940" y="460" width="540" height="60" fill="#38383e"/>
+    <rect x="940" y="360" width="540" height="56" fill="url(#weave1)"/>
+    <rect x="940" y="416" width="540" height="44" fill="url(#weave2)"/>
+    <rect x="940" y="460" width="540" height="60" fill="url(#weave1)"/>
+    <rect x="940" y="360" width="16" height="160" fill="url(#hatch)"/>
+    <path d="M 940 416 H 1480" stroke="#ffffff" stroke-width="1" opacity=".3"/>
+    <path d="M 940 460 H 1480" stroke="#ffffff" stroke-width="1" opacity=".3"/>
+    <!-- the decisive boundary: the one house-blue highlight in the diagram -->
+    <path d="M 940 416 H 1480" stroke="#1936c8" stroke-width="3"/>
+    <path d="M 940 360 V 520 M 1480 360 V 520" stroke="#ffffff" stroke-width="1" opacity=".35"/>
+  </svg>
+
+  <div class="t brand pad">
+    <div class="wm serif">Highland</div>
+    <div class="sub">The Highland Rain Test</div>
+    <div class="zhline zh">高地雨测</div>
+  </div>
+
+  <h1 class="t claim pad serif">What the sky gave,
+<br>the cloth held.<span class="zhsub zh">天给了多少，布就接住多少</span></h1>
+
+  <div class="t figure pad">
+    <div class="num">8,000 mm</div>
+    <div class="numlbl">hydrostatic head held</div>
+    <div class="numctx">Measured against one storm, not a laboratory claim.</div>
+  </div>
+
+  <div class="t log pad">
+    <div class="date">14 October 2026, Glen Orra test field</div>
+    <div class="grid">
+      <div class="cell"><span class="k">Rainfall</span><span class="v">48 mm/h</span></div>
+      <div class="cell"><span class="k">Duration</span><span class="v">6 h</span></div>
+      <div class="cell"><span class="k">Wind</span><span class="v">64 km/h</span></div>
+      <div class="cell"><span class="k">Temperature</span><span class="v">7 °C</span></div>
+    </div>
+    <div class="src">Highland field log, 14 October 2026</div>
+  </div>
+
+  <div class="t actionwrap pad"><span class="pill" data-cc="22" data-cc-fill="#1936c8">Read the field log</span></div>
+
+  <div class="t foot pad">Illustrative example</div>
+
+  <div class="t ptitle pad">A section through the cloth</div>
+  <div class="t lbl lbl1 pad">outer cloth</div>
+  <div class="t lbl lbl2 pad">weather membrane</div>
+  <div class="t lbl lbl3 pad">lining</div>
+  <div class="t pnote pad">The single blue line is where the measured water stopped.</div>
+  <div class="t pcaption pad">Illustrative render, not a photograph</div>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

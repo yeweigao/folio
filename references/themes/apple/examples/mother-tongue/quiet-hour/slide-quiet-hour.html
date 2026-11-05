@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1600">
+<title>Lumen Quiet Hour — launch slide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+  :root { --dark:#272729; --ink:#ffffff; --muted:#b7b7bc; --link:#2997ff; --action:#0071e3; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html,body { background:#111113; }
+  body { font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif; color:var(--ink); }
+  .unit { position:relative; width:1600px; height:900px; overflow:hidden; background:var(--dark); }
+  .zh { font-family:"Noto Sans SC","Inter",sans-serif; }
+  .pad { padding:12px; }
+  .t { position:absolute; }
+  .name { left:84px; top:96px; font-size:21px; font-weight:600; letter-spacing:-.2px; }
+  .claim { left:84px; top:160px; width:720px; font-size:100px; font-weight:600; line-height:1.07; letter-spacing:-3px; }
+  .claim .zhline { display:block; font-size:30px; font-weight:400; line-height:1.5; letter-spacing:0; margin-top:28px; color:#e7e7ea; }
+  .facts { left:84px; top:574px; width:660px; font-size:21px; font-weight:400; line-height:1.55; }
+  .facts .row { display:flex; justify-content:space-between; gap:24px; border-top:1px solid #4b4b50; padding:14px 12px 14px 12px; }
+  .facts .row span:last-child { text-align:right; }
+  .facts .muted { color:var(--muted); }
+  .action { left:84px; top:766px; font-size:24px; font-weight:400; color:var(--link); }
+  .action .arrow { font-size:26px; }
+  .foot { left:84px; top:842px; width:1400px; font-size:12px; line-height:1.5; color:#8f8f96; display:flex; justify-content:space-between; }
+  .caption { position:absolute; left:1010px; top:826px; width:500px; font-size:12px; color:#8f8f96; text-align:left; }
+  svg { display:block; }
+  .cc-bg { position:absolute; left:0; top:0; z-index:-1; pointer-events:none; }
+  [data-cc] { position:relative; isolation:isolate; }
+</style>
+</head>
+<body>
+<div class="unit" id="slide">
+
+  <!-- Product as sculpture: one object on one solid field. Drawn, declared. -->
+  <svg width="1600" height="900" viewBox="0 0 1600 900" aria-hidden="true" style="position:absolute;left:0;top:0">
+    <defs>
+      <linearGradient id="body" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#2c2c31"/>
+        <stop offset=".10" stop-color="#77777e"/>
+        <stop offset=".26" stop-color="#c9c9cf"/>
+        <stop offset=".42" stop-color="#8d8d94"/>
+        <stop offset=".62" stop-color="#5b5b61"/>
+        <stop offset=".80" stop-color="#a4a4ab"/>
+        <stop offset=".94" stop-color="#e2e2e6"/>
+        <stop offset="1" stop-color="#414146"/>
+      </linearGradient>
+      <linearGradient id="top" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#5c5c63"/>
+        <stop offset=".5" stop-color="#2b2b30"/>
+        <stop offset="1" stop-color="#17171a"/>
+      </linearGradient>
+      <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+        <stop offset="0" stop-color="#f0e6d6" stop-opacity=".16"/>
+        <stop offset=".55" stop-color="#f0e6d6" stop-opacity=".05"/>
+        <stop offset="1" stop-color="#f0e6d6" stop-opacity="0"/>
+      </radialGradient>
+      <pattern id="mesh" width="9" height="9" patternUnits="userSpaceOnUse">
+        <circle cx="4.5" cy="4.5" r="1.55" fill="#111115" opacity=".34"/>
+      </pattern>
+      <filter id="soft" x="-60%" y="-300%" width="220%" height="700%">
+        <feGaussianBlur stdDeviation="22"/>
+      </filter>
+      <clipPath id="bodyClip">
+        <path d="M1028 268 A192 54 0 0 0 1412 268 L1412 742 A192 54 0 0 1 1028 742 Z"/>
+      </clipPath>
+      <clipPath id="topClip"><ellipse cx="1220" cy="268" rx="192" ry="54"/></clipPath>
+    </defs>
+
+    <g transform="translate(1220 540) scale(1.12) translate(-1220 -540)">
+    <!-- Product-linked glow, tied to the object, never a page wash -->
+    <ellipse cx="1220" cy="540" rx="430" ry="360" fill="url(#glow)"/>
+    <!-- The single system shadow, on the product alone -->
+    <ellipse cx="1220" cy="762" rx="218" ry="26" fill="#000000" opacity=".34" filter="url(#soft)"/>
+
+    <!-- Cylindrical body -->
+    <path d="M1028 268 A192 54 0 0 0 1412 268 L1412 742 A192 54 0 0 1 1028 742 Z" fill="url(#body)"/>
+    <g clip-path="url(#bodyClip)">
+      <rect x="1028" y="268" width="384" height="474" fill="url(#mesh)"/>
+      <rect x="1028" y="268" width="26" height="474" fill="#ffffff" opacity=".07"/>
+      <rect x="1386" y="268" width="26" height="474" fill="#000000" opacity=".13"/>
+      <rect x="1028" y="716" width="384" height="3" fill="#ffffff" opacity=".22"/>
+    </g>
+    <!-- Top plate: a grille, not an open mouth -->
+    <ellipse cx="1220" cy="268" rx="192" ry="54" fill="url(#top)"/>
+    <g clip-path="url(#topClip)"><rect x="1028" y="210" width="384" height="116" fill="url(#mesh)" opacity=".5"/></g>
+    <ellipse cx="1220" cy="268" rx="164" ry="45" fill="none" stroke="#d3d3d9" stroke-width="1.5" opacity=".42"/>
+    <ellipse cx="1220" cy="268" rx="62" ry="17" fill="none" stroke="#ececf1" stroke-width="2" opacity=".5"/>
+    <ellipse cx="1220" cy="268" rx="34" ry="9" fill="#101013" opacity=".8"/>
+    <ellipse cx="1220" cy="266" rx="192" ry="54" fill="none" stroke="#f2f2f5" stroke-width="1.5" opacity=".38"/>
+    <!-- Bottom edge -->
+    <path d="M1028 742 A192 54 0 0 0 1412 742" fill="none" stroke="#ececf0" stroke-width="2" opacity=".28"/>
+    </g>
+  </svg>
+
+  <p class="t name pad">Lumen Quiet Hour</p>
+
+  <h1 class="t claim pad">One hour with
+<br>nothing else
+<br>to hear.<span class="zhline zh">一小时内，只剩音乐</span></h1>
+
+  <div class="t facts pad">
+    <div class="row"><span>Saturday 21 November 2026</span><span>20:00–21:00</span></div>
+    <div class="row"><span>City Library, Reading Room 3</span><span class="zh">城市图书馆 第三阅览室</span></div>
+    <div class="row muted"><span>Free, 40 seats</span><span class="zh">免费入场，40 个座位</span></div>
+  </div>
+
+  <a class="t action pad" href="#">Reserve a seat<span class="arrow"> ›</span></a>
+
+  <div class="t foot pad"><span>Illustrative example</span></div>
+  <p class="caption">Illustrative render, not a photograph</p>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

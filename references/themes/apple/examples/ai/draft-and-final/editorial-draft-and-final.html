@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200">
+<title>What a second draft takes away — Fern editing note</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&amp;family=Source+Sans+3:wght@400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#f8f3e8; --panel:#fffaf2; --dark:#182b40;
+    --ink:#272520; --muted:#635e56; --action:#ad4937;
+    --onAction:#ffffff; --onDark:#ffffff; --hairline:#d2d2d7;
+    --serif:"Roboto Slab","Noto Serif SC",serif;
+    --sans:"Source Sans 3","Noto Sans SC",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#dedad0}
+  body{font-family:var(--sans);color:var(--ink)}
+  .unit{position:relative;width:1200px;height:1600px;overflow:hidden;background:var(--canvas)}
+  .zh{font-family:"Noto Sans SC",var(--sans)}
+  .zhserif{font-family:"Noto Serif SC",var(--serif)}
+  [data-cc]{position:relative;isolation:isolate}
+  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+
+  .vista{position:absolute;left:0;top:0;width:1200px;height:720px;background:var(--dark);overflow:hidden}
+  .over{position:absolute;left:110px;top:112px;width:1000px}
+  .over h1{font-family:var(--serif);font-size:56px;font-weight:400;line-height:1.1;letter-spacing:-1.6px;color:var(--onDark)}
+  .over .zhline{margin-top:22px;font-size:28px;font-weight:400;line-height:1.5;color:rgba(255,255,255,.82)}
+  .cta{display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 26px;margin-top:40px;font-size:17px;color:var(--onAction);text-decoration:none}
+  .cta .arrow{font-size:20px;margin-left:10px}
+
+  .cmp{position:absolute;left:110px;top:392px;width:980px;height:250px;display:flex;gap:48px}
+  .cmp .colp{width:452px}
+  .cmp .lbl{font-size:14px;letter-spacing:.02em;color:rgba(255,255,255,.6)}
+  .cmp .passage{margin-top:22px;font-size:21px;line-height:1.62;color:var(--onDark)}
+  .cmp .del{text-decoration:line-through;text-decoration-color:var(--action);text-decoration-thickness:2px;color:rgba(255,255,255,.55)}
+  .cmp .divide{width:1px;background:rgba(255,255,255,.22)}
+  .credit{position:absolute;left:110px;top:678px;width:980px;font-size:12px;color:rgba(255,255,255,.6)}
+
+  .column{position:absolute;left:110px;top:720px;width:980px;padding:80px 12px 0 12px}
+  .lead{font-family:var(--serif);font-size:28px;font-weight:400;line-height:1.4}
+  .leadzh{margin-top:14px;font-size:28px;font-weight:400;line-height:1.6;color:var(--muted)}
+  .body{margin-top:56px;max-width:720px;font-size:17px;font-weight:400;line-height:1.6}
+  .body+.body{margin-top:24px}
+  .figure{margin-top:64px;border-top:1px solid var(--hairline);padding-top:28px}
+  .figure .big{font-family:var(--serif);font-size:56px;font-weight:400;line-height:1.07;letter-spacing:-1.4px}
+  .figure .lbl{margin-top:12px;font-size:14px;color:var(--muted)}
+  .bars{margin-top:28px}
+  .brow{display:flex;align-items:center;gap:20px;font-size:14px;color:var(--muted)}
+  .brow+.brow{margin-top:16px}
+  .brow .nm{width:56px}
+  .brow .track{flex:1;height:10px;background:#e6ddc9}
+  .brow .fill{display:block;height:10px;background:var(--action)}
+  .brow .fill.wide{width:100%}
+  .brow .fill.short{width:21.2%}
+  .brow .v{width:82px;text-align:left;color:var(--ink)}
+  .cap{margin-top:28px;font-size:14px;color:var(--muted)}
+  .foot{position:absolute;left:110px;top:1524px;width:980px;display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="unit" id="page">
+
+  <div class="vista">
+    <div class="over">
+      <h1>What a second draft takes away</h1>
+      <p class="zhline zhserif">第二稿拿走了什么</p>
+      <a class="cta" data-cc="23" data-cc-fill="#ad4937" href="#">Read the editing note<span class="arrow">›</span></a>
+    </div>
+
+    <div class="cmp">
+      <div class="colp">
+        <p class="lbl">Draft</p>
+        <p class="passage"><span class="del">She had meant to leave before the light went, but</span> the room was warm <span class="del">and the rain had not yet started,</span> so she stayed<span class="del">, and later she was glad that she had stayed.</span></p>
+      </div>
+      <div class="divide"></div>
+      <div class="colp">
+        <p class="lbl">Final</p>
+        <p class="passage">The room was warm, so she stayed.</p>
+      </div>
+    </div>
+    <p class="credit">Illustrative render, not a photograph</p>
+  </div>
+
+  <div class="column">
+    <p class="lead">Fern does not add. It takes away, and the taking is the part worth reading.</p>
+    <p class="leadzh zhserif">删掉，才是值得读的那部分</p>
+    <p class="body">The first version explains itself. It accounts for the light, the rain and the decision to stay, as though a reader could not be trusted to arrive there alone.</p>
+    <p class="body">The second version keeps only the room and the staying. Nothing is added to explain why; the sentence is shorter because the writer stopped asking it to carry the whole evening.</p>
+    <p class="body">What survives is not a summary. It is the same passage with the scaffolding removed, and the difference between the two is the only evidence the note needs.</p>
+
+    <div class="figure">
+      <div class="big">33 words became 7</div>
+      <p class="lbl">Counted on one illustrative passage; the figures are fictional.</p>
+      <div class="bars">
+        <div class="brow"><span class="nm">Draft</span><span class="track"><span class="fill wide"></span></span><span class="v">33 words</span></div>
+        <div class="brow"><span class="nm">Final</span><span class="track"><span class="fill short"></span></span><span class="v">7 words</span></div>
+      </div>
+      <p class="cap">Illustrative render, not a photograph</p>
+    </div>
+  </div>
+
+  <div class="foot"><span>Fern editing note, 2026</span><span>Illustrative example</span></div>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

@@ -9,8 +9,8 @@ Usage: release-check.py
    SKILL.md (links, backticked paths, folders, Python imports); SKILL.md
    links only from Routes and Themes; no link is broken.
    CONTRIBUTING.md may reach maintenance scripts.
-3. Every skeleton under examples/ (any DESIGN.md) passes folio-check.
-4. Every piece under examples/ (a brief.md with an .html beside it)
+3. Every skeleton under a theme's examples/ passes folio-check.
+4. Every piece under a theme's examples/ (a brief.md with an .html beside it)
    passes factcheck against its own brief.
 Exit 0 only when all of it holds. Stdlib only.
 """
@@ -48,7 +48,7 @@ def targets(f):
                 continue
             found.append((m, (f.parent / m).resolve()))
         for m in PATH.findall(" ".join(re.findall(r"`([^`]+)`", text))):
-            if "<" not in m:
+            if "<" not in m and m.rstrip("/") not in ("references", "references/themes", "scripts"):
                 found.append((m, (ROOT / m).resolve()))
     elif f.suffix == ".py":
         for m in IMPORT.findall(text):
@@ -93,7 +93,8 @@ for x in sorted(shipped):
 def run(*args):
     return subprocess.run([sys.executable, *map(str, args)], capture_output=True, text=True)
 
-skeletons = sorted(p for p in (ROOT / "examples").rglob("DESIGN.md") if "archived" not in p.parts)
+example_roots = sorted((ROOT / "references/themes").glob("*/examples"))
+skeletons = sorted({p for root in example_roots for p in root.rglob("DESIGN.md") if "archived" not in p.parts})
 for d in skeletons:
     r = run(ROOT / "scripts/folio-check.py", d)
     if r.returncode != 0:
@@ -102,7 +103,7 @@ for d in skeletons:
     if template and rec and rec.group(1) != template:
         problems.append(f"{d.relative_to(ROOT)} records template {rec.group(1)}, current is {template}")
 
-pieces = sorted(p for p in (ROOT / "examples").rglob("brief.md") if "archived" not in p.parts)
+pieces = sorted({p for root in example_roots for p in root.rglob("brief.md") if "archived" not in p.parts})
 for b in pieces:
     for h in sorted(b.parent.glob("*.html")):
         r = run(ROOT / "scripts/factcheck.py", b, h)

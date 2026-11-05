@@ -22,6 +22,7 @@ Where a script can hold a floor ([review](review.md#floors)), it does.
 | `scripts/factcheck.py brief.md seen.txt` | Every backticked fact present verbatim; typographic changes and numbers not in the brief flagged. |
 | `scripts/folio-check.py DESIGN.md [export…]` | The skeleton complete, no placeholders, contrast held; the export uses only declared colors and faces, no banned charts, no copy tells. |
 | `scripts/fontcheck.py page.html "Family" […]` | Each named face actually loaded in the rendered page — the fallback a browser never reports, caught. |
+| `scripts/corner-check.py path.svg\|--d "M…" [--r R]` | Curvature at every join of a delivered contour: a circular corner steps 100% of 1/R where its straight edge ends, a continuous shoulder steps nothing. Reports the shoulder's internal joins without failing them. |
 | `scripts/imagecheck.py file.pptx [--json report.json]` | Unequal X/Y scaling of native PNG/JPEG/GIF pictures after source cropping. Inspect flags against the source; unsupported fills and grouped transforms require visual review. |
 | `scripts/extract.py file.pptx\|file.html` | A skeleton drafted from an artifact's real colors, faces and sizes, for critique. |
 

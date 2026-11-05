@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1600">
+<title>Volt — Per charge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#171a20; --panel:#30343b; --ink:#f5f5f7; --muted:#d2d4d8;
+    --pewter:#5a6068; --action:#1559b7; --onAction:#ffffff; --hairline:#d2d2d7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#0e1014}
+  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
+  .unit{position:relative;width:1600px;height:900px;overflow:hidden;background:var(--canvas)}
+  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
+  .zhserif{font-family:"Noto Serif SC","Noto Sans SC",serif}
+  .pad{padding:12px}
+  .t{position:absolute}
+  [data-cc]{position:relative;isolation:isolate}
+  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+  svg{display:block}
+
+  .nav{left:84px;top:40px;width:1432px;display:flex;align-items:baseline;justify-content:space-between}
+  .nav .mark{font-size:21px;font-weight:600;letter-spacing:normal}
+  .nav .price{font-size:17px;font-weight:400;color:var(--muted);letter-spacing:normal}
+
+  .claim{left:84px;top:148px;width:788px}
+  .claim h1{font-size:56px;font-weight:600;line-height:1.07;letter-spacing:normal}
+  .claim .zhline{margin-top:22px;font-size:24px;font-weight:400;line-height:1.5;color:var(--muted)}
+
+  .number{left:84px;top:352px;width:788px}
+  .number .fig{font-size:158px;font-weight:600;line-height:1;letter-spacing:normal}
+  .number .fig .km{font-size:66px;font-weight:400;letter-spacing:normal}
+  .number .lab{margin-top:20px;font-size:21px;font-weight:600;letter-spacing:normal}
+  .number .labzh{margin-top:8px;font-size:17px;font-weight:400;color:var(--muted);letter-spacing:normal}
+  .number .ctx{margin-top:26px;font-size:17px;font-weight:400;color:var(--muted);letter-spacing:normal}
+
+  .exhibit{left:912px;top:168px;width:600px;height:236px}
+  .cap{left:912px;top:412px;width:600px;font-size:14px;font-weight:400;color:var(--muted);letter-spacing:normal}
+
+  .cmp{left:912px;top:470px;width:600px}
+  .crow{margin-bottom:38px}
+  .crow .top{display:flex;align-items:baseline;gap:20px}
+  .crow .clab{font-size:17px;font-weight:400;letter-spacing:normal}
+  .crow .cval{font-size:17px;font-weight:600;letter-spacing:normal}
+  .ctrack{margin-top:14px;width:576px;height:12px;background:var(--panel)}
+  .cfill{height:12px}
+  .cfill.short{width:38.8%;background:var(--pewter)}
+  .cfill.full{width:100%;background:var(--ink)}
+
+  .bottom{left:84px;top:808px;width:1432px;display:flex;align-items:flex-end;justify-content:space-between}
+  .bottom .meta{font-size:12px;font-weight:400;color:var(--muted);line-height:1.9;letter-spacing:normal}
+  .bottom .meta span{display:block}
+  .reserve{display:inline-flex;align-items:center;justify-content:center;width:160px;height:48px;
+    background:var(--action);color:var(--onAction);font-size:17px;font-weight:600;letter-spacing:normal}
+</style>
+</head>
+<body>
+<div class="unit" id="slide">
+
+  <div class="t nav pad">
+    <span class="mark">Volt</span>
+    <span class="price">From ¥80,400</span>
+  </div>
+
+  <div class="t claim pad">
+    <h1>One charge outlasts your week.</h1>
+    <p class="zhline zhserif">一次充电，跑得比一周更远</p>
+  </div>
+
+  <div class="t number pad">
+    <div class="fig">402 <span class="km">km</span></div>
+    <p class="lab">on a single charge</p>
+    <p class="labzh zh">单次充电续航</p>
+    <p class="ctx">The price, divided by a single charge.</p>
+  </div>
+
+  <div class="t exhibit pad">
+    <svg viewBox="0 0 576 212" width="576" height="212" aria-hidden="true">
+      <!-- flat illustrative stand-in of a small car, neutral planes only -->
+      <line x1="24" y1="170" x2="552" y2="170" stroke="#30343b" stroke-width="1"/>
+      <path d="M28 138
+               C23 138 20 132 20 124
+               L24 96
+               C31 79 50 69 80 65
+               L156 36
+               C171 30 190 28 212 28
+               L338 28
+               C358 28 374 34 388 48
+               L452 76
+               C508 82 540 94 540 114
+               L540 138
+               Z" fill="#4a505a"/>
+      <path d="M84 64 L156 38 C170 32 188 30 210 30 L336 30 C352 30 366 35 378 47 L424 70 Z" fill="#262b32"/>
+      <path d="M212 30 L226 30 L226 68 L172 68 Z" fill="#262b32"/>
+      <path d="M232 30 L336 30 C350 30 362 34 374 46 L392 68 L232 68 Z" fill="#262b32" opacity=".9"/>
+      <path d="M84 64 L156 38 C170 32 188 30 210 30 L226 30 L226 33 L212 33 C190 33 172 35 158 41 L88 67 Z" fill="#a9afb8" opacity=".6"/>
+      <line x1="229" y1="32" x2="229" y2="68" stroke="#4a505a" stroke-width="6"/>
+      <rect x="524" y="102" width="15" height="10" fill="#a9afb8"/>
+      <rect x="21" y="102" width="12" height="10" fill="#8a9099"/>
+      <line x1="34" y1="112" x2="530" y2="112" stroke="#2a2e35" stroke-width="2" opacity=".7"/>
+      <circle cx="152" cy="146" r="31" fill="#171a20"/>
+      <circle cx="152" cy="146" r="16" fill="#6b7078"/>
+      <circle cx="152" cy="146" r="6" fill="#20242b"/>
+      <circle cx="418" cy="146" r="31" fill="#171a20"/>
+      <circle cx="418" cy="146" r="16" fill="#6b7078"/>
+      <circle cx="418" cy="146" r="6" fill="#20242b"/>
+    </svg>
+  </div>
+  <p class="t cap pad">Illustrative render, not a photograph</p>
+
+  <div class="t cmp pad">
+    <div class="crow">
+      <div class="top"><span class="clab">A week of driving</span><span class="cval">156 km</span></div>
+      <div class="ctrack"><div class="cfill short"></div></div>
+    </div>
+    <div class="crow">
+      <div class="top"><span class="clab">One full charge</span><span class="cval">402 km</span></div>
+      <div class="ctrack"><div class="cfill full"></div></div>
+    </div>
+  </div>
+
+  <div class="t bottom pad">
+    <div class="meta">
+      <span class="ex">Illustrative example</span>
+      <span>Volt range note · 12 June 2026</span>
+      <span class="zh">2026 年 6 月 12 日</span>
+    </div>
+    <span class="reserve">Reserve</span>
+  </div>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

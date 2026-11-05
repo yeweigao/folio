@@ -1,0 +1,62 @@
+Ledger
+Pricing
+
+Fee schedule
+
+Three rates, one quarter.
+
+三档费率，一个季度
+
+The same shop, the same sales, billed at each rate. This quarter qualifies for all three, so the only thing that changes between the columns is the fee.
+
+¥4,045
+
+between the highest and the lowest rate
+
+on this quarter's ¥490,000, before refunds
+
+The same shop, the same quarter: ¥490,000 gross, 1,250 charges
+Bars to one scale
+
+Counter
+
+1.9%
+
++ ¥0.30 a charge
+
+On this quarter
+¥9,685
+
+Shop
+
+1.45%
+
++ ¥0.30 a charge
+
+On this quarter
+¥7,480
+
+billed on this quarter's statement
+
+Chain
+
+1.1%
+
++ ¥0.20 a charge
+
+On this quarter
+¥5,640
+
+Where the statement's fee comes from
+1.45% of ¥490,000
+¥7,105
+1,250 charges × ¥0.30
+¥375
+Ledger fees on the statement
+¥7,480
+
+No setup fee, no monthly fee, on any rate.
+
+Add a shop
+Illustrative example
+Illustrative render, not a photograph

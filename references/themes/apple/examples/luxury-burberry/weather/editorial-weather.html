@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200">
+<title>Highland — The weather is the only brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@300;400;600&amp;family=Noto+Sans+SC:wght@300;400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#ffffff; --panel:#f7f4ed; --dark:#202124; --ink:#202124;
+    --muted:#626269; --action:#1936c8; --onAction:#ffffff; --onDark:#ffffff;
+    --hairline:#d2d2d7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{background:#dedee2;}
+  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink);}
+  .unit{position:relative;width:1200px;height:1600px;overflow:hidden;background:var(--canvas);}
+  .serif{font-family:"Cormorant Garamond","Noto Serif SC",serif;}
+  .zh{font-family:"Noto Serif SC","Noto Sans SC",serif;}
+  .t{position:absolute;}
+  .pad{padding:12px;}
+
+  .vista{position:absolute;left:0;top:0;width:1200px;height:700px;overflow:hidden;}
+  .vista svg{display:block;}
+  .vover{left:86px;top:326px;width:1000px;color:var(--onDark);}
+  .vover h1{font-family:"Cormorant Garamond","Noto Serif SC",serif;font-size:64px;font-weight:400;line-height:1.07;letter-spacing:-.6px;}
+  .vover .zhline{margin-top:22px;font-size:28px;font-weight:400;line-height:1.5;color:#e7e7ea;}
+  .vover .act{margin-top:46px;}
+  .pill{display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 28px;font-size:17px;font-weight:400;color:var(--onAction);}
+  .vcredit{left:98px;top:648px;width:1000px;font-size:12px;line-height:1.5;color:#c8c8cd;}
+
+  .column{position:absolute;left:110px;top:700px;width:980px;padding:88px 12px 0 12px;}
+  .lead{font-family:"Cormorant Garamond","Noto Serif SC",serif;font-size:30px;font-weight:400;line-height:1.35;}
+  .leadzh{margin-top:12px;font-size:24px;font-weight:400;line-height:1.6;color:var(--muted);}
+  .body{margin-top:56px;width:760px;font-size:17px;font-weight:400;line-height:1.47;}
+  .body + .body{margin-top:24px;}
+
+  .figure{margin-top:52px;border-top:1px solid var(--hairline);padding-top:26px;}
+  .figure .fttl{font-size:14px;font-weight:400;color:var(--muted);}
+  .chart{margin-top:22px;}
+  .row{display:flex;align-items:center;height:38px;}
+  .season{width:120px;font-size:15px;font-weight:400;}
+  .bar{display:inline-block;height:14px;background:var(--hairline);}
+  .bar.dec{background:var(--action);}
+  .val{margin-left:16px;font-size:15px;font-weight:400;font-variant-numeric:tabular-nums;}
+  .src{margin-top:20px;font-size:14px;font-weight:400;color:var(--muted);}
+  .cap{margin-top:14px;font-size:14px;font-weight:400;color:var(--muted);}
+
+  .foot{position:absolute;left:110px;top:1520px;width:980px;font-size:12px;line-height:1.5;color:var(--muted);}
+
+  svg{display:block;}
+  [data-cc]{position:relative;isolation:isolate}
+  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+</style>
+</head>
+<body>
+<div class="unit" id="page">
+
+  <div class="vista">
+    <svg width="1200" height="700" viewBox="0 0 1200 700" aria-hidden="true">
+      <defs>
+        <pattern id="rainA" width="34" height="90" patternUnits="userSpaceOnUse" patternTransform="rotate(13)">
+          <path d="M 6 -10 V 44" stroke="#ffffff" stroke-width="1" opacity=".16"/>
+          <path d="M 23 30 V 78" stroke="#ffffff" stroke-width=".8" opacity=".09"/>
+        </pattern>
+        <pattern id="rainB" width="58" height="130" patternUnits="userSpaceOnUse" patternTransform="rotate(13)">
+          <path d="M 12 0 V 62" stroke="#ffffff" stroke-width="1.2" opacity=".12"/>
+        </pattern>
+        <linearGradient id="calm" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#000000" stop-opacity="0"/>
+          <stop offset=".42" stop-color="#000000" stop-opacity=".14"/>
+          <stop offset="1" stop-color="#000000" stop-opacity=".66"/>
+        </linearGradient>
+      </defs>
+      <rect width="1200" height="700" fill="#202124"/>
+      <rect width="1200" height="700" fill="url(#rainA)"/>
+      <rect width="1200" height="700" fill="url(#rainB)"/>
+      <g stroke="#ffffff" stroke-width="1" opacity=".2" fill="none">
+        <path d="M 120 40 L 108 120"/><path d="M 340 20 L 328 100"/>
+        <path d="M 760 60 L 748 140"/><path d="M 980 30 L 968 110"/>
+        <path d="M 1100 90 L 1088 170"/>
+      </g>
+      <path d="M 0 566 H 1200" stroke="#ffffff" stroke-width="1" opacity=".08"/>
+      <rect width="1200" height="700" fill="url(#calm)"/>
+    </svg>
+    <div class="t vover pad">
+      <h1>The weather is the only brief</h1>
+      <p class="zhline zh">天气是唯一的设计简报</p>
+      <div class="act"><span class="pill" data-cc="23" data-cc-fill="#1936c8">Read the weather record</span></div>
+    </div>
+    <p class="t vcredit pad">Illustrative render, not a photograph</p>
+  </div>
+
+  <div class="column">
+    <p class="lead">A house on this coast keeps a weather record, not a lookbook.</p>
+    <p class="leadzh zh">这间屋子留的是天气记录，不是造型册</p>
+
+    <p class="body">The house keeps a register of every front that crosses this coast. A coat is cut to answer a measurement, not a season: how much water arrives, how long it keeps arriving, and from which direction the wind carries it.</p>
+    <p class="body">A lookbook asks what the coat looks like. The register asks what it has to withstand. That is why the same cloth appears across the whole range, and why the only thing that changes between coats is how much weather each one is made for.</p>
+
+    <div class="figure">
+      <div class="fttl">Rainfall at Glen Orra</div>
+      <div class="chart">
+        <div class="row"><span class="season">Spring</span><span class="bar" style="width:342px"></span><span class="val">214 mm</span></div>
+        <div class="row"><span class="season">Summer</span><span class="bar" style="width:268px"></span><span class="val">168 mm</span></div>
+        <div class="row"><span class="season">Autumn</span><span class="bar" style="width:483px"></span><span class="val">302 mm</span></div>
+        <div class="row"><span class="season">Winter</span><span class="bar dec" style="width:620px"></span><span class="val">388 mm</span></div>
+      </div>
+      <p class="src">Highland climate register, 2026</p>
+      <p class="cap">Illustrative render, not a photograph</p>
+    </div>
+  </div>
+
+  <div class="foot">Illustrative example</div>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

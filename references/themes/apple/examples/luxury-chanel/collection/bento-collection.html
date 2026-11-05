@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Noir — The Collection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@300;400;600&amp;family=Noto+Sans+SC:wght@300;400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#ffffff; --panel:#f5f5f5; --dark:#111111; --ink:#111111;
+    --muted:#626262; --action:#111111; --onAction:#ffffff; --onDark:#ffffff;
+    --hairline:#d2d2d7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{background:#dedee2;}
+  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink);}
+  .unit{position:relative;width:1440px;height:1000px;overflow:hidden;background:var(--canvas);}
+  .serif{font-family:"Cormorant Garamond","Noto Serif SC",serif;}
+  .zh{font-family:"Noto Serif SC","Noto Sans SC",serif;}
+  .t{position:absolute;}
+  .pad{padding:12px;}
+
+  .hdr{left:68px;top:38px;width:1304px;display:flex;align-items:center;justify-content:space-between;}
+  .hdr .left{display:flex;align-items:baseline;gap:26px;}
+  .hdr .wm{font-size:30px;font-weight:400;letter-spacing:.4px;}
+  .hdr .series,.hdr .serieszh{font-size:14px;font-weight:400;color:var(--muted);}
+  .pill{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 26px;font-size:17px;font-weight:400;color:var(--onAction);}
+  .rule{left:80px;top:100px;width:1280px;height:1px;background:var(--hairline);}
+
+  .grid{left:80px;top:120px;width:1280px;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:370px 370px;gap:16px;}
+  .tile{padding:28px;display:flex;flex-direction:column;justify-content:space-between;}
+  .tile .claim{font-size:40px;font-weight:400;line-height:1.1;letter-spacing:-.4px;}
+  .tile .claimzh{margin-top:12px;font-size:17px;font-weight:400;color:var(--muted);}
+  .tile .mini{font-size:14px;font-weight:400;line-height:1.5;color:var(--muted);}
+  .tile .shot{flex:1;display:flex;align-items:center;justify-content:center;min-height:0;}
+  .tile .shot svg{width:100%;height:100%;}
+  .tile .nm{font-size:21px;font-weight:600;line-height:1.3;}
+  .tile .price{margin-top:6px;font-size:17px;font-weight:400;color:var(--muted);}
+
+  .tileA{grid-column:1/3;grid-row:1;}
+  .tileB{grid-column:3;grid-row:1;}
+  .tileC{grid-column:4;grid-row:1;justify-content:center;}
+  .tileD{grid-column:1;grid-row:2;}
+  .tileE{grid-column:2/5;grid-row:2;flex-direction:row;gap:40px;}
+  .tileE .ecopy{width:400px;display:flex;flex-direction:column;justify-content:space-between;}
+  .tileE .claim{font-size:36px;}
+  .tileE .shot{flex:1;}
+
+  .tileC .big{font-size:130px;font-weight:400;line-height:1;color:var(--onDark);}
+  .tileC .lbl2{margin-top:18px;font-size:15px;font-weight:400;color:var(--onDark);}
+  .tileC .ctx{margin-top:12px;font-size:14px;font-weight:400;line-height:1.5;color:var(--onDark);opacity:.7;}
+
+  .cap{left:68px;top:900px;font-size:12px;line-height:1.5;color:var(--muted);}
+  .foot{left:68px;top:922px;font-size:12px;line-height:1.5;color:var(--muted);}
+
+  svg{display:block;}
+  [data-cc]{position:relative;isolation:isolate}
+  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+</style>
+</head>
+<body>
+<div class="unit" id="page">
+
+  <div class="t hdr pad">
+    <div class="left">
+      <span class="wm serif">Noir</span>
+      <span class="series">The Collection</span>
+      <span class="serieszh zh">系列</span>
+    </div>
+    <span class="pill" data-cc="22" data-cc-fill="#111111">View the collection</span>
+  </div>
+  <div class="t rule"></div>
+
+  <div class="t grid">
+    <div class="tile tileA" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
+      <div>
+        <div class="claim serif">Nothing added, nothing missing.</div>
+        <div class="claimzh zh">不增一件，不减一件</div>
+      </div>
+      <div class="shot"><svg viewBox="0 0 300 320" aria-hidden="true">
+        <path d="M 96 30 C 86 30 80 36 76 46 L 48 190 L 70 196 L 88 108 L 78 300 L 222 300 L 212 108 L 230 196 L 252 190 L 224 46 C 220 36 214 30 204 30 Z" fill="#111111"/>
+        <path d="M 96 30 L 150 76 L 204 30" fill="none" stroke="#626262" stroke-width="2"/>
+        <path d="M 96 30 L 150 76 L 128 96 L 106 60 Z" fill="#ffffff" opacity=".1"/>
+        <path d="M 204 30 L 150 76 L 172 96 L 194 60 Z" fill="#ffffff" opacity=".1"/>
+        <path d="M 150 76 V 300" stroke="#d2d2d7" stroke-width="1.5" opacity=".55"/>
+      </svg></div>
+      <div>
+        <div class="nm">The Long Jacket</div>
+        <div class="price">£2,400</div>
+      </div>
+    </div>
+
+    <div class="tile tileB" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
+      <div class="mini">One seam, held to one line.</div>
+      <div class="shot"><svg viewBox="0 0 200 200" aria-hidden="true">
+        <rect x="16" y="56" width="82" height="88" fill="#f5f5f5" stroke="#111111" stroke-opacity=".25"/>
+        <rect x="102" y="56" width="82" height="88" fill="#f5f5f5" stroke="#111111" stroke-opacity=".25"/>
+        <path d="M 98 56 V 144" stroke="#111111" stroke-width="2"/>
+        <path d="M 100 56 V 144" stroke="#111111" stroke-width="1" opacity=".35"/>
+        <path d="M 98 40 V 56 M 102 40 V 56" stroke="#111111" stroke-width="1" opacity=".35"/>
+        <path d="M 90 56 V 144 M 110 56 V 144" stroke="#111111" stroke-width="1" stroke-dasharray="3 4" opacity=".4"/>
+        <path d="M 90 56 H 110" stroke="#111111" stroke-width="1" opacity=".3"/>
+      </svg></div>
+      <div>
+        <div class="nm">The One Seam</div>
+        <div class="price">£1,980</div>
+      </div>
+    </div>
+
+    <div class="tile tileC" data-cc="18" data-cc-fill="#111111" data-cc-stroke="#111111">
+      <div class="big serif">6</div>
+      <div class="lbl2">pieces, one cut</div>
+      <div class="ctx">The whole range, held to one pattern.</div>
+    </div>
+
+    <div class="tile tileD" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
+      <div class="mini">One length, no ornament.</div>
+      <div class="shot"><svg viewBox="0 0 200 300" aria-hidden="true">
+        <path d="M 50 20 H 150 L 146 76 L 128 288 H 108 L 100 130 L 92 288 H 72 L 54 76 Z" fill="#111111"/>
+        <path d="M 100 76 V 130" stroke="#626262" stroke-width="2"/>
+        <path d="M 50 34 H 150" stroke="#626262" stroke-width="1.5" opacity=".5"/>
+      </svg></div>
+      <div>
+        <div class="nm">The Trouser</div>
+        <div class="price">£720</div>
+      </div>
+    </div>
+
+    <div class="tile tileE" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
+      <div class="ecopy">
+        <div>
+          <div class="claim serif">White, and nothing else.</div>
+        </div>
+        <div>
+          <div class="nm">The White Shirt</div>
+          <div class="price">£640</div>
+        </div>
+      </div>
+      <div class="shot"><svg viewBox="0 0 320 260" aria-hidden="true">
+        <path d="M 110 26 L 78 42 L 42 132 L 70 144 L 96 96 L 88 240 L 232 240 L 224 96 L 250 144 L 278 132 L 242 42 L 210 26 L 160 66 Z" fill="#f5f5f5" stroke="#111111" stroke-width="1.5" stroke-linejoin="round"/>
+        <path d="M 110 26 L 160 66 L 210 26" fill="none" stroke="#111111" stroke-width="1.5"/>
+        <path d="M 160 66 V 240" stroke="#111111" stroke-width="1" opacity=".4"/>
+        <g fill="#111111" opacity=".45"><circle cx="168" cy="110" r="2.5"/><circle cx="168" cy="150" r="2.5"/><circle cx="168" cy="190" r="2.5"/></g>
+      </svg></div>
+    </div>
+  </div>
+
+  <div class="t cap pad">Illustrative render, not a photograph</div>
+  <div class="t foot pad">Illustrative example</div>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

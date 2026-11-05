@@ -7,7 +7,7 @@ node_modules/
 # 生成物：由生成引擎与生成记录复现，不入库
 *.pptx
 
-# 示例工程不随仓库分发（已移至 ../folio-examples/，含二进制与公开教材改编练习）
+# 示例成品随主题存放在 references/themes/<theme>/examples/
 
 # 工具缓存与日志
 .cache/

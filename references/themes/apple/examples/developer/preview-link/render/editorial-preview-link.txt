@@ -1,0 +1,40 @@
+Relay
+
+Before it goes live, it already has an address.
+
+上线之前，它已经有一个地址
+
+Open the preview ›
+relay / preview / checkout
+staged, not live
+A page waiting for a decision.
+
+Nothing on it is public yet.
+
+Draft · shared with the team
+
+Illustrative render, not a photograph
+
+A preview link is a page that exists for one change.
+
+一条预览链接，只为一次改动存在
+
+A deploy does not end when the build finishes. It ends when someone else can open the change and say what they think of it.
+
+Relay gives every push its own address. The page behind it is real, but it is not public; it exists for the people who were sent the link.
+
+The link is the review. Nothing has to be described in a message, because the thing itself is already there to be opened.
+
+1 preview URL per change
+push
+→
+build
+→
+preview
+→
+ship
+
+Illustrative render, not a photograph
+
+Relay field note, 2026
+Illustrative example

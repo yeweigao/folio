@@ -23,7 +23,7 @@ The context that made the work is a poor judge of it. Review comes from contexts
 | Critics, three to five | Renders at viewing size, the brief, the rubric | The maker's reasoning, the skeleton, the intended hand |
 | Judge | The critics' points, the renders, the rubric | The maker's reasoning |
 | Process reader | The skeleton, the brief, the renders | The maker's reasoning |
-| Skeleton reader | The skeleton, the dialect file, the philosophy | The maker's reasoning, the renders |
+| Skeleton reader | The skeleton, the chosen theme and applicable dialect, surface and method files, the philosophy | The maker's reasoning, the renders |
 | Maker | The judge's kept points | — |
 
 Where helpers cannot be spawned, run each role as a clean pass that reads only what its row allows.
@@ -32,9 +32,11 @@ Where helpers cannot be spawned, run each role as a clean pass that reads only w
 
 > You did not make this work. Prove it falls short. For each fault: the rubric line it breaks, where it is visible, the one change that fixes it. Look at viewing size, then as thumbnails. Faults only.
 
-Give each critic one angle: the reader at distance; the school and its master; the idea and its interchangeability; craft and floors; the set as a contact sheet.
+Give each critic one angle: the reader at distance; the school and its master; the idea and its interchangeability; craft and floors; rhythm within units and across the set as a contact sheet.
 
-The craft critic checks visible-ink gaps within paired type and between reading groups at reading size; the lead's presence in its field, through the school's method, at thumbnail size; and image edges, crop identity and natural proportions in the actual delivered render. No overflow is not proof of comfortable spacing; a browser preview is not proof of another export.
+The craft critic checks visible-ink gaps within paired type and between reading groups at reading size; the lead's presence in its field, through the school's method, at thumbnail size; and image edges, crop identity and natural proportions in the actual delivered render. Judge type hierarchy at the intended viewing size: a numerical size step alone is insufficient when the roles still look equal. No overflow is not proof of comfortable spacing; a browser preview is not proof of another export.
+
+The rhythm critic checks that recurring groups share a recognizable arrangement and that changes of size, spacing or density serve the content's importance, length or grouping. Then inspect dense, quiet and loud units across the contact sheet. Flag arbitrary staggering, mechanical colour or side alternation, and ornaments added merely to imitate a beat. Regular peers and a quiet single-object field need no forced variation.
 
 ## Judge
 
@@ -48,14 +50,14 @@ The maker decides; a point can be right and still not worth acting on. Fix, rend
 
 ## Skeleton reader
 
-> Read the file as the world it claims to be, layer by layer. The philosophy: every line answered in this world's terms, none bent. The school: each rule the dialect overturns appears only in its form, what Swiss keeps is present, and no hand or term from another school has leaked in. The file: each line a rule, said once; Anti-reference is the default with no school, Caricature the school's look without its method. Name every line that breaks a layer, and the layer. Trace a lead with its supporting text and an image in another intended format from this file alone, where used: name any missing size/weight relationship, visible clearance or image-frame/crop decision that would force the next maker to invent a world rule.
+> Read the file as the world it claims to be, layer by layer. The philosophy: every line answered in this world's terms, none bent. The school: each rule the dialect overturns appears only in its form, what the chosen theme keeps is present and its combination rules are respected, and no hand or term from another school has leaked in. The file: each line a rule, said once; Anti-reference is the default with no school, Caricature the school's look without its method. Name every line that breaks a layer, and the layer. Trace a lead with its supporting text and an image in another intended format from this file alone, where used: name any missing size/weight relationship, visible clearance or image-frame/crop decision that would force the next maker to invent a world rule.
 
 ## Rubric
 
 Give every reviewer this, and nothing else from the skill:
 
 1. The philosophy (SKILL.md) and the floors (above). Both hold under every school; a dialect changes only how they are met.
-2. The claimed school's test and caricature: the dialect file, or the theme's test and anti-patterns.
+2. The claimed school's test and caricature: the chosen theme and applicable dialect, surface and method files; use the theme's test and anti-patterns when no dialect applies.
 3. The surface's "Done means".
 4. Where unexamined choices land, listed below.
 

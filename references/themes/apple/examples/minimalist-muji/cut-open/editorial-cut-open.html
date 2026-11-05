@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200">
+<title>Plain — Four materials, and no fifth</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Noto+Sans+SC:wght@400&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#f8f6f1; --panel:#ffffff; --dark:#302d27; --ink:#302d27;
+    --muted:#666056; --action:#302d27; --onAction:#ffffff; --onDark:#ffffff;
+    --hairline:#d2d2d7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#e8e5df}
+  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
+  .unit{position:relative;width:1200px;height:1600px;overflow:hidden;background:var(--canvas)}
+  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
+  .t{position:absolute}
+  .pad{padding:12px}
+  a{text-decoration:none;color:inherit}
+  svg{display:block}
+
+  .vista{position:absolute;left:0;top:0;width:1200px;height:620px;overflow:hidden}
+  .mark{left:110px;top:60px;font-size:15px;font-weight:400;line-height:1.4;letter-spacing:.02em}
+  .vhead{left:110px;top:132px;width:520px}
+  .vhead h1{font-size:52px;font-weight:400;line-height:1.1;letter-spacing:-.02em}
+  .vhead .zh{margin-top:20px;font-size:22px;font-weight:400;line-height:1.55;color:var(--muted)}
+  .vhead a{display:inline-block;margin-top:34px;font-size:17px;font-weight:400;line-height:1.4;
+           color:var(--action);border-bottom:1px solid var(--action);padding-bottom:3px}
+
+  .cap{left:110px;top:656px;width:980px;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
+  .lead{left:110px;top:694px;width:900px;font-size:28px;font-weight:400;line-height:1.4;letter-spacing:-.01em}
+  .leadzh{left:110px;top:786px;width:880px;font-size:18px;font-weight:400;line-height:1.6;color:var(--muted)}
+  .body{left:110px;top:846px;width:800px;font-size:17px;font-weight:400;line-height:1.65}
+
+  .plateh{left:110px;top:962px;font-size:13px;font-weight:400;line-height:1.5;color:var(--muted)}
+  .plate{left:110px;top:990px;width:980px;height:322px;background:var(--panel);border:1px solid var(--hairline)}
+
+  .close{left:110px;top:1366px;width:760px;font-size:22px;font-weight:400;line-height:1.4;letter-spacing:-.01em}
+  .price{left:110px;top:1414px;font-size:14px;font-weight:400;line-height:1.5;color:var(--muted)}
+  .foot{left:110px;top:1522px;width:980px;display:flex;justify-content:space-between;
+        font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="unit" id="page">
+
+  <div class="vista">
+    <svg width="1200" height="620" viewBox="0 0 1200 620" aria-hidden="true">
+      <rect width="1200" height="620" fill="#f3f0e8"/>
+      <rect y="575" width="1200" height="45" fill="#e3ded2"/>
+      <rect y="575" width="1200" height="1.4" fill="#cbc4b4"/>
+
+      <!-- one hook, one cord, one dustpan -->
+      <path d="M796 104 C796 94 810 94 810 104 L810 122 C810 132 824 132 824 122"
+            fill="none" stroke="#8d8677" stroke-width="4" stroke-linecap="round"/>
+      <path d="M803 126 C794 150 794 176 803 196" fill="none" stroke="#e7e0d3" stroke-width="7"/>
+      <path d="M817 126 C826 150 826 176 817 196" fill="none" stroke="#e7e0d3" stroke-width="7"/>
+
+      <rect x="799" y="192" width="22" height="278" fill="#ddc9a6"/>
+      <path d="M802 194 V468" stroke="#c2a97f" stroke-width="1.4"/>
+      <path d="M818 194 V468" stroke="#c2a97f" stroke-width="1.4"/>
+      <path d="M802 244 H818" stroke="#c2a97f" stroke-width="1.2" opacity=".75"/>
+      <path d="M802 300 H818" stroke="#c2a97f" stroke-width="1.2" opacity=".75"/>
+      <path d="M802 356 H818" stroke="#c2a97f" stroke-width="1.2" opacity=".75"/>
+      <path d="M802 412 H818" stroke="#c2a97f" stroke-width="1.2" opacity=".75"/>
+
+      <path d="M810 462 L918 462 L940 566 L680 566 L702 462 Z" fill="#d2d0c8"/>
+      <path d="M702 462 L918 462 L920 476 L700 476 Z" fill="#dbd9d1"/>
+      <path d="M700 476 L920 476" stroke="#b8b6ad" stroke-width="1.4"/>
+      <path d="M680 566 L940 566" stroke="#b8b6ad" stroke-width="2"/>
+      <path d="M686 554 L934 554" stroke="#b8b6ad" stroke-width="1.2" opacity=".8"/>
+      <rect x="756" y="500" width="96" height="42" fill="#f2ede2" stroke="#d8d2c2" stroke-width="1"/>
+      <path d="M756 510 H852" stroke="#ddd7c7" stroke-width="1"/>
+      <path d="M756 523 H852" stroke="#ddd7c7" stroke-width="1"/>
+      <path d="M756 536 H852" stroke="#ddd7c7" stroke-width="1"/>
+    </svg>
+
+    <p class="t mark pad">Plain</p>
+    <div class="t vhead">
+      <h1>Four materials,<br>and no fifth.</h1>
+      <p class="zh">四种材料，没有第五种</p>
+      <a href="#">Read the material note</a>
+    </div>
+  </div>
+
+  <p class="t cap">Illustrative render, not a photograph</p>
+
+  <p class="t lead">A dustpan can be taken apart into four materials, and none of them is there to look like something else.</p>
+  <p class="t leadzh">一个撮箕可以拆成四种材料，没有一种是用来装成别的东西的</p>
+  <p class="t body">One wall of polypropylene, 2 mm, undyed: no liner behind it. One beech handle, 22 mm, held in a socket by one screw. One cotton cord, 4 mm, through a drilled hole. One paper label, 40 × 20 mm, the only printed thing on the object.</p>
+
+  <p class="t plateh">Section through the pan and the handle socket, at 4:1. The drawing is a detail; the handle and the floor continue past the broken lines.</p>
+
+  <div class="t plate">
+    <svg width="978" height="320" viewBox="0 0 978 320" aria-hidden="true">
+      <g transform="translate(0 18)">
+
+      <path d="M146 56 V266" stroke="#c9c4b6" stroke-width="1" stroke-dasharray="5 7"/>
+      <path d="M940 56 V170" stroke="#c9c4b6" stroke-width="1" stroke-dasharray="5 7"/>
+
+      <!-- the pan: one 2 mm wall, cut -->
+      <path d="M150 250 H508 V258 H150 Z" fill="#d2d0c8"/>
+      <path d="M500 72 H508 V258 H500 Z" fill="#d2d0c8"/>
+      <path d="M150 250 H508" stroke="#e8e6de" stroke-width="1.2"/>
+      <path d="M500 72 V258" stroke="#b8b6ad" stroke-width="1"/>
+
+      <!-- socket and screw, the same polypropylene -->
+      <path d="M486 66 H560 V156 H486 Z" fill="#cbc9c1"/>
+      <path d="M486 66 H560 V156 H486 Z" fill="none" stroke="#b8b6ad" stroke-width="1"/>
+      <circle cx="523" cy="111" r="4.2" fill="#8d8677"/>
+      <path d="M519 111 H527" stroke="#e9e7df" stroke-width="1"/>
+
+      <!-- beech handle -->
+      <rect x="558" y="70" width="382" height="88" fill="#ddc9a6"/>
+      <path d="M558 71 H940" stroke="#f0e2c4" stroke-width="1.6"/>
+      <path d="M558 156 H940" stroke="#c2a97f" stroke-width="1.4"/>
+      <g stroke="#c2a97f" stroke-width="1" fill="none" opacity=".85">
+        <path d="M580 88 C650 84 720 92 790 88 S 890 84 936 90"/>
+        <path d="M580 104 C650 108 720 100 790 104 S 890 108 936 102"/>
+        <path d="M580 120 C650 116 720 124 790 120 S 890 116 936 122"/>
+        <path d="M580 136 C650 140 720 132 790 136 S 890 140 936 134"/>
+      </g>
+
+      <!-- cotton cord, tied at the socket, hanging -->
+      <path d="M578 156 C 552 196, 552 236, 582 236 C 612 236, 614 196, 592 158"
+            fill="none" stroke="#e7e0d3" stroke-width="16" stroke-linecap="round"/>
+      <path d="M578 156 C 552 196, 552 236, 582 236" fill="none" stroke="#f6f1e6" stroke-width="4"/>
+
+      <!-- paper label on the inside of the wall -->
+      <rect x="340" y="168" width="160" height="80" fill="#f2ede2" stroke="#d8d2c2" stroke-width="1"/>
+      <path d="M356 190 H484" stroke="#ddd7c7" stroke-width="1.4"/>
+      <path d="M356 208 H484" stroke="#ddd7c7" stroke-width="1.4"/>
+      <path d="M356 226 H430" stroke="#ddd7c7" stroke-width="1.4"/>
+
+      <!-- polypropylene -->
+      <path d="M200 52 V246" stroke="#666056" stroke-width="1" fill="none"/>
+      <text x="200" y="24" text-anchor="middle" font-family="Inter, 'Noto Sans SC', sans-serif"
+            font-size="13" fill="#302d27">Polypropylene</text>
+      <text x="200" y="42" text-anchor="middle" font-family="Inter, 'Noto Sans SC', sans-serif"
+            font-size="13" fill="#666056">2 mm</text>
+
+      <!-- paper -->
+      <path d="M420 52 V164" stroke="#666056" stroke-width="1" fill="none"/>
+      <text x="420" y="24" text-anchor="middle" font-family="Inter, 'Noto Sans SC', sans-serif"
+            font-size="13" fill="#302d27">Paper</text>
+      <text x="420" y="42" text-anchor="middle" font-family="Inter, 'Noto Sans SC', sans-serif"
+            font-size="13" fill="#666056">40 × 20 mm</text>
+
+      <!-- cotton -->
+      <path d="M660 196 H612" stroke="#666056" stroke-width="1" fill="none"/>
+      <text x="668" y="192" font-family="Inter, 'Noto Sans SC', sans-serif"
+            font-size="13" fill="#302d27">Cotton</text>
+      <text x="668" y="210" font-family="Inter, 'Noto Sans SC', sans-serif"
+            font-size="13" fill="#666056">4 mm</text>
+
+      <!-- beech -->
+      <path d="M790 172 V160" stroke="#666056" stroke-width="1" fill="none"/>
+      <text x="790" y="192" font-family="Inter, 'Noto Sans SC', sans-serif"
+            font-size="13" fill="#302d27">Beech</text>
+      <text x="790" y="210" font-family="Inter, 'Noto Sans SC', sans-serif"
+            font-size="13" fill="#666056">22 mm</text>
+      </g>
+    </svg>
+  </div>
+
+  <p class="t close">Nothing is laminated, coated or glued.</p>
+  <p class="t price">Plain dustpan · ¥68</p>
+
+  <div class="t foot"><span>Illustrative example</span><span>Plain material note · 2026</span></div>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+480 mm
+
+Sound
+
+The room is quieter than the speaker.
+
+房间比音箱更安静
+
+30dB
+
+lowest setting, at one metre
+
+Room tone 28 dB. Two decibels is the whole gap.
+
+2 dB
+24
+32
+40
+28
+30
+dB SPL
+
+Illustrative render, not a photograph
+
+Illustrative example
+2 dB
+24
+32
+40
+28
+30
+dB SPL

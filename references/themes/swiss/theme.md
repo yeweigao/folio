@@ -25,7 +25,7 @@ Alone, the mother tongue suits material that argues, reports, testifies, counts 
 
 | Dialect | The material | Departs from Swiss |
 |---|---|---|
-| [De Stijl](dialects/de-stijl.md) | Relates: parts whose proportions and balance are the subject | Relations, not things: a drawn, open grid of bars and pure primaries balanced by opposition |
+| [De Stijl](dialects/de-stijl.md) | Relates: compositions, text-led reports, comparisons and sequences | A drawn field organizes the relationships; name the strict historical method or one reference-derived contemporary system |
 | [Bauhaus](dialects/bauhaus.md) | Celebrates or explains, where point, line and plane can build the subject | Elements as forces built into a figure; direction as meaning; primaries mixing only where parts meet |
 | [Brodovitch](dialects/brodovitch.md) | Seduces, where people or images are the subject | Black-and-white photographs under one colour of the subject's own; the figure cut against a serif word; paced like film |
 | [Polish Poster School](dialects/polish-poster.md) | Interprets a cultural subject | One authored metaphor, two things in one hand-made form, lettered in the same hand |
@@ -34,6 +34,26 @@ Alone, the mother tongue suits material that argues, reports, testifies, counts 
 | [Memphis](dialects/memphis.md) | Delights: products, events, launches, youth culture | Clashing colour roles and a constructed vocabulary; tiles, partitions, letters or projected parts organize the field |
 | [Kenya Hara, ma 間](dialects/ma.md) | Invites: one object, craft or ceremony | The charged interval, in space and in time; small, quiet type |
 | [Swiss Brutal](dialects/brutalist.md) | Specifies: structure is the content | Structure shown, material as found: visible rules, zero radius, dense rows |
+
+## Examples
+
+The [example collection](examples/) lives with this theme. Each world keeps its DESIGN.md beside its pieces and briefs; the collection also includes independent same-world pieces and the shared programme preview.
+
+| World | Examples |
+|---|---|
+| Swiss mother tongue · 岩序 / YANXU | [World, portfolio and flyer](examples/mother-tongue/README.md) |
+| De Stijl | [DESIGN.md and pieces](examples/de-stijl/DESIGN.md) |
+| Bauhaus | [DESIGN.md and pieces](examples/bauhaus/DESIGN.md) |
+| Brodovitch | [DESIGN.md and pieces](examples/brodovitch/DESIGN.md) |
+| Polish Poster School | [DESIGN.md and pieces](examples/polish-poster/DESIGN.md) |
+| Ulm | [DESIGN.md and pieces](examples/ulm/DESIGN.md) |
+| Swiss Punk | [DESIGN.md and pieces](examples/swiss-punk/DESIGN.md) |
+| Memphis | [Cases and finished work](examples/memphis/README.md) |
+| ma 間 | [DESIGN.md and pieces](examples/ma/DESIGN.md) |
+| Swiss Brutal | [DESIGN.md and pieces](examples/brutalist/DESIGN.md) |
+| Ensemble Lumen | [One skeleton, independent concert posters](examples/series-ensemble-lumen/DESIGN.md) |
+
+[One programme, nine hands](examples/dialects.png) compares the dialects. The pieces in each `the-grid/` folder predate some current system revisions; their original briefs remain beside them.
 
 ## Hands of the mother tongue
 

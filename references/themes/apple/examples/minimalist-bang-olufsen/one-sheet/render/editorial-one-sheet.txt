@@ -1,0 +1,27 @@
+Sound
+
+One sheet,
+4,500 holes,
+no seam.
+
+一张铝板，四千五百个孔，没有接缝
+
+See the section ›
+
+Illustrative render, not a photograph
+
+The grille is punched from one sheet of 0.5 mm aluminium. Nothing joins it.
+
+A seam is a decision about where sound stops being one surface. Most cabinets accept it: two panels meet, a line appears, and the ear learns to ignore the line. This front has no such place. The sheet is perforated in one pass, so the only edges it has are the four the cabinet holds.
+
+10 mm
+3.2 mm
+
+10:1 grille detail: 1.1 mm holes on a 3.2 mm pitch, 4,500 in one 0.5 mm sheet. Illustrative render, not a photograph.
+
+What the sheet does is stay still. Nine per cent of it is open; the rest holds the driver's frame in place, so the cabinet adds nothing to the recording. It is not a louder speaker. It leaves the room's quiet intact.
+
+Illustrative example
+Materials note 04
+10 mm
+3.2 mm

@@ -11,4 +11,4 @@ Expected: the first exits 1, flagging pages 02, 06 and 08; the second exits 0, c
 
 Small generated PNG/JPEG/GIF fixtures also verify decoded dimensions; a copied native picture with a non-default destination fill rectangle must be reported for review rather than accepted. Those checks passed on the same date. Unsupported vector media, EXIF-bearing JPEGs, non-default fills and grouped transforms are review cases. A matching aspect ratio says nothing about crop quality, subject identity or the rendered export's other transformations.
 
-The real decks stay in ignored local exports; the readable example and previews are in `examples/swiss/`. No binary fixture is required to use the skill.
+The real decks stay in ignored local exports; the readable example and previews are in `references/themes/swiss/examples/mother-tongue/`. No binary fixture is required to use the skill.

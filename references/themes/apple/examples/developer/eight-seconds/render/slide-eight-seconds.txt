@@ -1,0 +1,34 @@
+Relay
+
+It deploys while you watch.
+
+一次部署，八秒上线
+
+8
+
+seconds
+
+from a push to a live URL, on one illustrative build
+
+Read the deploy log ›
+
+Illustrative example
+
+Relay interface · illustrative
+
+deploy log
+main
+install
+1s
+build
+3s
+edge upload
+3s
+ready
+1s
+total
+8s
+live
+checkout
+
+Illustrative render, not a photograph

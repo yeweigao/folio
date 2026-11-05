@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200">
+<title>Before it goes live — Relay field note</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;family=Noto+Sans+Mono:wght@400&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#fafafa; --panel:#ffffff; --dark:#171717;
+    --ink:#171717; --muted:#626262; --action:#171717;
+    --onAction:#ffffff; --onDark:#ffffff; --hairline:#d2d2d7; --link:#005cc5;
+    --sans:"Manrope","Noto Sans SC",sans-serif;
+    --mono:"Noto Sans Mono","Noto Sans SC",monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#e4e4e6}
+  body{font-family:var(--sans);color:var(--ink)}
+  .unit{position:relative;width:1200px;height:1600px;overflow:hidden;background:var(--canvas)}
+  .zh{font-family:"Noto Sans SC",var(--sans)}
+  .mono{font-family:var(--mono)}
+  [data-cc]{position:relative;isolation:isolate}
+  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+  a{text-decoration:none;color:var(--link)}
+
+  .vista{position:absolute;left:0;top:0;width:1200px;height:720px;background:var(--dark);overflow:hidden}
+  .wm{position:absolute;left:110px;top:56px;font-size:21px;font-weight:600;color:var(--onDark);letter-spacing:-.3px}
+  .over{position:absolute;left:110px;top:116px;width:980px}
+  .over h1{font-size:48px;font-weight:600;line-height:1.14;letter-spacing:-1.4px;color:var(--onDark)}
+  .over .zhline{margin-top:22px;font-size:26px;font-weight:400;line-height:1.5;color:rgba(255,255,255,.82)}
+  .over .act{display:inline-block;margin-top:32px;font-size:21px;color:var(--onDark);border-bottom:1px solid rgba(255,255,255,.7);padding-bottom:4px}
+  .over .act .arrow{font-size:22px}
+
+  .browser{position:absolute;left:110px;top:360px;width:980px;height:250px;display:flex;flex-direction:column}
+  .browser .addr{display:flex;align-items:center;justify-content:space-between;height:54px;padding:0 28px;border-bottom:1px solid var(--hairline);font-size:14px;color:var(--muted)}
+  .browser .badge{font-size:12px;color:var(--muted)}
+  .browser .page{flex:1;padding:30px 32px;display:flex;flex-direction:column;justify-content:space-between}
+  .browser h2{font-size:28px;font-weight:600;line-height:1.25;letter-spacing:-.5px}
+  .browser .pg{margin-top:12px;font-size:17px;color:var(--muted)}
+  .browser .pnote{font-size:14px;color:var(--muted)}
+  .credit{position:absolute;left:110px;top:664px;width:980px;font-size:12px;color:rgba(255,255,255,.65)}
+
+  .column{position:absolute;left:110px;top:720px;width:980px;padding:80px 12px 0 12px}
+  .lead{font-size:28px;font-weight:400;line-height:1.42}
+  .leadzh{margin-top:14px;font-size:26px;font-weight:400;line-height:1.6;color:var(--muted)}
+  .body{margin-top:56px;max-width:720px;font-size:17px;font-weight:400;line-height:1.6}
+  .body+.body{margin-top:24px}
+  .figure{margin-top:64px;border-top:1px solid var(--hairline);padding-top:28px}
+  .figure .big{font-size:40px;font-weight:600;line-height:1.15;letter-spacing:-1px}
+  .flow{display:flex;align-items:center;gap:20px;margin-top:32px;font-size:14px}
+  .flow .step{color:var(--ink)}
+  .flow .step.hl{color:var(--link);font-weight:600}
+  .flow .arw{color:var(--muted)}
+  .cap{margin-top:30px;font-size:14px;color:var(--muted)}
+  .foot{position:absolute;left:110px;top:1524px;width:980px;display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="unit" id="page">
+
+  <div class="vista">
+    <p class="wm">Relay</p>
+    <div class="over">
+      <h1>Before it goes live, it already has an address.</h1>
+      <p class="zhline zh">上线之前，它已经有一个地址</p>
+      <a class="act" href="#">Open the preview<span class="arrow"> ›</span></a>
+    </div>
+
+    <div class="browser" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
+      <div class="addr"><span class="mono">relay / preview / checkout</span><span class="badge mono">staged, not live</span></div>
+      <div class="page">
+        <div>
+          <h2>A page waiting for a decision.</h2>
+          <p class="pg">Nothing on it is public yet.</p>
+        </div>
+        <p class="pnote">Draft · shared with the team</p>
+      </div>
+    </div>
+    <p class="credit">Illustrative render, not a photograph</p>
+  </div>
+
+  <div class="column">
+    <p class="lead">A preview link is a page that exists for one change.</p>
+    <p class="leadzh zh">一条预览链接，只为一次改动存在</p>
+    <p class="body">A deploy does not end when the build finishes. It ends when someone else can open the change and say what they think of it.</p>
+    <p class="body">Relay gives every push its own address. The page behind it is real, but it is not public; it exists for the people who were sent the link.</p>
+    <p class="body">The link is the review. Nothing has to be described in a message, because the thing itself is already there to be opened.</p>
+
+    <div class="figure">
+      <div class="big">1 preview URL per change</div>
+      <div class="flow mono">
+        <span class="step">push</span><span class="arw">→</span>
+        <span class="step">build</span><span class="arw">→</span>
+        <span class="step hl">preview</span><span class="arw">→</span>
+        <span class="step">ship</span>
+      </div>
+      <p class="cap">Illustrative render, not a photograph</p>
+    </div>
+  </div>
+
+  <div class="foot"><span>Relay field note, 2026</span><span>Illustrative example</span></div>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>

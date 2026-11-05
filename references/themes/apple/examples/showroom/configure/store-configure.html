@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>Volt — Configure</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --canvas:#171a20; --panel:#30343b; --ink:#f5f5f7; --muted:#d2d4d8;
+    --pewter:#5a6068; --action:#1559b7; --onAction:#ffffff; --hairline:#d2d2d7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#0e1014}
+  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
+  .unit{position:relative;width:1440px;height:1000px;overflow:hidden;background:var(--canvas)}
+  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
+  .zhserif{font-family:"Noto Serif SC","Noto Sans SC",serif}
+  .pad{padding:12px}
+  .t{position:absolute}
+  [data-cc]{position:relative;isolation:isolate}
+  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+  svg{display:block}
+
+  .nav{left:80px;top:0;width:1280px;height:64px;display:flex;align-items:center;justify-content:space-between}
+  .nav .mark{font-size:21px;font-weight:600;letter-spacing:normal}
+  .nav .sec{font-size:14px;font-weight:400;color:var(--muted);letter-spacing:normal}
+
+  .claim{left:80px;top:92px;width:1000px}
+  .claim h1{font-size:40px;font-weight:600;line-height:1.1;letter-spacing:normal}
+  .claim .zhline{margin-top:14px;font-size:21px;font-weight:400;color:var(--muted);line-height:1.5}
+  .car{left:270px;top:198px;width:900px;height:331px}
+  .car svg{width:900px;height:331px}
+  .cap{left:80px;top:540px;width:1000px;font-size:14px;font-weight:400;color:var(--muted);letter-spacing:normal}
+
+  .options{left:80px;top:584px;width:1280px;height:296px;display:grid;grid-template-columns:1fr 1fr 1fr}
+  .ogroup{padding:12px 40px 12px 12px}
+  .ogroup + .ogroup{border-left:1px solid var(--panel);padding-left:40px}
+  .ogroup h2{font-size:17px;font-weight:600;letter-spacing:normal}
+  .ogroup h2 .zhsub{font-size:14px;font-weight:400;color:var(--muted);margin-left:10px}
+  .chips{margin-top:18px;display:flex;flex-direction:column;gap:10px}
+  .chip{min-height:56px;padding:10px 16px;display:flex;flex-direction:column;justify-content:center;
+    background:transparent;border:1px solid rgba(210,212,216,.30)}
+  .chip .nm{font-size:17px;font-weight:400;letter-spacing:normal}
+  .chip .dl{font-size:14px;font-weight:400;color:var(--muted);margin-top:3px;letter-spacing:normal}
+  .chip.on{background:var(--ink);border-color:var(--ink)}
+  .chip.on .nm{font-weight:600;color:#171a20}
+  .chip.on .dl{color:#30343b}
+
+  .exline{left:80px;top:892px;width:1280px;font-size:12px;font-weight:400;color:var(--muted);letter-spacing:normal}
+
+  .bar{left:0;top:920px;width:1440px;height:80px;background:var(--panel);
+    display:flex;align-items:center;justify-content:space-between;padding:0 80px}
+  .bar .left{display:flex;flex-direction:column;gap:6px}
+  .bar .row1{display:flex;align-items:baseline;gap:28px}
+  .bar .nm{font-size:21px;font-weight:600;letter-spacing:normal}
+  .bar .total{font-size:21px;font-weight:600;letter-spacing:normal}
+  .bar .deriv{font-size:12px;font-weight:400;color:var(--muted);letter-spacing:normal}
+  .reserve{display:inline-flex;align-items:center;justify-content:center;width:160px;height:48px;
+    background:var(--action);color:var(--onAction);font-size:17px;font-weight:600;letter-spacing:normal}
+</style>
+</head>
+<body>
+<div class="unit" id="page">
+
+  <div class="t nav">
+    <span class="mark">Volt</span>
+    <span class="sec">Configure</span>
+  </div>
+
+  <div class="t claim pad">
+    <h1>Every choice shows its price.</h1>
+    <p class="zhline zhserif">每一项选择，都标着价格</p>
+  </div>
+
+  <div class="t car">
+    <svg viewBox="0 0 576 212" aria-hidden="true">
+      <line x1="18" y1="176" x2="558" y2="176" stroke="#30343b" stroke-width="1"/>
+      <path d="M28 138
+               C23 138 20 132 20 124
+               L24 96
+               C31 79 50 69 80 65
+               L156 36
+               C171 30 190 28 212 28
+               L338 28
+               C358 28 374 34 388 48
+               L452 76
+               C508 82 540 94 540 114
+               L540 138
+               Z" fill="#4a505a"/>
+      <rect x="28" y="122" width="512" height="16" fill="#3a3f47"/>
+      <path d="M84 64 L156 38 C170 32 188 30 210 30 L336 30 C352 30 366 35 378 47 L424 70 Z" fill="#262b32"/>
+      <path d="M232 30 L336 30 C350 30 362 34 374 46 L392 68 L232 68 Z" fill="#262b32" opacity=".9"/>
+      <path d="M84 64 L156 38 C170 32 188 30 210 30 L226 30 L226 33 L212 33 C190 33 172 35 158 41 L88 67 Z" fill="#a9afb8" opacity=".6"/>
+      <line x1="229" y1="32" x2="229" y2="68" stroke="#4a505a" stroke-width="6"/>
+      <line x1="232" y1="68" x2="232" y2="136" stroke="#2a2e35" stroke-width="1.5" opacity=".8"/>
+      <line x1="388" y1="70" x2="388" y2="136" stroke="#2a2e35" stroke-width="1.5" opacity=".8"/>
+      <rect x="252" y="96" width="20" height="4" fill="#8a9099"/>
+      <rect x="300" y="96" width="20" height="4" fill="#8a9099"/>
+      <path d="M420 72 L433 68 L437 76 L424 80 Z" fill="#4a505a"/>
+      <circle cx="60" cy="104" r="5" fill="none" stroke="#8a9099" stroke-width="1.5"/>
+      <rect x="524" y="102" width="15" height="10" fill="#a9afb8"/>
+      <rect x="21" y="102" width="12" height="10" fill="#8a9099"/>
+      <line x1="34" y1="112" x2="530" y2="112" stroke="#2a2e35" stroke-width="2" opacity=".7"/>
+      <circle cx="152" cy="146" r="31" fill="#171a20"/>
+      <circle cx="152" cy="146" r="16" fill="#6b7078"/>
+      <circle cx="152" cy="146" r="6" fill="#20242b"/>
+      <circle cx="418" cy="146" r="31" fill="#171a20"/>
+      <circle cx="418" cy="146" r="16" fill="#6b7078"/>
+      <circle cx="418" cy="146" r="6" fill="#20242b"/>
+    </svg>
+  </div>
+  <p class="t cap pad">Illustrative render, not a photograph</p>
+
+  <div class="t options">
+    <div class="ogroup">
+      <h2>Battery<span class="zhsub zh">电池</span></h2>
+      <div class="chips">
+        <div class="chip"><span class="nm">Standard 402 km</span><span class="dl">Included</span></div>
+        <div class="chip on"><span class="nm">Long range 560 km</span><span class="dl">+¥12,000</span></div>
+      </div>
+    </div>
+    <div class="ogroup">
+      <h2>Wheels<span class="zhsub zh">轮毂</span></h2>
+      <div class="chips">
+        <div class="chip on"><span class="nm">16-inch Aero</span><span class="dl">Included</span></div>
+        <div class="chip"><span class="nm">18-inch Turbine</span><span class="dl">+¥4,800</span></div>
+      </div>
+    </div>
+    <div class="ogroup">
+      <h2>Finish<span class="zhsub zh">车色</span></h2>
+      <div class="chips">
+        <div class="chip on"><span class="nm">Ash</span><span class="dl">Included</span></div>
+        <div class="chip"><span class="nm">Pewter</span><span class="dl">+¥2,200</span></div>
+        <div class="chip"><span class="nm">Carbon</span><span class="dl">+¥3,600</span></div>
+      </div>
+    </div>
+  </div>
+
+  <p class="t exline pad">Illustrative example</p>
+
+  <div class="t bar">
+    <div class="left">
+      <div class="row1"><span class="nm">Volt</span><span class="total">¥92,400</span></div>
+      <span class="deriv">Base ¥80,400 + ¥12,000 Long range</span>
+    </div>
+    <span class="reserve">Reserve</span>
+  </div>
+</div>
+<script src="../../_shared/continuous-corner.js"></script>
+</body>
+</html>
