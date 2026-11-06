@@ -39,7 +39,7 @@ Apple combines an optional industry dialect with a Keynote, Store or Editorial s
 |---|---|---|
 | [De Stijl](references/themes/swiss/dialects/de-stijl.md) | Relates: compositions, paragraphs, comparisons and sequences | Drawn fields organize reading; strict Mondrian and contemporary reference applications have explicit boundaries |
 | [Bauhaus](references/themes/swiss/dialects/bauhaus.md) | Celebrates or explains, where point, line and plane can build the subject | Elements as forces built into a figure; primaries mixing only where parts meet |
-| [Brodovitch](references/themes/swiss/dialects/brodovitch.md) | Seduces, where people or images are the subject | Black-and-white photographs under the subject's own colour; figure cut against the word |
+| [Brodovitch](references/themes/swiss/dialects/brodovitch.md) | Edits images, identity and editorial reading | Distinctive serif, monochrome crops and a variable house colour; architectural type/image fields and quiet reading |
 | [Polish Poster School](references/themes/swiss/dialects/polish-poster.md) | Interprets a cultural subject | One authored metaphor, two things in one hand-made form |
 | [Ulm](references/themes/swiss/dialects/ulm.md) | Coordinates a system of messages | Rules before cases; colour and pictograms as codes |
 | [Swiss Punk](references/themes/swiss/dialects/swiss-punk.md) | Provokes, still readable | The grid tested by rotation, layering, stepped type |
@@ -87,6 +87,8 @@ CONTRIBUTING.md   laws, contracts and releases for changing the skill
 ```
 
 [De Stijl report examples](references/themes/swiss/examples/de-stijl/README.md): 69 reference reconstructions, five standalone worlds and 15 new-content reading, table and timeline pages.
+
+[Brodovitch editorial examples](references/themes/swiss/examples/brodovitch/gallery.html): four warm-yellow applications with Bodoni Moda and Source Han Serif, plus the [folio house collection](references/themes/swiss/examples/brodovitch/folio-house-study/gallery.html) of twelve adapted compositions and six new works.
 
 [Memphis examples](references/themes/swiss/examples/memphis/README.md): 28 reconstructions, ten extracted worlds and independent same-world transfer tests.
 

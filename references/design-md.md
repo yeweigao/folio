@@ -22,7 +22,7 @@ Read the draft as a maker who cannot see the images: which missing decision coul
 - **Relative to the format, never one size.** Every size derives from S, the format's short side, and every construction from W × H, so the same file builds a poster, a slide, a phone cover or a page. A size set by a span is derived, never also fixed: one rule per size.
 - **Three tests per line.** Would a maker get it wrong without it? Is it the rule, not one result of it (a ratio, not 336)? Does it say what no other line says? A line that fails one goes; a skeleton of rules, not instances, has nothing to contradict.
 - **No rule against itself.** Every rule holds for Latin and Chinese, for one language or two, for every form; a translation in World is never banned in Forms. Where two rules meet, the file says which wins.
-- **Method before look.** The invocation opens it: school, hand, the work that carries the method, the method as an imperative, one ban. Then the method as process: the first move, the tools and materials, the procedure, and how each piece finds its own idea in its subject. Values read first teach a look.
+- **Method before look.** The invocation opens it: school, hand, the work that carries the method, the method as an imperative, one ban. Then the method as process: the first move, the tools and materials, how the subject yields different compositional relationships, and the visible evidence for choosing among them. State this hand's criterion in the world's terms; a material-dependent decision and a usable reading path must survive the choice. Values read first teach a look.
 - **Images decided once.** Source, treatment and credit; how each image role meets the frame (full bleed, trim-connected panel or inset), what must survive the crop, and how proportions are preserved.
 - **Layout as construction, not coordinates.** The grid system named, with the rule that derives it from any format.
 - **Forms, one line each.** How each form this world uses is set, and its ban. For a text-heavy world, specify paragraph measure and continuation, how genuine peers share columns, and how table/data rules differ from graphic framing; test these with new text rather than infer them from a cover.
@@ -34,14 +34,10 @@ Read the draft as a maker who cannot see the images: which missing decision coul
 ````markdown
 # <World> · <school, hand>
 
-<What this system makes, for which content, in one sentence.>
-
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
-
 ## Overview
 <School>, <hand> — <the work>: <the method as an imperative>; never <the ban>.
 World: <the content and surfaces it serves; how the method translates to content it was not made for; what every piece keeps, what each piece brings>.
-Method: <the first move, the tools and materials, the procedure; how each piece finds its idea in its subject>.
+Method: <the first move, tools and material; the subject feature that generates different relationships; the visible criterion for retaining one and rejecting another, while preserving reading; how quiet or non-image material is handled>.
 Amplitude: <full, or reduced: what is turned down, and why>.
 Anti-reference: <the default a maker reaches for with no school, which this world refuses; the school's own costume goes to Caricature>.
 
@@ -49,6 +45,8 @@ Anti-reference: <the default a maker reaches for with no school, which this worl
 <Source: photographed, hand-made, computed, or none; treatment and credit. For each image role, state whether it meets the trim or sits within it, and how that changes with format. Name what the crop must preserve; scale uniformly from the source ratio when fitting its frame. What stands in, declared, until the real one exists.>
 
 ## Layout
+Use alone: tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size derived from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
+
 Grid system: <one system from the theme's roster> — <why>.
 <The construction from W × H: module, margins, tracks, pattern frequency and adjoining fields. Name the stable relationships and the free positions; state the conditions for each format or field change and where unused space goes. Resolve gaps between actual type/image ink relative to type or module; text-box clearance alone is not the measure. For recurring groups, name the shared alignment, spacing or motif, and how size or density changes with importance or content length. Genuine peers retain shared measures; add no element solely to produce a beat.>
 

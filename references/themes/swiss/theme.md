@@ -27,7 +27,7 @@ Alone, the mother tongue suits material that argues, reports, testifies, counts 
 |---|---|---|
 | [De Stijl](dialects/de-stijl.md) | Relates: compositions, text-led reports, comparisons and sequences | A drawn field organizes the relationships; name the strict historical method or one reference-derived contemporary system |
 | [Bauhaus](dialects/bauhaus.md) | Celebrates or explains, where point, line and plane can build the subject | Elements as forces built into a figure; direction as meaning; primaries mixing only where parts meet |
-| [Brodovitch](dialects/brodovitch.md) | Seduces, where people or images are the subject | Black-and-white photographs under one colour of the subject's own; the figure cut against a serif word; paced like film |
+| [Brodovitch](dialects/brodovitch.md) | Edits images, identity and editorial reading | A distinctive serif, monochrome crops and one variable house colour; type/image fields range from architectural tension to quiet reading |
 | [Polish Poster School](dialects/polish-poster.md) | Interprets a cultural subject | One authored metaphor, two things in one hand-made form, lettered in the same hand |
 | [Ulm](dialects/ulm.md) | Coordinates a system of related messages | Rules before cases, analysis before form; colour and pictograms as codes |
 | [Swiss Punk](dialects/swiss-punk.md) | Provokes, still readable | The grid tested by rotation, layering and stepped type |
@@ -44,7 +44,7 @@ The [example collection](examples/) lives with this theme. Each world keeps its 
 | Swiss mother tongue · 岩序 / YANXU | [World, portfolio and flyer](examples/mother-tongue/README.md) |
 | De Stijl | [DESIGN.md and pieces](examples/de-stijl/DESIGN.md) |
 | Bauhaus | [DESIGN.md and pieces](examples/bauhaus/DESIGN.md) |
-| Brodovitch | [DESIGN.md and pieces](examples/brodovitch/DESIGN.md) |
+| Brodovitch | [Worlds, reconstructions and independent pieces](examples/brodovitch/README.md) |
 | Polish Poster School | [DESIGN.md and pieces](examples/polish-poster/DESIGN.md) |
 | Ulm | [DESIGN.md and pieces](examples/ulm/DESIGN.md) |
 | Swiss Punk | [DESIGN.md and pieces](examples/swiss-punk/DESIGN.md) |

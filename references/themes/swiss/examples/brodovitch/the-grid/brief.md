@@ -44,13 +44,13 @@ Passers-by in windows and streets, reading English or Simplified Chinese from tw
 
 ## The idea
 
-On this surface, *the grid* becomes *the editor's crop*: the plate edge sits on a module line and cuts the word GRID past its middle, so the ruler that frames the picture turns the word from paper-on-black to ink-on-white and its letters read as a chessboard.
+On this surface, *the grid* becomes *the shared measure*: the identifying words establish the scale, while the programme makes its times, titles and speakers easy to compare. The Schönbrunn-yellow edition uses the current Brodovitch DESIGN and its real Latin/CJK serif pair.
 
 Refused: a ruled grid of lines (the literal pictogram), a centred serif over a figure (the caricature).
 
 ## Assumptions and gaps
 
-- No photograph was supplied: the plate holds a labeled FPO placeholder (credit line "FPO. Photograph to be commissioned."). Commission: a dancer crossing the bare floor of Hall 2, long exposure, one gesture, near-black plate, figure in the upper two thirds, lower third left to shadow.
-- The programme is fictional: "Illustrative example" sits top left of the plate at reading size, read first.
+- This edition is typographic; no photograph or FPO placeholder is required.
+- The programme is fictional: "Illustrative example" remains clearly visible in the identifying field.
 - No Chinese was given for the date, times, doors, foyer line or speakers; none was invented, so those lines are in one language.
 - No ticket address, logo or contact line was given; none is printed.
