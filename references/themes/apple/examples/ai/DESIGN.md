@@ -1,64 +1,92 @@
 # Fern · Apple + Claude
 
-Fern's world: an AI writing assistant on warm paper, its proof a readable draft.
+A writing assistant in Apple + Claude: warm paper, a serif voice, one hand-drawn stroke under the word that matters.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are px at S = 1000, S the format's short side, and scale with it; each is a floor for how far the format is read from, never a ceiling. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath; form names are the maker's, never set on the page. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
-Apple + Claude style — make intelligence tangible by setting a readable conversation or document on warm paper, with the material carrying mood and the product surface checking the claim; never let a gradient, robot or glowing orb stand in for proof.
+Apple + Claude style — Make every unit read like a page someone cared about: warm paper, a serif claim, one hand-drawn stroke under its core word, the writing itself as proof; never a cool gradient, never a robot.
 
-World: A fictional writing assistant across launch, plan choice and editorial explanation. Intelligence has no photograph, so every piece keeps the warm editorial ground, the living text surface and one claim; each brings the writing task or decision that makes the assistant legible.
+World: Fern's assistant, plans, launches and essays, on any surface. Every piece keeps the warm paper, the serif voice and the hand stroke; each brings its own claim and a readable piece of writing — a draft, a reply, a margin note — as its proof.
 
-Method: Start from the reader’s writing task and name the change the assistant makes. Build that change into a legible document, conversation or count, then place the proof surface against warm paper. The subject determines which surface matters; choose the one that lets a reader verify the claim at a glance. Keep the atmosphere quiet and the reading path claim → surface → consequence. When no interface can check a statement, remove the statement.
+Method:
+1. Find the claim's core word: the one the reader must not miss.
+2. Set the claim in the serif and draw the stroke under that word.
+3. Prove it with writing, readable: a draft beside its edit, a reply, a note.
+4. Let the dark product surface carry anything technical; the paper carries the rest.
 
-Amplitude: Full at the opening claim and one proof turn; reduced for plan comparison and notes.
+Amplitude: Full on covers and turns; reduced in pricing and reference, where the stroke may be absent.
 
-Anti-reference: A generic AI landing page built from a cool blue gradient, an orb and uncheckable capability claims.
+Anti-reference: The generic AI page: a cool gradient, a glowing orb, a robot.
 
 ## Images
 
-Use no literal robot or synthetic mood photograph. Render the material as a flat warm field; make the proof a self-contained fictional interface with readable text, not placeholder bars. Declare every mock screen as illustrative and credit any external image if one is later introduced. For Keynote, the document sits inside the trim at gallery scale with a calm title field beside it. In Store, the interface is a repeated inset crop with the screen interior only; keep the same crop across plans. In Editorial, the opening proof surface may meet the trim, but its readable content remains unobscured; the story and figure sit in an inset column. Never stretch a screen or crop its frame. On a cover the product surface leads at half the frame or more, larger than any headline.
+No photograph. The proof is writing set live on paper or on the dark product surface, readable at viewing size, its crop the text interior only; declared once as illustrative. On a cover the proof takes half the frame or more. No Anthropic or other brand mark.
 
 ## Layout
 
-Grid system: Gallery field — paper gives the interface room to read, while changes between paper and charcoal separate product proof from explanation.
+Grid system: Page field — a reading column and a proof column share the baseline, like a manuscript and its margin.
 
-Derive 12 tracks from W × H with side margin max(5% W, 6% S), a 1.25% W gutter and equal remaining tracks. Put the claim and proof on a shared track edge. Use an 8 px module at S = 1000, spacing groups by 1, 2, 3 or 5 modules. At every text-to-image boundary, leave at least two modules between visible glyph bounds and the image; measure ink, not text boxes. The proof surface owns the largest uninterrupted field; the title never overlays readable interface text. In Keynote, assign one thesis to the 16:9 slide and keep critical content inside the central 84%. In Store, keep choices, price and the buy action on one fixed axis; use white cards on parchment only for plans, not for the hero proof. In Editorial, begin with one proof-field vista, then continue in a flush-left column no wider than 82% W or 65 characters; make the footer dense only for source or plan reference.
+Twelve tracks from W × H: margin max(5% W, 6% S), gutter 1.25% W, an 8 px module. The claim spans seven tracks, the proof five; on narrow formats the proof follows the claim. Paper never tints a second time behind text. Formats: on a 1600 × 900 slide, critical content stays inside the central 84%, the slide title at least 90 px and body at least 33; a scrolling page reads the tokens as given at a 1440 px viewport, body never below 17 px; a shop subdivides the field into peer cards on hairlines.
 
 ## Typography
 
-Use Newsreader for display and lead, Source Sans 3 for reading, labels and controls; pair with Noto Serif SC and Noto Sans SC respectively. These are licensed public font substitutes, not Claude or Apple files. At S = 1000 use launch display 80 / 400 / 1.05, section heading 56 / 400 / 1.1, lead 28 / 400 / 1.45, body 17 / 400 / 1.55, label 14 / 400 / 1.4 and fine 12 / 400 / 1.5. Let the serif set the editorial voice; 600 appears only on a product name, selected plan or action. Keep CJK and Latin at matched apparent size and baseline, with a quarter-em script gap; break Chinese at phrase boundaries. Keep code and counters tabular when present; there is no mono body. On slides the Keynote floors hold: slide title at least 0.1 S, body at least 0.037 S.
+- Newsreader for display, heading and lead; Source Sans 3 for body and labels; Noto Serif SC and Noto Sans SC for Chinese in the same roles.
+- Display 80 / 400; heading 56 / 400; lead 28 / 400; body 17 / 400; label 14; fine 12.
+- Sentence case; the serif never bolds; emphasis is the stroke, not weight.
 
 ## Colors
 
-Ground: Claude's tinted cream, the brand's signature. Warm cream #f8f3e8 is the page canvas, soft cream #fffaf2 is the Store card, charcoal #302e2b is the product-surface field and ink #272520 is reading text. Muted #635e56 supports notes; hairline #d2d2d7 separates controls and outlines Store cards, never decorating. Coral-clay #ad4937 marks links, buy actions and focus on light grounds; pale coral #ef9a87 is the dark-ground link. White text belongs on coral or charcoal; ink and muted belong on the two cream grounds. No cool blue or page-wide gradient.
+Ground: Claude's tinted cream, the brand's signature.
+- **canvas** `#f8f3e8` the paper; **panel** `#fffaf2` a lifted sheet, visibly lighter at thumbnail; **dark** `#302e2b` the product surface.
+- **ink** `#272520`, **muted** `#635e56`; **onDark** white.
+- **action**, **link** and **focus** `#ad4937` terracotta, the stroke's colour and the one action; **darkLink** `#ef9a87` on dark; **onAction** white.
+- **hairline** `#d2d2d7` between reference rows only.
 
 ## Shapes
 
-Use full-bleed square fields. Store cards use the Apple continuous contour at R = 18 at S = 1000; controls use R = 8 and selection chips are pills. The contour is M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0, drawn by the shared continuous-corner.js helper. Keep inner curves concentric: inner R = max(0, outer R − gap). Use no shadow, badge or decorative border. Product screens remain square within their rounded frame.
+**The device: the hand stroke.** One terracotta stroke, drawn as a single tapered path, under the headline's core word: length 1.05× the word, thickness 0.06 em rising to 0.1 em at its centre, a slight upward lift at the right end. One per unit, under one word, never under a whole line, never a straight rule, never in body text or on a button.
+
+Product surfaces and cards 18; actions full pills; tools 8. Every nonzero radius, pills included, takes Apple's continuous corner, copied, never derived; `border-radius`, `rect rx` and superellipses are other curves. A page built with Folio inlines `continuous-corner.js` and marks each box `data-cc="R"`. Anything else draws one of the two paths below, in units of R, with `transform="translate(x y) scale(R)"` and `vector-effect="non-scaling-stroke"`, filling in A = W ÷ R − 3.05732 and B = H ÷ R − 3.05732. R is at most half the short side, a box or a pill, never between; inner R = max(0, outer R − gap); fill, stroke, clip and focus ring share one path.
+
+A box, both sides at least 3.06 R:
+
+```
+M1.52866 0 h{A} c.44017 0 .66025 0 .89717 .07491 c.25867 .09415 .46243 .29791 .55658 .55658 c.07491 .23692 .07491 .457 .07491 .89717 v{B} c0 .44017 0 .66025 -.07491 .89717 c-.09415 .25867 -.29791 .46243 -.55658 .55658 c-.23692 .07491 -.457 .07491 -.89717 .07491 h-{A} c-.44017 0 -.66025 0 -.89717 -.07491 c-.25867 -.09415 -.46243 -.29791 -.55658 -.55658 c-.07491 -.23692 -.07491 -.457 -.07491 -.89717 v-{B} c0 -.44017 0 -.66025 .07491 -.89717 c.09415 -.25867 .29791 -.46243 .55658 -.55658 c.23692 -.07491 .457 -.07491 .89717 -.07491z
+```
+
+A pill, R = H ÷ 2:
+
+```
+M1.52866 0 h{A} c.44017 0 .66025 0 .89717 .07491 c.25867 .09415 .46243 .29791 .55658 .55658 c.07491 .18851 .07491 .32851 .07491 .36851 c0 .04 0 .18 -.07491 .36851 c-.09415 .25867 -.29791 .46243 -.55658 .55658 c-.23692 .07491 -.457 .07491 -.89717 .07491 h-{A} c-.44017 0 -.66025 0 -.89717 -.07491 c-.25867 -.09415 -.46243 -.29791 -.55658 -.55658 c-.07491 -.18851 -.07491 -.32851 -.07491 -.36851 c0 -.04 0 -.18 .07491 -.36851 c.09415 -.25867 .29791 -.46243 .55658 -.55658 c.23692 -.07491 .457 -.07491 .89717 -.07491z
+```
 
 ## Forms
 
-- Keynote: a short serif thesis with one readable conversation or document surface at gallery scale; keep the claim and interface on separate calm fields, never bake text into an image.
-- Store: use white cards on parchment with a 1 px hairline and continuous R = 18; put one allowance and price in each card, repeat the proof surface at the same crop, and keep selection and the buy action visible and stationary.
-- Editorial: one full-width proof vista with one headline and at most one action, then a flush-left long read with a large serif lead, readable surface, checkable figure and source.
+- **Cover:** the serif claim with its stroke; the writing proof at half the frame or more.
+- **Statement:** one serif sentence at display size, the stroke under its core word.
+- **Exhibit:** a draft and its revision side by side, the change readable.
+- **Data:** one figure in the serif at display size, its label in sans beneath.
+- **Sequence and comparison:** versions of one text in order; plans on one baseline.
+- **Collection:** prompts or uses as sheets on paper, each one sentence and one sample.
+- **Reference and close:** dense sans rows on a lifted sheet; the close is one serif line and one action.
 
 ## Variations
 
-At a genuine change from drafting to editing, allow one charcoal proof field inside the cream page; it must carry a complete readable foreground palette. A long serif lead may open one story section; body copy returns to Source Sans 3 below it. Each variation is used once where the writing changes, not as decoration.
+- **Dark surface turn:** one unit on the product surface, the stroke in darkLink; once per sequence.
+- **Margin turn:** one unit where notes run in a narrow margin beside the text they annotate.
 
 ## Do's and Don'ts
 
-Floors: facts match each brief exactly; declare every illustration; maintain 4.5:1 text contrast (3:1 for large type); keep reading text live and at its declared size floor for the intended viewing distance; make static output complete as a still; recompose each format instead of scaling a layout; use only original or licensed assets.
-
-Render check: at the intended viewing size, the draft exposes the exact passage or count that makes the assistant's claim checkable.
-
-Test: Hide Fern's name; warm cream, serif display and coral action still read as Claude's hand, with a readable dark drafting surface beneath. Swap in another assistant; that material and action relationship should no longer fit unchanged.
-
-Caricature: a warm-paper editorial whose dark mock interface cannot show the words that changed.
+- **Look before delivering:** the stroke must read as drawn at thumbnail; a straight underline, two strokes, a cool page, or writing too small to read are faults.
+- **Floors:** facts verbatim and live; renders declared once per piece, in the fine print; every pair in Tokens holds its contrast.
+- **Test:** cover the names and pour in new content: warm paper, the serif claim and one hand stroke still say Fern.
+- **Caricature:** a glowing orb as the page; a blue-violet gradient; a robot.
 
 ## Tokens
+
+Authored for this fictional world at S = 1000. 
 
 ```yaml
 colors:
@@ -109,4 +137,4 @@ pairs:
 ## Record
 
 Folio version: 1.1.0. Template version: 14. Date: 2026-11-07.
-Pieces: deleted-sentence (Keynote), word-allowance (Store), draft-and-final (Editorial). Fictional assistant and interface; no Claude product, screenshot, logo or font file is used. Changes after the lock: aligned to the current Apple theme.
+Pieces: deleted-sentence (Keynote), word-allowance (Store), draft-and-final (Editorial), each made from an earlier version of this file, each made from an earlier version of this file. Fern and every text shown are fictional; no Anthropic product, mark or font file is used. Changes after the lock: rewritten around the world's device; the pieces predate it.

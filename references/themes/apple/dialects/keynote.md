@@ -9,7 +9,7 @@ A surface, not a brand: it governs structure, the brand governs look. Read with 
 - **A slide is read in a glance.** No tables: specifications become one figure set on a baseline, or the handout.
 - **One dominant subject per slide:** a cover, divider, concept, comparison, data, workflow or closing poster.
 - **Cuts between slides;** a change of ground at a turn; builds only order attention.
-- **Steps are floors, in S:** cover title 0.13 S; slide title 0.1 S; body 0.037 S; caption 0.026 S; fine print 0.022 S; a display number 0.17 S or more, label beneath, the group mid-frame. On a 1600 × 900 slide: 120, 90, 33, 23, 20, 150 px.
+- **Read across a room:** on 1600 × 900, a cover title 120 px, a slide title 90, body 33, caption 23, fine print 20; a display number 150 or more, label beneath, the group mid-frame. Every size is a floor; another frame scales them by its short side.
 
 **Goes wrong as:** a webpage screenshot on a slide; a 44 pt title that reads as a document heading; bullet walls; every cover in the same half-frame structure; a transition on every slide; a chart that needs a legend.
 

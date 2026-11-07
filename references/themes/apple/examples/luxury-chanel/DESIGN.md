@@ -1,66 +1,92 @@
-# Noir · Apple + Luxury, Chanel hand
+# Noir · Apple + Chanel
 
-Noir's world: a fashion house in black and white, the garment leading.
+A fashion house in Apple + Chanel: white, and one black band.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are px at S = 1000, S the format's short side, and scale with it; each is a floor for how far the format is read from, never a ceiling. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath; form names are the maker's, never set on the page. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
-Apple + Chanel + Luxury — Compose each garment as a study in black and white: let its silhouette lead, then make its cut judgeable; never borrow a house mark, pattern, or photograph.
+Apple + Chanel style — Set every unit in white with one black band across it, the claim knocked out inside; never a colour, never gold, never a headline louder than the garment.
 
-World: Noir is a fictional fashion house for garments, construction, archive, and collection across a presented slide, a shop range, and a long read. Every piece keeps one clear claim and a product or its proof at gallery scale; each brings the garment, question, and reader task that make that claim specific.
+World: Noir's garments, collections, fragrance and stories, on any surface. Every piece keeps the black band, the white page and the serif; each brings its garment or object and one line.
 
-Method: Begin with the garment's silhouette and the decision it makes visible. Choose one garment or one construction feature as the lead; draw or render it as a declared stand-in, then use a seam, panel, or dated entry only when it can be inspected. Keep the reading path claim → object → evidence → action or lookup. Remove an element only when neither use nor judgment changes without it. Quiet labels and reference matter stay flush left and ordered for lookup.
+Method:
+1. Choose the garment or object and give it the white field.
+2. Lay the band on the third that leaves the garment whole.
+3. Knock the claim out of the band, in the serif.
+4. Everything else is quiet sans on white.
 
-Amplitude: full for a silhouette, statement, or vista; reduced for labels, prices, and archive entries.
+Amplitude: Full on covers and campaign units; reduced in the collection and reference.
 
-Anti-reference: a seasonal product catalogue with interchangeable photographs, equal cards, and a price-led hierarchy.
+Anti-reference: Fake luxury: gold, glowing outlines, spaced serif capitals over a stock photograph.
 
 ## Images
 
-Use a newly drawn or generated illustrative stand-in, never a real house asset. Put the garment or its proof at gallery scale; for a cover the subject owns at least half the field. A whole garment meets the frame as a calm, solid form on white or black; construction evidence sits in a separate inset or plate with live labels. Scale uniformly, preserve shoulder, hem, and any seam being discussed, and recompose the frame rather than crop away the garment. Keep text live in a calm region. Declare illustrative renders once per piece; no mark, pattern, or text is baked into it.
+Renders and illustrations of fictional garments in black, white and grey — modelled cloth, tweed texture by `feTurbulence`, a contact shadow — declared once. On a cover the garment owns half the field or more. No house mark, interlocking letter or photograph borrowed.
 
 ## Layout
 
-Grid system: Gallery field — the garment is the image mass; text and construction evidence share a small set of axes.
+Grid system: Band field — one horizontal black band on a third line, white above and below.
 
-Derive a 12-column field from W × H: margins are max(5% W, 6% S), gutters are S/50, and the module is S/125. For projected Keynote, keep critical ink inside 8% of each edge. For a Bento range, give the lead garment the widest span; supporting pieces use equal spans only when they are genuine peers, with a white gutter between square tiles. For Editorial, use one centered column no wider than min(980 px, 82% W), with flush-left reading. Let the black field turn mark a real change in argument; unused tracks remain quiet. Keep the same alignment for garment names, prices, dimensions, captions, and table values. The figure column aligns on decimal or unit, never by color.
+Twelve tracks from W × H: margin max(5% W, 6% S), gutter 1.25% W, an 8 px module. The band sits on the upper or lower third; the garment may cross it, the band never cuts its face or hands. Formats: on a 1600 × 900 slide, critical content stays inside the central 84%, the slide title at least 90 px and body at least 33; a scrolling page reads the tokens as given at a 1440 px viewport, body never below 17 px; a shop subdivides the field into peer cards on hairlines.
 
 ## Typography
 
-Use Cormorant Garamond 400 for display and section leads; Inter 400 for body, labels, and prices. Pair Cormorant with Noto Serif SC 400 for Chinese display and Inter with Noto Sans SC 400 for Chinese reading. At S = 1000, set display 80/400/1.02, heading 56/400/1.08, lead 24/300/1.5, body 17/400/1.5, label 14/400/1.4, and caption 12/400/1.45. The title leads by scale; labels are separated by weight and placement. Prices stay at body size or smaller than the garment name. Use tabular figures for years, dimensions, and prices. Keep a mixed Chinese/Latin space, break Chinese at phrase boundaries, and enlarge title boxes before moving body copy. Web reading text remains 16–20 px with a measure of 25–35 CJK characters. On slides the Keynote floors hold: slide title at least 0.1 S, body at least 0.037 S.
+- Cormorant Garamond for display and heading; Inter for lead, body and labels; Noto Serif SC and Noto Sans SC for Chinese.
+- Display 80 / 400; heading 56 / 400; lead 24 / 300; body 17 / 400; label 14; caption 12.
+- Inside the band only the serif, white.
 
 ## Colors
 
-Ground: Chanel's white and black. Use white `canvas` and near-white `panel` as the light grounds, black `dark` for the single field turn, and black `ink` for reading. `muted` is for secondary labels only; `hairline` separates actual table entries. `action` is black, including links and buy actions: this hand has no chromatic accent. Keep every ground's foreground in the declared pairs. No gradient or colored field.
+Ground: Chanel's white and black.
+- **canvas** white; **panel** `#f5f5f5` the collection; **dark** `#111111` the band and only black field.
+- **ink** `#111111`, **muted** `#626262`; **onDark** white inside the band.
+- **action** `#111111` black pills; **onAction** white.
+- **hairline** `#d2d2d7` in reference rows.
 
 ## Shapes
 
-Keep image fields square-edged; Bento promo tiles use a white gutter rather than a container. If a control or store card needs a radius, use Apple's continuous corner, not a preset: normalized path `M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0`. Use the shared helper at 60% smoothing; R is at most half the shorter side and nested corners share centres with inner R = max(0, outer R − gap). A pill action is fully rounded; do not add shadows. Keep garments as solid, recognizable masses; a seam diagram uses one line weight and only the joins needed to explain construction.
+**The device: the black band.** One full-width band of dark, height S / 6, on the upper or the lower third line; the claim knocked out in the serif, set within its middle 60%. One per unit; it moves between the thirds, it never thickens, tilts, fades, or holds anything but type.
+
+Cards 18; actions full pills; the band is square. Every nonzero radius, pills included, takes Apple's continuous corner, copied, never derived; `border-radius`, `rect rx` and superellipses are other curves. A page built with Folio inlines `continuous-corner.js` and marks each box `data-cc="R"`. Anything else draws one of the two paths below, in units of R, with `transform="translate(x y) scale(R)"` and `vector-effect="non-scaling-stroke"`, filling in A = W ÷ R − 3.05732 and B = H ÷ R − 3.05732. R is at most half the short side, a box or a pill, never between; inner R = max(0, outer R − gap); fill, stroke, clip and focus ring share one path.
+
+A box, both sides at least 3.06 R:
+
+```
+M1.52866 0 h{A} c.44017 0 .66025 0 .89717 .07491 c.25867 .09415 .46243 .29791 .55658 .55658 c.07491 .23692 .07491 .457 .07491 .89717 v{B} c0 .44017 0 .66025 -.07491 .89717 c-.09415 .25867 -.29791 .46243 -.55658 .55658 c-.23692 .07491 -.457 .07491 -.89717 .07491 h-{A} c-.44017 0 -.66025 0 -.89717 -.07491 c-.25867 -.09415 -.46243 -.29791 -.55658 -.55658 c-.07491 -.23692 -.07491 -.457 -.07491 -.89717 v-{B} c0 -.44017 0 -.66025 .07491 -.89717 c.09415 -.25867 .29791 -.46243 .55658 -.55658 c.23692 -.07491 .457 -.07491 .89717 -.07491z
+```
+
+A pill, R = H ÷ 2:
+
+```
+M1.52866 0 h{A} c.44017 0 .66025 0 .89717 .07491 c.25867 .09415 .46243 .29791 .55658 .55658 c.07491 .18851 .07491 .32851 .07491 .36851 c0 .04 0 .18 -.07491 .36851 c-.09415 .25867 -.29791 .46243 -.55658 .55658 c-.23692 .07491 -.457 .07491 -.89717 .07491 h-{A} c-.44017 0 -.66025 0 -.89717 -.07491 c-.25867 -.09415 -.46243 -.29791 -.55658 -.55658 c-.07491 -.18851 -.07491 -.32851 -.07491 -.36851 c0 -.04 0 -.18 .07491 -.36851 c.09415 -.25867 .29791 -.46243 .55658 -.55658 c.23692 -.07491 .457 -.07491 .89717 -.07491z
+```
 
 ## Forms
 
-- Keynote: one judgment, one garment at gallery scale, then one inspectable construction detail; live text stays in a calm zone and the slide cuts to the next claim.
-- Bento: one lead collection tile plus smaller true peers, one garment and one quiet price per tile; use a number tile only when its label and context make it independently checkable. It indexes the range; it does not replace the detail proof.
-- Editorial: one black vista with one headline and at most one action, followed by a centered, flush-left column; leads carry the argument and the archive uses aligned rows for lookup. End with the source and one quiet close.
+- **Cover:** the garment whole on white, the band across a third with the name.
+- **Statement:** the band alone, one serif line, white field around it.
+- **Exhibit:** a construction detail at macro scale, the band below it.
+- **Data:** one figure in the band, its label in sans on white beneath.
+- **Sequence and comparison:** looks in a row at one scale, one band crossing them all.
+- **Collection:** garments on panel cards, name then quiet price; the band names the collection.
+- **Reference and close:** sans rows on white; the close is the band with one line.
 
 ## Variations
 
-At a real turn, allow one full black unit with a complete white foreground palette, or one near-empty garment unit whose silhouette carries the whole claim. Keep either to one unit and return to the base field afterward.
+- **Black field:** one unit wholly dark, a white band across it; once per sequence.
+- **Close crop:** the garment cropped to texture, the band unchanged.
 
 ## Do's and Don'ts
 
-Floors: facts match each brief exactly; declare every illustration; maintain 4.5:1 text contrast (3:1 for large type); keep reading text live and at its declared size floor for the intended viewing distance; make static output complete as a still; recompose each format instead of scaling a layout; use only original or licensed assets.
-
-Render check: at thumbnail size the garment remains a distinct silhouette; at full size its cut or seam can be inspected.
-
-Test: Hide Noir's name; the garment's balanced couturier proportions, precise shoulder and clean line still read as Chanel's hand without a logo or patterned cue. Substitute another house; this cut should need a different hand.
-
-Caricature: a black-and-white house costume with spaced serif capitals over a garment whose cut cannot be judged.
+- **Look before delivering:** one band per unit, readable at thumbnail; a second black field, a colour, gold or a band cutting a face are faults.
+- **Floors:** facts verbatim and live; renders declared once per piece, in the fine print; every pair in Tokens holds its contrast.
+- **Test:** cover the names and pour in new content: white with one black band and the knocked-out serif still say Noir.
+- **Caricature:** gold; an interlocking monogram; a colour field.
 
 ## Tokens
 
-Values below are derived for this fictional house at S = 1000; the black action is neutral, not an extra accent.
+Authored for this fictional world at S = 1000. 
 
 ```yaml
 colors:
@@ -101,4 +127,4 @@ pairs:
 ## Record
 
 Folio version: 1.1.0. Template version: 14. Date: 2026-11-07.
-Pieces: one-jacket (Keynote), collection (Bento), archive (Editorial), built from this file alone. The house and garments are fictional; no Chanel product, mark, photograph, pattern, or font file is used. Changes after the lock: none.
+Pieces: one-jacket (Keynote), collection (Bento), archive (Editorial), each made from an earlier version of this file, each made from an earlier version of this file, each made from an earlier version of this file, each made from an earlier version of this file. Noir and its garments are fictional; no Chanel product, mark, photograph, pattern or font file is used. Changes after the lock: rewritten around the world's device; the pieces predate it.

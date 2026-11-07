@@ -1,64 +1,93 @@
 # Relay · Apple + Vercel
 
-Relay's world: a deployment platform proved by its interface at work.
+A deployment platform in Apple + Vercel: black and white, one gradient verb, the tool at work.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are px at S = 1000, S the format's short side, and scale with it; each is a floor for how far the format is read from, never a ceiling. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath; form names are the maker's, never set on the page. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
-Apple + Vercel style — make the deploy tool prove itself with a readable working interface beneath one short action headline, in black and white with one gradient word at hero scale; never lead with a photograph or spread the gradient across the page.
+Apple + Vercel style — Make every unit say one action and show it done: the verb carries the gradient, the working interface proves it; never a gradient anywhere else, never a photograph.
 
-World: A fictional deployment tool and the work people do through it: deploy, inspect, share and choose a team plan. Every piece keeps a readable working interface and one action claim; each brings the workflow or decision it needs to explain.
+World: Relay's tools, launches, pricing, docs and stories, on any surface. Every piece keeps the gradient verb, the black-and-white field and a readable interface as proof; each brings its own action and the screen that shows it done. A subject without an interface proves with its output: a log, a URL, a number.
 
-Method: Begin with the action the reader needs to trust. Build a complete interface state that lets the reader verify that action, then compose the headline and proof as one hierarchy. Use terminal output for process, a live preview for the result and plan comparison for a buying decision. Technical language belongs inside the proof surface only. If a cropped or abstract UI cannot be read, use the whole interface at a larger scale.
+Method:
+1. Find the verb the software performs for this reader and write the claim around it.
+2. Build the proof first: an interface at gallery scale, readable, whole.
+3. Set the claim above the proof; the verb alone takes the gradient.
+4. Keep the technical voice — mono, states, commands — inside the proof.
 
-Amplitude: Full for an action and a measurable result; reduced for plan comparison and technical notes.
+Amplitude: Full on covers and launches; reduced in docs, pricing and reference, where the verb may stay ink.
 
-Anti-reference: A generic SaaS page with a dark gradient mesh, glowing grid and floating screenshot cards.
+Anti-reference: The generic SaaS landing: a dark gradient hero, three icon cards, a glowing screenshot.
 
 ## Images
 
-The hero is a complete fictional interface or terminal; there is no photograph hero. Show real-looking, readable content inside the screen frame, label it as an illustrative render and keep the whole frame visible. Do not use abstract placeholder bars. Use a restrained dark surface for code and dashboard proof, with live captions outside it. On Keynote, the interface sits inset at gallery scale; on Bento, each plan or workflow state uses a shared crop; on Editorial, the preview is a full-width proof figure inside the story, never an arbitrary cut through the browser frame. Scale the source uniformly. No Vercel screenshot, logo or font file is used. On a cover or lead tile the interface takes half the frame or more; the headline sits above it, never beside a thumbnail.
+Fictional interfaces drawn live — terminal, deploy log, preview, dashboard — readable at viewing size, the whole frame letterboxed, never cut; declared once. On a cover the proof spans eight tracks and half the frame or more. No photograph hero, no placeholder bars, no real product screenshot or mark.
 
 ## Layout
 
-Grid system: Gallery field — give the software proof enough uninterrupted area to read, and place the action headline on the same axis.
+Grid system: Proof field — the claim above, the proof beneath on the same tracks, so every unit reads as action then evidence.
 
-Derive 12 tracks from W × H: margin max(5% W, 6% S), gutter 1.25% W and equal remaining tracks. Use an 8 px module at S = 1000; align headline, whole interface frame, caption and action to track edges. At every text-to-image boundary, leave at least two modules between visible glyph bounds and the image; measure ink, not text boxes. The headline owns the first reading step and the interface the largest proof field. Keynote uses one thesis in the 16:9 field; keep critical content inside the central 84% and let the interface carry the remainder of the slide. Bento uses unequal tile spans sized by importance; plans that are real peers share crop, baseline and price row, while a specification is a number poster. Editorial opens with one interface vista, then a flush-left column no wider than 82% W or 65 characters; source, code notes and plan details may densify at the close. Recompose on every aspect-ratio change.
+Twelve tracks from W × H: margin max(5% W, 6% S), gutter 1.25% W, an 8 px module. The claim group sits at least five modules above the proof; the proof's left edge is the claim's left edge; dark proof bands run full width. Formats: on a 1600 × 900 slide, critical content stays inside the central 84%, the slide title at least 90 px and body at least 33; a scrolling page reads the tokens as given at a 1440 px viewport, body never below 17 px; a shop subdivides the field into peer cards on hairlines.
 
 ## Typography
 
-Voice: Vercel's geometric sans, set in Geist, its own open face. Use Geist for display, body and labels, with Noto Sans SC for Chinese; these are open-source substitutes, not Vercel or Apple font files. Use Geist Mono only inside the proof interface for paths, statuses and timings. At S = 1000 set launch display at 80 / 600 / 1.05, section heading at 56 / 600 / 1.1, lead at 28 / 400 / 1.4, body at 17 / 400 / 1.5, label at 14 / 400 / 1.4 and source at 12 / 400 / 1.5. Display is geometric and sentence case; 600 is the ceiling. Tighten tracking only on the single gradient word; keep the rest of the heading at −0.01 em at large web sizes. Match CJK to Latin by apparent size and baseline, break Chinese at phrase boundaries, and use tabular numerals for durations and prices. On slides the Keynote floors hold: slide title at least 0.1 S, body at least 0.037 S.
+- Geist, Vercel's own open face, for every role; Geist Mono for the technical voice only; Chinese in Noto Sans SC.
+- Display 80 / 600 at −0.03 em; heading 56 / 600; lead 28 / 400; body 17 / 400; label 14; fine 12; technical 14 mono. Sentence case, a full stop.
+- Never 500; never mono in headline or body.
 
 ## Colors
 
-Ground: Vercel's near-white and black, the brand's signature. Near-white #fafafa and white #ffffff are the only page grounds. Ink #171717 carries body and actions; muted #626262 is secondary text; hairline #d2d2d7 marks functional interface boundaries and divides data rows, never decoration. Dark #171717 appears only inside terminal and dashboard proof, with white text. The one brand event is a two-stop hero-word gradient from #004a9f to #2f8fd8; it appears on one action word at hero scale and nowhere else. Buttons remain solid ink or text links; gradient is never a control, card, badge or wallpaper. Focus is ink on light and white on dark.
+Ground: Vercel's near-white and black.
+- **canvas** `#fafafa` the page; **panel** `#ffffff` cards; **dark** `#171717` proof bands and code.
+- **ink** `#171717`, **muted** `#626262`; **onDark** white on dark.
+- **action**, **link** and **focus** `#171717`: black pills and black links; **focusDark** white on dark; **onAction** white.
+- **heroStart** `#004a9f` to **heroEnd** `#2f8fd8`: the verb's gradient, at display or heading size only.
+- **hairline** `#d2d2d7` between rows and around cards.
 
 ## Shapes
 
-Full-bleed fields stay square. Interface and Store cards use Apple’s continuous contour, path M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0; the shared continuous-corner.js helper draws it. At S = 1000 use R = 18 for cards, R = 8 for small controls and pill primary actions; inner R = max(0, outer R − gap). Buttons use ink fill or a quiet outline, no blur or colored glow. A hairline belongs to a real interface boundary, never to decoration.
+**The device: the gradient verb.** One word per unit — the claim's verb — filled heroStart to heroEnd, left to right, at display or heading size. Never two words, never a noun, never body, button, panel or background; on a dark band the verb keeps its gradient and the rest turns white. A unit without a headline carries no verb rather than moving it elsewhere.
+
+Proof panels and cards 18; primary actions black full pills; tools 8. Every nonzero radius, pills included, takes Apple's continuous corner, copied, never derived; `border-radius`, `rect rx` and superellipses are other curves. A page built with Folio inlines `continuous-corner.js` and marks each box `data-cc="R"`. Anything else draws one of the two paths below, in units of R, with `transform="translate(x y) scale(R)"` and `vector-effect="non-scaling-stroke"`, filling in A = W ÷ R − 3.05732 and B = H ÷ R − 3.05732. R is at most half the short side, a box or a pill, never between; inner R = max(0, outer R − gap); fill, stroke, clip and focus ring share one path.
+
+A box, both sides at least 3.06 R:
+
+```
+M1.52866 0 h{A} c.44017 0 .66025 0 .89717 .07491 c.25867 .09415 .46243 .29791 .55658 .55658 c.07491 .23692 .07491 .457 .07491 .89717 v{B} c0 .44017 0 .66025 -.07491 .89717 c-.09415 .25867 -.29791 .46243 -.55658 .55658 c-.23692 .07491 -.457 .07491 -.89717 .07491 h-{A} c-.44017 0 -.66025 0 -.89717 -.07491 c-.25867 -.09415 -.46243 -.29791 -.55658 -.55658 c-.07491 -.23692 -.07491 -.457 -.07491 -.89717 v-{B} c0 -.44017 0 -.66025 .07491 -.89717 c.09415 -.25867 .29791 -.46243 .55658 -.55658 c.23692 -.07491 .457 -.07491 .89717 -.07491z
+```
+
+A pill, R = H ÷ 2:
+
+```
+M1.52866 0 h{A} c.44017 0 .66025 0 .89717 .07491 c.25867 .09415 .46243 .29791 .55658 .55658 c.07491 .18851 .07491 .32851 .07491 .36851 c0 .04 0 .18 -.07491 .36851 c-.09415 .25867 -.29791 .46243 -.55658 .55658 c-.23692 .07491 -.457 .07491 -.89717 .07491 h-{A} c-.44017 0 -.66025 0 -.89717 -.07491 c-.25867 -.09415 -.46243 -.29791 -.55658 -.55658 c-.07491 -.18851 -.07491 -.32851 -.07491 -.36851 c0 -.04 0 -.18 .07491 -.36851 c.09415 -.25867 .29791 -.46243 .55658 -.55658 c.23692 -.07491 .457 -.07491 .89717 -.07491z
+```
 
 ## Forms
 
-- Keynote: state one action in the title and prove it with a full, readable interface state; a measured number may lead if it is the decision’s proof.
-- Bento: size features and plans by importance, one claim per tile; use equal cards only for true plan peers, and set specifications as number posters rather than a table.
-- Editorial: open with one live preview or terminal field, one headline and at most one action; then explain the workflow in a flush-left column with the relevant proof figure beside the claim.
+- **Cover:** the verb headline over the proof at half the frame or more; two actions, black pill and text link.
+- **Statement:** one verb sentence at display size, nothing else.
+- **Exhibit:** one interface, whole, its states readable.
+- **Data:** one number — a time, a count — at display size in ink, label beneath; never the gradient.
+- **Sequence and comparison:** steps as successive states of one interface on one axis; plans as cards on hairlines, the recommended one in black.
+- **Collection:** a feature index as tiles, each with one interface crop and one claim.
+- **Reference and close:** dense docs rows; the close returns to the verb and one action.
 
 ## Variations
 
-Use one complete dark interface field at a workflow turn, with white foreground and its own readable hierarchy; it does not change the page ground. One single gradient word may lead the cover, one per piece, never repeated in body copy or a button. These are the only departures from black-and-white continuity.
+- **Dark band:** one unit's proof on a full-width dark band, once per sequence.
+- **Terminal turn:** a full-width terminal is the unit, the verb in its first line.
 
 ## Do's and Don'ts
 
-Floors: facts match each brief exactly; declare every illustration; maintain 4.5:1 text contrast (3:1 for large type); keep reading text live and at its declared size floor for the intended viewing distance; make static output complete as a still; recompose each format instead of scaling a layout; use only original or licensed assets.
-
-Render check: from the visible interface, a reader can follow one named operation to the status or result that proves it.
-
-Test: Hide Vercel's name; black and white, one gradient word, and a terminal paired with its live preview still read as this hand. Swap in another developer brand; that gradient word and proof pairing should no longer fit unchanged.
-
-Caricature: one hero-scale gradient word repeated across buttons, labels and every section.
+- **Look before delivering:** the verb must read as a gradient at thumbnail and stay legible; a second gradient, mono in body, a cut frame or placeholder bars are faults.
+- **Floors:** facts verbatim and live; renders declared once per piece, in the fine print; every pair in Tokens holds its contrast.
+- **Test:** cover the names and pour in new content: the black-and-white field with one gradient verb over a working interface still says Relay; another deployment product does not fit without a new verb.
+- **Caricature:** a gradient mesh wallpaper, a glowing grid, gradient buttons, a dark page.
 
 ## Tokens
+
+Authored for this fictional world at S = 1000. 
 
 ```yaml
 colors:
@@ -111,4 +140,4 @@ pairs:
 ## Record
 
 Folio version: 1.1.0. Template version: 14. Date: 2026-11-07.
-Pieces: eight-seconds (Keynote), team-plans (Bento), preview-link (Editorial). Fictional platform and interfaces; no Vercel product screenshot, logo or font file is used. Changes after the lock: aligned to the current Apple theme.
+Pieces: eight-seconds (Keynote), team-plans (Bento), preview-link (Editorial), each made from an earlier version of this file, each made from an earlier version of this file. Relay and its interfaces are fictional; no Vercel product screenshot, logo or font file is used. Changes after the lock: rewritten around the world's device; the pieces predate it.

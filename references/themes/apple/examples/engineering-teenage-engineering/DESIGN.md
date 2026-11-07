@@ -1,73 +1,91 @@
 # Kit · Apple + Teenage Engineering
 
-Kit's world: a small instrument shown as an exposed, understandable kit.
+Small instruments in Apple + Teenage Engineering: every label set like a panel legend.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are px at S = 1000, S the format's short side, and scale with it; each is a floor for how far the format is read from, never a ceiling. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath; form names are the maker's, never set on the page. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
-Apple + Teenage Engineering style — Build the exposed kit so its controls, joints and signal colour show how it works; never use the signal as decoration or play to conceal the mechanism.
+Apple + Teenage Engineering style — Set every label as a panel legend in a ruled grid and let the kit show how it works; never a hidden mechanism, never colour as decoration.
 
-World: A fictional small instrument and the parts, controls and performance claims that make it usable, across a launch deck, a parts comparison and a long read. Every piece keeps an exposed, understandable mechanism; each brings one function or relationship to prove.
+World: Kit's instruments, parts, launches and stories, on any surface. Every piece keeps the panel legend, the light grey field and the one signal colour; each brings its kit, assembled or apart, and the controls a reader must find.
 
-Method: Begin with the action the instrument performs. Draw the housing, joints and controls from that action outward, then decide whether an assembled view or a disassembled view answers the reader's question. Label only the parts needed to understand the mechanism. Use a figure or section for every performance claim; one-lineweight diagrams stay flat and use few node types. The reading path is action, the part that makes it possible, then its check.
+Method:
+1. Find the controls or parts this unit names.
+2. Lay the legend grid and set their names in it.
+3. Draw the kit so each legend points to a part.
+4. Give the one signal colour to the one thing that is live.
 
-Amplitude: Full on the kit and its working parts; reduced on panel labels, comparison measures, price and source.
+Amplitude: Full on the kit; the legend stays small at every scale.
 
-Anti-reference: a lifestyle hero above a dense specification sheet.
+Anti-reference: A lifestyle hero above a dense specification sheet.
 
 ## Images
 
-Use inline vector drawings as declared illustrative stand-ins; no borrowed Teenage Engineering product, image or mark. Show the instrument assembled with its joints visible, or disassembled with every shown part named. Do not draw screw heads, traces or labels that do not explain construction. Caption each object `Illustrative render, not a photograph`. The cover gives the kit at least half the frame; crop to the mechanism, not to empty space. A part that becomes too small to inspect belongs in the proof unit at a larger scale. Keep proportions uniform and all text live.
+Renders of fictional instruments — anodised aluminium, printed legends, exposed screws, a key light, a contact shadow — assembled or exploded on a grid, declared once. On a cover the kit takes half the frame or more.
 
 ## Layout
 
-Grid system: Panel field — derive a 12-column field from W × H with side margin m = max(0.05W, 0.06S), gutter = m ÷ 4 and column = (W − 2m − 11 gutters) ÷ 12. Align device sections, labels and claims to these tracks; align schematic parts to a shared component module derived from the instrument, not to the screen. Use an 8 px spacing step at S = 1000, scaled with S. Keynote keeps critical matter inside the central 84% and reserves a calm 25–35% of the image field for live text. Bento gives the primary mechanism the widest span; smaller parts and figures follow its order, not equal-card repetition. Editorial opens with one legible kit vista, then reads down one flush-left column no wider than 980 px. Where the unit holds only a diagram, its edge is cropped close to the working parts.
+Grid system: Legend field — a ruled four-column legend band and the kit drawn to it.
+
+Twelve tracks from W × H: margin max(5% W, 6% S), gutter 1.25% W, an 8 px module. The legend band runs along the top or the bottom edge, four equal ruled cells; parts align under their cells. Formats: on a 1600 × 900 slide, critical content stays inside the central 84%, the slide title at least 90 px and body at least 33; a scrolling page reads the tokens as given at a 1440 px viewport, body never below 17 px; a shop subdivides the field into peer cards on hairlines.
 
 ## Typography
 
-Use Inter for display and reading, Noto Sans SC for Chinese, and Noto Sans Mono only for short panel legends and part codes. No font files are bundled; Google Fonts are OFL 1.1. Labels may be tracked uppercase when they name a physical control, never as decorative kickers. At S = 1000, Keynote slide title at least 0.1 S / 600 / 1.05, body at least 0.037 S / 400 / 1.47, labels 0.026 S / 400 / 1.4 and source 16 / 400; Bento lead 56 / 600 / 1.07; Editorial lead 24 / 300 / 1.5 and body 17 / 400 / 1.47, with a 12 px caption floor. Figures use tabular numerals or a right-aligned column. Chinese and Latin share apparent size and baseline; phrase-break Chinese and keep punctuation with its phrase.
+- Inter for display and reading, the panel's neo-grotesque; Noto Sans Mono for codes and values; Noto Sans SC for Chinese.
+- Display 80 / 600; heading 56 / 600; lead 24 / 300; body 17 / 400; label 14 tracked +8% uppercase for Latin; technical 14 mono; caption 12.
 
 ## Colors
 
-Ground: Teenage Engineering's light aluminium grey; the signal colour is the only warmth. Light grey and white are the working ground. Dark charcoal belongs to the mechanism when it improves part separation. One signal orange marks the action and actual signal controls only; all other parts stay material grey, ink or white. Ink and muted carry reading; hairline separates functional rows. Orange is never a section field or a second decorative cue. White is the foreground on charcoal and orange.
+Ground: Teenage Engineering's light aluminium grey; the signal colour is the only warmth.
+- **canvas** `#efefef`; **panel** white; **dark** `#272823` a powered-on unit.
+- **ink** `#272823`, **muted** `#62635c`; **onDark** white.
+- **action** `#9a4100`: the signal — one live control, one action; **onAction** white.
+- **hairline** `#d2d2d7`: the legend's rules.
 
 ## Shapes
 
-The instrument is built from visible planes, fasteners and joints; technical drawings use squared ends, a single stroke weight and consistent nodes. UI forms use small 5, control 8 and card 11 radii; primary actions may be pill-shaped. Full-bleed fields stay square. Every nonzero radius uses Apple's continuous corner, not `border-radius`, `rect rx`, a preset or superellipse. One corner, inward from the corner point in units of R:
+**The device: the panel legend.** A band of four equal cells ruled in hairline, along the top or bottom edge; each cell holds one label in tracked uppercase at label size and, where it names a control, a circled numeral that also appears on the part. Every name on the unit lives in the legend. The band's edge and cell count never change; its labels follow the content.
 
-```text
-M 0 1.52866
-C 0 1.08849 0 .86841 .07491 .63149
-C .16906 .37282 .37282 .16906 .63149 .07491
-C .86841 0 1.08849 0 1.52866 0
+Small parts 5, controls 8, cards 11; legend cells square. Every nonzero radius, pills included, takes Apple's continuous corner, copied, never derived; `border-radius`, `rect rx` and superellipses are other curves. A page built with Folio inlines `continuous-corner.js` and marks each box `data-cc="R"`. Anything else draws one of the two paths below, in units of R, with `transform="translate(x y) scale(R)"` and `vector-effect="non-scaling-stroke"`, filling in A = W ÷ R − 3.05732 and B = H ÷ R − 3.05732. R is at most half the short side, a box or a pill, never between; inner R = max(0, outer R − gap); fill, stroke, clip and focus ring share one path.
+
+A box, both sides at least 3.06 R:
+
+```
+M1.52866 0 h{A} c.44017 0 .66025 0 .89717 .07491 c.25867 .09415 .46243 .29791 .55658 .55658 c.07491 .23692 .07491 .457 .07491 .89717 v{B} c0 .44017 0 .66025 -.07491 .89717 c-.09415 .25867 -.29791 .46243 -.55658 .55658 c-.23692 .07491 -.457 .07491 -.89717 .07491 h-{A} c-.44017 0 -.66025 0 -.89717 -.07491 c-.25867 -.09415 -.46243 -.29791 -.55658 -.55658 c-.07491 -.23692 -.07491 -.457 -.07491 -.89717 v-{B} c0 -.44017 0 -.66025 .07491 -.89717 c.09415 -.25867 .29791 -.46243 .55658 -.55658 c.23692 -.07491 .457 -.07491 .89717 -.07491z
 ```
 
-R is at most half the shorter side; below 3.05732R, shorten the shoulder toward the native saturated form. Fill, stroke and media clip share one path; nested corners share centres, inner R = max(0, outer R − gap). No shadow on cards or labels.
+A pill, R = H ÷ 2:
+
+```
+M1.52866 0 h{A} c.44017 0 .66025 0 .89717 .07491 c.25867 .09415 .46243 .29791 .55658 .55658 c.07491 .18851 .07491 .32851 .07491 .36851 c0 .04 0 .18 -.07491 .36851 c-.09415 .25867 -.29791 .46243 -.55658 .55658 c-.23692 .07491 -.457 .07491 -.89717 .07491 h-{A} c-.44017 0 -.66025 0 -.89717 -.07491 c-.25867 -.09415 -.46243 -.29791 -.55658 -.55658 c-.07491 -.18851 -.07491 -.32851 -.07491 -.36851 c0 -.04 0 -.18 .07491 -.36851 c.09415 -.25867 .29791 -.46243 .55658 -.55658 c.23692 -.07491 .457 -.07491 .89717 -.07491z
+```
 
 ## Forms
 
-- **Keynote:** one kit claim per slide, with the assembled or open mechanism at gallery scale; one decisive signal or figure carries the emphasis.
-- **Bento:** one function or part per tile, sized by importance; specification figures share one size and direct label; a tile that needs a legend is a proof slide.
-- **Editorial:** one mechanism vista, one headline and at most one action; then a single column with a readable cutaway and checkable figures.
+- **Cover:** the kit assembled at half the frame or more, the legend naming four controls.
+- **Statement:** one sentence above an empty legend that names its four words' sources.
+- **Exhibit:** the kit exploded on the grid, parts under their cells.
+- **Data:** one value in mono at display size in a legend cell.
+- **Sequence and comparison:** states of one control in the four cells, in order.
+- **Collection:** parts on white cards, each with its circled numeral.
+- **Reference and close:** the legend expanded to rows; the close is the kit and one live control.
 
 ## Variations
 
-A kit turn shows one instrument disassembled where the content shifts from use to construction; label each part shown. A signal turn uses orange on the control that performs the named function and nowhere else in that unit. Keep either variation to one unit per piece.
+- **Powered turn:** one unit on dark, the signal lit; once per sequence.
+- **Top plate:** one unit shows only the printed top plate at 1:1.
 
 ## Do's and Don'ts
 
-Floors: facts match each brief exactly; declare every illustration; maintain 4.5:1 text contrast (3:1 for large type); keep reading text live and at its declared size floor for the intended viewing distance; make static output complete as a still; recompose each format instead of scaling a layout; use only original or licensed assets.
-
-Render check: trace one control through its joint and part to the operation it performs; the connection must remain clear at normal viewing size.
-
-Test: Cover the assembled kit drawing; do the mechanism and part drawings still reveal how components join and function? Cover their labels; can the geometry still distinguish the parts that matter?
-
-Caricature: a playful detail that conceals operation, or a diagram with every node type at once.
+- **Look before delivering:** the legend band must read at thumbnail; labels outside it, a second warm colour, or a hidden mechanism are faults.
+- **Floors:** facts verbatim and live; renders declared once per piece, in the fine print; every pair in Tokens holds its contrast.
+- **Test:** cover the names and pour in new content: light grey, a four-cell legend and one signal colour still say Kit.
+- **Caricature:** toy colours everywhere; tracked caps as decoration; a hidden mechanism.
 
 ## Tokens
 
-Values are authored for this fictional instrument at S = 1000. Signal orange `#9a4100` replaces Apple blue for the action and control signal; it does not become a field. Inter, Noto Sans SC and Noto Sans Mono are Google Fonts, OFL 1.1; no font file is bundled.
+Authored for this fictional world at S = 1000. 
 
 ```yaml
 colors:
@@ -82,16 +100,12 @@ colors:
   hairline: "#d2d2d7"
 typography:
   display: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 80, fontWeight: 600, lineHeight: 1.05 }
-  slideBody: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 24, fontWeight: 400, lineHeight: 1.47 }
-  slideLabel: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 18, fontWeight: 400, lineHeight: 1.4 }
-  slideSource: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 16, fontWeight: 400, lineHeight: 1.5 }
-  tile: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 56, fontWeight: 600, lineHeight: 1.07 }
-  editorialLead: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 24, fontWeight: 300, lineHeight: 1.5 }
+  heading: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 56, fontWeight: 600, lineHeight: 1.07 }
+  lead: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 24, fontWeight: 300, lineHeight: 1.5 }
   body: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.47 }
   label: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
+  caption: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: 1.5 }
   technical: { fontFamily: "Noto Sans Mono, Noto Sans SC, monospace", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
-  caption: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
-  fine: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: 1.5 }
 spacing:
   unit: 8
   textInset: 12
@@ -121,4 +135,4 @@ pairs:
 ## Record
 
 Folio version: 1.1.0. Template version: 14. Date: 2026-11-07.
-Pieces: taken-apart (Keynote, 1600 × 900), kit-contents (Bento, 1440 × 1000), signal-states (Editorial, 1200 × 1600); each uses its brief and this DESIGN.md. Subject and figures are fictional; no Teenage Engineering product, image, logo or font file is used. Changes after the lock: none.
+Pieces: taken-apart (Keynote, 1600 × 900), kit-contents (Bento, 1440 × 1000), signal-states (Editorial, 1200 × 1600); each uses its brief and this DESIGN, each made from an earlier version of this file, each made from an earlier version of this file. Kit and every instrument, part, figure and price are fictional; no Teenage Engineering product, photograph, logo or font file is used. Changes after the lock: rewritten around the world's device; the pieces predate it.

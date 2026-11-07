@@ -1,54 +1,93 @@
 # Ledger · Apple + Stripe
 
-Ledger's world: payments for small shops, every amount checkable.
+Payments for small shops in Apple + Stripe: white, indigo, figures that close, grounds cut on one slant.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are px at S = 1000, S the format's short side, and scale with it; each is a floor for how far the format is read from, never a ceiling. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath; form names are the maker's, never set on the page. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
-Apple + Stripe style — Make the settlement claim legible on white, then prove it in a readable dark statement; never let a gradient replace the figures or turn the page itself dark.
-World: A fictional payments service for small merchants, across launch, fee comparison and money stories. Every piece keeps one governing amount, a white reading field, and a checkable interface or ledger; each brings the decision or sequence its reader needs. Translate new subjects by asking which amount the reader must decide with; keep the statement's calculation visible.
-Method: Start from the payment amount, separate fees, refunds and payout, then set the amount with its unit and period. Use a dashboard or statement as the proof surface, not as decoration. Keep every value on a shared decimal edge; retain only calculations that close from their stated inputs. The reading path is claim, statement, arithmetic, action. Quiet copy explains a value but never competes with it.
-Amplitude: Full at the claim and payout; reduced in rate labels, sources and footnotes. A number earns display scale only when it is the amount the reader decides with.
+
+Apple + Stripe style — Make every figure close on white and cut every change of ground on the same slant; never a dark page, never a gradient beyond the first edge.
+
+World: Ledger's payments, pricing, statements, launches and stories, on any surface. Every piece keeps the slanted edge, the white reading field and figures that sum; each brings the amount its reader decides with and the statement that proves it.
+
+Method:
+1. Find the amount this reader decides with: a fee, a payout, a total.
+2. Build the statement or dashboard that proves it, every line summing to the figure shown.
+3. Set the claim light and large above it; the amount is the largest figure.
+4. Cut the next ground on the slant; the wave lives only in the first.
+
+Amplitude: Full at the opening claim and the payout; reduced in rates, footnotes and reference.
+
 Anti-reference: A dark fintech wallpaper with floating cards, glowing charts and a gradient behind every section.
 
 ## Images
-Drawn Ledger interfaces and tables are explanatory stand-ins, never screenshots of a real service; declare them once per piece, with the figures, as illustrative and fictional. For a launch unit, show the decisive statement at readable scale beside the claim. In a fee comparison, draw one shared scale with direct value labels. In editorial, the flow or statement may meet the top trim as a proof vista; keep the reading column below it inset. Crop to the usable screen interior, preserve rows and labels, and scale the interface uniformly. Use no third-party payment mark or uncredited financial imagery. On a cover the statement or dashboard takes half the frame or more; the governing amount is the largest type.
+
+Fictional statements, dashboards and cards drawn live, readable and whole, declared once with the figures as fictional. On a cover the proof takes half the frame or more; a crop of a dashboard is a detail and the whole one belongs on a proof unit. No third-party mark, no real dashboard.
 
 ## Layout
-Grid system: Ledger field — amount columns and evidence share a baseline, so figures compare and reconcile.
-Derive 12 tracks from W × H; outer margin is max(5% of W, 0.06S), gutter is one quarter of that margin, and each column is the remaining content width divided by 12 after gutters. Keep brand, claim and evidence on repeated vertical axes. In a statement, labels stay left and amounts align to the decimal at right; leave at least half a body line-height of visible ink between a row label and amount, and one body line-height between independent calculation groups and adjacent rules. Measure glyph bounds, not text boxes. In a Bento comparison, the most consequential spread gets the lead field; genuine rate peers share equal tracks and one zero baseline. In a long read, center one column capped at 980 px and 65 Latin characters; body and data share its left edge. Density increases only inside the comparison and statement; air remains around the lead and between sections. On portrait formats, the claim precedes the complete statement; unused width stays paper, not filler.
+
+Grid system: Ledger field — figures right-aligned on shared decimal edges, so every unit compares and reconciles.
+
+Twelve tracks from W × H: margin max(5% W, 0.06 S), gutter a quarter of the margin, an 8 px module. Labels flush left, amounts on one decimal edge; density rises only inside statements and comparisons. Formats: on a 1600 × 900 slide, critical content stays inside the central 84%, the slide title at least 90 px and body at least 33; a scrolling page reads the tokens as given at a 1440 px viewport, body never below 17 px; a shop subdivides the field into peer cards on hairlines.
 
 ## Typography
 
-Voice: Stripe's light grotesk, set in Hanken Grotesk, the nearest open face of that lineage. Use Hanken Grotesk with Noto Sans SC as the CJK pair, loaded from Google Fonts; use no Stripe or Apple font files. Display and large figures use 300, body and reading figures 400, labels and decisive totals 600. At S = 1000: display 56 px / 300 / 1.08; section head 38 / 300 / 1.12; lead 28 / 400 / 1.42; body 17 / 400 / 1.55; table value 17 / 400; label 14 / 400; caption 12 / 400. A decisive amount may grow from its span, with tabular numerals, never a decorative KPI. Keep 300 for display scale, not small text. Align decimal points or right edges in every repeated amount column; keep Chinese and Latin on matched baselines. Recompose long titles within the hierarchy. On slides the Keynote floors hold: slide title at least 0.1 S, body at least 0.037 S.
+- Hanken Grotesk, the nearest open face to Stripe's light grotesk, for every role; Chinese in Noto Sans SC on matched baselines.
+- Display 80 / 300, tight; heading 48 / 300; lead 28 / 400; body 17 / 400; value 17 / 400 tabular; label 14; caption 12. Decisive totals 600.
+- 300 only at display size; figures tabular or on a right-aligned column.
 
 ## Colors
 
-Ground: Stripe's white with cool grey-blue bands. Use white canvas and a cool grey-blue panel. Navy ink and the dark navy proof surface carry the interface; muted slate is secondary text. Stripe indigo replaces Apple blue for links, actions, focus and dark-ground links. A restrained blue-to-violet-to-mint wave may sit behind the opening claim only; waveBlue, waveViolet and waveMint form that background field with dark text over it, never a chart fill, button or wallpaper. Hairline separates real rows. Never set a full dark page, second accent, glowing chart or gradient tile.
+Ground: Stripe's white with cool grey-blue bands.
+- **canvas** white; **panel** `#f6f9fc` a cool band; **dark** `#172b4d` the statement surface.
+- **ink** `#172b4d`, **muted** `#5c6574`; **onDark** white and **mutedDark** `#b9c2d2` on dark.
+- **action**, **link** and **focus** `#5140c9` indigo, replacing every Apple blue; **darkLink** `#b5adff` on dark; **onAction** white.
+- **waveBlue** `#dfe9ff`, **waveViolet** `#f0e5ff`, **waveMint** `#e2f6ef`: the wave, behind the opening claim only.
+- **hairline** `#d2d2d7` under rows.
 
 ## Shapes
-Use square, full-bleed fields and the Apple continuous corner for any nonzero radius: M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0. Build it natively or use the shared continuous-corner.js asset with one path for fill, stroke and media clip; no CSS radius, rect rx, preset curve or shadow. R is at most half the short side, and nested R is max(0, outer R − gap). Store cards use R = 18 px at S = 1000; primary actions are pills. Bento tiles use the same contour, separated by white gutters. Statement panels are the only dark rounded surfaces.
+
+**The device: the slanted edge.** Every change of ground is cut on one straight slant of 6°, rising to the right, its height across the full width 0.105 W. The direction never changes within a piece; text never sits on the slanted strip; the first slant carries the wave behind the opening claim, every later slant is a plain change of ground. In a fixed frame the slant may enter as one corner cut.
+
+Cards and statements 18; actions full pills; nothing else rounded. Every nonzero radius, pills included, takes Apple's continuous corner, copied, never derived; `border-radius`, `rect rx` and superellipses are other curves. A page built with Folio inlines `continuous-corner.js` and marks each box `data-cc="R"`. Anything else draws one of the two paths below, in units of R, with `transform="translate(x y) scale(R)"` and `vector-effect="non-scaling-stroke"`, filling in A = W ÷ R − 3.05732 and B = H ÷ R − 3.05732. R is at most half the short side, a box or a pill, never between; inner R = max(0, outer R − gap); fill, stroke, clip and focus ring share one path.
+
+A box, both sides at least 3.06 R:
+
+```
+M1.52866 0 h{A} c.44017 0 .66025 0 .89717 .07491 c.25867 .09415 .46243 .29791 .55658 .55658 c.07491 .23692 .07491 .457 .07491 .89717 v{B} c0 .44017 0 .66025 -.07491 .89717 c-.09415 .25867 -.29791 .46243 -.55658 .55658 c-.23692 .07491 -.457 .07491 -.89717 .07491 h-{A} c-.44017 0 -.66025 0 -.89717 -.07491 c-.25867 -.09415 -.46243 -.29791 -.55658 -.55658 c-.07491 -.23692 -.07491 -.457 -.07491 -.89717 v-{B} c0 -.44017 0 -.66025 .07491 -.89717 c.09415 -.25867 .29791 -.46243 .55658 -.55658 c.23692 -.07491 .457 -.07491 .89717 -.07491z
+```
+
+A pill, R = H ÷ 2:
+
+```
+M1.52866 0 h{A} c.44017 0 .66025 0 .89717 .07491 c.25867 .09415 .46243 .29791 .55658 .55658 c.07491 .18851 .07491 .32851 .07491 .36851 c0 .04 0 .18 -.07491 .36851 c-.09415 .25867 -.29791 .46243 -.55658 .55658 c-.23692 .07491 -.457 .07491 -.89717 .07491 h-{A} c-.44017 0 -.66025 0 -.89717 -.07491 c-.25867 -.09415 -.46243 -.29791 -.55658 -.55658 c-.07491 -.18851 -.07491 -.32851 -.07491 -.36851 c0 -.04 0 -.18 .07491 -.36851 c.09415 -.25867 .29791 -.46243 .55658 -.55658 c.23692 -.07491 .457 -.07491 .89717 -.07491z
+```
 
 ## Forms
-- Keynote: one judgment and one amount; the payout statement is large and readable beside it, with live text and one action. The statement's rows align to one decimal edge.
-- Bento: unequal tiles by importance; the lead amount takes the widest field, rate peers share one scale and direct labels, the statement arithmetic remains a distinct proof unit. Never turn the mosaic into a disguised table or a wall of equal cards.
-- Editorial: one proof vista, then a centered reading column; one lead opens the argument, body is 17 px / 400 / 1.47 at web size, and the source follows the numbers. Keep figure, period and unit adjacent. End with the proved claim, not a new pitch.
+
+- **Cover:** the claim light and large on the wave's slant; the statement at half the frame or more.
+- **Statement:** one sentence at display size on white.
+- **Exhibit:** a statement or dashboard whole, lines summing.
+- **Data:** the decisive amount at display size with unit and period; peers on one decimal edge, the decision in indigo.
+- **Sequence and comparison:** a payment's steps as statement lines in order; tiers as columns on one scale from zero.
+- **Collection:** plans or products as cards on hairlines, the amount leading each.
+- **Reference and close:** dense rows and footnotes on a cool band; the close is one proved claim and one action.
 
 ## Variations
-At a real change in the money story, allow one statement turn: a complete dark navy proof surface against white, with its own foreground palette. The Stripe wave may return behind a later section opener only if that section starts a new argument; otherwise it appears once.
+
+- **Statement turn:** one unit's proof on the dark statement surface, once per sequence.
+- **Return of the wave:** a later section that opens a new argument may take the wave on its slant; never two in sight.
 
 ## Do's and Don'ts
 
-Floors: facts match each brief exactly; declare every illustration; maintain 4.5:1 text contrast (3:1 for large type); keep reading text live and at its declared size floor for the intended viewing distance; make static output complete as a still; recompose each format instead of scaling a layout; use only original or licensed assets.
-
-Render check: recompute the displayed settlement from visible amounts, units and period; it reconciles exactly at reading size.
-
-Test: Cover indigo; the figures still line up and the page still reads as Stripe finance. Replace the Stripe signature; the same page should no longer fit.
-
-Caricature: a white Stripe-style balance sheet dressed by a flowing hero wave, with no figure a reader can reconcile.
+- **Look before delivering:** the slant must be one angle throughout; figures off the decimal edge, a gradient beyond the first slant, a dark page or a total that does not close are faults.
+- **Floors:** facts verbatim and live; renders declared once per piece, in the fine print; every pair in Tokens holds its contrast.
+- **Test:** cover the names and pour in new content: white fields cut on one slant, indigo actions and figures that close still say Ledger.
+- **Caricature:** a neon dashboard that cannot be audited; a gradient on every section.
 
 ## Tokens
-All values are authored for this fictional world at S = 1000. The wave is limited to a hero background. The house's indigo replaces every Apple blue role.
+
+Authored for this fictional world at S = 1000. 
 
 ```yaml
 colors:
@@ -69,8 +108,8 @@ colors:
   waveViolet: "#f0e5ff"
   waveMint: "#e2f6ef"
 typography:
-  display: { fontFamily: "Hanken Grotesk, Noto Sans SC, sans-serif", fontSize: 56, fontWeight: 300, lineHeight: 1.08 }
-  heading: { fontFamily: "Hanken Grotesk, Noto Sans SC, sans-serif", fontSize: 38, fontWeight: 300, lineHeight: 1.12 }
+  display: { fontFamily: "Hanken Grotesk, Noto Sans SC, sans-serif", fontSize: 80, fontWeight: 300, lineHeight: 1.05 }
+  heading: { fontFamily: "Hanken Grotesk, Noto Sans SC, sans-serif", fontSize: 48, fontWeight: 300, lineHeight: 1.1 }
   lead: { fontFamily: "Hanken Grotesk, Noto Sans SC, sans-serif", fontSize: 28, fontWeight: 400, lineHeight: 1.42 }
   body: { fontFamily: "Hanken Grotesk, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.55 }
   value: { fontFamily: "Hanken Grotesk, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.4 }
@@ -104,5 +143,6 @@ pairs:
 ```
 
 ## Record
+
 Folio version: 1.1.0. Template version: 14. Date: 2026-11-07.
-Pieces: quarter-close (Keynote), fee-tiers (Bento), journey (Editorial), each made from this file alone. Subject is fictional; no Stripe product, dashboard, logo or font file is used. Changes after the lock: none.
+Pieces: quarter-close (Keynote), fee-tiers (Bento), journey (Editorial), each made from an earlier version of this file, each made from an earlier version of this file. Ledger, its merchants and every figure are fictional; no Stripe product, dashboard, logo or font file is used. Changes after the lock: rewritten around the world's device; the pieces predate it.

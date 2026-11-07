@@ -1,66 +1,82 @@
-# Plain · Apple + Minimalist, MUJI hand
+# Plain · Apple + MUJI
 
-Plain's world: everyday products whose packaging is their specification.
+Everyday goods in Apple + MUJI: unbleached paper, and a board strip carrying every label.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are px at S = 1000, S the format's short side, and scale with it; each is a floor for how far the format is read from, never a ceiling. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath; form names are the maker's, never set on the page. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
-Apple + MUJI + Minimalist — Set everyday goods so their use and material can be judged directly; remove whatever serves neither, and let plainness carry the identity; never add a loud mark or decorative Japanese motif.
+Apple + MUJI style — Make every unit plain paper with a strip of board down its left edge carrying the label; never a loud mark, never decoration, never a colour that is not a material.
 
-World: Plain is a fictional no-brand range for household, stationery, and daily-use objects across a presented slide, a shop comparison, and an explanatory long read. Every piece keeps a quiet sans, plain construction, and useful material evidence; each brings the object, task, and dimensions that it needs.
+World: Plain's goods, packaging, shop and stories, on any surface. Every piece keeps the board strip, the paper ground and the plain sans; each brings its object or drawing and the measurements that describe it.
 
-Method: Begin with what the object does. Choose the view that makes its material and join visible; draw the object's net or cutaway only when it explains how the object is made or used. Remove a label, shape, or color if the buyer can still use and understand the piece without it. A new subject is selected by its use and material, not by an ethnic motif. The reading path is object → material → dimension → action or lookup.
+Method:
+1. Find what the buyer needs to know; write it as measurements.
+2. Set the label in the board strip.
+3. Show the object or its drawing plainly on paper.
+4. Remove the rest.
 
-Amplitude: the object or its measured proof may own the field; retail labels and reference entries remain small, plain, and ordered.
+Amplitude: Reduced throughout; the cover is the quietest unit at its largest.
 
-Anti-reference: an empty white page that withholds the one label, measurement, or action a buyer needs.
+Anti-reference: Japanese decoration; a loud mark; a product that demands attention.
 
 ## Images
 
-Use newly drawn objects and material sections or declared generated illustrative renders; use no real product photo, logo, or borrowed packaging. When there is no photograph, the object or its proof still fills a gallery-scale field; do not make a small diagram sit alone in a large blank. Keep a silhouette whole on a cover and keep scale bars exact on drawings. Swatches meet the grid as inset material samples, never as page wallpaper. Scale source geometry uniformly and change the frame if the object no longer fits. The small red mark, when needed, is a simple unlettered material/packaging marker, never a logo. Declare renders once per piece; keep explanatory type live. On a cover the object or its measured drawing takes half the frame or more.
+Plain renders and technical drawings of fictional goods — natural materials, soft light, one contact shadow; cut edges solid, folds dashed — declared once. On a cover the object or its measured drawing takes half the frame or more.
 
 ## Layout
 
-Grid system: Plain field — square material samples and product views share measured edges; no container is added for decoration.
+Grid system: Strip field — a left strip of board and a paper field, both square.
 
-Derive a 12-column grid from W × H: margin max(5% W, 6% S), gutter S/50, module S/125. Keynote protects the outer 8% safe area and uses one stable left axis. In a Bento range, the lead material comparison spans the widest tracks; real peers occupy matching square spans with the same order of use, material, size, and price. Keep the 1 px hairline only where a buyer needs to separate a sample, card, or table row. Editorial uses a centered column no wider than min(980 px, 82% W), with flush-left text and its cutaway on the same evidence axis. Let material tone provide the image's color; don't repeat its swatch in decorative UI.
+Twelve tracks from W × H: margin max(5% W, 6% S), gutter S / 50, module S / 125. The strip takes one track at the left edge, full height; the field begins one gutter after it. Formats: on a 1600 × 900 slide, critical content stays inside the central 84%, the slide title at least 90 px and body at least 33; a scrolling page reads the tokens as given at a 1440 px viewport, body never below 17 px; a shop subdivides the field into peer cards on hairlines.
 
 ## Typography
 
-Use Inter 400 for every Latin role and Noto Sans SC 400 for Chinese; the page has one unembellished grotesque voice. At S = 1000 use display 80/400/1.05, heading 52/400/1.1, lead 24/400/1.45, body 17/400/1.5, label 14/400/1.4, caption 12/400/1.45. Hierarchy is established by scale and position, never by a second face or a bold utility label. Use tabular numerals for measurements and prices; share the baseline and unit position among peers. Keep body text at 16–20 px on the web, 45–75 Latin or 25–35 CJK characters per line, and break Chinese at phrase boundaries. The red mark is never typographic. On slides the Keynote floors hold: slide title at least 0.1 S, body at least 0.037 S.
+- Inter at 400 for every role; Noto Sans SC for Chinese; tabular figures.
+- Display 80 / 400; heading 52 / 400; lead 24 / 400; body 17 / 400; label 14; caption 12.
+- Hierarchy by size and position, never weight.
 
 ## Colors
 
-Ground: MUJI's unbleached paper, the brand's signature. Use `canvas` warm paper, `panel` white, `ink` for reading and product outlines, `muted` for labels, and `hairline` only for real divisions. `cotton`, `porcelain`, `beech`, and `board` approximate the depicted materials and may change with the subject. `mark` is a single small dark red mark only; it never becomes a CTA, line, badge, or field. `action` stays ink; no Apple blue or gradient. Keep text pairs at the declared contrast floor.
+Ground: MUJI's unbleached paper, the brand's signature.
+- **canvas** `#f8f6f1` paper; **panel** white plates; **dark** `#302d27` a rare turn.
+- **ink** `#302d27`, **muted** `#666056`; **onDark** white.
+- **action** `#302d27` square actions; **onAction** white.
+- **board** `#c5a976` the strip; **cotton** `#d7cdbc`, **porcelain** `#ebe7df`, **beech** `#bd9667`: materials in renders.
+- **mark** `#8f1d26`: one small unlettered mark, at most, on the strip's top.
+- **hairline** `#d5d2ca` only where rows need it.
 
 ## Shapes
 
-Keep all page fields, tiles, samples, and actions square: radius zero is part of the no-brand restraint. Use a single 1 px hairline to separate actual reading groups, with no shadows, badge, or ornamental stroke. Draw product outlines with one consistent stroke and show only the joins that explain use. If an unusually small viewport requires a nonzero control radius, use Apple's continuous-corner contour from the shared helper; never substitute a circular preset, and keep the surrounding surface square.
+**The device: the board strip.** A strip of board colour, one track wide, full height at the left edge, with a subtle fibre texture; the unit's label — name, then its measurements — set in ink at its top, reading left to right. One per unit; it never moves to another edge, never holds an image, never carries a slogan.
+
+Everything square: radius zero is part of the restraint.
 
 ## Forms
 
-- Keynote: one plain object or packaging net at gallery scale, one claim, live labels, and a second field only for its measured material proof.
-- Bento: a material-led lead tile, then genuine product peers at square edges; each peer uses the same field order for use, material, size, price, and one plain action. A numeric tile must label its count and scope.
-- Editorial: open on the object or a material vista with one headline and at most one action; continue with a centered reading column and a measured cutaway or material plate, then a quiet price/source line.
+- **Cover:** the object on paper at half the frame or more, its name and size in the strip.
+- **Statement:** one plain sentence on paper, the strip holding its source.
+- **Exhibit:** a measured drawing at 1:1 or a stated scale on a white plate.
+- **Data:** one measurement at display size; others in the strip.
+- **Sequence and comparison:** goods at one scale on one baseline, each with its strip label.
+- **Collection:** square white plates, name and price beneath in one size.
+- **Reference and close:** specification rows; the close is the object and its strip.
 
 ## Variations
 
-At a real content turn, allow one full unit that shows plain packaging or one product material at a closer scale. The whole surface stays square and quiet; material tone changes only with the subject.
+- **Section:** one unit shows the material in section at a stated scale.
+- **Plate field:** one unit is a white plate edge to edge, the strip unchanged.
 
 ## Do's and Don'ts
 
-Floors: facts match each brief exactly; declare every illustration; maintain 4.5:1 text contrast (3:1 for large type); keep reading text live and at its declared size floor for the intended viewing distance; make static output complete as a still; recompose each format instead of scaling a layout; use only original or licensed assets.
-
-Render check: the object’s material join or cutaway is legible at its displayed scale, and each live annotation can be matched to the part it names.
-
-Test: Hide the brand name and the red mark; can the object still be understood from its use, material and dimensions?
-
-Caricature: a plain surface with Japanese-looking decoration but no usable construction, measurement or instruction.
+- **Look before delivering:** the strip must read at thumbnail on the left of every unit; a rounded corner, a colour that is not a material, or a slogan are faults.
+- **Floors:** facts verbatim and live; renders declared once per piece, in the fine print; every pair in Tokens holds its contrast.
+- **Test:** cover the names and pour in new content: paper, a board strip at the left and plain measurements still say Plain.
+- **Caricature:** Japanese ornament; a loud logo; a decorative colour.
 
 ## Tokens
 
-Values below are derived for this fictional no-brand range at S = 1000; material tones are illustrative and the mark never colors an action.
+Authored for this fictional world at S = 1000. 
 
 ```yaml
 colors:
@@ -109,4 +125,4 @@ pairs:
 ## Record
 
 Folio version: 1.1.0. Template version: 14. Date: 2026-11-07.
-Pieces: one-sheet (Keynote), three-things (Bento), cut-open (Editorial), built from this file alone. Plain and all goods, packaging, measurements, prices, and materials are fictional; no MUJI product, logo, photograph, or font file is used. Changes after the lock: none.
+Pieces: one-sheet (Keynote), three-things (Bento), cut-open (Editorial), each made from an earlier version of this file, each made from an earlier version of this file, each made from an earlier version of this file, each made from an earlier version of this file. Plain and all goods, packaging, measurements, prices and materials are fictional; no MUJI product, logo, photograph or font file is used. Changes after the lock: rewritten around the world's device; the pieces predate it.

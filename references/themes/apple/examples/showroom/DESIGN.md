@@ -1,54 +1,81 @@
-# Volt · Apple + Tesla, Showroom
+# Volt · Apple + Tesla
 
-Volt's world: a small electric car in a night showroom, its price always in view.
+A small electric car range in Apple + Tesla: the frame full of the object, the title at the top, the pair at the foot.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are px at S = 1000, S the format's short side, and scale with it; each is a floor for how far the format is read from, never a ceiling. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath; form names are the maker's, never set on the page. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
-Apple + Tesla style — Compose one full-viewport object scene with the price at the decision point; never put the vehicle in a card grid or hide its configurator behind atmosphere.
-World: A fictional small electric-car range, across launch, configuration and route stories. Every piece keeps the complete vehicle silhouette, one message and a visible price when selling; each brings a different buyer decision or journey. Translate a new subject by locating the object, its material and the proof the buyer can judge. A selling page keeps its live price and options together as the image changes.
-Method: Begin with the object's silhouette and the selling question. Choose a camera angle that makes the material and shape legible, then place the short claim in the calmest part of the image. The reader moves from object to message to price and options; where the page sells, price and configuration remain in one stationary decision band. A route story can give the landscape the lead only when the route is the proof and the vehicle remains identifiable. Prefer a shaded illustrative render when no cleared photograph exists; a flat line drawing cannot stand in for the object.
-Amplitude: Full on the car and its surrounding field; reduced on controls, price detail and secondary specifications.
-Anti-reference: A dealer catalogue of floating car cards under a discount banner.
+
+Apple + Tesla style — Fill every frame with the object, set the title at its top and the pair at its foot; never a card grid, never chrome over the object, never a price kept for the end.
+
+World: Volt's range, configurator, launches and journeys, on any surface. Every piece keeps the full frame, the title at the top and the pair at the foot; each brings its own object view and its two facts or actions.
+
+Method:
+1. Choose the one view of the object this unit needs and give it the whole frame.
+2. Find the calm band at the top of that view; the title and one line sit there, centred.
+3. Set the pair at the foot: two actions, or on a slide two facts.
+4. Keep the price in the pair wherever the unit sells.
+
+Amplitude: Full on every frame; the reference and configurator go denser, never smaller in their object.
+
+Anti-reference: A dealer page: the object in a card grid under a discount banner.
 
 ## Images
-Use a generated or supplied image of the fictional object; never use Tesla or Apple product imagery, a real owner's photo, badge, wordmark or vehicle interface. In these examples the vehicle is a layered vector illustration, disclosed with Illustrative render, not a photograph; vehicleBody is the painted shell, vehicleGlass the glazing, and vehicleHighlight the reflected edge. The drawing is a stand-in, not evidence of a real car or performance. Give it at least half of a cover's useful field. Keep the whole silhouette on launch and configure surfaces; on the road story the landscape may meet the trim, but its road and distant car must remain legible. Scale source proportions uniformly. The live headline sits on an unplated calm zone; if contrast fails, move the text or adjust the image field, never add chrome. No content is baked into the image.
+
+Renders of Volt's fictional vehicles, modelled — key light, paint falloff, glass reflection, a contact shadow — at the largest scale the frame allows, silhouette whole on a cover; declared once. A night showroom ground; the object brings the light. No Tesla vehicle, photograph or mark.
 
 ## Layout
-Grid system: Full viewport field — the object sets the screen's balance; the decision apparatus stays anchored.
-Derive a 12-track field from W × H with margin max(5% of W, 0.06S) and gutter margin/4. In landscape, give the vehicle at least 7 tracks and the text or decision group no more than 5; the calm area follows the actual silhouette, not a fixed side rule. In Store, place the rendered object across the first 8 tracks and keep options plus running price in the remaining tracks and bottom action band. The buy band stays at the trim. In editorial, the full-bleed landscape opens the page; the reading column below is centered, capped at 980 px and 65 Latin characters, flush-left. Portrait formats stack image first, choice and price next. Use the same baseline for price, option deltas and action; do not stagger them for rhythm.
+
+Grid system: Full frame — the object owns the field; type keeps to two bands, top and foot.
+
+Twelve tracks from W × H: margin max(5% W, 6% S), an 8 px module. The title band is the top 22% of the frame, the pair band the bottom 14%; the object owns everything between and may run under both. Type never enters the object's middle. Formats: on a 1600 × 900 slide, critical content stays inside the central 84%, the slide title at least 90 px and body at least 33; a scrolling page reads the tokens as given at a 1440 px viewport, body never below 17 px; a shop subdivides the field into peer cards on hairlines.
 
 ## Typography
 
-Voice: Tesla's geometric sans, set in Montserrat, the nearest open face of that lineage. Use Montserrat for Latin and Noto Sans SC for Chinese interface and body; Noto Serif SC may carry a Chinese editorial title only when the bilingual story requires a distinct display voice. Load open-source faces from Google Fonts, no Apple or Tesla file. Use only two weights: 400 for body and labels, 600 for titles and primary action. At S = 1000: display 64 px / 600 / 1.08; heading 44 / 600 / 1.1; lead 28 / 400 / 1.45; body 17 / 400 / 1.5; label 14 / 400 / 1.4; caption 12 / 400 / 1.5; primary figure 144 / 600 / 1.0. Tracking stays normal at all sizes. Use tabular figures for prices, ranges and deltas. The object and amount outrank the slogan. On slides the Keynote floors hold: slide title at least 0.1 S, body at least 0.037 S.
+- Montserrat, the nearest open face to Tesla's geometric sans, for every role; Chinese in Noto Sans SC.
+- Display 64 / 600 at normal tracking; heading 44 / 600; lead 28 / 400; body 17 / 400; label 14; caption 12; figure 144 / 600 for a single number.
+- Two weights only; tracking stays normal, an explicit break with Apple.
 
 ## Colors
 
-Ground: carbon, the night showroom this world chose; the photograph brings the light. Carbon canvas and near-black photo void are fields, graphite is the neutral surface, ash is readable text, pewter labels the vehicle rendering and secondary information. Tesla blue marks the primary action and keyboard focus only; links stay neutral, and blue never fills a field or changes the object rendering. No gradient, decorative border, card shadow or second accent. Hairline appears only between functional option groups.
+Ground: carbon, the night showroom this world chose; the object brings the light.
+- **canvas** and **dark** `#171a20` carbon; **panel** `#30343b` graphite for the configurator.
+- **ink** `#f5f5f7`, **muted** and **mutedDark** `#d2d4d8`, **onDark** `#f5f5f7`; **link** `#f5f5f7`.
+- **action** and **focus** `#1559b7`, the primary of the pair only; **onAction** white.
+- **pewter** `#5a6068` secondary vehicle tones; **vehicleBody** `#4a505a`, **vehicleGlass** `#262b32`, **vehicleHighlight** `#a9afb8` the render's own paint and glass.
+- **hairline** `#6c737c` divides configurator rows.
 
 ## Shapes
-Tesla's example world uses square corners and no decorative borders or shadows. Every radius is zero. If a future control requires a nonzero corner, use only Apple's continuous corner M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0, built with the shared continuous-corner.js helper; fill, stroke and clip share one path. No CSS radius, rect rx, preset curve or shadow. The Tesla render stays flat and carries no cast shadow.
+
+**The device: the pair at the foot.** Two equal rectangular buttons, side by side and centred in the bottom band, 56 px tall at S = 1000, each at most 2.5 modules wide of text padding; the primary in action blue, the second outlined in ink. Above the object the title and one line sit centred in the top band. On a slide the pair holds two facts set in the same rectangles; in the configurator it holds the running price and the order. The pair never moves to a side, never becomes a pill, never multiplies.
+
+Radius zero for every control and field; the vehicle alone is curved.
 
 ## Forms
-- Keynote: one thesis, one full-bleed vehicle render and one live title in a calm zone. Keep the from-price and the range figure visible together; one primary square action may use blue.
-- Store: a single-car configurator, not a card collection. Keep the object large, options grouped by decision, selection states neutral, and running price plus reserve action fixed in the decision band. The image may change while the price does not leave.
-- Editorial: one road or landscape vista opens the argument, then a single reading column explains route, range and source. The price is quiet and blue is reserved for one primary link only where the page is navigable.
+
+- **Cover:** the full frame, title and line at the top, the pair at the foot.
+- **Statement:** one message on a frame of the object in motion.
+- **Exhibit:** one view — side, rear, interior — filling the frame, the pair naming what it shows.
+- **Data:** one figure at 144 / 600 in the title band, its unit beside it; the pair carries the condition.
+- **Sequence and comparison:** frames in order, one view each; models compared at one scale and one angle, a pair under each.
+- **Collection:** the configurator: the object large, options as rows on graphite, the price and order in the pair.
+- **Reference and close:** dense rows on graphite; the close is one frame and one pair.
 
 ## Variations
-One route vista may take the full-bleed landscape for an environmental story. One configuration turn may change the image while holding choice groups, running price and action on the same baseline. No other departure uses a gradient, shadow, or decorative border.
+
+- **Interior turn:** one frame from inside the car, the pair over the dashboard, once per sequence.
+- **Day frame:** one full-bleed daylight photograph-like frame, the bands unchanged.
 
 ## Do's and Don'ts
 
-Floors: facts match each brief exactly; declare every illustration; maintain 4.5:1 text contrast (3:1 for large type); keep reading text live and at its declared size floor for the intended viewing distance; make static output complete as a still; recompose each format instead of scaling a layout; use only original or licensed assets.
-
-Render check: at first view, the complete vehicle silhouette, live price and next option can be found without relying on a caption or badge.
-
-Test: Remove blue and price; the silhouette and message still read as Tesla showroom. Swap the hand; its calm image-plus-configurator relationship should no longer fit.
-
-Caricature: a cinematic night render whose reflections hide the vehicle's silhouette and whose buyer choices arrive only after checkout.
+- **Look before delivering:** the object must fill the frame at thumbnail; a pill, type across the object's middle, a hidden price on a selling unit or three messages in one frame are faults.
+- **Floors:** facts verbatim and live; renders declared once per piece, in the fine print; every pair in Tokens holds its contrast.
+- **Test:** cover the names and pour in new content: full frames, a title band and a centred pair at the foot still say Volt.
+- **Caricature:** a card grid posing as a showroom; chrome over the object; a gradient wash.
 
 ## Tokens
-All values are authored for this fictional world at S = 1000. Vehicle drawing colors represent illustrative paint and glass; the only interface accent is Tesla blue.
+
+Authored for this fictional world at S = 1000. 
 
 ```yaml
 colors:
@@ -101,5 +128,6 @@ pairs:
 ```
 
 ## Record
+
 Folio version: 1.1.0. Template version: 14. Date: 2026-11-07.
-Pieces: per-charge (Keynote), configure (Store), one-road (Editorial), each made from this file alone. Subject is fictional; no Tesla product, photograph, logo or font file is used. Changes after the lock: none.
+Pieces: per-charge (Keynote), configure (Store), one-road (Editorial), each made from an earlier version of this file, each made from an earlier version of this file. Volt and every vehicle, figure and price are fictional; no Tesla product, photograph, logo or font file is used. Changes after the lock: rewritten around the world's device; the pieces predate it.

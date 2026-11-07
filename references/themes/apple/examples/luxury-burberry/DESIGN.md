@@ -1,53 +1,92 @@
-# Highland · Apple + Burberry, Luxury
+# Highland · Apple + Burberry
 
-Highland's world: one coat carrying a British outerwear house through weather.
+A British outerwear house in Apple + Burberry: one coat, a low horizon, the weather above it.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are px at S = 1000, S the format's short side, and scale with it; each is a floor for how far the format is read from, never a ceiling. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath; form names are the maker's, never set on the page. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
-Apple + Burberry style — Make one trench coat carry the house's weather story, then prove its claims in cloth and construction; never use a house mark, check or photograph as borrowed decoration.
-World: A fictional British outerwear house across launch, purchase and environmental stories. Every piece keeps one coat, a serif voice and weather or construction as evidence; each brings its own weather question or product decision. Translate a new subject by deciding which weather condition its coat answers, then show proof beside the claim. The price stays present but quiet.
-Method: Start with the whole coat in a believable environment. Let actual weather or a visible cloth construction generate the argument; prefer measured conditions over a mood word. Then move from silhouette to the tested detail, preserving enough of the coat to identify the product. A material claim without a detail or stated measurement is removed. Use a fictional house name in serif as the identity; the real knight, check and Burberry wordmark do not transfer.
-Amplitude: Full on the coat in its weather; reduced on price and product labels.
-Anti-reference: A gold-and-plaid luxury template, a stock portrait and a price bigger than the coat's name.
+
+Apple + Burberry style — Set every unit on one low horizon with the weather above it and the coat standing on it; never the check as wallpaper, never a range with no single coat.
+
+World: Highland's coats, collections, campaigns and stories, on any surface. Every piece keeps the horizon, the weather tone above it and the serif; each brings its coat or detail and its day's weather.
+
+Method:
+1. Choose the one coat or detail and the weather it stands in.
+2. Draw the horizon low; give the sky the weather's tone.
+3. Stand the coat on the horizon; the claim sits in the sky.
+4. Price stays below the line, quiet.
+
+Amplitude: Full on covers and campaign units; reduced in the shop and reference.
+
+Anti-reference: Fake heritage: a check pattern everywhere, a crest, gold.
 
 ## Images
-Use cleared or generated images of the fictional coat in British rain and wind, never Burberry or Apple imagery or insignia. These example pieces use illustrated weather fields and a coat diagram, labeled Illustrative render, not a photograph; they describe weather or construction rather than document a real coat. Keep the whole coat silhouette on a cover. The rain story may run full bleed, but preserve a calm text zone and do not place live type on the coat's seam. In the shop, keep every coat in a shared crop and at the same scale. Scale source art uniformly; captions stay live, outside the crop. No check pattern is used. On a cover the coat stands half the frame tall or more.
+
+Renders of fictional coats with modelled cloth — key light, gabardine twill, a contact shadow on the ground — and illustrated weather fields, declared once. On a cover the coat stands half the frame tall or more, on the horizon.
 
 ## Layout
-Grid system: Weather gallery — the coat and its environment make the lead; construction details align to that same product axis.
-Derive 12 tracks from W × H, with margin max(5%W, 0.06S) and gutter margin/4. Keynote uses the same left axis for title, condition and figure; the coat or material proof owns the large opposite field. Store cards sit on the same grid, one coat per card with a shared image slot and aligned price row. Editorial opens with a full-bleed weather field and joins a centered 980 px reading column beneath it; prose stays flush-left and captions align with the tested detail. Change from white to parchment only at a weather/story turn. A new section opens at section scale with its proof, so the page does not fall to one volume. Price, source and measurements stay quiet and findable.
+
+Grid system: Horizon field — every unit split by one low line, sky above, ground below.
+
+Twelve tracks from W × H: margin max(5% W, 6% S), gutter 1.25% W, an 8 px module. The horizon sits at 64% of the height; type above it reads on the sky, the shop's rows below it on ground. Formats: on a 1600 × 900 slide, critical content stays inside the central 84%, the slide title at least 90 px and body at least 33; a scrolling page reads the tokens as given at a 1440 px viewport, body never below 17 px; a shop subdivides the field into peer cards on hairlines.
 
 ## Typography
-Use Cormorant Garamond for serif display and Noto Serif SC for the Chinese display pair; use Inter with Noto Sans SC for body, labels and figures. Open-source Google Fonts only, no Burberry or Apple files. At S = 1000: display 72 px / 400 / 1.05; section head 52 / 400 / 1.08; lead 28 / 300 / 1.35; body 17 / 400 / 1.55; product name 21 / 600 / 1.3; price 17 / 400 / 1.4; label 14 / 400 / 1.4; caption 12 / 400 / 1.5. Figures use tabular numerals, right-aligned. Chinese and Latin share apparent size and baseline; use 300 only for large leads, never fine text. On slides the Keynote floors hold: slide title at least 0.1 S, body at least 0.037 S.
+
+- Cormorant Garamond for display and heading; Inter for lead, body and labels; Noto Serif SC and Noto Sans SC for Chinese.
+- Display 72 / 400; heading 52 / 400; lead 28 / 300; body 17 / 400; product 21 / 600; price 17 / 400; label 14; caption 12.
 
 ## Colors
 
-Ground: white, with the trench's own honey as the warm panel. Use white and parchment fields, ink for text, and subdued weather neutrals in the render. Hairline marks separators; trim names the neutral detail on the drawn cloth. Saturated knight blue replaces every Apple blue role: link, action, focus and dark-ground link. It appears only on a small action, one decisive measured boundary or a selected store option. It never becomes a full field or a house pattern. Muted labels remain readable; on dark weather fields use white or soft blue-white text. The blue is the only interface accent.
+Ground: white, with the trench's own honey as the warm panel.
+- **canvas** white; **panel** `#f7f4ed` honey; **dark** `#202124` a night unit.
+- **weather** `#343941` storm sky, **cloth** `#e5e0d7` the gabardine, **trim** `#8f8c85` the horizon line and seams.
+- **ink** `#202124`, **muted** `#626269`; **onDark** white, **mutedDark** `#c4c6c9` on dark.
+- **action**, **link** and **focus** `#1936c8` the knight blue, replacing Apple blue; **darkLink** `#a8b8ff`; **onAction** white.
+- **hairline** `#d2d2d7` in rows below the horizon.
 
 ## Shapes
-Use sharp full-bleed weather fields and the Apple continuous corner for nonzero radii: M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0. Store cards use R = 18 px at S = 1000 and the shared continuous-corner.js helper; actions are pills. Use one path for fill, stroke and media clipping, no CSS radius, preset curve or decorative shadow. Nested R is max(0, outer R − gap), capped at half the short side. A garment or weather illustration may have one contact shadow only.
+
+**The device: the horizon.** One full-width line in trim, 1 px at S = 1000, at 64% of the unit's height. Above it the sky in one weather tone — white, honey, storm — below it the ground; the coat or object stands on it and its shadow falls on the ground. The line never tilts, never doubles, never leaves the unit.
+
+Cards 18; actions full pills. Every nonzero radius, pills included, takes Apple's continuous corner, copied, never derived; `border-radius`, `rect rx` and superellipses are other curves. A page built with Folio inlines `continuous-corner.js` and marks each box `data-cc="R"`. Anything else draws one of the two paths below, in units of R, with `transform="translate(x y) scale(R)"` and `vector-effect="non-scaling-stroke"`, filling in A = W ÷ R − 3.05732 and B = H ÷ R − 3.05732. R is at most half the short side, a box or a pill, never between; inner R = max(0, outer R − gap); fill, stroke, clip and focus ring share one path.
+
+A box, both sides at least 3.06 R:
+
+```
+M1.52866 0 h{A} c.44017 0 .66025 0 .89717 .07491 c.25867 .09415 .46243 .29791 .55658 .55658 c.07491 .23692 .07491 .457 .07491 .89717 v{B} c0 .44017 0 .66025 -.07491 .89717 c-.09415 .25867 -.29791 .46243 -.55658 .55658 c-.23692 .07491 -.457 .07491 -.89717 .07491 h-{A} c-.44017 0 -.66025 0 -.89717 -.07491 c-.25867 -.09415 -.46243 -.29791 -.55658 -.55658 c-.07491 -.23692 -.07491 -.457 -.07491 -.89717 v-{B} c0 -.44017 0 -.66025 .07491 -.89717 c.09415 -.25867 .29791 -.46243 .55658 -.55658 c.23692 -.07491 .457 -.07491 .89717 -.07491z
+```
+
+A pill, R = H ÷ 2:
+
+```
+M1.52866 0 h{A} c.44017 0 .66025 0 .89717 .07491 c.25867 .09415 .46243 .29791 .55658 .55658 c.07491 .18851 .07491 .32851 .07491 .36851 c0 .04 0 .18 -.07491 .36851 c-.09415 .25867 -.29791 .46243 -.55658 .55658 c-.23692 .07491 -.457 .07491 -.89717 .07491 h-{A} c-.44017 0 -.66025 0 -.89717 -.07491 c-.25867 -.09415 -.46243 -.29791 -.55658 -.55658 c-.07491 -.18851 -.07491 -.32851 -.07491 -.36851 c0 -.04 0 -.18 .07491 -.36851 c.09415 -.25867 .29791 -.46243 .55658 -.55658 c.23692 -.07491 .457 -.07491 .89717 -.07491z
+```
 
 ## Forms
-- Keynote: one message and one large coat or material proof; keep a calm zone for live type and use one measurement only when it proves garment response to weather. Price is quiet.
-- Store: equal product peers share crop, scale and label order; name then price then one buy action. The buy bar remains fixed, selected state uses the same blue in a 2 px continuous outline.
-- Editorial: one full-bleed weather vista with one headline and at most one action, then one reading column. Keep paragraph measure at 65 characters, leads flush-left and evidence close to the stated claim. Close on the implication of the weather record, not another sales slogan.
+
+- **Cover:** the coat on the horizon, the serif claim in the sky.
+- **Statement:** one serif sentence in a storm sky over the line.
+- **Exhibit:** a cloth or seam detail with its own horizon crossing it.
+- **Data:** one figure in the sky, its label below the line.
+- **Sequence and comparison:** the same coat in different weathers, one horizon height.
+- **Collection:** coats as cards, each on its own small horizon, name then quiet price.
+- **Reference and close:** rows below the line; the close is one coat in one weather.
 
 ## Variations
-A weather turn may place the coat against one complete dark field. A detail turn may replace the whole object with a readable cloth section; the caption restores the coat and the function of that layer. Keep each turn to one variation, not both at once.
+
+- **Storm turn:** one unit in the storm tone with white type; once per sequence.
+- **High horizon:** one unit raises the line to 80% for a ground-led detail.
 
 ## Do's and Don'ts
 
-Floors: facts match each brief exactly; declare every illustration; maintain 4.5:1 text contrast (3:1 for large type); keep reading text live and at its declared size floor for the intended viewing distance; make static output complete as a still; recompose each format instead of scaling a layout; use only original or licensed assets.
-
-Render check: at thumbnail size, both coat silhouette and weather condition are legible; at full size, the claimed cloth or measurement detail is visibly tied to that coat.
-
-Test: Hide the Burberry name; the restrained serif voice and saturated blue still identify the house without relying on a check or emblem. Substitute another outerwear house; this combination should no longer fit unchanged.
-
-Caricature: knight-blue badges announce the house while the trench's weather use and cloth remain unshown.
+- **Look before delivering:** the horizon must read at thumbnail at one height; the check as a field, a coat off the line, or type below the line in a campaign unit are faults.
+- **Floors:** facts verbatim and live; renders declared once per piece, in the fine print; every pair in Tokens holds its contrast.
+- **Test:** cover the names and pour in new content: a low horizon, weather above it and one object on it still say Highland.
+- **Caricature:** the check as wallpaper; a crest; gold.
 
 ## Tokens
-All values are authored for the fictional outerwear house at S = 1000. The blue is a visual anchor only; no house mark or photograph is supplied.
+
+Authored for this fictional world at S = 1000. 
 
 ```yaml
 colors:
@@ -104,5 +143,6 @@ pairs:
 ```
 
 ## Record
+
 Folio version: 1.1.0. Template version: 14. Date: 2026-11-07.
-Pieces: rain-test (Keynote), trench-series (Store), weather (Editorial), each made from this file alone. Subject is fictional; no Burberry product, photograph, mark, pattern or font file is used. Changes after the lock: none.
+Pieces: rain-test (Keynote), trench-series (Store), weather (Editorial), each made from an earlier version of this file, each made from an earlier version of this file. Highland and its coats are fictional; no Burberry product, mark, pattern, photograph or font file is used. Changes after the lock: rewritten around the world's device; the pieces predate it.

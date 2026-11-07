@@ -64,7 +64,8 @@ def check_design(path):
         fail.append(f"S3 template placeholders left: {', '.join(sorted(set(holes))[:5])}")
     ov = section(prose, "Overview") or ""
     first = next((l for l in ov.strip().splitlines() if l.strip()), "")
-    if not re.search(r"\b(make|set|build|draw|compose|work)\b", first, re.I) or len(first) < 40:
+    imperative = re.search(r"—\s*[A-Z][a-z]+\b", first) and re.search(r"\bnever\b", first, re.I)
+    if not (imperative or re.search(r"\b(make|set|build|draw|compose|work)\b", first, re.I)) or len(first) < 40:
         fail.append("S4 Overview does not open with an invocation (school, hand, work, method as an imperative, ban)")
     for label in ("World:", "Method:"):
         if label not in ov:

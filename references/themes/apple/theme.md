@@ -57,7 +57,7 @@ A model reaches for safety; Apple wins by conviction.
 
 - **Scale is the argument, not the risk.** The largest true thing on the unit is the claim; a model's instinct to shrink, grey and empty is the failure Apple exists to correct.
 - **The hero is an object, not an icon.** It has light, material and weight; where the drawing cannot give it that, the frame goes closer or the proof takes its place.
-- **A move repeated is a template.** Any tile, block or split that appears on every unit has stopped meaning; the turn comes where the content turns.
+- **An identity recurs; a layout does not.** The world's device appears in every unit, moved and scaled by the content; the same tile, split or block on every unit is a template, and the turn comes where the content turns.
 - **The ground is chosen, not defaulted.** Apple's grounds, or the brand's; never the warm paper, gradient or blue a model supplies by habit.
 - **Every mark is read.** Captions, labels and rules exist for the reader or not at all.
 - **Centre the stage, not the text.** Hero, vista and cover headlines may centre; everything read stays flush left.
@@ -76,20 +76,24 @@ Measured on apple.com, where models are confidently wrong.
 
 ## Continuous corner
 
-Every nonzero radius, pills and chips included, takes Apple's continuous corner, which no preset draws. Square forms stay square; full-bleed fields have no radius; primary actions and chips are fully rounded; a store card is 18. Radius sets size; the contour is this curve:
+Every nonzero radius, pills and chips included, takes Apple's continuous corner; `border-radius`, `rect rx`, presets and superellipses are other curves. Square forms stay square; full-bleed fields have no radius; primary actions and chips are fully rounded; a store card is 18. Natively `RoundedRectangle(style: .continuous)` or `cornerCurve = .continuous`; Figma at 60% smoothing. Elsewhere it is copied, never derived:
+
+- **A page:** inline `examples/_shared/continuous-corner.js` as is and mark each box `data-cc="R"`; fill, stroke, media clip and focus ring share its contour.
+- **A fixed frame** — SVG, slide, poster: one of the two paths below, in units of R, drawn with `transform="translate(x y) scale(R)"` and `vector-effect="non-scaling-stroke"`. Fill in A = W ÷ R − 3.05732 and B = H ÷ R − 3.05732; a clip or ring reuses the same path.
+
+A box, both sides at least 3.06 R:
 
 ```
-M 0 1.52866
-C 0 1.08849  0 .86841  .07491 .63149
-C .16906 .37282  .37282 .16906  .63149 .07491
-C .86841 0  1.08849 0  1.52866 0
+M1.52866 0 h{A} c.44017 0 .66025 0 .89717 .07491 c.25867 .09415 .46243 .29791 .55658 .55658 c.07491 .23692 .07491 .457 .07491 .89717 v{B} c0 .44017 0 .66025 -.07491 .89717 c-.09415 .25867 -.29791 .46243 -.55658 .55658 c-.23692 .07491 -.457 .07491 -.89717 .07491 h-{A} c-.44017 0 -.66025 0 -.89717 -.07491 c-.25867 -.09415 -.46243 -.29791 -.55658 -.55658 c-.07491 -.23692 -.07491 -.457 -.07491 -.89717 v-{B} c0 -.44017 0 -.66025 .07491 -.89717 c.09415 -.25867 .29791 -.46243 .55658 -.55658 c.23692 -.07491 .457 -.07491 .89717 -.07491z
 ```
 
-One corner, inward from the corner point, in units of R; the shoulder spends 1.52866R of each side.
+A pill, R = H ÷ 2:
 
-- **Build:** natively `RoundedRectangle(style: .continuous)` or `cornerCurve = .continuous`; elsewhere this path, for SVG, canvas, `clip-path` and slide freeforms; Figma at 60% smoothing. `border-radius`, `rect rx`, presets and superellipses are other curves.
-- **Fit:** R is at most half the shorter side. A side shorter than 3.05732R shortens its shoulder to half the side, easing toward the native saturated form, whose first cubic runs from (0, 1) through (0, .96) and (0, .82); `examples/_shared/continuous-corner.js` draws it.
-- **One path** for fill, stroke, media clip and focus ring; nested corners share centres, inner R = max(0, outer R − gap). A single-file page inlines the helper.
+```
+M1.52866 0 h{A} c.44017 0 .66025 0 .89717 .07491 c.25867 .09415 .46243 .29791 .55658 .55658 c.07491 .18851 .07491 .32851 .07491 .36851 c0 .04 0 .18 -.07491 .36851 c-.09415 .25867 -.29791 .46243 -.55658 .55658 c-.23692 .07491 -.457 .07491 -.89717 .07491 h-{A} c-.44017 0 -.66025 0 -.89717 -.07491 c-.25867 -.09415 -.46243 -.29791 -.55658 -.55658 c-.07491 -.18851 -.07491 -.32851 -.07491 -.36851 c0 -.04 0 -.18 .07491 -.36851 c.09415 -.25867 .29791 -.46243 .55658 -.55658 c.23692 -.07491 .457 -.07491 .89717 -.07491z
+```
+
+- **Fit:** R is at most half the shorter side; a fixed frame takes a box or a pill, never a radius between. Nested corners share centres: inner R = max(0, outer R − gap).
 
 ## The red line
 

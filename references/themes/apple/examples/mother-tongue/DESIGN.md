@@ -1,66 +1,93 @@
 # Lumen · Apple
 
-Lumen's world: a small home speaker as a sculpture on a solid field.
+A home-audio house in Apple's own language: one object, one claim, one light.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are px at S = 1000, S the format's short side, and scale with it; each is a floor for how far the format is read from, never a ceiling. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath; form names are the maker's, never set on the page. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
-Apple, mother tongue — make the product or its proof the gallery-scale subject on one solid field, then let a change of ground carry each turn; never reduce the hero until the page reads as documentation.
+Apple, the gallery — Set every unit as one lit field: the lead stands in the light, everything else waits in the ground; never a second light, never a page that reads as documentation.
 
-World: Fictional object-led products and their launch, purchase and material stories. A photographed object leads when its form can be judged; where there is no photograph, a readable interface or a measured figure takes its place at the same scale. Every piece keeps one claim, live text and the object’s identity; each brings the task and proof particular to its reader.
+World: Lumen's products, launches, shop and stories, on any surface. Every piece keeps the light field, the change of ground between units and one claim per unit; each brings its own lead — an object, a figure, a word — and its reader's task. A subject with no object to show lights its proof instead: an interface, a number, a material.
 
-Method: Begin with the product silhouette and the change it makes in use. Choose one view that proves that change, then compose the field around its edge; crop only after the object is large enough to lead. Keep the object, its claim and one supporting action on a shared reading axis. Quiet material is an intentional ground, not an empty slot. Follow the sequence from claim to proof to decision.
+Method:
+1. Name the one thing this unit is about; it is the only thing lit.
+2. Place the light, falling from the upper left with the lead at its brightest, then set the claim in the calm the light leaves.
+3. Turn the ground where the story turns — white, parchment, near-black — never two units in a row at one volume.
+4. Let the shop and the reference go dense under the same light, never a brighter one.
 
-Amplitude: Full for the cover and one later turn; quieter for buying, measurement and source lines.
+Amplitude: Full on covers, turns and the close; reduced on buying, measurement and sources, where the light dims but never leaves.
 
-Anti-reference: A SaaS landing page with a centred slogan, three icon cards and a gradient button.
+Anti-reference: A SaaS landing page: a centred slogan, three icon cards, a gradient button.
 
 ## Images
 
-Use a photographed or rendered fictional object made for the piece; credit and label a render as illustrative. No Apple or real brand product, photograph, logo, system font file or apple.com interface element may enter. The hero meets the trim as a full-bleed field or sits as a large inset object; on a cover it occupies at least half the frame including its surrounding field. Preserve the full silhouette unless a detail is the declared proof. Scale uniformly; crop to the object’s contour, never stretch it. In Store, repeat one shared product crop across genuine peers. In Editorial, the opening vista may bleed, while proof figures and material views sit within the reading column. Keep all type live, in the calm area the image leaves.
+Renders of Lumen's fictional objects, made for the piece and declared once. The object is modelled — key light from the upper left, falloff, a specular edge, one contact shadow `rgba(0,0,0,.22) 3px 5px 30px` — on a field that matches its ground or bleeds. On a cover it stands half the frame or more, silhouette whole, scaled from its source and never cropped to fit. Without an object, the lit thing is the proof at the same scale. No Apple or other brand product, photograph, mark, system font file or apple.com element.
 
 ## Layout
 
-Grid system: Gallery field — it keeps the object, claim and proof in one composed field while the reading axis survives changes of format.
+Grid system: Gallery field — one lit field per unit keeps lead, claim and light on one axis in any format.
 
-Derive a 12-track grid from W × H: side margin is max(5% W, 6% S), gutter is 1.25% W, and track width is the remaining measure divided by 12. Align title, object bounds, caption and action to shared track edges. Use an 8 px module at S = 1000; group internal gaps in 1, 2, 3 or 5 modules. At every text-to-image boundary, leave at least two modules between visible glyph bounds and the image; measure ink, not text boxes. The image field takes the largest contiguous span and unused tracks remain air. Keynote uses the 16:9 field with critical content inside the central 84%. Store uses the same tracks for a product gallery, choice controls and a fixed purchase row; cards live only here. Editorial uses a centred measure no wider than 82% W or 65 characters, with a full-bleed vista followed by a flush-left reading column. Recompose when W:H changes; never shrink a layout to fit.
+Twelve tracks from W × H: margin max(5% W, 6% S), gutter 1.25% W, an 8 px module. The light's centre sits on a track intersection in the upper two-thirds; the lead and the headline share track edges; unused tracks stay ground. Headline, line and actions are one group, the lead stands at least five modules apart; gaps are measured between ink. Formats: on a 1600 × 900 slide, critical content stays inside the central 84%, the slide title at least 90 px and body at least 33; a scrolling page reads the tokens as given at a 1440 px viewport, body never below 17 px; a shop subdivides the field into peer cards on hairlines.
 
 ## Typography
 
-Use the platform system face through -apple-system and system-ui, followed by Inter, Noto Sans SC and sans-serif; ship no Apple face. At S = 1000 set launch display at 80 / 600 / 1.05, section display at 56 / 600 / 1.08, editorial lead at 24 / 300 / 1.5, body at 17 / 400 / 1.47, label at 14 / 400 / 1.4 and source at 12 / 400 / 1.45. The product leads the cover, the claim is the largest type after it, and each level differs by visible scale or weight. Keep display tracking at −0.01 em on web only; native tracking follows the face. Use Noto Sans SC at the same role size for Chinese, with 1/8–1/4 em between scripts; break Chinese by phrase, keep product names unbroken and pull line-end punctuation back optically. Use tabular numerals for comparisons. On slides the Keynote floors hold: slide title at least 0.1 S, body at least 0.037 S.
+- The system face through `-apple-system, system-ui`; Inter stands in for it alone, display tracking a further −0.01 em. Chinese in Noto Sans SC at the same role size, a space between scripts (`text-autospace`), line-end punctuation trimmed (`text-spacing-trim`), product names unbroken.
+- Display 80 / 600, the largest type after the lead; heading 56 / 600; lead 24 / 300 at large sizes only; body 17 / 400; label 14; fine 12. Never 500; 700 only as emphasis; tabular figures when compared.
+- A headline is one short claim; colour, when any, falls on its core word.
 
 ## Colors
 
-Ground: Apple's white, parchment and near-black. White is the gallery ground; parchment #f5f5f7 separates a quiet field; near-black is reserved for a product or photographic void. Ink #1d1d1f carries reading text, muted #6e6e73 carries secondary text, and hairline #d2d2d7 separates functional rows and outlines Store cards, never decorating. Apple blue has separate roles: link #0066cc on light grounds, action and focus #0071e3, and link #2997ff on dark grounds. A product may bring its own color; no second interface accent appears. White on action and dark, ink or muted on their declared light grounds only.
+Ground: Apple's white, parchment and near-black.
+- **canvas** `#ffffff` the gallery; **panel** `#f5f5f7` a quiet unit; **dark** `#272729` a turn or photographic void. Consecutive grounds differ at thumbnail.
+- **ink** `#1d1d1f` and **muted** `#6e6e73` read on light; **onDark** white on dark.
+- Blue in its roles: **action** and **focus** `#0071e3`, **link** `#0066cc` on light, **darkLink** `#2997ff` on dark, **onAction** white on action.
+- **hairline** `#d2d2d7` separates rows and outlines shop cards; on dark, white at low alpha.
+- The light is the ground's own tone lifted, never a hue; colour beyond these comes from the product, one per unit.
 
 ## Shapes
 
-Use square full-bleed fields. Every nonzero corner uses the continuous contour, built from the shared continuous-corner.js helper or its path: M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0. Set R no larger than half the short side; shorten the shoulder when a side is under 3.05732R. Store cards use R = 18 at S = 1000; actions and choice chips are pills, small tools use R = 8. Inner curves share centres with inner R = max(0, outer R − gap). No card shadow; one soft shadow may ground a rendered product, rgba(0,0,0,.22) at 3 px 5 px 30 px.
+**The device: the light field.** One radial falloff per unit, centred on the lead, radius 0.9–1.4 S, lifting the ground by one visible step toward white. It enters from the upper left; the lead's shadow falls away from it. It moves, grows or tightens with the lead; it never doubles, never sits behind text alone, never takes a hue, never becomes a wallpaper.
+
+Full-bleed fields are square; shop cards 18, tools 8, actions and chips full pills. Every nonzero radius, pills included, takes Apple's continuous corner, copied, never derived; `border-radius`, `rect rx` and superellipses are other curves. A page built with Folio inlines `continuous-corner.js` and marks each box `data-cc="R"`. Anything else draws one of the two paths below, in units of R, with `transform="translate(x y) scale(R)"` and `vector-effect="non-scaling-stroke"`, filling in A = W ÷ R − 3.05732 and B = H ÷ R − 3.05732. R is at most half the short side, a box or a pill, never between; inner R = max(0, outer R − gap); fill, stroke, clip and focus ring share one path.
+
+A box, both sides at least 3.06 R:
+
+```
+M1.52866 0 h{A} c.44017 0 .66025 0 .89717 .07491 c.25867 .09415 .46243 .29791 .55658 .55658 c.07491 .23692 .07491 .457 .07491 .89717 v{B} c0 .44017 0 .66025 -.07491 .89717 c-.09415 .25867 -.29791 .46243 -.55658 .55658 c-.23692 .07491 -.457 .07491 -.89717 .07491 h-{A} c-.44017 0 -.66025 0 -.89717 -.07491 c-.25867 -.09415 -.46243 -.29791 -.55658 -.55658 c-.07491 -.23692 -.07491 -.457 -.07491 -.89717 v-{B} c0 -.44017 0 -.66025 .07491 -.89717 c.09415 -.25867 .29791 -.46243 .55658 -.55658 c.23692 -.07491 .457 -.07491 .89717 -.07491z
+```
+
+A pill, R = H ÷ 2:
+
+```
+M1.52866 0 h{A} c.44017 0 .66025 0 .89717 .07491 c.25867 .09415 .46243 .29791 .55658 .55658 c.07491 .18851 .07491 .32851 .07491 .36851 c0 .04 0 .18 -.07491 .36851 c-.09415 .25867 -.29791 .46243 -.55658 .55658 c-.23692 .07491 -.457 .07491 -.89717 .07491 h-{A} c-.44017 0 -.66025 0 -.89717 -.07491 c-.25867 -.09415 -.46243 -.29791 -.55658 -.55658 c-.07491 -.18851 -.07491 -.32851 -.07491 -.36851 c0 -.04 0 -.18 .07491 -.36851 c.09415 -.25867 .29791 -.46243 .55658 -.55658 c.23692 -.07491 .457 -.07491 .89717 -.07491z
+```
 
 ## Forms
 
-- Keynote: one thesis and one large product view per slide; keep live type in a calm zone and the exhibit inside the central field. Never shrink a web tile onto a slide.
-- Store: white cards on parchment with a 1 px hairline and continuous R = 18; one object crop per card at a shared scale, name and price flush left below, choices as pills, and one buy action fixed beside the running price. Never sell with a gallery tile.
-- Editorial: one full-bleed vista with one headline and at most one action, then a generous one-column argument with proof and source beside the claim. Keep the body flush left and end with a dense reference only when the content needs lookup.
+- **Cover:** the lead lit at half the frame or more; headline in the calm above or beside it; two actions at most.
+- **Statement:** one sentence at display size on a quiet ground, the light on its core word.
+- **Exhibit:** the object or proof alone in the light; a caption beneath says what it proves.
+- **Data:** one figure at display size is the lit thing, its label beneath; compared figures share a baseline, the decisive one in action blue.
+- **Sequence and comparison:** peers share one crop, one scale and one light angle; the light steps across them in reading order.
+- **Collection:** white cards on parchment, one crop, name and price flush left, choices as pills, the buy action fixed beside the running price; only the chosen card is lit.
+- **Reference and close:** dense rows on parchment; the close is near-black, one claim, one action.
 
 ## Variations
 
-At a real content turn, permit one complete near-black unit with its own white foreground palette; use it once per sequence. A single figure may take gallery scale when the figure itself is the claim, with its label directly beneath. Keep the object, one claim and the established reading axis.
+- **Dark turn:** one unit on near-black where the story turns, the light at its strongest; once per sequence.
+- **Vista:** a full-bleed photograph replaces the object, its own light standing in for the field; one headline, one action.
 
 ## Do's and Don'ts
 
-Floors: facts match each brief exactly; declare every illustration; maintain 4.5:1 text contrast (3:1 for large type); keep reading text live and at its declared size floor for the intended viewing distance; make static output complete as a still; recompose each format instead of scaling a layout; use only original or licensed assets.
-
-Render check: hide the object; does the proof still make its claim checkable at the same scale? Hide the proof; does the object still show what the claim is about?
-
-Test: follow the object’s silhouette, claim and proof across each field change; the turn should clarify the same product rather than start a second story.
-
-Apple test: cover the Lumen name—the composition still reads as Apple’s product language, without another dialect; remove colour—each field holds one lead and one claim; thumbnail the set—the volume changes where the story turns.
-
-Caricature: a centered launch slogan, floating glass controls and a tiny white product render on pale grey; the object cannot be identified or judged.
+- **Look before delivering:** the light must read at thumbnail; a second light, a lead outside it, type below the ramp, or two adjacent units at one volume are faults.
+- **Floors:** facts verbatim and live; renders declared once per piece, in the fine print; every pair in Tokens holds its contrast.
+- **Test:** cover the name and pour in new content: the lit field, the turning grounds and one claim per unit still say Lumen; with colour removed, each unit still has one lead.
+- **Caricature:** frosted glass everywhere, a gradient wallpaper, blue on everything, a pill for every sentence.
 
 ## Tokens
+
+Authored for this fictional world at S = 1000. 
 
 ```yaml
 colors:
@@ -110,4 +137,4 @@ pairs:
 ## Record
 
 Folio version: 1.1.0. Template version: 14. Date: 2026-11-07.
-Pieces: quiet-hour (Keynote), graphite (Store), aluminium (Editorial). Fictional subject; no Apple product, photograph, logo, font file or site asset is used. Changes after the lock: aligned to the current Apple theme.
+Pieces: quiet-hour (Keynote), graphite (Store), aluminium (Editorial), each made from an earlier version of this file, each made from an earlier version of this file. Lumen and its objects are fictional; no Apple product, photograph, logo, font file or site asset is used. Changes after the lock: rewritten around the world's device; the pieces predate it.

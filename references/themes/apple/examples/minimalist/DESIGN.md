@@ -1,66 +1,93 @@
-# Mono · Apple + Minimalist, Braun hand
+# Mono · Apple + Braun
 
-Mono's world: a small radio as a functional system, nothing unnecessary.
+A small radio house in Apple + Braun: white and grey, and one coloured control.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are px at S = 1000, S the format's short side, and scale with it; each is a floor for how far the format is read from, never a ceiling. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath; form names are the maker's, never set on the page. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
-Apple + Braun + Minimalist — Reduce each product to the control and parts that change its use, then show their relation as a working system; never decorate the interval or make a feature list stand in for the object.
+Apple + Braun style — Make every unit white and grey with one coloured control marking its lead; never a second colour, never a feature that does not change use.
 
-World: Mono is a fictional small-appliance line for objects, controls, repairs, and range choices across a presented slide, a shop comparison, and an explanatory long read. Every piece keeps functional honesty, modular relations, and only the material or signal the use calls for; each brings one claim and its needed evidence.
+World: Mono's radios and systems, launches, shop and stories, on any surface. Every piece keeps the one coloured control, the grey-white field and the plain sans; each brings its object straight on and the one thing it lets you do.
 
-Method: Start by naming the task the object enables. Lay out its real operation in sequence, then draw the object at a view where controls, parts, and dimensions can be checked. Remove any element that does not change operation or lookup. Choose a side-by-side field for a true comparison, a cutaway when the mechanism explains the claim, and a quiet single-object field when use needs no comparison. Preserve a readable route from claim to control to evidence.
+Method:
+1. Find the one control that changes use on this unit: a knob, an action, a figure.
+2. Draw the object straight on, as a system of parts.
+3. Mark the lead with the coloured control and nothing else.
+4. Remove what does not change use; stop there.
 
-Amplitude: full for the object or the control that carries the claim; reduced for support copy, prices, and reference dimensions.
+Amplitude: Full on covers and exhibits; reduced in the shop and reference.
 
-Anti-reference: a device listing with equal feature tiles, floating spec cards, and ornament used to fill empty space.
+Anti-reference: Grey minimal skin: empty white, a thin sans, nothing to hold.
 
 ## Images
 
-Use newly drawn product elevations, measured diagrams, or declared generated renders; never a real brand product or borrowed image. The hero is a legible product object at gallery scale, not a decorative line drawing. Keep a control's working range, its pointer, and the geometry that makes it operable in frame. For a cutaway, preserve each part's join and label it with live text. Scale drawings uniformly and state when they are not to scale. Place captions outside the drawing. The single colored control marker is a functional signal, not a logo. On a cover the product stands half the frame or more, straight on.
+Renders of fictional objects drawn straight on — matte plastic, aluminium, a soft key light, a contact shadow — at half the frame or more on a cover, declared once. Parts align to the grid; nothing nostalgic.
 
 ## Layout
 
-Grid system: Functional field — object geometry sets the major spans; a shared baseline makes models and dimensions comparable.
+Grid system: System field — the object's own module is the page module.
 
-Derive a 12-column field from W × H: margins are max(5% W, 6% S), gutters S/50, and the module S/125. A projected Keynote keeps critical matter inside the outer 8% safe area. Put a front elevation on one side of its spec rows; cutaway labels terminate at their parts, not at arbitrary columns. In a Bento comparison, give the shared-scale silhouettes one baseline and align dimensions, weights, prices, and actions in the same row order. In Editorial, center a column no wider than min(980 px, 82% W) and keep the cutaway with its labels as one proof plate. Equal models share crop, view, scale, and data order. Unused tracks stay empty; they are not filled with decorative controls.
+Twelve tracks from W × H: margin max(5% W, 6% S), gutter 1.25% W, an 8 px module equal to the object's smallest part. Labels sit on the object's axes; nothing floats off the grid. Formats: on a 1600 × 900 slide, critical content stays inside the central 84%, the slide title at least 90 px and body at least 33; a scrolling page reads the tokens as given at a 1440 px viewport, body never below 17 px; a shop subdivides the field into peer cards on hairlines.
 
 ## Typography
 
-Use Inter 400 for display, body, and labels, with Noto Sans SC 400 as its Chinese match. Keep one grotesque voice; 600 is reserved for the decisive figure or selected control. At S = 1000 use display 80/400/1.05, heading 52/400/1.1, lead 24/400/1.45, body 17/400/1.5, label 14/400/1.4, caption 12/400/1.45. Size leads; weight distinguishes a selected figure from its context. Specs and prices use tabular numerals, labels align to a common baseline, and product names stay larger than prices. Break Chinese at phrase boundaries and keep mixed-script spacing consistent. Web reading text stays 16–20 px at 45–75 Latin or 25–35 CJK characters per line. On slides the Keynote floors hold: slide title at least 0.1 S, body at least 0.037 S.
+- Inter, the neo-grotesque of the Rams lineage, for every role, regular weight; Noto Sans SC for Chinese.
+- Display 80 / 400; heading 52 / 400; lead 24 / 400; body 17 / 400; label 14; caption 12.
+- One weight; hierarchy by size and position alone.
 
 ## Colors
 
-Ground: Braun's white and light grey. Use `canvas` and `panel` as neutral surfaces, `ink` for product and reading, `muted` for secondary labels, and `hairline` only for actual divisions. The single `control` color marks the useful pointer or operating state on the object; it is never a color wash or decorative CTA. `action` stays ink, so shop actions do not compete with the control. `dark` is a rare polarity for a decisive figure tile. No gradient or ornamental accent. All text stays in declared contrast pairs.
+Ground: Braun's white and light grey.
+- **canvas** `#f4f4f4` grey; **panel** white; **dark** `#242424` a turn.
+- **ink** `#242424`, **muted** `#626262`; **onDark** white.
+- **action** `#242424` square actions in ink; **onAction** white.
+- **control** `#a94725`: the one coloured control, large sizes only.
+- **hairline** `#d2d2d7` in reference rows.
 
 ## Shapes
 
-Construct an object from function: casing first, openings and joints at their working edges, controls at the reach point, labels beside the feature they identify. Do not add a badge, bezel, or control with no operation. Product panels stay square or follow their own manufactured geometry. Where a card or button has a nonzero radius, use Apple's continuous corner: `M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0`. The curve uses shoulder extent 1.52866R, R ≤ half the shorter side; nested corners share centres, inner R = max(0, outer R − gap). Use the shared helper at 60% smoothing; never substitute circular `border-radius` for a continuous radius. No shadowed cards.
+**The device: the one coloured control.** A single circle in control colour, diameter S / 40, marks the unit's lead: the knob on the object, the start of the headline, the key figure, the action. One per unit; it may sit on any of these, it never doubles, never becomes text colour for a sentence, never grows into a field.
+
+Actions and cards are square except product cards, 18; the circle is the only curve besides the object. Every nonzero radius, pills included, takes Apple's continuous corner, copied, never derived; `border-radius`, `rect rx` and superellipses are other curves. A page built with Folio inlines `continuous-corner.js` and marks each box `data-cc="R"`. Anything else draws one of the two paths below, in units of R, with `transform="translate(x y) scale(R)"` and `vector-effect="non-scaling-stroke"`, filling in A = W ÷ R − 3.05732 and B = H ÷ R − 3.05732. R is at most half the short side, a box or a pill, never between; inner R = max(0, outer R − gap); fill, stroke, clip and focus ring share one path.
+
+A box, both sides at least 3.06 R:
+
+```
+M1.52866 0 h{A} c.44017 0 .66025 0 .89717 .07491 c.25867 .09415 .46243 .29791 .55658 .55658 c.07491 .23692 .07491 .457 .07491 .89717 v{B} c0 .44017 0 .66025 -.07491 .89717 c-.09415 .25867 -.29791 .46243 -.55658 .55658 c-.23692 .07491 -.457 .07491 -.89717 .07491 h-{A} c-.44017 0 -.66025 0 -.89717 -.07491 c-.25867 -.09415 -.46243 -.29791 -.55658 -.55658 c-.07491 -.23692 -.07491 -.457 -.07491 -.89717 v-{B} c0 -.44017 0 -.66025 .07491 -.89717 c.09415 -.25867 .29791 -.46243 .55658 -.55658 c.23692 -.07491 .457 -.07491 .89717 -.07491z
+```
+
+A pill, R = H ÷ 2:
+
+```
+M1.52866 0 h{A} c.44017 0 .66025 0 .89717 .07491 c.25867 .09415 .46243 .29791 .55658 .55658 c.07491 .18851 .07491 .32851 .07491 .36851 c0 .04 0 .18 -.07491 .36851 c-.09415 .25867 -.29791 .46243 -.55658 .55658 c-.23692 .07491 -.457 .07491 -.89717 .07491 h-{A} c-.44017 0 -.66025 0 -.89717 -.07491 c-.25867 -.09415 -.46243 -.29791 -.55658 -.55658 c-.07491 -.18851 -.07491 -.32851 -.07491 -.36851 c0 -.04 0 -.18 .07491 -.36851 c.09415 -.25867 .29791 -.46243 .55658 -.55658 c.23692 -.07491 .457 -.07491 .89717 -.07491z
+```
 
 ## Forms
 
-- Keynote: one useful reduction, the object at gallery scale, then only the figures needed to check it; one color appears on the functional control.
-- Bento: compare true models on one baseline and scale; a spec poster may state an invariant, and product cards repeat name, size, weight, price, and action in shared order.
-- Editorial: open with a large object or mechanism proof, then a flush-left column; the cutaway and its live labels stay together, followed by the implication and a quiet close.
+- **Cover:** the object straight on at half the frame or more, the control on its knob.
+- **Statement:** one sentence, the control before its first word.
+- **Exhibit:** the object's parts exploded on the grid, the control on the part that matters.
+- **Data:** one figure with the control beside it, its label beneath.
+- **Sequence and comparison:** models in a row at one scale, the control on the difference.
+- **Collection:** models on white cards, name and price flush left.
+- **Reference and close:** rows on grey; the close is the object and the control.
 
 ## Variations
 
-At a real change in the argument, allow one complete cutaway plate with labels or one dark number tile. Both keep the mechanism legible and the same single control signal; no variation adds another decorative device.
+- **Dark turn:** one unit on dark, the control unchanged; once per sequence.
+- **Top view:** one unit seen from above, the module visible.
 
 ## Do's and Don'ts
 
-Floors: facts match each brief exactly; declare every illustration; maintain 4.5:1 text contrast (3:1 for large type); keep reading text live and at its declared size floor for the intended viewing distance; make static output complete as a still; recompose each format instead of scaling a layout; use only original or licensed assets.
-
-Render check: at a glance, a control's marked state corresponds to its physical range and operating part; no signal floats free of a function.
-
-Test: Cover the Braun name; the object still reads as functional and material. Add one element back; if use or lookup is no clearer, it does not belong.
-
-Caricature: a retro Braun costume with no working relation between control and part.
+- **Look before delivering:** exactly one coloured circle per unit, readable at thumbnail; a second colour, retro styling, or parts off the grid are faults.
+- **Floors:** facts verbatim and live; renders declared once per piece, in the fine print; every pair in Tokens holds its contrast.
+- **Test:** cover the names and pour in new content: grey and white with one coloured control still say Mono.
+- **Caricature:** retro nostalgia; a decorative colour; empty white with nothing to hold.
 
 ## Tokens
 
-Values describe this fictional product line at S = 1000. The warm orange is the one functional control signal; actions remain ink.
+Authored for this fictional world at S = 1000. 
 
 ```yaml
 colors:
@@ -104,4 +131,4 @@ pairs:
 ## Record
 
 Folio version: 1.1.0. Template version: 14. Date: 2026-11-07.
-Pieces: one-knob (Keynote), three-models (Bento), inside (Editorial), built from this file alone. Mono and every model, measurement, price, and part are fictional; no Braun product, photograph, logo, or font file is used. Changes after the lock: none.
+Pieces: one-knob (Keynote), three-models (Bento), inside (Editorial), each made from an earlier version of this file, each made from an earlier version of this file, each made from an earlier version of this file, each made from an earlier version of this file. Mono and every model, measurement, price and part are fictional; no Braun product, photograph, logo or font file is used. Changes after the lock: rewritten around the world's device; the pieces predate it.

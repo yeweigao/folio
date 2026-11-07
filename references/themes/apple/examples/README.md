@@ -1,6 +1,6 @@
 # Apple examples — the pieces
 
-Each world holds its `DESIGN.md` and three pieces made from it alone, on three reading tasks, with new content — never a redraw of the world's own product page. Each piece keeps its `brief.md`, responsive `.html` page, and the `preview.png` that was looked at; declared local assets sit beside it.
+Each world holds its `DESIGN.md` and three pieces made from it alone, on three reading tasks and three surfaces, with new content — never a redraw of the world's own product page. Each piece keeps its `brief.md`, responsive `.html` page, and the `preview.png` that was looked at; declared local assets sit beside it.
 
 - **Surface forms, recomposed for web:** Keynote leads with one launch claim; Store and Bento organize product choice; Editorial carries a reading sequence. Keep the intended desktop composition, then recompose down to 320 px without scaling a fixed canvas.
 - **Text is live HTML;** faces come from the world's Tokens. No real Apple or branded product photography, logos or font files.
