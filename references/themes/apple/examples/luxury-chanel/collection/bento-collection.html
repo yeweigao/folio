@@ -1,155 +1,59 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=1440">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Noir — The Collection</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@300;400;600&amp;family=Noto+Sans+SC:wght@300;400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@400;600&amp;family=Noto+Serif+SC:wght@400&amp;family=Noto+Sans+SC:wght@400&amp;display=swap" rel="stylesheet">
 <style>
-  :root{
-    --canvas:#ffffff; --panel:#f5f5f5; --dark:#111111; --ink:#111111;
-    --muted:#626262; --action:#111111; --onAction:#ffffff; --onDark:#ffffff;
-    --hairline:#d2d2d7;
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  html,body{background:#dedee2;}
-  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink);}
-  .unit{position:relative;width:1440px;height:1000px;overflow:hidden;background:var(--canvas);}
-  .serif{font-family:"Cormorant Garamond","Noto Serif SC",serif;}
-  .zh{font-family:"Noto Serif SC","Noto Sans SC",serif;}
-  .t{position:absolute;}
-  .pad{padding:12px;}
+:root{--canvas:#fff;--panel:#f5f5f5;--ink:#111;--muted:#626262;--hair:#d2d2d7;--dark:#111}
+*{box-sizing:border-box;margin:0;padding:0}html,body{background:#fff}body{font-family:Inter,"Noto Sans SC",system-ui,sans-serif;color:var(--ink)}.unit{position:relative;width:1440px;height:1000px;overflow:hidden;background:#fff}.serif{font-family:"Cormorant Garamond","Noto Serif SC",Georgia,serif}.zh{font-family:"Noto Serif SC","Noto Sans SC",serif}.t{position:absolute}svg{display:block}[data-cc]{position:relative;isolation:isolate}.cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}a{text-decoration:none}
+.header{left:80px;top:32px;width:1280px;display:flex;align-items:baseline;justify-content:space-between}.sig{display:flex;align-items:baseline;gap:24px}.sig .brand{font-size:29px;font-weight:600}.sig .series,.sig .zhline{font-size:16px;color:var(--muted)}.header a{font-size:15px;color:var(--ink);border-bottom:1px solid var(--ink);padding-bottom:3px}
+.title{left:80px;top:100px;width:1280px}.title h1{font-size:72px;line-height:.98;font-weight:400;letter-spacing:-.015em}.title p{margin-top:8px;font-size:25px;color:var(--muted)}
+.gallery{left:80px;top:242px;width:1280px;height:550px;display:grid;grid-template-columns:760px 1fr;gap:24px}.lead{display:grid;grid-template-columns:1fr 1fr;align-items:center;border-right:1px solid var(--hair);padding-right:24px}.lead .figure{height:500px;display:flex;align-items:center;justify-content:center}.lead .figure svg{width:100%;height:100%}.lead .meta{padding:0 10px 0 18px}.lead .name{font-size:28px;font-weight:600}.lead .price{margin-top:8px;font-size:20px;color:var(--muted)}.support{display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(2,1fr);gap:16px}.item{display:flex;flex-direction:column;justify-content:space-between;min-width:0;padding:12px;border-bottom:1px solid var(--hair)}.item .art{height:165px;display:flex;align-items:center;justify-content:center}.item .art svg{width:100%;height:100%}.item .name{font-size:20px;font-weight:600}.item .price{margin-top:5px;font-size:17px;color:var(--muted)}
+.footer{left:0;top:830px;width:1440px;height:170px;background:#111;color:#fff;padding:18px 80px 14px;display:flex;flex-direction:column;justify-content:space-between}.close{display:flex;align-items:center;justify-content:space-between}.count{display:flex;align-items:baseline;gap:18px}.count .num{font:64px/.9 "Cormorant Garamond","Noto Serif SC",serif}.count .label{font-size:24px}.close a{height:44px;padding:0 25px;display:flex;align-items:center;border:1px solid rgba(255,255,255,.65);color:#fff;font-size:16px}.fine{display:flex;justify-content:space-between;align-items:baseline;font-size:12px;color:#c8c8c8}
+</style><link rel="stylesheet" href="../../_shared/apple-interactions.css">
+<style data-review-reflow>
 
-  .hdr{left:68px;top:38px;width:1304px;display:flex;align-items:center;justify-content:space-between;}
-  .hdr .left{display:flex;align-items:baseline;gap:26px;}
-  .hdr .wm{font-size:30px;font-weight:400;letter-spacing:.4px;}
-  .hdr .series,.hdr .serieszh{font-size:14px;font-weight:400;color:var(--muted);}
-  .pill{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 26px;font-size:17px;font-weight:400;color:var(--onAction);}
-  .rule{left:80px;top:100px;width:1280px;height:1px;background:var(--hairline);}
+:root{--apple-focus:#111111}
+@media(max-width:1440px){
+ .unit{position:relative;width:min(100%,1440px);min-height:100vh;height:auto;overflow:visible;margin:0 auto;padding:32px clamp(24px,5.55vw,80px) 0;display:flex;flex-direction:column;gap:18px}
+ .t{position:static;left:auto;top:auto;width:auto;height:auto}
+ .header{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}.sig{gap:16px;flex-wrap:wrap}.sig .brand{font-size:26px}.sig .series,.sig .zhline{font-size:15px}
+ .title h1{font-size:clamp(42px,5.6vw,72px);line-height:1.04;letter-spacing:-.035em}.title p{font-size:20px}
+ .gallery{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:20px;height:auto}
+ .lead{min-width:0;grid-template-columns:minmax(0,1fr) minmax(0,1fr);padding-right:18px}.lead .figure{height:470px;min-width:0}.lead .meta{padding:0 0 0 12px}.lead .name{font-size:23px}.lead .price{font-size:17px}
+ .support{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:12px}.item{min-width:0;padding:10px}.item .art{height:150px}.item .name{font-size:18px}.item .price{font-size:16px}
+ .footer{position:static;left:auto;top:auto;width:auto;height:auto;min-height:120px;margin:0 -1px;padding:18px clamp(24px,5.55vw,80px) 14px;gap:16px}
+ .count .num{font-size:56px}.count .label{font-size:20px}.close a{min-height:44px}
+ .fine{font-size:13px;gap:10px;flex-wrap:wrap}
+}
+@media(max-width:850px){
+ .unit{gap:16px}.gallery{grid-template-columns:minmax(0,1fr);gap:16px}.lead{grid-template-columns:minmax(0,1fr) minmax(0,.8fr);border-right:0;border-bottom:1px solid var(--hair);padding:0 0 18px}.lead .figure{height:380px}.support{grid-template-rows:repeat(2,minmax(190px,auto))}.item .art{height:130px}
+}
+@media(max-width:520px){
+ .unit{padding:24px 20px 0;gap:14px}.sig{gap:8px 14px}.sig .brand{font-size:23px}.sig .series,.sig .zhline{font-size:14px}
+ .title h1{font-size:39px}.title p{font-size:18px}
+ .gallery{gap:12px}.lead{grid-template-columns:minmax(0,1fr);padding-bottom:14px}.lead .figure{height:300px}.lead .meta{padding:0 4px;display:grid;grid-template-columns:1fr auto;gap:8px}.lead .name{font-size:20px}.lead .price{font-size:16px}
+ .support{grid-template-columns:minmax(0,1fr);grid-template-rows:none}.item{min-height:220px;padding:10px 4px}.item .art{height:150px}.item .name{font-size:18px}
+ .footer{margin:0 -20px;min-height:0;padding:16px 20px 14px}.close{align-items:flex-start;gap:12px;flex-wrap:wrap}.count{gap:12px}.count .num{font-size:48px}.count .label{font-size:17px}.fine{font-size:12px;flex-direction:column;align-items:flex-start}
+}
 
-  .grid{left:80px;top:120px;width:1280px;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:370px 370px;gap:16px;}
-  .tile{padding:28px;display:flex;flex-direction:column;justify-content:space-between;}
-  .tile .claim{font-size:40px;font-weight:400;line-height:1.1;letter-spacing:-.4px;}
-  .tile .claimzh{margin-top:12px;font-size:17px;font-weight:400;color:var(--muted);}
-  .tile .mini{font-size:14px;font-weight:400;line-height:1.5;color:var(--muted);}
-  .tile .shot{flex:1;display:flex;align-items:center;justify-content:center;min-height:0;}
-  .tile .shot svg{width:100%;height:100%;}
-  .tile .nm{font-size:21px;font-weight:600;line-height:1.3;}
-  .tile .price{margin-top:6px;font-size:17px;font-weight:400;color:var(--muted);}
-
-  .tileA{grid-column:1/3;grid-row:1;}
-  .tileB{grid-column:3;grid-row:1;}
-  .tileC{grid-column:4;grid-row:1;justify-content:center;}
-  .tileD{grid-column:1;grid-row:2;}
-  .tileE{grid-column:2/5;grid-row:2;flex-direction:row;gap:40px;}
-  .tileE .ecopy{width:400px;display:flex;flex-direction:column;justify-content:space-between;}
-  .tileE .claim{font-size:36px;}
-  .tileE .shot{flex:1;}
-
-  .tileC .big{font-size:130px;font-weight:400;line-height:1;color:var(--onDark);}
-  .tileC .lbl2{margin-top:18px;font-size:15px;font-weight:400;color:var(--onDark);}
-  .tileC .ctx{margin-top:12px;font-size:14px;font-weight:400;line-height:1.5;color:var(--onDark);opacity:.7;}
-
-  .cap{left:68px;top:900px;font-size:12px;line-height:1.5;color:var(--muted);}
-  .foot{left:68px;top:922px;font-size:12px;line-height:1.5;color:var(--muted);}
-
-  svg{display:block;}
-  [data-cc]{position:relative;isolation:isolate}
-  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
 </style>
 </head>
-<body>
-<div class="unit" id="page">
-
-  <div class="t hdr pad">
-    <div class="left">
-      <span class="wm serif">Noir</span>
-      <span class="series">The Collection</span>
-      <span class="serieszh zh">系列</span>
-    </div>
-    <span class="pill" data-cc="22" data-cc-fill="#111111">View the collection</span>
-  </div>
-  <div class="t rule"></div>
-
-  <div class="t grid">
-    <div class="tile tileA" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
-      <div>
-        <div class="claim serif">Nothing added, nothing missing.</div>
-        <div class="claimzh zh">不增一件，不减一件</div>
-      </div>
-      <div class="shot"><svg viewBox="0 0 300 320" aria-hidden="true">
-        <path d="M 96 30 C 86 30 80 36 76 46 L 48 190 L 70 196 L 88 108 L 78 300 L 222 300 L 212 108 L 230 196 L 252 190 L 224 46 C 220 36 214 30 204 30 Z" fill="#111111"/>
-        <path d="M 96 30 L 150 76 L 204 30" fill="none" stroke="#626262" stroke-width="2"/>
-        <path d="M 96 30 L 150 76 L 128 96 L 106 60 Z" fill="#ffffff" opacity=".1"/>
-        <path d="M 204 30 L 150 76 L 172 96 L 194 60 Z" fill="#ffffff" opacity=".1"/>
-        <path d="M 150 76 V 300" stroke="#d2d2d7" stroke-width="1.5" opacity=".55"/>
-      </svg></div>
-      <div>
-        <div class="nm">The Long Jacket</div>
-        <div class="price">£2,400</div>
-      </div>
-    </div>
-
-    <div class="tile tileB" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
-      <div class="mini">One seam, held to one line.</div>
-      <div class="shot"><svg viewBox="0 0 200 200" aria-hidden="true">
-        <rect x="16" y="56" width="82" height="88" fill="#f5f5f5" stroke="#111111" stroke-opacity=".25"/>
-        <rect x="102" y="56" width="82" height="88" fill="#f5f5f5" stroke="#111111" stroke-opacity=".25"/>
-        <path d="M 98 56 V 144" stroke="#111111" stroke-width="2"/>
-        <path d="M 100 56 V 144" stroke="#111111" stroke-width="1" opacity=".35"/>
-        <path d="M 98 40 V 56 M 102 40 V 56" stroke="#111111" stroke-width="1" opacity=".35"/>
-        <path d="M 90 56 V 144 M 110 56 V 144" stroke="#111111" stroke-width="1" stroke-dasharray="3 4" opacity=".4"/>
-        <path d="M 90 56 H 110" stroke="#111111" stroke-width="1" opacity=".3"/>
-      </svg></div>
-      <div>
-        <div class="nm">The One Seam</div>
-        <div class="price">£1,980</div>
-      </div>
-    </div>
-
-    <div class="tile tileC" data-cc="18" data-cc-fill="#111111" data-cc-stroke="#111111">
-      <div class="big serif">6</div>
-      <div class="lbl2">pieces, one cut</div>
-      <div class="ctx">The whole range, held to one pattern.</div>
-    </div>
-
-    <div class="tile tileD" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
-      <div class="mini">One length, no ornament.</div>
-      <div class="shot"><svg viewBox="0 0 200 300" aria-hidden="true">
-        <path d="M 50 20 H 150 L 146 76 L 128 288 H 108 L 100 130 L 92 288 H 72 L 54 76 Z" fill="#111111"/>
-        <path d="M 100 76 V 130" stroke="#626262" stroke-width="2"/>
-        <path d="M 50 34 H 150" stroke="#626262" stroke-width="1.5" opacity=".5"/>
-      </svg></div>
-      <div>
-        <div class="nm">The Trouser</div>
-        <div class="price">£720</div>
-      </div>
-    </div>
-
-    <div class="tile tileE" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
-      <div class="ecopy">
-        <div>
-          <div class="claim serif">White, and nothing else.</div>
-        </div>
-        <div>
-          <div class="nm">The White Shirt</div>
-          <div class="price">£640</div>
-        </div>
-      </div>
-      <div class="shot"><svg viewBox="0 0 320 260" aria-hidden="true">
-        <path d="M 110 26 L 78 42 L 42 132 L 70 144 L 96 96 L 88 240 L 232 240 L 224 96 L 250 144 L 278 132 L 242 42 L 210 26 L 160 66 Z" fill="#f5f5f5" stroke="#111111" stroke-width="1.5" stroke-linejoin="round"/>
-        <path d="M 110 26 L 160 66 L 210 26" fill="none" stroke="#111111" stroke-width="1.5"/>
-        <path d="M 160 66 V 240" stroke="#111111" stroke-width="1" opacity=".4"/>
-        <g fill="#111111" opacity=".45"><circle cx="168" cy="110" r="2.5"/><circle cx="168" cy="150" r="2.5"/><circle cx="168" cy="190" r="2.5"/></g>
-      </svg></div>
-    </div>
-  </div>
-
-  <div class="t cap pad">Illustrative render, not a photograph</div>
-  <div class="t foot pad">Illustrative example</div>
-</div>
-<script src="../../_shared/continuous-corner.js"></script>
-</body>
-</html>
+<body><div class="unit">
+  <header class="t header"><div class="sig"><span class="brand serif">Noir</span><span class="series">The Collection</span><span class="zhline zh">系列</span></div></header>
+  <div class="t title"><h1 class="serif">Nothing added, nothing missing.</h1><p class="zh">不增一件，不减一件</p></div>
+  <main class="t gallery">
+    <section class="lead">
+      <div class="figure"><svg viewBox="0 0 360 520" role="img" aria-label="A long black jacket with sculpted lapels and a clean vertical cut"><defs><linearGradient id="coat" x1=".08" y1="0" x2=".9" y2="1"><stop stop-color="#5c5c5c"/><stop offset=".18" stop-color="#181818"/><stop offset=".52" stop-color="#080808"/><stop offset=".82" stop-color="#242424"/><stop offset="1" stop-color="#050505"/></linearGradient><linearGradient id="coatFold" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fff" stop-opacity=".6"/><stop offset=".4" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".1"/></linearGradient><pattern id="wool" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M0 1H10M0 6H10" stroke="#fff" stroke-opacity=".08"/><path d="M3 0V10M8 0V10" stroke="#000" stroke-opacity=".28"/></pattern><filter id="jshadow"><feGaussianBlur stdDeviation="12"/></filter><clipPath id="jclip"><path d="M108 68L137 51L180 97L223 51L252 68L308 170L276 188L252 150L270 470Q181 490 91 470L108 150L84 188L52 170Z"/></clipPath></defs><ellipse cx="181" cy="475" rx="115" ry="25" fill="#111" opacity=".32" filter="url(#jshadow)"/><path d="M108 68L137 51L180 97L223 51L252 68L308 170L276 188L252 150L270 470Q181 490 91 470L108 150L84 188L52 170Z" fill="url(#coat)" stroke="#050505" stroke-width="3"/><g clip-path="url(#jclip)"><rect x="48" y="50" width="264" height="440" fill="url(#wool)"/><path d="M110 73L137 56L180 102L180 470L92 470L110 150L84 185Z" fill="url(#coatFold)"/><path d="M250 76L222 56L184 102L186 473L268 470L251 150L278 185Z" fill="url(#coatFold)" opacity=".65"/></g><path d="M137 51L180 97L153 191L119 107Z" fill="#202020" stroke="#878787" stroke-width="1.5"/><path d="M223 51L180 97L207 191L241 107Z" fill="#0b0b0b" stroke="#777" stroke-width="1.5"/><path d="M180 97V472" stroke="#aaa" stroke-opacity=".63" stroke-width="2"/><path d="M176 110V472" stroke="#000" stroke-width="2"/><path d="M114 256Q181 267 247 256V270Q181 283 113 270Z" fill="#181818" stroke="#777" stroke-width="1.5"/><path d="M117 260Q181 272 244 260" stroke="#eee" stroke-opacity=".5" stroke-width="2"/><path d="M132 315H164L161 356H129ZM199 315H231L234 356H202Z" fill="#171717" stroke="#777" stroke-width="1.3"/><path d="M137 56L180 102L223 56" fill="none" stroke="#e5e5e5" stroke-width="3" opacity=".55"/><path d="M93 466Q181 485 269 466" fill="none" stroke="#d4d4d4" stroke-width="2" opacity=".68"/><g fill="#d9d9d9"><circle cx="187" cy="212" r="2.6"/><circle cx="187" cy="244" r="2.6"/><circle cx="187" cy="293" r="2.6"/></g></svg></div>
+      <div class="meta"><p class="name">The Long Jacket</p><p class="price">£2,400</p></div>
+    </section>
+    <section class="support">
+      <article class="item"><div class="art"><svg viewBox="0 0 220 170" role="img" aria-label="Illustrative Noir One Seam garment"><defs><linearGradient id="seamPanel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset=".5" stop-color="#d7d7d7"/><stop offset="1" stop-color="#aaa"/></linearGradient><filter id="sShadow"><feGaussianBlur stdDeviation="5"/></filter></defs><ellipse cx="110" cy="137" rx="83" ry="10" fill="#111" opacity=".17" filter="url(#sShadow)"/><path d="M24 39Q60 28 105 36L105 131Q62 137 24 128Z" fill="url(#seamPanel)" stroke="#999"/><path d="M109 36Q159 28 196 39L196 128Q155 137 109 131Z" fill="#f3f3f3" stroke="#999"/><path d="M105 36V131M109 36V131" stroke="#111" stroke-width="3"/><g fill="#111"><circle cx="102" cy="49" r="2"/><circle cx="102" cy="69" r="2"/><circle cx="102" cy="89" r="2"/><circle cx="102" cy="109" r="2"/></g><path d="M34 43Q65 33 95 40" stroke="#fff" stroke-width="5" opacity=".9"/></svg></div><div><p class="name">The One Seam</p><p class="price">£1,980</p></div></article>
+      <article class="item"><div class="art"><svg viewBox="0 0 220 170" role="img" aria-label="Illustrative Noir Trouser garment"><defs><linearGradient id="trouser" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8f8f8"/><stop offset=".38" stop-color="#d4d4d4"/><stop offset=".8" stop-color="#999"/><stop offset="1" stop-color="#ececec"/></linearGradient><filter id="pShadow"><feGaussianBlur stdDeviation="5"/></filter></defs><ellipse cx="110" cy="145" rx="67" ry="9" fill="#111" opacity=".16" filter="url(#pShadow)"/><path d="M67 23H153L148 72L128 143H105L106 78L94 143H71L72 72Z" fill="url(#trouser)" stroke="#888" stroke-width="1.5"/><path d="M67 35H152M110 34V76" stroke="#555" stroke-width="1.4"/><path d="M75 55L91 58M131 58L146 55" stroke="#fff" stroke-width="4" opacity=".8"/><path d="M106 78L105 138M111 78L127 138" stroke="#888" stroke-width="1.4" opacity=".7"/></svg></div><div><p class="name">The Trouser</p><p class="price">£720</p></div></article>
+      <article class="item"><div class="art"><svg viewBox="0 0 220 170" role="img" aria-label="Illustrative Noir White Shirt garment"><defs><linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset=".42" stop-color="#dedede"/><stop offset=".74" stop-color="#b9b9b9"/><stop offset="1" stop-color="#f8f8f8"/></linearGradient><filter id="wShadow"><feGaussianBlur stdDeviation="5"/></filter></defs><ellipse cx="110" cy="145" rx="77" ry="9" fill="#111" opacity=".17" filter="url(#wShadow)"/><path d="M77 28L96 20L110 41L125 20L144 28L178 65L158 78L145 65L154 139H65L75 65L62 78L42 65Z" fill="url(#shirt)" stroke="#999"/><path d="M96 20L110 41L101 65L85 37ZM125 20L110 41L120 65L137 37Z" fill="#eee" stroke="#aaa"/><path d="M110 41V138" stroke="#888"/><g fill="#555"><circle cx="113" cy="72" r="2"/><circle cx="113" cy="91" r="2"/><circle cx="113" cy="110" r="2"/></g><path d="M72 132Q110 138 151 132" stroke="#fff" stroke-width="4" opacity=".9"/></svg></div><div><p class="name">The White Shirt</p><p class="price">£640</p></div></article>
+    </section>
+  </main>
+  <footer class="t footer"><div class="close"><div class="count"><span class="num">6</span><span class="label">pieces, one cut</span></div><a data-apple-motion href="#">View the collection</a></div><div class="fine"><span>Illustrative render, not a photograph</span><span>Illustrative example</span></div></footer>
+</div><script src="../../_shared/continuous-corner.js"></script></body></html>

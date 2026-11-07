@@ -2,147 +2,69 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1200">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>One night, read left to right — Pebble</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&amp;family=Inter:wght@300;400;600&amp;family=Noto+Sans+SC:wght@300;400&amp;family=Noto+Serif+SC:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&amp;family=Inter:wght@400;600&amp;family=Noto+Sans+SC:wght@400&amp;family=Noto+Serif+SC:wght@400&amp;display=swap" rel="stylesheet">
 <style>
-  :root{
-    --canvas:#f9f5ed; --panel:#eee7db; --dark:#243329;
-    --ink:#263028; --muted:#5a625b; --action:#215a8a;
-    --onAction:#ffffff; --onDark:#ffffff; --hairline:#d2d2d7;
-    --serif:"Fraunces","Noto Serif SC",serif;
-    --sans:"Inter","Noto Sans SC",sans-serif;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:#e6e0d4}
-  body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}
-  .unit{position:relative;width:1200px;height:1600px;overflow:hidden;background:var(--canvas)}
-  .zh{font-family:"Noto Sans SC",var(--sans)}
-  .num{font-variant-numeric:tabular-nums}
+:root{--apple-focus:#81523a;--canvas:#f9f5ed;--panel:#eee7db;--dark:#243329;--ink:#263028;--muted:#5a625b;--action:#d0a44d;--serif:"Fraunces","Noto Serif SC",serif;--sans:"Inter","Noto Sans SC",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html,body{background:var(--canvas)}body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}.unit{position:relative;width:1200px;height:1600px;overflow:hidden;background:var(--canvas)}.zh{font-family:"Noto Sans SC",var(--sans)}.num{font-variant-numeric:tabular-nums}
+.vista{position:absolute;inset:0 0 auto;height:980px;background:var(--dark);color:white}.brand{position:absolute;left:102px;top:48px;font-size:22px;font-weight:600}.kicker{position:absolute;right:102px;top:54px;font-size:14px;color:rgba(255,255,255,.58)}.vista h1{position:absolute;left:102px;top:112px;width:1090px;font-family:var(--serif);font-size:78px;font-weight:400;line-height:1.02;letter-spacing:-2px}.zhline{position:absolute;left:108px;top:218px;font-size:29px;line-height:1.5;color:rgba(255,255,255,.75)}.chart{position:absolute;left:0;top:0;width:1200px;height:980px}.lane{position:absolute;left:104px;width:78px;font-size:15px;color:rgba(255,255,255,.64)}.timeline{position:absolute;left:200px;top:374px;width:889px;height:308px}.timeline .rail{position:absolute;left:0;right:0;height:1px;background:rgba(255,255,255,.12)}.tickline{position:absolute;top:716px;height:12px;border-left:1px solid rgba(255,255,255,.34)}.tick{position:absolute;top:738px;font-size:14px;color:rgba(255,255,255,.58);transform:translateX(-50%);white-space:nowrap}.band{position:absolute;height:22px;opacity:.95}.band.light{background:#bdc6ac}.band.deep{background:#e2c181}.band.rem{background:#849b82}.band.awake{height:6px;background:#e7ab82}.step{position:absolute;width:1px;background:rgba(255,255,255,.4)}.callout{position:absolute;left:555px;top:320px;font-size:17px;color:white}.callout-line{position:absolute;left:600px;top:350px;height:24px;border-left:1px solid rgba(255,255,255,.75)}.caption{position:absolute;left:102px;top:908px;font-size:14px;color:rgba(255,255,255,.52)}.night-total{position:absolute;right:104px;bottom:78px;text-align:right}.night-total b{display:block;font-size:30px;font-weight:400}.night-total span{display:block;margin-top:5px;font-size:14px;color:rgba(255,255,255,.6)}
+.story{position:absolute;left:108px;top:1026px;width:984px}.story blockquote{font-family:var(--serif);font-size:33px;line-height:1.22;letter-spacing:-.3px}.story .zhq{margin-top:9px;font-size:20px;color:var(--muted)}.story .copy{width:984px;margin-top:18px;font-size:18px;line-height:1.42}.story .copy+.copy{margin-top:12px}.summary{position:absolute;right:0;top:307px;width:984px;border-top:1px solid #cfc8bb;padding-top:13px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}.summary h2{grid-column:1/-1;font-family:var(--serif);font-size:23px;font-weight:400}.summary p{font-size:16px;line-height:1.4}.summary strong{display:block;margin-top:4px;font-size:21px;font-weight:600}.source{position:absolute;left:108px;bottom:42px;width:770px;font-size:13px;line-height:1.45;color:var(--muted)}.foot{position:absolute;right:108px;bottom:42px;font-size:13px;color:var(--muted)}
 
-  .vista{position:absolute;left:0;top:0;width:1200px;height:760px;background:var(--dark);overflow:hidden}
-  .wm{position:absolute;left:110px;top:46px;font-size:21px;font-weight:600;color:var(--onDark);letter-spacing:-.2px}
-  .vista h1{position:absolute;left:110px;top:100px;width:900px;font-family:var(--serif);font-size:48px;
-            font-weight:400;line-height:1.1;letter-spacing:-1.2px;color:var(--onDark)}
-  .vista .zhline{position:absolute;left:110px;top:172px;font-family:var(--serif);font-size:24px;line-height:1.5;color:rgba(255,255,255,.78)}
-  .credit{position:absolute;left:110px;top:712px;font-size:12px;line-height:1.5;color:rgba(255,255,255,.6)}
+:root{--apple-focus:#81523a}.unit{max-width:1200px;margin-inline:auto}
+@media(max-width:900px){
+.unit{width:100%;height:auto;min-height:0;overflow:visible;padding:0 24px 24px;display:flex;flex-direction:column;gap:0}
+.vista{position:relative;inset:auto;height:auto;margin:0 -24px;padding:24px;background:var(--dark);display:flex;flex-direction:column;gap:15px}
+.brand,.kicker,.vista h1,.zhline,.chart,.caption,.night-total,.story,.source,.foot{position:static;width:auto;height:auto;left:auto;right:auto;top:auto;bottom:auto}
+.brand{font-size:19px}.kicker{align-self:flex-end;margin-top:-32px;font-size:13px}.vista h1{font-size:clamp(38px,7.5vw,58px);line-height:1.05;letter-spacing:-1.2px}.zhline{font-size:20px}
+.chart{position:relative;height:400px;margin-top:5px;display:flex;align-items:flex-end;justify-content:space-between;gap:2px;min-width:0}
+.lane{left:0;width:20%;font-size:13px;top:auto!important}.lane:nth-child(1){top:44px!important}.lane:nth-child(2){top:106px!important}.lane:nth-child(3){top:168px!important}.lane:nth-child(4){top:230px!important}
+.timeline{left:20%;top:42px;width:80%;height:308px}.timeline .band{height:22px}.timeline .band.awake{height:6px}.timeline .step{width:1px!important}.timeline .rail{left:0;right:0}
+.callout{left:20%;top:4px;font-size:13px}.callout-line{left:28%;top:24px;height:16px}.tickline{display:none}
+.tick{position:static;top:auto;left:auto;transform:none;white-space:nowrap;font-size:11px;text-align:center;flex:1;min-width:0}
+.caption{font-size:13px;color:rgba(255,255,255,.65)}.night-total{align-self:flex-end;text-align:right;margin-top:4px}.night-total b{font-size:25px}.story{padding:32px 0;display:flex;flex-direction:column;gap:12px}.story blockquote{font-size:29px}.story .zhq{margin-top:0}.story .copy{width:auto;margin-top:0;font-size:17px;line-height:1.55}.summary{position:static;width:auto;margin-top:12px;grid-template-columns:1fr;gap:12px}.summary h2{font-size:22px}.summary p{font-size:16px}.source,.foot{font-size:13px;line-height:1.5}.source{margin-top:8px}
+}
+@media(max-width:480px){.chart{height:380px}.timeline{left:22%;width:78%;}.lane{width:22%;font-size:12px}.callout{left:22%}.tick{font-size:11px;letter-spacing:-.3px}.summary{grid-template-columns:1fr}}
 
-  .band{position:absolute;left:0;top:0;width:1200px;height:760px}
-  .lane{position:absolute;left:110px;width:86px;font-size:13px;line-height:1.2;color:rgba(255,255,255,.7)}
-  .callout{position:absolute;left:492px;top:288px;width:220px;text-align:center;font-size:13px;line-height:1.3;
-           color:var(--onDark)}
-  .tick{position:absolute;font-size:12px;line-height:1.2;color:rgba(255,255,255,.6);
-        transform:translateX(-50%);white-space:nowrap}
 
-  .column{position:absolute;left:110px;top:760px;width:980px;padding:72px 12px 0 12px}
-  .lead{font-size:28px;font-weight:400;line-height:1.42;letter-spacing:-.3px}
-  .leadzh{margin-top:12px;font-size:24px;font-weight:300;line-height:1.6;color:var(--muted)}
-  .body{margin-top:28px;max-width:720px;font-size:17px;font-weight:400;line-height:1.7}
-  .body+.body{margin-top:20px}
-  .figure{margin-top:36px;border-top:1px solid var(--hairline);padding-top:22px;width:720px}
-  .figure .fh{font-family:var(--serif);font-size:26px;line-height:1.3;letter-spacing:-.4px}
-  .rows{margin-top:14px}
-  .row{display:flex;justify-content:space-between;align-items:baseline;height:40px;
-       border-bottom:1px solid var(--hairline);font-size:17px}
-  .row .t{color:var(--muted)}
-  .row.total{border-bottom:0;font-weight:600}
-  .row.total span:last-child{color:var(--action)}
-  .row.total .t{color:var(--ink);font-weight:400}
-  .src{margin-top:14px;font-size:12px;line-height:1.6;color:var(--muted)}
-  .foot{position:absolute;left:110px;top:1524px;width:980px;display:flex;justify-content:space-between;
-        font-size:12px;line-height:1.5;color:var(--muted)}
+@media(min-width:501px) and (max-width:900px){body>.unit{padding-left:5vw!important;padding-right:5vw!important}}
+
+@media(min-width:501px) and (max-width:900px){.vista{margin-left:-5vw;margin-right:-5vw;padding-left:5vw;padding-right:5vw}}
 </style>
-</head>
+<link rel="stylesheet" href="../../_shared/apple-interactions.css"></head>
 <body>
-<div class="unit" id="page">
-
-  <div class="vista">
-    <p class="wm">Pebble</p>
-    <h1>One night, read left to right.</h1>
-    <p class="zhline zh">一夜，从左读到右</p>
-
-    <svg class="band" viewBox="0 0 1200 760" aria-hidden="true">
-      <g fill="#ffffff">
-        <rect x="200" y="341" width="41" height="18" opacity=".45"/>
-        <rect x="241" y="461" width="74" height="18" opacity=".8"/>
-        <rect x="315" y="521" width="63" height="18" opacity="1"/>
-        <rect x="379" y="461" width="82" height="18" opacity=".8"/>
-        <rect x="461" y="401" width="67" height="18" opacity=".62"/>
-        <rect x="528" y="461" width="74" height="18" opacity=".8"/>
-        <rect x="602" y="341" width="45" height="18" opacity=".45"/>
-        <rect x="647" y="461" width="104" height="18" opacity=".8"/>
-        <rect x="751" y="401" width="75" height="18" opacity=".62"/>
-        <rect x="826" y="521" width="78" height="18" opacity="1"/>
-        <rect x="904" y="461" width="78" height="18" opacity=".8"/>
-        <rect x="982" y="401" width="41" height="18" opacity=".62"/>
-        <rect x="1023" y="461" width="67" height="18" opacity=".8"/>
-      </g>
-      <g stroke="#ffffff" stroke-width="1.2" opacity=".38">
-        <line x1="241" y1="350" x2="241" y2="470"/>
-        <line x1="315" y1="470" x2="315" y2="530"/>
-        <line x1="379" y1="530" x2="379" y2="470"/>
-        <line x1="461" y1="470" x2="461" y2="410"/>
-        <line x1="528" y1="410" x2="528" y2="470"/>
-        <line x1="602" y1="470" x2="602" y2="350"/>
-        <line x1="647" y1="350" x2="647" y2="470"/>
-        <line x1="751" y1="470" x2="751" y2="410"/>
-        <line x1="826" y1="410" x2="826" y2="530"/>
-        <line x1="904" y1="530" x2="904" y2="470"/>
-        <line x1="982" y1="470" x2="982" y2="410"/>
-        <line x1="1023" y1="410" x2="1023" y2="470"/>
-      </g>
-      <line x1="200" y1="578" x2="1090" y2="578" stroke="#ffffff" stroke-width="1" opacity=".26"/>
-      <g stroke="#ffffff" stroke-width="1" opacity=".38">
-        <line x1="200" y1="578" x2="200" y2="588"/><line x1="368" y1="578" x2="368" y2="588"/>
-        <line x1="535" y1="578" x2="535" y2="588"/><line x1="703" y1="578" x2="703" y2="588"/>
-        <line x1="870" y1="578" x2="870" y2="588"/><line x1="1038" y1="578" x2="1038" y2="588"/>
-        <line x1="1090" y1="578" x2="1090" y2="588"/>
-      </g>
-      <line x1="602" y1="308" x2="602" y2="341" stroke="#ffffff" stroke-width="1" opacity=".55"/>
-      <circle cx="602" cy="341" r="2.5" fill="#ffffff"/>
-    </svg>
-
-    <p class="lane" style="top:342px">Awake</p>
-    <p class="lane" style="top:402px">REM</p>
-    <p class="lane" style="top:462px">Light</p>
-    <p class="lane" style="top:522px">Deep</p>
-
-    <p class="callout">03:06, awake 24 min</p>
-
-    <p class="tick num" style="left:200px;top:596px">23:30</p>
-    <p class="tick num" style="left:368px;top:596px">01:00</p>
-    <p class="tick num" style="left:535px;top:596px">02:30</p>
-    <p class="tick num" style="left:703px;top:596px">04:00</p>
-    <p class="tick num" style="left:870px;top:596px">05:30</p>
-    <p class="tick num" style="left:1038px;top:596px">07:00</p>
-    <p class="tick num" style="left:1090px;top:596px">07:28</p>
-
-    <p class="credit">Illustrative render, not a photograph</p>
-  </div>
-
-  <div class="column">
-    <p class="lead">A night is not one number. It is a line that keeps changing its mind.</p>
-    <p class="leadzh zh">一夜不是一个数字，是一条不断改主意的线</p>
-
-    <p class="body">The band above is one night, drawn at 1.86 pixels per minute. Each row is a stage, and every vertical step is the ring deciding the stage had changed. Nothing is smoothed and nothing is averaged.</p>
-    <p class="body">Light sleep took 4 h 18 m across six blocks, more than half of the 7 h 12 m asleep. Deep sleep took 1 h 16 m in two blocks, both finished by 05:06. The line leaves the awake row twice: 22 minutes at 23:52, and 24 minutes at 03:06.</p>
-    <p class="body">Those two blocks are the whole difference between time in bed and time asleep. A report that printed only the total would call this an ordinary night.</p>
-
-    <div class="figure">
-      <p class="fh">The two times the line left the night</p>
-      <div class="rows num">
-        <div class="row"><span class="t">23:52, first waking</span><span>22 min</span></div>
-        <div class="row"><span class="t">03:06, second waking</span><span>24 min</span></div>
-        <div class="row total"><span>Awake, both blocks</span><span>46 min</span></div>
+<main class="unit">
+  <section class="vista">
+    <p class="brand">Pebble</p><p class="kicker">A sleep note · 04</p>
+    <h1>One night, read left to right.</h1><p class="zhline zh">一夜，从左读到右</p>
+    <div class="chart" aria-label="One night of sleep stages on a shared time scale">
+      <p class="lane" style="top:377px">Awake</p><p class="lane" style="top:439px">REM</p><p class="lane" style="top:501px">Light</p><p class="lane" style="top:563px">Deep</p>
+      <div class="timeline">
+        <span class="rail" style="top:13px"></span><span class="rail" style="top:75px"></span><span class="rail" style="top:137px"></span><span class="rail" style="top:199px"></span><span class="rail" style="top:261px"></span>
+        <span class="band light" style="left:0%;top:127px;width:4.61192%"></span><span class="band awake" style="left:4.61192%;top:18px;width:4.61192%"></span>
+        <span class="band light" style="left:9.22385%;top:127px;width:7.53656%"></span><span class="band deep" style="left:16.76040%;top:189px;width:8.32396%"></span>
+        <span class="band light" style="left:25.08436%;top:127px;width:9.44882%"></span><span class="band rem" style="left:34.53318%;top:65px;width:6.29921%"></span>
+        <span class="band light" style="left:40.83240%;top:127px;width:4.38695%"></span><span class="band awake" style="left:45.21935%;top:18px;width:5.06187%"></span>
+        <span class="band deep" style="left:50.28121%;top:189px;width:7.53656%"></span><span class="band light" style="left:57.81777%;top:127px;width:4.16198%"></span><span class="band rem" style="left:61.97975%;top:65px;width:6.29921%"></span><span class="band light" style="left:68.27897%;top:127px;width:23.84702%"></span><span class="band rem" style="left:92.12598%;top:65px;width:7.87402%"></span>
+        <span class="step" style="left:4.61192%;top:29px;height:98px"></span><span class="step" style="left:9.22385%;top:29px;height:98px"></span><span class="step" style="left:16.76040%;top:127px;height:62px"></span><span class="step" style="left:25.08436%;top:127px;height:62px"></span><span class="step" style="left:34.53318%;top:65px;height:62px"></span><span class="step" style="left:40.83240%;top:65px;height:62px"></span><span class="step" style="left:45.21935%;top:29px;height:98px"></span><span class="step" style="left:50.28121%;top:29px;height:160px"></span><span class="step" style="left:57.81777%;top:127px;height:62px"></span><span class="step" style="left:61.97975%;top:65px;height:62px"></span><span class="step" style="left:68.27897%;top:65px;height:62px"></span><span class="step" style="left:92.12598%;top:65px;height:62px"></span>
       </div>
-      <p class="src">Source: one illustrative night, 12–13 October 2026, Pebble app export. Time in bed 7 h 58 m; asleep 7 h 12 m.</p>
+      <span class="callout">03:06, awake 24 min</span><span class="callout-line"></span>
+      <span class="tickline" style="left:200px"></span><span class="tickline" style="left:367px"></span><span class="tickline" style="left:535px"></span><span class="tickline" style="left:702px"></span><span class="tickline" style="left:870px"></span><span class="tickline" style="left:1037px"></span><span class="tickline" style="left:1089px"></span>
+      <span class="tick num" style="left:200px">23:30</span><span class="tick num" style="left:367px">01:00</span><span class="tick num" style="left:535px">02:30</span><span class="tick num" style="left:702px">04:00</span><span class="tick num" style="left:870px">05:30</span><span class="tick num" style="left:1037px">07:00</span><span class="tick num" style="left:1089px">07:28</span>
     </div>
-  </div>
-
-  <div class="foot"><span>Pebble, sleep note 04 · 2026</span><span>Illustrative example</span></div>
-</div>
-<script src="../../_shared/continuous-corner.js"></script>
+    <div class="night-total"><b class="num">03:06</b><span>Second waking · 24 min</span></div>
+    <p class="caption">Illustrative render, not a photograph</p>
+  </section>
+  <article class="story">
+    <blockquote>A night is not one number. It is a line that keeps changing its mind.</blockquote>
+    <p class="zhq zh">一夜不是一个数字，是一条不断改主意的线</p>
+    <p class="copy">The band above is one night, drawn at 1.86 pixels per minute. Each row is a stage, and every vertical step is the ring deciding the stage had changed. Nothing is smoothed and nothing is averaged.</p>
+    <p class="copy">Light sleep took 4 h 18 m across six blocks, more than half of the 7 h 12 m asleep. Deep sleep took 1 h 16 m in two blocks, both finished by 05:06. The line leaves the awake row twice: 22 minutes at 23:52, and 24 minutes at 03:06. Those two blocks are the whole difference between time in bed and time asleep. A report that printed only the total would call this an ordinary night.</p>
+    <section class="summary"><h2>The two times the line left the night</h2><p>23:52, first waking<strong>22 min</strong></p><p>03:06, second waking<strong>24 min</strong></p><p>Awake, both blocks<strong>46 min</strong></p></section>
+  </article>
+  <p class="source">Source: one illustrative night, 12–13 October 2026, Pebble app export. Time in bed 7 h 58 m; asleep 7 h 12 m.</p><p class="foot">Pebble, sleep note 04 · 2026 · Illustrative example</p>
+</main>
 </body>
 </html>

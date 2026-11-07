@@ -2,139 +2,82 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1440">
-<title>Ledger fee tiers — bento</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Three rates, one quarter — Ledger</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;family=Noto+Sans+SC:wght@300;400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;600&amp;family=Noto+Sans+SC:wght@400&amp;display=swap" rel="stylesheet">
 <style>
-  :root{
-    --canvas:#ffffff; --panel:#f8f5ef; --dark:#172b4d;
-    --ink:#172b4d; --muted:#5c6574; --action:#5140c9;
-    --onAction:#ffffff; --onDark:#ffffff; --hairline:#d2d2d7;
-    --sans:"Inter","Noto Sans SC",sans-serif;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:#e8e8ea}
-  body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}
-  .unit{position:relative;width:1440px;height:1000px;overflow:hidden;background:var(--canvas)}
-  .zh{font-family:"Noto Sans SC",var(--sans)}
-  .num{font-variant-numeric:tabular-nums}
-  [data-cc]{position:relative;isolation:isolate}
-  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
-  a{text-decoration:none}
+:root{--canvas:#ffffff;--panel:#f6f9fc;--dark:#172b4d;--ink:#172b4d;--muted:#5c6574;--action:#5140c9;--hair:#d2d2d7;--sans:"Hanken Grotesk","Noto Sans SC",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html,body{background:var(--canvas)}body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}.unit{position:relative;width:1440px;height:1000px;overflow:hidden;background:var(--canvas)}.zh{font-family:"Noto Sans SC",var(--sans)}.num{font-variant-numeric:tabular-nums}[data-cc]{position:relative;isolation:isolate}.cc-bg{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.hdr{position:absolute;left:76px;top:39px;width:1288px;display:flex;justify-content:space-between;align-items:baseline}.hdr b{font-size:21px;font-weight:600}.hdr span{font-size:15px;color:var(--muted)}.lead{position:absolute;left:76px;top:103px;width:760px}.lead .eyebrow{font-size:15px;color:var(--muted)}.lead h1{margin-top:10px;font-size:58px;font-weight:300;line-height:1.06;letter-spacing:-1.8px}.lead .zhline{margin-top:10px;font-size:24px;color:var(--muted)}.lead .explain{margin-top:15px;width:700px;font-size:18px;line-height:1.44;color:var(--muted)}
+.spread{position:absolute;left:900px;top:116px;width:464px}.spread .num{font-size:92px;font-weight:300;line-height:1.08;letter-spacing:-3.2px;color:var(--action)}.spread p{font-size:18px;line-height:1.4}.spread .note{margin-top:14px;font-size:15px;line-height:1.4;color:var(--muted)}
+.compare{position:absolute;left:76px;top:354px;width:1288px}.compare-head{display:flex;align-items:baseline;justify-content:space-between;padding:0 8px 14px;border-bottom:1px solid var(--ink);font-size:16px;color:var(--muted)}.compare-head strong{font-weight:400;color:var(--ink)}.tier{display:grid;grid-template-columns:144px 166px 195px 1fr 130px;align-items:center;height:68px;padding:0 8px;border-bottom:1px solid var(--hair);column-gap:18px}.tier .name{font-size:21px}.tier .rate{font-size:27px;font-weight:300}.tier .charge{font-size:15px;color:var(--muted)}.tier .meter{height:12px;background:#e7e5e1;position:relative}.tier .fill{display:block;height:12px;background:#7585c8}.tier .amount{font-size:24px;text-align:right;font-weight:400}.tier .on{display:block;font-size:13px;color:var(--muted);margin-top:3px}.tier.selected .fill{background:var(--action)}.tier.selected .amount{color:var(--action)}
+.proof{position:absolute;left:76px;top:626px;width:850px;height:236px;padding:24px 28px;color:#fff}.proof h2{font-size:17px;font-weight:400;color:rgba(255,255,255,.68);padding-bottom:13px;border-bottom:1px solid rgba(255,255,255,.2)}.parts{display:grid;grid-template-columns:1fr auto;align-items:baseline;row-gap:11px;margin-top:15px;font-size:18px}.parts span:nth-child(odd){color:rgba(255,255,255,.68)}.parts span:nth-child(even){font-size:22px;font-variant-numeric:tabular-nums}.parts .sum{border-top:1px solid rgba(255,255,255,.24);padding-top:11px;color:white!important;font-weight:600}.parts .sum+span{border-top:1px solid rgba(255,255,255,.24);padding-top:11px;font-size:25px;color:white}
+.close{position:absolute;left:974px;top:666px;width:390px}.close p{font-size:22px;line-height:1.4}.close a{height:50px;margin-top:24px;padding:0 26px;display:inline-flex;align-items:center;color:white;text-decoration:none;font-size:17px}.foot{position:absolute;left:76px;right:76px;bottom:31px;display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+</style>
+<link rel="stylesheet" href="../../_shared/apple-interactions.css">
+<style data-review-reflow>
 
-  .hdr{position:absolute;left:80px;top:40px;width:1280px;display:flex;justify-content:space-between;align-items:baseline}
-  .hdr b{font-size:21px;font-weight:600;letter-spacing:-.2px}
-  .hdr span{font-size:14px;color:var(--muted)}
+:root{--apple-focus:#5140c9}
+.unit{position:relative;width:min(100%,1440px);min-height:100vh;height:auto;overflow:visible;margin-inline:auto;padding:32px clamp(24px,5.25vw,76px);display:flex;flex-direction:column;gap:20px}
+.hdr,.lead,.spread,.compare,.proof,.close,.foot{position:static;width:auto}
+.hdr{display:flex;justify-content:space-between;align-items:baseline;gap:18px}
+.lead{max-width:760px}.lead h1{font-size:clamp(40px,5vw,58px);line-height:1.08;letter-spacing:-.045em}
+.lead .explain{width:auto;max-width:65ch;font-size:17px;line-height:1.55}
+.spread{display:flex;flex-direction:column;align-items:flex-start;min-width:0;gap:0}
+.spread .num:first-child{display:block;grid-row:auto;font-size:clamp(56px,7vw,92px);line-height:1;color:var(--action);white-space:nowrap}
+.spread-copy{display:grid;grid-template-columns:minmax(0,1fr);grid-auto-rows:min-content;row-gap:12px;position:static;min-width:0;max-width:42ch;margin-top:10px}
+.spread-copy p{display:block;position:static;float:none;width:auto;max-width:100%;margin:0!important;line-height:1.55;white-space:normal;overflow-wrap:anywhere}
+.spread p{font-size:18px;line-height:1.4}
+.spread .note{font-size:16px;line-height:1.45;color:var(--muted);margin-top:2px;max-width:42ch}
+.compare{width:100%}.compare-head{gap:12px;flex-wrap:wrap;font-size:15px;line-height:1.45}
+.tier{height:auto;min-height:68px;min-width:0}
+.tier .charge{font-size:15px}.tier .on{font-size:14px;line-height:1.35}
+.proof{height:auto;min-height:220px;padding:24px;max-width:850px}
+.close{max-width:390px}.close p{font-size:19px;line-height:1.45}.close a{width:max-content;max-width:100%}
+.foot{font-size:14px;line-height:1.45;gap:8px 20px;flex-wrap:wrap}
+@media(max-width:900px){
+ .unit{padding:28px clamp(24px,5vw,40px);gap:18px}
+ .hdr{align-items:flex-start}
+ .spread{display:block}
+ .spread .num:first-child{display:block;position:static;float:none;grid-row:auto;font-size:clamp(54px,9vw,72px);line-height:1.02}
+ .spread-copy{display:grid;grid-template-columns:minmax(0,1fr);grid-auto-rows:min-content;row-gap:12px;position:static;margin-top:12px}
+ .spread-copy p{display:block;position:static;width:auto;margin:0!important}
+ .compare-head{display:flex;flex-direction:column;align-items:flex-start;padding:0 0 12px}
+ .tier{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"name amount" "rate amount" "charge amount" "meter meter";gap:5px 14px;padding:14px 0}
+ .tier .name{grid-area:name}.tier .rate{grid-area:rate;font-size:23px}.tier .charge{grid-area:charge}.tier .meter{grid-area:meter;margin-top:7px}.tier .amount{grid-area:amount;font-size:22px;align-self:center}.tier .on{font-size:14px}
+ .parts{font-size:16px;row-gap:10px}.parts span:nth-child(even){font-size:19px}.parts .sum+span{font-size:21px}
+}
+@media(max-width:520px){
+ .unit{padding:24px 20px;gap:16px}
+ .hdr{font-size:14px}.hdr b{font-size:19px}.hdr span{font-size:14px}
+ .lead h1{font-size:38px;letter-spacing:-1.1px}.lead .zhline{font-size:19px}.lead .explain{font-size:16px}
+ .spread .num:first-child{font-size:56px}.spread p{font-size:16px}.spread .note{font-size:14px}
+ .spread-copy{max-width:38ch}.spread .note{font-size:16px;line-height:1.45}
+ .compare-head{font-size:14px}.tier .name{font-size:19px}.tier .rate{font-size:21px}.tier .charge{font-size:14px}.tier .amount{font-size:19px}.tier .on{font-size:13px}
+ .proof{padding:18px}.proof h2{font-size:16px}.parts{grid-template-columns:minmax(0,1fr) auto;font-size:14px}.parts span:nth-child(even){font-size:17px}.parts .sum+span{font-size:18px}
+ .close p{font-size:17px}.foot{font-size:13px}
+}
 
-  .tile{position:absolute;padding:32px}
-  .lead{left:80px;top:96px;width:760px;height:232px}
-  .lead .eb{font-size:14px;color:var(--muted)}
-  .lead h1{margin-top:10px;font-size:38px;font-weight:300;line-height:1.12;letter-spacing:-1px}
-  .lead .zhline{margin-top:6px;font-size:20px;line-height:1.5;color:var(--muted)}
-  .lead p.sm{margin-top:12px;width:660px;font-size:17px;line-height:1.55;color:var(--muted)}
-
-  .fig{left:856px;top:96px;width:504px;height:232px}
-  .fig .n{font-size:64px;font-weight:300;line-height:1.05;letter-spacing:-2px;color:var(--action)}
-  .fig .l{margin-top:12px;width:400px;font-size:17px;line-height:1.5}
-  .fig .c{margin-top:8px;font-size:14px;line-height:1.5;color:var(--muted)}
-
-  .tiers{left:80px;top:344px;width:1280px;height:352px;padding:0}
-  .thead{display:flex;justify-content:space-between;align-items:baseline;padding:24px 32px 14px;font-size:14px;color:var(--muted)}
-  .hline{height:1px;background:var(--hairline)}
-  .cols{display:grid;grid-template-columns:repeat(3,1fr)}
-  .col{padding:34px 32px 0}
-  .col+.col{border-left:1px solid var(--hairline)}
-  .col .nm{font-size:26px;font-weight:400;letter-spacing:-.4px}
-  .col .rate{margin-top:8px;font-size:38px;font-weight:300;line-height:1.05;letter-spacing:-1.4px}
-  .col .pc{margin-top:6px;font-size:14px;color:var(--muted)}
-  .col .wr{display:flex;justify-content:space-between;align-items:baseline;margin-top:30px;
-           border-top:1px solid var(--hairline);padding-top:12px;font-size:14px;color:var(--muted)}
-  .col .wr b{font-size:24px;font-weight:400;letter-spacing:-.4px;color:var(--ink)}
-  .col .track{margin-top:14px;height:8px;background:var(--hairline);position:relative}
-  .col .fill{position:absolute;left:0;top:0;height:8px;background:var(--ink)}
-  .col .nn{margin-top:12px;font-size:13px;line-height:1.4;color:var(--muted);height:18px}
-
-  .proof{left:80px;top:712px;width:856px;height:176px;padding:22px 32px}
-  .proof .ph{display:flex;justify-content:space-between;font-size:14px;color:var(--muted)}
-  .proof .pr{display:flex;justify-content:space-between;align-items:baseline;height:32px;font-size:15px}
-  .proof .ph + .pr{margin-top:14px}
-  .proof .pr span:last-child{font-size:17px}
-  .proof .pr.sum{border-top:1px solid var(--hairline);font-weight:600}
-
-  .act{left:952px;top:712px;width:408px;height:176px;padding:26px 32px;display:flex;flex-direction:column;justify-content:space-between}
-  .act p{font-size:20px;line-height:1.35;letter-spacing:-.2px}
-  .pill{display:inline-flex;align-items:center;justify-content:center;height:42px;padding:0 26px;
-        font-size:16px;color:var(--onAction);align-self:flex-start}
-
-  .foot{position:absolute;left:80px;top:924px;width:1280px;display:flex;justify-content:space-between;
-        font-size:12px;line-height:1.5;color:var(--muted)}
 </style>
 </head>
 <body>
-<div class="unit" id="page">
-
-  <div class="hdr"><b>Ledger</b><span>Pricing</span></div>
-
-  <div class="tile lead" data-cc="18" data-cc-fill="#f8f5ef" data-cc-stroke="#d2d2d7">
-    <p class="eb">Fee schedule</p>
-    <h1>Three rates, one quarter.</h1>
-    <p class="zhline zh">三档费率，一个季度</p>
-    <p class="sm">The same shop, the same sales, billed at each rate. This quarter qualifies for all three, so the only thing that changes between the columns is the fee.</p>
-  </div>
-
-  <div class="tile fig" data-cc="18" data-cc-fill="#f8f5ef" data-cc-stroke="#d2d2d7">
-    <p class="n num">¥4,045</p>
-    <p class="l">between the highest and the lowest rate</p>
-    <p class="c num">on this quarter's ¥490,000, before refunds</p>
-  </div>
-
-  <div class="tile tiers" data-cc="18" data-cc-fill="#f8f5ef" data-cc-stroke="#d2d2d7">
-    <div class="thead num"><span>The same shop, the same quarter: ¥490,000 gross, 1,250 charges</span><span>Bars to one scale</span></div>
-    <div class="hline"></div>
-    <div class="cols">
-      <div class="col">
-        <p class="nm">Counter</p>
-        <p class="rate num">1.9%</p>
-        <p class="pc num">+ ¥0.30 a charge</p>
-        <div class="wr num"><span>On this quarter</span><b>¥9,685</b></div>
-        <div class="track"><span class="fill" style="width:329px"></span></div>
-        <p class="nn"></p>
-      </div>
-      <div class="col">
-        <p class="nm">Shop</p>
-        <p class="rate num">1.45%</p>
-        <p class="pc num">+ ¥0.30 a charge</p>
-        <div class="wr num"><span>On this quarter</span><b>¥7,480</b></div>
-        <div class="track"><span class="fill" style="width:254px"></span></div>
-        <p class="nn">billed on this quarter's statement</p>
-      </div>
-      <div class="col">
-        <p class="nm">Chain</p>
-        <p class="rate num">1.1%</p>
-        <p class="pc num">+ ¥0.20 a charge</p>
-        <div class="wr num"><span>On this quarter</span><b>¥5,640</b></div>
-        <div class="track"><span class="fill" style="width:192px"></span></div>
-        <p class="nn"></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="tile proof" data-cc="18" data-cc-fill="#f8f5ef" data-cc-stroke="#d2d2d7">
-    <div class="ph"><span>Where the statement's fee comes from</span></div>
-    <div class="pr num"><span>1.45% of ¥490,000</span><span>¥7,105</span></div>
-    <div class="pr num"><span>1,250 charges × ¥0.30</span><span>¥375</span></div>
-    <div class="pr sum num"><span>Ledger fees on the statement</span><span>¥7,480</span></div>
-  </div>
-
-  <div class="tile act" data-cc="18" data-cc-fill="#f8f5ef" data-cc-stroke="#d2d2d7">
-    <p>No setup fee, no monthly fee, on any rate.</p>
-    <a class="pill" data-cc="21" data-cc-fill="#5140c9" href="#">Add a shop</a>
-  </div>
-
-  <div class="foot"><span>Illustrative example</span><span>Illustrative render, not a photograph</span></div>
-</div>
+<main class="unit">
+  <header class="hdr"><b>Ledger</b><span>Pricing</span></header>
+  <section class="lead"><p class="eyebrow">Fee schedule</p><h1>Three rates, one quarter.</h1><p class="zhline zh">三档费率，一个季度</p><p class="explain">The same shop, the same sales, billed at each rate. This quarter qualifies for all three, so the only thing that changes between the columns is the fee.</p></section>
+  <aside class="spread"><p class="num">¥4,045</p><div class="spread-copy"><p>between the highest and the lowest rate</p><p class="note num">on this quarter's ¥490,000, before refunds</p></div></aside>
+  <section class="compare">
+    <div class="compare-head"><strong>The same shop, the same quarter: ¥490,000 gross, 1,250 charges</strong><span>Bars to one scale</span></div>
+    <div class="tier"><span class="name">Counter</span><span class="rate num">1.9%</span><span class="charge num">+ ¥0.30 a charge</span><span class="meter"><i class="fill" style="width:100%"></i></span><span class="amount num">¥9,685<small class="on">On this quarter</small></span></div>
+    <div class="tier selected"><span class="name">Shop</span><span class="rate num">1.45%</span><span class="charge num">+ ¥0.30 a charge</span><span class="meter"><i class="fill" style="width:77.2%"></i></span><span class="amount num">¥7,480<small class="on">On this quarter</small></span></div>
+    <div class="tier"><span class="name">Chain</span><span class="rate num">1.1%</span><span class="charge num">+ ¥0.20 a charge</span><span class="meter"><i class="fill" style="width:58.2%"></i></span><span class="amount num">¥5,640<small class="on">On this quarter</small></span></div>
+    <p style="margin:8px 8px 0;font-size:13px;color:var(--muted)">billed on this quarter's statement</p>
+  </section>
+  <section class="proof" data-cc="18" data-cc-fill="#172b4d"><h2>Where the statement's fee comes from</h2><div class="parts num"><span>1.45% of ¥490,000</span><span>¥7,105</span><span>1,250 charges × ¥0.30</span><span>¥375</span><span class="sum">Ledger fees on the statement</span><span class="sum">¥7,480</span></div></section>
+  <aside class="close"><p>No setup fee, no monthly fee, on any rate.</p><a data-apple-motion data-cc="25" data-cc-fill="#5140c9" href="#">Add a shop</a></aside>
+  <footer class="foot"><span>Illustrative example</span><span>Illustrative render, not a photograph</span></footer>
+</main>
 <script src="../../_shared/continuous-corner.js"></script>
 </body>
 </html>

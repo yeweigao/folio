@@ -1,47 +1,44 @@
-Kit
-Kit One · exploded
+Kit One
 Sixteen pieces.
+
 One path carries the sound.
 
 十六个零件，只有一条路把声音送出去
 
-Eight part numbers.
-
-Every part is numbered on its own face.
-
-240 × 150 × 32 mm · 620 g
-
 Faceplate
-
-×1
-
 Key bed
-
-×1 · 12 keys
-
 Main board
-
-×1
-
-Speaker
-
-×1
-
 Knob
-
-×4
-
+Speaker
 Screw
-
-×6
-
 Battery door
-
+signal out
+Faceplate
+×1
+Key bed
+×1
+Main board
+×1
+Knob
+×4
+Speaker
+×1
+Screw
+×6
+Battery door
+×1
+Output jack
 ×1
 
-Output jack
-
-×1 · signal out
+Eight part numbers. 12 keys · 240 × 150 × 32 mm · 620 g · Every part is numbered on its own face.
 
 Illustrative example
 Illustrative render, not a photograph
+Faceplate
+Key bed
+Main board
+Knob
+Speaker
+Screw
+Battery door
+signal out

@@ -1,32 +1,36 @@
 Shelf
 Module
-Every part is a
-whole number of
-45 mm.
+Every part is a whole number of 45 mm.
 
 每个零件，都是 45 毫米的整数倍
 
-A bay stands 1,800 mm tall: forty modules of 45. A shelf is 900 mm wide and 270 mm deep: twenty by six. A bracket is 135 mm: three.
-
-Nothing is cut to length on site, so a longer wall is more modules rather than a new part.
-
 Change the length and the count changes; nothing new is made.
 
+Upright
+two per bay · 1,800 mm
+Shelf
+four per bay · 900 mm
+Bracket
+two per shelf · 135 mm
+Module
+45 mm · 270 mm shelf depth
 1,800 mm
 900 mm (20 × 45)
+45 mm
 Upright
-two per bay
 Shelf
-four per bay
 Bracket
-two per shelf
-Illustrative example
-Illustrative render, not a photograph
+270 mm
+135 mm
+
+Illustrative example · Illustrative render, not a photograph
+
+Change the length; the count changes.
 1,800 mm
 900 mm (20 × 45)
+45 mm
 Upright
-two per bay
 Shelf
-four per bay
 Bracket
-two per shelf
+270 mm
+135 mm

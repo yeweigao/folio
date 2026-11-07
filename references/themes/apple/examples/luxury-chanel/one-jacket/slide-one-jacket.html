@@ -1,117 +1,57 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=1600">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Noir — The One Seam</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@300;400;600&amp;family=Noto+Sans+SC:wght@300;400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@400;600&amp;family=Noto+Serif+SC:wght@400&amp;family=Noto+Sans+SC:wght@400&amp;display=swap" rel="stylesheet">
 <style>
-  :root{
-    --canvas:#ffffff; --panel:#f5f5f5; --dark:#111111; --ink:#111111;
-    --muted:#626262; --action:#111111; --onAction:#ffffff; --onDark:#ffffff;
-    --hairline:#d2d2d7;
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  html,body{background:#dedee2;}
-  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink);}
-  .unit{position:relative;width:1600px;height:900px;overflow:hidden;background:var(--canvas);}
-  .serif{font-family:"Cormorant Garamond","Noto Serif SC",serif;}
-  .zh{font-family:"Noto Serif SC","Noto Sans SC",serif;}
-  .t{position:absolute;}
-  .pad{padding:12px;}
+:root{--canvas:#fff;--panel:#f3f3f3;--dark:#111;--ink:#111;--muted:#626262;--hair:#d2d2d7}
+*{box-sizing:border-box;margin:0;padding:0}html,body{background:#fff}body{font-family:Inter,"Noto Sans SC",system-ui,sans-serif;color:var(--ink)}.unit{position:relative;width:1600px;height:900px;overflow:hidden;background:#fff}.serif{font-family:"Cormorant Garamond","Noto Serif SC",Georgia,serif}.zh{font-family:"Noto Serif SC","Noto Sans SC",serif}.t{position:absolute}.pad{padding:12px}svg{display:block}[data-cc]{position:relative;isolation:isolate}.cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}a{text-decoration:none}
+.brand{left:76px;top:40px}.brand .name{font-size:29px;font-weight:600}.brand .sub{margin-top:3px;font-size:16px;color:var(--muted)}.brand .zhline{font-size:15px;color:var(--muted)}.claim{left:76px;top:139px;width:685px;font-size:82px;line-height:.96;font-weight:400;letter-spacing:-.02em}.claimzh{left:76px;top:458px;font-size:28px;color:var(--muted)}.action{left:76px;top:548px;height:50px;width:max-content;padding:0 28px;display:flex;align-items:center;background:#111;color:#fff;font-size:17px}.action span{position:relative;z-index:1}.jacket{left:815px;top:42px;width:680px;height:588px}.proof{left:800px;top:639px;width:720px;height:190px;background:#111;color:#fff;padding:20px 26px;transform:translateZ(0)}.proof h2{font:27px/1.1 "Cormorant Garamond","Noto Serif SC",serif}.labels{margin-top:14px;display:flex;justify-content:space-between;font-size:17px;color:#dedede}.dim{position:absolute;left:294px;top:48px;text-align:center}.dim strong{display:block;font-size:42px;font-weight:400;line-height:1}.dim span{font-size:16px;color:#d1d1d1}.foot{left:76px;top:836px;width:1448px;display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+</style><link rel="stylesheet" href="../../_shared/apple-interactions.css">
+<style data-review-reflow>
 
-  .brand{left:76px;top:44px;}
-  .brand .wm{font-size:34px;font-weight:400;letter-spacing:.4px;line-height:1;}
-  .brand .sub{margin-top:10px;font-size:14px;line-height:1.4;color:var(--muted);}
-  .brand .zhline{margin-top:2px;font-size:14px;line-height:1.4;color:var(--muted);}
+:root{--apple-focus:#111111}
+@media(max-width:1600px){
+ .unit{position:relative;width:min(100%,1440px);min-height:100vh;height:auto;overflow:visible;margin:0 auto;padding:32px clamp(24px,5vw,76px) 22px;display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);grid-template-rows:auto auto auto auto auto auto;gap:16px 28px;align-content:start}
+ .brand,.claim,.claimzh,.action,.jacket,.proof,.foot{position:static;left:auto;top:auto;width:auto;height:auto}
+ .brand{grid-column:1/-1;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}.brand .name{font-size:25px}.brand .sub,.brand .zhline{font-size:15px}
+ .claim{grid-column:1;grid-row:2;font-size:clamp(52px,6.8vw,82px);line-height:1.02;letter-spacing:-.035em;align-self:end}
+ .claimzh{grid-column:1;grid-row:3;font-size:20px}.action{grid-column:1;grid-row:4;min-height:48px;justify-self:start;padding:0 24px}
+ .jacket{grid-column:2;grid-row:2/5;display:block;width:100%;aspect-ratio:680/588;align-self:center}
+ .proof{grid-column:1/-1;grid-row:5;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"heading heading" "diagram dimension" "labels labels";align-items:center;gap:10px 24px;width:auto;height:auto;min-height:190px;padding:20px 24px;transform:none}
+ .proof h2{grid-area:heading;font-size:24px}.proof>svg{grid-area:diagram;display:block;width:100%;max-width:660px;height:auto;aspect-ratio:660/76}
+ .labels{grid-area:labels;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;font-size:16px;line-height:1.4}
+ .dim{grid-area:dimension;position:static;left:auto;top:auto;text-align:right;min-width:120px}.dim strong{font-size:34px}.dim span{font-size:14px}
+ .foot{grid-column:1/-1;grid-row:6;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:14px}
+}
+@media(max-width:800px){
+ .unit{display:flex;flex-direction:column;gap:16px;padding:28px clamp(24px,5vw,40px) 22px}
+ .brand,.claim,.claimzh,.action,.jacket,.proof,.foot{width:auto;margin:0}
+ .claim{font-size:clamp(48px,8vw,68px);align-self:stretch;text-align:left}.jacket{width:100%;max-width:680px;align-self:center}
+ .proof{min-height:0;padding:18px}.proof>svg{max-width:100%}.labels{font-size:15px}
+}
+@media(max-width:520px){
+ .unit{padding:24px 20px;gap:14px}.brand{gap:7px 12px}.brand .name{font-size:23px}.claim{font-size:40px;letter-spacing:-1px}.claimzh{font-size:18px}.action{min-height:44px;font-size:16px}
+ .proof{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"heading heading" "diagram diagram" "dimension dimension" "labels labels";gap:10px;padding:16px}.proof h2{font-size:21px}.proof>svg{width:100%}.dim{text-align:left}.dim strong{font-size:30px}.labels{font-size:13px;gap:6px}.foot{font-size:13px;flex-direction:column}
+}
 
-  .claim{left:76px;top:140px;width:1440px;font-size:64px;font-weight:400;line-height:1.06;letter-spacing:-.6px;}
-  .claim .zhsub{display:block;margin-top:20px;font-size:24px;font-weight:400;line-height:1.5;letter-spacing:0;color:var(--muted);}
-
-  .hairline{left:88px;top:672px;width:1424px;height:1px;background:var(--hairline);}
-  .secttl{left:88px;top:688px;width:520px;font-family:"Cormorant Garamond","Noto Serif SC",serif;font-size:26px;font-weight:400;line-height:1.25;}
-
-  .lbl{font-size:12px;line-height:1.4;color:var(--muted);}
-  .lblOuter{left:200px;top:760px;width:96px;}
-  .lblInner{left:590px;top:760px;width:96px;}
-  .lblSeam{left:486px;top:812px;width:148px;text-align:center;}
-
-  .dimnum{left:518px;top:704px;width:84px;text-align:center;font-size:15px;font-weight:600;white-space:nowrap;}
-  .dimlbl{left:605px;top:710px;font-size:12px;line-height:1.4;color:var(--muted);}
-
-  .pillwrap{left:1226px;top:754px;}
-  .pill{display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 28px;font-size:17px;font-weight:400;color:var(--onAction);}
-
-  .cap{left:76px;top:838px;font-size:12px;line-height:1.5;color:var(--muted);}
-  .foot{left:76px;top:860px;font-size:12px;line-height:1.5;color:var(--muted);}
-
-  svg{display:block;}
-  [data-cc]{position:relative;isolation:isolate}
-  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
 </style>
 </head>
-<body>
-<div class="unit" id="slide">
+<body><div class="unit">
+  <div class="t brand pad"><p class="name serif">Noir</p><p class="sub">The One Seam</p><p class="zhline zh">一道缝</p></div>
+  <h1 class="t claim pad serif">Black and white<br>leave the cut<br>nowhere to hide.</h1>
+  <p class="t claimzh pad zh">黑白之间，剪裁无处可藏</p>
+  <a data-apple-motion class="t action" href="#construction" data-cc="23" data-cc-fill="#111"><span>See the construction</span></a>
+  <svg class="t jacket" viewBox="0 0 680 588" role="img" aria-label="A tailored jacket in black wool, lit to show the cut and seam">
+    <defs><linearGradient id="wool" x1=".05" y1="0" x2=".88" y2="1"><stop stop-color="#555"/><stop offset=".18" stop-color="#191919"/><stop offset=".47" stop-color="#080808"/><stop offset=".76" stop-color="#252525"/><stop offset="1" stop-color="#050505"/></linearGradient><linearGradient id="fold" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fff" stop-opacity=".6"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".13"/></linearGradient><pattern id="woolweave" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M0 2H10M0 7H10" stroke="#fff" stroke-opacity=".1"/><path d="M3 0V10M8 0V10" stroke="#000" stroke-opacity=".28"/></pattern><clipPath id="jacketClip"><path d="M212 76L255 52L340 119L425 52L468 76L574 229L525 256L473 207L495 511Q342 548 188 511L209 207L157 256L108 229Z"/></clipPath></defs>
+    <path data-apple-shadow="contact" d="M188 511Q342 548 495 511" fill="none" stroke="#000" stroke-width="4"/>
 
-  <!-- One garment as a silhouette, and the seam opened as a readable
-       section. Both are illustrative stand-ins, declared in the caption. -->
-  <svg width="1600" height="900" viewBox="0 0 1600 900" aria-hidden="true" style="position:absolute;left:0;top:0">
-    <g transform="translate(677 350) scale(0.615)">
-      <!-- body: shoulders, sleeves, hem -->
-      <path d="M 118 28 C 104 28 96 34 90 46 L 40 250 L 72 258 L 108 122 L 94 500 L 306 500 L 292 122 L 328 258 L 360 250 L 310 46 C 304 34 296 28 282 28 Z" fill="#111111"/>
-      <!-- collar, opened -->
-      <path d="M 118 28 L 200 98 L 282 28" fill="none" stroke="#626262" stroke-width="3"/>
-      <path d="M 118 28 L 200 98 L 158 124 L 126 64 Z" fill="#ffffff" opacity=".10"/>
-      <path d="M 282 28 L 200 98 L 242 124 L 274 64 Z" fill="#ffffff" opacity=".10"/>
-      <!-- lit side of the front -->
-      <path d="M 94 500 L 108 122 L 200 98 L 200 500 Z" fill="#ffffff" opacity=".035"/>
-      <!-- centre front, closed -->
-      <path d="M 200 98 V 500" stroke="#d2d2d7" stroke-width="2" opacity=".6"/>
-      <!-- sleeve cuffs -->
-      <path d="M 78 214 L 112 228 M 322 214 L 288 228" stroke="#626262" stroke-width="2" opacity=".5"/>
-      <!-- two pockets, level -->
-      <path d="M 120 356 H 184 M 216 356 H 280" stroke="#626262" stroke-width="2" opacity=".45"/>
-      <!-- hem shadow -->
-      <path d="M 94 500 H 306" stroke="#626262" stroke-width="2" opacity=".5"/>
-    </g>
-
-    <!-- the seam, cut open: two panels, one welted join, one dimension -->
-    <g transform="translate(60 0)">
-    <rect x="140" y="744" width="330" height="44" fill="#f5f5f5" stroke="#111111" stroke-opacity=".22" stroke-width="1"/>
-    <rect x="530" y="744" width="330" height="44" fill="#f5f5f5" stroke="#111111" stroke-opacity=".22" stroke-width="1"/>
-    <path d="M 470 744 V 796 C 470 802 476 804 482 804 H 518 C 524 804 530 802 530 796 V 744" fill="none" stroke="#111111" stroke-width="2"/>
-
-    <!-- 6 mm across the allowance -->
-    <path d="M 470 728 H 530" stroke="#111111" stroke-width="1" opacity=".55"/>
-    <path d="M 470 728 V 744 M 530 728 V 744" stroke="#111111" stroke-width="1" opacity=".55"/>
-    </g>
+    <path d="M212 76L255 52L340 119L425 52L468 76L574 229L525 256L473 207L495 511Q342 548 188 511L209 207L157 256L108 229Z" fill="url(#wool)" stroke="#060606" stroke-width="3"/>
+    <g clip-path="url(#jacketClip)"><rect x="106" y="48" width="470" height="510" fill="url(#woolweave)"/><path d="M212 78L255 55L340 120L340 523L190 510L210 208L157 254Z" fill="url(#fold)"/><path d="M468 78L425 55L342 120L350 525L493 510L472 208L524 254Z" fill="url(#fold)" opacity=".7"/><path d="M182 348Q336 376 500 347" fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="22"/></g>
+    <path d="M255 52L340 119L293 282L221 142Z" fill="#202020" stroke="#888" stroke-width="2"/><path d="M425 52L340 119L387 282L459 142Z" fill="#090909" stroke="#666" stroke-width="2"/><path d="M340 119V515" stroke="#b1b1b1" stroke-width="2" opacity=".68"/><path d="M334 131V515" stroke="#050505" stroke-width="3"/><path d="M222 205Q340 232 458 205" fill="none" stroke="#e5e5e5" stroke-width="4" opacity=".58"/><path d="M203 411H297L290 453H202ZM385 411H479L480 453H392Z" fill="#111" stroke="#777" stroke-width="1.5"/><path d="M212 414H289M394 414H471" stroke="#eee" stroke-width="2" opacity=".6"/><path d="M186 509Q342 541 497 509" fill="none" stroke="#dedede" stroke-width="3" opacity=".76"/><g fill="#ddd"><circle cx="348" cy="291" r="3"/><circle cx="348" cy="332" r="3"/><circle cx="348" cy="373" r="3"/></g><path d="M255 57L340 123L425 57" fill="none" stroke="#fff" stroke-width="5" opacity=".66"/>
   </svg>
-
-  <div class="t brand pad">
-    <div class="wm serif">Noir</div>
-    <div class="sub">The One Seam</div>
-    <div class="zhline zh">一道缝</div>
-  </div>
-
-  <h1 class="t claim pad serif">Black and white leave
-<br>the cut nowhere to hide.<span class="zhsub zh">黑白之间，剪裁无处可藏</span></h1>
-
-  <div class="t hairline"></div>
-  <div class="t secttl pad">A section through the one seam</div>
-
-  <div class="t lbl lblOuter pad">outer face</div>
-  <div class="t lbl lblInner pad">inner face</div>
-  <div class="t lbl lblSeam pad">the one seam</div>
-  <div class="t dimnum pad">6 mm</div>
-  <div class="t dimlbl pad">seam allowance</div>
-
-  <div class="t pillwrap pad"><span class="pill" data-cc="23" data-cc-fill="#111111">See the construction</span></div>
-
-  <div class="t cap pad">Illustrative render, not a photograph</div>
-  <div class="t foot pad">Illustrative example</div>
-</div>
-<script src="../../_shared/continuous-corner.js"></script>
-</body>
-</html>
+  <section class="t proof" id="construction"><h2 class="serif">The construction</h2><svg class="section-diagram" width="660" height="76" viewBox="0 0 660 76" role="img" aria-label="A seam cross-section with outer face, the one seam, inner face and a 6 mm seam allowance"><defs><linearGradient id="fabric" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset=".45" stop-color="#c9c9c9"/><stop offset="1" stop-color="#818181"/></linearGradient></defs><path d="M40 10H282L316 44H344L378 10H620V61H40Z" fill="url(#fabric)"/><path d="M282 10L316 44H344L378 10" fill="#f2f2f2" stroke="#fff" stroke-width="2"/><path d="M318 44H342V61H318Z" fill="#111"/><path d="M290 12L316 41M370 12L344 41" stroke="#fff" stroke-width="2" opacity=".8"/><path d="M282 3H378M282 0V11M378 0V11" stroke="#fff" stroke-width="1.4"/></svg><div class="labels"><span>outer face</span><span>the one seam</span><span>inner face</span></div><div class="dim"><strong>6 mm</strong><span>seam allowance</span></div></section>
+  <footer class="t foot"><span>Illustrative render, not a photograph</span><span>Illustrative example</span></footer>
+</div><script src="../../_shared/continuous-corner.js"></script></body></html>

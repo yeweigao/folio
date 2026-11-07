@@ -1,69 +1,66 @@
-# Plain, everyday products · Apple + Minimalist, MUJI hand
+# Plain · Apple + Minimalist, MUJI hand
 
-A visual world for a fictional everyday-products house, not a real MUJI product: only what is necessary, nothing more and nothing less, plain packaging, natural materials, no logo shouting. Dialect: Minimalist, governing hand MUJI. Forms shown: Keynote slide, Store card, Editorial opener, Flyer sheet, Website page; Bento grid as a variation for a system unit.
+Plain's world: everyday products whose packaging is their specification.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts. Subtraction is judged by use, not by emptiness.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
-Apple as base, Minimalist as dialect, MUJI as governing hand — Set plain products so their use and material can be compared directly; never add a logo-led spectacle or decorative colour.
+Apple + MUJI + Minimalist — Set everyday goods so their use and material can be judged directly; remove whatever serves neither, and let plainness carry the identity; never add a loud mark or decorative Japanese motif.
 
-World: Plain, a house that makes everyday products — home, stationery, clothing basics — its usefulness, its material, its price, across a launch deck, a shop page and a story opener. Keep Apple's single-accent discipline and one lead per screen; let MUJI's philosophy govern the look — no-brand quality products, plain packaging, natural materials, no logo shouting, no decoration, products that fit any life because they claim no life of their own.
+World: Plain is a fictional no-brand range for household, stationery, and daily-use objects across a presented slide, a shop comparison, and an explanatory long read. Every piece keeps a quiet sans, plain construction, and useful material evidence; each brings the object, task, and dimensions that it needs.
 
-Method: Separate the content into a claim, its visible evidence and a decision or lookup task. Build the proof field before setting the labels; select Keynote, Store or Editorial structure by the reader's task, then recompose the reading axis and crop for the actual format.
+Method: Begin with what the object does. Choose the view that makes its material and join visible; draw the object's net or cutaway only when it explains how the object is made or used. Remove a label, shape, or color if the buyer can still use and understand the piece without it. A new subject is selected by its use and material, not by an ethnic motif. The reading path is object → material → dimension → action or lookup.
 
-Amplitude: full on covers, heroes and vistas; reduced on Store, reference and specification units.
+Amplitude: the object or its measured proof may own the field; retail labels and reference entries remain small, plain, and ordered.
 
-Anti-reference: grey minimal skin: empty white, a thin sans, nothing to hold.
+Anti-reference: an empty white page that withholds the one label, measurement, or action a buyer needs.
 
 ## Images
 
-One everyday product per unit, photographed plainly on a neutral field, silhouette intact, material readable — paper, cotton, wood, plain plastic. No lifestyle mood, no decorative photograph. Product photographs are generated stand-ins, not a real manufacturer's photographs, and are labelled as such. Crop: plain product photographs keep the product whole on a neutral field; plainness is the identity, so no decorative crop or angle is added to make the product interesting.
+Use newly drawn objects and material sections or declared generated illustrative renders; use no real product photo, logo, or borrowed packaging. When there is no photograph, the object or its proof still fills a gallery-scale field; do not make a small diagram sit alone in a large blank. Keep a silhouette whole on a cover and keep scale bars exact on drawings. Swatches meet the grid as inset material samples, never as page wallpaper. Scale source geometry uniformly and change the frame if the object no longer fits. The small red mark, when needed, is a simple unlettered material/packaging marker, never a logo. Declare renders once per piece; keep explanatory type live. On a cover the object or its measured drawing takes half the frame or more.
 
 ## Layout
 
-Grid system: Gallery field — derive the proof field and one reading axis from W × H; Store subdivides that field into equal peers, Editorial joins it to a reading column, and Keynote assigns one claim to each slide.
+Grid system: Plain field — square material samples and product views share measured edges; no container is added for decoration.
 
-Neutral canvas with generous whitespace, one centred axis per unit, products laid out plainly so they can be compared by use. Slide field 16:9, critical content inside the central 80%. Store field: white cards on a hairline grid, one product per card, photograph on top, name and price below. Editorial field: one centred column, with plain product photographs as proof inside the story. Text sits at least 11.34 inside its shape; a title clears its descenders before anything below it; a number group sits mid-frame, number, label and context spaced down. Containers may centre; body, leads, captions, card names and prices stay flush left, ragged right; only hero, vista and cover headlines centre.
+Derive a 12-column grid from W × H: margin max(5% W, 6% S), gutter S/50, module S/125. Keynote protects the outer 8% safe area and uses one stable left axis. In a Bento range, the lead material comparison spans the widest tracks; real peers occupy matching square spans with the same order of use, material, size, and price. Keep the 1 px hairline only where a buyer needs to separate a sample, card, or table row. Editorial uses a centered column no wider than min(980 px, 82% W), with flush-left text and its cutaway on the same evidence axis. Let material tone provide the image's color; don't repeat its swatch in decorative UI.
 
 ## Typography
 
-One quiet grotesque sans, regular weights, generous leading, no display face competing with the object. Labels and body in the same quiet voice; a display serif or condensed headline would import another school's voice.
-
-Concrete type for this fictional world: Inter for display, Inter for body and labels; pair Chinese with Noto Serif SC for serif display and Noto Sans SC for sans roles. Open-source substitutes, not the brand's own faces.
+Use Inter 400 for every Latin role and Noto Sans SC 400 for Chinese; the page has one unembellished grotesque voice. At S = 1000 use display 80/400/1.05, heading 52/400/1.1, lead 24/400/1.45, body 17/400/1.5, label 14/400/1.4, caption 12/400/1.45. Hierarchy is established by scale and position, never by a second face or a bold utility label. Use tabular numerals for measurements and prices; share the baseline and unit position among peers. Keep body text at 16–20 px on the web, 45–75 Latin or 25–35 CJK characters per line, and break Chinese at phrase boundaries. The red mark is never typographic. On slides the Keynote floors hold: slide title at least 0.1 S, body at least 0.037 S.
 
 ## Colors
 
-Neutral grounds — white, neutral greys, material tones — with colour, where it appears at all, coming from the material itself, never from chrome. No decorative colour, no second accent, no gradient.
-
-Roles: canvas the page, panel the card, dark the proof-field polarity, ink and muted the reading colours, onDark and onAction their contrasts, hairline a non-text separator; action is the single neutral action. Reading text uses only the pairs in Tokens. Accent: none; actions stay neutral, and no blue decorates.
+Ground: MUJI's unbleached paper, the brand's signature. Use `canvas` warm paper, `panel` white, `ink` for reading and product outlines, `muted` for labels, and `hairline` only for real divisions. `cotton`, `porcelain`, `beech`, and `board` approximate the depicted materials and may change with the subject. `mark` is a single small dark red mark only; it never becomes a CTA, line, badge, or field. `action` stays ink; no Apple blue or gradient. Keep text pairs at the declared contrast floor.
 
 ## Shapes
 
-Every nonzero radius takes Apple's continuous corner; square forms stay square. One corner, inward from the corner point in units of R: `M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0`. R is at most half the shorter side; a side shorter than 3.05732R shortens its shoulder to half the side, toward the native saturated form (first cubic 0 1, 0 .96, 0 .82). Build it natively (`.continuous`), as this path in SVG, canvas, clip or a slide freeform, or in Figma at 60% smoothing; never `border-radius`, `rect rx`, a preset or a superellipse. Fill, stroke and media clip share one path; nested corners share centres, inner R = max(0, outer R − gap).
-
-Plain forms following the product's own geometry, never a decorative radius. Cards carry hairlines and quiet separation, never heavy shadow. Packaging is plain, labels are plain, and that plainness is the identity.
+Keep all page fields, tiles, samples, and actions square: radius zero is part of the no-brand restraint. Use a single 1 px hairline to separate actual reading groups, with no shadows, badge, or ornamental stroke. Draw product outlines with one consistent stroke and show only the joins that explain use. If an unusually small viewport requires a nonzero control radius, use Apple's continuous-corner contour from the shared helper; never substitute a circular preset, and keep the surrounding surface square.
 
 ## Forms
 
-- Keynote: one thesis per slide, one plain product per slide, live text over a calm zone.
-- Store: one product per card, photograph on top, name and price below, one buy action per card.
-- Editorial: opener with the everyday story, then long leads with plain product photographs as proof inside the column. The opener is a photographic vista — a full-bleed photograph of a plain product in an everyday setting with one headline and at most one action.
-- Flyer: one A4 sheet, real internal padding so no text touches a frame edge, one claim, one dominant image, figure or price at display size in the footer rule.
-- Website: full-width hero image, hero plus three sections plus footer, hierarchy carried by size and weight, centred container with flush-left body, leads, captions and prices.
-- Bento grid: a system unit — many Plain products on one page, tiles sized by importance, one claim per tile, each tile one product, specs as small number posters. Tiles index; they do not prove: each claim is proved in a following unit or carries its own figure.
+- Keynote: one plain object or packaging net at gallery scale, one claim, live labels, and a second field only for its measured material proof.
+- Bento: a material-led lead tile, then genuine product peers at square edges; each peer uses the same field order for use, material, size, price, and one plain action. A numeric tile must label its count and scope.
+- Editorial: open on the object or a material vista with one headline and at most one action; continue with a centered reading column and a measured cutaway or material plate, then a quiet price/source line.
 
 ## Variations
 
-One break per unit. A plain-packaging turn: one unit showing the product in its plain packaging, with the packaging itself as the argument. A material turn: one unit in the product's own material tone, with a complete foreground palette on that tone.
+At a real content turn, allow one full unit that shows plain packaging or one product material at a closer scale. The whole surface stays square and quiet; material tone changes only with the subject.
 
 ## Do's and Don'ts
 
-Do: only what is necessary, plain packaging, natural materials, quiet mark or no mark, one quiet sans, material as colour. Don't: a loud logo, a decorative colour, a product that demands attention rather than serving quietly, a display face competing with the object, an empty page that is hard to use.
+Floors: facts match each brief exactly; declare every illustration; maintain 4.5:1 text contrast (3:1 for large type); keep reading text live and at its declared size floor for the intended viewing distance; make static output complete as a still; recompose each format instead of scaling a layout; use only original or licensed assets.
+
+Render check: the object’s material join or cutaway is legible at its displayed scale, and each live annotation can be matched to the part it names.
+
+Test: Hide the brand name and the red mark; can the object still be understood from its use, material and dimensions?
+
+Caricature: a plain surface with Japanese-looking decoration but no usable construction, measurement or instruction.
 
 ## Tokens
 
-Authored for this fictional world at S = 1000; radius sets size, the contour is continuous corner. Product-image colours and hero gradients are source imagery, not additional action colours.
+Values below are derived for this fictional no-brand range at S = 1000; material tones are illustrative and the mark never colors an action.
 
 ```yaml
 colors:
@@ -72,32 +69,32 @@ colors:
   dark: "#302d27"
   ink: "#302d27"
   muted: "#666056"
+  onDark: "#ffffff"
   action: "#302d27"
   onAction: "#ffffff"
-  onDark: "#ffffff"
-  hairline: "#d2d2d7"
+  hairline: "#d5d2ca"
+  mark: "#8f1d26"
+  cotton: "#d7cdbc"
+  porcelain: "#ebe7df"
+  beech: "#bd9667"
+  board: "#c5a976"
 typography:
-  display: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 56, fontWeight: 400, lineHeight: 1.07 }
-  heading: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 40, fontWeight: 400, lineHeight: 1.1 }
-  lead: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 28, fontWeight: 400, lineHeight: 1.3 }
-  body: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.47 }
+  display: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 80, fontWeight: 400, lineHeight: 1.05 }
+  heading: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 52, fontWeight: 400, lineHeight: 1.1 }
+  lead: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 24, fontWeight: 400, lineHeight: 1.45 }
+  body: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.5 }
   label: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
-  fine: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: 1.5 }
+  caption: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: 1.45 }
 spacing:
-  unit: 8
-  textInset: 11.34
+  module: 8
+  gutter: 20
+  group: 32
+  section: 64
   cardInset: 24
-  proofGap: 40
-  tileInset: 80
 rounded:
-  small: 0
-  control: 0
+  field: 0
   card: 0
-corners:
-  contour: "continuous corner"
-  smoothing: 0.6
-  shoulderExtent: 1.52866
-  innerRadius: "max(0, outerRadius - gap)"
+  action: 0
 pairs:
   ink-on-canvas: { backgroundColor: "{colors.canvas}", textColor: "{colors.ink}" }
   ink-on-panel: { backgroundColor: "{colors.panel}", textColor: "{colors.ink}" }
@@ -105,11 +102,11 @@ pairs:
   muted-on-panel: { backgroundColor: "{colors.panel}", textColor: "{colors.muted}" }
   onDark-on-dark: { backgroundColor: "{colors.dark}", textColor: "{colors.onDark}" }
   onAction-on-action: { backgroundColor: "{colors.action}", textColor: "{colors.onAction}" }
-  action-on-canvas: { backgroundColor: "{colors.canvas}", textColor: "{colors.action}" }
-  action-on-panel: { backgroundColor: "{colors.panel}", textColor: "{colors.action}" }
+  mark-on-canvas-large: { backgroundColor: "{colors.canvas}", textColor: "{colors.mark}" }
+  mark-on-panel-large: { backgroundColor: "{colors.panel}", textColor: "{colors.mark}" }
 ```
 
 ## Record
 
-Folio version: 1.1.0. Template version: 14. Date: 2026-11-05.
-Pieces: one-sheet (Keynote), three-things (Bento), cut-open (Editorial), each made from this file alone. Subject is fictional; no MUJI product, photograph, logo or font file is used. Tokens are authored for this world, not measured from the brand.
+Folio version: 1.1.0. Template version: 14. Date: 2026-11-07.
+Pieces: one-sheet (Keynote), three-things (Bento), cut-open (Editorial), built from this file alone. Plain and all goods, packaging, measurements, prices, and materials are fictional; no MUJI product, logo, photograph, or font file is used. Changes after the lock: none.

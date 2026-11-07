@@ -2,127 +2,108 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1600">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Plain — The package is a measurement</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Noto+Sans+SC:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&amp;family=Noto+Sans+SC:wght@400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../_shared/apple-interactions.css">
 <style>
-  :root{
-    --canvas:#f8f6f1; --panel:#ffffff; --dark:#302d27; --ink:#302d27;
-    --muted:#666056; --action:#302d27; --onAction:#ffffff; --onDark:#ffffff;
-    --hairline:#d2d2d7;
-  }
+:root{--apple-focus:#282722}
+  :root{--canvas:#f8f6f1;--panel:#ffffff;--ink:#302d27;--muted:#666056;--hairline:#d5d2ca;--board:#c5a976}
   *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:#e8e5df}
-  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
+  html,body{background:#e6e3dc}
+  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink);font-weight:400;font-variant-numeric:tabular-nums}
   .unit{position:relative;width:1600px;height:900px;overflow:hidden;background:var(--canvas)}
-  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
   .t{position:absolute}
-  .pad{padding:12px}
-  a{text-decoration:none;color:inherit}
-  svg{display:block}
+  p,h1{text-wrap:balance}
+  [data-cc]{position:relative;isolation:isolate}
+  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
 
-  .field{position:absolute;left:720px;top:0;width:880px;height:900px;background:var(--panel)}
-  .plate{position:absolute;left:50px;top:588px;width:700px;font-size:12px;line-height:1.5;color:var(--muted)}
-  .cap{position:absolute;left:50px;top:820px;width:700px;font-size:12px;line-height:1.5;color:var(--muted)}
-  .boardnote{position:absolute;left:50px;top:700px;width:700px;font-size:12px;line-height:1.5;color:var(--muted)}
+  .brand{left:120px;top:72px;font-size:22px;line-height:1.4}
+  .brand span{margin-left:18px;color:var(--muted)}
+  h1{left:120px;top:150px;width:680px;font-size:88px;font-weight:400;line-height:1.04;letter-spacing:-.025em}
+  .zh{left:120px;top:356px;font-size:32px;line-height:1.4;color:var(--muted)}
+  .lead{left:120px;top:424px;width:640px;font-size:28px;line-height:1.42}
 
-  .mark{left:96px;top:58px;font-size:15px;font-weight:400;line-height:1.4;letter-spacing:.02em}
-  .meta{left:96px;top:86px;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
-  .head{left:96px;top:132px;width:600px;font-size:60px;font-weight:400;line-height:1.08;letter-spacing:-.022em}
-  .headzh{left:96px;top:280px;font-size:24px;font-weight:400;line-height:1.5;color:var(--muted)}
-  .rule{left:96px;top:348px;width:520px;height:1px;background:var(--hairline)}
-  .lead{left:96px;top:372px;width:536px;font-size:17px;font-weight:400;line-height:1.65}
+  .fig{top:590px}
+  .fig .v{font-size:120px;line-height:1;letter-spacing:-.04em}
+  .fig .l{margin-top:10px;font-size:20px;line-height:1.3;color:var(--muted)}
+  .close{left:120px;top:782px;width:620px;font-size:20px;line-height:1.45;color:var(--muted)}
 
-  .spec{left:96px;top:484px;width:564px}
-  .spec .row{display:flex;gap:24px;padding:7px 0;border-top:1px solid var(--hairline)}
-  .spec .row:last-child{border-bottom:1px solid var(--hairline)}
-  .spec .k{width:124px;flex:none;font-size:12px;font-weight:400;line-height:1.6;color:var(--muted)}
-  .spec .v{font-size:17px;font-weight:400;line-height:1.4}
-
-  .note{left:96px;top:726px;width:520px;font-size:13px;font-weight:400;line-height:1.6;color:var(--muted)}
-  .foot{left:96px;top:820px;width:564px;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
+  .plate{left:860px;top:0;width:740px;height:900px;background:var(--panel)}
+  .note{font-size:20px;line-height:1.35}
+  .note b{display:block;font-weight:400;color:var(--muted);font-size:16px;margin-bottom:2px}
+  .cap{font-size:18px;line-height:1.45;color:var(--muted)}
+  .foot{left:920px;top:846px;width:620px;display:flex;justify-content:space-between;font-size:14px;color:var(--muted)}
 </style>
-</head>
+<style class="apple-web-reflow">
+@media(max-width:1600px){
+ html,body{overflow-x:hidden;background:#f8f6f1}.unit{width:100%;max-width:1600px;height:auto;min-height:100vh;overflow:visible;margin:auto;padding:28px max(24px,5vw) 36px;display:flex;flex-direction:column;gap:18px;background:var(--canvas)}.t{position:static;width:auto;height:auto}.brand{font-size:18px;line-height:1.4}.brand span{display:inline-block;margin-left:8px}.unit h1{max-width:16ch;font-size:clamp(44px,7vw,76px);line-height:1.04;letter-spacing:-.03em}.zh{font-size:24px;line-height:1.4}.lead{max-width:60ch;font-size:20px;line-height:1.5}.fig{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.fig .v{font-size:clamp(60px,10vw,100px);line-height:1}.fig .l{font-size:16px;line-height:1.4}.close{font-size:18px;line-height:1.5;max-width:58ch}.plate{display:none}.unit>svg.t{display:block;width:100%;max-width:740px;height:auto;align-self:center;border:1px solid var(--hairline);background:#fff}.note,.cap{font-size:16px;line-height:1.5;width:auto!important}.note b{font-size:16px;margin:0 6px 0 0;display:inline;font-weight:600}.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 16px;font-size:14px;color:var(--muted)}}
+
+</style></head>
 <body>
-<div class="unit" id="slide">
+<div class="unit">
+  <p class="t brand">Plain<span>Packaging sheet · 2026</span></p>
+  <h1 class="t">The package is a measurement.</h1>
+  <p class="t zh">包装，是一份尺寸</p>
+  <p class="t lead">One unbleached sheet, four folds, one label. Everything a buyer needs is a number.</p>
 
-  <div class="field">
-    <svg width="880" height="640" viewBox="0 0 880 640" aria-hidden="true" style="position:absolute;left:0;top:76px">
-      <!-- one sheet, cut and creased: 360 x 280 mm at 1:1 -->
-      <path d="M290 130 H530 V190 H590 V350 H530 V410 H290 V350 H230 V190 H290 Z"
-            fill="#ffffff" stroke="#302d27" stroke-width="1.4" stroke-linejoin="miter"/>
-      <path d="M290 190 H530 V350 H290 Z" fill="none" stroke="#666056" stroke-width="1.2"
-            stroke-dasharray="7 6"/>
+  <div class="t fig" style="left:120px"><div class="v">90%</div><div class="l">Recycled content</div></div>
+  <div class="t fig" style="left:440px"><div class="v">none</div><div class="l">Ink</div></div>
+  <p class="t close">No ink, no coating, no window. The box says what it is by being measurable.</p>
 
-      <!-- 240 mm -->
-      <g stroke="#666056" stroke-width="1" fill="none">
-        <path d="M290 446 H530"/><path d="M290 440 V452"/><path d="M530 440 V452"/>
-      </g>
-      <text x="410" y="468" text-anchor="middle" font-family="Inter, 'Noto Sans SC', sans-serif"
-            font-size="11" fill="#666056">240 mm</text>
+  <!-- the white plate meets the trim; the net is drawn at 1:1, 1 mm = 1 px -->
+  <div class="t plate"></div>
+  <svg class="t" style="left:860px;top:0" width="740" height="900" viewBox="860 0 740 900" role="img" aria-label="Unfolded carton net with cut edges, folds, dimensions and a board section">
+    <defs>
+      <linearGradient id="boardLight" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#d6bd8d"/><stop offset=".5" stop-color="#c5a976"/><stop offset="1" stop-color="#ae915e"/>
+      </linearGradient>
+      <filter id="fibre" x="0" y="0" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency=".9 .08" numOctaves="3" seed="5" result="n"/>
+        <feDiffuseLighting in="n" surfaceScale="1.4" lighting-color="#fff" result="l"><feDistantLight azimuth="90" elevation="55"/></feDiffuseLighting>
+        <feComposite in="l" in2="SourceGraphic" operator="in"/>
+      </filter>
+    </defs>
+    <!-- the A3 sheet the net is cut from -->
+    <rect x="1020" y="174" width="420" height="297" fill="none" stroke="#d5d2ca" stroke-width="1"/>
+    <!-- net: cut edges solid -->
+    <path d="M1110 178 H1350 V238 H1410 V398 H1350 V458 H1110 V398 H1050 V238 H1110 Z" fill="#f6f1e6" stroke="#302d27" stroke-width="1.5"/>
+    <!-- folds dashed -->
+    <g stroke="#302d27" stroke-width="1.2" stroke-dasharray="6 5" fill="none">
+      <path d="M1110 238 H1350"/><path d="M1110 398 H1350"/><path d="M1110 238 V398"/><path d="M1350 238 V398"/>
+    </g>
+    <!-- the label, 60 x 40 mm -->
+    <rect x="1266" y="342" width="60" height="40" fill="#ffffff" stroke="#302d27" stroke-width="1"/>
+    <path d="M1296 342 V146" stroke="#666056" stroke-width="1"/>
 
-      <!-- 160 mm -->
-      <g stroke="#666056" stroke-width="1" fill="none">
-        <path d="M210 190 V350"/><path d="M204 190 H216"/><path d="M204 350 H216"/>
-      </g>
-      <text x="204" y="274" text-anchor="end" font-family="Inter, 'Noto Sans SC', sans-serif"
-            font-size="11" fill="#666056">160 mm</text>
+    <!-- dimensions -->
+    <g stroke="#666056" stroke-width="1" fill="none">
+      <path d="M1110 506 H1350"/><path d="M1110 498 V514"/><path d="M1350 498 V514"/>
+      <path d="M996 238 V398"/><path d="M988 238 H1004"/><path d="M988 398 H1004"/>
+      <path d="M1468 178 V238"/><path d="M1460 178 H1476"/><path d="M1460 238 H1476"/>
+    </g>
+    <text x="1230" y="534" text-anchor="middle" font-family="Inter,sans-serif" font-size="18" fill="#302d27">240 mm</text>
+    <text x="986" y="324" text-anchor="end" font-family="Inter,sans-serif" font-size="18" fill="#302d27">160 mm</text>
+    <text x="1484" y="214" font-family="Inter,sans-serif" font-size="18" fill="#302d27">60 mm</text>
 
-      <!-- 60 mm -->
-      <g stroke="#666056" stroke-width="1" fill="none">
-        <path d="M610 130 V190"/><path d="M604 130 H616"/><path d="M604 190 H616"/>
-      </g>
-      <text x="618" y="164" font-family="Inter, 'Noto Sans SC', sans-serif"
-            font-size="11" fill="#666056">60 mm</text>
-    </svg>
+    <!-- the board itself, in section at 40:1: 0.6 mm = 24 px -->
+    <rect x="920" y="702" width="540" height="24" fill="url(#boardLight)"/>
+    <rect x="920" y="702" width="540" height="24" fill="#000" filter="url(#fibre)" opacity=".35" style="mix-blend-mode:multiply"/>
+    <rect x="1456" y="702" width="4" height="24" fill="#8e7444"/>
+    <g stroke="#666056" stroke-width="1" fill="none"><path d="M1476 702 V726"/><path d="M1470 702 H1482"/><path d="M1470 726 H1482"/></g>
+    <text x="1490" y="719" font-family="Inter,sans-serif" font-size="16" fill="#302d27">0.6 mm</text>
+  </svg>
 
-    <!-- the board itself, at 40:1: 0.6 mm reads 24 px -->
-    <svg width="760" height="140" viewBox="0 0 760 140" aria-hidden="true" style="position:absolute;left:50px;top:640px">
-      <rect x="0" y="24" width="640" height="24" fill="#ded5c3"/>
-      <rect x="0" y="24" width="640" height="1.6" fill="#efe8d9"/>
-      <rect x="0" y="46.4" width="640" height="1.6" fill="#b7ab94"/>
-      <g fill="#c3b79f" opacity=".7">
-        <ellipse cx="64" cy="34" rx="5" ry="1.4"/><ellipse cx="148" cy="41" rx="4" ry="1.2"/>
-        <ellipse cx="236" cy="30" rx="5.4" ry="1.5"/><ellipse cx="318" cy="38" rx="4.2" ry="1.2"/>
-        <ellipse cx="402" cy="33" rx="5" ry="1.4"/><ellipse cx="486" cy="42" rx="4.6" ry="1.3"/>
-        <ellipse cx="566" cy="31" rx="5.2" ry="1.4"/>
-      </g>
-      <rect x="628" y="24" width="12" height="24" fill="#eae1d0"/>
-      <path d="M628 24 V48" stroke="#b7ab94" stroke-width="1"/>
-      <g stroke="#666056" stroke-width="1" fill="none">
-        <path d="M660 24 V48"/><path d="M654 24 H666"/><path d="M654 48 H666"/>
-      </g>
-      <text x="670" y="40" font-family="Inter, 'Noto Sans SC', sans-serif" font-size="11"
-            fill="#666056">0.6 mm</text>
-    </svg>
+  <p class="t note" style="left:1020px;top:72px"><b>Sheet size</b>420 × 297 mm</p>
+  <p class="t note" style="left:1110px;top:560px;width:430px">Box · 240 × 160 × 60 mm</p>
+  <p class="t note" style="left:1306px;top:64px;width:200px"><b>Label</b>60 × 40 mm, uncoated paper</p>
+  <p class="t cap" style="left:920px;top:600px;width:620px">Drawn at 1:1, in millimetres. Cut edges solid, folds dashed.</p>
+  <p class="t note" style="left:920px;top:650px"><b>Sheet</b>0.6 mm unbleached board</p>
+  <p class="t cap" style="left:920px;top:740px;width:620px">Unbleached board in section, 40:1. Both faces uncoated; the cut edge is the only finished face.</p>
 
-    <p class="plate">Drawn at 1:1, in millimetres. Cut edges solid, folds dashed.</p>
-    <p class="boardnote">Unbleached board in section, 40:1. Both faces uncoated; the cut edge is the only finished face.</p>
-    <p class="cap">Illustrative render, not a photograph</p>
-  </div>
-
-  <p class="t mark pad">Plain</p>
-  <p class="t meta pad">Packaging sheet · 2026</p>
-
-  <h1 class="t head pad">The package is<br>a measurement.</h1>
-  <p class="t headzh zh pad">包装，是一份尺寸</p>
-  <div class="t rule"></div>
-
-  <p class="t lead pad">One unbleached sheet, four folds, one label. Everything a buyer needs is a number.</p>
-
-  <div class="t spec">
-    <div class="row"><span class="k">Sheet</span><span class="v">0.6 mm unbleached board</span></div>
-    <div class="row"><span class="k">Sheet size</span><span class="v">420 × 297 mm</span></div>
-    <div class="row"><span class="k">Box</span><span class="v">240 × 160 × 60 mm</span></div>
-    <div class="row"><span class="k">Label</span><span class="v">60 × 40 mm, uncoated paper</span></div>
-    <div class="row"><span class="k">Recycled content</span><span class="v">90%</span></div>
-    <div class="row"><span class="k">Ink</span><span class="v">none</span></div>
-  </div>
-
-  <p class="t note pad">No ink, no coating, no window. The box says what it is by being measurable.</p>
-  <p class="t foot pad">Illustrative example</p>
+  <div class="t foot"><span>Illustrative example</span><span>Illustrative render, not a photograph</span></div>
 </div>
 <script src="../../_shared/continuous-corner.js"></script>
 </body>

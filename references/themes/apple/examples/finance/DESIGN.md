@@ -1,101 +1,93 @@
-# Ledger, a payments product for small shops · Apple + Finance, Stripe hand
+# Ledger · Apple + Stripe
 
-A visual world for a fictional payments product for small shops, not a real Stripe product: money moves, figures line up, and a dark dashboard proves it over a white page. Dialect: Finance, governing hand Stripe. Surfaces shown: Keynote slide, Store card, Editorial opener; Bento grid as a variation for a many-plan unit.
+Ledger's world: payments for small shops, every amount checkable.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts. Figures must line up and be believed.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
-
-Apple as base, Finance as dialect, Stripe as governing hand — Set the decisive amount with its label and context, then prove it in a readable dashboard or comparison; never turn the page ground into a gradient wallpaper.
-
-World: Ledger, a product that takes payments for small shops, its checkout, its dashboard, its fees, its pricing, across a launch deck, a pricing page and a story opener. Keep Apple's single-accent discipline and one lead per screen; let Stripe's philosophy govern the look — white ground, gradient wash in the hero only, light display type, dark dashboard over white, tabular figures.
-
-Method: Separate the content into a claim, its visible evidence and a decision or lookup task. Build the proof field before setting the labels; select Keynote, Store or Editorial structure by the reader's task, then recompose the reading axis and crop for the actual format.
-
-Amplitude: full on covers, heroes and vistas; reduced on Store, reference and specification units.
-
-Anti-reference: the generic fintech landing: a dark gradient hero, floating cards, a glowing chart.
+Apple + Stripe style — Make the settlement claim legible on white, then prove it in a readable dark statement; never let a gradient replace the figures or turn the page itself dark.
+World: A fictional payments service for small merchants, across launch, fee comparison and money stories. Every piece keeps one governing amount, a white reading field, and a checkable interface or ledger; each brings the decision or sequence its reader needs. Translate new subjects by asking which amount the reader must decide with; keep the statement's calculation visible.
+Method: Start from the payment amount, separate fees, refunds and payout, then set the amount with its unit and period. Use a dashboard or statement as the proof surface, not as decoration. Keep every value on a shared decimal edge; retain only calculations that close from their stated inputs. The reading path is claim, statement, arithmetic, action. Quiet copy explains a value but never competes with it.
+Amplitude: Full at the claim and payout; reduced in rate labels, sources and footnotes. A number earns display scale only when it is the amount the reader decides with.
+Anti-reference: A dark fintech wallpaper with floating cards, glowing charts and a gradient behind every section.
 
 ## Images
-
-No lifestyle photograph hero. The hero image is a dashboard mockup: a dark dashboard sitting over the white page, with readable figures inside it. Dashboard mockups are fictional interface mockups, never a real product's dashboard, and are labelled as such. Crop: dashboard heroes are landscape sources; a portrait cover crop necessarily truncates outer panels, so the cover reads as a dashboard detail, not a complete dashboard — the complete dashboard must appear on a proof slide.
+Drawn Ledger interfaces and tables are explanatory stand-ins, never screenshots of a real service; declare them once per piece, with the figures, as illustrative and fictional. For a launch unit, show the decisive statement at readable scale beside the claim. In a fee comparison, draw one shared scale with direct value labels. In editorial, the flow or statement may meet the top trim as a proof vista; keep the reading column below it inset. Crop to the usable screen interior, preserve rows and labels, and scale the interface uniformly. Use no third-party payment mark or uncredited financial imagery. On a cover the statement or dashboard takes half the frame or more; the governing amount is the largest type.
 
 ## Layout
-
-Grid system: Gallery field — derive the proof field and one reading axis from W × H; Store subdivides that field into equal peers, Editorial joins it to a reading column, and Keynote assigns one claim to each slide.
-
-White ground with cream bands as rhythm; dark belongs inside dashboard proof, not page sections. Hero: headline and subheadline with a dashboard mockup over or under a gradient wash. Slide field 16:9, critical content inside the central 80%. Store field: white cards on a hairline grid, one plan per card, dashboard thumbnail on top, name and price below. Editorial field: one centred column, with dashboard figures as proof inside the story. Text sits at least 11.34 inside its shape; a title clears its descenders before anything below it; a number group sits mid-frame, number, label and context spaced down. Containers may centre; body, leads, captions, card names and prices stay flush left, ragged right; only hero, vista and cover headlines centre.
+Grid system: Ledger field — amount columns and evidence share a baseline, so figures compare and reconcile.
+Derive 12 tracks from W × H; outer margin is max(5% of W, 0.06S), gutter is one quarter of that margin, and each column is the remaining content width divided by 12 after gutters. Keep brand, claim and evidence on repeated vertical axes. In a statement, labels stay left and amounts align to the decimal at right; leave at least half a body line-height of visible ink between a row label and amount, and one body line-height between independent calculation groups and adjacent rules. Measure glyph bounds, not text boxes. In a Bento comparison, the most consequential spread gets the lead field; genuine rate peers share equal tracks and one zero baseline. In a long read, center one column capped at 980 px and 65 Latin characters; body and data share its left edge. Density increases only inside the comparison and statement; air remains around the lead and between sections. On portrait formats, the claim precedes the complete statement; unused width stays paper, not filler.
 
 ## Typography
 
-A light display face with tight tracking for headlines, regular body highly readable. Use tabular numerals where the renderer supports them; otherwise use a right-aligned figure column, so amounts and percentages line up across rows, cards and pages. Check the exported alignment; never claim tabular numerals from a renderer that cannot set them.
-
-Concrete type for this fictional world: Inter for display, Inter for body and labels; pair Chinese with Noto Serif SC for serif display and Noto Sans SC for sans roles. Open-source substitutes, not the brand's own faces.
+Voice: Stripe's light grotesk, set in Hanken Grotesk, the nearest open face of that lineage. Use Hanken Grotesk with Noto Sans SC as the CJK pair, loaded from Google Fonts; use no Stripe or Apple font files. Display and large figures use 300, body and reading figures 400, labels and decisive totals 600. At S = 1000: display 56 px / 300 / 1.08; section head 38 / 300 / 1.12; lead 28 / 400 / 1.42; body 17 / 400 / 1.55; table value 17 / 400; label 14 / 400; caption 12 / 400. A decisive amount may grow from its span, with tabular numerals, never a decorative KPI. Keep 300 for display scale, not small text. Align decimal points or right edges in every repeated amount column; keep Chinese and Latin on matched baselines. Recompose long titles within the hierarchy. On slides the Keynote floors hold: slide title at least 0.1 S, body at least 0.037 S.
 
 ## Colors
 
-White canvas, cream bands, dark navy as heading and text colour, one indigo accent for calls to action, links and key highlights, on pill buttons. Gradient wash only as a soft multi-colour mesh behind the hero, never as a wallpaper, never on a button or card. The page itself never goes dark; dark is the mockup, not the ground.
-
-Roles: canvas the page, panel the card, dark the proof-field polarity, ink and muted the reading colours, onDark and onAction their contrasts, hairline a non-text separator; action is the single action accent. Reading text uses only the pairs in Tokens. Accent: indigo replaces every Apple blue role.
+Ground: Stripe's white with cool grey-blue bands. Use white canvas and a cool grey-blue panel. Navy ink and the dark navy proof surface carry the interface; muted slate is secondary text. Stripe indigo replaces Apple blue for links, actions, focus and dark-ground links. A restrained blue-to-violet-to-mint wave may sit behind the opening claim only; waveBlue, waveViolet and waveMint form that background field with dark text over it, never a chart fill, button or wallpaper. Hairline separates real rows. Never set a full dark page, second accent, glowing chart or gradient tile.
 
 ## Shapes
-
-Every nonzero radius takes Apple's continuous corner; square forms stay square. One corner, inward from the corner point in units of R: `M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0`. R is at most half the shorter side; a side shorter than 3.05732R shortens its shoulder to half the side, toward the native saturated form (first cubic 0 1, 0 .96, 0 .82). Build it natively (`.continuous`), as this path in SVG, canvas, clip or a slide freeform, or in Figma at 60% smoothing; never `border-radius`, `rect rx`, a preset or a superellipse. Fill, stroke and media clip share one path; nested corners share centres, inner R = max(0, outer R − gap).
-
-Pill primary buttons, dark or indigo filled, with a lighter ghost secondary. Cards carry hairlines and quiet separation, never heavy shadow. No second flat accent, no square primary button.
+Use square, full-bleed fields and the Apple continuous corner for any nonzero radius: M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0. Build it natively or use the shared continuous-corner.js asset with one path for fill, stroke and media clip; no CSS radius, rect rx, preset curve or shadow. R is at most half the short side, and nested R is max(0, outer R − gap). Store cards use R = 18 px at S = 1000; primary actions are pills. Bento tiles use the same contour, separated by white gutters. Statement panels are the only dark rounded surfaces.
 
 ## Forms
-
-- Keynote: one thesis per slide; a figure-set slide is one unit, with figures on a shared baseline, one decisive figure in accent and the rest muted — the per-slide exception to the one-number rule.
-- Store: one plan per card, dashboard thumbnail on top, name and price below, one buy action per card.
-- Editorial: opener with the shop's story, then long leads with dashboard figures as proof inside the column. The opener is a proof-field vista — a dashboard mockup at full-bleed with one headline and at most one action, where the dashboard itself is the atmosphere.
-- Flyer: one A4 sheet, real internal padding so no text touches a frame edge, one claim, one dominant image, figure or price at display size in the footer rule.
-- Website: full-width hero image, hero plus three sections plus footer, hierarchy carried by size and weight, centred container with flush-left body, leads, captions and prices.
-- Bento grid: many Ledger plans and features on one page, tiles sized by importance, one claim per tile, figures as small number posters with tabular numerals. Tiles index; they do not prove: each claim is proved in a following unit or carries its own figure.
+- Keynote: one judgment and one amount; the payout statement is large and readable beside it, with live text and one action. The statement's rows align to one decimal edge.
+- Bento: unequal tiles by importance; the lead amount takes the widest field, rate peers share one scale and direct labels, the statement arithmetic remains a distinct proof unit. Never turn the mosaic into a disguised table or a wall of equal cards.
+- Editorial: one proof vista, then a centered reading column; one lead opens the argument, body is 17 px / 400 / 1.47 at web size, and the source follows the numbers. Keep figure, period and unit adjacent. End with the proved claim, not a new pitch.
 
 ## Variations
-
-One break per unit. A cream-band turn: one band in cream between white sections to pace a long page, each band carrying one idea. A dashboard turn: one dark dashboard mockup over white as a full unit, with a readable figure inside it.
+At a real change in the money story, allow one statement turn: a complete dark navy proof surface against white, with its own foreground palette. The Stripe wave may return behind a later section opener only if that section starts a new argument; otherwise it appears once.
 
 ## Do's and Don'ts
 
-Do: white ground, gradient wash in the hero only, light display type, tabular figures, dark dashboard as proof, one indigo accent. Don't: a dark page, a gradient on every section, a heavy display headline, a photograph hero, a square primary button, a second flat accent, figures that will not align.
+Floors: facts match each brief exactly; declare every illustration; maintain 4.5:1 text contrast (3:1 for large type); keep reading text live and at its declared size floor for the intended viewing distance; make static output complete as a still; recompose each format instead of scaling a layout; use only original or licensed assets.
+
+Render check: recompute the displayed settlement from visible amounts, units and period; it reconciles exactly at reading size.
+
+Test: Cover indigo; the figures still line up and the page still reads as Stripe finance. Replace the Stripe signature; the same page should no longer fit.
+
+Caricature: a white Stripe-style balance sheet dressed by a flowing hero wave, with no figure a reader can reconcile.
 
 ## Tokens
-
-Authored for this fictional world at S = 1000; radius sets size, the contour is continuous corner. Product-image colours and hero gradients are source imagery, not additional action colours.
+All values are authored for this fictional world at S = 1000. The wave is limited to a hero background. The house's indigo replaces every Apple blue role.
 
 ```yaml
 colors:
   canvas: "#ffffff"
-  panel: "#f8f5ef"
+  panel: "#f6f9fc"
   dark: "#172b4d"
   ink: "#172b4d"
   muted: "#5c6574"
+  mutedDark: "#b9c2d2"
   action: "#5140c9"
+  link: "#5140c9"
+  focus: "#5140c9"
+  darkLink: "#b5adff"
   onAction: "#ffffff"
   onDark: "#ffffff"
   hairline: "#d2d2d7"
+  waveBlue: "#dfe9ff"
+  waveViolet: "#f0e5ff"
+  waveMint: "#e2f6ef"
 typography:
-  display: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 56, fontWeight: 300, lineHeight: 1.07 }
-  heading: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 40, fontWeight: 300, lineHeight: 1.1 }
-  lead: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 28, fontWeight: 400, lineHeight: 1.3 }
-  body: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.47 }
-  label: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
-  fine: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: 1.5 }
+  display: { fontFamily: "Hanken Grotesk, Noto Sans SC, sans-serif", fontSize: 56, fontWeight: 300, lineHeight: 1.08 }
+  heading: { fontFamily: "Hanken Grotesk, Noto Sans SC, sans-serif", fontSize: 38, fontWeight: 300, lineHeight: 1.12 }
+  lead: { fontFamily: "Hanken Grotesk, Noto Sans SC, sans-serif", fontSize: 28, fontWeight: 400, lineHeight: 1.42 }
+  body: { fontFamily: "Hanken Grotesk, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.55 }
+  value: { fontFamily: "Hanken Grotesk, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.4 }
+  label: { fontFamily: "Hanken Grotesk, Noto Sans SC, sans-serif", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
+  caption: { fontFamily: "Hanken Grotesk, Noto Sans SC, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: 1.5 }
 spacing:
   unit: 8
-  textInset: 11.34
+  pair: 16
+  group: 24
+  section: 64
   cardInset: 24
-  proofGap: 40
-  tileInset: 80
+  tileInset: 32
 rounded:
-  small: 5
-  control: 8
   card: 18
+  button: "pill"
 corners:
   contour: "continuous corner"
-  smoothing: 0.6
   shoulderExtent: 1.52866
   innerRadius: "max(0, outerRadius - gap)"
 pairs:
@@ -103,13 +95,14 @@ pairs:
   ink-on-panel: { backgroundColor: "{colors.panel}", textColor: "{colors.ink}" }
   muted-on-canvas: { backgroundColor: "{colors.canvas}", textColor: "{colors.muted}" }
   muted-on-panel: { backgroundColor: "{colors.panel}", textColor: "{colors.muted}" }
+  mutedDark-on-dark: { backgroundColor: "{colors.dark}", textColor: "{colors.mutedDark}" }
   onDark-on-dark: { backgroundColor: "{colors.dark}", textColor: "{colors.onDark}" }
   onAction-on-action: { backgroundColor: "{colors.action}", textColor: "{colors.onAction}" }
   action-on-canvas: { backgroundColor: "{colors.canvas}", textColor: "{colors.action}" }
-  action-on-panel: { backgroundColor: "{colors.panel}", textColor: "{colors.action}" }
+  link-on-canvas: { backgroundColor: "{colors.canvas}", textColor: "{colors.link}" }
+  darkLink-on-dark: { backgroundColor: "{colors.dark}", textColor: "{colors.darkLink}" }
 ```
 
 ## Record
-
-Folio version: 1.1.0. Template version: 14. Date: 2026-11-05.
-Pieces: quarter-close (Keynote), fee-tiers (Bento), journey (Editorial), each made from this file alone. Subject is fictional; no Stripe product, dashboard, logo or font file is used. Tokens are authored for this world, not measured from the brand.
+Folio version: 1.1.0. Template version: 14. Date: 2026-11-07.
+Pieces: quarter-close (Keynote), fee-tiers (Bento), journey (Editorial), each made from this file alone. Subject is fictional; no Stripe product, dashboard, logo or font file is used. Changes after the lock: none.

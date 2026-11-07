@@ -1,39 +1,37 @@
 # Apple — the gallery marketing language
 
-Apple's public marketing language as apple.com, the launch keynotes and their decks speak it now, in the Liquid Glass era: the product photographed as a sculpture on a solid field, one claim per field, the interface retreating until it is invisible. Skeuomorphism, Aqua and early flat are history, not dialects. A reading of public work, not Apple's guidance: the Human Interface Guidelines govern product interfaces, and this theme does not replace them. It governs marketing and presentation surfaces, so it hosts other content without becoming a costume. Every dialect inherits this file and replaces only the rules it names.
+Apple's public marketing language as apple.com and the launch keynotes speak it now, in the Liquid Glass era: the product as a sculpture on a solid field, one claim per field, the interface retreating until it is invisible. Not the Human Interface Guidelines, which govern product interfaces.
 
-**Values are measured, not published.** Apple issues no brand handbook for apple.com. The hex values, px ramp and radius ladder below are community measurements of its CSS, kept where independent traces agree; cite them as measurements, and re-check the live CSS of any tile a work copies, since tile colour follows the product season.
+**The name is the instruction.** A model already knows apple.com, and knows Notion, Linear or Stripe from their sites, design systems and a thousand imitations. A work is named *Apple + Notion style*, and the name carries the look. This file adds only what a name does not: how a brand joins Apple, where models go wrong, and the corner they cannot draw.
 
 ## Use
 
-Read it once in full, then choose. Each choice is written into the skeleton; what is not chosen holds as house grammar unless a dialect names it.
-
 | Choose | From | Written into DESIGN.md |
 |---|---|---|
-| The school: Apple alone, or one industry dialect | Dialects, by the input's claim | Overview, the invocation |
-| The governing hand | The dialect's brands; with none, the hands below | Overview, Method |
-| The surface, when the deliverable is a deck, a shop or a long read | Keynote, Store or Editorial; then the delivery surface in Routes | Layout, Forms |
-| The field system | Grammar, the roster | Layout, Grid system |
+| The name: Apple + a brand, or Apple alone | How a brand joins Apple; the industry routes, the input picks the brand | Title and Overview, the invocation |
+| The field | Fields | Layout, Grid system |
+| The surface, when the deliverable is a deck, a shop or a long read | Keynote, Store, Editorial; then the delivery surface in Routes | Layout, Forms |
 | Bento, when many features must read in one glance | [Bento](dialects/bento.md) | Forms or Variations |
-| A method per reader need | Methods | Forms |
-| How images are made | Images, and the hand's materials | Images |
+| The corrections and values that apply | Corrections, Values | Do's and Don'ts, Tokens |
 | The contour | Continuous corner | Shapes, Tokens |
-| The breaks, where the content turns | Variations | Variations |
-| The test and the caricature | The dialect file; with none, Anti-patterns | Do's and Don'ts |
 
-Going wide means different hands on this subject, not different looks. The test and the caricature also go to the reviewers.
+Going wide means different brands on this subject, Apple alone among them, not different colours of one page.
 
-## Dialects
+## Fields
 
-Alone, the mother tongue suits material that shows one thing: a product, a feature, a launch. A work takes at most one from each of three axes and names them together — Apple + Developer + Keynote. An industry dialect is another maker's turn on this school: a company takes the mother tongue and changes its type, colour, density or imagery; a brand inside it governs as the hand, chosen by what the input does. A surface follows the deliverable; Bento follows a feature count. Open each file in play before drawing.
+*Gallery* — one product per tile, full bleed, the stack centred; *Utility grid* — hairline cards three to five across, for shops and comparison; *Editorial column* — one centred column of about 980 px; *Slide field* — 16:9, one thesis per slide.
 
-- **The claim picks the dialect, not the category.** Subtraction with no mechanism is Minimalist; a mechanism with a figure, Engineering; craft with heritage, Luxury; a workflow, Developer; a life lived with the object, Consumer; an object sold by photograph and price, Showroom.
-- **The surface governs structure; the hand governs look.** Field, card grid, column and sequence come from the surface; ground, accent, type voice, controls and decoration from the hand. Where they meet on one element, the hand keeps its look and the surface its structure: Linear on Store keeps Store's cards and Linear's rectangular buttons.
-- **A hand's accent replaces Apple blue whole.** Link, CTA, focus ring and dark-ground link all take it; blue beside a hand's accent is two accents.
-- **Industry dialects state philosophy, never values.** Draw a brand's values from your own knowledge of it and test them against its philosophy; a remembered value that contradicts the philosophy is wrong. A brand whose signature cannot be stated without its values gets no hand. Surfaces and Bento may specify construction.
-- **Form is borrowed, never the message.** What another company sells on — parameters, price, reliability, platform — stays its own, as do its marks, patterns and photographs.
+## How a brand joins Apple
 
-| Industry dialect | The input | Brands as hands, one governing |
+- **A brand the user names governs; otherwise you choose one.** The industry follows the claim, the brand the input's kind, and the choice is written into the name and said; Apple alone stays among the roughs. The subject's own brand is never its hand: that is its own site, not Apple's turn on it.
+- **Apple is the base.** One lead per screen; the product or its proof at gallery scale; the change of ground as the divider, visible at thumbnail; weight as hierarchy; one accent.
+- **The signature anchors; the name fills in.** Each brand line names what a designer would name first — its ground, its one colour, its hero, its type — and what it overturns in Apple; the rest stays Apple. Values come from your knowledge of the brand, tested against its line; a remembered value that contradicts the line is wrong.
+- **The brand's accent replaces Apple blue whole:** link, CTA, focus ring, dark-ground link.
+- **The surface governs structure; the brand governs look.** Store keeps its cards under any brand; the brand keeps its buttons and type on any surface.
+- **Form is borrowed, never the message.** A brand's selling points, marks, illustrations and photographs stay its own.
+- **The claim picks the industry, not the category.** Subtraction is Minimalist; a mechanism with a figure, Engineering; craft and heritage, Luxury; a workflow, Developer; a life lived with the object, Consumer; an object sold by photograph and price, Showroom.
+
+| Industry | The input | Brands, one governing |
 |---|---|---|
 | [Developer](dialects/developer.md) | Software: a platform, tool, workflow, database, canvas or workspace | Vercel, Linear, Supabase, Figma, Notion |
 | [Finance](dialects/finance.md) | Money: payments, banking, transfers, consumer finance, exchanges | Stripe, Mercury, Wise, Revolut, Coinbase |
@@ -42,62 +40,43 @@ Alone, the mother tongue suits material that shows one thing: a product, a featu
 | [Consumer](dialects/consumer.md) | A life: a wearable, sport product, marketplace or home | Oura, Nike, Airbnb |
 | [Luxury](dialects/luxury.md) | Craft and heritage: fashion, leather, jewellery, watches, beauty | Burberry, Hermès, Chanel, Louis Vuitton |
 | [Minimalist](dialects/minimalist.md) | Subtraction: an everyday product, home object, stationery, audio | Braun, MUJI, Bang & Olufsen |
-| [Engineering](dialects/engineering.md) | A mechanism or performance figure: airflow, a motor, a kit, a modular system | Dyson, Teenage Engineering, Vitsoe |
+| [Engineering](dialects/engineering.md) | A mechanism or performance figure | Dyson, Teenage Engineering, Vitsoe |
 
-| Surface or method | The trigger | Governs |
-|---|---|---|
-| [Keynote](dialects/keynote.md) | A presented deck | One thesis per slide; live text over a calm zone |
-| [Store](dialects/store.md) | A shop or configurator | Hairline cards, chips, prices, comparison; the denser tool mode |
-| [Editorial](dialects/editorial.md) | A long read or environment story | Light leads; the tile opens into a vista |
-| [Bento](dialects/bento.md) | Many features in one glance, on any dialect or surface | Tiles sized by importance, one claim each; an index, not proof |
-
-## Examples
-
-The [example collection](examples/) lives with this theme. Each world keeps its DESIGN.md beside three pieces made from it alone — a Keynote slide, a Store or Bento page, an Editorial opener; [the pieces](examples/README.md) lists them and the conventions they share. Subjects are fictional; no Apple or brand product, photograph, logo or font file is used, and tokens are authored for the world, not measured from the brand.
-
-| Dialect | Worlds, one per hand |
+| Surface or method | The trigger |
 |---|---|
-| Apple alone | [Lumen, a home speaker](examples/mother-tongue/DESIGN.md) |
-| Developer | [Relay · Vercel](examples/developer/DESIGN.md) |
-| Finance | [Ledger · Stripe](examples/finance/DESIGN.md) |
-| Showroom | [Volt · Tesla](examples/showroom/DESIGN.md) |
-| AI | [Fern · Claude](examples/ai/DESIGN.md) |
-| Consumer | [Pebble · Oura](examples/consumer/DESIGN.md) |
-| Luxury | [Atelier · Hermès](examples/luxury/DESIGN.md) · [Highland · Burberry](examples/luxury-burberry/DESIGN.md) · [Noir · Chanel](examples/luxury-chanel/DESIGN.md) · [Voyager · Louis Vuitton](examples/luxury-louis-vuitton/DESIGN.md) |
-| Minimalist | [Mono · Braun](examples/minimalist/DESIGN.md) · [Plain · MUJI](examples/minimalist-muji/DESIGN.md) · [Sound · Bang & Olufsen](examples/minimalist-bang-olufsen/DESIGN.md) |
-| Engineering | [Aero · Dyson](examples/engineering/DESIGN.md) · [Kit · Teenage Engineering](examples/engineering-teenage-engineering/DESIGN.md) · [Shelf · Vitsoe](examples/engineering-vitsoe/DESIGN.md) |
+| [Keynote](dialects/keynote.md) | A presented deck |
+| [Store](dialects/store.md) | A shop or configurator |
+| [Editorial](dialects/editorial.md) | A long read or environment story |
+| [Bento](dialects/bento.md) | Many features in one glance, on any industry or surface |
 
-## Hands of the mother tongue
+The [example collection](examples/) holds one world per brand used; [its README](examples/README.md) lists the pieces.
 
-With no dialect, one governs and the others visit as single moves; with a dialect, its hands govern and these only visit. Each is a way of working, not a look.
+## Corrections
 
-- **The apple.com gallery — the homepage and product pages.** Photograph the subject as a sculpture on a solid field before anything is written. One product per tile, one headline, one tagline, at most two small actions; the change of ground is the only divider. Suits launches, products and features. Never: two products in a tile, or chrome that competes with the photograph.
-- **Jony Ive — the industrial design studio.** Reduce the subject to material and silhouette. Remove whatever does not change how the object is held, seen or used. Suits objects and hardware. Never: a detail that explains nothing about the object.
-- **The keynote presenter — the launch stage.** Reveal one idea at a time, at the largest size the room allows; the next slide is a new scene. Suits presentations, pitches and announcements. Never: a slide the audience must read while the speaker talks.
+A model reaches for safety; Apple wins by conviction.
 
-## Grammar
+- **Scale is the argument, not the risk.** The largest true thing on the unit is the claim; a model's instinct to shrink, grey and empty is the failure Apple exists to correct.
+- **The hero is an object, not an icon.** It has light, material and weight; where the drawing cannot give it that, the frame goes closer or the proof takes its place.
+- **A move repeated is a template.** Any tile, block or split that appears on every unit has stopped meaning; the turn comes where the content turns.
+- **The ground is chosen, not defaulted.** Apple's grounds, or the brand's; never the warm paper, gradient or blue a model supplies by habit.
+- **Every mark is read.** Captions, labels and rules exist for the reader or not at all.
+- **Centre the stage, not the text.** Hero, vista and cover headlines may centre; everything read stays flush left.
+- **Glass and motion serve controls and change, not mood.** Liquid Glass floats controls over content; motion explains a change and stops; reduced motion gets a still.
 
-- **The tile comes before placement.** A unit is one full field in one ground; tiles stack without gaps and the change of ground divides them. The homepage alternates light and dark; a product overview may hold one ground, black, from hero to comparison.
-- **One field system per work, chosen by name.** The tile chosen silently is a default, not a decision.
-  - *Gallery*: one product per tile, centred stack, full bleed. For launches and heroes.
-  - *Utility grid*: white cards on a hairline grid, three to five across. For shops, accessories and comparison.
-  - *Editorial column*: one centred column of about 980 px. For stories and reports.
-  - *Slide field*: 16:9, one thesis per slide; critical content inside the central 80%, none in the outer 8%. For decks.
-- **The page runs hero, chapters, specifications, purchase.** Specification tiles open into a full comparison table and dense footnotes; the long page is the mother tongue, not an exception to it.
-- **The container centres; text does not.** Hero, vista and cover headlines may centre; body, leads, captions, card names and prices stay flush left, ragged right, on every surface.
-- **Fields, not boxes.** Group by a change of ground; no floating cards, shadows or plates, except the utility grid's hairline cards.
-- **A field resets every foreground.** Each ground carries its own ink, muted, link and action, checked against that ground.
-- **One module, few axes.** Base 8 px, structure on 8 / 12 / 16 / 20 / 24. On the web: 80 px inside a tile, 64 above a headline and 48–64 below, 40 or more between content and product. Headline, tagline and actions form one reading group; the product stands apart. Gaps are measured between ink, never between text boxes. Reading column 980, product grid 1440, tile full bleed; card padding 24; button 8–11 by 15–22.
-- **Two densities, one grammar.** Marketing: one tile, one idea, the air above. Store, support and footer: the denser tool mode, under the Store surface. Never one density for both; never a white-space percentage as the rule.
-- **Radius is a ladder.** Full-bleed fields and homepage promo tiles 0; small 5; tool button 8; medium 11; store card 18; primary actions and chips fully rounded. Product-page gallery cards run larger, set by eye. A hand may keep square controls; every nonzero step takes the continuous corner.
-- **Recompose before shrinking.** A thesis that cannot hold its size is two units.
-- **Furniture earns its place.** A near-black nav, 44 px, with quiet 12 px links, locates; a frosted sub-nav, 52 px, parchment at 80% with blur, names the product left and holds the buy action right; a caption ties evidence to source; a price states a quantity.
+## Values
 
-### Continuous corner
+Measured on apple.com, where models are confidently wrong.
 
-Every nonzero radius takes Apple's continuous corner: curvature zero along the straight edge, rising through the corner, the shoulder spending 1.52866R of each side. Radius sets size; the contour is this curve, never a circular arc or a superellipse.
+- **Blue is four roles:** link on light `#0066cc`, CTA and focus `#0071e3`, link on dark `#2997ff`, native system blue about `#007aff`. A hand's accent replaces all four.
+- **Grounds:** white, parchment `#f5f5f7`, near-black tiles, black for photographic void; ink `#1d1d1f`; muted `#6e6e73`, `#86868b`. Colour beyond them comes from the product, one per tile; a headline colours only its core word; gradient text is one sub-line on black; a glow spreads from the product, never across the page.
+- **Type:** weights 300 / 400 / 600 / 700, never 500; headlines 600, body 400 at 17 px, 300 only at large sizes; tile hero 56 / 600 / 1.07, a launch hero up to the 80 px class. The system face through `-apple-system, system-ui`, never as a file; Inter stands in for it alone, display tracking a further −0.01 em. A brand's voice takes the nearest open face of its own lineage. The web tightens tracking as size grows; native never hard-codes it.
+- **Chinese:** Noto Sans SC off Apple; product names unbroken, no orphaned line-end word, line-end punctuation pulled back about 0.5 em (`text-spacing-trim`), a space between Chinese and Latin (`text-autospace`), dense Chinese at 400 with generous leading.
+- **Hairline:** `#d2d2d7` on light; on dark, white at low alpha, never the light value.
+- **One shadow,** under the product at rest: `rgba(0,0,0,.22) 3px 5px 30px`.
 
-One corner, inward from the corner point, in units of R — the native constants, symmetric about the diagonal:
+## Continuous corner
+
+Every nonzero radius, pills and chips included, takes Apple's continuous corner, which no preset draws. Square forms stay square; full-bleed fields have no radius; primary actions and chips are fully rounded; a store card is 18. Radius sets size; the contour is this curve:
 
 ```
 M 0 1.52866
@@ -106,105 +85,14 @@ C .16906 .37282  .37282 .16906  .63149 .07491
 C .86841 0  1.08849 0  1.52866 0
 ```
 
-- **Build:** native `RoundedRectangle(style: .continuous)` or `cornerCurve = .continuous`; elsewhere this path, for SVG, canvas, `clip-path` and slide freeforms; in Figma, corner smoothing 60%. `border-radius`, `rect rx`, rounded-rectangle presets, `corner-shape: squircle` and superellipses are other curves.
-- **Fit:** R is at most half the shorter side. A side shorter than 3.05732R cannot hold two shoulders: its shoulder shortens to half the side, easing toward the native saturated form, whose first cubic runs from (0, 1) through (0, .96) and (0, .82) when half the side equals R. A capsule is R = h/2; `examples/_shared/continuous-corner.js` draws all of this.
-- **One path** for fill, stroke and media clip.
-- **Nested:** shared centres; inner R = max(0, outer R − gap); never the outer R reused.
+One corner, inward from the corner point, in units of R; the shoulder spends 1.52866R of each side.
 
-## Type
+- **Build:** natively `RoundedRectangle(style: .continuous)` or `cornerCurve = .continuous`; elsewhere this path, for SVG, canvas, `clip-path` and slide freeforms; Figma at 60% smoothing. `border-radius`, `rect rx`, presets and superellipses are other curves.
+- **Fit:** R is at most half the shorter side. A side shorter than 3.05732R shortens its shoulder to half the side, easing toward the native saturated form, whose first cubic runs from (0, 1) through (0, .96) and (0, .82); `examples/_shared/continuous-corner.js` draws it.
+- **One path** for fill, stroke, media clip and focus ring; nested corners share centres, inner R = max(0, outer R − gap). A single-file page inlines the helper.
 
-The system face is proprietary: reach it on Apple devices through `-apple-system, system-ui`, and never host its files. Elsewhere Inter (OFL) stands in, display tracking tightened a further 0.01 em and body leading 1.44, since it sets wider and taller; Chinese in Noto Sans SC.
+## The red line
 
-- **One lineage, two optical sizes.** The Display cut at 20 px and above, the Text cut below; the boundary holds. Native steps follow the HIG, not the web: iOS body 17 pt and large title 34 pt, macOS body 13 pt.
-- **Weights 300 / 400 / 600 / 700; never 500.** Headlines 600; 700 is emphasis, not a default and not a ban; body 400, strong 600; 300 only at large sizes.
-- **The web ramp.** Body is 17, never 16. A full-bleed launch hero may reach the 80 px class; no single hero size holds across the site.
+A style after apple.com, never Apple's: no Apple logo, product photograph, system font file, or apple.com CSS, buttons or navigation. A badge or bezel comes only from Apple's marketing resources, unaltered.
 
-| Role | px | Weight | Leading | Tracking |
-|---|---|---|---|---|
-| Hero, tile level | 56 | 600 | 1.07 | −0.28 px |
-| Tile headline | 40 | 600 | 1.10 | |
-| Lead | 28 | 400 | 1.14 | |
-| Tagline | 21 | 600 | 1.19 | |
-| Body | 17 | 400 | 1.47 | −0.374 px |
-| Body strong | 17 | 600 | 1.24 | |
-| Caption | 14 | 400 | | −0.224 px |
-| Fine print | 12 | 400 | | −0.12 px |
-
-- **Tracking splits by surface.** The web tightens as size grows. Native never hard-codes it: the system curve is tightest at 17–20 pt and turns positive by 28 pt. Either copied into the other is a migration error.
-- **Chinese is measured, not matched.** Keep a product name unbroken; keep line-end words from orphaning; set breaks per breakpoint; pull line-end punctuation back about 0.5 em; space Chinese from Latin. The scripts share weight and leading, never letterforms. Dense Chinese stays at 400 with generous leading; 300 only for large atmospheric lines.
-
-## Color
-
-- **Roles:** ground, ink, muted, link, action, dark (a change of register), signal (never a second hue). One `--apple-blue` for every role is the classic error.
-- **One accent, four blues.** Link on light `#0066cc`; filled CTA and focus ring `#0071e3`; link on dark `#2997ff`; native system blue about `#007aff`, by OS version.
-- **The ground covers almost everything; the accent is a pill, a link, a focus ring.** A blue ground is never a field; a full accent field is a variation.
-- **Colour comes from the product.** The blues are the only action colours; any other bright colour is drawn from the product or its photograph, one per tile. Current pages are bright with product colour; the discipline is how little.
-- **A headline colours only its core word,** the one naming the technology or the feeling, echoing the product. Gradient text is one sub-line on black beneath a solid white headline: a homepage-tile exception, never a headline system.
-- **Diffusion is a product glow, never a wash.** It spreads from a sensor, an orb, a button; grounds stay solid. A pastel blob with no product behind it is decoration.
-- **Grounds:** white `#ffffff`; parchment `#f5f5f7`; pearl `#fafafc` for secondary buttons; near-black tiles `#272729` / `#2a2a2c` / `#252527`; black `#000000` for video and photographic void; the nav near-black (traced `#161617`). Ink `#1d1d1f` is text on light and the ground of a dark buy strip.
-- **Muted and lines:** secondary `#6e6e73`, tertiary and footnotes `#86868b`; card hairline 1 px `#e0e0e0`, divider `#f0f0f0`, chip neutral `#d2d2d7` at about 64%.
-
-## Images
-
-- **The product is a sculpture on a solid field,** full bleed or in a panel, silhouette intact: scaled, never cropped to fit. A lifestyle image may crop, inside a card on the ladder.
-- **One shadow, on the product only:** `rgba(0,0,0,.22) 3px 5px 30px` under a render at rest.
-- **The hero dominates.** On a cover it stands at least half the frame tall, and its photograph's field matches the ground or bleeds; a light photo box on white is a pasted box.
-- **Proof is readable.** A placeholder-bar interface, an image at a new crop posed as a second proof, or a diagram that cannot be read proves nothing; reuse is declared.
-- **Drawing is native when it explains:** flat, one line weight, few node types, deliberate connectors.
-- **No icon is designed here.** A needed icon comes from its own source, unchanged.
-
-## Motion and material
-
-- **Motion explains, then stops.** It starts from the current value, inherits the gesture's velocity, and can be interrupted and reversed; springs near critical damping with about 0.4 s response, as transcribed from the 2018 fluid-interfaces talk. Never every element at once.
-- **The marketing exception is scroll.** A sticky field and a scroll-stepped image sequence move with the reader; no ambient animation elsewhere.
-- **Glass is a layer for controls over content:** nav, tab bars, toolbars, floating controls; regular by default, clear only over rich media under a dark scrim. Content sits on solid grounds or standard material. Glass takes its colour from behind; tint marks one primary action.
-- **Reduced motion is a real state.** Displacement and parallax become a fade or a still; a scroll narrative gets a static alternative.
-
-## Methods
-
-Cite a cell by name with its method: the work, the move as an imperative, its parameters, one ban.
-
-| The reader must | Text | Image | Data | Space and frame |
-|---|---|---|---|---|
-| Find the lead | **Tight headline**: one claim at 600 | **Hero product** on a solid field, at gallery scale | **One number alone** on a quiet field | **Tile pulse**: a change of ground marks the new lead |
-| See the groups | **One tile, one product**: tagline, then at most two actions | **Tile alternation** | **Utility grid**: shared card, shared hairline | **Field change**, never a border |
-| Follow the order | **Tile sequence**: hero, chapters, specs, purchase | **Reveal**: one scene per slide | **Comparison strip**: variants in one row, one scale | **Slide field**: one thesis per slide |
-| Compare | **Split tile**: parchment against near-black | **Same crop, same scale**, direct labels | **Shared baseline**; accent only on the decisive figure | **Two fields side by side** |
-| Tell figure from ground | **Figure–ground** by value | **Silhouette** against a solid field | **Reference band** in the muted tone | **Knockout**: white on a dark field |
-| Know where they are | **Nav bar** | **Caption** under the photograph | **Price** beside the name, at body size | **Frosted sub-nav** |
-| Feel the change | **Field turn**: the ground changes, the type does not | **Vista**: a photographic field replaces the product | **Scale jump**: one number at display size | **Dark turn** |
-| Feel the edge | **Full bleed** | **Bleed photograph** | **Data-ink**: no gridline without a value | **Trim-connected panel** |
-
-- **Cells combine; they do not compete.** Reference units stay quiet.
-- **A series is generated, not decorated unit by unit.** One tile, one accent hierarchy and one ramp across cover, divider, body and close.
-
-## Variations
-
-A variation breaks the grammar on one unit, where the content turns. Each is stated with its magnitude and its keep condition. One break per unit; reading text is never the experiment; a variation repairs nothing.
-
-| Variation | What it does | Keep | Lineage |
-|---|---|---|---|
-| Dark turn | One whole unit on near-black | Complete foreground roles | The homepage dark tile |
-| Vista turn | A photographic field replaces the product | One headline, one action | The environment page |
-| Utility turn | Tiles become hairline cards | One card system; no shadow | The store grid |
-| Pill turn | One action becomes a full pill in action blue | One per unit | Learn more / Buy |
-| Left-anchored slide | Title and body flush left, image right | The calm zone on the text side | Keynote body slides |
-| Split comparison | Parchment against near-black, side by side | One scale, one signal | The comparison strip |
-| Oversized numeral | One number at display size, label beneath | The number is the claim | Keynote data slides |
-| Frosted bar | A translucent bar with blur over content | Nav and sticky buy only | The sub-nav |
-| Light-weight lead | Lead at 300, 24 px and above | Reading text stays 400 | The environment lead |
-
-## Anti-patterns
-
-House preferences; a brief, a brand or a dialect may override them.
-
-- **The caricature:** frosted glass everywhere, a gradient wallpaper, blue on everything, a pill for every sentence, a stock photograph as hero, text baked into an image.
-- A centred body paragraph; a logo wall; three equal cards with equal claims; a KPI tile with no lead or label.
-- Two whole dialects on one unit; a second accent; a blue ground; dark-ground blue on light, light-ground blue on dark.
-- Pastel washes, glass panels as content, fake grain, fake 3D, gold, glowing outlines.
-- Borders on tiles; radius on full-bleed fields; shadows on cards, buttons or text; a circular arc or superellipse for the corner; one radius reused inside and out.
-- Weight 500; body at 16 px; headlines at 700 by default.
-- **The measurement errors:** one blue for link, CTA and focus; one hero size for every page; web tracking in an app; a white-space percentage, a 12–18 px card range or a ban on 700 passed off as Apple's rule; motion on every element.
-- **The red line.** This is a style after apple.com, never an Apple specification: no Apple logo, product photograph, system font file, or apple.com CSS, buttons or navigation. A badge or bezel comes only from Apple's marketing resources, unaltered: a badge at least 40 px with a quarter of its height clear, one per layout, below the maker's own mark; a product image at least 200 px, never cropped, covered, reflected or shadowed.
-
-**Test:** with colour removed, the tile rhythm still reads and each tile holds one product and one claim; with the photograph removed, the headline alone states the claim; enlarged, every rounded edge enters its shoulder without a kink (`scripts/corner-check.py` on a delivered path).
+**Test:** cover the brand name — the page still reads as Apple + that brand, not as Apple alone or as the brand alone. Remove colour — each tile still holds one lead and one claim. Thumbnail the set — the volume changes where the content turns.

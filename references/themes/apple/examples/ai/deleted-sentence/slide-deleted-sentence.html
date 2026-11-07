@@ -2,87 +2,70 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1600">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fern Reading Night — keynote</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&amp;family=Source+Sans+3:wght@400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;600&amp;family=Source+Sans+3:wght@400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;display=swap" rel="stylesheet">
 <style>
-  :root{
-    --canvas:#f8f3e8; --panel:#fffaf2; --dark:#182b40;
-    --ink:#272520; --muted:#635e56; --action:#ad4937;
-    --onAction:#ffffff; --onDark:#ffffff; --hairline:#d2d2d7;
-    --serif:"Roboto Slab","Noto Serif SC",serif;
-    --sans:"Source Sans 3","Noto Sans SC",sans-serif;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:#dedad0}
-  body{font-family:var(--sans);color:var(--ink)}
-  .unit{position:relative;width:1600px;height:900px;overflow:hidden;background:var(--canvas)}
-  .zh{font-family:"Noto Sans SC",var(--sans)}
-  .zhserif{font-family:"Noto Serif SC",var(--serif)}
-  [data-cc]{position:relative;isolation:isolate}
-  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+:root{--apple-focus:#ad4937;--canvas:#f8f3e8;--panel:#fffaf2;--dark:#302e2b;--ink:#272520;--muted:#635e56;--action:#ad4937;--serif:"Newsreader","Noto Serif SC",serif;--sans:"Source Sans 3","Noto Sans SC",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html,body{background:var(--canvas)}body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}.unit{position:relative;width:1600px;height:900px;overflow:hidden;background:var(--canvas)}.zh{font-family:"Noto Sans SC",var(--sans)}[data-cc]{position:relative;isolation:isolate}.cc-bg{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.brand{position:absolute;left:88px;top:58px;font-size:24px;font-weight:600;letter-spacing:-.3px}.edition{position:absolute;right:88px;top:64px;color:var(--muted);font-size:18px}
+.copy{position:absolute;left:88px;top:160px;width:650px}.copy h1{font-family:var(--serif);font-size:88px;font-weight:400;line-height:1.01;letter-spacing:-2.6px}.copy .zhline{margin-top:18px;font-size:31px;line-height:1.5}.copy .dek{margin-top:24px;width:625px;font-size:32px;line-height:1.34;color:var(--muted)}
+.details{position:absolute;left:88px;top:583px;width:680px}.detail{display:flex;gap:28px;align-items:baseline;padding:14px 0;border-top:1px solid #d2d2d7;font-size:26px;line-height:1.35}.detail span:first-child{min-width:340px}.detail .zh{font-size:24px;color:var(--muted)}.detail.last{color:var(--muted)}
+.cta{position:absolute;left:88px;top:782px;height:60px;padding:0 32px;display:inline-flex;align-items:center;color:white;font-size:24px;text-decoration:none}.cta .arrow{margin-left:22px;font-size:30px;line-height:1}
+.proof{position:absolute;left:830px;top:180px;width:682px;height:548px;padding:34px 40px;color:white;background:transparent}.proof-top{display:flex;justify-content:space-between;align-items:baseline;font-size:18px;color:rgba(255,255,255,.62)}.rule{height:1px;margin-top:18px;background:rgba(255,255,255,.2)}.proof .intro{margin-top:46px;font-size:31px;color:rgba(255,255,255,.8)}.excerpt{margin-top:30px;font-family:var(--serif);font-size:35px;line-height:1.36;letter-spacing:-.4px}.excerpt p+p{margin-top:20px}.cut{color:rgba(255,255,255,.48);text-decoration:line-through;text-decoration-color:#e9735e;text-decoration-thickness:3px}.proof-bottom{position:absolute;left:40px;right:40px;bottom:32px;padding-top:16px;border-top:1px solid rgba(255,255,255,.22);display:flex;justify-content:space-between;gap:20px;font-size:17px;color:rgba(255,255,255,.64)}
+.foot{position:absolute;left:88px;bottom:30px;font-size:15px;color:var(--muted)}.caption{position:absolute;left:870px;top:750px;font-size:15px;color:var(--muted)}
 
-  .col{position:absolute;left:76px;top:72px;width:704px;padding:12px}
-  .wm{font-size:21px;font-weight:600;letter-spacing:-.2px}
-  .claim{margin-top:42px;font-family:var(--serif);font-size:72px;font-weight:400;line-height:1.07;letter-spacing:-2.2px}
-  .zhline{margin-top:26px;font-size:28px;font-weight:400;line-height:1.5;color:var(--ink)}
-  .lead{margin-top:38px;width:620px;font-size:21px;font-weight:400;line-height:1.45;color:var(--muted)}
-  .facts{margin-top:44px;width:660px}
-  .facts .row{display:flex;justify-content:space-between;gap:24px;border-top:1px solid var(--hairline);padding:14px 12px 14px 12px;font-size:21px;font-weight:400;line-height:1.4}
-  .facts .row.mut{color:var(--muted)}
-  .cta{display:inline-flex;align-items:center;justify-content:center;height:52px;padding:0 30px;margin-top:44px;font-size:21px;font-weight:400;color:var(--onAction);text-decoration:none}
-  .cta .arrow{font-size:24px;margin-left:10px}
-  .foot{position:absolute;left:88px;top:852px;font-size:12px;line-height:1.5;color:var(--muted)}
+:root{--apple-focus:#ad4937}
+.unit{width:min(100%,1440px);height:auto;min-height:100vh;overflow:visible;margin-inline:auto;padding:clamp(40px,5vw,72px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);grid-template-rows:auto auto auto auto auto;gap:24px clamp(32px,5vw,72px);align-content:start}
+.brand,.edition,.copy,.details,.cta,.proof,.caption,.foot{position:static;width:auto;height:auto}
+.brand{grid-column:1;grid-row:1}.edition{grid-column:2;grid-row:1;justify-self:end;align-self:center}
+.copy{grid-column:1;grid-row:2}.copy h1{font-size:clamp(54px,5.8vw,78px)}.copy .dek{width:auto;font-size:clamp(22px,2vw,28px)}
+.details{grid-column:1;grid-row:3}.detail{font-size:21px;gap:18px}.detail span:first-child{min-width:0;flex:1}
+.cta{grid-column:1;grid-row:4;justify-self:start}.proof{grid-column:2;grid-row:2/5;min-height:460px;padding:32px clamp(24px,3vw,40px)}.proof-bottom{position:static;margin-top:54px;flex-wrap:wrap}
+.caption{grid-column:2;grid-row:5}.foot{grid-column:1;grid-row:5}
+@media(max-width:900px){
+.unit{width:100%;min-height:0;padding:24px;display:flex;flex-direction:column;gap:22px}
+.brand,.edition,.copy,.details,.cta,.proof,.caption,.foot{position:static;width:auto;height:auto;justify-self:auto}
+.brand{font-size:21px}.edition{margin-top:-18px;text-align:right;font-size:16px}
+.copy h1{font-size:clamp(40px,8.3vw,64px);line-height:1.04;letter-spacing:-1.5px}.copy .zhline{font-size:22px}.copy .dek{font-size:20px;line-height:1.45}
+.details{width:100%}.detail{flex-direction:column;align-items:flex-start;gap:3px;padding:12px 0;font-size:18px}.detail .zh{font-size:17px}
+.cta{align-self:flex-start;height:54px;padding:0 24px;font-size:19px}
+.proof{min-height:0;padding:24px}.proof-top{gap:12px;flex-wrap:wrap;font-size:15px}.proof .intro{margin-top:28px;font-size:23px}.excerpt{font-size:25px}.proof-bottom{margin-top:32px;gap:10px;font-size:14px}
+.caption,.foot{font-size:13px}
+}
 
-  .eyebrow{position:absolute;left:800px;top:112px;width:700px;font-size:14px;color:var(--muted)}
-  .doc{position:absolute;left:800px;top:150px;width:700px;height:560px;padding:40px;display:flex;flex-direction:column;justify-content:space-between}
-  .doc .bar{display:flex;justify-content:space-between;font-size:14px;color:rgba(255,255,255,.62)}
-  .doc .rule{margin-top:20px;height:1px;background:rgba(255,255,255,.16)}
-  .doc .copy{margin-top:36px;font-size:21px;font-weight:400;line-height:1.62;color:var(--onDark)}
-  .doc .cut{text-decoration:line-through;text-decoration-color:var(--action);text-decoration-thickness:2px;color:rgba(255,255,255,.55)}
-  .doc .tag{margin-top:46px;display:flex;align-items:center;gap:12px;font-size:14px;color:rgba(255,255,255,.62)}
-  .doc .tag i{display:block;width:14px;height:2px;background:var(--action)}
-  .doc .status{display:flex;justify-content:space-between;border-top:1px solid rgba(255,255,255,.16);padding-top:18px;font-size:14px;color:rgba(255,255,255,.55)}
-  .cap{position:absolute;left:800px;top:726px;width:700px;font-size:12px;color:var(--muted)}
+
+@media(min-width:501px) and (max-width:900px){body>.unit{padding-left:5vw!important;padding-right:5vw!important}}
 </style>
-</head>
+<link rel="stylesheet" href="../../_shared/apple-interactions.css"></head>
 <body>
-<div class="unit" id="slide">
-
-  <div class="col">
-    <p class="wm">Fern Reading Night</p>
-    <h1 class="claim">We read the line we cut.</h1>
-    <p class="zhline zhserif">我们读那句被删掉的话</p>
-    <p class="lead">A listening evening for the lines that did not survive the edit.</p>
-    <div class="facts">
-      <div class="row"><span>Friday 4 December 2026</span><span>19:30–21:00</span></div>
-      <div class="row"><span>The Paper Room, 14 Willow Lane</span><span class="zh">纸屋 · 柳巷 14 号</span></div>
-      <div class="row mut"><span>Free, 30 seats</span><span class="zh">免费入场，30 个座位</span></div>
+<main class="unit">
+  <p class="brand">Fern Reading Night</p><p class="edition">A listening evening · 2026</p>
+  <section class="copy">
+    <h1>We read the line we cut.</h1>
+    <p class="zhline zh">我们读那句被删掉的话</p>
+    <p class="dek">A listening evening for the lines that did not survive the edit.</p>
+  </section>
+  <section class="details">
+    <p class="detail"><span>Friday 4 December 2026</span><span>19:30–21:00</span></p>
+    <p class="detail"><span>The Paper Room, 14 Willow Lane</span><span class="zh">纸屋 · 柳巷 14 号</span></p>
+    <p class="detail last"><span>Free, 30 seats</span><span class="zh">免费入场，30 个座位</span></p>
+  </section>
+  <a data-apple-motion class="cta" data-cc="30" data-cc-fill="#ad4937" href="#proof">Reserve a seat <span class="arrow">›</span></a>
+  <section class="proof" id="proof" data-cc="18" data-cc-fill="#302e2b">
+    <div class="proof-top"><span>Fern · Draft</span><span>field notes / second pass</span></div>
+    <div class="rule"></div>
+    <p class="intro">One sentence stays in the room.</p>
+    <div class="excerpt">
+      <p>The room was quiet before anyone arrived.</p>
+      <p class="cut">She had already decided to leave before the door opened.</p>
     </div>
-    <a class="cta" data-cc="26" data-cc-fill="#ad4937" href="#">Reserve a seat<span class="arrow">›</span></a>
-  </div>
-
-  <p class="eyebrow">Fern document surface · illustrative</p>
-
-  <div class="doc" data-cc="18" data-cc-fill="#182b40">
-    <div class="top">
-      <div class="bar"><span>Fern · Draft</span><span>field notes</span></div>
-      <div class="rule"></div>
-      <div class="copy">
-        <p>The room was quiet before anyone arrived.</p>
-        <p class="cut">She had already decided to leave before the door opened.</p>
-        <p>We kept the window open anyway.</p>
-      </div>
-      <p class="tag"><i></i>one line cut on the second pass</p>
-    </div>
-    <div class="status"><span>Second pass, one cut kept</span><span>Fern · saved</span></div>
-  </div>
-
-  <p class="cap">Illustrative render, not a photograph</p>
-  <p class="foot">Illustrative example</p>
-</div>
+    <div class="proof-bottom"><span>One line removed, and kept visible</span><span>Fern · saved</span></div>
+  </section>
+  <p class="caption">Illustrative render, not a photograph</p><p class="foot">Illustrative example</p>
+</main>
 <script src="../../_shared/continuous-corner.js"></script>
 </body>
 </html>

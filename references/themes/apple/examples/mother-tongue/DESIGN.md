@@ -1,69 +1,66 @@
-# Lumen, a small home speaker · Apple, mother tongue
+# Lumen · Apple
 
-A visual world for a fictional home speaker, not an Apple product: one product, shown as a sculpture on a solid field, in a gallery sequence. Dialect: none — the mother tongue alone. Forms shown: Keynote slide, Store card, Editorial opener, Flyer sheet, Website page; Bento grid as a variation for a many-feature unit.
+Lumen's world: a small home speaker as a sculpture on a solid field.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts. One product per tile, one claim per unit.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
-Apple, mother tongue — a photography-first gallery in which the product is shown as a sculpture on a solid field, and the interface retreats until it is invisible — Build a gallery from the product silhouette and one claim per field; let field changes mark the reading sequence; never add chrome that competes with the product.
+Apple, mother tongue — make the product or its proof the gallery-scale subject on one solid field, then let a change of ground carry each turn; never reduce the hero until the page reads as documentation.
 
-World: Lumen, a small home speaker, its sound, its material, its price, across a launch gallery, a buy page and a story opener. Keep the tile rhythm, the single blue by role, and the product shadow on the render alone; let each piece bring its own claim and reading task.
+World: Fictional object-led products and their launch, purchase and material stories. A photographed object leads when its form can be judged; where there is no photograph, a readable interface or a measured figure takes its place at the same scale. Every piece keeps one claim, live text and the object’s identity; each brings the task and proof particular to its reader.
 
-Method: Separate the content into a claim, its visible evidence and a decision or lookup task. Build the proof field before setting the labels; select Keynote, Store or Editorial structure by the reader's task, then recompose the reading axis and crop for the actual format.
+Method: Begin with the product silhouette and the change it makes in use. Choose one view that proves that change, then compose the field around its edge; crop only after the object is large enough to lead. Keep the object, its claim and one supporting action on a shared reading axis. Quiet material is an intentional ground, not an empty slot. Follow the sequence from claim to proof to decision.
 
-Amplitude: full on covers, heroes and vistas; reduced on Store, reference and specification units.
+Amplitude: Full for the cover and one later turn; quieter for buying, measurement and source lines.
 
-Anti-reference: a SaaS landing page: centred hero, three icon cards, a gradient button.
+Anti-reference: A SaaS landing page with a centred slogan, three icon cards and a gradient button.
 
 ## Images
 
-One dominant subject per unit, photographed as a sculpture on a solid field, silhouette intact, never cropped to fit. The speaker render carries the single system shadow and nothing else does. A full-page picture with baked text is not an Apple slide, it is a poster. Test images are generated stand-ins, not Apple photographs, and are labelled as such in captions. Crop: hero product cropped to its slot, silhouette intact; cover claim sits in a calm light zone, never over a dark bumper or busy ground.
+Use a photographed or rendered fictional object made for the piece; credit and label a render as illustrative. No Apple or real brand product, photograph, logo, system font file or apple.com interface element may enter. The hero meets the trim as a full-bleed field or sits as a large inset object; on a cover it occupies at least half the frame including its surrounding field. Preserve the full silhouette unless a detail is the declared proof. Scale uniformly; crop to the object’s contour, never stretch it. In Store, repeat one shared product crop across genuine peers. In Editorial, the opening vista may bleed, while proof figures and material views sit within the reading column. Keep all type live, in the calm area the image leaves.
 
 ## Layout
 
-Grid system: Gallery field — derive the proof field and one reading axis from W × H; Store subdivides that field into equal peers, Editorial joins it to a reading column, and Keynote assigns one claim to each slide.
+Grid system: Gallery field — it keeps the object, claim and proof in one composed field while the reading axis survives changes of format.
 
-Gallery field: one product per tile, centred stack, full-bleed field; tiles stack with no gap, and the change of ground is the divider — white, near-black, parchment in sequence. Slide field 16:9, critical content inside the central 80%, nothing critical in the outer 8%. Store field: white cards on a hairline grid. Editorial field: one centred column, about 980 px on the web. Text sits at least 11.34 inside its shape; a title clears its descenders before anything below it; a number group sits mid-frame, number, label and context spaced down. Containers may centre; body, leads, captions, card names and prices stay flush left, ragged right; only hero, vista and cover headlines centre.
+Derive a 12-track grid from W × H: side margin is max(5% W, 6% S), gutter is 1.25% W, and track width is the remaining measure divided by 12. Align title, object bounds, caption and action to shared track edges. Use an 8 px module at S = 1000; group internal gaps in 1, 2, 3 or 5 modules. At every text-to-image boundary, leave at least two modules between visible glyph bounds and the image; measure ink, not text boxes. The image field takes the largest contiguous span and unused tracks remain air. Keynote uses the 16:9 field with critical content inside the central 84%. Store uses the same tracks for a product gallery, choice controls and a fixed purchase row; cards live only here. Editorial uses a centred measure no wider than 82% W or 65 characters, with a full-bleed vista followed by a flush-left reading column. Recompose when W:H changes; never shrink a layout to fit.
 
 ## Typography
 
-The system face, Display cut for titles and Text cut for body, through `-apple-system, system-ui`; elsewhere Inter, display tracking tightened a further 0.01 em. Hero 56 px at 600, leading 1.07, tracking −0.28 px; tile headline 40 px at 600; body 17 px at 400, leading 1.47; caption 14 px; fine print 12 px. Weight 500 never appears; headlines are 600, body is 400.
-
-Tokens carry the portable Inter / Noto Sans SC version; the system face is never distributed.
+Use the platform system face through -apple-system and system-ui, followed by Inter, Noto Sans SC and sans-serif; ship no Apple face. At S = 1000 set launch display at 80 / 600 / 1.05, section display at 56 / 600 / 1.08, editorial lead at 24 / 300 / 1.5, body at 17 / 400 / 1.47, label at 14 / 400 / 1.4 and source at 12 / 400 / 1.45. The product leads the cover, the claim is the largest type after it, and each level differs by visible scale or weight. Keep display tracking at −0.01 em on web only; native tracking follows the face. Use Noto Sans SC at the same role size for Chinese, with 1/8–1/4 em between scripts; break Chinese by phrase, keep product names unbroken and pull line-end punctuation back optically. Use tabular numerals for comparisons. On slides the Keynote floors hold: slide title at least 0.1 S, body at least 0.037 S.
 
 ## Colors
 
-Grounds: white, parchment, near-black product tiles, pure black for video and photograph void. Ink on light grounds, white on dark. Muted secondary and tertiary greys for secondary and footnote text. Blue by role only: link, filled CTA and focus ring, dark-ground link — never one variable for all three. No second hue; colour beyond blue comes from the product itself.
-
-Roles: canvas the page, panel the card, dark the proof-field polarity, ink and muted the reading colours, onDark and onAction their contrasts, hairline a non-text separator; action is the single action accent. Reading text uses only the pairs in Tokens.
+Ground: Apple's white, parchment and near-black. White is the gallery ground; parchment #f5f5f7 separates a quiet field; near-black is reserved for a product or photographic void. Ink #1d1d1f carries reading text, muted #6e6e73 carries secondary text, and hairline #d2d2d7 separates functional rows and outlines Store cards, never decorating. Apple blue has separate roles: link #0066cc on light grounds, action and focus #0071e3, and link #2997ff on dark grounds. A product may bring its own color; no second interface accent appears. White on action and dark, ink or muted on their declared light grounds only.
 
 ## Shapes
 
-Every nonzero radius takes Apple's continuous corner; square forms stay square. One corner, inward from the corner point in units of R: `M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0`. R is at most half the shorter side; a side shorter than 3.05732R shortens its shoulder to half the side, toward the native saturated form (first cubic 0 1, 0 .96, 0 .82). Build it natively (`.continuous`), as this path in SVG, canvas, clip or a slide freeform, or in Figma at 60% smoothing; never `border-radius`, `rect rx`, a preset or a superellipse. Fill, stroke and media clip share one path; nested corners share centres, inner R = max(0, outer R − gap).
-
-Radius ladder: full-bleed fields 0, small elements 5 px, tool buttons 8 px, medium elements 11 px, store cards 18 px, primary actions and choice chips pill. Homepage promo tiles are sharp and full-bleed, separated by gutter; product-page gallery cards are large rounded rectangles. No shadows on cards, buttons or text.
+Use square full-bleed fields. Every nonzero corner uses the continuous contour, built from the shared continuous-corner.js helper or its path: M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0. Set R no larger than half the short side; shorten the shoulder when a side is under 3.05732R. Store cards use R = 18 at S = 1000; actions and choice chips are pills, small tools use R = 8. Inner curves share centres with inner R = max(0, outer R − gap). No card shadow; one soft shadow may ground a rendered product, rgba(0,0,0,.22) at 3 px 5 px 30 px.
 
 ## Forms
 
-- Keynote: one thesis per slide, live text over a calm zone, one dominant image per slide.
-- Store: white utility card, square product crop on top, name and price below in body size, one buy action per card.
-- Editorial: vista opener with one headline and at most one action, then long leads in a centred column. The opener is a photographic vista — a full-bleed product photograph with one headline and at most one action.
-- Flyer: one A4 sheet, real internal padding so no text touches a frame edge, one claim, one dominant image, figure or price at display size in the footer rule.
-- Website: full-width hero image, hero plus three sections plus footer, hierarchy carried by size and weight, centred container with flush-left body, leads, captions and prices.
-- Bento grid: many features on one page, tiles sized by importance, one claim per tile, specs as small number posters, never table rows. Tiles index; they do not prove: each claim is proved in a following unit or carries its own figure.
+- Keynote: one thesis and one large product view per slide; keep live type in a calm zone and the exhibit inside the central field. Never shrink a web tile onto a slide.
+- Store: white cards on parchment with a 1 px hairline and continuous R = 18; one object crop per card at a shared scale, name and price flush left below, choices as pills, and one buy action fixed beside the running price. Never sell with a gallery tile.
+- Editorial: one full-bleed vista with one headline and at most one action, then a generous one-column argument with proof and source beside the claim. Keep the body flush left and end with a dense reference only when the content needs lookup.
 
 ## Variations
 
-One break per unit. A dark turn: one whole unit on a near-black field, with a complete foreground palette on that ground. An oversized numeral: one number at display size, label beneath, the number is the claim, not decoration.
+At a real content turn, permit one complete near-black unit with its own white foreground palette; use it once per sequence. A single figure may take gallery scale when the figure itself is the claim, with its label directly beneath. Keep the object, one claim and the established reading axis.
 
 ## Do's and Don'ts
 
-Do: one product per tile, one claim per unit, live text, blue only by role, a reduced-motion version as the same static sequence. Don't: text baked into images, bullet walls, a second accent colour, a gradient wallpaper, a shadow on a card, weight 500, a single blue variable for link, CTA and focus.
+Floors: facts match each brief exactly; declare every illustration; maintain 4.5:1 text contrast (3:1 for large type); keep reading text live and at its declared size floor for the intended viewing distance; make static output complete as a still; recompose each format instead of scaling a layout; use only original or licensed assets.
+
+Render check: hide the object; does the proof still make its claim checkable at the same scale? Hide the proof; does the object still show what the claim is about?
+
+Test: follow the object’s silhouette, claim and proof across each field change; the turn should clarify the same product rather than start a second story.
+
+Apple test: cover the Lumen name—the composition still reads as Apple’s product language, without another dialect; remove colour—each field holds one lead and one claim; thumbnail the set—the volume changes where the story turns.
+
+Caricature: a centered launch slogan, floating glass controls and a tiny white product render on pale grey; the object cannot be identified or judged.
 
 ## Tokens
-
-Authored for this fictional world at S = 1000; radius sets size, the contour is continuous corner. Product-image colours and hero gradients are source imagery, not additional action colours.
 
 ```yaml
 colors:
@@ -73,37 +70,36 @@ colors:
   ink: "#1d1d1f"
   muted: "#6e6e73"
   action: "#0071e3"
+  focus: "#0071e3"
+  link: "#0066cc"
+  darkLink: "#2997ff"
   onAction: "#ffffff"
   onDark: "#ffffff"
   hairline: "#d2d2d7"
-  link: "#0066cc"
-  darkLink: "#2997ff"
 typography:
-  display: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 56, fontWeight: 600, lineHeight: 1.07 }
-  heading: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 40, fontWeight: 600, lineHeight: 1.1 }
-  lead: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 28, fontWeight: 400, lineHeight: 1.3 }
-  body: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.47 }
-  label: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
-  fine: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: 1.5 }
+  display: { fontFamily: "-apple-system, system-ui, Inter, Noto Sans SC, sans-serif", fontSize: 80, fontWeight: 600, lineHeight: 1.05 }
+  heading: { fontFamily: "-apple-system, system-ui, Inter, Noto Sans SC, sans-serif", fontSize: 56, fontWeight: 600, lineHeight: 1.08 }
+  lead: { fontFamily: "-apple-system, system-ui, Inter, Noto Sans SC, sans-serif", fontSize: 24, fontWeight: 300, lineHeight: 1.5 }
+  body: { fontFamily: "-apple-system, system-ui, Inter, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.47 }
+  label: { fontFamily: "-apple-system, system-ui, Inter, Noto Sans SC, sans-serif", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
+  fine: { fontFamily: "-apple-system, system-ui, Inter, Noto Sans SC, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: 1.45 }
 spacing:
   unit: 8
-  textInset: 11.34
+  grid: 12
+  margin: "max(5% W, 6% S)"
+  gutter: "1.25% W"
   cardInset: 24
-  proofGap: 40
-  tileInset: 80
 rounded:
-  small: 5
   control: 8
   card: 18
 corners:
   contour: "continuous corner"
-  smoothing: 0.6
   shoulderExtent: 1.52866
   innerRadius: "max(0, outerRadius - gap)"
 pairs:
   ink-on-canvas: { backgroundColor: "{colors.canvas}", textColor: "{colors.ink}" }
-  ink-on-panel: { backgroundColor: "{colors.panel}", textColor: "{colors.ink}" }
   muted-on-canvas: { backgroundColor: "{colors.canvas}", textColor: "{colors.muted}" }
+  ink-on-panel: { backgroundColor: "{colors.panel}", textColor: "{colors.ink}" }
   muted-on-panel: { backgroundColor: "{colors.panel}", textColor: "{colors.muted}" }
   onDark-on-dark: { backgroundColor: "{colors.dark}", textColor: "{colors.onDark}" }
   onAction-on-action: { backgroundColor: "{colors.action}", textColor: "{colors.onAction}" }
@@ -113,5 +109,5 @@ pairs:
 
 ## Record
 
-Folio version: 1.1.0. Template version: 14. Date: 2026-11-05.
-Pieces: quiet-hour (Keynote), graphite (Store), aluminium (Editorial), each made from this file alone. Subject is fictional; no Apple product, photograph, logo or font file is used. Tokens are authored for this world, not measured from the brand.
+Folio version: 1.1.0. Template version: 14. Date: 2026-11-07.
+Pieces: quiet-hour (Keynote), graphite (Store), aluminium (Editorial). Fictional subject; no Apple product, photograph, logo, font file or site asset is used. Changes after the lock: aligned to the current Apple theme.

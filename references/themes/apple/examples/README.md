@@ -1,16 +1,17 @@
 # Apple examples — the pieces
 
-Each world holds its `DESIGN.md` and three pieces made from it alone, on three reading tasks, with new content — never a redraw of the world's own product page. Each piece keeps its `brief.md`, one self-contained `.html` unit, and the `preview.png` that was looked at.
+Each world holds its `DESIGN.md` and three pieces made from it alone, on three reading tasks, with new content — never a redraw of the world's own product page. Each piece keeps its `brief.md`, responsive `.html` page, and the `preview.png` that was looked at; declared local assets sit beside it.
 
-- **Formats, recomposed, never scaled:** Keynote 1600 × 900; Store and Bento 1440 × 1000; Editorial 1200 × 1600; poster 1000 × 1414.
-- **Text is live HTML;** faces come from the world's Tokens. No Apple or brand product, photograph, logo or font file.
-- **Every drawn object is a stand-in,** captioned `Illustrative render, not a photograph`. The proof is a readable interface, figure, section, diagram or comparison.
+- **Surface forms, recomposed for web:** Keynote leads with one launch claim; Store and Bento organize product choice; Editorial carries a reading sequence. Keep the intended desktop composition, then recompose down to 320 px without scaling a fixed canvas.
+- **Text is live HTML;** faces come from the world's Tokens. No real Apple or branded product photography, logos or font files.
+- **Every invented image or drawn object is declared once per piece.** The proof is a readable interface, figure, section, diagram or comparison.
 - **Every nonzero radius uses the shared contour:** load `../../_shared/continuous-corner.js`, mark the shape `data-cc="18"` with `data-cc-fill` and `data-cc-stroke`, or `data-cc-clip` for media; give `[data-cc]` `position:relative; isolation:isolate` and `.cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}`.
-- **Static pages;** nothing animates.
+- **Web reflows, never scales the artboard.** Keep the desktop composition at its native format, then recompose at narrower widths so every claim, proof and action fits from 1440 px down to 320 px.
+- **Static compositions, motion where it earns the move.** The artwork does not drift or reveal itself on scroll. Real controls may use brief transform/opacity feedback or a state-change transition (100–300 ms); `prefers-reduced-motion` removes transitional motion while preserving the state. Shared control, local-light and contact-shadow tokens live in `_shared/apple-interactions.css`.
 
-**The eye refuses here:** cream as a default; black plus one vermilion; a face chosen by reflex instead of from Tokens; tracked uppercase kickers, 01/02/03, mono labels, hairlines over a split footer; an oversized numeral with no claim; KPI trios; a navy close; a literal pictogram of the subject; equal cards with equal claims.
+**The eye refuses here:** cream as a default; black plus one vermilion; a face chosen by reflex instead of from Tokens; tracked uppercase kickers, 01/02/03, mono labels, hairlines over a split footer; an oversized numeral with no claim; KPI trios; a navy close; a literal pictogram of the subject; equal cards with equal claims. A brand's signature that names one of these is not a default.
 
-Render with `scripts/render.py`; hold the folder to the floors with `scripts/release-check.py`; judge sameness across worlds on a `scripts/contact.py` sheet, eight to a row.
+Render with `scripts/render.py`, then open each page at 1440, 768 and 320 px and by keyboard; hold the folder to the floors with `scripts/release-check.py`; judge sameness across worlds on a contact sheet, eight to a row.
 
 | World | Pieces |
 |---|---|

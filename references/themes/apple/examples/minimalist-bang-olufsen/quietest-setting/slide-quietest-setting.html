@@ -1,154 +1,21 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=1600">
-<title>Sound Column — the quietest setting</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&amp;family=Noto+Sans+SC:wght@400&amp;display=swap" rel="stylesheet">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Sound — The room is quieter than the speaker.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Sans+SC:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../_shared/apple-interactions.css">
 <style>
-  :root {
-    --canvas:#f4f3ef; --panel:#ffffff; --dark:#282722; --ink:#282722;
-    --muted:#636159; --action:#282722; --onAction:#ffffff; --hairline:#d2d2d7;
-  }
-  * { box-sizing:border-box; margin:0; padding:0; }
-  html,body { background:#e4e2dc; }
-  body { font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif; color:var(--ink); -webkit-font-smoothing:antialiased; }
-  .unit { position:relative; width:1600px; height:900px; overflow:hidden; background:var(--canvas); }
-  .zh { font-family:"Noto Sans SC","Inter",sans-serif; }
-  [data-cc] { position:relative; isolation:isolate; }
-  .cc-bg { position:absolute; left:0; top:0; z-index:-1; pointer-events:none; }
-  .t { position:absolute; }
-  svg { display:block; }
+:root{--apple-focus:#282722}
+*{box-sizing:border-box}html,body{margin:0;background:#111313;color:#f4f3ef;font-family:Inter,"Noto Sans SC",system-ui,sans-serif}.unit{position:relative;width:1600px;height:900px;overflow:hidden;background:linear-gradient(132deg,#202321 0%,#282a27 60%,#171a19 100%)}.brand{position:absolute;left:88px;top:54px;font-size:20px;color:#c6c9c5}.product{position:absolute;left:96px;top:122px;width:445px;height:610px}.claim{position:absolute;left:610px;top:112px;width:895px;font-size:77px;font-weight:600;line-height:1.02;letter-spacing:-.055em;margin:0}.zh{position:absolute;left:617px;top:300px;font-family:"Noto Sans SC",sans-serif;font-size:30px;color:#c6c9c5}.value{position:absolute;left:612px;top:372px;font-size:120px;font-weight:400;line-height:1;letter-spacing:-.05em}.value small{font-size:38px;letter-spacing:0}.caption{position:absolute;left:622px;top:506px;font-size:28px;line-height:1.4;color:#d4d6d2}.gap{position:absolute;left:620px;top:582px;font-size:28px;line-height:1.4;color:#f4f3ef}.rule{position:absolute;left:92px;right:92px;bottom:144px;height:3px;background:linear-gradient(90deg,#8f9692 0%,#d4d7d5 100%)}.tick{position:absolute;bottom:131px;width:2px;height:27px;background:#a7ada9}.tick span{position:absolute;top:35px;left:50%;transform:translateX(-50%);font-size:19px;color:#d0d4d1}.unitlabel{position:absolute;left:92px;bottom:76px;font-size:17px;color:#aab0ac}.bracket{position:absolute;left:446px;right:975px;bottom:196px;height:32px;border-top:3px solid #f0f1ef;border-left:3px solid #f0f1ef;border-right:3px solid #f0f1ef;text-align:center;font-size:17px;padding-top:5px}.bracket span{position:relative;top:-33px;background:#242724;padding:0 12px}.foot{position:absolute;left:92px;right:92px;bottom:30px;display:flex;justify-content:space-between;color:#9fa6a2;font-size:13px}
+</style><style class="apple-web-reflow">
+@media(max-width:1600px){
+ html,body{overflow-x:hidden;background:#202321}.unit{width:100%;max-width:1600px;height:auto;min-height:100vh;overflow:visible;margin:auto;padding:28px max(24px,5vw) 28px;display:grid;grid-template-columns:minmax(210px,34%) minmax(0,1fr);gap:16px 32px;background:#202321}.brand,.product,.claim,.zh,.value,.caption,.gap,.scale,.foot{position:static;width:auto;height:auto}.brand{grid-column:1/-1;font-size:18px}.product{grid-column:1;grid-row:2/span 5;width:100%;max-width:300px;align-self:center;justify-self:center}.claim{grid-column:2;grid-row:2;font-size:clamp(38px,5.5vw,72px);line-height:1.05;letter-spacing:-.04em}.zh{grid-column:2;grid-row:3;font-size:22px}.value{grid-column:2;grid-row:4;font-size:clamp(68px,10vw,108px);line-height:1}.value small{font-size:.38em}.caption{grid-column:2;grid-row:5;font-size:18px;line-height:1.45}.gap{grid-column:2;grid-row:6;font-size:20px;line-height:1.5}.scale{grid-column:1/-1;position:relative;height:110px!important;margin-top:8px}.rule{position:absolute;left:0;right:0;bottom:42px;height:3px;background:#aab0ac}.tick{position:absolute;bottom:28px;width:2px;height:27px}.tick span{top:34px;font-size:16px}.bracket{position:absolute;left:25%;right:auto;width:12.5%;bottom:78px;height:26px;font-size:15px}.unitlabel{position:absolute;left:0;bottom:0;font-size:16px}.foot{grid-column:1/-1;display:flex;justify-content:space-between;gap:10px;font-size:14px;line-height:1.45;color:#c2c6c2}.foot span:last-child{text-align:right}}
+@media(max-width:720px){.unit{grid-template-columns:minmax(0,1fr);padding-bottom:24px}.brand,.product,.claim,.zh,.value,.caption,.gap,.scale,.foot{grid-column:1;grid-row:auto}.product{width:min(100%,250px);max-width:250px;order:2}.claim{order:1;font-size:clamp(38px,10vw,54px)}.zh{order:3}.value{order:4;font-size:76px}.caption{order:5}.gap{order:6;font-size:18px}.scale{order:7;height:118px!important;margin-top:8px}.foot{order:8;flex-direction:column}.foot span:last-child{text-align:left}.bracket{left:25%;width:12.5%}}
 
-  .mark { left:96px; top:58px; font-size:20px; line-height:1.2; letter-spacing:.2px; }
-  .claim { left:96px; top:150px; width:820px; font-size:78px; font-weight:400; line-height:1.05; letter-spacing:-2.2px; }
-  .claim-zh { left:96px; top:352px; font-size:25px; line-height:1.5; color:var(--muted); }
-  .num { left:96px; top:416px; font-size:112px; line-height:1; letter-spacing:-4px; }
-  .num .unitmark { font-size:34px; letter-spacing:0; margin-left:22px; }
-  .numlabel { left:100px; top:548px; font-size:17px; line-height:1.5; color:var(--muted); }
-  .ctx { left:96px; top:586px; width:640px; font-size:17px; line-height:1.5; }
-  .dim { left:1000px; top:466px; width:100px; text-align:right; font-size:12px; line-height:1.4; color:var(--muted); }
-  .caption { left:1000px; top:806px; width:520px; font-size:12px; line-height:1.5; color:var(--muted); }
-  .foot { left:96px; top:826px; width:1408px; font-size:12px; line-height:1.5; color:var(--muted); }
-</style>
-</head>
-<body>
-<div class="unit" id="slide">
-
-  <!-- The object, drawn at one scale: 480 mm tall = 560 px, 96 mm wide = 112 px.
-       Aluminium frame, wool front, square edges — the world has no chrome. -->
-  <svg width="1600" height="900" viewBox="0 0 1600 900" aria-hidden="true" style="position:absolute;left:0;top:0">
-    <defs>
-      <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
-        <stop offset="0" stop-color="#e6e4dd"/>
-        <stop offset=".07" stop-color="#ceccc4"/>
-        <stop offset=".17" stop-color="#dedcd5"/>
-        <stop offset=".46" stop-color="#bcbab2"/>
-        <stop offset=".70" stop-color="#d3d1c9"/>
-        <stop offset=".90" stop-color="#aaa89f"/>
-        <stop offset="1" stop-color="#918f88"/>
-      </linearGradient>
-      <linearGradient id="wool" x1="0" y1="0" x2="1" y2="0">
-        <stop offset="0" stop-color="#8b8880"/>
-        <stop offset=".30" stop-color="#75726a"/>
-        <stop offset=".68" stop-color="#605e57"/>
-        <stop offset="1" stop-color="#4d4b45"/>
-      </linearGradient>
-      <linearGradient id="recess" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#000000" stop-opacity=".20"/>
-        <stop offset="1" stop-color="#000000" stop-opacity="0"/>
-      </linearGradient>
-      <pattern id="weave" width="3" height="3" patternUnits="userSpaceOnUse">
-        <rect x="0" y="0" width="3" height="1" fill="#000000" opacity=".11"/>
-        <rect x="0" y="0" width="1" height="3" fill="#ffffff" opacity=".07"/>
-      </pattern>
-      <filter id="soft" x="-80%" y="-400%" width="260%" height="900%">
-        <feGaussianBlur stdDeviation="11"/>
-      </filter>
-    </defs>
-
-    <!-- one shadow, on the object alone -->
-    <ellipse cx="1210" cy="772" rx="94" ry="11" fill="#282722" opacity=".13" filter="url(#soft)"/>
-
-    <!-- cabinet -->
-    <rect x="1154" y="200" width="112" height="560" fill="url(#metal)"/>
-
-    <!-- wool front, inset 10 mm from each side, 26 mm at the top, 26 mm at the base -->
-    <rect x="1164" y="222" width="92" height="516" fill="url(#wool)"/>
-    <rect x="1164" y="222" width="92" height="516" fill="url(#weave)"/>
-    <rect x="1164" y="222" width="92" height="16" fill="url(#recess)"/>
-
-    <!-- edges: the two lines that make the front read as inset -->
-    <rect x="1164" y="222" width="1.5" height="516" fill="#ffffff" opacity=".22"/>
-    <rect x="1254.5" y="222" width="1.5" height="516" fill="#000000" opacity=".22"/>
-
-    <!-- top plate and base: aluminium, with a reveal at each joint -->
-    <rect x="1154" y="200" width="112" height="1.5" fill="#ffffff" opacity=".40"/>
-    <rect x="1154" y="220" width="112" height="2" fill="#000000" opacity=".20"/>
-    <rect x="1154" y="224" width="112" height="1" fill="#ffffff" opacity=".26"/>
-    <rect x="1154" y="736" width="112" height="2" fill="#000000" opacity=".18"/>
-    <rect x="1154" y="740" width="112" height="1" fill="#ffffff" opacity=".22"/>
-    <rect x="1154" y="758" width="112" height="2" fill="#000000" opacity=".14"/>
-
-    <!-- side returns -->
-    <rect x="1154" y="200" width="2" height="560" fill="#ffffff" opacity=".26"/>
-    <rect x="1264" y="200" width="2" height="560" fill="#000000" opacity=".16"/>
-  </svg>
-
-  <!-- dimension line: the drawing is to scale, so the number can be trusted -->
-  <svg width="1600" height="900" viewBox="0 0 1600 900" aria-hidden="true" style="position:absolute;left:0;top:0">
-    <g stroke="#b9b7ae" stroke-width="1">
-      <line x1="1104" y1="200" x2="1104" y2="760"/>
-      <line x1="1096" y1="200" x2="1112" y2="200"/>
-      <line x1="1096" y1="760" x2="1112" y2="760"/>
-    </g>
-  </svg>
-  <p class="t dim">480 mm</p>
-
-  <p class="t mark">Sound</p>
-
-  <h1 class="t claim pad">The room is quieter
-than the speaker.</h1>
-  <p class="t claim-zh zh">房间比音箱更安静</p>
-
-  <p class="t num">30<span class="unitmark">dB</span></p>
-  <p class="t numlabel">lowest setting, at one metre</p>
-  <p class="t ctx">Room tone 28 dB. Two decibels is the whole gap.</p>
-
-  <!-- The proof: a linear dB SPL scale, 24 to 40, with the room and the
-       speaker's floor marked and the gap drawn as a bar. -->
-  <svg width="1600" height="900" viewBox="0 0 1600 900" aria-hidden="true" style="position:absolute;left:0;top:0">
-    <text x="271" y="652" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#282722">2 dB</text>
-    <rect x="236" y="668" width="70" height="6" fill="#282722"/>
-
-    <line x1="96" y1="690" x2="656" y2="690" stroke="#d2d2d7" stroke-width="1"/>
-    <g stroke="#d2d2d7" stroke-width="1">
-      <line x1="96" y1="684" x2="96" y2="696"/>
-      <line x1="376" y1="684" x2="376" y2="696"/>
-      <line x1="656" y1="684" x2="656" y2="696"/>
-    </g>
-    <g stroke="#282722" stroke-width="1.5">
-      <line x1="236" y1="670" x2="236" y2="700"/>
-      <line x1="306" y1="670" x2="306" y2="700"/>
-    </g>
-
-    <g font-family="Inter, sans-serif" font-size="12" fill="#636159" text-anchor="middle">
-      <text x="96" y="716">24</text>
-      <text x="376" y="716">32</text>
-      <text x="656" y="716">40</text>
-    </g>
-    <g font-family="Inter, sans-serif" font-size="12" fill="#282722" text-anchor="middle">
-      <text x="236" y="716">28</text>
-      <text x="306" y="716">30</text>
-    </g>
-    <text x="96" y="748" font-family="Inter, sans-serif" font-size="12" fill="#636159">dB SPL</text>
-  </svg>
-
-  <p class="t caption">Illustrative render, not a photograph</p>
-  <p class="t foot">Illustrative example</p>
-</div>
-<script src="../../_shared/continuous-corner.js"></script>
-</body>
-</html>
+</style><style class="apple-web-type-floor">.caption,.gap{font-size:20px;line-height:1.45}.foot{font-size:14px}</style><style>.scale{position:relative;width:calc(100% - 184px);height:100px;margin:0 92px}.rule{left:0;right:0;bottom:34px}.tick{bottom:21px}.tick span{font-size:16px}.bracket{left:25%;right:auto;width:12.5%;bottom:68px}.unitlabel{left:0;bottom:0}</style><style>@media(max-width:1600px){.scale{width:100%;margin:0}}</style><style>@media(max-width:1600px){.unitlabel{top:0;bottom:auto}}</style></head><body><main class="unit"><div class="brand">Sound · lowest setting</div>
+<svg class="product" viewBox="0 0 445 610" role="img" aria-label="A 480 millimetre brushed aluminium speaker column">
+<defs><linearGradient id="body" x1="0" y1="0" x2="1" y2=".2"><stop stop-color="#373b39"/><stop offset=".08" stop-color="#bec3bf"/><stop offset=".17" stop-color="#626864"/><stop offset=".32" stop-color="#e0e1dc"/><stop offset=".47" stop-color="#777c77"/><stop offset=".7" stop-color="#333835"/><stop offset=".86" stop-color="#c6cac5"/><stop offset="1" stop-color="#4c514d"/></linearGradient><linearGradient id="cap" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f2f2ed"/><stop offset=".3" stop-color="#9da39e"/><stop offset="1" stop-color="#414643"/></linearGradient><pattern id="cloth" width="5" height="5" patternUnits="userSpaceOnUse"><path d="M0 0H5M0 2.5H5M0 0V5M2.5 0V5" stroke="#b5bab5" stroke-opacity=".18" stroke-width=".6"/></pattern><filter id="ground" x="-60%" y="-40%" width="220%" height="220%"><feGaussianBlur stdDeviation="16"/></filter></defs>
+<ellipse cx="235" cy="566" rx="132" ry="24" fill="#000" opacity=".62" filter="url(#ground)"/><rect x="150" y="74" width="140" height="470" rx="66" fill="url(#body)" stroke="#c7ccc7" stroke-opacity=".45" stroke-width="2"/><rect x="156" y="123" width="128" height="376" rx="54" fill="#303633"/><rect x="156" y="123" width="128" height="376" rx="54" fill="url(#cloth)"/><rect x="151" y="70" width="138" height="55" rx="27" fill="url(#cap)" stroke="#e7e9e4" stroke-opacity=".5"/><ellipse cx="220" cy="72" rx="67" ry="18" fill="#b7bdb8" stroke="#e8ebe6" stroke-width="2"/><ellipse cx="220" cy="76" rx="42" ry="10" fill="#858b86"/><path d="M166 139 Q173 104 185 98" fill="none" stroke="#fff" stroke-width="6" opacity=".55" stroke-linecap="round"/><rect x="152" y="492" width="136" height="44" rx="20" fill="url(#cap)" stroke="#e2e6e1" stroke-opacity=".45"/><path d="M174 164 V467" stroke="#fff" stroke-width="2" opacity=".13"/><text x="220" y="586" fill="#f4f3ef" font-size="18" text-anchor="middle" font-family="Inter,sans-serif">480 mm</text>
+</svg>
+<h1 class="claim">The room is quieter<br>than the speaker.</h1><p class="zh">房间比音箱更安静</p><div class="value">30 <small>dB</small></div><p class="caption">lowest setting, at one metre</p><p class="gap">Room tone 28 dB. Two decibels is the whole gap.</p>
+<section class="scale" role="img" aria-label="Linear decibel scale from 24 to 40 dB SPL; room tone is 28 dB and the speaker is 30 dB, a 2 dB gap"><div class="rule"></div><div class="bracket"><span>2 dB</span></div>
+<div class="tick" style="left:0%"><span>24</span></div><div class="tick" style="left:25%"><span>28</span></div><div class="tick" style="left:37.5%"><span>30</span></div><div class="tick" style="left:50%"><span>32</span></div><div class="tick" style="left:100%"><span>40</span></div><div class="unitlabel">dB SPL</div></section>
+<div class="foot"><span>Illustrative example · Illustrative render, not a photograph</span><span>Sound Column · one metre reference</span></div></main></body></html>

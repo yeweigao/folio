@@ -2,183 +2,97 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1440">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pebble ring sizing — bento</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&amp;family=Inter:wght@400;600&amp;family=Noto+Sans+SC:wght@400&amp;family=Noto+Serif+SC:wght@400&amp;display=swap" rel="stylesheet">
 <style>
-  :root{
-    --canvas:#f9f5ed; --panel:#eee7db; --dark:#243329;
-    --ink:#263028; --muted:#5a625b; --action:#215a8a;
-    --onAction:#ffffff; --onDark:#ffffff; --hairline:#d2d2d7;
-    --serif:"Fraunces","Noto Serif SC",serif;
-    --sans:"Inter","Noto Sans SC",sans-serif;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:#e6e0d4}
-  body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}
-  .unit{position:relative;width:1440px;height:1000px;overflow:hidden;background:var(--canvas)}
-  .zh{font-family:"Noto Sans SC",var(--sans)}
-  .num{font-variant-numeric:tabular-nums}
-  [data-cc]{position:relative;isolation:isolate}
-  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
-  a{text-decoration:none;color:var(--action)}
+:root{--apple-focus:#81523a;--canvas:#f9f5ed;--panel:#eee7db;--dark:#243329;--ink:#263028;--muted:#5a625b;--action:#81523a;--serif:"Fraunces","Noto Serif SC",serif;--sans:"Inter","Noto Sans SC",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html,body{background:var(--canvas)}body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}.unit{position:relative;width:1440px;height:1000px;overflow:hidden;background:var(--canvas)}.zh{font-family:"Noto Sans SC",var(--sans)}.num{font-variant-numeric:tabular-nums}[data-cc]{position:relative;isolation:isolate}.cc-bg{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.hdr{position:absolute;left:76px;right:76px;top:38px;display:flex;align-items:baseline;justify-content:space-between}.hdr b{font-size:21px;font-weight:600}.hdr span{font-size:15px;color:var(--muted)}.intro{position:absolute;left:76px;top:100px;width:1288px}.intro .eyebrow{font-size:15px;color:var(--muted)}.intro h1{width:740px;margin-top:9px;font-family:var(--serif);font-size:60px;font-weight:400;line-height:1.04;letter-spacing:-1.8px}.intro .zhline{margin-top:8px;font-size:27px;color:var(--muted)}.intro .dek{position:absolute;left:770px;top:56px;width:510px;font-size:20px;line-height:1.48;color:var(--muted)}
+.object{position:absolute;left:76px;top:266px;width:690px;height:498px;padding:20px 26px}.object h2{font-size:17px;font-weight:400;color:var(--muted)}.ring{position:absolute;left:63px;top:50px;width:560px;height:340px;overflow:visible}.object .dimension{position:absolute;left:64px;bottom:45px;right:48px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid #b6aa98;padding-top:14px}.dimension strong{font-size:27px;font-weight:400}.dimension span{font-size:15px;color:var(--muted)}.caption{position:absolute;left:26px;bottom:14px;font-size:13px;color:var(--muted)}
+.size{position:absolute;left:804px;top:250px;width:560px}.sizehead{display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid var(--ink);padding-bottom:14px}.sizehead h2{font-size:25px;font-weight:400}.sizehead span{font-size:14px;color:var(--muted)}.measureheads{display:grid;grid-template-columns:80px 1fr 1fr;padding:12px 10px 8px;font-size:13px;color:var(--muted)}.measureheads span:not(:first-child){text-align:right}.size-row{display:grid;grid-template-columns:80px 1fr 1fr;align-items:center;height:37px;padding:0 10px;border-top:1px solid #d5cdbf;font-size:18px;font-variant-numeric:tabular-nums}.size-row span:not(:first-child){text-align:right}.size-row.selected{color:var(--action);font-weight:600;border-top:2px solid var(--action);border-bottom:2px solid var(--action)}.finish{position:absolute;left:804px;top:665px;width:560px}.finish h2{font-size:16px;font-weight:400;color:var(--muted)}.chips{display:flex;gap:11px;margin-top:11px}.chip{height:44px;min-width:132px;padding:0 15px;display:flex;align-items:center;gap:11px;background:transparent;border:1px solid #cfc8bb;font:inherit;font-size:17px;color:inherit;cursor:pointer}.chip.active{border:2px solid var(--action)}.swatch{width:22px;height:22px;display:inline-block;border:1px solid rgba(38,48,40,.2)}.cream{background:#d5c6a8}.olive{background:#4d5b4d}.slate{background:#707b7d}.ring[data-finish="cream"] #band stop:nth-child(1){stop-color:#e5dcc8}.ring[data-finish="cream"] #band stop:nth-child(2){stop-color:#b8aa8d}.ring[data-finish="cream"] #band stop:nth-child(3){stop-color:#807153}.ring[data-finish="cream"] #band stop:nth-child(4){stop-color:#594d38}.ring[data-finish="cream"] #band stop:nth-child(5){stop-color:#aa9a79}.ring[data-finish="cream"] #band stop:nth-child(6){stop-color:#574c37}.ring[data-finish="cream"] #rim stop:nth-child(1){stop-color:#b9a883}.ring[data-finish="cream"] #rim stop:nth-child(2){stop-color:#756648}.ring[data-finish="cream"] #rim stop:nth-child(3){stop-color:#423a2a}.ring[data-finish="slate"] #band stop:nth-child(1){stop-color:#9ba5aa}.ring[data-finish="slate"] #band stop:nth-child(2){stop-color:#657178}.ring[data-finish="slate"] #band stop:nth-child(3){stop-color:#404b52}.ring[data-finish="slate"] #band stop:nth-child(4){stop-color:#29343a}.ring[data-finish="slate"] #band stop:nth-child(5){stop-color:#59666c}.ring[data-finish="slate"] #band stop:nth-child(6){stop-color:#29343a}.ring[data-finish="slate"] #rim stop:nth-child(1){stop-color:#7c898f}.ring[data-finish="slate"] #rim stop:nth-child(2){stop-color:#46535a}.ring[data-finish="slate"] #rim stop:nth-child(3){stop-color:#222d33}.finish p{margin-top:12px;font-size:15px;color:var(--muted)}
+.buybar{position:absolute;left:0;right:0;bottom:0;height:94px;padding:0 76px;background:#eee7db;border-top:1px solid #d2d2d7;display:flex;align-items:center;justify-content:space-between}.product{display:flex;align-items:baseline;gap:22px}.product strong{font-size:20px;font-weight:600}.product span{font-size:17px}.shipping{margin-left:auto;margin-right:30px;font-size:15px;color:var(--muted)}.action{height:50px;padding:0 29px;display:flex;align-items:center;color:#fff;font-size:17px;text-decoration:none}.footer{position:absolute;left:76px;bottom:101px;font-size:12px;color:var(--muted)}
 
-  .hdr{position:absolute;left:80px;top:40px;width:1280px;display:flex;justify-content:space-between;align-items:baseline}
-  .hdr b{font-size:21px;font-weight:600;letter-spacing:-.2px}
-  .hdr span{font-size:14px;color:var(--muted)}
+:root{--apple-focus:#81523a}
+.unit{width:min(100%,1440px);height:auto;min-height:100vh;overflow:visible;margin-inline:auto;padding:32px clamp(24px,5vw,72px) 0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:"hdr hdr" "intro intro" "wearer size" "object size" "object finish" "footer footer" "buybar buybar";align-content:start;gap:24px 40px}
+.hdr,.intro,.object,.size,.finish,.footer,.buybar{position:static;width:auto;height:auto;left:auto;right:auto;top:auto;bottom:auto}
+.hdr{grid-area:hdr}.intro{grid-area:intro;width:auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px 40px;align-items:end}.intro .eyebrow{grid-column:1/-1}.intro h1{width:auto;font-size:clamp(48px,4.3vw,60px)}.intro .zhline{grid-column:1;grid-row:3}.intro .dek{position:static;grid-column:2;grid-row:2/4;width:auto;align-self:center;font-size:18px}.wearer{grid-area:wearer;margin:0;align-self:start}.wearer img{display:block;width:78%;max-width:100%;height:auto;margin-inline:auto;aspect-ratio:1.6;object-fit:cover}.wearer[data-apple-light]::before{inset:-18% 0}.wearer figcaption{margin-top:7px;color:var(--muted);font-size:13px;line-height:1.4}
+.object{grid-area:object;padding:20px 0;display:grid;grid-template-columns:1fr 1fr;gap:12px}.object h2,.object .ring{grid-column:1/-1}.object .ring{position:static;width:100%;height:auto}.object .dimension{position:static;grid-column:1/-1;display:grid;grid-template-columns:auto 1fr;align-items:baseline;justify-content:initial;gap:6px 16px}.dimension strong{font-size:22px}.dimension span{font-size:14px}.object .caption{position:static;grid-column:1/-1;margin-top:4px}
+.size{grid-area:size}.finish{grid-area:finish}.sizehead{gap:12px;flex-wrap:wrap}.measureheads,.size-row{grid-template-columns:42px minmax(0,1fr) minmax(0,1fr)}.measureheads{font-size:13px}.size-row{font-size:16px}.finish .chips{flex-wrap:wrap}.chip{min-width:0}.footer{grid-area:footer}.buybar{grid-area:buybar;position:sticky;bottom:0;z-index:3;margin-left:-5vw;margin-right:-5vw;padding:16px 5vw;min-height:90px}.action{font:inherit;border:0;background:transparent;cursor:pointer}.cart-status{font-size:14px;color:var(--muted)}.cart-status:empty{display:none}
+@media(max-width:900px){
+.unit{width:100%;min-height:0;padding:24px 24px 0;grid-template-columns:minmax(0,1fr);grid-template-areas:"hdr" "intro" "wearer" "size" "object" "finish" "footer" "buybar";gap:20px}
+.hdr{align-items:baseline}.intro{grid-template-columns:1fr;gap:8px}.intro .eyebrow,.intro h1,.intro .zhline,.intro .dek{grid-column:1;grid-row:auto}.intro h1{font-size:clamp(38px,7.5vw,56px)}.intro .zhline{font-size:21px}.intro .dek{font-size:17px;line-height:1.5}
+.wearer img{aspect-ratio:1.45;width:78%}.object{padding:14px 0;gap:10px}.object .dimension{grid-template-columns:auto 1fr;gap:5px 12px}
+.sizehead h2{font-size:22px}.sizehead span{font-size:13px}.measureheads,.size-row{grid-template-columns:38px minmax(0,1fr) minmax(0,1fr)}.size-row{height:auto;min-height:42px;padding:7px 4px;font-size:14px}.measureheads{padding:10px 4px 7px;font-size:12px}.size-row span:not(:first-child),.measureheads span:not(:first-child){text-align:right}.size>p{font-size:13px!important;line-height:1.45}
+.finish .chips{gap:8px}.chip{height:42px;padding:0 10px;font-size:15px}.finish p{font-size:14px;line-height:1.45}
+.buybar{margin-left:-24px;margin-right:-24px;padding:12px 24px;min-height:76px;flex-wrap:wrap;gap:8px}.product{gap:10px;flex-wrap:wrap}.product strong{font-size:17px}.product span,.shipping{font-size:14px}.shipping{margin:0 auto 0 0}.action{height:46px;padding:0 18px;font-size:15px}
+}
+@media(max-width:480px){.wearer img{aspect-ratio:1.18;width:78%}.dimension strong{font-size:19px}.dimension span{font-size:13px}.size-row{font-size:13px}.measureheads{font-size:11px}.buybar{align-items:center}.shipping{display:none}}
 
-  .tile{position:absolute;padding:26px 28px}
-  .lead{left:80px;top:96px;width:760px;height:230px;padding:30px 32px}
-  .lead .eb{font-size:14px;color:var(--muted)}
-  .lead h1{margin-top:12px;font-family:var(--serif);font-size:42px;font-weight:400;line-height:1.1;letter-spacing:-.8px}
-  .lead .zhline{margin-top:8px;font-family:var(--serif);font-size:20px;line-height:1.5;color:var(--muted)}
-  .lead p.sm{margin-top:14px;width:640px;font-size:17px;line-height:1.55;color:var(--muted)}
 
-  .band{left:856px;top:96px;width:504px;height:360px;display:flex;flex-direction:column;justify-content:space-between}
-  .band .lab{font-size:14px;color:var(--muted)}
-  .bandrow{display:flex;align-items:center;gap:24px}
-  .specs .sp+.sp{margin-top:22px}
-  .specs b{display:block;font-size:21px;font-weight:400;line-height:1.2;letter-spacing:-.2px}
-  .specs span{display:block;margin-top:4px;font-size:13px;line-height:1.4;color:var(--muted)}
-  .cap{font-size:12px;line-height:1.5;color:var(--muted)}
-  .src{margin-top:6px}
+@media(min-width:501px) and (max-width:900px){body>.unit{padding-left:5vw!important;padding-right:5vw!important}}
 
-  .chart{left:80px;top:342px;width:760px;height:452px;display:flex;flex-direction:column}
-  .chart .top{display:flex;justify-content:space-between;align-items:baseline}
-  .chart .top b{font-size:14px;font-weight:400;color:var(--muted)}
-  .chart .top span{font-size:12px;color:var(--muted)}
-  .chips{display:flex;gap:8px;margin-top:14px}
-  .chip{display:inline-flex;align-items:center;justify-content:center;width:64px;height:38px;
-        font-size:16px;color:var(--ink)}
-  .chip.on{color:var(--action);font-weight:600}
-  table{width:100%;border-collapse:collapse;margin-top:14px}
-  th{font-size:12px;font-weight:400;color:var(--muted);text-align:right;padding:0 0 8px;letter-spacing:0}
-  th:first-child{text-align:left}
-  td{font-size:17px;line-height:1.3;padding:5px 0;border-top:1px solid var(--hairline);text-align:right;color:var(--ink)}
-  td:first-child{text-align:left}
-  tr.on td{font-weight:600}
-  tr.on td:first-child{color:var(--action)}
-
-  .fin{left:856px;top:472px;width:504px;height:322px}
-  .fin .lab{font-size:14px;color:var(--muted)}
-  .fr{display:flex;align-items:center;gap:16px;height:62px;border-top:1px solid var(--hairline)}
-  .fr:first-of-type{border-top:0}
-  .fr .nm{font-size:17px}
-  .fr .py{margin-left:auto;font-size:14px;color:var(--muted)}
-
-  .bar{left:80px;top:810px;width:1280px;height:84px;padding:0 32px;
-       display:flex;align-items:center;justify-content:space-between}
-  .bar .left{display:flex;align-items:baseline;gap:18px}
-  .bar .left b{font-size:17px;font-weight:600}
-  .bar .left span{font-size:17px;color:var(--ink)}
-  .bar .right{display:flex;align-items:center;gap:22px;font-size:14px;color:var(--muted)}
-  .pill{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 28px;
-        font-size:17px;color:var(--onAction)}
-
-  .foot{position:absolute;left:80px;top:918px;width:1280px;display:flex;justify-content:space-between;
-        font-size:12px;line-height:1.5;color:var(--muted)}
+@media(min-width:501px) and (max-width:900px){.buybar{margin-left:-5vw;margin-right:-5vw;padding-left:5vw;padding-right:5vw}}
 </style>
-</head>
+<link rel="stylesheet" href="../../_shared/apple-interactions.css"></head>
 <body>
-<div class="unit" id="page">
-
-  <div class="hdr"><b>Pebble</b><span>Sizing guide</span></div>
-
-  <div class="tile lead" data-cc="18" data-cc-fill="#eee7db" data-cc-stroke="#d2d2d7">
-    <p class="eb">Ring, size and finish</p>
-    <h1>Eight sizes, three finishes.</h1>
-    <p class="zhline zh">八种尺码，三种颜色</p>
-    <p class="sm">Measure the finger at room temperature. The band is 7.9 mm wide, so a Pebble sits closer to its neighbour than a wedding ring does.</p>
-  </div>
-
-  <div class="tile band" data-cc="18" data-cc-fill="#eee7db" data-cc-stroke="#d2d2d7">
-    <p class="lab">The ring, from above</p>
-    <div class="bandrow">
-      <svg width="216" height="216" viewBox="0 0 216 216" aria-hidden="true">
-        <defs>
-          <linearGradient id="m" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#3c4a3f"/><stop offset=".45" stop-color="#243329"/>
-            <stop offset=".75" stop-color="#2e3d32"/><stop offset="1" stop-color="#1a2620"/>
-          </linearGradient>
-        </defs>
-        <circle cx="108" cy="108" r="95" fill="url(#m)"/>
-        <circle cx="108" cy="108" r="52" fill="#eee7db"/>
-        <circle cx="108" cy="108" r="52" fill="none" stroke="#16211b" stroke-width="1.5" opacity=".55"/>
-        <circle cx="108" cy="108" r="95" fill="none" stroke="#ffffff" stroke-width="1.2" opacity=".2"/>
-        <circle cx="108" cy="108" r="84" fill="none" stroke="#ffffff" stroke-width="1" opacity=".1"/>
-        <rect x="96" y="154" width="24" height="8" fill="#16211b"/>
-        <circle cx="102" cy="158" r="1.6" fill="#9fb3a6" opacity=".75"/>
-        <circle cx="114" cy="158" r="1.6" fill="#9fb3a6" opacity=".75"/>
-        <line x1="58" y1="108" x2="158" y2="108" stroke="#263028" stroke-width="1.2"/>
-        <path d="M58 108 l7 -4 l0 8 z" fill="#263028"/>
-        <path d="M158 108 l-7 -4 l0 8 z" fill="#263028"/>
-        <line x1="56" y1="102" x2="56" y2="114" stroke="#263028" stroke-width="1.2"/>
-        <line x1="160" y1="102" x2="160" y2="114" stroke="#263028" stroke-width="1.2"/>
-      </svg>
-      <div class="specs">
-        <div class="sp"><b class="num">18.9 mm</b><span>inner diameter, size 9</span></div>
-        <div class="sp"><b class="num">7.9 mm</b><span>band width</span></div>
-        <div class="sp"><b class="num">2.9 mm</b><span>band thickness</span></div>
-      </div>
-    </div>
-    <p class="cap">Illustrative render, not a photograph</p>
-  </div>
-
-  <div class="tile chart" data-cc="18" data-cc-fill="#eee7db" data-cc-stroke="#d2d2d7">
-    <div class="top"><b>Size chart</b><span>US sizes, millimetres</span></div>
-    <div class="chips">
-      <span class="chip" data-cc="19" data-cc-fill="#f9f5ed" data-cc-stroke="#d2d2d7">6</span>
-      <span class="chip" data-cc="19" data-cc-fill="#f9f5ed" data-cc-stroke="#d2d2d7">7</span>
-      <span class="chip" data-cc="19" data-cc-fill="#f9f5ed" data-cc-stroke="#d2d2d7">8</span>
-      <span class="chip on" data-cc="19" data-cc-fill="#f9f5ed" data-cc-stroke="#215a8a" data-cc-stroke-width="2">9</span>
-      <span class="chip" data-cc="19" data-cc-fill="#f9f5ed" data-cc-stroke="#d2d2d7">10</span>
-      <span class="chip" data-cc="19" data-cc-fill="#f9f5ed" data-cc-stroke="#d2d2d7">11</span>
-      <span class="chip" data-cc="19" data-cc-fill="#f9f5ed" data-cc-stroke="#d2d2d7">12</span>
-      <span class="chip" data-cc="19" data-cc-fill="#f9f5ed" data-cc-stroke="#d2d2d7">13</span>
-    </div>
-    <table class="num">
-      <thead><tr><th>Size</th><th>Inner diameter</th><th>Circumference</th></tr></thead>
-      <tbody>
-        <tr><td>6</td><td>16.5 mm</td><td>51.9 mm</td></tr>
-        <tr><td>7</td><td>17.3 mm</td><td>54.4 mm</td></tr>
-        <tr><td>8</td><td>18.1 mm</td><td>57.0 mm</td></tr>
-        <tr class="on"><td>9</td><td>18.9 mm</td><td>59.5 mm</td></tr>
-        <tr><td>10</td><td>19.8 mm</td><td>62.1 mm</td></tr>
-        <tr><td>11</td><td>20.6 mm</td><td>64.6 mm</td></tr>
-        <tr><td>12</td><td>21.4 mm</td><td>67.2 mm</td></tr>
-        <tr><td>13</td><td>22.2 mm</td><td>69.7 mm</td></tr>
-      </tbody>
-    </table>
-    <p class="cap src">Inner diameter and circumference follow the US ring size chart.</p>
-  </div>
-
-  <div class="tile fin" data-cc="18" data-cc-fill="#eee7db" data-cc-stroke="#d2d2d7">
-    <p class="lab">Finish</p>
-    <div class="fr">
-      <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15" fill="#f9f5ed" stroke="#c3bcae" stroke-width="1"/><circle cx="18" cy="18" r="8" fill="#eee7db" stroke="#c3bcae" stroke-width="1"/></svg>
-      <span class="nm">Cream</span>
-    </div>
-    <div class="fr">
-      <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15" fill="#243329"/><circle cx="18" cy="18" r="8" fill="#eee7db"/></svg>
-      <span class="nm">Olive</span>
-    </div>
-    <div class="fr">
-      <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15" fill="#5a625b"/><circle cx="18" cy="18" r="8" fill="#eee7db"/></svg>
-      <span class="nm">Slate</span>
-    </div>
-    <p class="cap">The outer band takes the colour; the sensor face stays matte.</p>
-  </div>
-
-  <div class="tile bar" data-cc="18" data-cc-fill="#eee7db" data-cc-stroke="#d2d2d7">
-    <div class="left"><b>Pebble Ring</b><span class="num">All finishes ¥2,480</span></div>
-    <div class="right"><span>Ships in 3–5 days</span>
-      <a class="pill" data-cc="22" data-cc-fill="#215a8a" href="#">Add to bag</a></div>
-  </div>
-
-  <div class="foot"><span>Illustrative example</span><span>Illustrative render, not a photograph</span></div>
-</div>
+<main class="unit">
+  <header class="hdr"><b>Pebble</b><span>Sizing guide</span></header>
+  <section class="intro"><p class="eyebrow">Ring, size and finish</p><h1>Eight sizes, three finishes.</h1><p class="zhline zh">八种尺码，三种颜色</p><p class="dek">Measure the finger at room temperature. The band is 7.9 mm wide, so a Pebble sits closer to its neighbour than a wedding ring does.</p></section>
+  <figure class="wearer" data-apple-light style="--apple-light-color:rgba(129,82,58,.24);--apple-light-opacity:.34;--apple-light-blur:32px"><img src="assets/ring-wearer.png" alt="Illustrative ring worn on a hand beside a window"><figcaption>Illustrative scene, not documentary.</figcaption></figure>
+  <section class="object">
+    <h2>The ring, from above</h2>
+    <svg class="ring" data-finish="olive" viewBox="0 0 560 340" role="img" aria-label="Satin olive ring, seen from above">
+      <defs>
+        <linearGradient id="band" x1=".1" y1=".1" x2=".9" y2=".9"><stop offset="0" stop-color="#aab29b"/><stop offset=".16" stop-color="#64735f"/><stop offset=".38" stop-color="#344334"/><stop offset=".62" stop-color="#202d23"/><stop offset=".82" stop-color="#586550"/><stop offset="1" stop-color="#202a22"/></linearGradient>
+        <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#71816a"/><stop offset=".42" stop-color="#344234"/><stop offset="1" stop-color="#131d17"/></linearGradient>
+        <linearGradient id="light" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".35" stop-color="#fff" stop-opacity=".76"/><stop offset=".72" stop-color="#d8e1c9" stop-opacity=".2"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+        <filter id="contact" x="-30%" y="-40%" width="160%" height="180%"><feGaussianBlur stdDeviation="13"/></filter>
+      </defs>
+      <ellipse cx="280" cy="225" rx="213" ry="72" fill="#101912" opacity=".26" filter="url(#contact)"/>
+      <path d="M72 164 A208 116 0 1 0 488 164 A208 116 0 1 0 72 164 M160 164 A120 61 0 1 1 400 164 A120 61 0 1 1 160 164" fill="url(#band)" fill-rule="evenodd"/>
+      <path d="M73 165 A207 116 0 0 0 487 165 L473 183 A192 100 0 0 1 87 183 Z" fill="url(#rim)" opacity=".9"/>
+      <path d="M99 126 C145 62 231 43 315 54" fill="none" stroke="url(#light)" stroke-width="13" stroke-linecap="round" opacity=".72"/>
+      <path d="M169 165 A111 52 0 0 1 391 165" fill="none" stroke="#d6dfca" stroke-width="4" opacity=".54"/>
+      <path d="M182 193 C220 211 340 214 379 193" fill="none" stroke="#aab49c" stroke-width="2" opacity=".28"/>
+      <ellipse cx="280" cy="164" rx="119" ry="59" fill="none" stroke="#111a14" stroke-width="6" opacity=".6"/>
+      <path d="M365 205 q15 -12 32 -2 l-3 17 q-15 6 -27 -1z" fill="#b3b9a7" opacity=".88"/>
+      <path d="M370 208 l15 1" stroke="#687165" stroke-width="1.5"/>
+    </svg>
+    <div class="dimension"><strong class="num">18.9 mm</strong><span>inner diameter, size 9</span><strong class="num">7.9 mm</strong><span>band width</span><strong class="num">2.9 mm</strong><span>band thickness</span></div>
+    <p class="caption">Illustrative render, not a photograph</p>
+  </section>
+  <section class="size"><div class="sizehead"><h2>Size chart</h2><span>US sizes, millimetres</span></div><div class="measureheads"><span>Size</span><span>Inner diameter</span><span>Circumference</span></div>
+    <div class="size-row"><span>6</span><span>16.5 mm</span><span>51.9 mm</span></div><div class="size-row"><span>7</span><span>17.3 mm</span><span>54.4 mm</span></div><div class="size-row"><span>8</span><span>18.1 mm</span><span>57.0 mm</span></div><div class="size-row selected"><span>9</span><span>18.9 mm</span><span>59.5 mm</span></div><div class="size-row"><span>10</span><span>19.8 mm</span><span>62.1 mm</span></div><div class="size-row"><span>11</span><span>20.6 mm</span><span>64.6 mm</span></div><div class="size-row"><span>12</span><span>21.4 mm</span><span>67.2 mm</span></div><div class="size-row"><span>13</span><span>22.2 mm</span><span>69.7 mm</span></div>
+    <p style="margin-top:10px;font-size:13px;color:var(--muted)">Inner diameter and circumference follow the US ring size chart.</p>
+  </section>
+  <section class="finish"><h2>Finish</h2><div class="chips"><button class="chip" type="button" data-apple-motion aria-pressed="false" data-finish="cream"><i class="swatch cream" aria-hidden="true"></i>Cream</button><button class="chip active" type="button" data-apple-motion aria-pressed="true" data-finish="olive"><i class="swatch olive" aria-hidden="true"></i>Olive</button><button class="chip" type="button" data-apple-motion aria-pressed="false" data-finish="slate"><i class="swatch slate" aria-hidden="true"></i>Slate</button></div><p>The outer band takes the colour; the sensor face stays matte.</p></section>
+  <p class="footer">Illustrative example</p>
+  <footer class="buybar"><div class="product"><strong>Pebble Ring</strong><span class="num">All finishes ¥2,480</span></div><span class="shipping">Ships in 3–5 days</span><button type="button" class="action" data-apple-motion data-cc="25" data-cc-fill="#81523a" aria-pressed="false">Add to bag</button><span class="cart-status" aria-live="polite"></span></footer>
+</main>
 <script src="../../_shared/continuous-corner.js"></script>
-</body>
+<script>
+(() => {
+  const ring = document.querySelector('.ring');
+  document.querySelectorAll('.chip[data-finish]').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('.chip[data-finish]').forEach(chip => {
+        const selected = chip === button;
+        chip.classList.toggle('active', selected);
+        chip.setAttribute('aria-pressed', String(selected));
+      });
+      ring.dataset.finish = button.dataset.finish;
+      ring.setAttribute('aria-label', `Satin ${button.dataset.finish} ring, seen from above`);
+    });
+  });
+  const addButton = document.querySelector('.buybar .action');
+  addButton.addEventListener('click', () => {
+    const added = addButton.getAttribute('aria-pressed') !== 'true';
+    addButton.setAttribute('aria-pressed', String(added));
+    document.querySelector('.cart-status').textContent = added ? 'Pebble Ring added to bag.' : '';
+  });
+})();
+</script></body>
 </html>

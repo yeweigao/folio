@@ -2,136 +2,108 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1200">
-<title>Atelier — The workshop</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atelier — The workshop is the provenance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@400;600&amp;family=Noto+Serif+SC:wght@400&amp;family=Noto+Sans+SC:wght@400&amp;display=swap" rel="stylesheet">
 <style>
-  :root{
-    --canvas:#ffffff; --panel:#f7f3eb; --dark:#24211d; --ink:#24211d;
-    --muted:#67615a; --action:#a74b00; --hairline:#d2d2d7;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:#e7e5e1}
-  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
-  .unit{position:relative;width:1200px;height:1600px;overflow:hidden;background:var(--canvas)}
-  .serif{font-family:"Cormorant Garamond","Noto Serif SC",Georgia,serif}
-  .zhserif{font-family:"Noto Serif SC","Cormorant Garamond",serif}
-  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
-  .pad{padding:12px}
-  .t{position:absolute}
-  [data-cc]{position:relative;isolation:isolate}
-  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
-  svg{display:block}
-  a{text-decoration:none}
+:root{--canvas:#fff;--panel:#f4f4f2;--ink:#24211d;--muted:#67615a;--action:#a74b00;--wood:#9a7958;--hair:#d2d2d7}
+*{box-sizing:border-box;margin:0;padding:0}html,body{background:#fff}body{font-family:Inter,"Noto Sans SC",system-ui,sans-serif;color:var(--ink)}.unit{position:relative;width:1200px;height:1600px;overflow:hidden;background:#fff}.serif{font-family:"Cormorant Garamond","Noto Serif SC",Georgia,serif}.zh{font-family:"Noto Serif SC","Noto Sans SC",serif}.t{position:absolute}.pad{padding:12px}svg{display:block}[data-cc]{position:relative;isolation:isolate}.cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}a{text-decoration:none}
+.vista{left:0;top:0;width:1200px;height:980px;overflow:hidden}.brand{left:82px;top:47px;font-size:26px;font-weight:600}.headline{left:82px;top:188px;width:700px}.headline h1{font-size:80px;font-weight:400;line-height:.96;letter-spacing:-.018em}.headline .zhline{margin-top:23px;font-size:29px;color:#4f4942;line-height:1.5}.headline .action{margin-top:34px;display:inline-flex;align-items:center;height:48px;padding:0 28px;background:var(--action);color:#fff;font-size:17px}.caption{left:88px;top:924px;font-size:14px;color:#5c554d}
+.column{left:110px;top:980px;width:980px;height:620px;padding:38px 12px 0}.lead{font:40px/1.17 "Cormorant Garamond","Noto Serif SC",serif;max-width:940px}.leadzh{margin-top:7px;font-size:22px;line-height:1.5;color:var(--muted)}.evidence{margin-top:27px;display:grid;grid-template-columns:230px 1fr;gap:28px;align-items:center}.stat{font:74px/.95 "Cormorant Garamond","Noto Serif SC",serif}.statlabel{margin-top:9px;font-size:18px;line-height:1.4;color:var(--muted)}.cutplan{height:195px;width:690px}.meta{margin-top:23px;display:flex;align-items:baseline;justify-content:space-between}.heritage{display:flex;gap:18px;align-items:baseline;font-size:18px}.heritage .zh{font-size:18px;color:var(--muted)}.price{font-size:17px;color:var(--muted)}.source{margin-top:18px;padding-top:15px;border-top:1px solid var(--hair);display:flex;justify-content:space-between;font-size:14px;color:var(--muted)}.foot{left:110px;top:1565px;width:980px;font-size:13px;color:var(--muted)}
+</style>
+<link rel="stylesheet" href="../../_shared/apple-interactions.css">
+<style data-review-reflow>
 
-  .vista{left:0;top:0;width:1200px;height:680px;overflow:hidden}
-  .mark{left:100px;top:58px;font-family:"Cormorant Garamond",Georgia,serif;font-size:23px;font-weight:600}
-  .vhead{left:100px;top:158px;width:640px}
-  .vhead h1{font-family:"Cormorant Garamond","Noto Serif SC",Georgia,serif;
-    font-size:56px;font-weight:400;line-height:1.08;letter-spacing:-.01em}
-  .vhead .zhline{margin-top:18px;font-size:25px;font-weight:400;line-height:1.5;color:var(--muted)}
-  .vhead a{display:inline-block;margin-top:40px;font-size:21px;font-weight:400;color:var(--action)}
-  .vista .cap{left:100px;top:642px;width:1000px;font-size:14px;font-weight:400;color:var(--muted)}
+:root{--apple-focus:#a74b00}
+.unit{position:relative;width:min(100%,1200px);height:auto;min-height:100vh;overflow:visible;margin:0 auto}
+@media(max-width:1200px){
+ .vista{position:relative;left:auto;top:auto;width:100%;height:auto;aspect-ratio:1200/980;overflow:hidden}
+ .vista>svg{display:block;width:100%;height:100%}
+ .brand{left:clamp(24px,6.8vw,82px);top:clamp(20px,3.9vw,47px);font-size:clamp(18px,2.2vw,26px)}
+ .headline{left:clamp(24px,6.8vw,82px);top:clamp(92px,15.7vw,188px);width:min(700px,calc(100% - 48px))}
+ .headline h1{font-size:clamp(48px,6.7vw,80px);line-height:1.02;letter-spacing:-.035em}
+ .headline .zhline{font-size:clamp(18px,2.5vw,26px);line-height:1.45;margin-top:12px}
+ .headline .action{height:46px;margin-top:18px}
+ .caption{left:24px;top:auto;bottom:10px;font-size:14px;color:#fff;background:rgba(36,33,29,.78);padding:6px 9px}
+ .column{position:relative;left:auto;top:auto;width:min(980px,100%);height:auto;margin:0 auto;padding:32px clamp(24px,6.5vw,78px) 44px}
+ .lead{font-size:clamp(28px,3.5vw,40px);line-height:1.2}.leadzh{font-size:19px;line-height:1.5}
+ .evidence{grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:20px}.stat{font-size:64px}.statlabel{font-size:17px}
+ .cutplan{width:100%;height:auto;aspect-ratio:690/195}
+ .meta{gap:10px 20px;flex-wrap:wrap}.heritage{font-size:17px}.price{font-size:16px}
+ .source{gap:8px 16px;flex-wrap:wrap;font-size:14px;line-height:1.45}
+ .foot{position:static;width:min(980px,100%);margin:0 auto;padding:0 clamp(24px,6.5vw,78px) 20px;font-size:14px}
+}
+@media(max-width:650px){
+ .vista{aspect-ratio:auto;overflow:visible;display:flex;flex-direction:column;padding-bottom:18px}
+ .vista>svg{position:static;width:100%;height:auto;aspect-ratio:1200/980}
+ .brand,.headline,.caption{position:static;left:auto;top:auto;width:auto}
+ .brand{margin:14px 20px 0}.headline{padding:0 20px;margin-top:12px}.headline h1{font-size:38px;line-height:1.02}
+ .headline .zhline{font-size:18px;margin-top:8px}.headline .action{margin-top:14px;height:44px}
+ .caption{align-self:flex-start;margin:14px 20px 0;color:#fff;background:#30271d;padding:6px 8px}
+ .column{padding:28px 20px 32px}.lead{font-size:27px}.leadzh{font-size:17px}
+ .evidence{grid-template-columns:minmax(0,1fr);gap:14px}.stat{font-size:58px}.statlabel{font-size:16px}.cutplan{max-width:100%}
+ .meta{align-items:flex-start}.heritage{flex-wrap:wrap;gap:8px 14px}.source{display:grid;grid-template-columns:1fr;font-size:13px}
+ .foot{padding:0 20px 18px;font-size:13px}
+}
 
-  .column{left:110px;top:680px;width:980px;padding:64px 12px 0 12px}
-  .lead{font-family:"Cormorant Garamond","Noto Serif SC",Georgia,serif;
-    font-size:34px;font-weight:400;line-height:1.25;width:900px}
-  .leadzh{margin-top:12px;font-size:24px;font-weight:400;line-height:1.6;color:var(--muted)}
-  .body{margin-top:36px;font-size:17px;font-weight:400;line-height:1.6;width:760px}
-  .body + .body{margin-top:20px}
-  .heritage{margin-top:28px;font-size:14px;font-weight:400;color:var(--muted)}
-
-  .figure{margin-top:40px}
-  .figure .big{font-family:"Cormorant Garamond",Georgia,serif;font-size:56px;font-weight:400;line-height:1.07}
-  .figure .lbl{margin-top:10px;font-size:14px;font-weight:400;color:var(--muted)}
-  .figure svg{margin-top:16px}
-  .figure .src{margin-top:16px;font-size:14px;font-weight:400;color:var(--muted);line-height:1.6}
-  .price{margin-top:24px;font-size:14px;font-weight:400;color:var(--muted)}
-
-  .foot{left:110px;top:1528px;width:980px;display:flex;justify-content:space-between;
-    font-size:12px;font-weight:400;color:var(--muted)}
 </style>
 </head>
-<body>
-<div class="unit" id="page">
-
-  <div class="t vista">
-    <svg width="1200" height="680" viewBox="0 0 1200 680" aria-hidden="true">
-      <rect width="1200" height="680" fill="#f7f3eb"/>
-      <rect x="830" y="52" width="310" height="392" fill="#ffffff"/>
-      <rect x="830" y="52" width="310" height="392" fill="none" stroke="#dbd4c7" stroke-width="8"/>
-      <line x1="985" y1="52" x2="985" y2="444" stroke="#dbd4c7" stroke-width="5"/>
-      <line x1="830" y1="248" x2="1140" y2="248" stroke="#dbd4c7" stroke-width="5"/>
-      <polygon points="830,444 1140,444 1200,624 640,624" fill="#ffffff" opacity=".5"/>
-      <rect x="0" y="470" width="1200" height="210" fill="#d3c7b2"/>
-      <rect x="0" y="470" width="1200" height="12" fill="#b4a691"/>
-      <path d="M170 506 C240 486 470 486 560 512 C620 534 610 596 520 606 C400 620 210 606 170 558 Z" fill="#e9e0cf"/>
-      <path d="M170 506 C240 486 470 486 560 512" fill="none" stroke="#c1b29a" stroke-width="2"/>
-      <path d="M700 520 L790 512 L806 526 L708 540 Z" fill="#8a8175"/>
-      <rect x="682" y="524" width="30" height="13" fill="#3a342c"/>
-      <rect x="860" y="536" width="230" height="16" fill="#c9bda9"/>
-      <g stroke="#8a7f6e" stroke-width="1.5">
-        <line x1="890" y1="536" x2="890" y2="552"/>
-        <line x1="930" y1="536" x2="930" y2="548"/>
-        <line x1="970" y1="536" x2="970" y2="552"/>
-        <line x1="1010" y1="536" x2="1010" y2="548"/>
-        <line x1="1050" y1="536" x2="1050" y2="552"/>
-      </g>
-      <circle cx="640" cy="590" r="24" fill="#5c5245"/>
-      <circle cx="640" cy="590" r="9" fill="#e9e0cf"/>
-      <rect x="0" y="624" width="1200" height="56" fill="#ffffff"/>
+<body><div class="unit">
+  <section class="t vista">
+    <svg width="1200" height="980" viewBox="0 0 1200 980" role="img" aria-label="A sunlit leather workshop and a finished bag on the bench">
+      <defs>
+        <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset=".62" stop-color="#f7f6f2"/><stop offset="1" stop-color="#ebe7df"/></linearGradient>
+        <linearGradient id="windowLight" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity=".08"/></linearGradient>
+        <linearGradient id="woodTop" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c5ae8f"/><stop offset=".15" stop-color="#b39470"/><stop offset="1" stop-color="#705b43"/></linearGradient>
+        <linearGradient id="hide" x1=".05" y1="0" x2=".9" y2="1"><stop stop-color="#eadac0"/><stop offset=".28" stop-color="#cfb28b"/><stop offset=".62" stop-color="#a6845f"/><stop offset="1" stop-color="#75573a"/></linearGradient>
+        <linearGradient id="side" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#dec5a2"/><stop offset="1" stop-color="#72553a"/></linearGradient>
+        <radialGradient id="glow" cx=".2" cy=".12" r=".85"><stop stop-color="#fff" stop-opacity=".7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+        <pattern id="grain" width="17" height="15" patternUnits="userSpaceOnUse"><path d="M1 5q3-2 5 1t6 0M4 12q3-2 6 1t6-1" fill="none" stroke="#503a28" stroke-opacity=".19" stroke-width=".8"/><circle cx="14" cy="4" r=".7" fill="#fff" opacity=".45"/></pattern>
+        <filter id="shadow" x="-.2" y="-.4" width="1.5" height="1.8"><feGaussianBlur stdDeviation="16"/></filter>
+        <clipPath id="bagclip"><path d="M784 526Q792 498 827 495H1035Q1065 498 1074 528L1091 765Q1093 793 1066 800H794Q768 792 772 764Z"/></clipPath>
+      </defs>
+      <rect width="1200" height="980" fill="url(#wall)"/>
+      <rect x="735" y="65" width="400" height="420" fill="#fdfdfb" stroke="#d8d6d0" stroke-width="11"/>
+      <rect x="750" y="80" width="370" height="390" fill="url(#windowLight)"/>
+      <path d="M935 80V470M750 274H1120" stroke="#d7d4cc" stroke-width="8"/>
+      <path d="M755 470L1088 470L1200 760L536 760Z" fill="#fff" opacity=".45"/>
+      <path d="M0 616H1200V980H0Z" fill="url(#woodTop)"/>
+      <path d="M0 616H1200V645H0Z" fill="#ddc9ad"/><path d="M0 650Q260 632 520 655T1200 646" fill="none" stroke="#594a37" stroke-opacity=".2" stroke-width="3"/>
+      <path d="M0 675Q250 655 525 678T1200 669" fill="none" stroke="#e5d2b5" stroke-opacity=".44" stroke-width="3"/><path d="M0 857H1200" stroke="#5e4a34" stroke-opacity=".24" stroke-width="5"/>
+      <!-- cut leather blank, edge tools and a spool on the bench -->
+      <path d="M118 673Q208 647 362 667L484 722L431 814Q298 823 144 779Z" fill="#745a3e" opacity=".28" filter="url(#shadow)"/>
+      <path d="M118 655Q211 630 362 651L480 702L425 793Q294 801 145 759Z" fill="url(#hide)" stroke="#674d32" stroke-width="2"/>
+      <path d="M135 661Q246 638 360 658L456 701" fill="none" stroke="#fff1da" stroke-opacity=".8" stroke-width="7"/><path d="M135 661Q246 638 360 658L456 701" fill="none" stroke="url(#grain)" stroke-width="21"/>
+      <path d="M150 742Q281 778 425 758" fill="none" stroke="#f3e3cb" stroke-width="4" stroke-dasharray="3 13"/>
+      <!-- finished Solstice bag, fully lit, grained and grounded -->
+      <ellipse cx="929" cy="808" rx="178" ry="31" fill="#342a20" opacity=".34" filter="url(#shadow)"/>
+      <path d="M845 520C840 427 899 386 934 386S1032 427 1027 520" fill="none" stroke="#66492e" stroke-width="24"/><path d="M853 514C854 438 902 409 934 409S1018 438 1019 514" fill="none" stroke="#d6bc97" stroke-width="6"/><path d="M859 511C864 449 906 421 934 421S1008 449 1013 511" fill="none" stroke="#fff0d6" stroke-width="2" opacity=".75"/>
+      <path d="M784 526Q792 498 827 495H1035Q1065 498 1074 528L1091 765Q1093 793 1066 800H794Q768 792 772 764Z" fill="url(#hide)" stroke="#62492f" stroke-width="3"/>
+      <g clip-path="url(#bagclip)"><rect x="766" y="490" width="335" height="320" fill="url(#grain)" opacity=".76"/><rect x="766" y="490" width="335" height="320" fill="url(#glow)"/><path d="M804 527Q900 493 1050 521" fill="none" stroke="#fff5e6" stroke-width="11" opacity=".55"/><path d="M788 553L784 748" stroke="#fff3dd" stroke-width="5" opacity=".36"/></g>
+      <path d="M800 530H1060V570Q930 583 796 570Z" fill="url(#side)"/><path d="M798 570Q928 585 1063 570" fill="none" stroke="#513a27" stroke-width="3"/><path d="M806 569Q930 583 1054 569" fill="none" stroke="#f4e4cc" stroke-width="2" stroke-dasharray="3 10"/>
+      <path d="M919 558h32v48h-32z" fill="#5d5142"/><path d="M926 566h18v30h-18z" fill="#c6c8c5"/><path d="M928 569h14" stroke="#fff" stroke-width="3" opacity=".9"/>
+      <!-- quiet awl and thread spool, with contact shadows -->
+      <ellipse cx="622" cy="773" rx="38" ry="8" fill="#342a20" opacity=".25"/><path d="M610 722l22 43" stroke="#383632" stroke-width="8" stroke-linecap="round"/><path d="M610 722l22 43" stroke="#fff" stroke-opacity=".65" stroke-width="2"/><path d="M680 738h72v50h-72z" fill="#d9d3c9" stroke="#8b8172"/><path d="M680 739q36 14 72 0v9q-36 13-72 0" fill="#f7f3eb"/><path d="M686 751H746M686 760H746M686 769H746M686 778H746" stroke="#b8b0a3" stroke-width="2"/>
     </svg>
-    <p class="t mark pad">Atelier</p>
-    <div class="t vhead pad">
-      <h1>The workshop is the provenance.</h1>
-      <p class="zhline zhserif">工坊，即出处</p>
-      <a href="#">Read the house note <span>›</span></a>
-    </div>
-    <p class="t cap pad">Illustrative render, not a photograph</p>
-  </div>
-
-  <div class="t column">
-    <p class="lead">A bag can be photographed anywhere. It is understood where the hands work.</p>
-    <p class="leadzh zhserif">一只包可以被拍在任何地方，却只在双手工作的地方被理解</p>
-    <p class="body">The bench is older than the catalogue. Hides are cut on it one at a time, so a single bag carries one animal's grain from flap to base.</p>
-    <p class="body">Nothing here is simulated. The room is the argument; the bag is the evidence.</p>
-    <p class="heritage">Since 1978 <span class="zh">自 1978 年起</span></p>
-
-    <div class="figure">
-      <div class="big">7 panels</div>
-      <div class="lbl">cut from one hide, for one Solstice bag</div>
-      <svg width="980" height="170" viewBox="0 0 980 170" aria-hidden="true">
-        <path d="M20 40 C120 18 300 22 420 30 C560 38 720 24 860 44 C940 56 960 100 940 130 C880 158 700 150 560 148 C400 146 200 156 60 138 C20 132 8 90 20 40 Z" fill="#e9e0cf" stroke="#c1b29a" stroke-width="2"/>
-        <g fill="#d3c7b2" stroke="#8a7f6e" stroke-width="1">
-          <rect x="58" y="50" width="182" height="46"/>
-          <rect x="268" y="48" width="192" height="62"/>
-          <rect x="488" y="50" width="192" height="62"/>
-          <rect x="708" y="48" width="182" height="46"/>
-          <rect x="68" y="108" width="156" height="34"/>
-          <rect x="252" y="114" width="182" height="30"/>
-          <rect x="472" y="112" width="182" height="30"/>
-        </g>
-        <g font-family="Inter, sans-serif" font-size="13" fill="#24211d">
-          <text x="66" y="78">Flap</text>
-          <text x="276" y="84">Front</text>
-          <text x="496" y="84">Back</text>
-          <text x="716" y="78">Base</text>
-          <text x="76" y="130">Gusset</text>
-          <text x="260" y="134">Handle</text>
-          <text x="480" y="132">Tab</text>
-        </g>
+    <p class="t brand pad">Atelier</p>
+    <div class="t headline pad"><h1 class="serif">The workshop is<br>the provenance.</h1><p class="zhline zh">工坊，即出处</p><a data-apple-motion class="action" href="#" data-cc="23" data-cc-fill="#a74b00">Read the house note</a></div>
+    <p class="t caption pad">Illustrative render, not a photograph</p>
+  </section>
+  <article class="t column">
+    <h2 class="lead">A bag can be photographed anywhere. It is understood where the hands work.</h2>
+    <p class="leadzh zh">一只包可以被拍在任何地方，却只在双手工作的地方被理解</p>
+    <div class="evidence">
+      <div><p class="stat">7 panels</p><p class="statlabel">cut from one hide, for one Solstice bag</p></div>
+      <svg class="cutplan" viewBox="0 0 690 195" role="img" aria-label="Seven cut pieces laid out on one hide">
+        <defs><linearGradient id="hidePlan" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#eee3d2"/><stop offset="1" stop-color="#c7b89f"/></linearGradient><pattern id="grainPlan" width="14" height="12" patternUnits="userSpaceOnUse"><path d="M2 4q3-2 5 1t5-1" fill="none" stroke="#8c795e" stroke-opacity=".23" stroke-width=".8"/></pattern><filter id="planShadow"><feGaussianBlur stdDeviation="5"/></filter></defs>
+        <path d="M30 35Q72 13 143 24L592 24Q647 31 660 68L637 161Q627 178 581 177L67 176Q25 169 30 35Z" fill="#24211d" opacity=".16" filter="url(#planShadow)"/><path d="M30 26Q72 8 143 17L592 17Q647 24 660 61L637 154Q627 171 581 170L67 169Q25 162 30 26Z" fill="url(#hidePlan)" stroke="#8a7355" stroke-width="1.5"/><path d="M30 26Q72 8 143 17L592 17Q647 24 660 61L637 154Q627 171 581 170L67 169Q25 162 30 26Z" fill="url(#grainPlan)"/>
+        <g fill="#b2946b" stroke="#74583a" stroke-width="1.3"><path d="M58 43h127v53H58z"/><path d="M199 39h129v65H199z"/><path d="M344 39h129v65H344z"/><path d="M490 42h131v53H490z"/><path d="M65 111h101v39H65z"/><path d="M180 113h112v38H180z"/><path d="M306 112h113v39H306z"/></g>
+        <g fill="none" stroke="#f5e8d3" stroke-width="2" opacity=".68"><path d="M61 47H181"/><path d="M202 44H324"/><path d="M347 44H469"/><path d="M493 46H616"/></g>
       </svg>
-      <p class="src">Illustrative render, not a photograph<br>
-      Atelier house note, 2026</p>
     </div>
-
-    <p class="price">The Solstice · ¥12,800</p>
-  </div>
-
-  <div class="t foot pad"><span>Illustrative example</span><span>Atelier house note · 2026</span></div>
-</div>
-<script src="../../_shared/continuous-corner.js"></script>
-</body>
-</html>
+    <div class="meta"><p class="heritage"><span>Since 1978</span><span class="zh">自 1978 年起</span></p><p class="price">The Solstice · ¥12,800</p></div>
+    <div class="source"><span>Atelier house note, 2026</span><span>Atelier house note · 2026</span></div>
+  </article>
+  <p class="t foot">Illustrative example</p>
+</div><script src="../../_shared/continuous-corner.js"></script></body></html>

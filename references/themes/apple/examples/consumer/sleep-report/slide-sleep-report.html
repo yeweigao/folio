@@ -2,109 +2,52 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1600">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pebble sleep report — keynote</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&amp;family=Inter:wght@400;600&amp;family=Noto+Sans+SC:wght@400&amp;family=Noto+Serif+SC:wght@400&amp;display=swap" rel="stylesheet">
 <style>
-  :root{
-    --canvas:#f9f5ed; --panel:#eee7db; --dark:#243329;
-    --ink:#263028; --muted:#5a625b; --action:#215a8a;
-    --onAction:#ffffff; --onDark:#ffffff; --hairline:#d2d2d7;
-    --serif:"Fraunces","Noto Serif SC",serif;
-    --sans:"Inter","Noto Sans SC",sans-serif;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:#e6e0d4}
-  body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}
-  .unit{position:relative;width:1600px;height:900px;overflow:hidden;background:var(--canvas)}
-  .zh{font-family:"Noto Sans SC",var(--sans)}
-  .t{position:absolute}
-  .num{font-variant-numeric:tabular-nums}
+:root{--apple-focus:#81523a;--canvas:#fffdf8;--panel:#f0ebe1;--dark:#243329;--ink:#263028;--muted:#5a625b;--action:#81523a;--serif:"Fraunces","Noto Serif SC",serif;--sans:"Inter","Noto Sans SC",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html,body{background:var(--canvas)}body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}.unit{position:relative;width:1600px;height:900px;overflow:hidden;background:var(--canvas)}.zh{font-family:"Noto Sans SC",var(--sans)}.num{font-variant-numeric:tabular-nums}
+.brand{position:absolute;left:76px;top:48px;font-size:23px;font-weight:600}.date{position:absolute;right:76px;top:55px;font-size:18px;color:var(--muted)}.title{position:absolute;left:76px;top:124px;width:1450px;font-family:var(--serif);font-size:75px;font-weight:400;line-height:1.01;letter-spacing:-1.7px}.zhline{position:absolute;left:80px;top:300px;font-size:29px;color:var(--muted)}
+.measure{position:absolute;left:76px;top:390px;width:655px}.metric{font-family:var(--serif);font-size:102px;line-height:.94;letter-spacing:-3px}.metric-label{margin-top:12px;font-size:31px;line-height:1.25}.measure .bed{margin-top:15px;font-size:28px;line-height:1.35;color:var(--muted)}.measure .body{margin-top:36px;font-size:33px;line-height:1.3;letter-spacing:-.2px}
+.chart{position:absolute;left:816px;top:382px;width:704px}.chart-head{display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid #cfc8bb;padding-bottom:15px}.chart-head h2{font-size:25px;font-weight:400}.chart-head span{font-size:17px;color:var(--muted)}.stage{display:grid;grid-template-columns:116px 1fr 122px;align-items:center;height:78px;border-bottom:1px solid #d8d2c7;column-gap:14px;font-size:24px}.stage .barwrap{height:13px;background:#ece6da;position:relative}.stage .bar{height:13px;background:#a6b39a}.stage.deep .bar{background:var(--action)}.stage .value{text-align:right;font-variant-numeric:tabular-nums;font-weight:400}.arithmetic{position:absolute;left:816px;top:760px;width:704px;font-size:23px;line-height:1.35;color:var(--muted)}.source{position:absolute;left:76px;bottom:27px;width:1100px;font-size:14px;line-height:1.4;color:var(--muted)}.foot{position:absolute;right:76px;bottom:27px;font-size:14px;color:var(--muted)}
 
-  .brand{left:88px;top:56px;font-size:21px;font-weight:600;letter-spacing:-.2px}
-  .kicker{right:88px;top:60px;font-size:14px;line-height:1.4;color:var(--muted);text-align:right}
+:root{--apple-focus:#81523a}
+.unit{width:min(100%,1440px);height:auto;min-height:900px;overflow:visible;margin-inline:auto;padding:40px clamp(24px,5vw,72px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:"brand date" "title title" "zh zh" "measure chart" "measure arithmetic" "source foot";align-content:start;gap:20px 48px}
+.brand,.date,.title,.zhline,.measure,.chart,.arithmetic,.source,.foot{position:static;width:auto;height:auto;left:auto;right:auto;top:auto;bottom:auto}
+.brand{grid-area:brand}.date{grid-area:date;justify-self:end}.title{grid-area:title;font-size:clamp(54px,5vw,72px)}.zhline{grid-area:zh}.measure{grid-area:measure}.chart{grid-area:chart}.arithmetic{grid-area:arithmetic}.source{grid-area:source}.foot{grid-area:foot;justify-self:end;align-self:end}
+.metric{font-size:clamp(72px,7vw,96px)}.measure .body{font-size:clamp(22px,2.1vw,29px)}.stage{grid-template-columns:minmax(64px,.6fr) minmax(0,1fr) minmax(82px,.7fr);font-size:20px}
+@media(max-width:900px){
+.unit{width:100%;min-height:0;padding:24px;display:flex;flex-direction:column;gap:18px}
+.brand,.date,.title,.zhline,.measure,.chart,.arithmetic,.source,.foot{position:static;width:auto;height:auto;justify-self:auto;align-self:auto}
+.date{font-size:15px}.title{font-size:clamp(38px,7.8vw,58px);line-height:1.05;letter-spacing:-1px}.zhline{font-size:21px}.measure{display:flex;flex-direction:column;gap:10px}.metric{font-size:clamp(58px,12vw,82px)}.metric-label{font-size:21px}.measure .bed{font-size:19px;margin-top:0}.measure .body{font-size:18px;line-height:1.5;margin-top:10px}
+.chart-head{gap:8px;flex-wrap:wrap}.chart-head h2{font-size:21px}.chart-head span{font-size:14px}.stage{grid-template-columns:55px minmax(0,1fr) 64px;column-gap:8px;height:auto;min-height:62px;font-size:15px}.stage .value{font-size:14px}.arithmetic{font-size:17px;line-height:1.5}.source,.foot{font-size:12px;line-height:1.45}
+}
 
-  .title{left:88px;top:112px;width:700px;font-family:var(--serif);font-size:56px;font-weight:400;
-         line-height:1.07;letter-spacing:-1.4px}
-  .zhline{left:88px;top:306px;font-family:var(--serif);font-size:24px;line-height:1.5;color:var(--muted)}
-  .lead{left:88px;top:368px;width:760px;font-size:21px;font-weight:400;line-height:1.6;color:var(--muted)}
 
-  .bigwrap{right:88px;top:140px;width:400px}
-  .big{font-family:var(--serif);font-size:72px;font-weight:400;line-height:1.02;letter-spacing:-2px}
-  .biglab{margin-top:16px;font-size:21px;line-height:1.5;color:var(--muted)}
-  .bigctx{margin-top:10px;font-size:17px;line-height:1.55;color:var(--muted)}
-
-  .chhead{left:88px;top:480px;width:1424px;display:flex;justify-content:space-between;
-          font-size:14px;line-height:1.4;color:var(--muted)}
-  .chrule{left:88px;top:508px;width:1424px;height:1px;background:var(--hairline)}
-
-  .rows{left:88px;top:524px;width:1424px}
-  .row{position:relative;height:51px}
-  .row .lab{position:absolute;left:0;top:12px;width:190px;font-size:21px;line-height:1.3}
-  .row .track{position:absolute;left:192px;top:13px;width:1100px;height:24px;background:var(--hairline);opacity:.34}
-  .row .bar{position:absolute;left:192px;top:13px;height:24px;background:var(--ink);opacity:.62}
-  .row .val{position:absolute;left:1312px;top:11px;width:112px;text-align:right;font-size:21px;line-height:1.3}
-  .row.deep .bar{background:var(--action);opacity:1}
-  .row.deep .val{color:var(--action);font-weight:600}
-
-  .note{left:88px;top:742px;width:1000px;font-size:17px;line-height:1.55;color:var(--muted)}
-  .src{left:88px;top:816px;width:900px;font-size:12px;line-height:1.5;color:var(--muted)}
-  .ill{right:88px;top:816px;font-size:12px;line-height:1.5;color:var(--muted);text-align:right}
+@media(min-width:501px) and (max-width:900px){body>.unit{padding-left:5vw!important;padding-right:5vw!important}}
 </style>
-</head>
+<link rel="stylesheet" href="../../_shared/apple-interactions.css"></head>
 <body>
-<div class="unit" id="slide">
-
-  <p class="t brand">Pebble</p>
-  <p class="t kicker num">Sleep report, 12–13 October 2026</p>
-
-  <h1 class="t title">Seven hours asleep,<br>seventy-six minutes<br>of it deep.</h1>
-  <p class="t zhline zh">七小时睡眠，其中七十六分钟是深睡</p>
-  <p class="t lead">The ring separates awake, light, deep and REM. This is one night, printed as it was recorded, with nothing smoothed.</p>
-
-  <div class="t bigwrap">
-    <p class="big num">7 h 12 m</p>
-    <p class="biglab">asleep, after 46 minutes awake</p>
-    <p class="bigctx num">478 minutes in bed, 432 of them asleep.</p>
-  </div>
-
-  <p class="t chhead num"><span>Stage totals</span><span>for 7 h 58 m in bed</span></p>
-  <div class="t chrule"></div>
-
-  <div class="t rows">
-    <div class="row">
-      <span class="lab">Awake</span>
-      <span class="track"></span>
-      <span class="bar" style="width:106px"></span>
-      <span class="val num">46 m</span>
-    </div>
-    <div class="row">
-      <span class="lab">REM</span>
-      <span class="track"></span>
-      <span class="bar" style="width:225px"></span>
-      <span class="val num">1 h 38 m</span>
-    </div>
-    <div class="row">
-      <span class="lab">Light</span>
-      <span class="track"></span>
-      <span class="bar" style="width:594px"></span>
-      <span class="val num">4 h 18 m</span>
-    </div>
-    <div class="row deep">
-      <span class="lab">Deep</span>
-      <span class="track"></span>
-      <span class="bar" style="width:175px"></span>
-      <span class="val num">1 h 16 m</span>
-    </div>
-  </div>
-
-  <p class="t note">The four stages add up to the 478 minutes in bed. Asleep is that total minus the 46 awake: 432 minutes, or 7 h 12 m.</p>
-
-  <p class="t src">Source: one illustrative night, 12–13 October 2026, Pebble app export. Each bar is drawn to the same 478-minute scale.</p>
-  <p class="t ill">Illustrative example · Illustrative render, not a photograph</p>
-</div>
-<script src="../../_shared/continuous-corner.js"></script>
+<main class="unit">
+  <p class="brand">Pebble</p><p class="date num">Sleep report · 12–13 October 2026</p>
+  <h1 class="title">Seven hours asleep, seventy-six minutes of it deep.</h1>
+  <p class="zhline zh">七小时睡眠，其中七十六分钟是深睡</p>
+  <section class="measure">
+    <p class="metric num">7 h 12 m</p><p class="metric-label">asleep, after 46 minutes awake</p>
+    <p class="bed">478 minutes in bed, 432 of them asleep.</p>
+    <p class="body">The ring separates awake, light, deep and REM. This is one night, printed as it was recorded, with nothing smoothed.</p>
+  </section>
+  <section class="chart"><div class="chart-head"><h2>Stage totals</h2><span>for 7 h 58 m in bed</span></div>
+    <div class="stage"><span>Awake</span><span class="barwrap"><i class="bar" style="display:block;width:10%"></i></span><span class="value">46 m</span></div>
+    <div class="stage"><span>REM</span><span class="barwrap"><i class="bar" style="display:block;width:21%"></i></span><span class="value">1 h 38 m</span></div>
+    <div class="stage"><span>Light</span><span class="barwrap"><i class="bar" style="display:block;width:54%"></i></span><span class="value">4 h 18 m</span></div>
+    <div class="stage deep"><span>Deep</span><span class="barwrap"><i class="bar" style="display:block;width:16%"></i></span><span class="value">1 h 16 m</span></div>
+  </section>
+  <p class="arithmetic">The four stages add up to the 478 minutes in bed. Asleep is that total minus the 46 awake: 432 minutes, or 7 h 12 m.</p>
+  <p class="source">Source: one illustrative night, 12–13 October 2026, Pebble app export. Each bar is drawn to the same 478-minute scale.</p><p class="foot">Illustrative example · Illustrative render, not a photograph</p>
+</main>
 </body>
 </html>

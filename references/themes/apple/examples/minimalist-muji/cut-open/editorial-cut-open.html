@@ -1,177 +1,102 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=1200">
-<title>Plain — Four materials, and no fifth</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Noto+Sans+SC:wght@400&amp;display=swap" rel="stylesheet">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Plain — Four materials, and no fifth.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Sans+SC:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../_shared/apple-interactions.css">
 <style>
-  :root{
-    --canvas:#f8f6f1; --panel:#ffffff; --dark:#302d27; --ink:#302d27;
-    --muted:#666056; --action:#302d27; --onAction:#ffffff; --onDark:#ffffff;
-    --hairline:#d2d2d7;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:#e8e5df}
-  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
-  .unit{position:relative;width:1200px;height:1600px;overflow:hidden;background:var(--canvas)}
-  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
-  .t{position:absolute}
-  .pad{padding:12px}
-  a{text-decoration:none;color:inherit}
-  svg{display:block}
+:root{--apple-focus:#302d27}
+*{box-sizing:border-box}html,body{margin:0;background:#e6e5e2;color:#302d27;font-family:Inter,"Noto Sans SC",system-ui,sans-serif}.unit{position:relative;width:1200px;height:1600px;overflow:hidden;background:#f8f6f1}.hero{position:absolute;top:0;left:0;width:1200px;height:1080px;background:#efece5;overflow:hidden}.name{position:absolute;left:86px;top:48px;font-size:17px;color:#69645d}.title{position:absolute;left:86px;top:82px;width:735px;font-size:76px;line-height:.98;letter-spacing:-.055em;font-weight:600;margin:0;z-index:2}.hero .zh{position:absolute;left:91px;top:250px;font-family:"Noto Sans SC",sans-serif;font-size:27px;color:#5f5a53;z-index:2}.action{position:absolute;left:92px;top:330px;font-size:18px;border-bottom:1px solid #777167;padding-bottom:5px;z-index:2}.art{position:absolute;left:0;top:250px;width:1200px;height:730px}.art.art-mobile{display:none}.reading{position:absolute;left:110px;top:1122px;width:980px}.lead{font-size:28px;line-height:1.35;margin:0 0 17px}.body{font-size:19px;line-height:1.5;margin:0 0 14px}.reading .body.zh{position:static;left:auto;top:auto;font-family:"Noto Sans SC",sans-serif;font-size:19px}.meta{font-size:17px;margin-top:20px;color:#5e5a52}.footer{position:absolute;left:110px;right:110px;bottom:32px;display:flex;justify-content:space-between;color:#666056;font-size:13px}
+.translation{position:absolute;left:86px;top:370px;width:245px;font-family:"Noto Sans SC",sans-serif;font-size:14px;line-height:1.45;color:#5f5a53;z-index:2}.proof{position:absolute;right:78px;top:250px;width:300px;font-size:16px;line-height:1.4;color:#4d4942;z-index:2}.figcaption{position:absolute;left:110px;top:965px;width:900px;font-size:14px;line-height:1.4;color:#5f5a53}</style><style class="apple-web-reflow">
+@media(max-width:1200px){
+ html,body{overflow-x:hidden;background:#f8f6f1}.unit{width:100%;height:auto;min-height:100vh;overflow:visible;margin:auto;padding:24px max(24px,5vw) 36px;display:flex;flex-direction:column;gap:24px}.hero{position:relative;top:auto;left:auto;width:auto;height:auto;overflow:visible;margin:0 calc(-1 * max(24px,5vw));padding:24px max(24px,5vw) 20px;display:flex;flex-direction:column;gap:14px;background:#efece5}.name,.title,.hero .zh,.action,.art,.reading,.lead,.body,.meta,.footer,.translation,.proof,.figcaption{position:static;width:auto;height:auto}.name{font-size:16px}.title{max-width:16ch;font-size:clamp(40px,7vw,68px);line-height:1.02;letter-spacing:-.04em}.hero .zh{font-size:22px}.action{display:inline-flex;align-self:flex-start;width:max-content;max-width:100%;font-size:17px}.translation,.proof{max-width:60ch;font-size:16px;line-height:1.5}.art{display:block;width:100%;max-width:1100px;align-self:center;margin:4px auto}.figcaption{font-size:16px;line-height:1.5;max-width:70ch}.hero>div[style]{position:static!important;width:auto!important;font-size:14px!important}.reading{max-width:980px;width:100%;margin:0 auto}.lead{font-size:24px;line-height:1.42;margin:0 0 16px}.body{font-size:18px;line-height:1.55;margin:0 0 16px}.meta{font-size:17px;margin-top:18px}.footer{display:flex;justify-content:space-between;gap:12px;font-size:14px;line-height:1.4;color:#666056}}
+@media(max-width:650px){.unit{gap:18px}.hero{gap:12px}.footer{flex-direction:column}.title{font-size:clamp(38px,11vw,52px)}}
 
-  .vista{position:absolute;left:0;top:0;width:1200px;height:620px;overflow:hidden}
-  .mark{left:110px;top:60px;font-size:15px;font-weight:400;line-height:1.4;letter-spacing:.02em}
-  .vhead{left:110px;top:132px;width:520px}
-  .vhead h1{font-size:52px;font-weight:400;line-height:1.1;letter-spacing:-.02em}
-  .vhead .zh{margin-top:20px;font-size:22px;font-weight:400;line-height:1.55;color:var(--muted)}
-  .vhead a{display:inline-block;margin-top:34px;font-size:17px;font-weight:400;line-height:1.4;
-           color:var(--action);border-bottom:1px solid var(--action);padding-bottom:3px}
-
-  .cap{left:110px;top:656px;width:980px;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
-  .lead{left:110px;top:694px;width:900px;font-size:28px;font-weight:400;line-height:1.4;letter-spacing:-.01em}
-  .leadzh{left:110px;top:786px;width:880px;font-size:18px;font-weight:400;line-height:1.6;color:var(--muted)}
-  .body{left:110px;top:846px;width:800px;font-size:17px;font-weight:400;line-height:1.65}
-
-  .plateh{left:110px;top:962px;font-size:13px;font-weight:400;line-height:1.5;color:var(--muted)}
-  .plate{left:110px;top:990px;width:980px;height:322px;background:var(--panel);border:1px solid var(--hairline)}
-
-  .close{left:110px;top:1366px;width:760px;font-size:22px;font-weight:400;line-height:1.4;letter-spacing:-.01em}
-  .price{left:110px;top:1414px;font-size:14px;font-weight:400;line-height:1.5;color:var(--muted)}
-  .foot{left:110px;top:1522px;width:980px;display:flex;justify-content:space-between;
-        font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
-</style>
-</head>
-<body>
-<div class="unit" id="page">
-
-  <div class="vista">
-    <svg width="1200" height="620" viewBox="0 0 1200 620" aria-hidden="true">
-      <rect width="1200" height="620" fill="#f3f0e8"/>
-      <rect y="575" width="1200" height="45" fill="#e3ded2"/>
-      <rect y="575" width="1200" height="1.4" fill="#cbc4b4"/>
-
-      <!-- one hook, one cord, one dustpan -->
-      <path d="M796 104 C796 94 810 94 810 104 L810 122 C810 132 824 132 824 122"
-            fill="none" stroke="#8d8677" stroke-width="4" stroke-linecap="round"/>
-      <path d="M803 126 C794 150 794 176 803 196" fill="none" stroke="#e7e0d3" stroke-width="7"/>
-      <path d="M817 126 C826 150 826 176 817 196" fill="none" stroke="#e7e0d3" stroke-width="7"/>
-
-      <rect x="799" y="192" width="22" height="278" fill="#ddc9a6"/>
-      <path d="M802 194 V468" stroke="#c2a97f" stroke-width="1.4"/>
-      <path d="M818 194 V468" stroke="#c2a97f" stroke-width="1.4"/>
-      <path d="M802 244 H818" stroke="#c2a97f" stroke-width="1.2" opacity=".75"/>
-      <path d="M802 300 H818" stroke="#c2a97f" stroke-width="1.2" opacity=".75"/>
-      <path d="M802 356 H818" stroke="#c2a97f" stroke-width="1.2" opacity=".75"/>
-      <path d="M802 412 H818" stroke="#c2a97f" stroke-width="1.2" opacity=".75"/>
-
-      <path d="M810 462 L918 462 L940 566 L680 566 L702 462 Z" fill="#d2d0c8"/>
-      <path d="M702 462 L918 462 L920 476 L700 476 Z" fill="#dbd9d1"/>
-      <path d="M700 476 L920 476" stroke="#b8b6ad" stroke-width="1.4"/>
-      <path d="M680 566 L940 566" stroke="#b8b6ad" stroke-width="2"/>
-      <path d="M686 554 L934 554" stroke="#b8b6ad" stroke-width="1.2" opacity=".8"/>
-      <rect x="756" y="500" width="96" height="42" fill="#f2ede2" stroke="#d8d2c2" stroke-width="1"/>
-      <path d="M756 510 H852" stroke="#ddd7c7" stroke-width="1"/>
-      <path d="M756 523 H852" stroke="#ddd7c7" stroke-width="1"/>
-      <path d="M756 536 H852" stroke="#ddd7c7" stroke-width="1"/>
-    </svg>
-
-    <p class="t mark pad">Plain</p>
-    <div class="t vhead">
-      <h1>Four materials,<br>and no fifth.</h1>
-      <p class="zh">四种材料，没有第五种</p>
-      <a href="#">Read the material note</a>
-    </div>
-  </div>
-
-  <p class="t cap">Illustrative render, not a photograph</p>
-
-  <p class="t lead">A dustpan can be taken apart into four materials, and none of them is there to look like something else.</p>
-  <p class="t leadzh">一个撮箕可以拆成四种材料，没有一种是用来装成别的东西的</p>
-  <p class="t body">One wall of polypropylene, 2 mm, undyed: no liner behind it. One beech handle, 22 mm, held in a socket by one screw. One cotton cord, 4 mm, through a drilled hole. One paper label, 40 × 20 mm, the only printed thing on the object.</p>
-
-  <p class="t plateh">Section through the pan and the handle socket, at 4:1. The drawing is a detail; the handle and the floor continue past the broken lines.</p>
-
-  <div class="t plate">
-    <svg width="978" height="320" viewBox="0 0 978 320" aria-hidden="true">
-      <g transform="translate(0 18)">
-
-      <path d="M146 56 V266" stroke="#c9c4b6" stroke-width="1" stroke-dasharray="5 7"/>
-      <path d="M940 56 V170" stroke="#c9c4b6" stroke-width="1" stroke-dasharray="5 7"/>
-
-      <!-- the pan: one 2 mm wall, cut -->
-      <path d="M150 250 H508 V258 H150 Z" fill="#d2d0c8"/>
-      <path d="M500 72 H508 V258 H500 Z" fill="#d2d0c8"/>
-      <path d="M150 250 H508" stroke="#e8e6de" stroke-width="1.2"/>
-      <path d="M500 72 V258" stroke="#b8b6ad" stroke-width="1"/>
-
-      <!-- socket and screw, the same polypropylene -->
-      <path d="M486 66 H560 V156 H486 Z" fill="#cbc9c1"/>
-      <path d="M486 66 H560 V156 H486 Z" fill="none" stroke="#b8b6ad" stroke-width="1"/>
-      <circle cx="523" cy="111" r="4.2" fill="#8d8677"/>
-      <path d="M519 111 H527" stroke="#e9e7df" stroke-width="1"/>
-
-      <!-- beech handle -->
-      <rect x="558" y="70" width="382" height="88" fill="#ddc9a6"/>
-      <path d="M558 71 H940" stroke="#f0e2c4" stroke-width="1.6"/>
-      <path d="M558 156 H940" stroke="#c2a97f" stroke-width="1.4"/>
-      <g stroke="#c2a97f" stroke-width="1" fill="none" opacity=".85">
-        <path d="M580 88 C650 84 720 92 790 88 S 890 84 936 90"/>
-        <path d="M580 104 C650 108 720 100 790 104 S 890 108 936 102"/>
-        <path d="M580 120 C650 116 720 124 790 120 S 890 116 936 122"/>
-        <path d="M580 136 C650 140 720 132 790 136 S 890 140 936 134"/>
-      </g>
-
-      <!-- cotton cord, tied at the socket, hanging -->
-      <path d="M578 156 C 552 196, 552 236, 582 236 C 612 236, 614 196, 592 158"
-            fill="none" stroke="#e7e0d3" stroke-width="16" stroke-linecap="round"/>
-      <path d="M578 156 C 552 196, 552 236, 582 236" fill="none" stroke="#f6f1e6" stroke-width="4"/>
-
-      <!-- paper label on the inside of the wall -->
-      <rect x="340" y="168" width="160" height="80" fill="#f2ede2" stroke="#d8d2c2" stroke-width="1"/>
-      <path d="M356 190 H484" stroke="#ddd7c7" stroke-width="1.4"/>
-      <path d="M356 208 H484" stroke="#ddd7c7" stroke-width="1.4"/>
-      <path d="M356 226 H430" stroke="#ddd7c7" stroke-width="1.4"/>
-
-      <!-- polypropylene -->
-      <path d="M200 52 V246" stroke="#666056" stroke-width="1" fill="none"/>
-      <text x="200" y="24" text-anchor="middle" font-family="Inter, 'Noto Sans SC', sans-serif"
-            font-size="13" fill="#302d27">Polypropylene</text>
-      <text x="200" y="42" text-anchor="middle" font-family="Inter, 'Noto Sans SC', sans-serif"
-            font-size="13" fill="#666056">2 mm</text>
-
-      <!-- paper -->
-      <path d="M420 52 V164" stroke="#666056" stroke-width="1" fill="none"/>
-      <text x="420" y="24" text-anchor="middle" font-family="Inter, 'Noto Sans SC', sans-serif"
-            font-size="13" fill="#302d27">Paper</text>
-      <text x="420" y="42" text-anchor="middle" font-family="Inter, 'Noto Sans SC', sans-serif"
-            font-size="13" fill="#666056">40 × 20 mm</text>
-
-      <!-- cotton -->
-      <path d="M660 196 H612" stroke="#666056" stroke-width="1" fill="none"/>
-      <text x="668" y="192" font-family="Inter, 'Noto Sans SC', sans-serif"
-            font-size="13" fill="#302d27">Cotton</text>
-      <text x="668" y="210" font-family="Inter, 'Noto Sans SC', sans-serif"
-            font-size="13" fill="#666056">4 mm</text>
-
-      <!-- beech -->
-      <path d="M790 172 V160" stroke="#666056" stroke-width="1" fill="none"/>
-      <text x="790" y="192" font-family="Inter, 'Noto Sans SC', sans-serif"
-            font-size="13" fill="#302d27">Beech</text>
-      <text x="790" y="210" font-family="Inter, 'Noto Sans SC', sans-serif"
-            font-size="13" fill="#666056">22 mm</text>
-      </g>
-    </svg>
-  </div>
-
-  <p class="t close">Nothing is laminated, coated or glued.</p>
-  <p class="t price">Plain dustpan · ¥68</p>
-
-  <div class="t foot"><span>Illustrative example</span><span>Plain material note · 2026</span></div>
-</div>
-<script src="../../_shared/continuous-corner.js"></script>
-</body>
-</html>
+</style><style class="apple-web-type-floor">.translation,.proof{font-size:16px;line-height:1.5}.figcaption{font-size:16px;line-height:1.45}.footer{font-size:14px}</style><style>@media(min-width:1201px){.unit{margin-inline:auto}}@media(max-width:520px){.art-desktop{display:none!important}.art.art-mobile{display:block;width:100vw;max-width:none;height:auto;align-self:center;margin:4px calc(50% - 50vw)}}</style></head><body><main class="unit"><section class="hero"><div class="name">Plain · material note</div><h1 class="title">Four materials,<br>and no fifth.</h1><p class="zh">四种材料，没有第五种</p><a data-apple-motion class="action" href="#material-note">Read the material note</a><p class="translation">一个撮箕可以拆成四种材料，没有一种是用来装成别的东西的</p><p class="proof">Nothing is laminated, coated or glued.</p>
+<svg class="art art-desktop" viewBox="0 0 1200 730" role="img" aria-label="Four-times cross section through a polypropylene dustpan wall, beech handle socket, cotton cord and paper label">
+<rect width="1200" height="730" fill="#fff"/>
+<defs>
+  <linearGradient id="polySection" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f2f1eb"/><stop offset=".46" stop-color="#c8c9c2"/><stop offset="1" stop-color="#a3a49e"/></linearGradient>
+  <pattern id="polyCut" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#b8b9b2"/><path d="M-2 10L10-2M4 12L12 4" stroke="#777a73" stroke-width="1.2" opacity=".6"/></pattern>
+  <linearGradient id="beechSection" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#795737"/><stop offset=".18" stop-color="#d0a575"/><stop offset=".48" stop-color="#e2c18f"/><stop offset=".78" stop-color="#a77748"/><stop offset="1" stop-color="#68482f"/></linearGradient>
+  <pattern id="beechGrain" width="24" height="42" patternUnits="userSpaceOnUse"><path d="M5 0C2 12 11 19 5 42M17 0C22 13 12 28 18 42" fill="none" stroke="#61452d" stroke-width="1.2" opacity=".35"/><path d="M0 17C8 14 14 20 24 15" fill="none" stroke="#f1d6aa" stroke-width="1.2" opacity=".48"/></pattern>
+  <pattern id="paperFibres" width="12" height="12" patternUnits="userSpaceOnUse"><rect width="12" height="12" fill="#f4f0e5"/><path d="M0 3L12 5M-2 10L8 12M6 0L5 12" stroke="#827b6f" stroke-width=".8" opacity=".22"/></pattern>
+  <linearGradient id="cottonCord" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#8e877a"/><stop offset=".48" stop-color="#eee8d9"/><stop offset="1" stop-color="#8e877a"/></linearGradient>
+  <filter id="sectionShadow" x="-15%" y="-40%" width="130%" height="180%"><feGaussianBlur stdDeviation="7"/></filter>
+</defs>
+<path d="M112 468H886L1050 304V238H1058V307L891 475H112Z" fill="url(#polySection)" stroke="#656761" stroke-width="2"/>
+<!-- The exposed cut faces hatch the eight-unit pan wall and the full socket lip at 4:1. -->
+<rect x="112" y="468" width="8" height="8" fill="url(#polyCut)" stroke="#656761" stroke-width="1"/>
+<rect x="1050" y="238" width="8" height="66" fill="url(#polyCut)" stroke="#656761" stroke-width="1"/>
+<path d="M112 468H886L1050 304" fill="none" stroke="#fff" stroke-width="3" opacity=".8"/>
+<!-- One 88-unit beech section meets the polypropylene walls of its socket. -->
+<path d="M550 336V184H670V336Q670 350 684 360V432H536V360Q550 350 550 336Z" fill="url(#polySection)" stroke="#656761" stroke-width="2"/>
+<path d="M550 342V356Q550 366 540 376V428H558V362Q566 352 566 340V258H558V340Z" fill="url(#polyCut)" opacity=".85"/>
+<path d="M654 258H662V340Q662 352 670 362V428H688V376Q678 366 678 356V342V258Z" fill="url(#polyCut)" opacity=".85"/>
+<rect x="566" y="186" width="88" height="150" fill="url(#beechSection)" stroke="#61452d" stroke-width="2"/>
+<rect x="566" y="186" width="88" height="150" fill="url(#beechGrain)"/>
+<!-- A standard broken view keeps the handle and floor visibly continuous. -->
+<path d="M566 238L582 230L598 238L614 230L630 238L654 230M566 252L582 244L598 252L614 244L630 252L654 244" fill="none" stroke="#493824" stroke-width="2"/>
+<path d="M570 245L586 238L602 245L618 238L634 245L650 238" fill="none" stroke="#fff" stroke-width="5"/>
+<!-- Section line: 88 units = 22 mm at four times size. -->
+<path d="M566 170H654M566 162V178M654 162V178" fill="none" stroke="#302d27" stroke-width="2"/>
+<!-- The lower floor break omits length; the same wall resumes on both sides. -->
+<path d="M246 464L254 470L246 476M264 464L272 470L264 476" fill="none" stroke="#302d27" stroke-width="2"/>
+<path d="M246 464L254 470L246 476M264 464L272 470L264 476" fill="none" stroke="#fff" stroke-width="1"/>
+<!-- Screw through the socket and handle. -->
+<path d="M534 383H686" stroke="#484944" stroke-width="7"/><circle cx="550" cy="383" r="12" fill="#777970" stroke="#454741" stroke-width="2"/><path d="M543 383H557M550 376V390" stroke="#ecebe5" stroke-width="2"/>
+<!-- A 16-unit cotton cord passes through the drilled rim hole and supports a 160 by 80 unit paper label. -->
+<circle cx="884" cy="466" r="8" fill="#3c403d"/><path d="M884 466C884 392 862 303 880 236C888 207 911 201 930 214" fill="none" stroke="#777164" stroke-width="19" stroke-linecap="round"/><path d="M884 466C884 392 862 303 880 236C888 207 911 201 930 214" fill="none" stroke="url(#cottonCord)" stroke-width="16" stroke-linecap="round"/><path d="M884 466C884 392 862 303 880 236C888 207 911 201 930 214" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="2 7" opacity=".7"/>
+<rect x="930" y="152" width="160" height="80" fill="url(#paperFibres)" stroke="#777266" stroke-width="2"/><circle cx="944" cy="214" r="8" fill="#fff" stroke="#777266" stroke-width="2"/>
+<!-- Four live labels, each leader lands on its material in the section. -->
+<g font-family="Inter,sans-serif" fill="#302d27" font-size="19">
+  <text x="148" y="554">Polypropylene</text><text x="148" y="580" fill="#625d54" font-size="17">2 mm</text>
+  <text x="1010" y="278">Paper</text><text x="1010" y="304" fill="#625d54" font-size="17">40 × 20 mm</text>
+  <text x="828" y="124">Cotton</text><text x="828" y="150" fill="#625d54" font-size="17">4 mm</text>
+  <text x="316" y="270">Beech</text><text x="316" y="296" fill="#625d54" font-size="17">22 mm</text>
+</g>
+<g stroke="#4d4942" stroke-width="1.7" fill="none"><path d="M310 304L566 258"/><path d="M216 542L338 476"/><path d="M926 170L901 208"/><path d="M904 300L974 232"/></g>
+<!-- 2 mm wall measured as exactly 8 drawing units. -->
+<path d="M734 468H806M734 460V476M806 460V476" fill="none" stroke="#302d27" stroke-width="2"/><text x="736" y="516" font-family="Inter,sans-serif" font-size="16" fill="#4e4a43">8 px wall at 4:1</text>
+<path d="M112 520H700" stroke="#d2d0c9" stroke-width="1"/>
+</svg><svg class="art art-mobile" viewBox="0 0 320 650" role="img" aria-label="Mobile 4:1 cutaway: an 8-pixel polypropylene wall meets an 88-pixel beech handle section, with a 16-pixel cotton cord and a 160 by 80 paper label">
+<rect width="320" height="650" fill="#fff"/>
+<defs>
+  <linearGradient id="mPolySection" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f2f1eb"/><stop offset=".46" stop-color="#c8c9c2"/><stop offset="1" stop-color="#a3a49e"/></linearGradient>
+  <pattern id="mPolyCut" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#b8b9b2"/><path d="M-2 8L8-2M3 11L11 3" stroke="#777a73" stroke-width="1" opacity=".7"/></pattern>
+  <linearGradient id="mBeechSection" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#795737"/><stop offset=".18" stop-color="#d0a575"/><stop offset=".48" stop-color="#e2c18f"/><stop offset=".78" stop-color="#a77748"/><stop offset="1" stop-color="#68482f"/></linearGradient>
+  <pattern id="mBeechGrain" width="24" height="42" patternUnits="userSpaceOnUse"><path d="M5 0C2 12 11 19 5 42M17 0C22 13 12 28 18 42" fill="none" stroke="#61452d" stroke-width="1.2" opacity=".35"/><path d="M0 17C8 14 14 20 24 15" fill="none" stroke="#f1d6aa" stroke-width="1.2" opacity=".48"/></pattern>
+  <pattern id="mPaperFibres" width="12" height="12" patternUnits="userSpaceOnUse"><rect width="12" height="12" fill="#f4f0e5"/><path d="M0 3L12 5M-2 10L8 12M6 0L5 12" stroke="#827b6f" stroke-width=".8" opacity=".22"/></pattern>
+  <linearGradient id="mCottonCord" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#8e877a"/><stop offset=".48" stop-color="#eee8d9"/><stop offset="1" stop-color="#8e877a"/></linearGradient>
+</defs>
+<!-- All section dimensions remain at four times scale in this mobile arrangement. -->
+<path d="M24 310H296V318H24Z" fill="url(#mPolySection)" stroke="#656761" stroke-width="2"/>
+<rect x="24" y="310" width="8" height="8" fill="url(#mPolyCut)" stroke="#656761" stroke-width="1"/>
+<!-- The handle enters a socket formed by the pan wall; its cut faces meet the beech. -->
+<rect x="108" y="222" width="8" height="68" fill="url(#mPolySection)" stroke="#656761" stroke-width="1"/>
+<rect x="204" y="222" width="8" height="68" fill="url(#mPolySection)" stroke="#656761" stroke-width="1"/>
+<rect x="108" y="240" width="8" height="48" fill="url(#mPolyCut)"/>
+<rect x="204" y="240" width="8" height="48" fill="url(#mPolyCut)"/>
+<path d="M108 286L96 302H116V290M212 286L224 302H204V290" fill="url(#mPolySection)" stroke="#656761" stroke-width="1"/>
+<rect x="116" y="96" width="88" height="194" fill="url(#mBeechSection)" stroke="#61452d" stroke-width="2"/>
+<rect x="116" y="96" width="88" height="194" fill="url(#mBeechGrain)"/>
+<path d="M116 86H204M116 82V90M204 82V90" fill="none" stroke="#302d27" stroke-width="1.5"/>
+<path d="M116 145L132 137L148 145L164 137L180 145L204 137M116 159L132 151L148 159L164 151L180 159L204 151" fill="none" stroke="#493824" stroke-width="2"/>
+<path d="M120 152L136 145L152 152L168 145L184 152L200 145" fill="none" stroke="#fff" stroke-width="5"/>
+<path d="M94 264H226" stroke="#484944" stroke-width="7"/><circle cx="108" cy="264" r="10" fill="#777970" stroke="#454741" stroke-width="2"/><path d="M102 264H114M108 258V270" stroke="#ecebe5" stroke-width="2"/>
+<!-- The pan floor continues at its measured 8-unit wall thickness. -->
+<path d="M78 310V318M74 310H82M74 318H82" fill="none" stroke="#302d27" stroke-width="1.5"/>
+<path d="M42 307L50 313L42 319M60 307L68 313L60 319" fill="none" stroke="#302d27" stroke-width="2"/>
+<path d="M42 307L50 313L42 319M60 307L68 313L60 319" fill="none" stroke="#fff" stroke-width="1"/>
+<circle cx="272" cy="314" r="8" fill="#3c403d"/><path d="M272 314C272 364 270 414 242 444C232 455 224 462 224 472" fill="none" stroke="#777164" stroke-width="19" stroke-linecap="round"/><path d="M272 314C272 364 270 414 242 444C232 455 224 462 224 472" fill="none" stroke="url(#mCottonCord)" stroke-width="16" stroke-linecap="round"/><path d="M272 314C272 364 270 414 242 444C232 455 224 462 224 472" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="2 7" opacity=".7"/>
+<rect x="80" y="452" width="160" height="80" fill="url(#mPaperFibres)" stroke="#777266" stroke-width="2"/><circle cx="224" cy="472" r="7" fill="#fff" stroke="#777266" stroke-width="2"/>
+<!-- Live material labels stay at a legible phone size and each leader lands on its material. -->
+<g stroke="#4d4942" stroke-width="1.6" fill="none"><path d="M86 62L116 104"/><path d="M143 358L132 319"/><path d="M236 395L264 421"/><path d="M160 565L160 535"/></g>
+<g font-family="Inter,sans-serif" fill="#302d27" font-size="16">
+  <text x="20" y="56">Beech</text><text x="20" y="78" fill="#625d54">22 mm</text>
+  <text x="20" y="370">Polypropylene</text><text x="20" y="392" fill="#625d54">2 mm</text>
+  <text x="20" y="418" font-size="14" fill="#4e4a43">8 px wall · 4:1</text>
+  <text x="220" y="370">Cotton</text><text x="220" y="392" fill="#625d54">4 mm</text>
+  <text x="104" y="576">Paper</text><text x="104" y="600" fill="#625d54">40 × 20 mm</text>
+</g>
+</svg><p class="figcaption">Section through the pan and the handle socket, at 4:1. The drawing is a detail; the handle and the floor continue past the broken lines.</p><div style="position:absolute;right:84px;bottom:37px;color:#656056;font-size:13px">Illustrative example · Illustrative render, not a photograph</div></section>
+<section class="reading" id="material-note"><p class="lead">A dustpan can be taken apart into four materials, and none of them is there to look like something else.</p><p class="body">One wall of polypropylene, 2 mm, undyed: no liner behind it. One beech handle, 22 mm, held in a socket by one screw. One cotton cord, 4 mm, through a drilled hole. One paper label, 40 × 20 mm, the only printed thing on the object.</p><div class="meta">Plain dustpan · ¥68 <span style="margin-left:28px">Plain material note · 2026</span></div></section>
+<div class="footer"><span>Plain · the materials are the whole argument.</span><span>4:1 section detail</span></div></main></body></html>

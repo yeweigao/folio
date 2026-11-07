@@ -2,108 +2,59 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1200">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>What a second draft takes away — Fern editing note</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&amp;family=Source+Sans+3:wght@400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;600&amp;family=Source+Sans+3:wght@400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;display=swap" rel="stylesheet">
 <style>
-  :root{
-    --canvas:#f8f3e8; --panel:#fffaf2; --dark:#182b40;
-    --ink:#272520; --muted:#635e56; --action:#ad4937;
-    --onAction:#ffffff; --onDark:#ffffff; --hairline:#d2d2d7;
-    --serif:"Roboto Slab","Noto Serif SC",serif;
-    --sans:"Source Sans 3","Noto Sans SC",sans-serif;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:#dedad0}
-  body{font-family:var(--sans);color:var(--ink)}
-  .unit{position:relative;width:1200px;height:1600px;overflow:hidden;background:var(--canvas)}
-  .zh{font-family:"Noto Sans SC",var(--sans)}
-  .zhserif{font-family:"Noto Serif SC",var(--serif)}
-  [data-cc]{position:relative;isolation:isolate}
-  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+:root{--apple-focus:#ad4937;--canvas:#f8f3e8;--panel:#fffaf2;--dark:#302e2b;--ink:#272520;--muted:#635e56;--action:#ad4937;--serif:"Newsreader","Noto Serif SC",serif;--sans:"Source Sans 3","Noto Sans SC",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html,body{background:var(--canvas)}body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}.unit{position:relative;width:1200px;height:1600px;overflow:hidden;background:var(--canvas)}.zh{font-family:"Noto Sans SC",var(--sans)}[data-cc]{position:relative;isolation:isolate}.cc-bg{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.vista{position:absolute;inset:0 0 auto;height:1000px;background:var(--canvas)}.brand{position:absolute;left:94px;top:48px;font-size:21px;font-weight:600}.vista h1{position:absolute;left:94px;top:96px;width:1030px;font-family:var(--serif);font-size:88px;line-height:1.03;font-weight:400;letter-spacing:-2.4px}.zhline{position:absolute;left:98px;top:300px;font-size:29px;line-height:1.5;color:var(--muted)}.cta{position:absolute;right:98px;top:294px;font-size:20px;color:var(--action);text-decoration:none;border-bottom:1px solid var(--action);padding-bottom:5px}.cta span{margin-left:10px;font-size:24px}
+.draft{position:absolute;left:94px;top:390px;width:1012px;height:500px;padding:30px 38px;background:var(--dark);color:#fff}.draft-head{display:flex;justify-content:space-between;padding-bottom:15px;border-bottom:1px solid rgba(255,255,255,.22);font-size:18px;color:rgba(255,255,255,.66)}.verses{display:grid;grid-template-columns:1fr 1fr;gap:42px;margin-top:32px}.verse{position:relative;padding-top:27px}.verse+.verse{border-left:1px solid rgba(255,255,255,.24);padding-left:42px}.verse .label{position:absolute;left:0;right:0;top:0;display:flex;justify-content:space-between;gap:12px;font-size:16px;letter-spacing:.05em;color:rgba(255,255,255,.58)}.word-count{font-variant-numeric:tabular-nums;letter-spacing:0;color:rgba(255,255,255,.78)}.verse+.verse .label{left:42px}.passage{margin-top:22px;font-family:var(--serif);font-size:30px;line-height:1.55}.del{color:rgba(255,255,255,.45);text-decoration:line-through;text-decoration-color:#e46e58;text-decoration-thickness:2px}.kept{color:#fff}.transition{position:absolute;left:0;right:0;bottom:0;height:104px;padding:0 38px;border-top:1px solid rgba(255,255,255,.22);display:flex;align-items:center;justify-content:space-between}.transition strong{font-family:var(--serif);font-size:38px;font-weight:400}.transition span{font-size:15px;color:rgba(255,255,255,.63)}.caption{position:absolute;left:94px;top:918px;font-size:14px;color:var(--muted)}
+.story{position:absolute;left:110px;top:1024px;width:980px}.story blockquote{width:620px;font-family:var(--serif);font-size:38px;line-height:1.2;letter-spacing:-.6px}.story .body{width:620px;margin-top:20px;font-size:20px;line-height:1.5}.story .figure{position:absolute;right:0;top:0;width:285px;padding-left:24px;border-left:1px solid #d2d2d7}.figure .number{font-family:var(--serif);font-size:43px;line-height:1.06;letter-spacing:-1.2px}.figure .caption{position:static;margin-top:12px;color:var(--muted);font-size:16px;line-height:1.45}.figure .compare{position:relative;margin-top:18px;display:flex;align-items:end;gap:12px;height:110px;padding-bottom:25px}.compare .bar{flex:1;background:var(--action)}.compare .long{height:74px}.compare .short{height:19px;background:#c8b9a6}.compare .count{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}.note{position:absolute;left:110px;bottom:38px;width:980px;display:flex;justify-content:space-between;font-size:14px;color:var(--muted)}
 
-  .vista{position:absolute;left:0;top:0;width:1200px;height:720px;background:var(--dark);overflow:hidden}
-  .over{position:absolute;left:110px;top:112px;width:1000px}
-  .over h1{font-family:var(--serif);font-size:56px;font-weight:400;line-height:1.1;letter-spacing:-1.6px;color:var(--onDark)}
-  .over .zhline{margin-top:22px;font-size:28px;font-weight:400;line-height:1.5;color:rgba(255,255,255,.82)}
-  .cta{display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 26px;margin-top:40px;font-size:17px;color:var(--onAction);text-decoration:none}
-  .cta .arrow{font-size:20px;margin-left:10px}
+:root{--apple-focus:#ad4937}.unit{max-width:1200px;margin-inline:auto}
+@media(max-width:900px){
+.unit{width:100%;height:auto;min-height:0;overflow:visible;padding:24px;display:flex;flex-direction:column;gap:28px}
+.vista{position:relative;inset:auto;height:auto;padding:0;display:flex;flex-direction:column;gap:18px}
+.brand,.vista h1,.zhline,.cta,.draft,.caption,.story,.note{position:static;width:auto;height:auto;right:auto;left:auto;top:auto;bottom:auto}
+.brand{font-size:18px}.vista h1{font-size:clamp(40px,8vw,62px);line-height:1.04;letter-spacing:-1.2px}.zhline{font-size:21px}.cta{align-self:flex-start;font-size:17px}
+.draft{padding:22px 20px;min-height:0}.draft-head{flex-wrap:wrap;gap:8px;font-size:14px}.verses{grid-template-columns:1fr;gap:20px;margin-top:22px}.verse+.verse{border-left:0;border-top:1px solid rgba(255,255,255,.24);padding:35px 0 0}.verse+.verse .label{left:0}.passage{font-size:24px;line-height:1.45}.transition{position:static;height:auto;margin-top:26px;padding:16px 0 0;display:flex;align-items:flex-start;flex-direction:column;gap:8px}.transition strong{font-size:30px}
+.vista>.caption{position:static;font-size:13px;color:var(--muted)}
+.story{display:flex;flex-direction:column;gap:14px}.story blockquote,.story .body{width:auto}.story blockquote{font-size:30px}.story .body{font-size:18px;line-height:1.55;margin-top:0}.story .figure{position:static;width:auto;margin-top:8px;padding:18px 0 0;border-left:0;border-top:1px solid #d2d2d7}.figure .number{font-size:36px}.figure .caption{position:static;font-size:14px}
+.note{display:flex;flex-wrap:wrap;gap:8px 24px;font-size:13px}
+}
 
-  .cmp{position:absolute;left:110px;top:392px;width:980px;height:250px;display:flex;gap:48px}
-  .cmp .colp{width:452px}
-  .cmp .lbl{font-size:14px;letter-spacing:.02em;color:rgba(255,255,255,.6)}
-  .cmp .passage{margin-top:22px;font-size:21px;line-height:1.62;color:var(--onDark)}
-  .cmp .del{text-decoration:line-through;text-decoration-color:var(--action);text-decoration-thickness:2px;color:rgba(255,255,255,.55)}
-  .cmp .divide{width:1px;background:rgba(255,255,255,.22)}
-  .credit{position:absolute;left:110px;top:678px;width:980px;font-size:12px;color:rgba(255,255,255,.6)}
 
-  .column{position:absolute;left:110px;top:720px;width:980px;padding:80px 12px 0 12px}
-  .lead{font-family:var(--serif);font-size:28px;font-weight:400;line-height:1.4}
-  .leadzh{margin-top:14px;font-size:28px;font-weight:400;line-height:1.6;color:var(--muted)}
-  .body{margin-top:56px;max-width:720px;font-size:17px;font-weight:400;line-height:1.6}
-  .body+.body{margin-top:24px}
-  .figure{margin-top:64px;border-top:1px solid var(--hairline);padding-top:28px}
-  .figure .big{font-family:var(--serif);font-size:56px;font-weight:400;line-height:1.07;letter-spacing:-1.4px}
-  .figure .lbl{margin-top:12px;font-size:14px;color:var(--muted)}
-  .bars{margin-top:28px}
-  .brow{display:flex;align-items:center;gap:20px;font-size:14px;color:var(--muted)}
-  .brow+.brow{margin-top:16px}
-  .brow .nm{width:56px}
-  .brow .track{flex:1;height:10px;background:#e6ddc9}
-  .brow .fill{display:block;height:10px;background:var(--action)}
-  .brow .fill.wide{width:100%}
-  .brow .fill.short{width:21.2%}
-  .brow .v{width:82px;text-align:left;color:var(--ink)}
-  .cap{margin-top:28px;font-size:14px;color:var(--muted)}
-  .foot{position:absolute;left:110px;top:1524px;width:980px;display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
+@media(min-width:501px) and (max-width:900px){body>.unit{padding-left:5vw!important;padding-right:5vw!important}}
 </style>
-</head>
+<link rel="stylesheet" href="../../_shared/apple-interactions.css"></head>
 <body>
-<div class="unit" id="page">
-
-  <div class="vista">
-    <div class="over">
-      <h1>What a second draft takes away</h1>
-      <p class="zhline zhserif">第二稿拿走了什么</p>
-      <a class="cta" data-cc="23" data-cc-fill="#ad4937" href="#">Read the editing note<span class="arrow">›</span></a>
-    </div>
-
-    <div class="cmp">
-      <div class="colp">
-        <p class="lbl">Draft</p>
-        <p class="passage"><span class="del">She had meant to leave before the light went, but</span> the room was warm <span class="del">and the rain had not yet started,</span> so she stayed<span class="del">, and later she was glad that she had stayed.</span></p>
+<main class="unit">
+  <section class="vista">
+    <p class="brand">Fern</p>
+    <h1>What a second draft takes away</h1>
+    <p class="zhline zh">第二稿拿走了什么</p>
+    <a data-apple-motion class="cta" href="#editing-note">Read the editing note <span>›</span></a>
+    <div class="draft">
+      <div class="draft-head"><span>One passage · two passes</span><span>Revision view</span></div>
+      <div class="verses">
+        <section class="verse"><p class="label">Draft <span class="word-count">33 words</span></p><p class="passage"><span class="del">She had meant to leave before the light went, but</span> the room was warm <span class="del">and the rain had not yet started,</span> so she stayed<span class="del">, and later she was glad that she had stayed.</span></p></section>
+        <section class="verse"><p class="label">Final <span class="word-count">7 words</span></p><p class="passage">The room was warm, so she stayed.</p></section>
       </div>
-      <div class="divide"></div>
-      <div class="colp">
-        <p class="lbl">Final</p>
-        <p class="passage">The room was warm, so she stayed.</p>
-      </div>
+      <div class="transition"><strong>33 words became 7</strong><span>A subtraction a reader can recount</span></div>
     </div>
-    <p class="credit">Illustrative render, not a photograph</p>
-  </div>
-
-  <div class="column">
-    <p class="lead">Fern does not add. It takes away, and the taking is the part worth reading.</p>
-    <p class="leadzh zhserif">删掉，才是值得读的那部分</p>
-    <p class="body">The first version explains itself. It accounts for the light, the rain and the decision to stay, as though a reader could not be trusted to arrive there alone.</p>
-    <p class="body">The second version keeps only the room and the staying. Nothing is added to explain why; the sentence is shorter because the writer stopped asking it to carry the whole evening.</p>
-    <p class="body">What survives is not a summary. It is the same passage with the scaffolding removed, and the difference between the two is the only evidence the note needs.</p>
-
-    <div class="figure">
-      <div class="big">33 words became 7</div>
-      <p class="lbl">Counted on one illustrative passage; the figures are fictional.</p>
-      <div class="bars">
-        <div class="brow"><span class="nm">Draft</span><span class="track"><span class="fill wide"></span></span><span class="v">33 words</span></div>
-        <div class="brow"><span class="nm">Final</span><span class="track"><span class="fill short"></span></span><span class="v">7 words</span></div>
-      </div>
-      <p class="cap">Illustrative render, not a photograph</p>
-    </div>
-  </div>
-
-  <div class="foot"><span>Fern editing note, 2026</span><span>Illustrative example</span></div>
-</div>
+    <p class="caption">Illustrative render, not a photograph</p>
+  </section>
+  <article class="story">
+    <blockquote>Fern does not add. It takes away, and the taking is the part worth reading.</blockquote>
+    <p class="body">The first version explains the light, the rain and the decision to stay. The second keeps the warm room and the choice; the edit leaves a reader room to arrive at the rest.</p>
+    <p class="body">One passage is enough to see the operation. Count what remains, then compare it with what the first draft carried.</p>
+    <aside class="figure"><p class="number">33 words became 7</p><p class="caption">Counted on one illustrative passage; the figures are fictional.</p><div class="compare"><span class="bar long"></span><span class="bar short"></span><div class="count"><span>Draft · 33</span><span>Final · 7</span></div></div></aside>
+  </article>
+  <footer class="note" id="editing-note"><span>Fern editing note, 2026</span><span>Illustrative example</span></footer>
+</main>
 <script src="../../_shared/continuous-corner.js"></script>
 </body>
 </html>

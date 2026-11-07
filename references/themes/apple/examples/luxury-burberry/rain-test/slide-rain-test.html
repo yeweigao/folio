@@ -1,168 +1,81 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=1600">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Highland — The Highland Rain Test</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@300;400;600&amp;family=Noto+Sans+SC:wght@300;400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@400;600&amp;family=Noto+Serif+SC:wght@400&amp;family=Noto+Sans+SC:wght@400&amp;display=swap" rel="stylesheet">
 <style>
-  :root{
-    --canvas:#ffffff; --panel:#f7f4ed; --dark:#202124; --ink:#202124;
-    --muted:#626269; --action:#1936c8; --onAction:#ffffff; --onDark:#ffffff;
-    --hairline:#d2d2d7;
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  html,body{background:#dedee2;}
-  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink);}
-  .unit{position:relative;width:1600px;height:900px;overflow:hidden;background:var(--canvas);}
-  .serif{font-family:"Cormorant Garamond","Noto Serif SC",serif;}
-  .zh{font-family:"Noto Serif SC","Noto Sans SC",serif;}
-  .zhbody{font-family:"Noto Sans SC","Inter",sans-serif;}
-  .t{position:absolute;}
-  .pad{padding:12px;}
+:root{--canvas:#fff;--panel:#f1f2f2;--dark:#202124;--ink:#202124;--muted:#626269;--action:#1936c8;--hair:#d2d2d7}
+*{box-sizing:border-box;margin:0;padding:0}html,body{background:#fff}body{font-family:Inter,"Noto Sans SC",system-ui,sans-serif;color:var(--ink)}.unit{position:relative;width:1600px;height:900px;overflow:hidden;background:#fff}.serif{font-family:"Cormorant Garamond","Noto Serif SC",Georgia,serif}.zh{font-family:"Noto Serif SC","Noto Sans SC",serif}.t{position:absolute}.pad{padding:12px}svg{display:block}[data-cc]{position:relative;isolation:isolate}.cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}a{text-decoration:none}
+.brand{left:76px;top:42px}.brand .name{font-size:27px;font-weight:600}.brand .sub{margin-top:4px;font-size:15px;color:var(--muted)}.brand .zhline{font-size:15px;color:var(--muted)}
+.claim{left:76px;top:130px;width:730px;font-size:72px;line-height:1;font-weight:400;letter-spacing:-.015em}.claim .zhline{display:block;margin-top:15px;font:27px/1.5 "Noto Serif SC","Noto Sans SC",serif;color:var(--muted);letter-spacing:0}
+.figure{left:76px;top:368px;width:650px}.number{font:126px/.86 "Cormorant Garamond","Noto Serif SC",serif;color:var(--action);letter-spacing:-.02em}.label{margin-top:13px;font-size:27px;font-weight:600}.context{margin-top:8px;font-size:33px;line-height:1.35;max-width:610px;color:#4e5053}
+.hero{left:820px;top:52px;width:704px;height:524px}.conditions{left:76px;top:646px;width:1448px;height:142px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}.metric{padding:18px 24px 16px 0;position:relative}.metric+.metric{padding-left:28px;border-left:1px solid var(--hair)}.metric .key{font-size:23px;color:var(--muted)}.metric .value{margin-top:5px;font-size:43px;line-height:1.05;font-weight:400;font-variant-numeric:tabular-nums}
+.log{left:76px;top:811px;width:1448px;display:flex;justify-content:space-between;align-items:baseline}.log .place{font-size:17px}.log .source{margin-left:8px;font-size:15px;color:var(--muted)}.log .action{font-size:17px;color:var(--action);border-bottom:1px solid var(--action);padding-bottom:3px}.foot{left:76px;top:860px;width:1448px;display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}.caption{left:832px;top:582px;font-size:13px;color:var(--muted)}
+</style><link rel="stylesheet" href="../../_shared/apple-interactions.css">
+<style data-review-reflow>
 
-  .brand{left:76px;top:52px;}
-  .brand .wm{font-size:34px;font-weight:400;letter-spacing:.4px;line-height:1;}
-  .brand .sub{margin-top:10px;font-size:14px;line-height:1.4;color:var(--muted);}
-  .brand .zhline{margin-top:2px;font-size:14px;line-height:1.4;color:var(--muted);}
+:root{--apple-focus:#1936c8}
+@media(max-width:1600px){
+ .unit{position:relative;width:min(100%,1440px);min-height:100vh;height:auto;overflow:visible;margin:0 auto;padding:32px clamp(24px,5vw,76px) 24px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto auto auto auto auto auto;gap:14px 28px;align-content:start}
+ .brand,.claim,.figure,.hero,.conditions,.log,.foot,.caption{position:static;left:auto;top:auto;width:auto;height:auto}
+ .brand{grid-column:1/-1;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}.brand .name{font-size:25px}.brand .sub,.brand .zhline{font-size:15px}
+ .claim{grid-column:1;grid-row:2;font-size:clamp(48px,6vw,72px);line-height:1.04;letter-spacing:-.035em;align-self:end}.claim .zhline{font-size:21px;margin-top:10px}
+ .figure{grid-column:1;grid-row:3;padding-top:4px}.number{font-size:clamp(76px,10vw,118px);line-height:.95}.label{font-size:20px}.context{font-size:19px;line-height:1.5;max-width:34ch}
+ .hero{grid-column:2;grid-row:2/4;width:100%;aspect-ratio:704/524;align-self:center}.caption{grid-column:2;grid-row:4;font-size:14px}
+ .conditions{grid-column:1/-1;grid-row:5;grid-template-columns:repeat(4,minmax(0,1fr));height:auto;min-height:110px}
+ .metric{padding:14px 14px 12px 0}.metric+.metric{padding-left:18px}.metric .key{font-size:16px}.metric .value{font-size:30px}
+ .log{grid-column:1/-1;grid-row:6;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.log .place{font-size:16px}.log .source{font-size:14px}.log .action{font-size:16px}
+ .foot{grid-column:1/-1;grid-row:7;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:14px}
+}
+@media(max-width:800px){
+ .unit{display:flex;flex-direction:column;gap:16px;padding:28px clamp(24px,5vw,40px) 22px}
+ .brand,.claim,.figure,.hero,.conditions,.log,.foot,.caption{width:auto;margin:0}
+ .claim{font-size:clamp(44px,7vw,64px)}.figure{padding:0}.number{font-size:clamp(76px,12vw,104px)}
+ .hero{width:100%;max-width:704px;align-self:center}.conditions{grid-template-columns:repeat(2,minmax(0,1fr));min-height:0}.metric{padding:14px 12px}.metric+.metric{border-left:0;padding-left:0}.metric:nth-child(even){border-left:1px solid var(--hair);padding-left:16px}
+ .log{align-items:flex-start}.foot{font-size:13px}
+}
+@media(max-width:520px){
+ .unit{padding:24px 20px;gap:14px}.brand{display:grid;grid-template-columns:1fr;gap:2px}.claim{font-size:40px}.claim .zhline{font-size:18px}.number{font-size:68px}.label{font-size:18px}.context{font-size:17px}.metric .key{font-size:15px}.metric .value{font-size:25px}.log .place{font-size:14px}.log .source{font-size:13px}.foot{font-size:13px}
+}
 
-  .claim{left:76px;top:146px;width:724px;font-size:80px;font-weight:400;line-height:1.05;letter-spacing:-1px;}
-  .claim .zhsub{display:block;margin-top:26px;font-size:26px;font-weight:400;line-height:1.5;letter-spacing:0;color:var(--muted);}
-
-  .figure{left:76px;top:392px;width:664px;}
-  .figure .num{font-family:"Cormorant Garamond","Noto Serif SC",serif;font-size:138px;font-weight:400;line-height:.98;letter-spacing:-2px;color:var(--action);}
-  .figure .numlbl{margin-top:18px;font-size:19px;font-weight:600;line-height:1.3;}
-  .figure .numctx{margin-top:10px;width:540px;font-size:17px;font-weight:400;line-height:1.47;color:var(--muted);}
-
-  .log{left:76px;top:624px;width:664px;border-top:1px solid var(--hairline);padding-top:16px;}
-  .log .date{font-size:14px;font-weight:400;color:var(--muted);}
-  .log .grid{margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:10px 40px;}
-  .log .cell{display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid var(--hairline);padding:5px 0 6px;}
-  .log .k{font-size:14px;font-weight:400;color:var(--muted);}
-  .log .v{font-size:17px;font-weight:400;font-variant-numeric:tabular-nums;}
-  .log .src{margin-top:10px;font-size:14px;font-weight:400;color:var(--muted);}
-
-  .actionwrap{left:76px;top:790px;}
-  .pill{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 26px;font-size:17px;font-weight:400;color:var(--onAction);}
-
-  .foot{left:76px;top:858px;font-size:12px;line-height:1.5;color:var(--muted);}
-
-  .ptitle{left:844px;top:78px;width:700px;font-family:"Cormorant Garamond","Noto Serif SC",serif;font-size:30px;font-weight:400;color:var(--onDark);}
-  .lbl{font-size:15px;font-weight:400;color:var(--onDark);}
-  .lbl1{left:928px;top:366px;}
-  .lbl2{left:928px;top:422px;}
-  .lbl3{left:928px;top:478px;}
-  .pnote{left:928px;top:544px;width:560px;font-size:14px;line-height:1.5;color:#c9c9cf;}
-  .pcaption{left:844px;top:838px;width:700px;font-size:12px;line-height:1.5;color:#9a9aa1;}
-  svg{display:block;}
-  [data-cc]{position:relative;isolation:isolate}
-  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
 </style>
 </head>
-<body>
-<div class="unit" id="slide">
-
-  <!-- Proof field: a dark polarity field on the right, and a drawn cloth
-       section. Every drawn object is an illustrative stand-in, declared in
-       the caption; nothing here is a photograph or a real material sample. -->
-  <svg width="1600" height="900" viewBox="0 0 1600 900" aria-hidden="true" style="position:absolute;left:0;top:0">
+<body><div class="unit">
+  <div class="t brand pad"><p class="name serif">Highland</p><p class="sub">The Highland Rain Test</p><p class="zhline zh">高地雨测</p></div>
+  <h1 class="t claim pad serif">What the sky gave,<br>the cloth held.<span class="zhline">天给了多少，布就接住多少</span></h1>
+  <div class="t figure pad"><p class="number">8,000 mm</p><p class="label">hydrostatic head held</p><p class="context">Measured against one storm, not a laboratory claim.</p></div>
+  <svg class="t hero" viewBox="0 0 704 524" role="img" aria-label="A rain-tested layered cloth section with the water boundary marked">
     <defs>
-      <pattern id="weave1" width="8" height="6" patternUnits="userSpaceOnUse">
-        <path d="M0 3 H8" stroke="#ffffff" stroke-width=".6" opacity=".14"/>
-      </pattern>
-      <pattern id="weave2" width="6" height="6" patternUnits="userSpaceOnUse">
-        <path d="M0 3 H6 M3 0 V6" stroke="#ffffff" stroke-width=".6" opacity=".12"/>
-      </pattern>
-      <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse">
-        <path d="M0 8 L8 0" stroke="#ffffff" stroke-width=".8" opacity=".22"/>
-      </pattern>
+      <linearGradient id="cloth" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d9d9d7"/><stop offset=".28" stop-color="#aaa9a5"/><stop offset=".61" stop-color="#767875"/><stop offset="1" stop-color="#3d4346"/></linearGradient>
+      <linearGradient id="membrane" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d9dcdd"/><stop offset="1" stop-color="#999ea0"/></linearGradient>
+      <linearGradient id="lining" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e5e4df"/><stop offset="1" stop-color="#b8b8b2"/></linearGradient>
+      <radialGradient id="light" cx=".2" cy=".05" r="1"><stop stop-color="#fff" stop-opacity=".92"/><stop offset=".42" stop-color="#fff" stop-opacity=".16"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+      <pattern id="weave" width="18" height="14" patternUnits="userSpaceOnUse"><path d="M0 3H18M0 10H18" stroke="#34383a" stroke-opacity=".28" stroke-width="1"/><path d="M4 0V14M13 0V14" stroke="#fff" stroke-opacity=".24" stroke-width="1"/></pattern>
+      <filter id="clothShadow" x="-.15" y="-.2" width="1.3" height="1.5"><feGaussianBlur stdDeviation="12"/></filter>
+      <linearGradient id="drop" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset=".35" stop-color="#d6e0e8"/><stop offset="1" stop-color="#707a81"/></linearGradient>
     </defs>
-
-    <rect x="800" y="0" width="800" height="900" fill="#202124"/>
-
-    <!-- a small trench coat, drawn as a line stand-in, with a leader to the section -->
-    <g stroke="#ffffff" stroke-width="1.5" fill="none" opacity=".72" stroke-linejoin="round">
-      <path d="M 918 128 C 906 128 898 134 892 146 L 872 232 L 892 238 L 906 182 L 898 262 L 1042 262 L 1034 182 L 1048 238 L 1068 232 L 1048 146 C 1042 134 1034 128 1022 128 Z"/>
-      <path d="M 918 128 L 970 168 L 1022 128"/>
-      <path d="M 900 200 L 1040 200"/>
-      <path d="M 970 168 L 970 262"/>
-    </g>
-    <g fill="#ffffff" opacity=".6">
-      <circle cx="982" cy="210" r="2.4"/><circle cx="982" cy="230" r="2.4"/><circle cx="982" cy="250" r="2.4"/>
-    </g>
-    <path d="M 1000 262 L 1000 320 L 952 348" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="3 5" opacity=".4"/>
-
-    <!-- rain pressure: fine vertical strokes ending in arrow heads, above the cloth -->
-    <g stroke="#ffffff" stroke-width="1" opacity=".28">
-      <path d="M 968 292 V 344"/><path d="M 1008 292 V 344"/><path d="M 1048 292 V 344"/>
-      <path d="M 1088 292 V 344"/><path d="M 1128 292 V 344"/><path d="M 1168 292 V 344"/>
-      <path d="M 1208 292 V 344"/><path d="M 1248 292 V 344"/><path d="M 1288 292 V 344"/>
-      <path d="M 1328 292 V 344"/><path d="M 1368 292 V 344"/><path d="M 1408 292 V 344"/>
-    </g>
-    <g fill="#ffffff" opacity=".38">
-      <path d="M 962 344 l 6 9 l 6 -9 Z"/><path d="M 1002 344 l 6 9 l 6 -9 Z"/>
-      <path d="M 1042 344 l 6 9 l 6 -9 Z"/><path d="M 1082 344 l 6 9 l 6 -9 Z"/>
-      <path d="M 1122 344 l 6 9 l 6 -9 Z"/><path d="M 1162 344 l 6 9 l 6 -9 Z"/>
-      <path d="M 1202 344 l 6 9 l 6 -9 Z"/><path d="M 1242 344 l 6 9 l 6 -9 Z"/>
-      <path d="M 1282 344 l 6 9 l 6 -9 Z"/><path d="M 1322 344 l 6 9 l 6 -9 Z"/>
-      <path d="M 1362 344 l 6 9 l 6 -9 Z"/><path d="M 1402 344 l 6 9 l 6 -9 Z"/>
-    </g>
-
-    <!-- the cloth, cut open: three contiguous layers with a hatched cut face -->
-    <rect x="940" y="360" width="540" height="160" fill="#45454c"/>
-    <rect x="940" y="360" width="540" height="56" fill="#4c4c54"/>
-    <rect x="940" y="416" width="540" height="44" fill="#5b5b65"/>
-    <rect x="940" y="460" width="540" height="60" fill="#38383e"/>
-    <rect x="940" y="360" width="540" height="56" fill="url(#weave1)"/>
-    <rect x="940" y="416" width="540" height="44" fill="url(#weave2)"/>
-    <rect x="940" y="460" width="540" height="60" fill="url(#weave1)"/>
-    <rect x="940" y="360" width="16" height="160" fill="url(#hatch)"/>
-    <path d="M 940 416 H 1480" stroke="#ffffff" stroke-width="1" opacity=".3"/>
-    <path d="M 940 460 H 1480" stroke="#ffffff" stroke-width="1" opacity=".3"/>
-    <!-- the decisive boundary: the one house-blue highlight in the diagram -->
-    <path d="M 940 416 H 1480" stroke="#1936c8" stroke-width="3"/>
-    <path d="M 940 360 V 520 M 1480 360 V 520" stroke="#ffffff" stroke-width="1" opacity=".35"/>
+    <ellipse cx="352" cy="469" rx="284" ry="27" fill="#202124" opacity=".22" filter="url(#clothShadow)"/>
+    <!-- rain-beaded outer weave, shown as a material macro -->
+    <path d="M52 92Q69 66 98 72L614 72Q645 76 651 106L623 352L80 352Z" fill="url(#cloth)" stroke="#414749" stroke-width="2"/>
+    <path d="M52 92Q69 66 98 72L614 72Q645 76 651 106L623 352L80 352Z" fill="url(#weave)" opacity=".58"/>
+    <path d="M70 100Q248 72 620 98" fill="none" stroke="#fff" stroke-width="11" opacity=".74"/><path d="M80 115Q268 94 628 117" fill="none" stroke="url(#light)" stroke-width="60"/>
+    <!-- water beads catch the light and seat into the cloth surface -->
+    <g fill="url(#drop)" stroke="#fff" stroke-width="1.2"><ellipse cx="145" cy="153" rx="16" ry="23"/><ellipse cx="248" cy="128" rx="12" ry="18"/><ellipse cx="352" cy="176" rx="18" ry="26"/><ellipse cx="472" cy="134" rx="13" ry="19"/><ellipse cx="557" cy="204" rx="17" ry="24"/><ellipse cx="202" cy="245" rx="10" ry="15"/><ellipse cx="425" cy="257" rx="13" ry="19"/><ellipse cx="531" cy="296" rx="9" ry="13"/></g>
+    <g fill="#fff" opacity=".85"><ellipse cx="140" cy="146" rx="4" ry="7"/><ellipse cx="244" cy="122" rx="3" ry="5"/><ellipse cx="346" cy="168" rx="5" ry="8"/><ellipse cx="467" cy="129" rx="3" ry="5"/><ellipse cx="550" cy="197" rx="4" ry="7"/><ellipse cx="199" cy="240" rx="3" ry="5"/><ellipse cx="420" cy="250" rx="3" ry="6"/></g>
+    <!-- cutaway exposes outer cloth, membrane and lining -->
+    <path d="M80 352L623 352L614 397L75 397Z" fill="url(#cloth)" stroke="#414749" stroke-width="1.5"/><path d="M75 397L614 397L606 432L70 432Z" fill="url(#membrane)" stroke="#7e8385"/><path d="M70 432L606 432L598 467L64 467Z" fill="url(#lining)" stroke="#9a9993"/>
+    <path d="M75 397H614" stroke="#1936c8" stroke-width="5"/><path d="M83 361H620" stroke="#fff" stroke-width="2" opacity=".7"/>
+    <g font-family="Inter,'Noto Sans SC',sans-serif" font-size="17" font-weight="600" fill="#202124"><text x="104" y="383">outer cloth</text><text x="104" y="423">weather membrane</text><text x="104" y="457">lining</text></g>
+    <g stroke="#1936c8" stroke-width="2" opacity=".9"><path d="M28 397H62"/><circle cx="64" cy="397" r="4" fill="#1936c8"/></g>
+    <!-- rain streaks remain in the background, not across labels -->
+    <g stroke="#aeb6bd" stroke-width="2" opacity=".55"><path d="M134 15l-12 39"/><path d="M236 3l-11 42"/><path d="M341 18l-13 44"/><path d="M488 0l-13 45"/><path d="M574 20l-12 42"/></g>
   </svg>
-
-  <div class="t brand pad">
-    <div class="wm serif">Highland</div>
-    <div class="sub">The Highland Rain Test</div>
-    <div class="zhline zh">高地雨测</div>
+  <p class="t caption pad">Illustrative render, not a photograph</p>
+  <div class="t conditions">
+    <div class="metric"><p class="key">Rainfall</p><p class="value">48 mm/h</p></div><div class="metric"><p class="key">Duration</p><p class="value">6 h</p></div><div class="metric"><p class="key">Wind</p><p class="value">64 km/h</p></div><div class="metric"><p class="key">Temperature</p><p class="value">7 °C</p></div>
   </div>
-
-  <h1 class="t claim pad serif">What the sky gave,
-<br>the cloth held.<span class="zhsub zh">天给了多少，布就接住多少</span></h1>
-
-  <div class="t figure pad">
-    <div class="num">8,000 mm</div>
-    <div class="numlbl">hydrostatic head held</div>
-    <div class="numctx">Measured against one storm, not a laboratory claim.</div>
-  </div>
-
-  <div class="t log pad">
-    <div class="date">14 October 2026, Glen Orra test field</div>
-    <div class="grid">
-      <div class="cell"><span class="k">Rainfall</span><span class="v">48 mm/h</span></div>
-      <div class="cell"><span class="k">Duration</span><span class="v">6 h</span></div>
-      <div class="cell"><span class="k">Wind</span><span class="v">64 km/h</span></div>
-      <div class="cell"><span class="k">Temperature</span><span class="v">7 °C</span></div>
-    </div>
-    <div class="src">Highland field log, 14 October 2026</div>
-  </div>
-
-  <div class="t actionwrap pad"><span class="pill" data-cc="22" data-cc-fill="#1936c8">Read the field log</span></div>
-
-  <div class="t foot pad">Illustrative example</div>
-
-  <div class="t ptitle pad">A section through the cloth</div>
-  <div class="t lbl lbl1 pad">outer cloth</div>
-  <div class="t lbl lbl2 pad">weather membrane</div>
-  <div class="t lbl lbl3 pad">lining</div>
-  <div class="t pnote pad">The single blue line is where the measured water stopped.</div>
-  <div class="t pcaption pad">Illustrative render, not a photograph</div>
-</div>
-<script src="../../_shared/continuous-corner.js"></script>
-</body>
-</html>
+  <div class="t log"><p class="place">14 October 2026 <span style="color:var(--muted)">· Glen Orra test field ·</span><span class="source">Highland field log, 14 October 2026</span></p><a data-apple-motion class="action" href="#">Read the field log ›</a></div>
+  <div class="t foot"><span>Illustrative example</span></div>
+</div><script src="../../_shared/continuous-corner.js"></script></body></html>

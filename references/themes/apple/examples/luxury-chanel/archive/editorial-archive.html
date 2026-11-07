@@ -1,105 +1,74 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=1200">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Noir — A timeless house argues with dates</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@300;400;600&amp;family=Noto+Sans+SC:wght@300;400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@400;600&amp;family=Noto+Serif+SC:wght@400&amp;family=Noto+Sans+SC:wght@400&amp;display=swap" rel="stylesheet">
 <style>
-  :root{
-    --canvas:#ffffff; --panel:#f5f5f5; --dark:#111111; --ink:#111111;
-    --muted:#626262; --action:#111111; --onAction:#ffffff; --onDark:#ffffff;
-    --hairline:#d2d2d7;
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  html,body{background:#dedee2;}
-  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink);}
-  .unit{position:relative;width:1200px;height:1600px;overflow:hidden;background:var(--canvas);}
-  .serif{font-family:"Cormorant Garamond","Noto Serif SC",serif;}
-  .zh{font-family:"Noto Serif SC","Noto Sans SC",serif;}
-  .t{position:absolute;}
-  .pad{padding:12px;}
+:root{--canvas:#fff;--panel:#f5f5f5;--dark:#111;--ink:#111;--muted:#626262;--hair:#d2d2d7}
+*{box-sizing:border-box;margin:0;padding:0}html,body{background:#fff}body{font-family:Inter,"Noto Sans SC",system-ui,sans-serif;color:var(--ink)}.unit{position:relative;width:1200px;height:1600px;overflow:hidden;background:#fff}.serif{font-family:"Cormorant Garamond","Noto Serif SC",Georgia,serif}.zh{font-family:"Noto Serif SC","Noto Sans SC",serif}.t{position:absolute}.pad{padding:12px}svg{display:block}[data-cc]{position:relative;isolation:isolate}.cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}a{text-decoration:none}
+.vista{left:0;top:0;width:1200px;height:970px;overflow:hidden;background:#111}.brand{left:82px;top:45px;color:#fff;font-size:27px;font-weight:600}.story{left:82px;top:203px;width:690px;color:#fff}.story h1{font-size:92px;font-weight:400;line-height:.98;letter-spacing:-.02em}.story .zhline{margin-top:23px;font-size:30px;color:#ededed;line-height:1.5}.story .action{margin-top:34px;display:inline-flex;align-items:center;height:48px;padding:0 27px;background:#fff;color:#111;font-size:17px}.caption{left:88px;top:920px;color:#c9c9c9;font-size:14px}
+.column{left:110px;top:970px;width:980px;padding:34px 12px 0}.lead{font:42px/1.16 "Cormorant Garamond","Noto Serif SC",serif;max-width:920px}.leadzh{margin-top:7px;font-size:24px;line-height:1.5;color:var(--muted)}.body{margin-top:18px;max-width:880px;font-size:20px;line-height:1.5;color:#333}.register{margin-top:28px}.row{height:64px;display:grid;grid-template-columns:152px 1fr 180px;align-items:baseline;border-top:1px solid var(--hair);padding-top:16px}.row:last-child{border-bottom:1px solid var(--hair)}.year{font-size:23px;font-variant-numeric:tabular-nums}.piece{font-size:23px}.figure{font-size:22px;text-align:right;font-variant-numeric:tabular-nums;color:var(--muted)}.source{margin-top:20px;font-size:16px;color:var(--muted)}.foot{left:110px;top:1554px;width:980px;display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+</style><link rel="stylesheet" href="../../_shared/apple-interactions.css">
+<style data-review-reflow>
 
-  .vista{position:absolute;left:0;top:0;width:1200px;height:700px;overflow:hidden;background:var(--dark);}
-  .vista svg{display:block;}
-  .vover{left:86px;top:272px;width:660px;color:var(--onDark);}
-  .vover h1{font-family:"Cormorant Garamond","Noto Serif SC",serif;font-size:62px;font-weight:400;line-height:1.07;letter-spacing:-.6px;}
-  .vover .zhline{margin-top:22px;font-size:28px;font-weight:400;line-height:1.5;color:#ededed;}
-  .vover .act{margin-top:46px;}
-  .pill{display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 28px;font-size:17px;font-weight:400;color:var(--ink);}
-  .vcredit{left:98px;top:648px;width:1000px;font-size:12px;line-height:1.5;color:var(--onDark);opacity:.55;}
+:root{--apple-focus:#111111}
+.unit{position:relative;width:min(100%,1200px);height:auto;min-height:100vh;overflow:visible;margin:0 auto}
+@media(max-width:1200px){
+ .vista{position:relative;left:auto;top:auto;width:100%;height:auto;aspect-ratio:1200/970}
+ .vista>svg{display:block;width:100%;height:100%}
+ .brand{left:clamp(24px,6.8vw,82px);top:clamp(18px,4vw,45px);font-size:clamp(18px,2.2vw,27px)}
+ .story{left:clamp(24px,6.8vw,82px);top:clamp(82px,17vw,203px);width:min(690px,calc(100% - 48px))}
+ .story h1{font-size:clamp(48px,7.6vw,88px);line-height:1.02;letter-spacing:-.035em}
+ .story .zhline{font-size:clamp(18px,2.5vw,27px);line-height:1.45;margin-top:12px}
+ .story .action{height:46px;margin-top:18px}
+ .caption{left:24px;top:auto;bottom:8px;font-size:14px;color:#fff;background:rgba(17,17,17,.82);padding:6px 9px}
+ .column{position:relative;left:auto;top:auto;width:min(980px,100%);padding:32px clamp(24px,6.5vw,78px) 30px;margin:0 auto}
+ .lead{font-size:clamp(28px,3.6vw,42px);line-height:1.2}.leadzh{font-size:19px;line-height:1.5}
+ .body{max-width:65ch;font-size:18px;line-height:1.55}
+ .register{margin-top:24px}.row{height:auto;min-height:58px;grid-template-columns:minmax(84px,152px) minmax(0,1fr) minmax(80px,180px);gap:12px;padding:13px 0}
+ .year,.piece{font-size:19px}.figure{font-size:18px}
+ .source{font-size:15px}.foot{position:static;left:auto;top:auto;width:min(980px,100%);margin:0 auto;padding:0 clamp(24px,6.5vw,78px) 20px;font-size:14px}
+}
+@media(max-width:650px){
+ .vista{aspect-ratio:auto;display:flex;flex-direction:column;height:auto;padding-bottom:16px}
+ .vista>svg{position:static;width:100%;height:auto;aspect-ratio:1200/970}
+ .brand,.story,.caption{position:static;left:auto;top:auto;width:auto}
+ .brand{margin:14px 20px 0}.story{padding:0 20px;margin-top:10px}.story h1{font-size:38px;line-height:1.03}
+ .story .zhline{font-size:17px;margin-top:8px}.story .action{margin-top:14px;height:44px}
+ .caption{align-self:flex-start;margin:12px 20px 0;color:#fff;background:#111;padding:6px 8px;font-size:13px}
+ .column{padding:28px 20px 24px}.lead{font-size:27px}.leadzh{font-size:17px}.body{font-size:16px}
+ .register{margin-top:20px}.row{grid-template-columns:62px minmax(0,1fr) 76px;gap:8px;min-height:54px;padding:12px 0}
+ .year,.piece{font-size:16px}.figure{font-size:15px}.source{font-size:14px}.foot{padding:0 20px 18px;display:flex;flex-direction:column;font-size:13px}
+}
 
-  .column{position:absolute;left:110px;top:700px;width:980px;padding:88px 12px 0 12px;}
-  .lead{font-family:"Cormorant Garamond","Noto Serif SC",serif;font-size:30px;font-weight:400;line-height:1.35;}
-  .leadzh{margin-top:12px;font-size:24px;font-weight:400;line-height:1.6;color:var(--muted);}
-  .body{margin-top:52px;width:760px;font-size:17px;font-weight:400;line-height:1.47;}
-  .body + .body{margin-top:22px;}
-
-  .figure{margin-top:48px;border-top:1px solid var(--hairline);padding-top:24px;}
-  .fttl{font-size:14px;font-weight:400;color:var(--muted);}
-  .reg{margin-top:18px;}
-  .row{display:grid;grid-template-columns:120px 1fr 160px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--hairline);}
-  .yr{font-size:17px;font-weight:400;font-variant-numeric:tabular-nums;}
-  .pc{font-size:17px;font-weight:400;}
-  .fg{font-size:15px;font-weight:400;text-align:right;color:var(--muted);font-variant-numeric:tabular-nums;}
-  .src{margin-top:18px;font-size:14px;font-weight:400;color:var(--muted);}
-  .cap{margin-top:12px;font-size:14px;font-weight:400;color:var(--muted);}
-
-  .foot{position:absolute;left:110px;top:1520px;width:980px;font-size:12px;line-height:1.5;color:var(--muted);}
-
-  svg{display:block;}
-  [data-cc]{position:relative;isolation:isolate}
-  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
 </style>
 </head>
-<body>
-<div class="unit" id="page">
-
-  <div class="vista">
-    <svg width="1200" height="700" viewBox="0 0 1200 700" aria-hidden="true">
-      <!-- one archival garment, drawn as a white line stand-in on black -->
-      <g fill="none" stroke="#ffffff" stroke-width="1.6" opacity=".7" stroke-linejoin="round" stroke-linecap="round">
-        <path d="M 900 66 C 900 54 890 50 882 54 C 876 57 876 66 882 68"/>
-        <path d="M 900 66 V 96"/>
-        <path d="M 900 96 L 812 148 H 988 Z"/>
-        <path d="M 852 150 C 838 150 830 158 824 170 L 792 316 L 820 324 L 840 214 L 828 610 L 972 610 L 960 214 L 980 324 L 1008 316 L 976 170 C 970 158 962 150 948 150 Z"/>
-        <path d="M 852 150 L 900 204 L 948 150"/>
-        <path d="M 900 204 V 610"/>
-      </g>
-    </svg>
-    <div class="t vover pad">
-      <h1>A timeless house
-<br>argues with dates.</h1>
-      <p class="zhline zh">永恒的屋子，用年份说话</p>
-      <div class="act"><span class="pill" data-cc="23" data-cc-fill="#ffffff">Read the archive</span></div>
-    </div>
-    <p class="t vcredit pad">Illustrative render, not a photograph</p>
-  </div>
-
-  <div class="column">
-    <p class="lead">The archive is kept as a register, not a mood.</p>
-    <p class="leadzh zh">档案是一份登记，不是一种情绪</p>
-
-    <p class="body">The archive is not a room of beautiful things. It is a set of dated entries: what was made, in which year, and the one measure that changed. A house that claims to be timeless has to keep a record that can be checked.</p>
-    <p class="body">Nothing in the register is a season. Each line is a piece held to the same cut, and the figure beside it is the only thing that differs. Read down the years and the argument makes itself: the clothes did not need to change.</p>
-
-    <div class="figure">
-      <div class="fttl">House register</div>
-      <div class="reg">
-        <div class="row"><span class="yr">1955</span><span class="pc">The One Seam</span><span class="fg">1 seam</span></div>
-        <div class="row"><span class="yr">1971</span><span class="pc">The White Shirt</span><span class="fg">2 panels</span></div>
-        <div class="row"><span class="yr">1998</span><span class="pc">The Trouser</span><span class="fg">6 mm</span></div>
-        <div class="row"><span class="yr">2026</span><span class="pc">The Collection</span><span class="fg">6 pieces</span></div>
-      </div>
-      <p class="src">Noir house register, 2026</p>
-      <p class="cap">Illustrative render, not a photograph</p>
-    </div>
-  </div>
-
-  <div class="foot">Illustrative example</div>
-</div>
-<script src="../../_shared/continuous-corner.js"></script>
-</body>
-</html>
+<body><div class="unit">
+  <section class="t vista">
+    <svg width="1200" height="970" viewBox="0 0 1200 970" role="img" aria-label="A white archive shirt hanging in a soft gallery light">
+      <defs><radialGradient id="blackLight" cx=".78" cy=".32" r=".9"><stop stop-color="#343434"/><stop offset=".55" stop-color="#191919"/><stop offset="1" stop-color="#080808"/></radialGradient><linearGradient id="cotton" x1=".08" y1="0" x2=".88" y2="1"><stop stop-color="#fff"/><stop offset=".24" stop-color="#dbdbd8"/><stop offset=".47" stop-color="#f2f2ef"/><stop offset=".77" stop-color="#c9cac8"/><stop offset="1" stop-color="#f7f7f4"/></linearGradient><linearGradient id="fold" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fff" stop-opacity=".76"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#777" stop-opacity=".22"/></linearGradient><pattern id="cottonWeave" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M0 2H12M0 8H12" stroke="#555" stroke-opacity=".12"/><path d="M3 0V12M9 0V12" stroke="#fff" stroke-opacity=".38"/></pattern><filter id="shirtShadow" x="-.3" y="-.2" width="1.6" height="1.5"><feGaussianBlur stdDeviation="18"/></filter><clipPath id="shirtClip"><path d="M460 219L514 190L594 241L656 190L710 219L798 351L744 379L710 327L739 803Q590 841 441 803L470 327L436 379L382 351Z"/></clipPath></defs>
+      <rect width="1200" height="970" fill="url(#blackLight)"/>
+      <path d="M0 780Q312 674 630 742T1200 687V970H0Z" fill="#050505" opacity=".42"/>
+      <g transform="translate(250 0)"><ellipse cx="592" cy="829" rx="226" ry="46" fill="#000" opacity=".86" filter="url(#shirtShadow)"/>
+      <path d="M460 219L514 190L594 241L656 190L710 219L798 351L744 379L710 327L739 803Q590 841 441 803L470 327L436 379L382 351Z" fill="url(#cotton)" stroke="#bfc0bf" stroke-width="2"/>
+      <g clip-path="url(#shirtClip)"><path d="M457 225L514 198L594 248L656 198L706 226L792 357L740 380L710 329L736 800Q590 829 446 800L474 329L441 379L389 357Z" fill="url(#cottonWeave)" opacity=".58"/><path d="M485 227L518 203L588 256L597 789L458 800L478 336L441 374Z" fill="url(#fold)"/><path d="M695 233L658 203L604 256L606 789L723 797L701 337L743 374Z" fill="url(#fold)" opacity=".85"/><path d="M475 331Q585 363 710 329" fill="none" stroke="#fff" stroke-width="8" opacity=".55"/></g>
+      <!-- collar and button placket are sewn pieces with lit edges -->
+      <path d="M514 190L594 241L566 314L516 276L480 230Z" fill="#ececea" stroke="#a9abaa" stroke-width="2"/><path d="M656 190L594 241L622 314L672 276L708 230Z" fill="#d5d6d4" stroke="#a9abaa" stroke-width="2"/><path d="M594 242L622 314L594 348L566 314Z" fill="#fff" stroke="#babbb9" stroke-width="2"/>
+      <path d="M594 340V795" stroke="#a9aaa8" stroke-width="2"/><path d="M600 348V792" stroke="#fff" stroke-width="2" opacity=".82"/><g fill="#5b5b5a"><circle cx="599" cy="410" r="3.5"/><circle cx="599" cy="480" r="3.5"/><circle cx="599" cy="550" r="3.5"/><circle cx="599" cy="620" r="3.5"/><circle cx="599" cy="690" r="3.5"/></g><g stroke="#fff" stroke-width="4" opacity=".65"><path d="M471 341L445 366"/><path d="M714 342L739 364"/><path d="M458 796Q591 827 724 796"/></g>
+      <!-- fine archival hanger, not a logo or house mark -->
+      <path d="M594 183V160C594 147 607 145 607 133C607 124 602 119 594 120" fill="none" stroke="#bababa" stroke-width="4"/><path d="M476 207Q594 170 710 207" fill="none" stroke="#bababa" stroke-width="4"/>
+    </g></svg>
+    <p class="t brand pad serif">Noir</p>
+    <div class="t story pad"><h1 class="serif">A timeless house<br>argues with dates.</h1><p class="zhline zh">永恒的屋子，用年份说话</p><a data-apple-motion class="action" href="#" data-cc="23" data-cc-fill="#fff">Read the archive</a></div>
+    <p class="t caption pad">Illustrative render, not a photograph</p>
+  </section>
+  <article class="t column">
+    <h2 class="lead">The archive is kept as a register, not a mood.</h2><p class="leadzh zh">档案是一份登记，不是一种情绪</p>
+    <p class="body">A dated register lets one piece stand beside another without a season to soften the difference. The years move; the cut stays legible.</p>
+    <div class="register"><div class="row"><span class="year">1955</span><span class="piece">The One Seam</span><span class="figure">1 seam</span></div><div class="row"><span class="year">1971</span><span class="piece">The White Shirt</span><span class="figure">2 panels</span></div><div class="row"><span class="year">1998</span><span class="piece">The Trouser</span><span class="figure">6 mm</span></div><div class="row"><span class="year">2026</span><span class="piece">The Collection</span><span class="figure">6 pieces</span></div></div>
+    <p class="source">Noir house register, 2026</p>
+  </article>
+  <footer class="t foot"><span>Illustrative example</span><span>Noir</span></footer>
+</div><script src="../../_shared/continuous-corner.js"></script></body></html>

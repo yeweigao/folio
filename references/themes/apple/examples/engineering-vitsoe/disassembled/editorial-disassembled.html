@@ -1,154 +1,43 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=1200">
-<title>Shelf — taken apart</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;display=swap" rel="stylesheet">
-<style>
-  :root{
-    --canvas:#f8f7f3; --panel:#ffffff; --dark:#2b302d;
-    --ink:#2b302d; --muted:#626a64; --action:#345c5c;
-    --onAction:#ffffff; --onDark:#ffffff; --hairline:#d2d2d7;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:#e6e5e0}
-  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
-  .unit{position:relative;width:1200px;height:1600px;overflow:hidden;background:var(--canvas)}
-  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
-  [data-cc]{position:relative;isolation:isolate}
-  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
-  .t{position:absolute}
-  svg{display:block}
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Shelf — taken apart</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet"><style>
+:root{--white:#ffffff;--bg:#ffffff;--ink:#2b302d;--muted:#626a64;--line:#d5d8d3;--steel:#56635a}*{box-sizing:border-box;margin:0}html,body{background:var(--bg);font-family:Inter,"Noto Sans SC",sans-serif;color:var(--ink)}.unit{width:1200px;height:1600px;overflow:hidden;background:var(--white);position:relative}.hero{height:1010px;position:relative;background:var(--white)}.brand{position:absolute;left:78px;top:40px;font-size:19px;font-weight:600}.kicker{position:absolute;left:158px;top:45px;font-size:16px;color:var(--muted)}.title{position:absolute;left:78px;top:101px;width:1050px;font-size:68px;line-height:1.02;letter-spacing:-3.8px;font-weight:600}.zh{position:absolute;left:82px;top:252px;font-size:29px}.drawing{position:absolute;left:40px;top:304px;width:1120px;height:640px}.caption{position:absolute;left:82px;bottom:27px;color:var(--muted);font-size:15px}.copy{height:590px;padding:44px 82px;position:relative}.lede{font-size:40px;line-height:1.14;letter-spacing:-1.2px;font-weight:600}.lezh{font-size:23px;color:var(--muted);margin-top:8px}.body{font-size:21px;line-height:1.52;max-width:940px;margin-top:24px}.footer{position:absolute;left:82px;right:82px;bottom:26px;display:flex;justify-content:space-between;color:var(--muted);font-size:14px}
+</style><link rel="stylesheet" href="../../_shared/apple-interactions.css">
+<style data-review-reflow>
 
-  .vista{position:absolute;left:0;top:0;width:1200px;height:890px;background:var(--dark)}
-  .brand{left:100px;top:44px;display:flex;align-items:baseline;gap:14px;color:var(--onDark)}
-  .brand .nm{font-size:14px;font-weight:600}
-  .brand .k{font-size:12px;font-weight:400;opacity:.62}
+:root{--apple-focus:#2b302d}
+.unit{width:min(100%,1200px);height:auto;min-height:100vh;overflow:visible;margin:0 auto}
+.parts-mobile{display:none;list-style:none;padding:0;margin:14px 0 0;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 20px}
+.parts-mobile li{font-size:16px;line-height:1.45;padding-top:8px;border-top:1px solid #d5d8d3}
+@media(max-width:1200px){
+ .hero{position:relative;left:auto;top:auto;width:100%;height:auto;min-height:0;padding:28px clamp(24px,6.5vw,78px) 22px;display:flex;flex-direction:column;gap:10px}
+ .brand,.kicker,.title,.zh,.drawing,.caption{position:static;left:auto;top:auto}
+ .brand{font-size:16px}.kicker{font-size:14px}
+ .title{width:auto;font-size:clamp(40px,6vw,68px);line-height:1.04;letter-spacing:-.045em}
+ .zh{font-size:20px;line-height:1.5}
+ .drawing{display:block;width:100%;height:auto;aspect-ratio:1120/640;margin-top:8px}
+ .caption{margin-top:2px;font-size:14px;line-height:1.5}
+ .copy{height:auto;padding:32px clamp(24px,6.5vw,78px) 90px}
+ .lede{font-size:clamp(26px,4.2vw,40px);line-height:1.2;letter-spacing:-.03em}
+ .lezh{font-size:20px;line-height:1.5}
+ .body{max-width:65ch;font-size:17px;line-height:1.55}
+ .footer{left:clamp(24px,6.5vw,78px);right:clamp(24px,6.5vw,78px);width:auto;bottom:24px;font-size:14px;gap:8px;flex-wrap:wrap}
+}
+@media(max-width:800px){.parts-mobile{display:grid}}
+@media(max-width:520px){
+ .parts-mobile{grid-template-columns:minmax(0,1fr)}
+ .hero{padding:24px 20px 18px}
+ .drawing{aspect-ratio:1120/640}
+ .copy{padding:28px 20px 128px}
+ .body{font-size:16px}
+ .lezh{font-size:18px}
+ .footer{left:20px;right:20px;bottom:20px;display:grid;grid-template-columns:1fr;font-size:13px}
+}
 
-  .claim{left:100px;top:84px;width:1000px;font-size:48px;font-weight:600;line-height:1.1;letter-spacing:-1.5px;color:var(--onDark)}
-  .zhline{left:100px;top:200px;width:900px;font-size:24px;font-weight:400;line-height:1.5;color:var(--onDark)}
-
-  .cap{left:100px;top:806px;width:800px;font-size:12px;font-weight:400;line-height:1.5;color:var(--onDark);opacity:.62}
-
-  .col{left:100px;top:930px;width:620px}
-  .lead{font-size:28px;font-weight:400;line-height:1.4;letter-spacing:-.4px}
-  .leadzh{margin-top:14px;font-size:22px;font-weight:400;line-height:1.6;color:var(--muted)}
-  .body{margin-top:32px;font-size:17px;font-weight:400;line-height:1.7}
-
-  .foot{left:100px;top:1500px;width:1000px;display:flex;justify-content:space-between;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
 </style>
-</head>
-<body>
-<div class="unit" id="page">
-
-  <div class="vista"></div>
-
-  <div class="t brand"><span class="nm">Shelf</span><span class="k">Disassembly</span></div>
-  <h1 class="t claim">The whole bay comes apart<br>into five parts.</h1>
-  <p class="t zhline zh">整个单元拆开，只有五种零件</p>
-
-  <svg width="1000" height="560" viewBox="0 0 1000 560" aria-hidden="true" style="position:absolute;left:100px;top:235px">
-    <defs>
-      <pattern id="ticks" width="11.25" height="14" patternUnits="userSpaceOnUse">
-        <line x1="0" y1="0" x2="0" y2="9" stroke="#ffffff" stroke-opacity=".42" stroke-width="1"/>
-      </pattern>
-    </defs>
-
-    <!-- the bay, assembled, at 1:4 -->
-    <g stroke="#ffffff" stroke-opacity=".5" stroke-width="1.6" fill="none">
-      <rect x="48" y="45" width="11" height="450" fill="#ffffff" fill-opacity=".22"/>
-      <rect x="285" y="45" width="11" height="450" fill="#ffffff" fill-opacity=".22"/>
-      <path d="M 59 120 L 285 120" stroke-width="4" stroke-opacity=".55"/>
-      <path d="M 59 250 L 285 250" stroke-width="4" stroke-opacity=".55"/>
-      <path d="M 59 380 L 285 380" stroke-width="4" stroke-opacity=".55"/>
-      <path d="M 59 124 L 78 124 L 78 132 L 66 132 L 66 142 L 59 142"/>
-      <path d="M 285 124 L 266 124 L 266 132 L 278 132 L 278 142 L 285 142"/>
-      <path d="M 59 254 L 78 254 L 78 262 L 66 262 L 66 272 L 59 272"/>
-      <path d="M 285 254 L 266 254 L 266 262 L 278 262 L 278 272 L 285 272"/>
-      <path d="M 59 384 L 78 384 L 78 392 L 66 392 L 66 402 L 59 402"/>
-      <path d="M 285 384 L 266 384 L 266 392 L 278 392 L 278 402 L 285 402"/>
-      <path d="M 59 45 L 285 45" stroke-opacity=".35"/>
-    </g>
-    <text x="48" y="522" font-family="Inter, sans-serif" font-size="11" fill="#ffffff" fill-opacity=".5">assembled</text>
-
-    <!-- the five parts, laid along one ruler at the same 1:4 -->
-    <g fill="#ffffff" fill-opacity=".92">
-      <!-- upright: a bar of slots -->
-      <rect x="320" y="58" width="450" height="14"/>
-      <g fill="#2b302d">
-        <rect x="336" y="61" width="2" height="8"/>
-        <rect x="392" y="61" width="2" height="8"/>
-        <rect x="448" y="61" width="2" height="8"/>
-        <rect x="504" y="61" width="2" height="8"/>
-        <rect x="560" y="61" width="2" height="8"/>
-        <rect x="616" y="61" width="2" height="8"/>
-        <rect x="672" y="61" width="2" height="8"/>
-        <rect x="728" y="61" width="2" height="8"/>
-      </g>
-
-      <!-- shelf: a board with a front lip -->
-      <rect x="320" y="168" width="225" height="10"/>
-      <rect x="320" y="178" width="225" height="3" opacity=".55"/>
-
-      <!-- bracket: an L -->
-      <rect x="320" y="278" width="34" height="6"/>
-      <rect x="320" y="284" width="6" height="18"/>
-
-      <!-- cross-tie: a bar with two end plates -->
-      <rect x="320" y="388" width="112" height="8"/>
-      <rect x="320" y="396" width="6" height="10" opacity=".7"/>
-      <rect x="426" y="396" width="6" height="10" opacity=".7"/>
-
-      <!-- foot: a pad on a stem -->
-      <rect x="328" y="472" width="6" height="12"/>
-      <rect x="320" y="484" width="22.5" height="6"/>
-    </g>
-
-    <!-- ruler: forty modules -->
-    <line x1="320" y1="520" x2="770" y2="520" stroke="#ffffff" stroke-opacity=".45" stroke-width="1"/>
-    <rect x="320" y="520" width="450" height="14" fill="url(#ticks)"/>
-    <text x="320" y="552" font-family="Inter, sans-serif" font-size="11" fill="#ffffff" fill-opacity=".55">one module, 45 mm</text>
-    <text x="770" y="552" text-anchor="end" font-family="Inter, sans-serif" font-size="11" fill="#ffffff" fill-opacity=".55">drawn at 1:4</text>
-
-    <!-- part names and sizes -->
-    <g font-family="Inter, sans-serif" fill="#ffffff">
-      <text x="800" y="64" font-size="14" font-weight="600">Upright ×2</text>
-      <text x="800" y="82" font-size="12" fill-opacity=".62">1,800 mm, 40 × 45</text>
-
-      <text x="800" y="174" font-size="14" font-weight="600">Shelf ×3</text>
-      <text x="800" y="192" font-size="12" fill-opacity=".62">900 × 270 mm, 20 × 6</text>
-
-      <text x="800" y="284" font-size="14" font-weight="600">Bracket ×6</text>
-      <text x="800" y="302" font-size="12" fill-opacity=".62">135 mm, 3 × 45</text>
-
-      <text x="800" y="394" font-size="14" font-weight="600">Cross-tie ×1</text>
-      <text x="800" y="412" font-size="12" fill-opacity=".62">450 mm, 10 × 45</text>
-
-      <text x="800" y="484" font-size="14" font-weight="600">Foot ×2</text>
-      <text x="800" y="502" font-size="12" fill-opacity=".62">90 mm, 2 × 45</text>
-    </g>
-  </svg>
-
-  <p class="t cap">Illustrative render, not a photograph</p>
-
-  <div class="t col">
-    <p class="lead">A bay is not assembled. It is stacked.</p>
-    <p class="leadzh zh">一套搁架不是装起来的，是叠起来的</p>
-
-    <p class="body">Five parts leave the factory. Two uprights carry the load, shelves hang on brackets, one cross-tie holds the pair, and two feet take the floor. No part is left- or right-handed, and no part is cut for one wall.</p>
-
-    <p class="body">The brackets hook into slots at 45 mm intervals, so a shelf's height is a decision rather than a dimension. Move it two slots and it is still the same bracket, in the same hole, at the same price.</p>
-
-    <p class="body">The parts on this sheet are the whole system. A longer wall is not a longer part; it is one more bay of the same five, and the ruler under them is why.</p>
-
-    <p class="body">That is the only claim the system makes: the parts are few enough to count, and a count is the only thing a longer wall changes.</p>
-  </div>
-
-  <div class="t foot"><span>Illustrative example</span><span>Shelf parts note, 2026</span></div>
-</div>
-<script src="../../_shared/continuous-corner.js"></script>
-</body>
-</html>
+</head><body><main class="unit"><section class="hero"><div class="brand">Shelf</div><div class="kicker">Disassembly</div><h1 class="title">The whole bay comes apart<br>into five parts.</h1><p class="zh">整个单元拆开，只有五种零件</p>
+<svg class="drawing" viewBox="0 0 1120 640" role="img" aria-label="Five parts arranged on one module ruler beside an assembled bay"><defs><linearGradient id="steel" x2="1"><stop stop-color="#414a43"/><stop offset=".22" stop-color="#c6cbc6"/><stop offset=".5" stop-color="#707a72"/><stop offset=".82" stop-color="#eef0ec"/><stop offset="1" stop-color="#535d55"/></linearGradient><linearGradient id="board" x2="0" y2="1"><stop stop-color="#fff"/><stop offset=".4" stop-color="#e6e8e4"/><stop offset="1" stop-color="#aeb4ae"/></linearGradient><filter id="shade"><feGaussianBlur stdDeviation="8"/></filter></defs><ellipse cx="585" cy="590" rx="490" ry="12" fill="#000" opacity=".13" filter="url(#shade)"/>
+<!-- assembled ghost --> <g opacity=".5"><rect x="28" y="80" width="11" height="472" fill="url(#steel)"/><rect x="178" y="80" width="11" height="472" fill="url(#steel)"/><g fill="url(#board)" stroke="#657067"><path d="M20 188H196L188 199H12Z"/><path d="M20 326H196L188 337H12Z"/><path d="M20 464H196L188 475H12Z"/></g></g><text x="30" y="57" font-family="Inter" font-size="19" fill="#626a64">assembled</text>
+<!-- vertical ruler --> <path d="M244 83V557M234 83h20M234 557h20" stroke="#798078" stroke-width="1.5"/><g stroke="#aab0aa" stroke-width="1"><path d="M238 95h12M238 107h12M238 119h12M238 131h12M238 143h12M238 155h12M238 167h12M238 179h12M238 191h12M238 203h12M238 215h12M238 227h12M238 239h12M238 251h12M238 263h12M238 275h12M238 287h12M238 299h12M238 311h12M238 323h12M238 335h12M238 347h12M238 359h12M238 371h12M238 383h12M238 395h12M238 407h12M238 419h12M238 431h12M238 443h12M238 455h12M238 467h12M238 479h12M238 491h12M238 503h12M238 515h12M238 527h12M238 539h12"/></g><text x="216" y="75" font-family="Inter" font-size="17" fill="#626a64">drawn at 1:4</text>
+<!-- five part forms --> <g fill="url(#steel)" stroke="#536057" stroke-width="2"><rect x="325" y="84" width="25" height="468"/><rect x="381" y="84" width="25" height="468"/><path d="M500 182h500l-18 17H482z"/><path d="M500 303h500l-18 17H482z"/><path d="M500 424h500l-18 17H482z"/><path d="M520 154h180v10H520zM800 154h180v10H800zM520 278h180v10H520zM800 278h180v10H800zM520 399h180v10H520zM800 399h180v10H800z"/><path d="M556 560h76v17h-76zM701 560h76v17h-76z"/><path d="M848 564h105v10h-105z"/></g><g stroke="#fff" stroke-width="3" opacity=".8"><path d="M331 89v455M387 89v455M490 187h486M490 308h486M490 429h486"/></g>
+<!-- labels --> <g font-family="Inter" fill="#2b302d"><text x="310" y="52" font-size="20" font-weight="600">Upright ×2</text><text x="310" y="600" font-size="17">1,800 mm, 40 × 45</text><text x="516" y="136" font-size="20" font-weight="600">Shelf ×3</text><text x="516" y="472" font-size="17">900 × 270 mm, 20 × 6</text><text x="516" y="520" font-size="20" font-weight="600">Bracket ×6</text><text x="516" y="545" font-size="17">135 mm, 3 × 45</text><text x="800" y="476" font-size="20" font-weight="600">Cross-tie ×1</text><text x="800" y="500" font-size="17">450 mm, 10 × 45</text><text x="848" y="604" font-size="20" font-weight="600">Foot ×2</text><text x="848" y="627" font-size="17">90 mm, 2 × 45</text><text x="266" y="86" font-size="19">one module, 45 mm</text></g></svg><ul class="parts-mobile" aria-label="Part dimensions"><li><strong>Upright ×2</strong><br>1,800 mm, 40 × 45</li><li><strong>Shelf ×3</strong><br>900 × 270 mm, 20 × 6</li><li><strong>Bracket ×6</strong><br>135 mm, 3 × 45</li><li><strong>Cross-tie ×1</strong><br>450 mm, 10 × 45</li><li><strong>Foot ×2</strong><br>90 mm, 2 × 45</li></ul><p class="caption">Illustrative render, not a photograph</p></section>
+<section class="copy"><h2 class="lede">A bay is not assembled. It is stacked.</h2><p class="lezh">一套搁架不是装起来的，是叠起来的</p><p class="body">The upright, shelves, brackets, cross-tie and feet all land on the same 45 mm measure. The assembled bay and each loose part share one ruler, drawn at 1:4, so the height of a wall is a count instead of a cut list.</p><p class="body">Five part types make one bay. The shelf can move through forty positions without a new upright, and a longer wall adds the same lengths again. This is a modular system by arithmetic: Shelf parts note, 2026.</p><footer class="footer"><span>Illustrative example</span><span>Shelf parts note, 2026</span></footer></section></main><script src="../../_shared/continuous-corner.js"></script></body></html>

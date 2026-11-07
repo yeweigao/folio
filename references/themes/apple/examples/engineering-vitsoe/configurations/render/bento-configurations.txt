@@ -1,5 +1,4 @@
 Shelf
-Configurations
 Three lengths, one system.
 
 三种长度，一套系统
@@ -10,48 +9,35 @@ Long wall
 
 three bays, four shelves
 
-2,700 × 1,800 mm
-
-¥6,480
-
+2,700 × 1,800 mm · ¥6,480
 twelve shelves
-
-Build this wall
-
 Two bays
 
 two bays, three shelves
 
-1,800 × 1,800 mm, six shelves
-
+1,800 × 1,800 mm
 ¥4,320
+
+six shelves
 
 One bay
 
 one bay, two shelves
 
 900 × 1,800 mm
-
 ¥2,180
 
 two shelves
 
-Build this wall
-
 45 mm
-
 one upright is forty of them
 
 One shelf, forty positions.
 
-one slot
-the slot below
+Change the length; the count changes.
 
 The same slot pitch runs the full height of every upright, so a shelf moves without a new part.
 
-Illustrative example
-Fictional prices and dimensions, 2026.
-
+Build this wall
+Illustrative example · Fictional prices and dimensions, 2026.
 Illustrative render, not a photograph
-one slot
-the slot below

@@ -1,29 +1,23 @@
+Volt
 The road a single charge can finish.
 
 一次充电走得完的一段路
 
-Illustrative render, not a photograph
+Illustrative render, not a photograph · Illustrative example
 
 A figure says how far. A road says what far is.
 
 数字说多远，路说远是什么
 
-The Coast Road runs from the harbour to the north cape with no town in between. It is the length we set the range against.
-
-There is no charger along it. One charge, read against a place a driver can picture, not a laboratory cycle.
-
 402 km
-one charge, measured along the Coast Road
+
 Harbour 0 km
 Ridgeway 148 km
 North Cape 402 km
+one charge, measured along the Coast Road
 
-Illustrative render, not a photograph
-Volt route study, 2026
+A single charge crosses the harbour, climbs to Ridgeway and reaches North Cape at 402 km. The road gives that distance a shape and a sequence; this is a fictional route, not a survey.
 
-Read the route note ›
-
+Read the route note
 Volt · from ¥80,400
-
-Illustrative example
-Volt route note · 2026
+Volt route study, 2026 · Volt route note · 2026

@@ -1,73 +1,79 @@
-# Aero, an airflow fan · Apple + Engineering, Dyson hand
+# Aero · Apple + Dyson
 
-A visual world for a fictional airflow fan, not a real Dyson product: airflow shown in section and in diagram, performance figures on a shared baseline, and the mechanism as the hero. Dialect: Engineering, governing hand Dyson. Forms shown: Keynote slide, Store card, Editorial opener, Flyer sheet, Website page; Bento grid as a variation for a system unit.
+Aero's world: an airflow fan proved by its section and its figures.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts. Every performance claim carries a figure or a section.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
-Apple as base, Engineering as dialect, Dyson as governing hand — Build the mechanism as a readable section or diagram, then attach the performance figure that tests it; never substitute an unreadable exploded rendering for proof.
+Apple + Dyson style — Build each claim from a readable mechanism section and its measured figure; never substitute lifestyle mood or an unreadable exploded render for proof.
 
-World: Aero, a fan whose claim is airflow, its motor, its filtration, its performance figures, its price, across a launch deck, a shop page and a story opener. Keep Apple's single-accent discipline and one lead per screen; let Dyson's philosophy govern the look — engineering as narrative, section and diagram as proof, figures as the check that the story is true.
+World: A fictional airflow product and the claims its mechanism can support, across a launch deck, a feature comparison and a long read. Every piece keeps the mechanism legible and the claim checkable; each brings one question, one proof and its own reading path.
 
-Method: Separate the content into a claim, its visible evidence and a decision or lookup task. Build the proof field before setting the labels; select Keynote, Store or Editorial structure by the reader's task, then recompose the reading axis and crop for the actual format.
+Method: Start from the part that makes the claim true: airflow, motor or filtration. Choose a section, flat diagram or in-use view whose visible parts explain that cause. Keep diagram line weight and node types consistent; add a figure only when it measures the claim. Reject a view when its arrows or labels cannot be followed without an extra legend. Quiet copy names parts and units; the reader moves from claim to mechanism to figure.
 
-Amplitude: full on covers, heroes and vistas; reduced on Store, reference and specification units.
+Amplitude: Full on the mechanism and decisive figure; reduced on part labels, prices and sources.
 
-Anti-reference: a spec sheet under a lifestyle photograph, beside a rendered explosion.
+Anti-reference: a product photograph with a list of unconnected specifications.
 
 ## Images
 
-No lifestyle mood alone. The hero image is a section or a diagram: a cutaway of the fan, an exploded view, a technical diagram at one line weight, or the product in use with its mechanism visible. Diagrams are flat, one line weight, few node types, deliberate connectors. Fan images and diagrams are fictional mockups, never a real manufacturer's images, and are labelled as such. Crop: diagram sources are cropped tight to the diagram — a source with wide white margins makes the mechanism read smaller than hero photographs in its slot, so margins are trimmed before the diagram is placed.
+Use inline vector diagrams and declared illustrative product renders, never a borrowed Dyson image or an invented documentary photograph. The mechanism is the proof; a product view appears only where its working parts remain visible. Declare drawn objects once per piece: `Illustrative render, not a photograph`. Keep the full mechanism at native proportions and crop only unused source margin. On a cover the mechanism or proof occupies at least half the unit; if the system is too wide, show a named part and place the complete diagram on its proof unit. Keep labels live and captions beside their evidence.
 
 ## Layout
 
-Grid system: Gallery field — derive the proof field and one reading axis from W × H; Store subdivides that field into equal peers, Editorial joins it to a reading column, and Keynote assigns one claim to each slide.
+Grid system: Gallery field — derive a 12-column field from W × H. Set side margin m = max(0.05W, 0.06S), gutter = m ÷ 4, and column = (W − 2m − 11 gutters) ÷ 12. Share the title, mechanism, labels and source edge that their evidence requires. Equal figures share a baseline; unmatched parts do not get equal boxes. Leave unused tracks open. Use an 8 px base spacing step at S = 1000, scaled with S.
 
-Neutral canvas with generous whitespace, one centred axis per unit. Hero: headline with a section or diagram below it as proof. Slide field 16:9, critical content inside the central 80%. Store field: white cards on a hairline grid, one product per card, section thumbnail on top, name and price below. Editorial field: one centred column, with sections and figures as proof inside the story. Text sits at least 11.34 inside its shape; a title clears its descenders before anything below it; a number group sits mid-frame, number, label and context spaced down. Containers may centre; body, leads, captions, card names and prices stay flush left, ragged right; only hero, vista and cover headlines centre.
+For Keynote, keep critical content inside the central 84%; the cover gives the mechanism a field at least half the slide and a 25–35% calm area for live text. For Bento, use a 12-column grid with one wide lead tile and supporting tiles sized by importance; a specification tile uses one large number, one muted label and one check line. Tiles index claims; proof follows or is carried in the tile. For Editorial, use a full-bleed proof vista followed by one centred reading column no wider than 980 px; the body stays flush left and the footer alone may go dense. Set source, unit and caption beside each figure.
 
 ## Typography
 
-One quiet grotesque sans, regular weights for body, medium weight for display, no display face competing with the mechanism. Use tabular numerals where the renderer supports them; otherwise use a right-aligned figure column, so performance figures line up across rows, cards and pages.
-
-Concrete type for this fictional world: Inter for display, Inter for body and labels; pair Chinese with Noto Serif SC for serif display and Noto Sans SC for sans roles. Open-source substitutes, not the brand's own faces.
+Voice: Dyson's Futura-lineage geometric, set in Jost, the nearest open face of that lineage. Use Jost for display, labels and reading; Noto Sans SC for Chinese; Noto Sans Mono only for short part codes when needed. No font file is bundled; Google Fonts sources are OFL 1.1 and fall back to Jost and Noto system families. Use 600 for a claim and 400 for body and labels; 300 is reserved for a large quiet lead. At S = 1000, Keynote slide title at least 0.1 S / 600 / 1.05, body at least 0.037 S / 400 / 1.47, labels 0.026 S / 400 / 1.4 and source 16 / 400; Bento lead 56 / 600 / 1.07; Editorial lead 24 / 300 / 1.5 and body 17 / 400 / 1.47, with a 12 px caption floor. Tabular numerals or a right-aligned figure column keep measurements aligned. CJK and Latin share size and baseline; break Chinese by phrase and keep punctuation inside the measure.
 
 ## Colors
 
-Neutral grounds with one accent for calls to action and key highlights only, never as a field, a wash or a background. Colour beyond the accent comes from the diagram's own line and the product's material, never from chrome. No second accent, no gradient.
-
-Roles: canvas the page, panel the card, dark the proof-field polarity, ink and muted the reading colours, onDark and onAction their contrasts, hairline a non-text separator; action is the single action accent. Reading text uses only the pairs in Tokens. Accent: the single accent replaces every Apple blue role.
+Ground: Dyson's white and neutral grey; colour is the machine's own. White and soft neutral are the reading grounds; charcoal is a proof-field polarity, not the page default. Ink carries reading text; muted marks secondary labels and sources; hairline separates actual diagram groups. One Dyson purple marks the action and one decisive airflow path only. White is the foreground on charcoal or the action; purple never becomes a page wash. Keep diagram meaning legible in grayscale and label each flow directly.
 
 ## Shapes
 
-Every nonzero radius takes Apple's continuous corner; square forms stay square. One corner, inward from the corner point in units of R: `M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0`. R is at most half the shorter side; a side shorter than 3.05732R shortens its shoulder to half the side, toward the native saturated form (first cubic 0 1, 0 .96, 0 .82). Build it natively (`.continuous`), as this path in SVG, canvas, clip or a slide freeform, or in Figma at 60% smoothing; never `border-radius`, `rect rx`, a preset or a superellipse. Fill, stroke and media clip share one path; nested corners share centres, inner R = max(0, outer R − gap).
+Diagram parts use square joins and one line weight. UI controls follow the radius ladder: small 5, tool control 8, card 18, primary actions and chips fully rounded; full-bleed fields stay square. Every nonzero radius uses the continuous corner, not `border-radius`, `rect rx`, a preset or superellipse. One corner, inward from the corner point in units of R:
 
-Cards carry hairlines and quiet separation, never heavy shadow. Diagrams use one line weight, squared ends, no decorative stroke. Calls to action are modest rectangles or pills following the card system, never a pill on every control.
+```text
+M 0 1.52866
+C 0 1.08849 0 .86841 .07491 .63149
+C .16906 .37282 .37282 .16906 .63149 .07491
+C .86841 0 1.08849 0 1.52866 0
+```
+
+R is at most half the shorter side. If a side is shorter than 3.05732R, shorten the shoulder toward the native saturated form. Use one path for fill, stroke and media clip; nested radii share centres, inner R = max(0, outer R − gap). No decorative shadow; a single shadow may sit beneath the product render only.
 
 ## Forms
 
-- Keynote: one thesis per slide; a figure slide is one unit, with figures on a shared baseline, one decisive figure in accent and the rest muted.
-- Store: one product per card, section thumbnail on top, name and price below, one buy action per card.
-- Editorial: opener with the airflow story, then long leads with sections and figures as proof inside the column. The opener is a diagram vista — a section, cutaway or technical diagram at full-bleed with one headline and at most one action, where the mechanism itself is the atmosphere; the diagram must be readable as a diagram, not a rendered explosion.
-- Flyer: one A4 sheet, real internal padding so no text touches a frame edge, one claim, one dominant image, figure or price at display size in the footer rule.
-- Website: full-width hero image, hero plus three sections plus footer, hierarchy carried by size and weight, centred container with flush-left body, leads, captions and prices.
-- Bento grid: a system unit — many Aero parts and figures on one page, tiles sized by importance, one claim per tile, figures as small number posters with tabular numerals. Tiles index; they do not prove: each claim is proved in a following unit or carries its own figure; a figure tile's number is its check.
+- **Keynote:** one mechanism claim per slide; a readable section or diagram takes gallery scale, the figure that checks it shares a baseline, all labels remain live.
+- **Bento:** one claim per tile, sized by importance; same-size specification numbers, direct labels, no tile that needs a legend or second claim.
+- **Editorial:** one mechanism vista, one headline and at most one action; then long leads, a readable diagram and the cited figure in a single column.
 
 ## Variations
 
-One break per unit. A section turn: one full unit as a cutaway or exploded view, with labels naming every part shown. A figure turn: one unit as a figure set on a shared baseline, with the decisive figure in accent.
+A section turn is allowed where the argument changes from the product to how it works; make one complete cutaway the lead and keep its labels. A figure turn is allowed where a claim becomes measurable; align the figures and give the decisive one the accent. Each appears once at that content turn.
 
 ## Do's and Don'ts
 
-Do: section and diagram as proof, figures on a shared baseline, one line weight for diagrams, mechanism as hero, one governing hand per work. Don't: a lifestyle mood without a mechanism, a performance claim without a figure or a section, a 3D explosion that cannot be read as a diagram, a second accent colour, a diagram with every node type at once.
+Floors: facts match each brief exactly; declare every illustration; maintain 4.5:1 text contrast (3:1 for large type); keep reading text live and at its declared size floor for the intended viewing distance; make static output complete as a still; recompose each format instead of scaling a layout; use only original or licensed assets.
+
+Render check: follow the labelled flow from inlet through the mechanism to outlet, then match each figure to its measuring station without a legend.
+
+Test: Cover the figures; the section still reveals what moves and where air goes. Cover the section; no performance claim remains unassigned to a mechanism.
+
+Caricature: a fan cutaway crowded with callouts until no single path can be followed from inlet to outlet.
 
 ## Tokens
 
-Authored for this fictional world at S = 1000; radius sets size, the contour is continuous corner. Product-image colours and hero gradients are source imagery, not additional action colours.
+Values are authored for this fictional world at S = 1000. `action` is Dyson purple for one action and one decisive mechanism signal; it replaces Apple blue for this hand. Jost and Noto Sans SC are Google Fonts, OFL 1.1; no font file is bundled.
 
 ```yaml
 colors:
-  canvas: "#f7f7f5"
+  canvas: "#f5f5f5"
   panel: "#ffffff"
   dark: "#25272a"
   ink: "#25272a"
@@ -77,22 +83,26 @@ colors:
   onDark: "#ffffff"
   hairline: "#d2d2d7"
 typography:
-  display: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 56, fontWeight: 500, lineHeight: 1.07 }
-  heading: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 40, fontWeight: 500, lineHeight: 1.1 }
-  lead: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 28, fontWeight: 400, lineHeight: 1.3 }
-  body: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.47 }
-  label: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
-  fine: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: 1.5 }
+  display: { fontFamily: "Jost, Noto Sans SC, sans-serif", fontSize: 80, fontWeight: 600, lineHeight: 1.05 }
+  slideBody: { fontFamily: "Jost, Noto Sans SC, sans-serif", fontSize: 24, fontWeight: 400, lineHeight: 1.47 }
+  slideLabel: { fontFamily: "Jost, Noto Sans SC, sans-serif", fontSize: 18, fontWeight: 400, lineHeight: 1.4 }
+  slideSource: { fontFamily: "Jost, Noto Sans SC, sans-serif", fontSize: 16, fontWeight: 400, lineHeight: 1.5 }
+  tile: { fontFamily: "Jost, Noto Sans SC, sans-serif", fontSize: 56, fontWeight: 600, lineHeight: 1.07 }
+  editorialLead: { fontFamily: "Jost, Noto Sans SC, sans-serif", fontSize: 24, fontWeight: 300, lineHeight: 1.5 }
+  body: { fontFamily: "Jost, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.47 }
+  label: { fontFamily: "Jost, Noto Sans SC, sans-serif", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
+  caption: { fontFamily: "Jost, Noto Sans SC, sans-serif", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
+  fine: { fontFamily: "Jost, Noto Sans SC, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: 1.5 }
 spacing:
   unit: 8
-  textInset: 11.34
+  textInset: 12
   cardInset: 24
   proofGap: 40
   tileInset: 80
 rounded:
   small: 5
   control: 8
-  card: 11
+  card: 18
 corners:
   contour: "continuous corner"
   smoothing: 0.6
@@ -111,5 +121,5 @@ pairs:
 
 ## Record
 
-Folio version: 1.1.0. Template version: 14. Date: 2026-11-05.
-Pieces: airflow-section (Keynote), filter-range (Bento), air-path (Editorial), each made from this file alone. Subject is fictional; no Dyson product, image, diagram, logo or font file is used. Tokens are authored for this world, not measured from the brand.
+Folio version: 1.1.0. Template version: 14. Date: 2026-11-07.
+Pieces: airflow-section (Keynote, 1600 × 900), filter-range (Bento, 1440 × 1000), air-path (Editorial, 1200 × 1600); each uses its brief and this DESIGN.md. The product and figures are fictional; no Dyson product, photograph, logo or font file is used. Changes after the lock: none.

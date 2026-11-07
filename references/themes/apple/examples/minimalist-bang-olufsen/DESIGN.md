@@ -1,73 +1,77 @@
-# Sound, minimal audio · Apple + Minimalist, Bang & Olufsen hand
+# Sound · Apple + Bang & Olufsen
 
-A visual world for a fictional minimal audio house, not a real Bang & Olufsen product: craftsmanship and material carry the design, the product as sculpture in a quiet room, sound as the only performance claim. Dialect: Minimalist, governing hand Bang & Olufsen. Forms shown: Keynote slide, Store card, Editorial opener, Flyer sheet, Website page; Bento grid as a variation for a system unit.
+Sound's world: audio as material sculpture in a quiet room.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts. Subtraction is judged by use, not by emptiness.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
-Apple as base, Minimalist as dialect, Bang & Olufsen as governing hand — Compose the object as sculpture, then show aluminium, wood or textile where it explains listening and use; never let chrome compete with the object.
+Apple + Bang & Olufsen style — Build one audio object as a sculpture in a quiet room, then show the material or sound measure that helps a listener judge it; never make a feature list stand in for listening.
 
-World: Sound, a house that makes minimal audio products — a speaker, a headphone — its material, its sound, its price, across a launch deck, a shop page and a story opener. Keep Apple's single-accent discipline and one lead per screen; let Bang & Olufsen's philosophy govern the look — minimal audio where craftsmanship and material carry the design: aluminium, wood and textile as the palette, the product as sculpture in a quiet room, sound as the only performance claim.
+World: A fictional minimal audio house and its speakers or listening objects, materials, sound and buying choices, across a launch deck, a shop page and a long read. Every piece keeps the object and its material as the lead; each brings one listening or material question.
 
-Method: Separate the content into a claim, its visible evidence and a decision or lookup task. Build the proof field before setting the labels; select Keynote, Store or Editorial structure by the reader's task, then recompose the reading axis and crop for the actual format.
+Method: Start with what a listener can judge: the product's shape, the material they touch, or the one sound result the brief can substantiate. Build the object in its own geometry, with aluminium, wood or textile treated as material rather than decoration. Choose a quiet room only when it gives the product scale and silence; remove room details that compete. A sound claim needs a stated measure or listening evidence. The path is object, material or sound proof, then the useful choice.
 
-Amplitude: full on covers, heroes and vistas; reduced on Store, reference and specification units.
+Amplitude: Full on the object; reduced on material notes, names, prices and source lines.
 
-Anti-reference: grey minimal skin: empty white, a thin sans, nothing to hold.
+Anti-reference: an empty white page with a thin typeface and no evidence of what the object does.
 
 ## Images
 
-One audio product per unit, photographed as sculpture in a quiet room, silhouette intact, material readable — aluminium, wood, textile. No lifestyle mood, no decorative photograph. Product photographs are generated stand-ins, not a real manufacturer's photographs, and are labelled as such. Crop: sculpture photographs keep the product whole in its quiet room; a title that overflows into body text, or a detail title sitting underneath its image, is rejected and the title box is made taller and the image moved down.
+Use a declared illustrative product render or a sourced material image made for the brief; never a borrowed Bang & Olufsen product photograph. Each drawn object is captioned `Illustrative render, not a photograph`. Show the whole product at its own proportions and let its material be judged; use a detail crop only to prove a material claim, with a caption naming the whole it came from. The cover product owns at least half the field. A quiet room is atmosphere and must be identified as such. Do not draw a waveform or room scene as evidence for sound; use a checkable, labeled measure when sound is the claim.
 
 ## Layout
 
-Grid system: Gallery field — derive the proof field and one reading axis from W × H; Store subdivides that field into equal peers, Editorial joins it to a reading column, and Keynote assigns one claim to each slide.
-
-Neutral canvas with generous whitespace, one centred axis per unit, the product as sculpture in the centre of its field. Slide field 16:9, critical content inside the central 80%. Store field: white cards on a hairline grid, one product per card, photograph on top, name and price below. Editorial field: one centred column, with sculpture photographs as proof inside the story. Text sits at least 11.34 inside its shape; a title clears its descenders before anything below it; a number group sits mid-frame, number, label and context spaced down. Containers may centre; body, leads, captions, card names and prices stay flush left, ragged right; only hero, vista and cover headlines centre.
+Grid system: Object field — derive a 12-column field from W × H with side margin m = max(0.05W, 0.06S), gutter = m ÷ 4 and column = (W − 2m − 11 gutters) ÷ 12. Centre the object within the field that belongs to it; align its name, caption and controls to one shared edge. Do not recenter body copy. Use an 8 px spacing step at S = 1000, scaled with S. Keynote keeps critical text inside the central 84% and the product large enough to read from the room; reserve a calm text zone beside it. Store uses white cards on a hairline grid, radius 18, one comparable product crop per card and each name and price directly below. Editorial opens with one quiet-room product vista, then one centred reading column no wider than 980 px; material evidence belongs beside the claim it proves.
 
 ## Typography
 
-One quiet grotesque sans, regular weights, generous leading, no display face competing with the object. Labels and body in the same quiet voice; a display serif or condensed headline would import another school's voice.
-
-Concrete type for this fictional world: Inter for display, Inter for body and labels; pair Chinese with Noto Serif SC for serif display and Noto Sans SC for sans roles. Open-source substitutes, not the brand's own faces.
+Use Inter for display and reading, Noto Sans SC for Chinese; one quiet grotesque voice across all roles. No face competes with the object. No files are bundled; Inter and Noto Sans SC are Google Fonts, OFL 1.1. Use 600 for the claim, 400 for names and body, and 300 only for a large quiet lead. At S = 1000, Keynote slide title at least 0.1 S / 400 / 1.05, body at least 0.037 S / 400 / 1.47, labels 0.026 S / 400 / 1.4 and source 16 / 400; Store lead 56 / 600 / 1.07; Editorial lead 24 / 300 / 1.5 and body 17 / 400 / 1.47, with a 12 px caption floor. Use tabular figures when comparing sound measures. Match Chinese and Latin apparent size and baseline; break Chinese at phrase boundaries.
 
 ## Colors
 
-Neutral grounds — white, neutral greys, material tones in aluminium, wood and textile — with colour, where it appears at all, coming from the material itself, never from chrome. No decorative colour, no second accent, no gradient.
-
-Roles: canvas the page, panel the card, dark the proof-field polarity, ink and muted the reading colours, onDark and onAction their contrasts, hairline a non-text separator; action is the single neutral action. Reading text uses only the pairs in Tokens. Accent: none; actions stay neutral, and no blue decorates.
+Ground: Bang & Olufsen's quiet light grey; aluminium and wood bring the warmth. Aluminium, wood, textile and the quiet room supply the colour. Use warm paper, white and material grey as page grounds; charcoal is one deliberate turn. There is no separate chromatic accent: the action uses neutral ink, and Apple blue is retired. Ink carries reading; muted is for secondary information; hairline separates functional choices only. Keep material colour in the product image, not in decorative interface chrome.
 
 ## Shapes
 
-Every nonzero radius takes Apple's continuous corner; square forms stay square. One corner, inward from the corner point in units of R: `M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0`. R is at most half the shorter side; a side shorter than 3.05732R shortens its shoulder to half the side, toward the native saturated form (first cubic 0 1, 0 .96, 0 .82). Build it natively (`.continuous`), as this path in SVG, canvas, clip or a slide freeform, or in Figma at 60% smoothing; never `border-radius`, `rect rx`, a preset or a superellipse. Fill, stroke and media clip share one path; nested corners share centres, inner R = max(0, outer R − gap).
+The product keeps its actual geometry; do not round a square product or square a curved one for the layout. Store cards use radius 18, tool controls 8, primary actions and chips are fully rounded; full-bleed fields stay square. Every nonzero radius uses Apple's continuous corner, never `border-radius`, `rect rx`, a preset or superellipse. One corner, inward from the corner point in units of R:
 
-Forms following the product's own geometry, never a decorative radius. Cards carry hairlines and quiet separation, never heavy shadow. No chrome detail competing with listening.
+```text
+M 0 1.52866
+C 0 1.08849 0 .86841 .07491 .63149
+C .16906 .37282 .37282 .16906 .63149 .07491
+C .86841 0 1.08849 0 1.52866 0
+```
+
+R is at most half the shorter side; below 3.05732R, shorten the shoulder toward the native saturated form. Fill, stroke and media clip share one path; nested radii share centres, inner R = max(0, outer R − gap). Use one shadow beneath the product at rest, nowhere else.
 
 ## Forms
 
-- Keynote: one thesis per slide, one sculpture product per slide, live text over a calm zone.
-- Store: one product per card, photograph on top, name and price below, one buy action per card.
-- Editorial: opener with the listening story, then long leads with sculpture photographs as proof inside the column. The opener is a photographic vista — a full-bleed photograph of the product as sculpture in a quiet room with one headline and at most one action.
-- Flyer: one A4 sheet, real internal padding so no text touches a frame edge, one claim, one dominant image, figure or price at display size in the footer rule.
-- Website: full-width hero image, hero plus three sections plus footer, hierarchy carried by size and weight, centred container with flush-left body, leads, captions and prices.
-- Bento grid: a system unit — many Sound products on one page, tiles sized by importance, one claim per tile, each tile one product, specs as small number posters. Tiles index; they do not prove: each claim is proved in a following unit or carries its own figure; a tile's sound claim is its check, not its proof of listening.
+- **Keynote:** one listening or material claim per slide, one large object, live text in its calm zone, and one checkable sound measure only when the claim needs it.
+- **Store:** one object and one price per white card, shared crop and scale for peers, a choice chip only when a buyer must choose material or size, one fixed buy action.
+- **Editorial:** one product in a quiet-room vista, one headline and at most one action; then a single flush-left column with material evidence and a cited sound measure where relevant.
 
 ## Variations
 
-One break per unit. A quiet-room turn: one unit as a single product in an empty quiet room, with one headline and at most one action, the quiet itself as the argument. A material turn: one unit in the product's own material tone, with a complete foreground palette on that tone.
+A quiet-room turn is allowed when the change is from object to listening; keep only the product and one sentence. A material turn is allowed when the surface itself becomes the subject; use one close detail and name what it belongs to. Each variation occupies one unit and returns to the neutral product field.
 
 ## Do's and Don'ts
 
-Do: material minimal audio, product as sculpture, quiet room, sound as the only performance claim, one quiet sans, material as colour. Don't: a plastic chrome detail, a feature list pretending to be sound, a loud visual competing with listening, a decorative colour, a display face competing with the object.
+Floors: facts match each brief exactly; declare every illustration; maintain 4.5:1 text contrast (3:1 for large type); keep reading text live and at its declared size floor for the intended viewing distance; make static output complete as a still; recompose each format instead of scaling a layout; use only original or licensed assets.
+
+Render check: at normal display size, the speaker's aluminium, wood or textile remains legible as a distinct material rather than a flat color fill.
+
+Test: Cover Bang & Olufsen's name; aluminium, wood or textile still lead, and each sound claim remains a measure rather than a mood mark. Add one element back; if it competes with listening or clarifies nothing, it does not belong.
+
+Caricature: plastic chrome and a decorative accent overpower the speaker, leaving its sound claim as mood instead of a measure.
 
 ## Tokens
 
-Authored for this fictional world at S = 1000; radius sets size, the contour is continuous corner. Product-image colours and hero gradients are source imagery, not additional action colours.
+Values are authored for this fictional audio house at S = 1000. Action equals neutral ink because this hand has no chromatic accent; no Apple blue is used. Inter and Noto Sans SC are Google Fonts, OFL 1.1; no font file is bundled.
 
 ```yaml
 colors:
-  canvas: "#f4f3ef"
+  canvas: "#f3f3f3"
   panel: "#ffffff"
   dark: "#282722"
   ink: "#282722"
@@ -77,22 +81,25 @@ colors:
   onDark: "#ffffff"
   hairline: "#d2d2d7"
 typography:
-  display: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 56, fontWeight: 400, lineHeight: 1.07 }
-  heading: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 40, fontWeight: 400, lineHeight: 1.1 }
-  lead: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 28, fontWeight: 400, lineHeight: 1.3 }
+  display: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 80, fontWeight: 400, lineHeight: 1.05 }
+  slideBody: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 24, fontWeight: 400, lineHeight: 1.47 }
+  slideLabel: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 18, fontWeight: 400, lineHeight: 1.4 }
+  slideSource: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 16, fontWeight: 400, lineHeight: 1.5 }
+  tile: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 56, fontWeight: 600, lineHeight: 1.07 }
+  editorialLead: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 24, fontWeight: 300, lineHeight: 1.5 }
   body: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.47 }
   label: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
+  caption: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
   fine: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: 1.5 }
 spacing:
   unit: 8
-  textInset: 11.34
+  textInset: 12
   cardInset: 24
   proofGap: 40
   tileInset: 80
 rounded:
-  small: 5
   control: 8
-  card: 11
+  card: 18
 corners:
   contour: "continuous corner"
   smoothing: 0.6
@@ -111,5 +118,5 @@ pairs:
 
 ## Record
 
-Folio version: 1.1.0. Template version: 14. Date: 2026-11-05.
-Pieces: quietest-setting (Keynote), three-surfaces (Store), one-sheet (Editorial), each made from this file alone. Subject is fictional; no Bang & Olufsen product, photograph, logo or font file is used. Tokens are authored for this world, not measured from the brand.
+Folio version: 1.1.0. Template version: 14. Date: 2026-11-07.
+Pieces: quietest-setting (Keynote, 1600 × 900), three-surfaces (Store, 1440 × 1000), one-sheet (Editorial, 1200 × 1600); each uses its brief and this DESIGN.md. Product and figures are fictional; no Bang & Olufsen product, photograph, logo or font file is used. Changes after the lock: none.

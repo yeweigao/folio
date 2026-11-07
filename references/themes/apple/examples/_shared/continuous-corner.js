@@ -13,10 +13,11 @@
  * (half the side = R: from 0 1 through 0 .96 and 0 .82). Fill, stroke and
  * clip share one path. border-radius, rect rx and superellipses are other curves.
  *
- * Use: <div data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#e0e0e0"
- *           data-cc-stroke-width="1"> live text </div>
- *      <div data-cc="18" data-cc-clip> <img ...> </div>
- * Loaded from ../../_shared/continuous-corner.js relative to a piece folder.
+ * Use: mark a box with data-cc="18" (the radius), and optionally
+ * data-cc-fill, data-cc-stroke, data-cc-stroke-width, data-cc-focus (colour
+ * values), or data-cc-clip to clip media to the same path. A focusable box
+ * (link, button, tabindex) gets its focus ring on the same contour.
+ * Pieces load it from ../../_shared/; a single-file page inlines it as is.
  */
 (function () {
   'use strict';
@@ -64,6 +65,29 @@
   }
 
   function draw(el) {
+    // The SVG fill is absolutely positioned inside its host. Responsive
+    // reflow sometimes changes a rounded tile from absolute to static; give
+    // only that static host a positioning context without changing its flow.
+    var savedPosition = el.__ccSavedPosition;
+    if (savedPosition) {
+      for (var i = 0; i < savedPosition.length; i++) {
+        var prop = savedPosition[i];
+        if (prop.value) el.style.setProperty(prop.name, prop.value, prop.priority);
+        else el.style.removeProperty(prop.name);
+      }
+      delete el.__ccSavedPosition;
+    }
+    if (window.getComputedStyle(el).position === 'static') {
+      var managed = ['position', 'left', 'top', 'right', 'bottom'];
+      el.__ccSavedPosition = managed.map(function (name) {
+        return { name: name, value: el.style.getPropertyValue(name), priority: el.style.getPropertyPriority(name) };
+      });
+      el.style.setProperty('position', 'relative', 'important');
+      el.style.setProperty('left', 'auto', 'important');
+      el.style.setProperty('top', 'auto', 'important');
+      el.style.setProperty('right', 'auto', 'important');
+      el.style.setProperty('bottom', 'auto', 'important');
+    }
     var w = el.offsetWidth, h = el.offsetHeight;
     if (!w || !h) return;
     var r = parseFloat(el.getAttribute('data-cc')) || 0;
@@ -71,7 +95,8 @@
     var fill = el.getAttribute('data-cc-fill') || 'transparent';
     var stroke = el.getAttribute('data-cc-stroke');
     var sw = parseFloat(el.getAttribute('data-cc-stroke-width')) || 1;
-    var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    var svg = el.querySelector(':scope > .cc-bg');
+    if (!svg) svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     svg.setAttribute('class', 'cc-bg');
     svg.setAttribute('width', w);
     svg.setAttribute('height', h);
@@ -84,20 +109,58 @@
       path.setAttribute('stroke', stroke);
       path.setAttribute('stroke-width', sw);
     }
-    svg.appendChild(path);
-    el.insertBefore(svg, el.firstChild);
+    svg.replaceChildren(path);
+    if (svg.parentNode !== el) el.insertBefore(svg, el.firstChild);
     el.style.background = 'transparent';
     el.style.border = '0';
     el.style.borderRadius = '0';
     if (el.hasAttribute('data-cc-clip')) {
       el.style.clipPath = 'path("' + d + '")';
     }
+    if (el.matches(FOCUSABLE)) {
+      var ring = el.querySelector(':scope > .cc-focus');
+      if (!ring) ring = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      ring.setAttribute('class', 'cc-focus');
+      ring.setAttribute('width', w + 10);
+      ring.setAttribute('height', h + 10);
+      ring.setAttribute('viewBox', '-1 -1 ' + (w + 10) + ' ' + (h + 10));
+      ring.setAttribute('aria-hidden', 'true');
+      var rp = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      rp.setAttribute('d', ccPath(w + 8, h + 8, r > 0 ? r + 4 : 0));
+      rp.setAttribute('fill', 'none');
+      rp.setAttribute('stroke', el.getAttribute('data-cc-focus') || 'currentColor');
+      rp.setAttribute('stroke-width', 2);
+      ring.replaceChildren(rp);
+      if (ring.parentNode !== el) el.appendChild(ring);
+    }
   }
+
+  var FOCUSABLE = 'a[href],button,input,select,textarea,[tabindex]';
+  (function style() {
+    var css = '[data-cc]:focus-visible{outline:none}' +
+      '.cc-focus{position:absolute;left:-5px;top:-5px;z-index:-1;pointer-events:none;opacity:0;overflow:visible}' +
+      '[data-cc]:focus-visible>.cc-focus{opacity:1}';
+    var tag = document.createElement('style');
+    tag.textContent = css;
+    (document.head || document.documentElement).appendChild(tag);
+  }());
 
   function run() {
     var els = document.querySelectorAll('[data-cc]');
-    for (var i = 0; i < els.length; i++) draw(els[i]);
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i];
+      draw(el);
+      if (observer && !observed.has(el)) {
+        observer.observe(el);
+        observed.add(el);
+      }
+    }
   }
+  var observer = typeof ResizeObserver === 'undefined' ? null : new ResizeObserver(function (entries) {
+    for (var i = 0; i < entries.length; i++) draw(entries[i].target);
+  });
+  var observed = new WeakSet();
+  window.addEventListener('resize', run, { passive: true });
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', run);
   } else {

@@ -1,69 +1,64 @@
-# Relay, a deployment platform · Apple + Developer, Vercel hand
+# Relay · Apple + Vercel
 
-A visual world for a fictional deployment platform for small teams, not a real Vercel product: the action is deploy, preview, ship, and the proof is the interface working. Dialect: Developer, governing hand Vercel. Forms shown: Keynote slide, Store card, Editorial opener, Flyer sheet, Website page; Bento grid as a variation for a many-feature unit.
+Relay's world: a deployment platform proved by its interface at work.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts. The interface proves the claim; the headline states the action.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
-Apple as base, Developer as dialect, Vercel as governing hand — Build a readable interface as the proof beneath the claim; reserve gradient for hero-scale verbs and mono for technical labels; never pass abstract placeholder bars off as a working interface.
+Apple + Vercel style — make the deploy tool prove itself with a readable working interface beneath one short action headline, in black and white with one gradient word at hero scale; never lead with a photograph or spread the gradient across the page.
 
-World: Relay, a platform that takes code to a live URL, its deploy, preview and ship actions, its dashboard, its pricing, across a launch deck, a pricing page and a story opener. Keep Apple's single-accent discipline and one lead per screen; let Vercel's philosophy govern the look — light ground, gradient verbs, mono only for technical labels, interface below the headline as proof.
+World: A fictional deployment tool and the work people do through it: deploy, inspect, share and choose a team plan. Every piece keeps a readable working interface and one action claim; each brings the workflow or decision it needs to explain.
 
-Method: Separate the content into a claim, its visible evidence and a decision or lookup task. Build the proof field before setting the labels; select Keynote, Store or Editorial structure by the reader's task, then recompose the reading axis and crop for the actual format.
+Method: Begin with the action the reader needs to trust. Build a complete interface state that lets the reader verify that action, then compose the headline and proof as one hierarchy. Use terminal output for process, a live preview for the result and plan comparison for a buying decision. Technical language belongs inside the proof surface only. If a cropped or abstract UI cannot be read, use the whole interface at a larger scale.
 
-Amplitude: full on covers, heroes and vistas; reduced on Store, reference and specification units.
+Amplitude: Full for an action and a measurable result; reduced for plan comparison and technical notes.
 
-Anti-reference: the generic SaaS landing: a dark gradient hero, three icon cards, a glowing screenshot.
+Anti-reference: A generic SaaS page with a dark gradient mesh, glowing grid and floating screenshot cards.
 
 ## Images
 
-No photograph hero. The hero image is a product interface: a deployment dashboard, a preview URL, a build log, shown at rest below the headline, with mono labels naming what it is. Screenshots are fictional interface mockups, never a real product's screenshot, and are labelled as such. Crop: interface crops must show the whole frame — a wide crop that cuts a browser frame is rejected and replaced with a letterboxed whole interface, no stretch, no cut frame.
+The hero is a complete fictional interface or terminal; there is no photograph hero. Show real-looking, readable content inside the screen frame, label it as an illustrative render and keep the whole frame visible. Do not use abstract placeholder bars. Use a restrained dark surface for code and dashboard proof, with live captions outside it. On Keynote, the interface sits inset at gallery scale; on Bento, each plan or workflow state uses a shared crop; on Editorial, the preview is a full-width proof figure inside the story, never an arbitrary cut through the browser frame. Scale the source uniformly. No Vercel screenshot, logo or font file is used. On a cover or lead tile the interface takes half the frame or more; the headline sits above it, never beside a thumbnail.
 
 ## Layout
 
-Grid system: Gallery field — derive the proof field and one reading axis from W × H; Store subdivides that field into equal peers, Editorial joins it to a reading column, and Keynote assigns one claim to each slide.
+Grid system: Gallery field — give the software proof enough uninterrupted area to read, and place the action headline on the same axis.
 
-Light ground with dark bands only for code and dashboard sections, returning to light after each band. Hero: large centred headline above two actions, product interface below. Slide field 16:9, critical content inside the central 80%. Store field: white cards on a hairline grid, each card carrying one plan with its interface thumbnail. Editorial field: one centred column, with the interface as a full-width proof figure inside the story. Text sits at least 11.34 inside its shape; a title clears its descenders before anything below it; a number group sits mid-frame, number, label and context spaced down. Containers may centre; body, leads, captions, card names and prices stay flush left, ragged right; only hero, vista and cover headlines centre.
+Derive 12 tracks from W × H: margin max(5% W, 6% S), gutter 1.25% W and equal remaining tracks. Use an 8 px module at S = 1000; align headline, whole interface frame, caption and action to track edges. At every text-to-image boundary, leave at least two modules between visible glyph bounds and the image; measure ink, not text boxes. The headline owns the first reading step and the interface the largest proof field. Keynote uses one thesis in the 16:9 field; keep critical content inside the central 84% and let the interface carry the remainder of the slide. Bento uses unequal tile spans sized by importance; plans that are real peers share crop, baseline and price row, while a specification is a number poster. Editorial opens with one interface vista, then a flush-left column no wider than 82% W or 65 characters; source, code notes and plan details may densify at the close. Recompose on every aspect-ratio change.
 
 ## Typography
 
-A geometric sans for display and body, sentence case, period-terminated headlines, tight tracking on display, ceiling weight 600. A monospace face only for code, technical labels and small technical details — never for headlines, taglines or body. Body regular, highly readable; display light in feel compared with Apple's 600-weight headline, but never thin enough to fail the contrast floor.
-
-Concrete type for this fictional world: Manrope for display, Manrope for body and labels; pair Chinese with Noto Serif SC for serif display and Noto Sans SC for sans roles. Open-source substitutes, not the brand's own faces.
+Voice: Vercel's geometric sans, set in Geist, its own open face. Use Geist for display, body and labels, with Noto Sans SC for Chinese; these are open-source substitutes, not Vercel or Apple font files. Use Geist Mono only inside the proof interface for paths, statuses and timings. At S = 1000 set launch display at 80 / 600 / 1.05, section heading at 56 / 600 / 1.1, lead at 28 / 400 / 1.4, body at 17 / 400 / 1.5, label at 14 / 400 / 1.4 and source at 12 / 400 / 1.5. Display is geometric and sentence case; 600 is the ceiling. Tighten tracking only on the single gradient word; keep the rest of the heading at −0.01 em at large web sizes. Match CJK to Latin by apparent size and baseline, break Chinese at phrase boundaries, and use tabular numerals for durations and prices. On slides the Keynote floors hold: slide title at least 0.1 S, body at least 0.037 S.
 
 ## Colors
 
-Near-white canvas, ink text, black and white as the base, one link blue for links. Colour beyond that comes only as a mesh gradient on headline verbs at hero scale, one gradient per verb, never miniaturised onto a button, card or badge, never as a wallpaper. Dark bands are polarity-flipped depth, never the governing ground.
-
-Roles: canvas the page, panel the card, dark the proof-field polarity, ink and muted the reading colours, onDark and onAction their contrasts, hairline a non-text separator; action is the single neutral action. Reading text uses only the pairs in Tokens. Accent: the chromatic event is the gradient verb; no flat accent joins it.
+Ground: Vercel's near-white and black, the brand's signature. Near-white #fafafa and white #ffffff are the only page grounds. Ink #171717 carries body and actions; muted #626262 is secondary text; hairline #d2d2d7 marks functional interface boundaries and divides data rows, never decoration. Dark #171717 appears only inside terminal and dashboard proof, with white text. The one brand event is a two-stop hero-word gradient from #004a9f to #2f8fd8; it appears on one action word at hero scale and nowhere else. Buttons remain solid ink or text links; gradient is never a control, card, badge or wallpaper. Focus is ink on light and white on dark.
 
 ## Shapes
 
-Every nonzero radius takes Apple's continuous corner; square forms stay square. One corner, inward from the corner point in units of R: `M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0`. R is at most half the shorter side; a side shorter than 3.05732R shortens its shoulder to half the side, toward the native saturated form (first cubic 0 1, 0 .96, 0 .82). Build it natively (`.continuous`), as this path in SVG, canvas, clip or a slide freeform, or in Figma at 60% smoothing; never `border-radius`, `rect rx`, a preset or a superellipse. Fill, stroke and media clip share one path; nested corners share centres, inner R = max(0, outer R − gap).
-
-Marketing calls to action are full pill, solid dark primary with an outlined secondary; tool and nav controls are small and square-ish. Cards carry inset hairlines and subtle stacked shadows, never heavy shadow. No coloured section blocks as rhythm.
+Full-bleed fields stay square. Interface and Store cards use Apple’s continuous contour, path M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0; the shared continuous-corner.js helper draws it. At S = 1000 use R = 18 for cards, R = 8 for small controls and pill primary actions; inner R = max(0, outer R − gap). Buttons use ink fill or a quiet outline, no blur or colored glow. A hairline belongs to a real interface boundary, never to decoration.
 
 ## Forms
 
-- Keynote: one thesis per slide — one verb per slide where the action is the claim — live text over a calm zone, interface below the headline.
-- Store: one plan per card, interface thumbnail on top, name and price below, one buy action per card.
-- Editorial: opener with the deployment story, then long leads with interface figures as proof inside the column. The opener is a proof-field vista — a product interface at full-bleed with one headline and at most one action, where the interface itself is the atmosphere.
-- Flyer: one A4 sheet, real internal padding so no text touches a frame edge, one claim, one dominant image, figure or price at display size in the footer rule.
-- Website: full-width hero image, hero plus three sections plus footer, hierarchy carried by size and weight, centred container with flush-left body, leads, captions and prices.
-- Bento grid: many Relay features on one page, tiles sized by importance, one claim per tile, the deploy-preview-ship actions as the wide tiles, specs as small number posters. Tiles index; they do not prove: each claim is proved in a following unit or carries its own figure.
+- Keynote: state one action in the title and prove it with a full, readable interface state; a measured number may lead if it is the decision’s proof.
+- Bento: size features and plans by importance, one claim per tile; use equal cards only for true plan peers, and set specifications as number posters rather than a table.
+- Editorial: open with one live preview or terminal field, one headline and at most one action; then explain the workflow in a flush-left column with the relevant proof figure beside the claim.
 
 ## Variations
 
-One break per unit. A dark band turn: one code or dashboard section on a dark band inside a light page, with a complete foreground palette on that band. A gradient-word turn: one headline verb in gradient, never the whole headline, never a rainbow headline.
+Use one complete dark interface field at a workflow turn, with white foreground and its own readable hierarchy; it does not change the page ground. One single gradient word may lead the cover, one per piece, never repeated in body copy or a button. These are the only departures from black-and-white continuity.
 
 ## Do's and Don'ts
 
-Do: text-first hero, interface below as proof, mono only for technical labels, gradient verbs at hero scale only, one governing hand per work. Don't: a dark page, a photograph hero, a gradient on a button or card, mono body copy, an all-caps bold headline, a second flat accent.
+Floors: facts match each brief exactly; declare every illustration; maintain 4.5:1 text contrast (3:1 for large type); keep reading text live and at its declared size floor for the intended viewing distance; make static output complete as a still; recompose each format instead of scaling a layout; use only original or licensed assets.
+
+Render check: from the visible interface, a reader can follow one named operation to the status or result that proves it.
+
+Test: Hide Vercel's name; black and white, one gradient word, and a terminal paired with its live preview still read as this hand. Swap in another developer brand; that gradient word and proof pairing should no longer fit unchanged.
+
+Caricature: one hero-scale gradient word repeated across buttons, labels and every section.
 
 ## Tokens
-
-Authored for this fictional world at S = 1000; radius sets size, the contour is continuous corner. Product-image colours and hero gradients are source imagery, not additional action colours.
 
 ```yaml
 colors:
@@ -73,44 +68,47 @@ colors:
   ink: "#171717"
   muted: "#626262"
   action: "#171717"
+  link: "#171717"
+  focus: "#171717"
+  focusDark: "#ffffff"
+  heroStart: "#004a9f"
+  heroEnd: "#2f8fd8"
   onAction: "#ffffff"
   onDark: "#ffffff"
   hairline: "#d2d2d7"
-  link: "#005cc5"
 typography:
-  display: { fontFamily: "Manrope, Noto Sans SC, sans-serif", fontSize: 56, fontWeight: 600, lineHeight: 1.07 }
-  heading: { fontFamily: "Manrope, Noto Sans SC, sans-serif", fontSize: 40, fontWeight: 600, lineHeight: 1.1 }
-  lead: { fontFamily: "Manrope, Noto Sans SC, sans-serif", fontSize: 28, fontWeight: 400, lineHeight: 1.3 }
-  body: { fontFamily: "Manrope, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.47 }
-  label: { fontFamily: "Manrope, Noto Sans SC, sans-serif", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
-  fine: { fontFamily: "Manrope, Noto Sans SC, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: 1.5 }
-  technical: { fontFamily: "Noto Sans Mono, Noto Sans SC, monospace", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
+  display: { fontFamily: "Geist, Noto Sans SC, sans-serif", fontSize: 80, fontWeight: 600, lineHeight: 1.05 }
+  heading: { fontFamily: "Geist, Noto Sans SC, sans-serif", fontSize: 56, fontWeight: 600, lineHeight: 1.1 }
+  lead: { fontFamily: "Geist, Noto Sans SC, sans-serif", fontSize: 28, fontWeight: 400, lineHeight: 1.4 }
+  body: { fontFamily: "Geist, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.5 }
+  label: { fontFamily: "Geist, Noto Sans SC, sans-serif", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
+  fine: { fontFamily: "Geist, Noto Sans SC, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: 1.5 }
+  technical: { fontFamily: "Geist Mono, Noto Sans SC, monospace", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
 spacing:
   unit: 8
-  textInset: 11.34
+  grid: 12
+  margin: "max(5% W, 6% S)"
+  gutter: "1.25% W"
   cardInset: 24
-  proofGap: 40
-  tileInset: 80
 rounded:
-  small: 5
   control: 8
   card: 18
 corners:
   contour: "continuous corner"
-  smoothing: 0.6
   shoulderExtent: 1.52866
   innerRadius: "max(0, outerRadius - gap)"
 pairs:
   ink-on-canvas: { backgroundColor: "{colors.canvas}", textColor: "{colors.ink}" }
-  ink-on-panel: { backgroundColor: "{colors.panel}", textColor: "{colors.ink}" }
   muted-on-canvas: { backgroundColor: "{colors.canvas}", textColor: "{colors.muted}" }
+  ink-on-panel: { backgroundColor: "{colors.panel}", textColor: "{colors.ink}" }
   muted-on-panel: { backgroundColor: "{colors.panel}", textColor: "{colors.muted}" }
   onDark-on-dark: { backgroundColor: "{colors.dark}", textColor: "{colors.onDark}" }
   onAction-on-action: { backgroundColor: "{colors.action}", textColor: "{colors.onAction}" }
-  link-on-canvas: { backgroundColor: "{colors.canvas}", textColor: "{colors.link}" }
+  heroStart-on-canvas-large: { backgroundColor: "{colors.canvas}", textColor: "{colors.heroStart}" }
+  heroEnd-on-canvas-large: { backgroundColor: "{colors.canvas}", textColor: "{colors.heroEnd}" }
 ```
 
 ## Record
 
-Folio version: 1.1.0. Template version: 14. Date: 2026-11-05.
-Pieces: eight-seconds (Keynote), team-plans (Bento), preview-link (Editorial), each made from this file alone. Subject is fictional; no Vercel product, screenshot, logo or font file is used. Tokens are authored for this world, not measured from the brand.
+Folio version: 1.1.0. Template version: 14. Date: 2026-11-07.
+Pieces: eight-seconds (Keynote), team-plans (Bento), preview-link (Editorial). Fictional platform and interfaces; no Vercel product screenshot, logo or font file is used. Changes after the lock: aligned to the current Apple theme.

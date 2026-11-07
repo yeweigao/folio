@@ -1,0 +1,59 @@
+/* Apple web examples: small feedback on real controls, never motion for mood. */
+[data-apple-motion] {
+  transition-property: transform, opacity;
+  transition-duration: 180ms;
+  transition-timing-function: cubic-bezier(.2, .7, .2, 1);
+}
+
+[data-apple-motion]:focus-visible {
+  outline: 3px solid var(--apple-focus, #0071e3);
+  outline-offset: 4px;
+}
+
+@media (hover: hover) {
+  [data-apple-motion]:is(a, button, input, select):not(:disabled):hover {
+    transform: translateY(-1px);
+    opacity: .96;
+  }
+}
+
+[data-apple-motion]:is(a, button, input, select):not(:disabled):active {
+  transform: scale(.985);
+  opacity: .92;
+}
+
+/* A product-local field. Set the tint and extent from the product itself. */
+[data-apple-light] {
+  position: relative;
+  isolation: isolate;
+  overflow: visible;
+}
+
+[data-apple-light]::before {
+  position: absolute;
+  z-index: -1;
+  inset: -18% -14%;
+  content: "";
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, var(--apple-light-color, rgba(255, 255, 255, .8)) 0%, transparent 72%);
+  filter: blur(var(--apple-light-blur, 24px));
+  opacity: var(--apple-light-opacity, .42);
+  pointer-events: none;
+}
+
+/* Use only when the object has no hand-built contact shadow already. */
+[data-apple-shadow="contact"] {
+  filter: drop-shadow(3px 5px 30px rgba(0, 0, 0, .22));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-apple-motion] {
+    transition: none !important;
+  }
+
+  [data-apple-motion]:is(a, button, input, select):hover,
+  [data-apple-motion]:is(a, button, input, select):active {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}

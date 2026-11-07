@@ -1,299 +1,48 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=1440">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Voyager — One bag, three sizes</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@400;600&amp;family=Noto+Serif+SC:wght@400&amp;family=Noto+Sans+SC:wght@400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../_shared/apple-interactions.css">
 <style>
-  :root{
-    --canvas:#ffffff; --panel:#f5f1e9; --dark:#30271d; --ink:#30271d;
-    --muted:#686056; --action:#30271d; --onAction:#ffffff; --onDark:#ffffff;
-    --hairline:#d2d2d7;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:#e9e6e0}
-  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
-  .unit{position:relative;width:1440px;height:1000px;overflow:hidden;background:var(--canvas)}
-  .serif{font-family:"Cormorant Garamond","Noto Serif SC",Georgia,serif}
-  .zhserif{font-family:"Noto Serif SC","Cormorant Garamond",serif}
-  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
-  .t{position:absolute}
-  .pad{padding:12px}
-  a{text-decoration:none;color:inherit}
-  svg{display:block}
-  [data-cc]{position:relative;isolation:isolate}
-  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+:root{--apple-focus:#30271d}
+:root{--canvas:#fff;--panel:#f2f1ef;--ink:#30271d;--muted:#686056;--hair:#d2d2d7;--hideLight:#d4c2a6;--hideMid:#9e805d;--hideDark:#49372a;--thread:#e4d3b5}
+*{box-sizing:border-box;margin:0;padding:0}html,body{background:#fff}body{font-family:Inter,"Noto Sans SC",system-ui,sans-serif;color:var(--ink)}.unit{position:relative;width:1440px;height:1000px;overflow:hidden;background:#fff}.serif{font-family:"Cormorant Garamond","Noto Serif SC",Georgia,serif}.zh{font-family:"Noto Serif SC","Noto Sans SC",serif}.t{position:absolute}.pad{padding:12px}svg{display:block}[data-cc]{position:relative;isolation:isolate}.cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}a{text-decoration:none}
+.header{left:80px;top:27px;width:1280px;display:flex;justify-content:space-between;align-items:baseline}.brand{font-size:27px;font-weight:600}.line{font-size:15px;color:var(--muted)}.title{left:80px;top:77px;width:1280px;display:flex;align-items:baseline;gap:22px}.title h1{font-size:62px;line-height:.98;font-weight:400}.title .zhline{font-size:24px;color:var(--muted)}
+.hero{left:80px;top:170px;width:1280px;height:394px;display:grid;grid-template-columns:870px 1fr;gap:18px}.lead{background:#fff;border:1px solid var(--hair);padding:22px 24px 14px;display:flex;flex-direction:column}.lead h2{font:34px/1.05 "Cormorant Garamond","Noto Serif SC",serif}.lead .sub{margin-top:5px;font-size:15px;color:var(--muted)}.lead .art{flex:1;min-height:0;margin-top:4px}.lead .art svg{width:100%;height:100%}.side{display:grid;grid-template-rows:1fr 1fr;gap:14px}.craft{background:var(--panel);padding:16px 20px;display:grid;grid-template-columns:120px 1fr;gap:14px;align-items:center}.craft .num{font:99px/.9 "Cormorant Garamond","Noto Serif SC",serif}.craft .hours{font-size:17px;line-height:1.3}.craft .same{margin-top:5px;font-size:13px;color:var(--muted)}.material{background:var(--panel);padding:14px 20px;display:grid;grid-template-columns:100px 1fr;gap:14px;align-items:center}.material svg{width:100px;height:90px}.material .name{font-size:19px}.material p{margin-top:4px;font-size:13px;line-height:1.4;color:var(--muted)}
+.products{left:80px;top:588px;width:1280px;height:282px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.item{background:#fff;border:1px solid var(--hair);padding:14px 18px;display:grid;grid-template-columns:118px 1fr;gap:14px;align-items:center}.item.selected{border:2px solid var(--ink);padding:13px 17px}.item .art{width:118px;height:150px}.item .art svg{width:100%;height:100%}.item .name{font-size:20px;font-weight:600}.item .dims{margin-top:5px;font-size:14px;line-height:1.45}.item .measure{margin-top:2px;font-size:14px;color:var(--muted)}.item .price{margin-top:8px;font-size:17px;font-variant-numeric:tabular-nums}.bar{left:80px;top:900px;width:1280px;height:56px;border-top:1px solid var(--hair);display:flex;justify-content:space-between;align-items:center}.selectedInfo{display:flex;align-items:baseline;gap:18px;font-size:16px}.selectedInfo .sub{color:var(--muted)}.selectedInfoLink{height:42px;padding:0 24px;display:flex;align-items:center;background:var(--ink);color:#fff;font-size:16px}.foot{left:80px;top:958px;width:1280px;display:flex;justify-content:space-between;font-size:11px;color:var(--muted)}
+</style><style class="apple-web-reflow">
+@media(max-width:1050px){
+ html,body{overflow-x:hidden}.unit{width:100%;height:auto;min-height:100vh;overflow:visible;margin:auto;padding:28px max(24px,5vw) 88px;display:flex;flex-direction:column;gap:18px}.t{position:static;width:auto;height:auto}.header{display:flex;gap:20px;align-items:flex-start}.brand{font-size:24px}.line{font-size:16px;text-align:right}.title{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px}.title h1{font-size:clamp(42px,6vw,62px);line-height:1.05}.title .zhline{font-size:22px}.hero{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(250px,1fr);gap:14px}.lead{min-width:0;min-height:360px}.lead h2{font-size:30px}.lead .sub{font-size:16px;line-height:1.45}.lead .art{min-height:220px}.lead .art svg{width:100%;height:100%}.side{grid-template-rows:1fr 1fr;gap:14px}.craft,.material{padding:16px;grid-template-columns:90px 1fr}.craft .num{font-size:76px}.craft .hours,.material .name{font-size:18px}.craft .same,.material p{font-size:16px;line-height:1.45}.material svg{width:88px;height:82px}.products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.item{height:auto;min-height:220px;grid-template-columns:minmax(88px,.55fr) minmax(0,1fr);padding:14px;gap:10px}.item .art{width:100%;height:145px}.item .name{font-size:20px}.item .dims,.item .measure{font-size:16px;line-height:1.45;overflow-wrap:anywhere}.item .price{font-size:18px}.bar{display:flex;gap:12px;min-height:56px;padding:10px 0}.selectedInfo{flex-wrap:wrap;gap:8px 14px;font-size:16px}.selectedInfoLink{min-height:44px;white-space:nowrap}.foot{display:flex;gap:10px;font-size:14px}.foot span:last-child{text-align:right}}
+@media(max-width:700px){.header{flex-direction:column;gap:2px}.line{text-align:left}.hero{grid-template-columns:minmax(0,1fr)}.lead{min-height:300px}.side{grid-template-columns:1fr}.products{grid-template-columns:minmax(0,1fr)}.item{grid-template-columns:104px minmax(0,1fr)}.item .art{height:132px}.bar{align-items:flex-start;flex-direction:column}.selectedInfo{font-size:16px}.selectedInfoLink{width:100%;justify-content:center}.foot{flex-direction:column}.foot span:last-child{text-align:left}}
 
-  .hdr{left:80px;top:44px;width:1280px;display:flex;align-items:baseline;justify-content:space-between}
-  .hdr .mk{font-size:26px;font-weight:600;line-height:1.2}
-  .hdr .se{font-size:13px;font-weight:400;line-height:1.5;color:var(--muted)}
-  .rule{left:80px;top:96px;width:1280px;height:1px;background:var(--hairline)}
-
-  .title{left:80px;top:118px;width:1280px;display:flex;align-items:baseline;gap:22px}
-  .title h1{font-size:40px;font-weight:400;line-height:1.1;letter-spacing:-.005em}
-  .title .zhsub{font-size:19px;font-weight:400;line-height:1.5;color:var(--muted)}
-
-  .grid{left:80px;top:236px;width:1280px;display:grid;
-        grid-template-columns:repeat(12,1fr);grid-template-rows:340px 300px;gap:16px}
-  .lead{grid-column:span 6;padding:26px;display:flex;flex-direction:column}
-  .lead h2{font-size:26px;font-weight:400;line-height:1.2;letter-spacing:-.005em}
-  .lead .sub{margin-top:8px;font-size:13px;font-weight:400;line-height:1.5;color:var(--muted)}
-  .lead .art{margin-top:2px;flex:1;min-height:0}
-
-  .num{grid-column:span 3;padding:28px;display:flex;flex-direction:column;justify-content:center}
-  .num .big{font-size:128px;font-weight:400;line-height:1;letter-spacing:-.03em;color:var(--onDark)}
-  .num .lab{margin-top:14px;font-size:15px;font-weight:400;line-height:1.4;color:var(--onDark)}
-  .num .ctx{margin-top:8px;font-size:13px;font-weight:400;line-height:1.5;color:#cdc2ae}
-
-  .mat{grid-column:span 3;padding:28px;display:flex;flex-direction:column}
-  .mat .sw{width:112px;height:112px;overflow:hidden;line-height:0}
-  .mat .nm{margin-top:26px;font-size:21px;font-weight:400;line-height:1.25}
-  .mat .ln{margin-top:10px;font-size:13px;font-weight:400;line-height:1.6;color:var(--muted)}
-
-  .item{grid-column:span 4;padding:24px;display:flex;flex-direction:column}
-  .item .art{height:118px;display:flex;align-items:flex-end}
-  .item .nm{margin-top:12px;font-size:21px;font-weight:400;line-height:1.25}
-  .item .sp{margin-top:4px;font-size:13px;font-weight:400;line-height:1.6;color:var(--muted)}
-  .item .row{margin-top:auto;padding-top:14px;display:flex;align-items:baseline;justify-content:space-between}
-  .item .pr{font-size:16px;font-weight:400;line-height:1.4}
-  .item .by{font-size:13px;font-weight:400;line-height:1.4;padding-bottom:3px;
-            border-bottom:1px solid var(--ink)}
-
-  .foot{left:80px;top:916px;width:1280px;display:flex;align-items:baseline;
-        justify-content:space-between;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
-  .foot .r{display:flex;gap:36px}
-</style>
-</head>
-<body>
-<div class="unit" id="page">
-
-  <div class="t hdr">
-    <span class="mk serif">Voyager</span>
-    <span class="se">The Voyage line · Automne 2026</span>
-  </div>
-  <div class="t rule"></div>
-
-  <div class="t title pad">
-    <h1 class="serif">One bag, three sizes.</h1>
-    <span class="zhsub zhserif">一只包，三种尺寸</span>
-  </div>
-
-  <div class="t grid">
-
-    <div class="lead" data-cc="18" data-cc-fill="#f5f1e9" data-cc-stroke="#d2d2d7">
-      <h2 class="serif">Only the panels grow.</h2>
-      <p class="sub">All three drawn at 1:2, from the same side view.</p>
-      <div class="art">
-        <svg width="580" height="228" viewBox="0 0 580 228" aria-hidden="true">
-          <defs>
-            <linearGradient id="calf" x1="0" y1="0" x2=".3" y2="1">
-              <stop offset="0" stop-color="#d6c1a0"/>
-              <stop offset=".42" stop-color="#c0a67f"/>
-              <stop offset=".78" stop-color="#a98c64"/>
-              <stop offset="1" stop-color="#94764f"/>
-            </linearGradient>
-            <linearGradient id="calfTop" x1="0" y1="0" x2=".3" y2="1">
-              <stop offset="0" stop-color="#e0cdae"/>
-              <stop offset="1" stop-color="#c6ad86"/>
-            </linearGradient>
-            <linearGradient id="shadow" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#30271d" stop-opacity=".16"/>
-              <stop offset="1" stop-color="#30271d" stop-opacity="0"/>
-            </linearGradient>
-          </defs>
-
-          <!-- 28 cm · 140 × 100 at 1:2 -->
-          <g>
-            <ellipse cx="70" cy="181" rx="72" ry="7" fill="#30271d" opacity=".09"/>
-            <path d="M36 78 C36 55 64 55 64 78" fill="none" stroke="#7a5d3d" stroke-width="6"/>
-            <path d="M76 78 C76 55 104 55 104 78" fill="none" stroke="#7a5d3d" stroke-width="6"/>
-            <path d="M0 78 L140 78 L130 178 L10 178 Z" fill="url(#calf)" stroke="#7a5d3d" stroke-width="1" stroke-opacity=".45"/>
-            <path d="M0 78 L140 78 L138 97 L2 97 Z" fill="url(#calfTop)"/>
-            <path d="M0 78 L140 78 L140 81 L0 81 Z" fill="#7a5d3d" opacity=".55"/>
-            <path d="M14 78 L12.4 178" stroke="#7a5d3d" stroke-width="1.2" opacity=".45"/>
-            <path d="M126 78 L127.6 178" stroke="#7a5d3d" stroke-width="1.2" opacity=".45"/>
-            <g stroke="#5b442c" stroke-width="2" stroke-linecap="round" opacity=".9" fill="none">
-              <line x1="14" y1="104" x2="19" y2="112"/><line x1="30" y1="104" x2="35" y2="112"/>
-              <line x1="46" y1="104" x2="51" y2="112"/><line x1="62" y1="104" x2="67" y2="112"/>
-              <line x1="78" y1="104" x2="83" y2="112"/><line x1="94" y1="104" x2="99" y2="112"/>
-              <line x1="110" y1="104" x2="115" y2="112"/>
-            </g>
-            <rect x="60" y="73" width="20" height="17" fill="#4a3722"/>
-            <rect x="64" y="78" width="12" height="3" fill="#e0cdae" opacity=".75"/>
-            <path d="M10 177 L130 177" stroke="#5b442c" stroke-width="2" opacity=".5"/>
-            <path d="M2 81 L2 176" stroke="#f0e2c9" stroke-width="1.4" opacity=".35"/>
-          </g>
-
-          <!-- 36 cm · 180 × 122 at 1:2 -->
-          <g>
-            <ellipse cx="248" cy="181" rx="92" ry="8" fill="#30271d" opacity=".09"/>
-            <path d="M204 56 C204 30 242 30 242 56" fill="none" stroke="#7a5d3d" stroke-width="7"/>
-            <path d="M254 56 C254 30 292 30 292 56" fill="none" stroke="#7a5d3d" stroke-width="7"/>
-            <path d="M158 56 L338 56 L325 178 L171 178 Z" fill="url(#calf)" stroke="#7a5d3d" stroke-width="1" stroke-opacity=".45"/>
-            <path d="M158 56 L338 56 L336 79 L160 79 Z" fill="url(#calfTop)"/>
-            <path d="M158 56 L338 56 L338 59.5 L158 59.5 Z" fill="#7a5d3d" opacity=".55"/>
-            <path d="M174 56 L172 178" stroke="#7a5d3d" stroke-width="1.4" opacity=".45"/>
-            <path d="M322 56 L324 178" stroke="#7a5d3d" stroke-width="1.4" opacity=".45"/>
-            <g stroke="#5b442c" stroke-width="2.4" stroke-linecap="round" opacity=".9" fill="none">
-              <line x1="174" y1="87" x2="180" y2="97"/><line x1="194" y1="87" x2="200" y2="97"/>
-              <line x1="214" y1="87" x2="220" y2="97"/><line x1="234" y1="87" x2="240" y2="97"/>
-              <line x1="254" y1="87" x2="260" y2="97"/><line x1="274" y1="87" x2="280" y2="97"/>
-              <line x1="294" y1="87" x2="300" y2="97"/><line x1="314" y1="87" x2="320" y2="97"/>
-            </g>
-            <rect x="237" y="50" width="22" height="19" fill="#4a3722"/>
-            <rect x="241" y="55" width="14" height="3" fill="#e0cdae" opacity=".75"/>
-            <path d="M173 177 L323 177" stroke="#5b442c" stroke-width="2" opacity=".5"/>
-            <path d="M160.5 60 L160.5 176" stroke="#f0e2c9" stroke-width="1.6" opacity=".35"/>
-          </g>
-
-          <!-- 44 cm · 220 × 145 at 1:2 -->
-          <g>
-            <ellipse cx="466" cy="181" rx="112" ry="9" fill="#30271d" opacity=".09"/>
-            <path d="M414 33 C414 2 466 2 466 33" fill="none" stroke="#7a5d3d" stroke-width="8"/>
-            <path d="M470 33 C470 2 522 2 522 33" fill="none" stroke="#7a5d3d" stroke-width="8"/>
-            <path d="M356 33 L576 33 L560 178 L372 178 Z" fill="url(#calf)" stroke="#7a5d3d" stroke-width="1" stroke-opacity=".45"/>
-            <path d="M356 33 L576 33 L573 60 L359 60 Z" fill="url(#calfTop)"/>
-            <path d="M356 33 L576 33 L576 37 L356 37 Z" fill="#7a5d3d" opacity=".55"/>
-            <path d="M376 33 L374 178" stroke="#7a5d3d" stroke-width="1.6" opacity=".45"/>
-            <path d="M556 33 L558 178" stroke="#7a5d3d" stroke-width="1.6" opacity=".45"/>
-            <g stroke="#5b442c" stroke-width="3" stroke-linecap="round" opacity=".9" fill="none">
-              <line x1="375" y1="70" x2="382" y2="82"/><line x1="400" y1="70" x2="407" y2="82"/>
-              <line x1="425" y1="70" x2="432" y2="82"/><line x1="450" y1="70" x2="457" y2="82"/>
-              <line x1="475" y1="70" x2="482" y2="82"/><line x1="500" y1="70" x2="507" y2="82"/>
-              <line x1="525" y1="70" x2="532" y2="82"/><line x1="550" y1="70" x2="557" y2="82"/>
-            </g>
-            <rect x="454" y="26" width="24" height="21" fill="#4a3722"/>
-            <rect x="459" y="32" width="14" height="3" fill="#e0cdae" opacity=".75"/>
-            <path d="M374 177 L558 177" stroke="#5b442c" stroke-width="2" opacity=".5"/>
-            <path d="M359 38 L359 176" stroke="#f0e2c9" stroke-width="1.8" opacity=".35"/>
-          </g>
-
-          <!-- one scale for all three -->
-          <g stroke="#8b8378" stroke-width="1" opacity=".8" fill="none">
-            <path d="M0 196 H140"/><path d="M0 191 V201"/><path d="M140 191 V201"/>
-            <path d="M158 196 H338"/><path d="M158 191 V201"/><path d="M338 191 V201"/>
-            <path d="M356 196 H576"/><path d="M356 191 V201"/><path d="M576 191 V201"/>
-          </g>
-          <g font-family="Inter, 'Noto Sans SC', sans-serif" font-size="13" fill="#686056" text-anchor="middle">
-            <text x="70" y="218">28 cm</text>
-            <text x="248" y="218">36 cm</text>
-            <text x="466" y="218">44 cm</text>
-          </g>
-        </svg>
+</style><style class="apple-web-type-floor">.line,.lead .sub,.craft .same,.material p,.item .dims,.item .measure{font-size:16px;line-height:1.45}.foot{font-size:14px}.item .price{font-size:17px}</style></head>
+<body><div class="unit">
+  <header class="t header"><span class="brand serif">Voyager</span><span class="line">The Voyage line · Automne 2026</span></header>
+  <div class="t title"><h1 class="serif">One bag, three sizes.</h1><p class="zhline zh">一只包，三种尺寸</p></div>
+  <main>
+    <section class="t hero">
+      <div class="lead"><h2>Only the panels grow.</h2><p class="sub">All three drawn at 1:2, from the same side view.</p>
+        <div class="art"><svg viewBox="0 0 870 290" role="img" aria-label="Voyage 28, Voyage 36 and Voyage 44 bags drawn to one scale"><defs><linearGradient id="calf" x1=".05" y1="0" x2=".8" y2="1"><stop stop-color="#eadac0"/><stop offset=".23" stop-color="#c5a67e"/><stop offset=".63" stop-color="#9e805d"/><stop offset="1" stop-color="#654a31"/></linearGradient><linearGradient id="top" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#f0e2ca"/><stop offset="1" stop-color="#b6976d"/></linearGradient><radialGradient id="shine" cx=".15" cy="0" r="1"><stop stop-color="#fff" stop-opacity=".75"/><stop offset=".55" stop-color="#fff" stop-opacity=".08"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient><pattern id="grain" width="16" height="13" patternUnits="userSpaceOnUse"><path d="M2 4q3-2 6 0t6 0M4 10q4-2 7 1t5-1" fill="none" stroke="#4d3924" stroke-opacity=".2" stroke-width=".8"/><circle cx="13" cy="3" r=".7" fill="#fff" opacity=".35"/></pattern><filter id="shadow" x="-.2" y="-.4" width="1.4" height="1.8"><feGaussianBlur stdDeviation="6"/></filter></defs>
+          <!-- 140, 180, 220 px wide: the same 1:2 elevation and one shared baseline. -->
+          <g transform="translate(76 27)"><ellipse cx="70" cy="224" rx="72" ry="10" fill="#30271d" opacity=".23" filter="url(#shadow)"/><path d="M38 96C38 60 58 48 72 48S106 60 106 96" fill="none" stroke="#563f29" stroke-width="8"/><path d="M43 96C43 66 60 56 72 56S101 66 101 96" fill="none" stroke="#e5d4b7" stroke-width="2"/><path d="M0 98L140 98L132 218L8 218Z" fill="url(#calf)" stroke="#5c442c"/><path d="M2 98L138 98L136 120L4 120Z" fill="url(#top)"/><path d="M4 103L136 103V218H4Z" fill="url(#grain)" opacity=".72"/><path d="M3 98L138 98" stroke="#fff2dd" stroke-width="4" opacity=".68"/><path d="M9 214Q70 220 131 214" fill="none" stroke="#f0dfc4" stroke-width="2"/><path d="M7 107L6 213M133 107L134 213" stroke="#f6e7d0" stroke-width="2" opacity=".55"/><path d="M58 111H82V130H58Z" fill="#544c40"/><path d="M63 115H77V126H63Z" fill="#ced0ce"/><path d="M5 100H138V218H5Z" fill="url(#shine)"/><g stroke="#533f29" stroke-width="2"><path d="M17 120l7 8M39 120l7 8M61 120l7 8M83 120l7 8M105 120l7 8M127 120l5 7"/></g><path d="M0 234H140M0 229V239M140 229V239" stroke="#8a8175" stroke-width="1"/><text x="70" y="257" text-anchor="middle" font-family="Inter,sans-serif" font-size="16" fill="#686056">28 cm</text></g>
+          <g transform="translate(344 5)"><ellipse cx="90" cy="246" rx="91" ry="11" fill="#30271d" opacity=".23" filter="url(#shadow)"/><path d="M45 100C45 55 70 39 90 39S135 55 135 100" fill="none" stroke="#563f29" stroke-width="9"/><path d="M51 99C52 63 73 47 90 47S128 63 129 99" fill="none" stroke="#e5d4b7" stroke-width="2.5"/><path d="M0 100L180 100L169 240L11 240Z" fill="url(#calf)" stroke="#5c442c"/><path d="M2 100L178 100L176 128L4 128Z" fill="url(#top)"/><path d="M4 105L176 105V240H4Z" fill="url(#grain)" opacity=".72"/><path d="M2 100L178 100" stroke="#fff2dd" stroke-width="4" opacity=".68"/><path d="M12 235Q90 244 168 235" fill="none" stroke="#f0dfc4" stroke-width="2"/><path d="M12 107L11 235M168 107L169 235" stroke="#f6e7d0" stroke-width="2" opacity=".55"/><path d="M78 113H102V137H78Z" fill="#544c40"/><path d="M83 118H97V132H83Z" fill="#ced0ce"/><path d="M4 102H176V240H4Z" fill="url(#shine)"/><g stroke="#533f29" stroke-width="2"><path d="M19 130l7 9M45 130l7 9M71 130l7 9M97 130l7 9M123 130l7 9M149 130l7 9"/></g><path d="M0 256H180M0 251V261M180 251V261" stroke="#8a8175" stroke-width="1"/><text x="90" y="279" text-anchor="middle" font-family="Inter,sans-serif" font-size="16" fill="#686056">36 cm</text></g>
+          <g transform="translate(624 0)"><ellipse cx="110" cy="252" rx="110" ry="12" fill="#30271d" opacity=".23" filter="url(#shadow)"/><path d="M53 95C53 42 82 23 110 23S167 42 167 95" fill="none" stroke="#563f29" stroke-width="10"/><path d="M60 94C61 50 86 32 110 32S159 50 160 94" fill="none" stroke="#e5d4b7" stroke-width="3"/><path d="M0 95L220 95L207 246L13 246Z" fill="url(#calf)" stroke="#5c442c"/><path d="M2 95L218 95L215 128L5 128Z" fill="url(#top)"/><path d="M5 100L215 100V246H5Z" fill="url(#grain)" opacity=".72"/><path d="M2 95L218 95" stroke="#fff2dd" stroke-width="5" opacity=".68"/><path d="M14 241Q110 251 206 241" fill="none" stroke="#f0dfc4" stroke-width="2.5"/><path d="M14 102L13 241M206 102L207 241" stroke="#f6e7d0" stroke-width="2.5" opacity=".55"/><path d="M96 107H124V136H96Z" fill="#544c40"/><path d="M102 113H118V130H102Z" fill="#ced0ce"/><path d="M5 97H215V246H5Z" fill="url(#shine)"/><g stroke="#533f29" stroke-width="2.5"><path d="M20 130l8 10M50 130l8 10M80 130l8 10M110 130l8 10M140 130l8 10M170 130l8 10M200 130l8 10"/></g><path d="M0 262H220M0 257V267M220 257V267" stroke="#8a8175" stroke-width="1"/><text x="110" y="285" text-anchor="middle" font-family="Inter,sans-serif" font-size="16" fill="#686056">44 cm</text></g>
+        </svg></div>
       </div>
-    </div>
-
-    <div class="num" data-cc="18" data-cc-fill="#30271d">
-      <div class="big serif">9</div>
-      <div class="lab">hours of hand work</div>
-      <div class="ctx">The same in all three sizes.</div>
-    </div>
-
-    <div class="mat" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
-      <div class="sw">
-        <svg width="112" height="112" viewBox="0 0 112 112" aria-hidden="true">
-          <rect width="112" height="112" fill="#c0a67f"/>
-
-          <g fill="#94764f" opacity=".35">
-            <ellipse cx="22" cy="30" rx="3" ry="2"/><ellipse cx="60" cy="18" rx="2.6" ry="1.8"/>
-            <ellipse cx="86" cy="52" rx="3" ry="2"/><ellipse cx="38" cy="78" rx="2.4" ry="1.6"/>
-            <ellipse cx="72" cy="88" rx="3.2" ry="2"/>
-          </g>
-          <g stroke="#5b442c" stroke-width="3" stroke-linecap="round" fill="none">
-            <line x1="20" y1="84" x2="26" y2="92"/><line x1="40" y1="84" x2="46" y2="92"/>
-            <line x1="60" y1="84" x2="66" y2="92"/><line x1="80" y1="84" x2="86" y2="92"/>
-          </g>
-          <rect y="96" width="112" height="16" fill="#8a6d49"/>
-          <rect y="96" width="112" height="2" fill="#e0cdae" opacity=".5"/>
-        </svg>
-      </div>
-      <div class="nm serif">Calf, 3.2 mm</div>
-      <div class="ln">One hide per bag, cut by one maker.</div>
-      <div class="ln">The edge is painted, never folded.</div>
-    </div>
-
-    <div class="item" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
-      <div class="art">
-        <svg width="368" height="140" viewBox="0 0 368 140" aria-hidden="true">
-          <g transform="translate(133.5 3.8) scale(.72)">
-            <ellipse cx="70" cy="181" rx="72" ry="7" fill="#30271d" opacity=".1"/>
-            <path d="M36 78 C36 55 64 55 64 78" fill="none" stroke="#7a5d3d" stroke-width="6"/>
-            <path d="M76 78 C76 55 104 55 104 78" fill="none" stroke="#7a5d3d" stroke-width="6"/>
-            <path d="M0 78 L140 78 L130 178 L10 178 Z" fill="#c0a67f"/>
-            <path d="M0 78 L140 78 L138 97 L2 97 Z" fill="#d6c1a0"/>
-            <g stroke="#5b442c" stroke-width="2" stroke-linecap="round" opacity=".9" fill="none">
-              <line x1="14" y1="104" x2="19" y2="112"/><line x1="30" y1="104" x2="35" y2="112"/>
-              <line x1="46" y1="104" x2="51" y2="112"/><line x1="62" y1="104" x2="67" y2="112"/>
-              <line x1="78" y1="104" x2="83" y2="112"/><line x1="94" y1="104" x2="99" y2="112"/>
-              <line x1="110" y1="104" x2="115" y2="112"/>
-            </g>
-            <rect x="60" y="73" width="20" height="17" fill="#4a3722"/>
-          </g>
-        </svg>
-      </div>
-      <div class="nm">Voyage 28</div>
-      <p class="sp">28 × 20 × 12 cm<br>6.7 L · 520 g</p>
-      <div class="row"><span class="pr">¥14,800</span><a class="by" href="#">Add to bag</a></div>
-    </div>
-
-    <div class="item" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
-      <div class="art">
-        <svg width="368" height="140" viewBox="0 0 368 140" aria-hidden="true">
-          <g transform="translate(5.4 3.8) scale(.72)">
-            <ellipse cx="248" cy="181" rx="92" ry="8" fill="#30271d" opacity=".1"/>
-            <path d="M204 56 C204 30 242 30 242 56" fill="none" stroke="#7a5d3d" stroke-width="7"/>
-            <path d="M254 56 C254 30 292 30 292 56" fill="none" stroke="#7a5d3d" stroke-width="7"/>
-            <path d="M158 56 L338 56 L325 178 L171 178 Z" fill="#c0a67f"/>
-            <path d="M158 56 L338 56 L336 79 L160 79 Z" fill="#d6c1a0"/>
-            <g stroke="#5b442c" stroke-width="2.4" stroke-linecap="round" opacity=".9" fill="none">
-              <line x1="174" y1="87" x2="180" y2="97"/><line x1="194" y1="87" x2="200" y2="97"/>
-              <line x1="214" y1="87" x2="220" y2="97"/><line x1="234" y1="87" x2="240" y2="97"/>
-              <line x1="254" y1="87" x2="260" y2="97"/><line x1="274" y1="87" x2="280" y2="97"/>
-              <line x1="294" y1="87" x2="300" y2="97"/><line x1="314" y1="87" x2="320" y2="97"/>
-            </g>
-            <rect x="237" y="50" width="22" height="19" fill="#4a3722"/>
-          </g>
-        </svg>
-      </div>
-      <div class="nm">Voyage 36</div>
-      <p class="sp">36 × 26 × 15 cm<br>14.0 L · 690 g</p>
-      <div class="row"><span class="pr">¥17,600</span><a class="by" href="#">Add to bag</a></div>
-    </div>
-
-    <div class="item" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
-      <div class="art">
-        <svg width="368" height="140" viewBox="0 0 368 140" aria-hidden="true">
-          <g transform="translate(-151.5 5) scale(.72)">
-            <ellipse cx="466" cy="181" rx="112" ry="9" fill="#30271d" opacity=".1"/>
-            <path d="M414 33 C414 2 466 2 466 33" fill="none" stroke="#7a5d3d" stroke-width="8"/>
-            <path d="M470 33 C470 2 522 2 522 33" fill="none" stroke="#7a5d3d" stroke-width="8"/>
-            <path d="M356 33 L576 33 L560 178 L372 178 Z" fill="#c0a67f"/>
-            <path d="M356 33 L576 33 L573 60 L359 60 Z" fill="#d6c1a0"/>
-            <g stroke="#5b442c" stroke-width="3" stroke-linecap="round" opacity=".9" fill="none">
-              <line x1="375" y1="70" x2="382" y2="82"/><line x1="400" y1="70" x2="407" y2="82"/>
-              <line x1="425" y1="70" x2="432" y2="82"/><line x1="450" y1="70" x2="457" y2="82"/>
-              <line x1="475" y1="70" x2="482" y2="82"/><line x1="500" y1="70" x2="507" y2="82"/>
-              <line x1="525" y1="70" x2="532" y2="82"/><line x1="550" y1="70" x2="557" y2="82"/>
-            </g>
-            <rect x="454" y="26" width="24" height="21" fill="#4a3722"/>
-          </g>
-        </svg>
-      </div>
-      <div class="nm">Voyage 44</div>
-      <p class="sp">44 × 31 × 18 cm<br>24.6 L · 880 g</p>
-      <div class="row"><span class="pr">¥21,400</span><a class="by" href="#">Add to bag</a></div>
-    </div>
-
-  </div>
-
-  <div class="t foot">
-    <span>Illustrative example</span>
-    <span class="r"><span>Prices include tax</span><span>Illustrative render, not a photograph</span></span>
-  </div>
-</div>
-<script src="../../_shared/continuous-corner.js"></script>
-</body>
-</html>
+      <aside class="side">
+        <div class="craft"><p class="num">9</p><div><p class="hours">hours of hand work</p><p class="same">The same in all three sizes.</p></div></div>
+        <div class="material"><svg viewBox="0 0 100 90" role="img" aria-label="Close view of calf leather edge"><defs><linearGradient id="swatch" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d4c2a6"/><stop offset=".38" stop-color="#9e805d"/><stop offset=".75" stop-color="#76583a"/><stop offset="1" stop-color="#49372a"/></linearGradient><pattern id="swatchGrain" width="12" height="9" patternUnits="userSpaceOnUse"><path d="M2 3q3-2 5 1t5-1" fill="none" stroke="#30271d" stroke-opacity=".3"/></pattern></defs><path d="M5 12H94V68H5Z" fill="url(#swatch)"/><path d="M5 12H94V68H5Z" fill="url(#swatchGrain)"/><path d="M5 12H94" stroke="#fff2da" stroke-width="4" opacity=".75"/><path d="M5 71H94V82H5Z" fill="#49372a"/><path d="M5 70H94" stroke="#e4d3b5" stroke-width="2"/></svg><div><p class="name">Calf, 3.2 mm</p><p>One hide per bag, cut by one maker.</p><p>The edge is painted, never folded.</p></div></div>
+      </aside>
+    </section>
+    <section class="t products">
+      <article class="item"><div class="art"><svg viewBox="0 0 140 180" aria-hidden="true"><defs><linearGradient id="miniA" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eadac0"/><stop offset=".5" stop-color="#9e805d"/><stop offset="1" stop-color="#49372a"/></linearGradient><filter id="miniShadow"><feGaussianBlur stdDeviation="4"/></filter></defs><ellipse cx="70" cy="157" rx="52" ry="7" fill="#30271d" opacity=".22" filter="url(#miniShadow)"/><path d="M42 54C42 31 53 21 70 21S98 31 98 54" fill="none" stroke="#49372a" stroke-width="5"/><path d="M22 55H118L112 148H28Z" fill="url(#miniA)" stroke="#49372a"/><path d="M24 57H116V72H24Z" fill="#d4c2a6"/><path d="M25 56H115" stroke="#fff" stroke-width="3" opacity=".7"/><path d="M31 74V145M109 74V145" stroke="#e4d3b5" opacity=".7"/><path d="M58 69H82V82H58Z" fill="#49372a"/></svg></div><div><p class="name">Voyage 28</p><p class="dims">28 × 20 × 12 cm</p><p class="measure">6.7 L · 520 g</p><p class="price">¥14,800</p></div></article>
+      <article class="item selected"><div class="art"><svg viewBox="0 0 140 180" aria-hidden="true"><defs><linearGradient id="miniB" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eadac0"/><stop offset=".5" stop-color="#9e805d"/><stop offset="1" stop-color="#49372a"/></linearGradient><filter id="miniShadowB"><feGaussianBlur stdDeviation="4"/></filter></defs><ellipse cx="70" cy="157" rx="57" ry="7" fill="#30271d" opacity=".22" filter="url(#miniShadowB)"/><path d="M38 48C38 21 54 12 70 12S102 21 102 48" fill="none" stroke="#49372a" stroke-width="6"/><path d="M14 49H126L118 148H22Z" fill="url(#miniB)" stroke="#49372a"/><path d="M16 50H124V69H16Z" fill="#d4c2a6"/><path d="M16 50H124" stroke="#fff" stroke-width="3" opacity=".7"/><path d="M24 70V145M116 70V145" stroke="#e4d3b5" opacity=".7"/><path d="M58 64H82V80H58Z" fill="#49372a"/></svg></div><div><p class="name">Voyage 36</p><p class="dims">36 × 26 × 15 cm</p><p class="measure">14.0 L · 690 g</p><p class="price">¥17,600</p></div></article>
+      <article class="item"><div class="art"><svg viewBox="0 0 140 180" aria-hidden="true"><defs><linearGradient id="miniC" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eadac0"/><stop offset=".5" stop-color="#9e805d"/><stop offset="1" stop-color="#49372a"/></linearGradient><filter id="miniShadowC"><feGaussianBlur stdDeviation="4"/></filter></defs><ellipse cx="70" cy="157" rx="62" ry="7" fill="#30271d" opacity=".22" filter="url(#miniShadowC)"/><path d="M33 42C33 11 52 0 70 0S107 11 107 42" fill="none" stroke="#49372a" stroke-width="7"/><path d="M5 43H135L126 148H14Z" fill="url(#miniC)" stroke="#49372a"/><path d="M7 44H133V65H7Z" fill="#d4c2a6"/><path d="M7 44H133" stroke="#fff" stroke-width="3" opacity=".7"/><path d="M17 66V145M123 66V145" stroke="#e4d3b5" opacity=".7"/><path d="M58 59H82V77H58Z" fill="#49372a"/></svg></div><div><p class="name">Voyage 44</p><p class="dims">44 × 31 × 18 cm</p><p class="measure">24.6 L · 880 g</p><p class="price">¥21,400</p></div></article>
+    </section>
+  </main>
+  <div class="t bar"><div class="selectedInfo"><span>Voyage 36</span><span class="sub">¥17,600</span><span class="sub">Prices include tax</span></div><a data-apple-motion href="#" class="selectedInfoLink">Add to bag</a></div>
+  <footer class="t foot"><span>Illustrative render, not a photograph</span><span>Illustrative example</span></footer>
+</div><script src="../../_shared/continuous-corner.js"></script></body></html>

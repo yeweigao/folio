@@ -1,103 +1,99 @@
-# Voyager, a flagship leather house · Apple + Luxury, Louis Vuitton hand
+# Voyager · Apple + Luxury, Louis Vuitton hand
 
-A visual world for a fictional flagship leather house, not a real Louis Vuitton product: the website as a digital flagship store, immersive photography and video, leather texture and stitching at detail scale. Dialect: Luxury, governing hand Louis Vuitton. Forms shown: Keynote slide, Store card, Editorial opener, Flyer sheet, Website page; Bento grid as a variation for a range unit.
+Voyager's world: a leather house read from the whole object to the grain.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts. Craft is loud; price is quiet. No house mark, pattern or photograph is borrowed.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
-Apple as base, Luxury as dialect, Louis Vuitton as governing hand — Build the flagship sequence from the whole object to readable material and stitching details; never borrow a monogram or use motion to hide the object.
+Apple + Louis Vuitton + Luxury — Build a digital flagship from the whole leather object to the stitching that proves its making; never turn a close detail into wallpaper or borrow a house monogram.
 
-World: Voyager, a house whose flagship is digital, its collections, its leather, its stitching, its price, across a launch deck, a flagship shop page and a story opener. Keep Apple's single-accent discipline and one lead per screen; let Louis Vuitton's philosophy govern the look — a digital flagship store, immersive high-resolution photography and video that show leather texture and stitching at detail scale, elegant layouts with clean lines and ample whitespace, smooth animations and interactive features that let the visitor explore collections without overwhelming them.
+World: Voyager is a fictional leather house for bags, construction, collections, and material stories across a presented slide, a shop range, and a long read. Every piece keeps one lead, a quiet neutral action, and material evidence; each brings the object and question that require a different crop or scale.
 
-Method: Separate the content into a claim, its visible evidence and a decision or lookup task. Build the proof field before setting the labels; select Keynote, Store or Editorial structure by the reader's task, then recompose the reading axis and crop for the actual format.
+Method: Start with the whole object and name the claim it can carry. Descend to material, seam, and edge only when each step adds a checkable fact; a scale bar and direct label make every change of view honest. Keep the reader's path whole object → detail → decision. The work may use one quiet view or several scales, but it never substitutes atmosphere for craft. A new subject transfers by choosing the detail that can be judged at full size.
 
-Amplitude: full on covers, heroes and vistas; reduced on Store, reference and specification units.
+Amplitude: immersive on the whole object and craft vistas; restrained on names, dimensions, prices, and source notes.
 
-Anti-reference: fake luxury: gold, glowing outlines, spaced serif capitals over a stock photograph.
+Anti-reference: a catalogue grid that gives every product the same crop, weight, and amount of space.
 
 ## Images
 
-Immersive high-resolution photographs and video of leather — texture, stitching, a bag in use, a workshop detail — at full scale, with the product crisp and the surroundings calm. No borrowed house photograph, pattern or mark; all photographs are generated stand-ins for a fictional house, and are labelled as such. Crop: immersive photographs keep leather and stitching at detail scale; a detail image that overlaps title descenders is moved down until descenders clear it.
+The example collection uses declared hand-drawn or generated stand-ins, not house photography, logos, marks, or patterns. Put the whole object on a calm neutral ground at gallery scale; let a material detail meet the frame as a separate plate. Preserve silhouette, seam pitch, hide edge, and the scale-bar relationship in every crop. Scale each plate uniformly from its stated source ratio; change the frame when a detail will not fit. Keep titles live and outside the detail. Declare illustrative renders once per piece; material color describes the fictional hide and is not documentary proof. A cover or vista gives the object half the frame or more; detail plates go closer, never smaller.
 
 ## Layout
 
-Grid system: Gallery field — derive the proof field and one reading axis from W × H; Store subdivides that field into equal peers, Editorial joins it to a reading column, and Keynote assigns one claim to each slide.
+Grid system: Gallery field — one object mass is followed by a measured detail field, with labels anchored to their evidence.
 
-Clean neutral canvas with generous whitespace, flagship sections. Hero: one immersive photograph or video with one headline and at most one action. Slide field 16:9, critical content inside the central 80%. Store field: white cards on a hairline grid, one product per card, photograph on top, name and price below in body size — price present but quiet, never larger than the product name. Editorial field: one centred column, with immersive photographs as proof inside the story, and interactive collection exploration as a variation, never as decoration. Text sits at least 11.34 inside its shape; a title clears its descenders before anything below it; a number group sits mid-frame, number, label and context spaced down. Containers may centre; body, leads, captions, card names and prices stay flush left, ragged right; only hero, vista and cover headlines centre.
+Derive 12 columns from W × H: margins are max(5% W, 6% S), gutters S/50, and the module S/125. Keynote keeps critical text inside the outer 8% safe area; the object or seam takes the field opposite the reading axis. The Bento range gives the lead silhouette the largest span and true peers equal spans on one baseline; product cards use one crop and shared name, dimension, volume, weight, and price rows. Editorial uses a centered column no wider than min(980 px, 82% W), then aligns a three-detail plate set on one shared caption edge. Use dark only when material or an argument changes polarity. At text scale keep ink gaps at least one body line; no tile receives filler to balance a composition.
 
 ## Typography
 
-A refined serif for display, a quiet grotesque sans for labels and body. Serif speaks for the house; sans labels and reads. No sans-only display, no heavy display face competing with the product.
-
-Concrete type for this fictional world: Cormorant Garamond for display, Inter for body and labels; pair Chinese with Noto Serif SC for serif display and Noto Sans SC for sans roles. Open-source substitutes, not the brand's own faces.
+Use Cormorant Garamond 400 for display and serif leads, Inter 400 for body and labels. Pair Cormorant with Noto Serif SC 400 and Inter with Noto Sans SC 400. At S = 1000 use display 80/400/1.02, heading 56/400/1.08, lead 24/300/1.5, body 17/400/1.5, label 14/400/1.4, caption 12/400/1.45. Scale derives from S; the whole-object lead is set at least 1.4× the body, while prices never exceed the product name. Scale bars, dimensions, and prices use tabular numerals and shared unit alignment. Keep the Chinese/Latin gap consistent, break CJK at phrase boundaries, and allow title height to grow before moving body copy. Web reading text stays 16–20 px and 25–35 CJK characters wide. On slides the Keynote floors hold: slide title at least 0.1 S, body at least 0.037 S.
 
 ## Colors
 
-Clean neutral palette — white, cream, neutral greys — with photography itself as the chromatic event, never a flat accent colour as decoration. Where an action is needed it uses a neutral or dark treatment; Apple blue does not appear as a decorative accent in this work.
-
-Roles: canvas the page, panel the card, dark the proof-field polarity, ink and muted the reading colours, onDark and onAction their contrasts, hairline a non-text separator; action is the single neutral action. Reading text uses only the pairs in Tokens. Accent: photography is the chromatic event; actions stay neutral or dark, and no blue appears.
+Ground: Louis Vuitton's white; brown stays in the leather. Keep `canvas` white and `panel` stone, a cool neutral that leaves the brown to the leather; use `dark` and `ink` as leather-brown reading polarity, `muted` for labels, and `hairline` for real divisions only. `hideLight`, `hideMid`, and `hideDark` are limited to illustrative leather surfaces; `thread` belongs to the stitch diagram. The image is the only chromatic event; `action` is neutral ink, and links stay underlined ink. No gradient may wash a page or tile. Text uses only declared contrast pairs.
 
 ## Shapes
 
-Every nonzero radius takes Apple's continuous corner; square forms stay square. One corner, inward from the corner point in units of R: `M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0`. R is at most half the shorter side; a side shorter than 3.05732R shortens its shoulder to half the side, toward the native saturated form (first cubic 0 1, 0 .96, 0 .82). Build it natively (`.continuous`), as this path in SVG, canvas, clip or a slide freeform, or in Figma at 60% smoothing; never `border-radius`, `rect rx`, a preset or a superellipse. Fill, stroke and media clip share one path; nested corners share centres, inner R = max(0, outer R − gap).
-
-Softly rounded cards, no heavy shadow, no decorative border, no gradient. Calls to action in a neutral or dark treatment, secondary actions as quiet outlines. No second accent colour, no chromatic field.
+The silhouette is a single bag profile with a body, two handles or one strap as the brief requires, a seam line, and no emblem or monogram. Stitch detail repeats one pitch, one thread thickness, and one direction; scale bars state their unit. Use Apple's continuous-corner curve for inset plates and cards: `M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0`. Its shoulder is 1.52866R, R ≤ half the short side, and nested inner R = max(0, outer R − gap); use the shared helper for any nonzero radius. Cards and media clips share that path. No shadows, decorative gradients, or pattern fields.
 
 ## Forms
 
-- Keynote: one thesis per slide, immersive photograph-led, serif headline, live text over a calm zone.
-- Store: one product per card, photograph on top, name and price below in body size, one buy action per card, price quiet; a flagship variation lets the visitor explore collections interactively without overwhelming them.
-- Editorial: opener with the house's story in serif leads, then long leads with immersive photographs as proof inside the column. The opener is a photographic vista — a full-bleed immersive photograph with one headline and at most one action.
-- Flyer: one A4 sheet, real internal padding so no text touches a frame edge, one claim, one dominant image, figure or price at display size in the footer rule.
-- Website: full-width hero image, hero plus three sections plus footer, hierarchy carried by size and weight, centred container with flush-left body, leads, captions and prices.
-- Bento grid: range units only — many Voyager products on one page, one product and one quiet price per tile, each tile with its own immersive photograph. Tiles index; they do not prove: each claim is proved in a following unit or carries its own figure; a range tile's quiet price is its check, not its proof of craft.
+- Keynote: one craft claim, a gallery-scale detail that can be counted or measured, and a quiet source column; live title stays clear of the crop.
+- Bento: one leading range tile with the objects on a shared scale, followed by unequal or equal spans according to importance; each product tile holds one name and one quiet price, while detail claims go to proof plates.
+- Editorial: open with one full-bleed object vista and one headline/action at most; continue in a flush-left reading column with progressively closer, scale-labeled material plates, then one quiet price and source.
 
 ## Variations
 
-One break per unit. A flagship turn: one unit as an interactive collection exploration, with animation that reveals craft rather than decorating it. A detail turn: one full-bleed detail photograph of stitching as a unit, with one headline and at most one action.
+At a content turn, allow a single whole unit of enlarged stitch or edge detail, with one title and one caption. A second allowed break is an interactive collection view that reveals a real craft relation; the sample pieces remain static and use crop changes to show that relation.
 
 ## Do's and Don'ts
 
-Do: clean neutral palette, immersive photography and video, detail scale, serif display, price quiet, animation that reveals craft, one governing hand per work. Don't: a borrowed mark, pattern or photograph; a catalogue grid pretending to be a flagship; a product without a detail image; an animation that decorates rather than reveals craft; a price larger than the product name; a sans-only display.
+Floors: facts match each brief exactly; declare every illustration; maintain 4.5:1 text contrast (3:1 for large type); keep reading text live and at its declared size floor for the intended viewing distance; make static output complete as a still; recompose each format instead of scaling a layout; use only original or licensed assets.
+
+Render check: the stitch pitch can be judged against its scale bar while the whole-object silhouette or material edge remains identifiable.
+
+Test: Hide Voyager's name and brown leather; do the neutral ground, gallery-scale product and quiet decision still read as a digital leather flagship? Substitute another house; the crop and material treatment should need a different hand.
+
+Caricature: leather grain repeated as wallpaper until the object and stitch scale disappear.
 
 ## Tokens
 
-Authored for this fictional world at S = 1000; radius sets size, the contour is continuous corner. Product-image colours and hero gradients are source imagery, not additional action colours.
+Derived for this fictional leather house at S = 1000. Leather tones below are illustration-only material roles.
 
 ```yaml
 colors:
   canvas: "#ffffff"
-  panel: "#f5f1e9"
+  panel: "#f3f2f0"
   dark: "#30271d"
   ink: "#30271d"
   muted: "#686056"
+  onDark: "#ffffff"
   action: "#30271d"
   onAction: "#ffffff"
-  onDark: "#ffffff"
   hairline: "#d2d2d7"
+  hideLight: "#d4c2a6"
+  hideMid: "#9e805d"
+  hideDark: "#49372a"
+  thread: "#e4d3b5"
 typography:
-  display: { fontFamily: "Cormorant Garamond, Noto Serif SC, serif", fontSize: 56, fontWeight: 400, lineHeight: 1.07 }
-  heading: { fontFamily: "Cormorant Garamond, Noto Serif SC, serif", fontSize: 40, fontWeight: 400, lineHeight: 1.1 }
-  lead: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 28, fontWeight: 400, lineHeight: 1.3 }
-  body: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.47 }
+  display: { fontFamily: "Cormorant Garamond, Noto Serif SC, serif", fontSize: 80, fontWeight: 400, lineHeight: 1.02 }
+  heading: { fontFamily: "Cormorant Garamond, Noto Serif SC, serif", fontSize: 56, fontWeight: 400, lineHeight: 1.08 }
+  lead: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 24, fontWeight: 300, lineHeight: 1.5 }
+  body: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.5 }
   label: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
-  fine: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: 1.5 }
+  caption: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: 1.45 }
 spacing:
-  unit: 8
-  textInset: 11.34
+  module: 8
+  gutter: 20
+  group: 32
+  section: 64
   cardInset: 24
-  proofGap: 40
-  tileInset: 80
 rounded:
-  small: 5
-  control: 8
+  plate: 18
   card: 18
-corners:
-  contour: "continuous corner"
-  smoothing: 0.6
-  shoulderExtent: 1.52866
-  innerRadius: "max(0, outerRadius - gap)"
+  action: 999
 pairs:
   ink-on-canvas: { backgroundColor: "{colors.canvas}", textColor: "{colors.ink}" }
   ink-on-panel: { backgroundColor: "{colors.panel}", textColor: "{colors.ink}" }
@@ -105,11 +101,9 @@ pairs:
   muted-on-panel: { backgroundColor: "{colors.panel}", textColor: "{colors.muted}" }
   onDark-on-dark: { backgroundColor: "{colors.dark}", textColor: "{colors.onDark}" }
   onAction-on-action: { backgroundColor: "{colors.action}", textColor: "{colors.onAction}" }
-  action-on-canvas: { backgroundColor: "{colors.canvas}", textColor: "{colors.action}" }
-  action-on-panel: { backgroundColor: "{colors.panel}", textColor: "{colors.action}" }
 ```
 
 ## Record
 
-Folio version: 1.1.0. Template version: 14. Date: 2026-11-05.
-Pieces: eight-stitches (Keynote), three-sizes (Bento), from-the-whole (Editorial), each made from this file alone. Subject is fictional; no Louis Vuitton product, photograph, mark, pattern or font file is used. Tokens are authored for this world, not measured from the brand.
+Folio version: 1.1.0. Template version: 14. Date: 2026-11-07.
+Pieces: eight-stitches (Keynote), three-sizes (Bento), from-the-whole (Editorial), built from this file alone. Voyager and every object, material, figure, and price are fictional; no Louis Vuitton product, mark, photograph, monogram, or font file is used. Changes after the lock: none.

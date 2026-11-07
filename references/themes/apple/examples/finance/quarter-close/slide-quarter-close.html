@@ -2,92 +2,70 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1600">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ledger quarter close — keynote</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;family=Noto+Sans+SC:wght@300;400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;600&amp;family=Noto+Sans+SC:wght@400&amp;display=swap" rel="stylesheet">
 <style>
-  :root{
-    --canvas:#ffffff; --panel:#f8f5ef; --dark:#172b4d;
-    --ink:#172b4d; --muted:#5c6574; --action:#5140c9;
-    --onAction:#ffffff; --onDark:#ffffff; --hairline:#d2d2d7;
-    --sans:"Inter","Noto Sans SC",sans-serif;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:#e8e8ea}
-  body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}
-  .unit{position:relative;width:1600px;height:900px;overflow:hidden;background:var(--canvas)}
-  .zh{font-family:"Noto Sans SC",var(--sans)}
-  .num{font-variant-numeric:tabular-nums}
-  .t{position:absolute}
-  [data-cc]{position:relative;isolation:isolate}
-  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+:root{--canvas:#ffffff;--panel:#f6f9fc;--dark:#172b4d;--ink:#172b4d;--muted:#5c6574;--action:#5140c9;--hair:#d2d2d7;--sans:"Hanken Grotesk","Noto Sans SC",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html,body{background:var(--canvas)}body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}.unit{position:relative;width:1600px;height:900px;overflow:hidden;background:var(--canvas)}.zh{font-family:"Noto Sans SC",var(--sans)}.num{font-variant-numeric:tabular-nums}[data-cc]{position:relative;isolation:isolate}.cc-bg{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.brand{position:absolute;left:76px;top:48px;font-size:23px;font-weight:600}.date{position:absolute;right:76px;top:54px;font-size:17px;color:var(--muted)}
+.left{position:absolute;left:76px;top:120px;width:700px}.left h1{font-size:70px;font-weight:300;line-height:1.04;letter-spacing:-2px}.zhline{margin-top:13px;font-size:28px;color:var(--muted)}.lead{margin-top:25px;font-size:30px;line-height:1.32;color:var(--ink)}.meta{margin-top:18px;font-size:22px;color:var(--muted)}.note{margin-top:24px;font-size:26px;line-height:1.36}.note+.note{margin-top:19px}
+.statement{position:absolute;left:834px;top:119px;width:690px;height:622px;padding:36px 40px;color:#fff}.sh{display:flex;justify-content:space-between;align-items:baseline;font-size:17px;color:rgba(255,255,255,.66)}.rule{height:1px;margin-top:20px;background:rgba(255,255,255,.2)}.rows{margin-top:12px}.row{height:94px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.16);font-size:22px;color:rgba(255,255,255,.74)}.row b{font-size:31px;font-weight:400;color:#fff}.total{height:126px;display:flex;align-items:center;justify-content:space-between;font-size:22px;color:rgba(255,255,255,.74)}.total b{font-size:50px;font-weight:400;letter-spacing:-1.4px;color:#fff}.statement-foot{position:absolute;left:40px;right:40px;bottom:28px;padding-top:15px;border-top:1px solid rgba(255,255,255,.2);display:flex;justify-content:space-between;gap:20px;font-size:15px;color:rgba(255,255,255,.66)}
+.caption{position:absolute;left:834px;top:761px;font-size:14px;color:var(--muted)}.source{position:absolute;left:76px;bottom:27px;width:1140px;font-size:14px;line-height:1.4;color:var(--muted)}.foot{position:absolute;right:76px;bottom:27px;font-size:14px;color:var(--muted)}
+</style>
+<link rel="stylesheet" href="../../_shared/apple-interactions.css">
+<style data-review-reflow>
 
-  .brand{left:88px;top:56px;font-size:21px;font-weight:600;letter-spacing:-.2px}
-  .kicker{right:88px;top:60px;font-size:14px;line-height:1.4;color:var(--muted);text-align:right}
+:root{--apple-focus:#5140c9}
+.unit{position:relative;width:min(100%,1440px);height:auto;min-height:100vh;overflow:visible;margin:0 auto;padding:32px clamp(24px,5vw,76px);display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);grid-template-rows:auto 1fr auto;align-content:start;gap:18px 28px}
+.brand,.date,.left,.statement,.caption,.source,.foot{position:static;width:auto}
+.brand{grid-column:1;grid-row:1;align-self:baseline}.date{grid-column:2;grid-row:1;justify-self:end;text-align:right}
+.left{grid-column:1;grid-row:2}.left h1{font-size:clamp(42px,5vw,70px);line-height:1.06;letter-spacing:-.04em}.left .zhline{font-size:21px;line-height:1.5}.left .lead{font-size:20px;line-height:1.5}.left .meta{font-size:16px;line-height:1.5}.left .note{font-size:17px;line-height:1.5}
+.statement{grid-column:2;grid-row:2;height:auto;min-height:590px;padding:28px;align-self:start}
+.row{height:auto;min-height:82px;font-size:18px;gap:16px}.row b{font-size:24px}.total{height:auto;min-height:104px;gap:16px}.total b{font-size:clamp(29px,4vw,46px)}
+.statement-foot{left:28px;right:28px;bottom:22px;gap:12px;flex-wrap:wrap;font-size:14px;line-height:1.4}
+.caption{grid-column:2;grid-row:3;margin-top:-8px;font-size:14px}.source{grid-column:1;grid-row:3;align-self:end;font-size:14px;line-height:1.5}.foot{grid-column:2;grid-row:3;justify-self:end;align-self:end;font-size:14px}
+@media(max-width:800px){
+ .unit{display:flex;flex-direction:column;gap:16px;padding:28px clamp(24px,5vw,40px)}
+ .brand,.date,.left,.statement,.caption,.source,.foot{width:auto;margin:0}
+ .date{text-align:left;align-self:flex-start}.left h1{font-size:clamp(40px,7vw,58px)}
+ .statement{min-height:0;padding:22px 20px 88px}.sh{font-size:15px;gap:12px}.rule{margin-top:14px}
+ .row{min-height:64px;font-size:16px}.row b{font-size:21px}.total{min-height:80px;font-size:18px}.total b{font-size:32px}
+ .statement-foot{left:20px;right:20px;bottom:18px;justify-content:space-between}
+ .caption{margin-top:-6px}.source{max-width:65ch}.foot{align-self:flex-end}
+}
+@media(max-width:520px){
+ .unit{padding:24px 20px;gap:14px}.brand{font-size:20px}.date{font-size:15px}
+ .left h1{font-size:38px;letter-spacing:-1px}.left .zhline{font-size:18px}.left .lead{font-size:17px}.left .meta{font-size:15px}.left .note{font-size:16px}
+ .statement{padding:20px 16px 100px}.sh{font-size:14px}.row{font-size:15px;min-height:58px}.row b{font-size:19px}.total{font-size:16px}.total b{font-size:27px}
+ .statement-foot{left:16px;right:16px;bottom:14px;display:grid;grid-template-columns:1fr;gap:4px;font-size:13px}
+ .caption,.source,.foot{font-size:13px}
+}
 
-  .title{left:88px;top:130px;width:660px;font-size:58px;font-weight:300;line-height:1.08;letter-spacing:-1.6px}
-  .title .hl{color:var(--action)}
-  .zhline{left:88px;top:290px;font-size:24px;line-height:1.5;color:var(--muted)}
-  .lead{left:88px;top:352px;width:600px;font-size:21px;line-height:1.6;color:var(--muted)}
-  .units{left:88px;top:494px;font-size:17px;line-height:1.5}
-  .charge{left:88px;top:526px;font-size:17px;line-height:1.5;color:var(--muted)}
-  .note{left:88px;top:582px;width:600px;font-size:17px;line-height:1.6;color:var(--muted)}
-  .note2{left:88px;top:684px;width:600px;font-size:17px;line-height:1.6;color:var(--muted)}
-
-  .statement{left:820px;top:120px;width:692px;height:620px;padding:44px;
-             display:flex;flex-direction:column;justify-content:space-between}
-  .sh{display:flex;justify-content:space-between;font-size:14px;color:rgba(255,255,255,.62)}
-  .st{color:var(--onDark)}
-  .rule{height:1px;background:rgba(255,255,255,.18)}
-  .rows{margin-top:6px}
-  .r{display:flex;justify-content:space-between;align-items:baseline;height:96px;
-     border-bottom:1px solid rgba(255,255,255,.14);font-size:17px;color:rgba(255,255,255,.72)}
-  .r b{font-weight:400;font-size:30px;letter-spacing:-.6px;color:var(--onDark)}
-  .tot{display:flex;justify-content:space-between;align-items:baseline;height:128px;font-size:17px;color:rgba(255,255,255,.72)}
-  .tot b{font-weight:400;font-size:46px;letter-spacing:-1.2px;color:var(--onDark)}
-  .sf{display:flex;justify-content:space-between;font-size:14px;color:rgba(255,255,255,.62)}
-
-  .cap{left:820px;top:758px;font-size:12px;line-height:1.5;color:var(--muted)}
-  .src{left:88px;top:824px;width:900px;font-size:12px;line-height:1.5;color:var(--muted)}
-  .ill{right:88px;top:824px;font-size:12px;line-height:1.5;color:var(--muted);text-align:right}
 </style>
 </head>
 <body>
-<div class="unit" id="slide">
-
-  <p class="t brand">Ledger</p>
-  <p class="t kicker num">Quarter close, Q3 2026</p>
-
-  <h1 class="t title"><span class="hl num">¥16,660</span> of the quarter never reached the shop.</h1>
-  <p class="t zhline zh num">这个季度有 ¥16,660 没有到店</p>
-  <p class="t lead">Gross takings less refunds and fees is what was paid out. The statement holds the whole of that arithmetic, line by line, in one column.</p>
-
-  <p class="t units num">CNY, 1 July – 30 September 2026</p>
-  <p class="t charge num">1,250 charges at ¥392</p>
-  <p class="t note">The ¥16,660 is the two deductions added: ¥9,180 in refunds and ¥7,480 in fees. Fees are 1.45% of gross plus ¥0.30 a charge.</p>
-  <p class="t note2">A refunded sale returns the customer's money, not the fee that was taken when it was charged.</p>
-
-  <div class="t statement" data-cc="18" data-cc-fill="#172b4d">
-    <div>
-      <div class="sh"><span>Settlement statement</span><span class="num">Q3 2026</span></div>
-      <div class="rule" style="margin-top:22px"></div>
-      <div class="rows">
-        <div class="r"><span>Gross takings</span><b class="num">¥490,000</b></div>
-        <div class="r"><span>Refunds</span><b class="num">−¥9,180</b></div>
-        <div class="r"><span>Ledger fees</span><b class="num">−¥7,480</b></div>
-      </div>
-      <div class="rule" style="margin-top:26px"></div>
-      <div class="tot"><span>Paid to the shop</span><b class="num">¥473,340</b></div>
-    </div>
-    <div class="sf"><span class="num">1,250 charges, 1.45% + ¥0.30</span><span class="num">Paid 2 October 2026</span></div>
-  </div>
-
-  <p class="t cap">Illustrative render, not a photograph</p>
-  <p class="t src">Source: Ledger settlement statement, illustrative shop, 1 July – 30 September 2026. Figures cover 1,250 charges.</p>
-  <p class="t ill">Illustrative example</p>
-</div>
+<main class="unit">
+  <p class="brand">Ledger</p><p class="date num">Quarter close, Q3 2026</p>
+  <section class="left">
+    <h1><span class="num">¥16,660</span> of the quarter never reached the shop.</h1>
+    <p class="zhline zh num">这个季度有 ¥16,660 没有到店</p>
+    <p class="lead">Gross takings less refunds and fees is what was paid out. The statement holds the whole of that arithmetic, line by line, in one column.</p>
+    <p class="meta num">CNY, 1 July – 30 September 2026<br>1,250 charges at ¥392</p>
+    <p class="note">The ¥16,660 is the two deductions added: ¥9,180 in refunds and ¥7,480 in fees. Fees are 1.45% of gross plus ¥0.30 a charge.</p>
+    <p class="note">A refunded sale returns the customer's money, not the fee that was taken when it was charged.</p>
+  </section>
+  <section class="statement" data-cc="18" data-cc-fill="#172b4d">
+    <header class="sh"><span>Settlement statement</span><span class="num">Q3 2026</span></header><div class="rule"></div>
+    <div class="rows"><div class="row"><span>Gross takings</span><b class="num">¥490,000</b></div><div class="row"><span>Refunds</span><b class="num">−¥9,180</b></div><div class="row"><span>Ledger fees</span><b class="num">−¥7,480</b></div></div>
+    <div class="rule" style="margin-top:19px"></div><div class="total"><span>Paid to the shop</span><b class="num">¥473,340</b></div>
+    <footer class="statement-foot"><span class="num">1,250 charges, 1.45% + ¥0.30</span><span class="num">Paid 2 October 2026</span></footer>
+  </section>
+  <p class="caption">Illustrative render, not a photograph</p>
+  <p class="source">Source: Ledger settlement statement, illustrative shop, 1 July – 30 September 2026. Figures cover 1,250 charges.</p><p class="foot">Illustrative example</p>
+</main>
 <script src="../../_shared/continuous-corner.js"></script>
 </body>
 </html>

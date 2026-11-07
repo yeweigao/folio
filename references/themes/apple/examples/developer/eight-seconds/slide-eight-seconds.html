@@ -2,82 +2,46 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1600">
-<title>Relay — deploy slide</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One deploy, eight seconds — Relay</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;family=Noto+Sans+Mono:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600&amp;family=Geist+Mono:wght@400;600&amp;family=Noto+Sans+SC:wght@400&amp;display=swap" rel="stylesheet">
 <style>
-  :root{
-    --canvas:#fafafa; --panel:#ffffff; --dark:#171717;
-    --ink:#171717; --muted:#626262; --action:#171717;
-    --onAction:#ffffff; --onDark:#ffffff; --hairline:#d2d2d7; --link:#005cc5;
-    --sans:"Manrope","Noto Sans SC",sans-serif;
-    --mono:"Noto Sans Mono","Noto Sans SC",monospace;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:#e4e4e6}
-  body{font-family:var(--sans);color:var(--ink)}
-  .unit{position:relative;width:1600px;height:900px;overflow:hidden;background:var(--canvas)}
-  .zh{font-family:"Noto Sans SC",var(--sans)}
-  .mono{font-family:var(--mono)}
-  [data-cc]{position:relative;isolation:isolate}
-  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+:root{--apple-focus:#171717;--canvas:#fff;--ink:#171717;--muted:#626262;--dark:#171717;--blue:#004a9f;--sky:#2f8fd8;--sans:"Geist","Noto Sans SC",sans-serif;--mono:"Geist Mono","Noto Sans SC",monospace}
+*{box-sizing:border-box;margin:0;padding:0}html,body{background:var(--canvas)}body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}.unit{position:relative;width:1600px;height:900px;overflow:hidden;background:var(--canvas)}.zh{font-family:"Noto Sans SC",var(--sans)}.num{font-variant-numeric:tabular-nums}[data-cc]{position:relative;isolation:isolate}.cc-bg{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.brand{position:absolute;left:78px;top:50px;font-size:23px;font-weight:600;letter-spacing:-.3px}.type{position:absolute;left:78px;top:130px;width:1450px}.type h1{font-size:88px;font-weight:600;line-height:1.04;letter-spacing:-3px}.gradient{background:linear-gradient(100deg,var(--blue),var(--sky));-webkit-background-clip:text;background-clip:text;color:transparent}.type .zhline{margin-top:13px;font-size:29px;color:var(--muted)}
+.claim{position:absolute;left:78px;top:356px;width:620px}.claim .n{font-size:190px;font-weight:600;line-height:.82;letter-spacing:-10px}.claim .unitword{margin-left:18px;font-size:58px;font-weight:400;letter-spacing:-2px}.claim .context{margin-top:25px;width:580px;font-size:33px;line-height:1.3;color:var(--muted)}.claim .cta{display:inline-flex;align-items:center;margin-top:39px;font-size:22px;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:8px}.claim .cta span{font-size:28px;margin-left:13px}
+.terminal{position:absolute;left:760px;top:330px;width:762px;height:474px;padding:26px 30px 24px;color:#fff}.terminal .head{display:flex;align-items:center;justify-content:space-between;font:17px var(--mono);color:rgba(255,255,255,.62)}.terminal .head b{color:#fff;font-weight:400}.terminal .rule{height:1px;margin-top:18px;background:rgba(255,255,255,.18)}.terminal .command{margin-top:24px;font:21px var(--mono);color:rgba(255,255,255,.78)}.terminal .command strong{color:#fff;font-weight:600}.log{margin-top:26px;display:grid;grid-template-columns:1fr 120px 160px;row-gap:13px;font:21px/1.35 var(--mono)}.log .muted{color:rgba(255,255,255,.54)}.log .state{text-align:right;color:#c9e1d3}.log .dur{text-align:right;font-variant-numeric:tabular-nums}.terminal .live{position:absolute;left:30px;right:30px;bottom:22px;padding-top:14px;border-top:1px solid rgba(255,255,255,.18);display:flex;justify-content:space-between;font:17px var(--mono);color:rgba(255,255,255,.6)}.terminal .live strong{color:#fff;font-weight:400}.caption{position:absolute;left:760px;top:820px;font-size:14px;color:var(--muted)}.foot{position:absolute;right:78px;top:820px;font-size:14px;color:var(--muted)}
 
-  .wm{position:absolute;left:88px;top:72px;font-size:21px;font-weight:600;letter-spacing:-.3px}
-  .claim{position:absolute;left:88px;top:140px;width:1080px;font-size:56px;font-weight:600;line-height:1.1;letter-spacing:-1.6px}
-  .grad{background:linear-gradient(100deg,#004a9f 0%,#005cc5 42%,#2f8fd8 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
-  .zhline{position:absolute;left:88px;top:226px;font-size:26px;font-weight:400;line-height:1.5;color:var(--muted)}
+:root{--apple-focus:#171717}
+.unit{width:min(100%,1440px);height:auto;min-height:900px;overflow:visible;margin-inline:auto;padding:clamp(40px,5vw,72px);display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);grid-template-areas:"brand brand" "type type" "claim terminal" "caption foot";align-content:start;gap:26px clamp(32px,4vw,58px)}
+.brand,.type,.claim,.terminal,.caption,.foot{position:static;width:auto;height:auto;left:auto;right:auto;top:auto;bottom:auto}.brand{grid-area:brand}.type{grid-area:type}.type h1{font-size:clamp(56px,5.4vw,76px)}.claim{grid-area:claim;align-self:center}.claim .n{font-size:clamp(130px,13vw,180px)}.claim .context{width:auto;font-size:26px}.terminal{grid-area:terminal;min-height:420px;padding:26px 28px}.terminal .live{position:static;margin-top:40px}.caption{grid-area:caption}.foot{grid-area:foot;justify-self:end}
+@media(max-width:900px){
+.unit{width:100%;min-height:0;padding:24px;display:flex;flex-direction:column;gap:22px}
+.brand,.type,.claim,.terminal,.caption,.foot{position:static;width:auto;height:auto}
+.type h1{font-size:clamp(40px,8vw,60px);line-height:1.04;letter-spacing:-1.4px}.type .zhline{font-size:21px}.claim .n{font-size:clamp(110px,28vw,170px);letter-spacing:-6px}.claim .unitword{font-size:38px}.claim .context{font-size:20px;line-height:1.45}.claim .cta{margin-top:22px;font-size:18px}
+.terminal{min-height:0;padding:22px 18px}.terminal .head{font-size:13px}.terminal .command{font-size:15px;overflow-wrap:anywhere}.log{grid-template-columns:minmax(0,1fr) 80px 55px;column-gap:6px;font-size:13px;row-gap:12px}.terminal .live{position:static;margin-top:24px;font-size:12px;gap:12px;flex-wrap:wrap}
+.caption,.foot{font-size:13px}
+}
 
-  .num{position:absolute;left:80px;top:330px;font-size:220px;font-weight:600;line-height:1;letter-spacing:-10px}
-  .lbl{position:absolute;left:88px;top:572px;font-size:28px;font-weight:400;color:var(--ink)}
-  .ctx{position:absolute;left:88px;top:624px;width:560px;font-size:17px;font-weight:400;line-height:1.55;color:var(--muted)}
-  .action{position:absolute;left:88px;top:734px;font-size:21px;font-weight:400;color:var(--link);text-decoration:none;border-bottom:1px solid var(--link);padding-bottom:4px}
-  .action .arrow{font-size:22px}
-  .foot{position:absolute;left:88px;top:852px;font-size:12px;color:var(--muted)}
 
-  .eyebrow{position:absolute;left:820px;top:162px;width:700px;font-size:14px;color:var(--muted)}
-  .panel{position:absolute;left:820px;top:200px;width:700px;height:520px;padding:36px;display:flex;flex-direction:column;justify-content:space-between}
-  .panel .phead{display:flex;justify-content:space-between;font-size:14px;color:var(--muted)}
-  .panel .rule{height:1px;background:var(--hairline);margin:20px 0 8px}
-  .panel .r{display:flex;justify-content:space-between;align-items:center;height:74px;border-bottom:1px solid var(--hairline);font-size:14px}
-  .panel .r .d{color:var(--muted)}
-  .panel .r.total{border-bottom:0;font-weight:600}
-  .panel .r.total .d{color:var(--link)}
-  .panel .pfoot{display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--muted)}
-  .panel .pfoot .live{display:flex;align-items:center;gap:10px;color:var(--ink);font-weight:600}
-  .panel .pfoot .dot{display:inline-block;width:9px;height:9px;background:var(--link)}
-  .cap{position:absolute;left:820px;top:734px;width:700px;font-size:12px;color:var(--muted)}
+@media(min-width:501px) and (max-width:900px){body>.unit{padding-left:5vw!important;padding-right:5vw!important}}
 </style>
-</head>
+<link rel="stylesheet" href="../../_shared/apple-interactions.css"></head>
 <body>
-<div class="unit" id="slide">
-
-  <p class="wm">Relay</p>
-  <h1 class="claim">It <span class="grad">deploys</span> while you watch.</h1>
-  <p class="zhline zh">一次部署，八秒上线</p>
-
-  <div class="num">8</div>
-  <p class="lbl">seconds</p>
-  <p class="ctx">from a push to a live URL, on one illustrative build</p>
-  <a class="action" href="#">Read the deploy log<span class="arrow"> ›</span></a>
-  <p class="foot">Illustrative example</p>
-
-  <p class="eyebrow">Relay interface · illustrative</p>
-  <div class="panel mono" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
-    <div class="top">
-      <div class="phead"><span>deploy log</span><span>main</span></div>
-      <div class="rule"></div>
-      <div class="r"><span>install</span><span class="d">1s</span></div>
-      <div class="r"><span>build</span><span class="d">3s</span></div>
-      <div class="r"><span>edge upload</span><span class="d">3s</span></div>
-      <div class="r"><span>ready</span><span class="d">1s</span></div>
-      <div class="r total"><span>total</span><span class="d">8s</span></div>
-    </div>
-    <div class="pfoot"><span class="live"><i class="dot"></i>live</span><span>checkout</span></div>
-  </div>
-  <p class="cap">Illustrative render, not a photograph</p>
-</div>
+<main class="unit">
+  <p class="brand">Relay</p>
+  <section class="type"><h1>It <span class="gradient">deploys</span> while you watch.</h1><p class="zhline zh">一次部署，八秒上线</p></section>
+  <section class="claim"><p><span class="n num">8</span><span class="unitword">seconds</span></p><p class="context">from a push to a live URL, on one illustrative build</p><a data-apple-motion class="cta" href="#deploy-log">Read the deploy log <span>›</span></a></section>
+  <section class="terminal" id="deploy-log" data-cc="18" data-cc-fill="#171717">
+    <div class="head"><span>deploy log</span><b>main</b></div><div class="rule"></div>
+    <p class="command">$ relay deploy <strong>checkout</strong></p>
+    <div class="log"><span class="muted">install</span><span class="state">complete</span><span class="dur">1s</span><span class="muted">build</span><span class="state">complete</span><span class="dur">3s</span><span class="muted">edge upload</span><span class="state">ready</span><span class="dur"></span><span>total</span><span></span><span class="dur">8s</span></div>
+    <div class="live"><span>Deployment state</span><strong>live · checkout</strong></div>
+  </section>
+  <p class="caption">Illustrative render, not a photograph</p><p class="foot">Illustrative example</p>
+</main>
 <script src="../../_shared/continuous-corner.js"></script>
 </body>
 </html>

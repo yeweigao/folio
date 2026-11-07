@@ -1,157 +1,103 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=1440">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Highland — The Trench Series</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@300;400;600&amp;family=Noto+Sans+SC:wght@300;400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@400;600&amp;family=Noto+Serif+SC:wght@400&amp;family=Noto+Sans+SC:wght@400&amp;display=swap" rel="stylesheet">
 <style>
-  :root{
-    --canvas:#ffffff; --panel:#f7f4ed; --dark:#202124; --ink:#202124;
-    --muted:#626269; --action:#1936c8; --onAction:#ffffff; --onDark:#ffffff;
-    --hairline:#d2d2d7;
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  html,body{background:#dedee2;}
-  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink);}
-  .unit{position:relative;width:1440px;height:1000px;overflow:hidden;background:var(--canvas);}
-  .serif{font-family:"Cormorant Garamond","Noto Serif SC",serif;}
-  .zh{font-family:"Noto Serif SC","Noto Sans SC",serif;}
-  .t{position:absolute;}
-  .pad{padding:12px;}
+:root{--canvas:#fff;--panel:#f1f2f2;--ink:#202124;--muted:#626269;--action:#1936c8;--hair:#d2d2d7}
+*{box-sizing:border-box;margin:0;padding:0}html,body{background:#fff}body{font-family:Inter,"Noto Sans SC",system-ui,sans-serif;color:var(--ink)}.unit{position:relative;width:1440px;height:1000px;overflow:hidden;background:#fff}.serif{font-family:"Cormorant Garamond","Noto Serif SC",Georgia,serif}.zh{font-family:"Noto Serif SC","Noto Sans SC",serif}.t{position:absolute}.pad{padding:12px}svg{display:block}[data-cc]{position:relative;isolation:isolate}.cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}a{text-decoration:none}
+.header{left:76px;top:32px;width:1288px;display:flex;align-items:baseline;gap:24px}.header .brand{font-size:29px;font-weight:600}.header .name,.header .zhline{font-size:16px;color:var(--muted)}
+.title{left:76px;top:97px;width:1288px}.title h1{font-size:66px;line-height:1.02;font-weight:400}.title .zhline{margin-top:10px;font-size:26px;color:var(--muted)}.lead{left:76px;top:228px;font-size:27px;line-height:1.4}.choose{left:76px;top:292px;font-size:16px;color:var(--muted)}.chips{left:76px;top:322px;display:flex;gap:14px}.chip{height:44px;padding:0 24px;display:flex;align-items:center;background:#fff;font-size:17px}.chip.selected{font-weight:600;color:var(--action)}
+.cards{left:76px;top:390px;width:1288px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.card{height:438px;background:#fff;border:1px solid var(--hair);padding:22px 24px 18px;display:flex;flex-direction:column}.card.selected{border:2px solid var(--action);padding:21px 23px 17px}.coat{height:280px;display:flex;align-items:center;justify-content:center;overflow:hidden}.coat svg{width:100%;height:100%}.weather{margin-top:2px;font-size:15px;color:var(--muted)}.meta{margin-top:10px;display:flex;align-items:baseline;justify-content:space-between}.name{font-size:22px;font-weight:600}.price{font-size:19px;color:var(--muted);font-variant-numeric:tabular-nums}
+.disclaimer{left:76px;top:852px;width:1288px;display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}.bar{left:0;top:918px;width:1440px;height:82px;background:#fff;border-top:1px solid var(--hair);display:flex;align-items:center;justify-content:space-between;padding:0 76px}.selection{display:flex;align-items:baseline;gap:22px}.selection .label{font-size:14px;color:var(--muted)}.selection .name{font-size:18px}.selection .price{font-size:17px}.buy{display:flex;align-items:center;gap:20px}.buy span{font-size:15px;color:var(--muted)}.buy a{height:48px;padding:0 30px;display:flex;align-items:center;background:var(--action);color:#fff;font-size:17px}
+</style><link rel="stylesheet" href="../../_shared/apple-interactions.css">
+<style data-review-reflow>
 
-  .hdr{left:68px;top:38px;display:flex;align-items:baseline;gap:26px;}
-  .hdr .wm{font-size:30px;font-weight:400;letter-spacing:.4px;}
-  .hdr .series,.hdr .serieszh{font-size:14px;font-weight:400;color:var(--muted);}
-  .rule{left:80px;top:100px;width:1280px;height:1px;background:var(--hairline);}
+:root{--apple-focus:#1936c8}
+@media(max-width:1440px){
+ .unit{position:relative;width:min(100%,1440px);min-height:100vh;height:auto;overflow:visible;margin:0 auto;padding:28px clamp(24px,5.25vw,76px) 0;display:flex;flex-direction:column;gap:16px}
+ .header,.title,.lead,.choose,.chips,.cards,.disclaimer,.bar{position:static;left:auto;top:auto;width:auto;height:auto}
+ .header{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}.header .brand{font-size:25px}.header .name,.header .zhline{font-size:15px}
+ .title h1{font-size:clamp(42px,5vw,66px);line-height:1.06;letter-spacing:-.035em}.title .zhline{font-size:20px;margin-top:8px}
+ .lead{font-size:21px;line-height:1.45}.choose{font-size:16px;color:var(--muted)}
+ .chips{display:flex;gap:10px;flex-wrap:wrap}.chip{height:44px;padding:0 20px;border:0;background:#fff;font-family:inherit;font-size:16px;line-height:1.2;cursor:pointer}.chip.selected{font-weight:600;color:var(--action)}
+ .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+ .card{height:auto;min-height:390px;min-width:0;padding:18px;display:flex}.card.selected{padding:17px}
+ .coat{height:auto;aspect-ratio:360/300;min-height:210px}.coat svg{width:100%;height:100%}
+ .weather{font-size:16px}.meta{gap:8px;flex-wrap:wrap}.name{font-size:20px}.price{font-size:17px}
+ .disclaimer{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:14px;line-height:1.45}
+ .bar{position:sticky;bottom:0;z-index:4;margin:0 calc(-1 * clamp(24px,5.25vw,76px));padding:14px clamp(24px,5.25vw,76px);border-top:1px solid var(--hair);background:#fff;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+ .selection,.buy{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}.selection .label{font-size:14px}.selection .name{font-size:18px}.selection .price{font-size:16px}.buy span{font-size:14px}.buy a{height:46px;padding:0 24px}
+}
+@media(max-width:850px){
+ .cards{grid-template-columns:repeat(2,minmax(0,1fr))}.card:nth-child(3){grid-column:1/-1;width:calc(50% - 9px);justify-self:center}.coat{min-height:180px}.bar{position:static}
+}
+@media(max-width:520px){
+ .unit{padding:24px 20px 0;gap:14px}.header{gap:8px 14px}.header .brand{font-size:23px}.title h1{font-size:38px}.title .zhline{font-size:18px}.lead{font-size:18px}.choose{font-size:15px}
+ .chips{gap:8px}.chip{flex:1 1 auto;justify-content:center;padding:0 12px;font-size:14px}
+ .cards{grid-template-columns:minmax(0,1fr);gap:12px}.card,.card.selected{grid-column:1;width:auto;min-height:0;padding:16px}.card:nth-child(3){grid-column:1;width:auto;justify-self:stretch}.coat{min-height:210px;max-height:270px}.weather{font-size:15px}.name{font-size:19px}.price{font-size:16px}
+ .disclaimer{flex-direction:column;font-size:13px}.bar{position:static;margin:0 -20px;padding:14px 20px;display:flex;flex-direction:column;align-items:stretch}.selection,.buy{justify-content:space-between}.buy{align-items:stretch}.buy a{justify-content:center}
+}
 
-  .claim{left:68px;top:144px;width:1200px;font-size:54px;font-weight:400;line-height:1.1;letter-spacing:-.6px;}
-  .claimzh{left:68px;top:222px;font-size:24px;font-weight:400;line-height:1.5;color:var(--muted);}
-  .lead{left:68px;top:272px;width:1000px;font-size:20px;font-weight:400;line-height:1.47;color:var(--muted);}
-
-  .choicelbl{left:68px;top:338px;font-size:14px;font-weight:400;color:var(--muted);}
-  .chips{left:68px;top:364px;display:flex;gap:16px;}
-  .chip{display:inline-flex;align-items:center;justify-content:center;height:44px;min-width:132px;padding:0 24px;font-size:17px;font-weight:400;}
-  .chip.on{font-weight:600;}
-
-  /* one field turn: the range sits on the house's panel field */
-  .band{left:0;top:430px;width:1440px;height:376px;background:var(--panel);}
-
-  .cards{left:80px;top:446px;width:1280px;display:grid;grid-template-columns:repeat(3,1fr);gap:40px;}
-  .card{height:344px;padding:24px;display:flex;flex-direction:column;}
-  .coat{height:176px;display:flex;align-items:center;justify-content:center;}
-  .coat svg{width:100%;height:100%;}
-  .nm{margin-top:6px;font-size:21px;font-weight:600;line-height:1.3;}
-  .desc{margin-top:4px;font-size:14px;font-weight:400;line-height:1.4;color:var(--muted);}
-  .price{margin-top:8px;font-size:17px;font-weight:400;line-height:1.4;color:var(--muted);}
-  .buy{margin-top:10px;font-size:14px;font-weight:400;color:var(--action);align-self:flex-start;}
-
-  .cap{left:68px;top:818px;font-size:12px;line-height:1.5;color:var(--muted);}
-  .foot{left:68px;top:840px;font-size:12px;line-height:1.5;color:var(--muted);}
-
-  .bar{left:0;top:940px;width:1440px;height:60px;background:var(--canvas);border-top:1px solid var(--hairline);display:flex;align-items:center;justify-content:space-between;padding:0 80px;}
-  .bar .left{display:flex;align-items:baseline;gap:24px;}
-  .bar .nm{font-size:17px;font-weight:600;}
-  .bar .pr{font-size:17px;font-weight:400;color:var(--muted);}
-  .pill{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 26px;font-size:17px;font-weight:400;color:var(--onAction);}
-
-  svg{display:block;}
-  [data-cc]{position:relative;isolation:isolate}
-  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+@media(max-width:520px){.chip{font-size:14px}}
 </style>
 </head>
-<body>
-<div class="unit" id="page">
-
-  <div class="t hdr pad">
-    <span class="wm serif">Highland</span>
-    <span class="series">The Trench Series</span>
-    <span class="serieszh zh">风衣系列</span>
-  </div>
-  <div class="t rule"></div>
-
-  <h1 class="t claim pad serif">Three coats, three kinds of British rain.</h1>
-  <p class="t claimzh pad zh">三件风衣，三种英国的雨</p>
-  <p class="t lead pad">Choose the weather you walk in, and the coat follows.</p>
-
-  <p class="t choicelbl pad">Choose your weather</p>
-  <div class="t chips pad">
-    <span class="chip" data-cc="22" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">Drizzle</span>
-    <span class="chip on" data-cc="22" data-cc-fill="#ffffff" data-cc-stroke="#1936c8" data-cc-stroke-width="2">Steady rain</span>
-    <span class="chip" data-cc="22" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">Driving rain</span>
-  </div>
-
-  <div class="t band"></div>
-
-  <div class="t cards">
-    <div class="card" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
-      <div class="coat"><svg viewBox="0 0 320 360" aria-hidden="true">
-        <ellipse cx="160" cy="300" rx="94" ry="7" fill="#202124" opacity=".07"/>
-        <path d="M110 34 C 96 34 88 40 82 52 L 54 196 L 78 202 L 98 118 L 86 286 L 234 286 L 222 118 L 242 202 L 266 196 L 238 52 C 232 40 224 34 210 34 Z" fill="#f7f4ed" stroke="#626269" stroke-opacity=".72" stroke-width="1.4" stroke-linejoin="round"/>
-        <path d="M110 34 L 160 84 L 210 34" fill="none" stroke="#626269" stroke-opacity=".72" stroke-width="1.4"/>
-        <path d="M110 34 L 160 84 L 136 98 L 116 60 Z" fill="#d2d2d7" fill-opacity=".7"/>
-        <path d="M210 34 L 160 84 L 184 98 L 204 60 Z" fill="#d2d2d7" fill-opacity=".7"/>
-        <path d="M210 34 L 160 84 L 160 128 L 196 96 Z" fill="#d2d2d7" fill-opacity=".38" stroke="#626269" stroke-opacity=".4" stroke-width=".8"/>
-        <path d="M160 84 V 286" stroke="#d2d2d7" stroke-width="1.2"/>
-        <path d="M86 182 H 234 V 198 H 86 Z" fill="#d2d2d7" fill-opacity=".8"/>
-        <path d="M148 182 H 172 V 198 H 148 Z" fill="#626269" fill-opacity=".68"/>
-        <g fill="#626269" fill-opacity=".68"><circle cx="168" cy="118" r="3"/><circle cx="168" cy="146" r="3"/><circle cx="168" cy="226" r="3"/></g>
-      </svg></div>
-      <div class="nm">The Kestrel</div>
-      <div class="desc">For a short shower</div>
-      <div class="price">£890</div>
-      <a class="buy" href="#">Buy</a>
-    </div>
-
-    <div class="card" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#1936c8" data-cc-stroke-width="2">
-      <div class="coat"><svg viewBox="0 0 320 360" aria-hidden="true">
-        <ellipse cx="160" cy="320" rx="94" ry="7" fill="#202124" opacity=".07"/>
-        <path d="M110 34 C 96 34 88 40 82 52 L 54 196 L 78 202 L 98 118 L 86 306 L 234 306 L 222 118 L 242 202 L 266 196 L 238 52 C 232 40 224 34 210 34 Z" fill="#f7f4ed" stroke="#626269" stroke-opacity=".72" stroke-width="1.4" stroke-linejoin="round"/>
-        <path d="M110 34 L 160 84 L 210 34" fill="none" stroke="#626269" stroke-opacity=".72" stroke-width="1.4"/>
-        <path d="M110 34 L 160 84 L 136 98 L 116 60 Z" fill="#d2d2d7" fill-opacity=".7"/>
-        <path d="M210 34 L 160 84 L 184 98 L 204 60 Z" fill="#d2d2d7" fill-opacity=".7"/>
-        <path d="M210 34 L 160 84 L 160 128 L 196 96 Z" fill="#d2d2d7" fill-opacity=".38" stroke="#626269" stroke-opacity=".4" stroke-width=".8"/>
-        <path d="M160 84 V 306" stroke="#d2d2d7" stroke-width="1.2"/>
-        <path d="M86 182 H 234 V 198 H 86 Z" fill="#d2d2d7" fill-opacity=".8"/>
-        <path d="M148 182 H 172 V 198 H 148 Z" fill="#626269" fill-opacity=".68"/>
-        <g fill="#626269" fill-opacity=".68"><circle cx="168" cy="118" r="3"/><circle cx="168" cy="146" r="3"/><circle cx="168" cy="238" r="3"/></g>
-      </svg></div>
-      <div class="nm">The Glen</div>
-      <div class="desc">For a full day of rain</div>
-      <div class="price">£1,140</div>
-      <a class="buy" href="#">Buy</a>
-    </div>
-
-    <div class="card" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7">
-      <div class="coat"><svg viewBox="0 0 320 360" aria-hidden="true">
-        <ellipse cx="160" cy="340" rx="94" ry="7" fill="#202124" opacity=".07"/>
-        <path d="M110 34 C 96 34 88 40 82 52 L 54 196 L 78 202 L 98 118 L 86 326 L 234 326 L 222 118 L 242 202 L 266 196 L 238 52 C 232 40 224 34 210 34 Z" fill="#f7f4ed" stroke="#626269" stroke-opacity=".72" stroke-width="1.4" stroke-linejoin="round"/>
-        <path d="M110 34 L 160 84 L 210 34" fill="none" stroke="#626269" stroke-opacity=".72" stroke-width="1.4"/>
-        <path d="M110 34 L 160 84 L 136 98 L 116 60 Z" fill="#d2d2d7" fill-opacity=".7"/>
-        <path d="M210 34 L 160 84 L 184 98 L 204 60 Z" fill="#d2d2d7" fill-opacity=".7"/>
-        <path d="M210 34 L 160 84 L 160 128 L 196 96 Z" fill="#d2d2d7" fill-opacity=".38" stroke="#626269" stroke-opacity=".4" stroke-width=".8"/>
-        <path d="M160 84 V 326" stroke="#d2d2d7" stroke-width="1.2"/>
-        <path d="M86 182 H 234 V 198 H 86 Z" fill="#d2d2d7" fill-opacity=".8"/>
-        <path d="M148 182 H 172 V 198 H 148 Z" fill="#626269" fill-opacity=".68"/>
-        <g fill="#626269" fill-opacity=".68"><circle cx="168" cy="118" r="3"/><circle cx="168" cy="146" r="3"/><circle cx="168" cy="250" r="3"/></g>
-      </svg></div>
-      <div class="nm">The Moor</div>
-      <div class="desc">For an Atlantic front</div>
-      <div class="price">£1,460</div>
-      <a class="buy" href="#">Buy</a>
-    </div>
-  </div>
-
-  <div class="t cap pad">Illustrative render, not a photograph</div>
-  <div class="t foot pad">Illustrative example</div>
-
-  <div class="t bar">
-    <div class="left"><span class="nm">The Glen</span><span class="pr">£1,140</span></div>
-    <span class="pill" data-cc="22" data-cc-fill="#1936c8">Add to bag</span>
-  </div>
-</div>
-<script src="../../_shared/continuous-corner.js"></script>
-</body>
-</html>
+<body><div class="unit">
+  <header class="t header"><span class="brand serif">Highland</span><span class="name">The Trench Series</span><span class="zhline zh">风衣系列</span></header>
+  <div class="t title"><h1 class="serif">Three coats, three kinds of British rain.</h1><p class="zhline zh">三件风衣，三种英国的雨</p></div>
+  <p class="t lead">Choose the weather you walk in, and the coat follows.</p>
+  <p class="t choose">Choose your weather</p>
+  <div class="t chips" role="group" aria-label="Choose your weather"><button type="button" class="chip" data-weather="drizzle" aria-controls="coat-kestrel" aria-pressed="false" data-apple-motion data-cc="22" data-cc-fill="#fff" data-cc-stroke="#d2d2d7">Drizzle</button><button type="button" class="chip selected" data-weather="steady" aria-controls="coat-glen" aria-pressed="true" data-apple-motion data-cc="22" data-cc-fill="#fff" data-cc-stroke="#1936c8" data-cc-stroke-width="2">Steady rain</button><button type="button" class="chip" data-weather="driving" aria-controls="coat-moor" aria-pressed="false" data-apple-motion data-cc="22" data-cc-fill="#fff" data-cc-stroke="#d2d2d7">Driving rain</button></div>
+  <main class="t cards">
+    <article class="card" id="coat-kestrel" data-cc="18" data-cc-fill="#fff" data-cc-stroke="#d2d2d7" data-cc-clip>
+      <div class="coat"><svg viewBox="0 0 360 300" role="img" aria-label="Illustrative short trench coat for Drizzle"><defs><linearGradient id="clothA" x1=".1" y1="0" x2=".85" y2="1"><stop stop-color="#ebe9e2"/><stop offset=".28" stop-color="#c5c4bd"/><stop offset=".68" stop-color="#a2a39e"/><stop offset="1" stop-color="#6d7272"/></linearGradient><linearGradient id="foldA" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fff" stop-opacity=".7"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#30363a" stop-opacity=".34"/></linearGradient><pattern id="weaveA" width="12" height="10" patternUnits="userSpaceOnUse"><path d="M0 3H12M0 8H12" stroke="#42464a" stroke-opacity=".18"/><path d="M3 0V10M9 0V10" stroke="#fff" stroke-opacity=".22"/></pattern><filter id="shadowA"><feGaussianBlur stdDeviation="7"/></filter></defs><g stroke="#9da2a5" stroke-width="1.5" stroke-linecap="round" opacity=".58"><path d="M24 116v10M48 162v8M72 96v9M292 143v9M316 108v11M340 172v9"/></g><ellipse cx="180" cy="243" rx="100" ry="13" fill="#202124" opacity=".24" filter="url(#shadowA)"/><path d="M129 43L156 31L180 65L204 31L231 43L274 91L246 110L229 91L245 222Q181 232 115 222L131 91L114 110L86 91Z" fill="url(#clothA)" stroke="#696d6d" stroke-width="2"/><path d="M156 31L180 65L204 31L189 94L180 112L169 94Z" fill="#deddd6" stroke="#7c7e7b" stroke-width="1.5"/><path d="M180 65V220M133 101L115 219M227 101L245 219" stroke="#f4f3ee" stroke-opacity=".65" stroke-width="3"/><path d="M131 167Q180 178 230 167V181Q180 194 130 181Z" fill="#969792"/><path d="M136 170Q180 179 224 170" stroke="#f4f3ee" stroke-width="3"/><path d="M147 110L168 139L156 180M212 110L192 139L205 180" fill="none" stroke="#7a7c78" stroke-width="2"/><path d="M150 135H167L165 157H147ZM193 135H210L213 157H195Z" fill="#b5b4ad" stroke="#72746f"/><path d="M167 105L180 114L193 105" fill="none" stroke="#f9f8f2" stroke-width="5"/><path d="M117 219Q180 229 244 219" fill="none" stroke="#f4f3ee" stroke-width="4"/><path d="M130 45L156 35L180 68L204 35L229 45" fill="url(#foldA)" opacity=".76"/><path d="M111 92L99 101M249 101L264 92" stroke="#f6f5ef" stroke-width="5"/><path d="M129 43L156 31L180 65L204 31L231 43L274 91L246 110L229 91L245 222Q181 232 115 222L131 91L114 110L86 91Z" fill="url(#weaveA)" opacity=".44"/></svg></div>
+      <p class="weather">Drizzle</p><div class="meta"><p class="name">The Kestrel</p><p class="price">£890</p></div>
+    </article>
+    <article class="card selected" id="coat-glen" data-cc="18" data-cc-fill="#fff" data-cc-stroke="#1936c8" data-cc-stroke-width="2" data-cc-clip>
+      <div class="coat"><svg viewBox="0 0 360 300" role="img" aria-label="Illustrative mid-length trench coat for Steady rain"><defs><linearGradient id="clothB" x1=".05" y1="0" x2=".9" y2="1"><stop stop-color="#f1efe8"/><stop offset=".25" stop-color="#c9c8c1"/><stop offset=".66" stop-color="#929793"/><stop offset="1" stop-color="#5d6668"/></linearGradient><linearGradient id="foldB" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fff" stop-opacity=".72"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#293338" stop-opacity=".36"/></linearGradient><pattern id="weaveB" width="12" height="10" patternUnits="userSpaceOnUse"><path d="M0 3H12M0 8H12" stroke="#42464a" stroke-opacity=".18"/><path d="M3 0V10M9 0V10" stroke="#fff" stroke-opacity=".23"/></pattern><filter id="shadowB"><feGaussianBlur stdDeviation="7"/></filter></defs><g stroke="#8e969a" stroke-width="1.6" stroke-linecap="round" opacity=".68"><path d="M24 90v17M50 128v15M76 170v16M101 99v17M259 105v18M284 147v17M308 93v16M334 177v18M38 218v13M320 220v15"/></g><ellipse cx="180" cy="280" rx="100" ry="13" fill="#202124" opacity=".24" filter="url(#shadowB)"/><path d="M129 43L156 31L180 65L204 31L231 43L274 91L246 110L229 91L245 260Q181 272 115 260L131 91L114 110L86 91Z" fill="url(#clothB)" stroke="#60686a" stroke-width="2"/><path d="M156 31L180 65L204 31L189 94L180 112L169 94Z" fill="#e5e4dd" stroke="#707776" stroke-width="1.5"/><path d="M180 65V258M133 101L115 257M227 101L245 257" stroke="#f4f3ee" stroke-opacity=".68" stroke-width="3"/><path d="M131 167Q180 178 230 167V181Q180 194 130 181Z" fill="#828987"/><path d="M136 170Q180 179 224 170" stroke="#f4f3ee" stroke-width="3"/><path d="M147 110L168 139L156 180M212 110L192 139L205 180" fill="none" stroke="#737a78" stroke-width="2"/><path d="M150 135H167L165 157H147ZM193 135H210L213 157H195Z" fill="#b6b8b2" stroke="#696f6e"/><path d="M167 105L180 114L193 105" fill="none" stroke="#fbfaf4" stroke-width="5"/><path d="M117 257Q180 266 244 257" fill="none" stroke="#f4f3ee" stroke-width="4"/><path d="M130 45L156 35L180 68L204 35L229 45" fill="url(#foldB)" opacity=".8"/><path d="M111 92L99 101M249 101L264 92" stroke="#f6f5ef" stroke-width="5"/><path d="M129 43L156 31L180 65L204 31L231 43L274 91L246 110L229 91L245 260Q181 272 115 260L131 91L114 110L86 91Z" fill="url(#weaveB)" opacity=".44"/></svg></div>
+      <p class="weather">Steady rain</p><div class="meta"><p class="name">The Glen</p><p class="price">£1,140</p></div>
+    </article>
+    <article class="card" id="coat-moor" data-cc="18" data-cc-fill="#fff" data-cc-stroke="#d2d2d7" data-cc-clip>
+      <div class="coat"><svg viewBox="0 0 360 300" role="img" aria-label="Illustrative long trench coat for Driving rain"><defs><linearGradient id="clothC" x1=".05" y1="0" x2=".9" y2="1"><stop stop-color="#e5e5e0"/><stop offset=".27" stop-color="#bdbfbb"/><stop offset=".65" stop-color="#868c8b"/><stop offset="1" stop-color="#505b5e"/></linearGradient><linearGradient id="foldC" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fff" stop-opacity=".67"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#293338" stop-opacity=".4"/></linearGradient><pattern id="weaveC" width="12" height="10" patternUnits="userSpaceOnUse"><path d="M0 3H12M0 8H12" stroke="#42464a" stroke-opacity=".2"/><path d="M3 0V10M9 0V10" stroke="#fff" stroke-opacity=".21"/></pattern><filter id="shadowC"><feGaussianBlur stdDeviation="7"/></filter></defs><g stroke="#858e92" stroke-width="2" stroke-linecap="round" opacity=".76"><path d="M18 95l-18 23M50 116l-20 24M80 150l-18 26M105 92l-17 23M254 101l-18 30M288 132l-18 30M321 92l-18 25M350 160l-20 28M43 206l-16 22M335 222l-15 22"/><path d="M18 250q24-14 49-6M288 244q24-14 48-7" fill="none"/></g><ellipse cx="180" cy="299" rx="100" ry="13" fill="#202124" opacity=".24" filter="url(#shadowC)"/><path d="M129 43L156 31L180 65L204 31L231 43L274 91L246 110L229 91L245 292Q181 299 115 292L131 91L114 110L86 91Z" fill="url(#clothC)" stroke="#555f61" stroke-width="2"/><path d="M156 31L180 65L204 31L189 94L180 112L169 94Z" fill="#d8d9d4" stroke="#6a7271" stroke-width="1.5"/><path d="M180 65V291M133 101L115 290M227 101L245 290" stroke="#f4f3ee" stroke-opacity=".64" stroke-width="3"/><path d="M131 167Q180 178 230 167V181Q180 194 130 181Z" fill="#747c7d"/><path d="M136 170Q180 179 224 170" stroke="#f4f3ee" stroke-width="3"/><path d="M147 110L168 139L156 180M212 110L192 139L205 180" fill="none" stroke="#6e7777" stroke-width="2"/><path d="M150 135H167L165 157H147ZM193 135H210L213 157H195Z" fill="#a6aaa7" stroke="#606968"/><path d="M167 105L180 114L193 105" fill="none" stroke="#f9f8f3" stroke-width="5"/><path d="M117 290Q180 297 244 290" fill="none" stroke="#f4f3ee" stroke-width="4"/><path d="M130 45L156 35L180 68L204 35L229 45" fill="url(#foldC)" opacity=".8"/><path d="M111 92L99 101M249 101L264 92" stroke="#f6f5ef" stroke-width="5"/><path d="M129 43L156 31L180 65L204 31L231 43L274 91L246 110L229 91L245 292Q181 299 115 292L131 91L114 110L86 91Z" fill="url(#weaveC)" opacity=".44"/></svg></div>
+      <p class="weather">Driving rain</p><div class="meta"><p class="name">The Moor</p><p class="price">£1,460</p></div>
+    </article>
+  </main>
+  <p class="t disclaimer"><span>Illustrative render, not a photograph</span><span>Illustrative example</span></p>
+  <div class="t bar"><div class="selection"><span class="label">Buy</span><span class="name" data-selection-name>The Glen</span><span class="price" data-selection-price>£1,140</span></div><div class="buy"><span class="selected-weather" aria-live="polite">Selected weather · Steady rain</span><a data-apple-motion href="#" data-cc="23" data-cc-fill="#1936c8">Add to bag</a></div></div>
+</div><script src="../../_shared/continuous-corner.js"></script><script>
+const weatherChoices = [...document.querySelectorAll('.chip[data-weather]')];
+const trenchCards = [...document.querySelectorAll('.card')];
+const names = ['The Kestrel', 'The Glen', 'The Moor'];
+const prices = ['£890', '£1,140', '£1,460'];
+weatherChoices.forEach((choice, index) => choice.addEventListener('click', () => {
+  weatherChoices.forEach((item, i) => {
+    const selected = i === index;
+    item.classList.toggle('selected', selected);
+    item.setAttribute('aria-pressed', String(selected));
+  });
+  trenchCards.forEach(card => {
+    card.classList.remove('selected');
+    card.style.borderColor = '';
+    card.removeAttribute('data-cc-stroke');
+    card.removeAttribute('data-cc-stroke-width');
+    const oldOutline = card.querySelector(':scope > .cc-bg path');
+    if (oldOutline) {
+      oldOutline.removeAttribute('stroke');
+      oldOutline.removeAttribute('stroke-width');
+    }
+  });
+  const selectedCard = trenchCards[index];
+  if (selectedCard) {
+    selectedCard.classList.add('selected');
+    selectedCard.setAttribute('data-cc-stroke', '#1936c8');
+    selectedCard.setAttribute('data-cc-stroke-width', '2');
+  }
+  if (typeof window.ccRedraw === 'function') window.ccRedraw();
+  document.querySelector('.selected-weather').textContent = `Selected weather · ${choice.textContent.trim()}`;
+  document.querySelector('[data-selection-name]').textContent = names[index];
+  document.querySelector('[data-selection-price]').textContent = prices[index];
+}));
+</script>
+</body></html>

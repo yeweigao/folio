@@ -1,98 +1,107 @@
-# Shelf, a modular shelving system · Apple + Engineering, Vitsoe hand
+# Shelf · Apple + Vitsoe
 
-A visual world for a fictional modular shelving system, not a real Vitsoe product: one module, every part a whole multiple of it, the system shown assembled and disassembled. Dialect: Engineering, governing hand Vitsoe. Forms shown: Keynote slide, Store card, Editorial opener, Flyer sheet, Website page; Bento grid as a variation for a system unit.
+Shelf's world: one module and every system it builds.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts. Every performance claim carries a figure or a section.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
 
-Apple as base, Engineering as dialect, Vitsoe as governing hand — Build assembled and disassembled views from one module, then attach dimensions to matching parts; never vary the module to fit a composition.
+Apple + Vitsoe style — Build the whole system from one physical module and show it assembled and disassembled; never change a part's measure to fit the page.
 
-World: Shelf, a shelving system whose proof is that parts combine without fitting, its module, its parts, its configurations, its price, across a launch deck, a shop page and a story opener. Keep Apple's single-accent discipline and one lead per screen; let Vitsoe's philosophy govern the look — a shelving system where the proof is that parts combine without fitting: one module, every part a whole multiple of it, the system shown assembled and disassembled.
+World: A fictional modular shelving system, its components, combinations and dimensions, across a launch deck, a configuration comparison and an explanatory long read. Every piece keeps one shared module and the proof of how its parts combine; each brings a different system question.
 
-Method: Separate the content into a claim, its visible evidence and a decision or lookup task. Build the proof from the module before setting the labels; select Keynote, Store or Editorial structure by the reader's task, then recompose the reading axis and crop for the actual format.
+Method: Read the dimensions in the brief and name the smallest repeated construction measure M. Express every part edge and every system span as an integer multiple of M. Compose the assembled view first, then lay out those same parts disassembled on the same grid. Choose the view that answers the question; reject any relationship that requires a non-integer part or a second scale. Keep reading on one axis: claim, whole system, parts, dimensions.
 
-Amplitude: full on covers, heroes and vistas; reduced on Store, reference and specification units.
+Amplitude: Full on the assembled and disassembled system; reduced on dimensions, options, prices and sources.
 
-Anti-reference: a spec sheet under a lifestyle photograph, beside a rendered explosion.
+Anti-reference: a generic shelving photograph above a list of unrelated dimensions.
 
 ## Images
 
-No lifestyle mood alone. The hero image is the system: the shelving assembled, or disassembled into its parts laid out on the module grid, with labels naming every part shown. System images are fictional mockups, never a real manufacturer's images, and are labelled as such. Crop: cover slot scope — a right-half cover slot is too narrow for a three-bay system, so the cover shows two complete bays and the full three-bay system must appear on the proof slide; a crop that cuts through uprights or shelves is rejected.
+Use a measured vector construction, not a borrowed Vitsoe product, photograph or system drawing. Every drawn system is an illustrative stand-in and is captioned `Illustrative render, not a photograph`. Preserve the same scale across assembled and disassembled views; crop empty margin, never a shelf edge or upright. If the complete system cannot fit in a cover field, show a complete module-sized portion and put the whole assembly on the proof unit. Dimensions, component names and captions stay live; each one identifies the part it measures.
 
 ## Layout
 
-Grid system: Module grid — derive all part dimensions from the one construction module, then align the reading and proof fields to it.
+Grid system: Module grid — for each drawing, let p = min(available width ÷ system width in M, available height ÷ system height in M); draw one M as p pixels and every component edge at an integer multiple of p. Derive a 12-column reading field from W × H with side margin m = max(0.05W, 0.06S), gutter = m ÷ 4, column = (W − 2m − 11 gutters) ÷ 12; the module grid governs the object, the columns govern text. Share baselines for dimensions and direct labels; keep visible label ink at least half a label line-height clear of measured edges and leader lines, and unrelated callouts one label line-height apart. Measure glyph ink, not text boxes. No box is added just to fill a track. Use an 8 px spacing step at S = 1000, scaled with S.
 
-Neutral canvas with generous whitespace, one centred axis per unit, the module grid visible as the construction grid, never as wallpaper. Hero: headline with the system below it as proof. Slide field 16:9, critical content inside the central 80%. Store field: white cards on a hairline grid, one part or configuration per card, system thumbnail on top, name and price below. Editorial field: one centred column, with system images and figures as proof inside the story. Text sits at least 11.34 inside its shape; a title clears its descenders before anything below it; a number group sits mid-frame, number, label and context spaced down. Containers may centre; body, leads, captions, card names and prices stay flush left, ragged right; only hero, vista and cover headlines centre.
+Keynote keeps critical text inside the central 84%; the system or a complete module portion occupies at least half the slide. Bento assigns the widest tile to the assembled system, with component and number tiles following the reader's comparison. Number tiles share one numeral size and one label position. Editorial opens on the diagram at full bleed, then uses one centred column no wider than 980 px; the column explains the module and names the dimensions at the place they can be checked.
 
 ## Typography
 
-One quiet grotesque sans, regular weights for body, medium weight for display, no display face competing with the system. Use tabular numerals where the renderer supports them; otherwise use a right-aligned figure column, so module dimensions line up across rows, cards and pages.
-
-Concrete type for this fictional world: Inter for display, Inter for body and labels; pair Chinese with Noto Serif SC for serif display and Noto Sans SC for sans roles. Open-source substitutes, not the brand's own faces.
+Use Inter for display and reading, Noto Sans SC for Chinese; no typeface competes with the system. No binaries are bundled; Inter and Noto Sans SC are Google Fonts, OFL 1.1. Use 600 for the main claim, 400 for body and direct labels. At S = 1000, Keynote slide title at least 0.1 S / 600 / 1.05, body at least 0.037 S / 400 / 1.47, labels 0.026 S / 400 / 1.4 and source 16 / 400; Bento lead 56 / 600 / 1.07; Editorial lead 24 / 300 / 1.5 and body 17 / 400 / 1.47, with a 12 px caption floor. Set all dimensions with tabular numerals or a right-aligned figure column. Match Chinese and Latin apparent size and baseline; phrase-break Chinese and retain punctuation.
 
 ## Colors
 
-Neutral grounds with one accent for calls to action and key highlights only, never as a field, a wash or a background. Colour beyond the accent comes from the diagram's own line and the product's material, never from chrome. No second accent, no gradient.
-
-Roles: canvas the page, panel the card, dark the proof-field polarity, ink and muted the reading colours, onDark and onAction their contrasts, hairline a non-text separator; action is the single action accent. Reading text uses only the pairs in Tokens. Accent: the single accent replaces every Apple blue role.
+Ground: Vitsoe's white; colour comes from the shelf's materials. White is the system field; light grey carries quiet separations, charcoal carries a dark turn when contrast is useful. The system itself uses ink, grey and its declared material colours. No chromatic accent is assigned to Vitsoe; actions use neutral ink, never Apple blue. Muted marks secondary dimensions, hairline only the measured divider. Keep labels readable in grayscale.
 
 ## Shapes
 
-Every nonzero radius takes Apple's continuous corner; square forms stay square. One corner, inward from the corner point in units of R: `M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0`. R is at most half the shorter side; a side shorter than 3.05732R shortens its shoulder to half the side, toward the native saturated form (first cubic 0 1, 0 .96, 0 .82). Build it natively (`.continuous`), as this path in SVG, canvas, clip or a slide freeform, or in Figma at 60% smoothing; never `border-radius`, `rect rx`, a preset or a superellipse. Fill, stroke and media clip share one path; nested corners share centres, inner R = max(0, outer R − gap).
+Shelf parts keep their actual squared construction edges; no radius is applied to a component, module or measured drawing. Bento cards use radius 18, tools 8, and full-bleed fields stay square. Any nonzero radius uses the continuous corner, never `border-radius`, `rect rx`, a preset or superellipse. One corner, inward from the corner point in units of R:
 
-Cards carry hairlines and quiet separation, never heavy shadow. Diagrams use one line weight, squared ends, no decorative stroke. Calls to action are modest rectangles or pills following the card system, never a pill on every control.
+```text
+M 0 1.52866
+C 0 1.08849 0 .86841 .07491 .63149
+C .16906 .37282 .37282 .16906 .63149 .07491
+C .86841 0 1.08849 0 1.52866 0
+```
+
+R is at most half the shorter side; below 3.05732R, shorten the shoulder toward the native saturated form. Fill, stroke and media clip share one path; nested radii share centres, inner R = max(0, outer R − gap). No shadow on components or cards.
 
 ## Forms
 
-- Keynote: one thesis per slide; a system slide is one unit, with the system assembled or disassembled as proof, one decisive figure in accent and the rest muted.
-- Store: one part or configuration per card, system thumbnail on top, name and price below, one buy action per card; a configurator variation lets the visitor combine parts without fitting.
-- Editorial: opener with the system story, then long leads with system images and figures as proof inside the column. The opener is a diagram vista — a system assembled and disassembled at full-bleed with one headline and at most one action, where the system itself is the atmosphere; the diagram must be readable as a diagram, not a rendered explosion.
-- Flyer: one A4 sheet, real internal padding so no text touches a frame edge, one claim, one dominant image, figure or price at display size in the footer rule.
-- Website: full-width hero image, hero plus three sections plus footer, hierarchy carried by size and weight, centred container with flush-left body, leads, captions and prices.
-- Bento grid: a system unit — many Shelf parts on one page, tiles sized by importance, one claim per tile, each tile one part that combines with the others, figures as small number posters with tabular numerals. Tiles index; they do not prove: each claim is proved in a following unit or carries its own figure; a system tile's claim is its part combining with the others.
+- **Keynote:** state one system claim, show the assembly at the largest scale available, and keep one set of dimensions on the same module grid.
+- **Bento:** compare one assembly, component or configuration per tile; tile size follows the question, figures share size, each component is shown as part of the whole.
+- **Editorial:** let a full-bleed assembled/disassembled diagram open the argument; continue in one column with the module, dimensions and part relationships.
 
 ## Variations
 
-One break per unit. A system turn: one full unit showing the whole system assembled and disassembled, with every part a whole multiple of one module. A module turn: one unit as the module grid itself, with every dimension on that grid and no dimension off it.
+A module turn is allowed at the point where component dimensions become the subject: show the construction grid itself and keep every edge on M. An assembly turn is allowed where a comparison resolves into the whole: include both assembled and disassembled views at the same scale. Either turn occupies one unit.
 
 ## Do's and Don'ts
 
-Do: one module, every part a whole multiple of it, system shown assembled and disassembled, one governing hand per work. Don't: a dimension off the module, a part that fits only one configuration, a system shown only assembled, a second accent colour, a diagram with every node type at once.
+Floors: facts match each brief exactly; declare every illustration; maintain 4.5:1 text contrast (3:1 for large type); keep reading text live and at its declared size floor for the intended viewing distance; make static output complete as a still; recompose each format instead of scaling a layout; use only original or licensed assets.
+
+Render check: measure a named part in the assembled and disassembled drawings; it occupies the same integer multiple of M at the same drawn scale.
+
+Test: Hide the dimension labels; can a maker count the repeated module from the part edges? Hide the assembly; can the parts still be recomposed into the same system?
+
+Caricature: a dimension off the module, a part that fits only one configuration, or a system shown only assembled.
 
 ## Tokens
 
-Authored for this fictional world at S = 1000; radius sets size, the contour is continuous corner. Product-image colours and hero gradients are source imagery, not additional action colours.
+Values are authored for this fictional system at S = 1000. Action is neutral ink because the Vitsoe line assigns no chromatic accent; no Apple blue is used. Inter and Noto Sans SC are Google Fonts, OFL 1.1; no font file is bundled.
 
 ```yaml
 colors:
-  canvas: "#f8f7f3"
+  canvas: "#ffffff"
   panel: "#ffffff"
   dark: "#2b302d"
   ink: "#2b302d"
   muted: "#626a64"
-  action: "#345c5c"
+  action: "#2b302d"
   onAction: "#ffffff"
   onDark: "#ffffff"
   hairline: "#d2d2d7"
 typography:
-  display: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 56, fontWeight: 500, lineHeight: 1.07 }
-  heading: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 40, fontWeight: 500, lineHeight: 1.1 }
-  lead: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 28, fontWeight: 400, lineHeight: 1.3 }
+  display: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 80, fontWeight: 600, lineHeight: 1.05 }
+  slideBody: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 24, fontWeight: 400, lineHeight: 1.47 }
+  slideLabel: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 18, fontWeight: 400, lineHeight: 1.4 }
+  slideSource: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 16, fontWeight: 400, lineHeight: 1.5 }
+  tile: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 56, fontWeight: 600, lineHeight: 1.07 }
+  editorialLead: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 24, fontWeight: 300, lineHeight: 1.5 }
   body: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.47 }
   label: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
+  caption: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
   fine: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: 1.5 }
 spacing:
   unit: 8
-  textInset: 11.34
+  textInset: 12
   cardInset: 24
   proofGap: 40
   tileInset: 80
 rounded:
-  small: 5
-  control: 8
-  card: 11
+  tool: 8
+  card: 18
 corners:
   contour: "continuous corner"
   smoothing: 0.6
@@ -111,5 +120,5 @@ pairs:
 
 ## Record
 
-Folio version: 1.1.0. Template version: 14. Date: 2026-11-05.
-Pieces: one-module (Keynote), configurations (Bento), disassembled (Editorial), each made from this file alone. Subject is fictional; no Vitsoe product, image, logo or font file is used. Tokens are authored for this world, not measured from the brand.
+Folio version: 1.1.0. Template version: 14. Date: 2026-11-07.
+Pieces: one-module (Keynote, 1600 × 900), configurations (Bento, 1440 × 1000), disassembled (Editorial, 1200 × 1600); each uses its brief and this DESIGN.md. System, dimensions and figures are fictional; no Vitsoe product, image, logo or font file is used. Changes after the lock: none.

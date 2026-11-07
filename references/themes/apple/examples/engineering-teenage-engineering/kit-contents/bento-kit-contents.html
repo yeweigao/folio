@@ -1,167 +1,29 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=1440">
-<title>Kit One Field Kit — contents and price</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;display=swap" rel="stylesheet">
-<style>
-  :root{
-    --canvas:#f4f4ef; --panel:#ffffff; --dark:#272823;
-    --ink:#272823; --muted:#62635c; --action:#9a4100;
-    --onAction:#ffffff; --onDark:#ffffff; --hairline:#d2d2d7;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:#e4e4e0}
-  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
-  .unit{position:relative;width:1440px;height:1000px;overflow:hidden;background:var(--canvas)}
-  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
-  [data-cc]{position:relative;isolation:isolate}
-  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
-  .t{position:absolute}
-  svg{display:block}
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Kit One Field Kit</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet"><style>
+:root{--apple-focus:#9a4100;--bg:#efefef;--paper:#ffffff;--ink:#272823;--muted:#686962;--line:#d2d2d7;--orange:#9a4100;}*{box-sizing:border-box;margin:0}html,body{background:var(--bg);font-family:Inter,"Noto Sans SC",sans-serif;color:var(--ink)}.unit{width:1440px;height:1000px;overflow:hidden;padding:42px max(24px,5vw);position:relative;background:var(--bg)}.head{display:flex;justify-content:space-between;height:100px}.title{font-size:57px;line-height:1.04;letter-spacing:-2.8px;font-weight:600}.zh{font-size:20px;color:var(--muted);margin-top:5px}.stock{font-size:16px;color:var(--orange);padding-top:10px}.grid{height:750px;display:grid;grid-template-columns:1.85fr 1fr .95fr;grid-template-rows:396px 330px;gap:18px}.tile{padding:22px 24px;position:relative}[data-cc]{position:relative;isolation:isolate}.cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}.hero{grid-column:1/3;grid-row:1;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:14px;padding:24px 28px}.hero h2{font-size:29px;line-height:1.1}.hero .sub{font-size:17px;color:var(--muted);line-height:1.4;margin-top:8px}.hero .price{font-size:55px;letter-spacing:-2px;font-weight:600;margin-top:26px}.hero .cta{display:inline-block;color:white;padding:13px 25px;font-size:17px;margin-top:13px;position:relative;isolation:isolate;border:0;background:transparent;font-family:inherit;cursor:pointer}.hero .cart-status{display:block;min-height:20px;font-size:13px;color:var(--muted)}.drawing-wrap{position:relative;isolation:isolate;overflow:visible;min-width:0;max-width:100%}.drawing-wrap[data-apple-light]::before{inset:-18% 0}.drawing-wrap{width:100%;height:302px;display:flex;align-items:center;justify-content:center}.drawing{display:block;width:100%;height:100%;min-width:0;max-width:100%}.save{grid-column:3;grid-row:1;background:#2b2c28;color:#fff;display:flex;flex-direction:column;justify-content:center}.save .figure{font-size:96px;line-height:.95;letter-spacing:-6px;font-weight:600;color:#fff}.save .label{font-size:18px;line-height:1.4;margin-top:12px}.save .calc{font-size:16px;color:#d8d9d5;margin-top:12px}.packing{grid-column:1;grid-row:2}.tile h3{font-size:22px;line-height:1.2}.items{display:grid;grid-template-columns:1fr 1fr;column-gap:20px;row-gap:14px;margin-top:20px}.item{border-top:1px solid var(--line);padding-top:9px}.item strong{font-size:18px}.item span{display:block;font-size:15px;color:var(--muted);margin-top:4px}.item em{font-style:normal;float:right;font-size:17px;color:var(--ink)}.fit{grid-column:2;grid-row:2;background:var(--paper)}.fit h3{font-size:22px}.fit svg{width:100%;height:120px;margin:10px 0 3px}.fit p{font-size:16px;line-height:1.35}.service{grid-column:3;grid-row:2;background:#fff}.service svg{width:100%;height:115px;margin-top:12px}.service p{font-size:16px;line-height:1.4;margin-top:5px}.foot{position:absolute;left:5vw;right:5vw;bottom:17px;display:flex;justify-content:space-between;color:var(--muted);font-size:13px}
 
-  .brand{left:80px;top:44px;display:flex;align-items:baseline;gap:12px}
-  .brand .nm{font-size:14px;font-weight:600;letter-spacing:-.1px}
-  .brand .k{font-size:12px;font-weight:400;color:var(--muted)}
-  .title{left:80px;top:74px;width:820px;font-size:28px;font-weight:600;line-height:1.2;letter-spacing:-.7px}
-  .zhsub{left:80px;top:112px;font-size:16px;font-weight:400;line-height:1.5;color:var(--muted)}
-  .note{right:80px;top:80px;width:320px;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted);text-align:right}
+:root{--apple-focus:#9a4100}.unit{max-width:1440px;margin-inline:auto}
+@media(max-width:900px){
+.unit{width:100%;height:auto;min-height:0;overflow:visible;padding:24px;display:flex;flex-direction:column;gap:16px}.head,.grid,.foot{position:static;width:auto;height:auto;left:auto;right:auto;top:auto;bottom:auto}.head{align-items:flex-start;gap:12px}.title{font-size:clamp(38px,7vw,54px);line-height:1.05;letter-spacing:-1.2px}.zh{font-size:18px}.stock{font-size:14px}
+.grid{height:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto;gap:14px}.tile{position:relative;min-width:0;max-width:100%;padding:20px}.hero{grid-column:1/-1;grid-row:auto;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}.hero>div{min-width:0;max-width:100%}.hero h2{font-size:24px}.hero .price{font-size:42px;margin-top:18px}.hero .cta{font-size:16px}.hero .cta{margin-top:10px}.drawing{width:100%;height:auto}.save{grid-column:1;grid-row:auto;min-height:210px}.save .figure{font-size:clamp(42px,8vw,64px);letter-spacing:-2px}.save .label{font-size:15px}.save .calc{font-size:13px}.packing{grid-column:1/-1;grid-row:auto}.items{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.item strong{font-size:16px}.item em{font-size:15px}.fit{grid-column:2;grid-row:auto}.service{grid-column:1/-1;grid-row:auto}.fit svg,.service svg{display:block;width:100%;height:auto}.fit p,.service p{font-size:14px;line-height:1.4}.foot{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:12px}
+}
+@media(max-width:520px){.head{flex-direction:column}.grid{grid-template-columns:minmax(0,1fr)}.hero,.save,.packing,.fit,.service{grid-column:1;grid-row:auto}.hero{grid-template-columns:minmax(0,1fr)}.hero>div{min-width:0;max-width:100%}.hero .drawing-wrap{height:auto;max-height:220px}.hero .drawing{height:auto;max-height:220px}.save{min-height:160px}.items{grid-template-columns:minmax(0,1fr)}.item em{float:none;margin-left:10px}.fit{min-height:0}}
 
-  .tile{position:absolute;padding:24px}
 
-  .lead .nm{font-size:24px;font-weight:600;line-height:1.2;letter-spacing:-.5px}
-  .lead .sub{margin-top:5px;font-size:15px;font-weight:400;line-height:1.4;color:var(--muted)}
-  .lead .pr{position:absolute;left:24px;top:356px;font-size:21px;font-weight:600;line-height:1.2;letter-spacing:-.3px}
-  .lead .stock{position:absolute;left:120px;top:363px;font-size:14px;font-weight:400;color:var(--muted)}
-  .btn{position:absolute;left:596px;top:350px;height:40px;padding:0 22px;display:inline-flex;align-items:center;font-size:15px;font-weight:600;color:var(--onAction);text-decoration:none}
-
-  .num{padding:24px}
-  .num .big{font-size:56px;font-weight:600;line-height:1;letter-spacing:-2px;color:var(--onDark)}
-  .num .lab{margin-top:12px;font-size:15px;font-weight:400;line-height:1.4;color:var(--onDark)}
-  .num .ctx{margin-top:10px;font-size:13px;font-weight:400;line-height:1.4;color:#c9cac3}
-
-  .fit .h{font-size:17px;font-weight:600;line-height:1.3;letter-spacing:-.2px}
-  .fit .d{margin-top:12px;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
-
-  .rec .h{font-size:14px;font-weight:600;line-height:1.4;margin-bottom:8px}
-  .row{display:flex;align-items:baseline;height:34px}
-  .row .n{font-size:16px;font-weight:400;line-height:1.2;width:150px}
-  .row .m{font-size:12px;font-weight:400;color:var(--muted);width:120px}
-  .row .p{margin-left:auto;font-size:16px;font-weight:400;line-height:1.2}
-  .rec .line{position:absolute;left:24px;top:196px;width:712px;height:1px;background:var(--hairline)}
-  .rec .tot{display:flex;align-items:baseline;margin-top:20px}
-  .rec .tot .n{font-size:16px;font-weight:600;width:350px}
-  .rec .tot .p{margin-left:auto;font-size:17px;font-weight:600}
-
-  .open .h{font-size:17px;font-weight:600;line-height:1.3;letter-spacing:-.2px}
-  .open .b{margin-top:14px;font-size:13px;font-weight:400;line-height:1.55;color:var(--muted)}
-
-  .foot{left:80px;top:918px;width:1280px;display:flex;justify-content:space-between;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
-</style>
-</head>
-<body>
-<div class="unit" id="page">
-
-  <div class="t brand"><span class="nm">Kit</span><span class="k">Field kit</span></div>
-  <h1 class="t title">Four items, one price, nothing hidden.</h1>
-  <p class="t zhsub zh">四件东西，一个箱子</p>
-  <p class="t note">Prices for the complete kit, 2026.</p>
-
-  <!-- lead: the kit, flat -->
-  <div class="t tile lead" data-cc="11" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7" style="left:80px;top:156px;width:760px;height:440px">
-    <p class="nm">Kit One Field Kit</p>
-    <p class="sub">Four items. One case.</p>
-    <svg width="500" height="210" viewBox="0 0 500 210" aria-hidden="true" style="position:absolute;left:24px;top:96px">
-      <g stroke="#272823" stroke-width="1.6" fill="none" stroke-linejoin="miter">
-        <!-- instrument -->
-        <rect x="2" y="44" width="190" height="122" fill="#272823" fill-opacity=".05"/>
-        <circle cx="22" cy="66" r="7"/><circle cx="44" cy="66" r="7"/>
-        <circle cx="66" cy="66" r="7"/><circle cx="88" cy="66" r="7"/>
-        <rect x="16" y="88" width="160" height="60"/>
-        <path d="M 29.3 88 V 148 M 42.6 88 V 148 M 55.9 88 V 148 M 69.2 88 V 148 M 82.5 88 V 148 M 95.8 88 V 148 M 109.1 88 V 148 M 122.4 88 V 148 M 135.7 88 V 148 M 149 88 V 148 M 162.3 88 V 148"/>
-        <rect x="152" y="52" width="26" height="24"/>
-        <path d="M 155 58 H 175 M 155 64 H 175 M 155 70 H 175"/>
-        <!-- case, closed: handle, lid seam, two latches -->
-        <rect x="212" y="64" width="118" height="94" fill="#272823" fill-opacity=".05"/>
-        <path d="M 248 64 V 50 H 294 V 64"/>
-        <path d="M 212 100 H 330"/>
-        <rect x="228" y="94" width="16" height="12"/>
-        <rect x="298" y="94" width="16" height="12"/>
-        <!-- cable -->
-        <circle cx="362" cy="106" r="32"/>
-        <circle cx="362" cy="106" r="21"/>
-        <path d="M 394 106 C 416 106 416 142 402 152"/>
-        <rect x="394" y="146" width="18" height="10" fill="#f4f4ef"/>
-        <!-- screwdriver -->
-        <rect x="410" y="96" width="38" height="22" fill="#272823" fill-opacity=".08"/>
-        <path d="M 448 101 H 480 M 448 113 H 480"/>
-        <path d="M 480 101 L 490 107 L 480 113"/>
-      </g>
-    </svg>
-    <p class="pr">¥2,690</p>
-    <p class="stock">In stock</p>
-    <a class="btn" href="#" data-cc="8" data-cc-fill="#9a4100">Add to cart</a>
-  </div>
-
-  <!-- the difference -->
-  <div class="t tile num" data-cc="11" data-cc-fill="#272823" style="left:860px;top:156px;width:500px;height:200px">
-    <p class="big">¥170</p>
-    <p class="lab">less than the four items bought apart</p>
-    <p class="ctx">¥2,860 separately · ¥2,690 as a kit</p>
-  </div>
-
-  <!-- fit -->
-  <div class="t tile fit" data-cc="11" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7" style="left:860px;top:376px;width:500px;height:220px">
-    <p class="h">The case takes the whole kit.</p>
-    <svg width="452" height="96" viewBox="0 0 452 96" aria-hidden="true" style="margin-top:12px">
-      <g stroke="#272823" fill="none" stroke-width="1.4">
-        <rect x="14.7" y="12.7" width="422" height="70" fill="#272823" fill-opacity=".04"/>
-        <rect x="15" y="15" width="422" height="10" fill="#272823" fill-opacity=".14"/>
-        <rect x="15" y="70" width="422" height="10" fill="#272823" fill-opacity=".14"/>
-        <path d="M 15 15 H 437 M 15 80 H 437" stroke-width="1"/>
-        <rect x="30.7" y="25.7" width="390" height="44" fill="#ffffff"/>
-        <path d="M 42 26 V 69"/>
-        <rect x="398" y="38" width="16" height="18" fill="#272823" fill-opacity=".08"/>
-        <path d="M 7 12 H 11 M 7 82 H 11 M 9 12 V 82"/>
-      </g>
-    </svg>
-    <p class="d">258 × 168 × 44 mm · 6 mm of foam on each side.<br>240 × 150 × 32 mm inside.</p>
-  </div>
-
-  <!-- packing list -->
-  <div class="t tile rec" data-cc="11" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7" style="left:80px;top:616px;width:760px;height:274px">
-    <p class="h">Packing list</p>
-    <div class="row"><span class="n">Kit One</span><span class="m">KT-1</span><span class="p">¥2,480</span></div>
-    <div class="row"><span class="n">Canvas case</span><span class="m">KC-1</span><span class="p">¥230</span></div>
-    <div class="row"><span class="n">Patch cable</span><span class="m">PC-600</span><span class="p">¥90</span></div>
-    <div class="row"><span class="n">Screwdriver</span><span class="m">SD-2</span><span class="p">¥60</span></div>
-    <div class="line"></div>
-    <div class="tot"><span class="n">Four items</span><span class="p">¥2,860</span></div>
-  </div>
-
-  <!-- service -->
-  <div class="t tile open" data-cc="11" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7" style="left:860px;top:616px;width:500px;height:274px">
-    <p class="h">Four screws, and the back is off.</p>
-    <svg width="452" height="112" viewBox="0 0 452 112" aria-hidden="true" style="margin-top:14px">
-      <g stroke="#272823" stroke-width="1.5" fill="none">
-        <rect x="4" y="6" width="300" height="100" fill="#272823" fill-opacity=".05"/>
-        <circle cx="22" cy="24" r="7"/><circle cx="286" cy="24" r="7"/>
-        <circle cx="22" cy="88" r="7"/><circle cx="286" cy="88" r="7"/>
-        <path d="M 15 24 H 29 M 279 24 H 293 M 15 88 H 29 M 279 88 H 293"/>
-        <rect x="384" y="42" width="70" height="30" fill="#272823" fill-opacity=".08"/>
-        <path d="M 392 46 V 68 M 402 46 V 68 M 412 46 V 68 M 422 46 V 68 M 432 46 V 68"/>
-        <path d="M 312 53 H 384 M 312 61 H 384"/>
-        <path d="M 312 57 L 302 57"/>
-      </g>
-    </svg>
-    <p class="b">Two screws hold the battery door. The other four sit at the corners of the back, and the driver that fits them ships in the case.</p>
-  </div>
-
-  <div class="t foot"><span>Illustrative example</span><span>Illustrative render, not a photograph</span></div>
-</div>
-<script src="../../_shared/continuous-corner.js"></script>
-</body>
-</html>
+@media(min-width:501px) and (max-width:900px){body>.unit{padding-left:5vw!important;padding-right:5vw!important}}
+</style><link rel="stylesheet" href="../../_shared/apple-interactions.css"></head><body><main class="unit"><header class="head"><div><h1 class="title">Four items. One case.</h1><p class="zh">四件东西，一个箱子</p></div><p class="stock">In stock</p></header><section class="grid">
+<div class="tile hero" data-cc="11" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7"><div><h2>Kit One Field Kit</h2><p class="sub">Four items, one price, nothing hidden.</p><p class="price">¥2,690</p><button class="cta" type="button" data-apple-motion data-cc="22" data-cc-fill="#272823" aria-pressed="false">Add to cart</button><span class="cart-status" aria-live="polite"></span></div><div class="drawing-wrap" data-apple-light style="--apple-light-color:rgba(154,65,0,.18);--apple-light-opacity:.30;--apple-light-blur:28px"><svg role="img" class="drawing" viewBox="0 0 440 300" aria-label="Kit One field kit flat lay"><defs><linearGradient id="shell" x2="0" y2="1"><stop stop-color="#faf9f5"/><stop offset=".55" stop-color="#d6d4cc"/><stop offset="1" stop-color="#aaa99f"/></linearGradient><linearGradient id="screen" x2="0" y2="1"><stop stop-color="#e9e7df"/><stop offset="1" stop-color="#c3c2bb"/></linearGradient><filter id="s"><feGaussianBlur stdDeviation="10"/></filter></defs><ellipse cx="226" cy="261" rx="187" ry="18" fill="#000" opacity=".11" filter="url(#s)"/><rect x="22" y="54" width="228" height="152" fill="#c7c6bf" stroke="#8d8d86" stroke-width="2"/><rect x="34" y="66" width="204" height="128" fill="url(#shell)" stroke="#73746e" stroke-width="2"/><rect x="48" y="77" width="176" height="49" fill="url(#screen)" stroke="#7b7d76"/><g fill="#33352f"><rect x="49" y="135" width="21" height="46"/><rect x="74" y="135" width="21" height="46"/><rect x="99" y="135" width="21" height="46"/><rect x="124" y="135" width="21" height="46"/><rect x="149" y="135" width="21" height="46"/><rect x="174" y="135" width="21" height="46"/><rect x="199" y="135" width="21" height="46"/></g><circle cx="202" cy="90" r="7" fill="#9a4100"/><path d="M50 66H222" stroke="#fff" stroke-width="4"/><rect x="282" y="61" width="116" height="72" fill="#44443e"/><path d="M294 72h92v51h-92z" fill="none" stroke="#edece5" stroke-width="5"/><path d="M287 69l15-9h78l14 9" fill="none" stroke="#faf9f4" stroke-width="5"/><path d="M284 154C304 136 326 137 346 154L392 193" fill="none" stroke="#9a4100" stroke-width="8" stroke-linecap="round"/><rect x="307" y="201" width="54" height="24"  fill="#8a8b83" stroke="#444"/><path d="M316 206l12 15M329 206l12 15M342 206l12 15" stroke="#ddd" stroke-width="2"/></svg></div></div>
+<div class="tile save" data-cc="11" data-cc-fill="#2b2c28"><div class="figure">¥170</div><p class="label">less than the four items bought apart</p><p class="calc">¥2,860 separately · ¥2,690 as a kit</p></div>
+<div class="tile packing" data-cc="11" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7"><h3>Packing list</h3><p class="sub" style="font-size:15px;color:#686962;margin-top:4px">Four items · each line adds to the set</p><div class="items"><div class="item"><strong>Kit One <small>KT-1</small></strong><em>¥2,480</em></div><div class="item"><strong>Canvas case <small>KC-1</small></strong><em>¥230</em></div><div class="item"><strong>Patch cable <small>PC-600</small></strong><em>¥90</em></div><div class="item"><strong>Screwdriver <small>SD-2</small></strong><em>¥60</em></div></div></div>
+<div class="tile fit" data-cc="11" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7"><h3>The case takes the whole kit.</h3><svg role="img" viewBox="0 0 340 120" aria-label="Case foam section"><defs><linearGradient id="foam" x2="0" y2="1"><stop stop-color="#e4e1d9"/><stop offset="1" stop-color="#c9c5bc"/></linearGradient></defs><path d="M18 28H322V95H18Z" fill="url(#foam)" stroke="#5c5d58" stroke-width="2"/><path d="M52 43H283V80H52Z" fill="#f4f5f2" stroke="#898981" stroke-width="2"/><path d="M60 48h210M60 75h210" stroke="#fff" stroke-width="4" opacity=".7"/><path d="M24 22V13h292v9" fill="none" stroke="#9a4100" stroke-width="2"/></svg><p>6 mm of foam on each side.</p><p>258 × 168 × 44 mm case · 240 × 150 × 32 mm instrument</p></div>
+<div class="tile service" data-cc="11" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7"><h3>Two screws hold the battery door.</h3><svg role="img" viewBox="0 0 300 115" aria-label="Battery door detail"><defs><linearGradient id="plate" x2="0" y2="1"><stop stop-color="#f3f2ec"/><stop offset="1" stop-color="#aead a4"/></linearGradient></defs><path d="M40 26h220v68H40z" fill="#c6c5bd" stroke="#656760" stroke-width="2"/><rect x="71" y="39" width="158" height="42" fill="#deddd5" stroke="#777870"/><circle cx="80" cy="49" r="5" fill="#393a35"/><circle cx="220" cy="70" r="5" fill="#393a35"/><path d="M80 49l8-8M220 70l8 8" stroke="#fff" stroke-width="2"/></svg><p>Four screws, and the back is off.</p></div>
+</section><footer class="foot"><span>Illustrative example · Prices for the complete kit, 2026.</span><span>Illustrative render, not a photograph</span></footer></main><script src="../../_shared/continuous-corner.js"></script><script>
+(() => {
+  const button = document.querySelector('.hero .cta');
+  button.addEventListener('click', () => {
+    const added = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(added));
+    document.querySelector('.hero .cart-status').textContent = added ? 'Added to cart' : '';
+  });
+})();
+</script></body></html>

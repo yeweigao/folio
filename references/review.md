@@ -40,7 +40,7 @@ The rhythm critic checks that recurring groups share a recognizable arrangement 
 
 ## Judge
 
-> Keep a point only if it names a rubric line, the fault is visible, and the fix breaks no other line. Merge, then rank, floors first. Name the layer each point breaks (floor, philosophy, school, skeleton, piece) and fix it there: a fault every piece would share is fixed in the skeleton before the piece. Then answer: would a master of the claimed school sign it? Is it interchangeable with a rival subject? Which line would the most valuable change serve?
+> First, cover the name and shrink the set to thumbnails: is the claimed school recognised in three seconds? Work that holds every floor and fails this is not done. Then keep a point only if it names a rubric line, the fault is visible, and the fix breaks no other line. Merge, then rank, floors first. Name the layer each point breaks (floor, philosophy, school, skeleton, piece) and fix it there: a fault every piece would share is fixed in the skeleton before the piece. Then answer: would a master of the claimed school sign it? Is it interchangeable with a rival subject? Which line would the most valuable change serve?
 
 The maker decides; a point can be right and still not worth acting on. Fix, render, and review again while a kept point is within reach. Report what remains.
 

@@ -48,7 +48,7 @@ Goals, not steps: the route is yours, the map is here. Your memory of a name bri
 | Changing delivered work | [steering](references/steering.md) |
 | Critiquing existing work | [design-md](references/design-md.md), then `extract.py` in tools |
 
-**For a new direction, go wide, then show before you sign.** Each direction is one hand's method on this subject. Cut the first idea, the default and the costume; show the user two or three roughs to choose the feel before one is built out. With no one to ask, build the strongest and say why. A supplied reference selected for reconstruction already establishes the direction; preserve it and inspect the reconstruction against it.
+**For a new direction, go wide, then show before you sign.** Each direction is one hand's method on this subject. Cut the first idea, the default and the costume; show the user two or three roughs to choose the feel before one is built out. A look is passed as a rough or a reference render, never described in prose. With no one to ask, make the roughs anyway, build the strongest and say why. A supplied reference selected for reconstruction already establishes the direction; preserve it and inspect the reconstruction against it.
 
 ## Themes
 

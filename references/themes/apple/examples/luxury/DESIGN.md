@@ -1,69 +1,53 @@
-# Atelier, a leather house · Apple + Luxury, Hermès hand
+# Atelier · Apple + Hermès, Luxury
 
-A visual world for a fictional leather house, not a real Hermès product: craft photographed at detail scale, a single bag as the product that carries the house, one orange as the only accent. Dialect: Luxury, governing hand Hermès. Forms shown: Keynote slide, Store card, Editorial opener, Flyer sheet, Website page; Bento grid as a variation for a range unit.
+Atelier's world: a leather house whose craft is the proof.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts. Craft is loud; price is quiet. No house mark, pattern or photograph is borrowed.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
-
-Apple as base, Luxury as dialect, Hermès as governing hand — Compose one object, then show the material and craft that justify it; never borrow a house mark, monogram or photograph.
-
-World: Atelier, a house that makes one leather bag, its leather, its stitching, its craft, its price, across a launch deck, a shop page and a story opener. Keep Apple's single-accent discipline and one lead per screen; let Hermès's philosophy govern the look — clean neutral palette, craft photography, refined typography, subtle animation, one orange as the signature colour and the only accent, Apple blue retired for this work.
-
-Method: Separate the content into a claim, its visible evidence and a decision or lookup task. Build the proof field before setting the labels; select Keynote, Store or Editorial structure by the reader's task, then recompose the reading axis and crop for the actual format.
-
-Amplitude: full on covers, heroes and vistas; reduced on Store, reference and specification units.
-
-Anti-reference: fake luxury: gold, glowing outlines, spaced serif capitals over a stock photograph.
+Apple + Hermès style — Make one leather object carry the page, then show the material and craft that prove its claim; never borrow another house's mark, pattern or photograph.
+World: A fictional leather house across launch, shopping and workshop stories. Every piece keeps one product as the lead, a restrained serif voice and craft as evidence; each brings a different material decision or buying question. Translate a new subject by choosing the single construction detail that makes its claim checkable; the object stays visible when the crop moves close.
+Method: Begin with the whole silhouette and the use the reader is considering. Find the material operation that changes durability, feel or construction, then draw or photograph that detail at a scale it can be judged. Keep a close crop only if its caption restores the whole object and the detail explains the claim. The order of reading is object, craft, quiet price or next action. Use a disclosed diagram when a real craft photograph is unavailable; do not present its texture as documentary proof.
+Amplitude: Full on the object and one craft detail; reduced on prices, labels and supporting notes.
+Anti-reference: Gold accents, glowing outlines and spaced serif capitals over a stock photograph.
 
 ## Images
-
-Craft photography at detail scale: leather texture, stitching, a bag crisp against softened surroundings, a bag shown empty to judge its form. No borrowed house photograph, pattern or mark; all photographs are generated stand-ins for a fictional house, and are labelled as such. Crop: detail crops are tight to the craft detail; a detail image that overlaps title descenders is moved down until descenders clear it.
+Use only cleared photographs or generated explanatory artwork for this fictional house. The current example pieces are illustrative SVG renders, captioned Illustrative render, not a photograph; they depict construction and material, not a real bag or real workshop. A cover shows a complete object at gallery scale or one unmistakable detail; the crop preserves seam direction and the relation of stitch to edge. An editorial vista may meet the trim; a construction or product drawing sits inset when its labels need room. Keep text live and outside busy material. Scale source art uniformly and credit real source material beside the figure. On a cover the object or its craft detail takes half the frame or more.
 
 ## Layout
-
-Grid system: Gallery field — derive the proof field and one reading axis from W × H; Store subdivides that field into equal peers, Editorial joins it to a reading column, and Keynote assigns one claim to each slide.
-
-Clean neutral canvas with generous whitespace, product-led sections. Hero: one bag photograph with one headline and at most one action. Slide field 16:9, critical content inside the central 80%. Store field: white cards on a hairline grid, one product per card, photograph on top, name and price below in body size — price present but quiet, never larger than the product name. Editorial field: one centred column, with craft photographs as proof inside the story. Text sits at least 11.34 inside its shape; a title clears its descenders before anything below it; a number group sits mid-frame, number, label and context spaced down. Containers may centre; body, leads, captions, card names and prices stay flush left, ragged right; only hero, vista and cover headlines centre.
+Grid system: Gallery field — the product or material proof occupies the largest field; labels share an axis.
+Derive a 12-column construction from W × H with outer margin max(5%W, 0.06S) and gutter margin/4. The object takes the largest span; title and caption repeat one edge. In Bento, true product variants share equal spans, one image scale and one price baseline; a lead variant gets a larger field only when the brief sets a real priority. Editorial uses one centered column capped at 980 px, flush-left body and an inset caption measure. Keep a close detail beside the sentence it proves. Prices sit below the product name and remain quieter than it. Empty tracks stay calm; do not fill them with ornament.
 
 ## Typography
-
-A refined serif for display, a quiet grotesque sans for labels and body. Serif speaks for the house; sans labels and reads. No sans-only display, no heavy display face competing with the product.
-
-Concrete type for this fictional world: Cormorant Garamond for display, Inter for body and labels; pair Chinese with Noto Serif SC for serif display and Noto Sans SC for sans roles. Open-source substitutes, not the brand's own faces.
+Use Cormorant Garamond for Latin display with Noto Serif SC as the Chinese display pair; use Inter with Noto Sans SC for body, labels and prices. These open-source Google Fonts approximate an editorial house voice; no Hermès or Apple files. At S = 1000: display 72 px / 400 / 1.05; section head 52 / 400 / 1.08; lead 28 / 300 / 1.35; body 17 / 400 / 1.55; product name 21 / 600 / 1.3; price 17 / 400 / 1.4; label 14 / 400 / 1.4; caption 12 / 400 / 1.5. Use tabular numerals for dimensions and prices; right-align them in reference rows. Serif leads the house; sans reads its apparatus. Chinese and Latin stay matched in size and baseline. On slides the Keynote floors hold: slide title at least 0.1 S, body at least 0.037 S.
 
 ## Colors
 
-Clean neutral palette — white, cream, neutral greys — with one orange as the signature colour and the only accent in the work, for pills, links and highlights only, never as a field, a wash or a background. Apple blue does not appear beside the orange in this work.
-
-Roles: canvas the page, panel the card, dark the proof-field polarity, ink and muted the reading colours, onDark and onAction their contrasts, hairline a non-text separator; action is the single action accent. Reading text uses only the pairs in Tokens. Accent: orange replaces every Apple blue role.
+Ground: Hermès white, its warm panel the house's paper; orange is the one accent. Use white, warm ivory and ink as fields; leather, wood and metal tones come from the object or its disclosed render. leatherLight and leatherMid describe the illustrated hide, leatherDark carries its edge and shadow, and wood marks the workshop surface. Hairline separates rows. Hermès orange is the only interface accent, replacing Apple blue in links, actions, focus and dark-ground links. It marks one action or one meaningful material callout; never use orange as a full field, gradient or second system. Muted text remains legible on white and ivory; dark image fields get a complete white foreground palette. No gold.
 
 ## Shapes
-
-Every nonzero radius takes Apple's continuous corner; square forms stay square. One corner, inward from the corner point in units of R: `M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0`. R is at most half the shorter side; a side shorter than 3.05732R shortens its shoulder to half the side, toward the native saturated form (first cubic 0 1, 0 .96, 0 .82). Build it natively (`.continuous`), as this path in SVG, canvas, clip or a slide freeform, or in Figma at 60% smoothing; never `border-radius`, `rect rx`, a preset or a superellipse. Fill, stroke and media clip share one path; nested corners share centres, inner R = max(0, outer R − gap).
-
-Softly rounded cards, no heavy shadow, no decorative border, no gradient. Calls to action in orange, secondary actions as quiet outlines. No second accent colour.
+Use square, full-bleed fields and the Apple continuous corner for nonzero radii: M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0. Build natively or through the shared continuous-corner.js asset with one path for fill, stroke and clip; no CSS radius, rect rx or preset curve. R ≤ half the short side; nested R = max(0, outer R − gap). Store cards use R = 18 px at S = 1000, actions are pills, and article fields are sharp. No shadow on cards; the object may cast one grounded shadow only.
 
 ## Forms
-
-- Keynote: one thesis per slide, craft photograph-led, serif headline, live text over a calm zone.
-- Store: one product per card, photograph on top, name and price below in body size, one buy action per card, price quiet.
-- Editorial: opener with the house's story in serif leads, then long leads with craft photographs as proof inside the column. The opener is a photographic vista — a full-bleed craft photograph with one headline and at most one action.
-- Flyer: one A4 sheet, real internal padding so no text touches a frame edge, one claim, one dominant image, figure or price at display size in the footer rule.
-- Website: full-width hero image, hero plus three sections plus footer, hierarchy carried by size and weight, centred container with flush-left body, leads, captions and prices.
-- Bento grid: range units only — many Atelier products on one page, one product and one quiet price per tile, each tile with its own craft photograph. Tiles index; they do not prove: each claim is proved in a following unit or carries its own figure; a range tile's quiet price is its check, not its proof of craft.
+- Keynote: one claim and one product or craft proof, live title clear of the image; one detail may fill the frame at a real turn. Keep price quiet and secondary.
+- Bento: genuine product variants share one crop, scale, label axis and quiet price; vary tile span only for real importance. One tile carries one claim and is proved in a following unit or by a checkable figure.
+- Editorial: one full-bleed material or workshop vista with one headline and at most one action, then a single reading column. Leads are 24 px / 300 / 1.5 and body 17 px / 400 / 1.47 at web size; figures and source sit by the detail they explain. Price remains smaller than the product name.
 
 ## Variations
-
-One break per unit. A craft-detail turn: one full-bleed detail photograph as a unit, with one headline and at most one action, the detail itself as the argument. An orange turn: one pill or link in orange as the single accent moment on an otherwise neutral page.
+At one craft turn, replace the whole object with one close detail and a caption naming the whole it came from. Keep its crop legible and the object or construction relationship recoverable. One orange action may mark a second turn; never add another accent field.
 
 ## Do's and Don'ts
 
-Do: clean neutral palette, craft photography at detail scale, serif display, one orange as the only accent, price quiet, one governing hand per work. Don't: a borrowed mark, pattern or photograph; a second accent beside the orange; orange as a field or wash; a price larger than the product name; a spec sheet pretending to be a house; a sans-only display.
+Floors: facts match each brief exactly; declare every illustration; maintain 4.5:1 text contrast (3:1 for large type); keep reading text live and at its declared size floor for the intended viewing distance; make static output complete as a still; recompose each format instead of scaling a layout; use only original or licensed assets.
+
+Render check: the seam, grain, hardware or join named by the claim is sharp enough to inspect, and its caption identifies the whole object it came from.
+
+Test: Cover orange; the page still reads as one crafted object with evidence. Change the house; this construction would need a different hand.
+
+Caricature: softened white surroundings, one vivid orange accent and a playful drawn moment frame a pristine leather object whose construction cannot be inspected.
 
 ## Tokens
-
-Authored for this fictional world at S = 1000; radius sets size, the contour is continuous corner. Product-image colours and hero gradients are source imagery, not additional action colours.
+All values are authored for this fictional world at S = 1000. Orange is Hermès' one accent; leather and metal tones belong to the illustrative object.
 
 ```yaml
 colors:
@@ -72,30 +56,42 @@ colors:
   dark: "#24211d"
   ink: "#24211d"
   muted: "#67615a"
+  mutedDark: "#c4bcb2"
   action: "#a74b00"
+  link: "#a74b00"
+  focus: "#a74b00"
+  darkLink: "#ffc28a"
   onAction: "#ffffff"
   onDark: "#ffffff"
   hairline: "#d2d2d7"
+  leather: "#d8c8ad"
+  leatherLight: "#e9e0cf"
+  leatherMid: "#c1b29a"
+  leatherDark: "#857359"
+  wood: "#dbd4c7"
+  metal: "#b6b4ad"
 typography:
-  display: { fontFamily: "Cormorant Garamond, Noto Serif SC, serif", fontSize: 56, fontWeight: 400, lineHeight: 1.07 }
-  heading: { fontFamily: "Cormorant Garamond, Noto Serif SC, serif", fontSize: 40, fontWeight: 400, lineHeight: 1.1 }
-  lead: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 28, fontWeight: 400, lineHeight: 1.3 }
-  body: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.47 }
+  display: { fontFamily: "Cormorant Garamond, Noto Serif SC, serif", fontSize: 72, fontWeight: 400, lineHeight: 1.05 }
+  heading: { fontFamily: "Cormorant Garamond, Noto Serif SC, serif", fontSize: 52, fontWeight: 400, lineHeight: 1.08 }
+  lead: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 28, fontWeight: 300, lineHeight: 1.35 }
+  body: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.55 }
+  product: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 21, fontWeight: 600, lineHeight: 1.3 }
+  price: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.4 }
   label: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
-  fine: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: 1.5 }
+  caption: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: 1.5 }
 spacing:
   unit: 8
-  textInset: 11.34
+  pair: 16
+  group: 24
+  section: 64
+  objectInset: 80
   cardInset: 24
-  proofGap: 40
-  tileInset: 80
 rounded:
-  small: 5
-  control: 8
   card: 18
+  control: 12
+  action: "pill"
 corners:
   contour: "continuous corner"
-  smoothing: 0.6
   shoulderExtent: 1.52866
   innerRadius: "max(0, outerRadius - gap)"
 pairs:
@@ -103,13 +99,14 @@ pairs:
   ink-on-panel: { backgroundColor: "{colors.panel}", textColor: "{colors.ink}" }
   muted-on-canvas: { backgroundColor: "{colors.canvas}", textColor: "{colors.muted}" }
   muted-on-panel: { backgroundColor: "{colors.panel}", textColor: "{colors.muted}" }
+  mutedDark-on-dark: { backgroundColor: "{colors.dark}", textColor: "{colors.mutedDark}" }
   onDark-on-dark: { backgroundColor: "{colors.dark}", textColor: "{colors.onDark}" }
   onAction-on-action: { backgroundColor: "{colors.action}", textColor: "{colors.onAction}" }
   action-on-canvas: { backgroundColor: "{colors.canvas}", textColor: "{colors.action}" }
-  action-on-panel: { backgroundColor: "{colors.panel}", textColor: "{colors.action}" }
+  link-on-canvas: { backgroundColor: "{colors.canvas}", textColor: "{colors.link}" }
+  darkLink-on-dark: { backgroundColor: "{colors.dark}", textColor: "{colors.darkLink}" }
 ```
 
 ## Record
-
-Folio version: 1.1.0. Template version: 14. Date: 2026-11-05.
-Pieces: the-making (Keynote), the-range (Bento), the-workshop (Editorial), each made from this file alone. Subject is fictional; no Hermès product, photograph, mark, pattern or font file is used. Tokens are authored for this world, not measured from the brand.
+Folio version: 1.1.0. Template version: 14. Date: 2026-11-07.
+Pieces: the-making (Keynote), the-range (Bento), the-workshop (Editorial), each made from this file alone. Subject is fictional; no Hermès product, photograph, mark, pattern or font file is used. Changes after the lock: none.

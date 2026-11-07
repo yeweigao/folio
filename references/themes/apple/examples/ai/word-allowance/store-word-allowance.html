@@ -2,108 +2,67 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1440">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fern Plans — store</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&amp;family=Source+Sans+3:wght@400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;600&amp;family=Source+Sans+3:wght@400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;display=swap" rel="stylesheet">
 <style>
-  :root{
-    --canvas:#f8f3e8; --panel:#fffaf2; --dark:#182b40;
-    --ink:#272520; --muted:#635e56; --action:#ad4937;
-    --onAction:#ffffff; --onDark:#ffffff; --hairline:#d2d2d7;
-    --serif:"Roboto Slab","Noto Serif SC",serif;
-    --sans:"Source Sans 3","Noto Sans SC",sans-serif;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:#dedad0}
-  body{font-family:var(--sans);color:var(--ink)}
-  .unit{position:relative;width:1440px;height:1000px;overflow:hidden;background:var(--canvas)}
-  .zh{font-family:"Noto Sans SC",var(--sans)}
-  .zhserif{font-family:"Noto Serif SC",var(--serif)}
-  [data-cc]{position:relative;isolation:isolate}
-  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
+:root{--apple-focus:#ad4937;--canvas:#f8f3e8;--panel:#fffaf2;--dark:#302e2b;--ink:#272520;--muted:#635e56;--action:#ad4937;--serif:"Newsreader","Noto Serif SC",serif;--sans:"Source Sans 3","Noto Sans SC",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}html,body{background:var(--canvas)}body{font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}.unit{position:relative;width:1440px;height:1000px;overflow:hidden;background:var(--canvas)}.zh{font-family:"Noto Sans SC",var(--sans)}.num{font-variant-numeric:tabular-nums}[data-cc]{position:relative;isolation:isolate}.cc-bg{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.nav{position:absolute;left:0;top:0;width:1440px;height:56px;padding:0 76px;display:flex;align-items:center;justify-content:space-between;background:var(--dark);color:white;font-size:18px}.nav b{font-family:var(--serif);font-size:23px;font-weight:600}.nav span{color:rgba(255,255,255,.76)}
+.hero{position:absolute;left:76px;top:98px;width:1288px}.hero h1{width:790px;font-family:var(--serif);font-size:68px;font-weight:400;line-height:1.02;letter-spacing:-2px}.hero .zhline{margin-top:12px;font-size:28px;line-height:1.45;color:var(--muted)}.hero .lead{position:absolute;right:6px;top:14px;width:430px;font-size:22px;line-height:1.5;color:var(--muted)}
+.proof{position:absolute;left:76px;top:290px;width:788px;height:528px;padding:34px 38px;color:#fff}.proof .top{display:flex;justify-content:space-between;font-size:17px;color:rgba(255,255,255,.62)}.proof .sep{height:1px;margin-top:18px;background:rgba(255,255,255,.18)}.proof .page{margin-top:36px;padding:23px 28px 24px;background:#fffaf2;color:var(--ink)}.proof .pagehead{display:flex;justify-content:space-between;font-size:16px;color:var(--muted)}.proof .sample{margin-top:22px;width:640px;font-family:var(--serif);font-size:34px;line-height:1.32}.proof .underline{margin-top:18px;width:470px;height:1px;background:#d2d2d7}.proof .counter{margin-top:22px;display:flex;align-items:baseline;gap:18px}.proof .count{font-family:var(--serif);font-size:88px;line-height:.94;letter-spacing:-2px}.proof .unitline{font-size:21px;color:var(--muted)}.proof .track{margin-top:17px;height:8px;background:#e3ded4}.proof .fill{height:8px;width:12.4%;background:var(--action)}.proof .status{position:absolute;left:38px;right:38px;bottom:28px;padding-top:15px;border-top:1px solid rgba(255,255,255,.2);display:flex;justify-content:space-between;font-size:16px;color:rgba(255,255,255,.64)}
+.caption{position:absolute;left:76px;top:840px;font-size:14px;color:var(--muted)}
+.choose{position:absolute;left:910px;top:290px;width:454px}.choose h2{font-size:19px;font-weight:600}.options{margin-top:20px}.option{display:flex;align-items:center;justify-content:space-between;height:67px;padding:0 20px;border-top:1px solid #d2d2d7;font-size:21px;background:transparent}.option:last-child{border-bottom:1px solid #d2d2d7}.option.selected{color:var(--action);font-weight:600;border-top:2px solid var(--action);border-bottom:2px solid var(--action)}.option .dot{width:15px;height:15px;border:1.5px solid currentColor;display:inline-block;margin-right:13px}.option .label{display:flex;align-items:center}.choicehint{margin-top:19px;font-size:17px;line-height:1.5;color:var(--muted)}
+.plan{margin-top:45px;padding-top:20px;border-top:1px solid #d2d2d7}.plan .k{font-size:15px;color:var(--muted)}.plan .name{margin-top:8px;font-size:24px}.plan .price{margin-top:8px;font-size:34px;font-weight:600;letter-spacing:-.8px}.plan .includes{margin-top:15px;font-size:18px;line-height:1.45;color:var(--muted)}
+.buybar{position:absolute;left:0;bottom:0;width:1440px;height:78px;padding:0 76px;background:#fffaf2;border-top:1px solid #d2d2d7;display:flex;align-items:center;justify-content:space-between}.buybar .left{display:flex;align-items:baseline;gap:24px;font-size:19px}.buybar .left b{font-family:var(--serif);font-size:22px;font-weight:600}.buy{height:50px;padding:0 36px;display:inline-flex;align-items:center;color:white;text-decoration:none;font-size:19px}
+.foot{position:absolute;right:76px;top:848px;font-size:14px;color:var(--muted)}
 
-  .nav{position:absolute;left:0;top:0;width:1440px;height:44px;background:var(--dark);display:flex;align-items:center;justify-content:space-between;padding:0 80px;font-size:14px;color:var(--onDark)}
-  .nav b{font-family:var(--serif);font-weight:600}
+:root{--apple-focus:#ad4937}.unit{max-width:1440px;margin-inline:auto}
+@media(max-width:900px){
+.unit{width:100%;height:auto;min-height:0;overflow:visible;padding:0 24px 0;display:flex;flex-direction:column;gap:24px}
+.nav,.hero,.proof,.caption,.choose,.foot,.buybar{position:static;width:auto;height:auto;left:auto;right:auto;top:auto;bottom:auto}
+.nav{margin:0 -24px;padding:0 24px;height:56px;flex:none}.hero{display:flex;flex-direction:column;gap:12px;padding-top:4px}.hero h1{width:auto;font-size:clamp(38px,7.6vw,58px);line-height:1.05}.hero .zhline{margin-top:0;font-size:21px}.hero .lead{position:static;width:auto;font-size:18px;line-height:1.5}
+.proof{padding:24px;min-height:0}.proof .top{gap:8px;flex-wrap:wrap;font-size:14px}.proof .page{margin-top:22px;padding:20px}.proof .pagehead{gap:12px;flex-wrap:wrap;font-size:14px}.proof .sample{width:auto;font-size:25px}.proof .underline{width:78%}.proof .counter{align-items:flex-start;flex-direction:column;gap:2px}.proof .count{font-size:64px}.proof .unitline{font-size:16px;line-height:1.4}.proof .status{position:static;margin-top:24px;padding-top:14px;gap:10px;flex-wrap:wrap;font-size:13px}
+.caption,.foot{font-size:13px}.choose h2{font-size:18px}.option{height:auto;min-height:58px;padding:10px 14px;font-size:17px}.choicehint{font-size:16px}.plan{margin-top:28px}.plan .name{font-size:20px}.plan .price{font-size:30px}.plan .includes{font-size:16px}
+.buybar{position:sticky;bottom:0;z-index:3;margin:0 -24px;padding:12px 24px;background:#fffaf2;min-height:72px;gap:12px}.buybar .left{gap:10px;flex-wrap:wrap;font-size:16px}.buybar .left b{font-size:19px}.buy{height:46px;padding:0 26px;flex:none}
+}
 
-  .hero{position:absolute;left:68px;top:128px;width:584px;padding:12px}
-  .hero h1{font-family:var(--serif);font-size:52px;font-weight:400;line-height:1.12;letter-spacing:-1.4px}
-  .hero .zhline{margin-top:22px;font-size:26px;font-weight:400;line-height:1.5}
-  .hero .lead{margin-top:30px;width:540px;font-size:21px;font-weight:400;line-height:1.45;color:var(--muted)}
 
-  .eyebrow{position:absolute;left:700px;top:100px;width:660px;font-size:14px;color:var(--muted)}
-  .proof{position:absolute;left:700px;top:138px;width:660px;height:362px;padding:36px;display:flex;flex-direction:column;justify-content:space-between}
-  .proof .bar{display:flex;justify-content:space-between;font-size:14px;color:rgba(255,255,255,.62)}
-  .proof .sample{margin-top:26px;font-size:21px;font-weight:400;line-height:1.5;color:rgba(255,255,255,.78)}
-  .proof .count{font-family:var(--serif);font-size:76px;font-weight:400;line-height:1;color:var(--onDark);letter-spacing:-2px}
-  .proof .unitline{margin-top:8px;font-size:17px;color:rgba(255,255,255,.72)}
-  .proof .track{margin-top:22px;height:8px;background:rgba(255,255,255,.18)}
-  .proof .fill{height:8px;width:12.4%;background:var(--action)}
-  .proof .status{display:flex;justify-content:space-between;border-top:1px solid rgba(255,255,255,.16);padding-top:16px;font-size:14px;color:rgba(255,255,255,.55)}
-  .cap{position:absolute;left:700px;top:512px;width:660px;font-size:12px;color:var(--muted)}
+@media(min-width:501px) and (max-width:900px){body>.unit{padding-left:5vw!important;padding-right:5vw!important}}
 
-  .chooselabel{position:absolute;left:80px;top:566px;font-size:14px;color:var(--muted)}
-  .chips{position:absolute;left:80px;top:598px;display:flex;gap:16px}
-  .chip{display:inline-flex;align-items:center;justify-content:center;height:48px;min-width:180px;padding:0 28px;font-size:17px;font-weight:400}
-  .chip.on{font-weight:600}
-
-  .pricerow{position:absolute;left:80px;top:690px;width:1280px;border-top:1px solid var(--hairline);padding-top:22px;display:flex;align-items:baseline;justify-content:space-between;font-size:21px}
-  .pricerow .lbl{font-size:14px;color:var(--muted)}
-  .pricerow .price{font-weight:600}
-  .includes{position:absolute;left:80px;top:772px;width:1280px;font-size:17px;color:var(--muted)}
-
-  .foot{position:absolute;left:80px;top:896px;width:1280px;display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
-  .buybar{position:absolute;left:0;top:940px;width:1440px;height:60px;background:rgba(248,243,232,.92);border-top:1px solid var(--hairline);display:flex;align-items:center;justify-content:space-between;padding:0 80px;font-size:17px}
-  .buybar .left{display:flex;gap:24px;align-items:baseline}
-  .buybar .left b{font-family:var(--serif);font-weight:600}
-  .buy{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 28px;font-size:17px;color:var(--onAction);text-decoration:none}
+@media(min-width:501px) and (max-width:900px){.nav,.buybar{margin-left:-5vw;margin-right:-5vw;padding-left:5vw;padding-right:5vw}}
 </style>
-</head>
+<link rel="stylesheet" href="../../_shared/apple-interactions.css"></head>
 <body>
-<div class="unit" id="page">
-
-  <div class="nav"><b>Fern</b><span>Plans</span></div>
-
-  <div class="hero">
-    <h1>How much will you write this month?</h1>
-    <p class="zhline zhserif">这个月，你打算写多少？</p>
-    <p class="lead">Fern is priced by the words it reads with you. Choose an allowance; the draft keeps count.</p>
-  </div>
-
-  <p class="eyebrow">Fern document surface · illustrative</p>
-  <div class="proof" data-cc="18" data-cc-fill="#182b40">
-    <div class="top">
-      <div class="bar"><span>Fern · Draft</span><span>monthly count</span></div>
-      <p class="sample">The morning light came in without asking.</p>
-      <div class="count">1,240</div>
-      <p class="unitline">of 10,000 words used this month</p>
-      <div class="track"><div class="fill"></div></div>
+<main class="unit">
+  <nav class="nav"><b>Fern</b><span>Plans</span></nav>
+  <header class="hero"><h1>How much will you write this month?</h1><p class="zhline zh">这个月，你打算写多少？</p><p class="lead">Fern is priced by the words it reads with you. Choose an allowance; the draft keeps count.</p></header>
+  <section class="proof" data-cc="18" data-cc-fill="#302e2b">
+    <div class="top"><span>Fern · Draft</span><span>Monthly word count</span></div><div class="sep"></div>
+    <div class="page">
+      <div class="pagehead"><span>Untitled draft</span><span>Edited just now</span></div>
+      <p class="sample">The morning light came in without asking.</p><div class="underline"></div>
+      <div class="counter"><span class="count num">1,240</span><span class="unitline">of 10,000 words used this month</span></div>
+      <div class="track" role="img" aria-label="1,240 of 10,000 words used this month"><div class="fill"></div></div>
     </div>
-    <div class="status"><span>Drafts counted as you write</span><span>Fern · saved</span></div>
-  </div>
-  <p class="cap">Illustrative render, not a photograph</p>
-
-  <p class="chooselabel">Choose a monthly allowance</p>
-  <div class="chips">
-    <span class="chip" data-cc="22" data-cc-fill="#fffaf2" data-cc-stroke="#d2d2d7">2,000 words</span>
-    <span class="chip on" data-cc="22" data-cc-fill="#fffaf2" data-cc-stroke="#ad4937" data-cc-stroke-width="2">10,000 words</span>
-    <span class="chip" data-cc="22" data-cc-fill="#fffaf2" data-cc-stroke="#d2d2d7">Unlimited</span>
-  </div>
-
-  <div class="pricerow">
-    <span class="lbl">Your plan</span>
-    <span>10,000 words a month</span>
-    <span class="price">¥96 / month</span>
-  </div>
-  <p class="includes">Every plan includes drafts, rewrites and one clean export.</p>
-
-  <div class="foot"><span>Illustrative example</span><span>Illustrative render, not a photograph</span></div>
-  <div class="buybar">
-    <div class="left"><b>Fern</b><span>¥96 / month</span></div>
-    <span class="buy" data-cc="22" data-cc-fill="#ad4937">Buy</span>
-  </div>
-</div>
+    <div class="status"><span>Words counted as the draft changes</span><span>Fern · saved</span></div>
+  </section>
+  <p class="caption">Illustrative render, not a photograph</p>
+  <section class="choose">
+    <h2>Choose a monthly allowance</h2>
+    <div class="options">
+      <div class="option"><span class="label"><i class="dot"></i>2,000 words</span><span>›</span></div>
+      <div class="option selected"><span class="label"><i class="dot"></i>10,000 words</span><span>Selected</span></div>
+      <div class="option"><span class="label"><i class="dot"></i>Unlimited</span><span>›</span></div>
+    </div>
+    <p class="choicehint">One allowance sets the monthly limit. The counter follows the draft.</p>
+    <div class="plan"><p class="k">Your plan</p><p class="name" id="plan">10,000 words a month</p><p class="price num">¥96 / month</p><p class="includes">Every plan includes drafts, rewrites and one clean export.</p></div>
+  </section>
+  <p class="foot">Illustrative example</p>
+  <div class="buybar"><div class="left"><b>Fern</b><span class="num">¥96 / month</span></div><a data-apple-motion class="buy" data-cc="25" data-cc-fill="#ad4937" href="#plan">Buy</a></div>
+</main>
 <script src="../../_shared/continuous-corner.js"></script>
 </body>
 </html>

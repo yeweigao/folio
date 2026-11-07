@@ -1,138 +1,14 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=1600">
-<title>Volt — Per charge</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Volt — per charge</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../_shared/apple-interactions.css">
 <style>
-  :root{
-    --canvas:#171a20; --panel:#30343b; --ink:#f5f5f7; --muted:#d2d4d8;
-    --pewter:#5a6068; --action:#1559b7; --onAction:#ffffff; --hairline:#d2d2d7;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:#0e1014}
-  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
-  .unit{position:relative;width:1600px;height:900px;overflow:hidden;background:var(--canvas)}
-  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
-  .zhserif{font-family:"Noto Serif SC","Noto Sans SC",serif}
-  .pad{padding:12px}
-  .t{position:absolute}
-  [data-cc]{position:relative;isolation:isolate}
-  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
-  svg{display:block}
+:root{--apple-focus:#1559b7}
+:root{--bg:#171a20;--ink:#f5f5f7;--muted:#c7cbd1;--steel:#858c95;--line:#555b63;--blue:#1559b7}*{box-sizing:border-box;margin:0}html,body{background:var(--bg);font-family:Montserrat,"Noto Sans SC",sans-serif;color:var(--ink)}.unit{width:1600px;height:900px;overflow:hidden;position:relative;background:radial-gradient(ellipse at 77% 53%,#30353c 0%,#20242a 37%,#171a20 71%)}.brand{position:absolute;left:72px;top:34px;font-size:20px;font-weight:600}.price{position:absolute;right:74px;top:36px;font-size:18px;color:var(--muted)}.title{position:absolute;left:72px;top:100px;width:790px;font-size:78px;line-height:1.02;letter-spacing:-3.8px;font-weight:600}.zh{position:absolute;left:78px;top:281px;font-size:28px}.claim{position:absolute;left:78px;top:346px;font-size:33px;line-height:1.2;color:var(--muted)}.figure{position:absolute;left:72px;top:410px;font-size:166px;line-height:.95;letter-spacing:-10px;font-weight:600}.figure small{font-size:58px;letter-spacing:-2px}.car{position:absolute;left:814px;top:276px;width:720px;height:340px}.comparison{position:absolute;left:76px;right:74px;top:674px;height:125px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:60px;padding-top:17px}.measure{position:relative}.measure h2{font-size:19px;font-weight:400;color:var(--muted)}.measure strong{font-size:37px;line-height:1.1;display:block;margin-top:3px}.bar{position:absolute;left:0;bottom:3px;height:4px;background:#c1c6cc}.measure:last-child .bar{background:#c1c6cc}.bar.short{width:39%}.bar.full{width:100%}.footer{position:absolute;left:76px;right:74px;bottom:37px;display:flex;align-items:center;justify-content:space-between;font-size:15px;color:var(--muted)}.date{display:flex;gap:16px}.reserve{background:var(--blue);color:white;padding:12px 24px;text-decoration:none;font-size:16px}
+</style><style class="apple-web-reflow">
+@media(max-width:1600px){
+ html,body{overflow-x:hidden}.unit{width:100%;max-width:1600px;height:auto;min-height:100vh;overflow:visible;margin:auto;padding:28px max(24px,5vw) 30px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:14px 28px;background:#20242a}.brand,.price,.title,.zh,.claim,.figure,.car,.comparison,.measure,.bar,.footer,.date,.reserve{position:static;width:auto;height:auto}.brand{grid-column:1;font-size:18px}.price{grid-column:2;grid-row:1;justify-self:end;font-size:18px}.title{grid-column:1/-1;grid-row:2;font-size:clamp(44px,6.5vw,74px);line-height:1.04;letter-spacing:-.04em;max-width:18ch}.zh{grid-column:1/-1;font-size:22px}.claim{grid-column:1/-1;font-size:22px;line-height:1.4}.figure{grid-column:1;grid-row:5;font-size:clamp(82px,11vw,144px);line-height:.98;letter-spacing:-.04em}.figure small{font-size:.38em}.figure span{display:block;font-size:16px!important;line-height:1.4;margin-top:8px}.car{grid-column:2;grid-row:5;width:100%;max-width:720px;align-self:center}.comparison{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:8px;padding-top:16px;border-top:1px solid var(--line)}.measure{position:relative;min-height:96px}.measure h2{font-size:17px}.measure strong{font-size:30px}.bar{position:absolute;left:0;bottom:0;height:4px}.bar.short{width:39%}.bar.full{width:100%}.footer{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-top:4px;font-size:14px}.date{display:flex;flex-wrap:wrap;gap:8px 14px}.reserve{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 22px;font-size:16px}}
+@media(max-width:700px){.unit{grid-template-columns:minmax(0,1fr);gap:12px}.brand,.price,.title,.zh,.claim,.figure,.car,.comparison,.footer{grid-column:1;grid-row:auto}.price{justify-self:start}.title{font-size:clamp(40px,10vw,56px)}.figure{font-size:88px}.car{width:100%;margin:0 auto}.comparison{grid-template-columns:minmax(0,1fr);gap:18px}.measure{min-height:84px}.footer{align-items:flex-start;flex-direction:column}.date{font-size:14px}.reserve{width:100%}}
 
-  .nav{left:84px;top:40px;width:1432px;display:flex;align-items:baseline;justify-content:space-between}
-  .nav .mark{font-size:21px;font-weight:600;letter-spacing:normal}
-  .nav .price{font-size:17px;font-weight:400;color:var(--muted);letter-spacing:normal}
-
-  .claim{left:84px;top:148px;width:788px}
-  .claim h1{font-size:56px;font-weight:600;line-height:1.07;letter-spacing:normal}
-  .claim .zhline{margin-top:22px;font-size:24px;font-weight:400;line-height:1.5;color:var(--muted)}
-
-  .number{left:84px;top:352px;width:788px}
-  .number .fig{font-size:158px;font-weight:600;line-height:1;letter-spacing:normal}
-  .number .fig .km{font-size:66px;font-weight:400;letter-spacing:normal}
-  .number .lab{margin-top:20px;font-size:21px;font-weight:600;letter-spacing:normal}
-  .number .labzh{margin-top:8px;font-size:17px;font-weight:400;color:var(--muted);letter-spacing:normal}
-  .number .ctx{margin-top:26px;font-size:17px;font-weight:400;color:var(--muted);letter-spacing:normal}
-
-  .exhibit{left:912px;top:168px;width:600px;height:236px}
-  .cap{left:912px;top:412px;width:600px;font-size:14px;font-weight:400;color:var(--muted);letter-spacing:normal}
-
-  .cmp{left:912px;top:470px;width:600px}
-  .crow{margin-bottom:38px}
-  .crow .top{display:flex;align-items:baseline;gap:20px}
-  .crow .clab{font-size:17px;font-weight:400;letter-spacing:normal}
-  .crow .cval{font-size:17px;font-weight:600;letter-spacing:normal}
-  .ctrack{margin-top:14px;width:576px;height:12px;background:var(--panel)}
-  .cfill{height:12px}
-  .cfill.short{width:38.8%;background:var(--pewter)}
-  .cfill.full{width:100%;background:var(--ink)}
-
-  .bottom{left:84px;top:808px;width:1432px;display:flex;align-items:flex-end;justify-content:space-between}
-  .bottom .meta{font-size:12px;font-weight:400;color:var(--muted);line-height:1.9;letter-spacing:normal}
-  .bottom .meta span{display:block}
-  .reserve{display:inline-flex;align-items:center;justify-content:center;width:160px;height:48px;
-    background:var(--action);color:var(--onAction);font-size:17px;font-weight:600;letter-spacing:normal}
-</style>
-</head>
-<body>
-<div class="unit" id="slide">
-
-  <div class="t nav pad">
-    <span class="mark">Volt</span>
-    <span class="price">From ¥80,400</span>
-  </div>
-
-  <div class="t claim pad">
-    <h1>One charge outlasts your week.</h1>
-    <p class="zhline zhserif">一次充电，跑得比一周更远</p>
-  </div>
-
-  <div class="t number pad">
-    <div class="fig">402 <span class="km">km</span></div>
-    <p class="lab">on a single charge</p>
-    <p class="labzh zh">单次充电续航</p>
-    <p class="ctx">The price, divided by a single charge.</p>
-  </div>
-
-  <div class="t exhibit pad">
-    <svg viewBox="0 0 576 212" width="576" height="212" aria-hidden="true">
-      <!-- flat illustrative stand-in of a small car, neutral planes only -->
-      <line x1="24" y1="170" x2="552" y2="170" stroke="#30343b" stroke-width="1"/>
-      <path d="M28 138
-               C23 138 20 132 20 124
-               L24 96
-               C31 79 50 69 80 65
-               L156 36
-               C171 30 190 28 212 28
-               L338 28
-               C358 28 374 34 388 48
-               L452 76
-               C508 82 540 94 540 114
-               L540 138
-               Z" fill="#4a505a"/>
-      <path d="M84 64 L156 38 C170 32 188 30 210 30 L336 30 C352 30 366 35 378 47 L424 70 Z" fill="#262b32"/>
-      <path d="M212 30 L226 30 L226 68 L172 68 Z" fill="#262b32"/>
-      <path d="M232 30 L336 30 C350 30 362 34 374 46 L392 68 L232 68 Z" fill="#262b32" opacity=".9"/>
-      <path d="M84 64 L156 38 C170 32 188 30 210 30 L226 30 L226 33 L212 33 C190 33 172 35 158 41 L88 67 Z" fill="#a9afb8" opacity=".6"/>
-      <line x1="229" y1="32" x2="229" y2="68" stroke="#4a505a" stroke-width="6"/>
-      <rect x="524" y="102" width="15" height="10" fill="#a9afb8"/>
-      <rect x="21" y="102" width="12" height="10" fill="#8a9099"/>
-      <line x1="34" y1="112" x2="530" y2="112" stroke="#2a2e35" stroke-width="2" opacity=".7"/>
-      <circle cx="152" cy="146" r="31" fill="#171a20"/>
-      <circle cx="152" cy="146" r="16" fill="#6b7078"/>
-      <circle cx="152" cy="146" r="6" fill="#20242b"/>
-      <circle cx="418" cy="146" r="31" fill="#171a20"/>
-      <circle cx="418" cy="146" r="16" fill="#6b7078"/>
-      <circle cx="418" cy="146" r="6" fill="#20242b"/>
-    </svg>
-  </div>
-  <p class="t cap pad">Illustrative render, not a photograph</p>
-
-  <div class="t cmp pad">
-    <div class="crow">
-      <div class="top"><span class="clab">A week of driving</span><span class="cval">156 km</span></div>
-      <div class="ctrack"><div class="cfill short"></div></div>
-    </div>
-    <div class="crow">
-      <div class="top"><span class="clab">One full charge</span><span class="cval">402 km</span></div>
-      <div class="ctrack"><div class="cfill full"></div></div>
-    </div>
-  </div>
-
-  <div class="t bottom pad">
-    <div class="meta">
-      <span class="ex">Illustrative example</span>
-      <span>Volt range note · 12 June 2026</span>
-      <span class="zh">2026 年 6 月 12 日</span>
-    </div>
-    <span class="reserve">Reserve</span>
-  </div>
-</div>
-<script src="../../_shared/continuous-corner.js"></script>
-</body>
-</html>
+</style><style class="apple-web-type-floor">.claim{font-size:20px;line-height:1.45}.footer{font-size:14px}.measure h2{font-size:17px}</style></head><body><main class="unit"><div class="brand">Volt</div><div class="price">From ¥80,400</div><h1 class="title">One charge outlasts your week.</h1><p class="zh">一次充电，跑得比一周更远</p><p class="claim">The price, divided by a single charge.</p><div class="figure">402 <small>km</small><span style="display:block;font-size:20px;letter-spacing:0;color:#c7cbd1;margin-top:10px">on a single charge · 单次充电续航</span></div>
+<svg class="car" viewBox="0 0 720 340" role="img" aria-label="Volt electric car in a dark studio"><defs><linearGradient id="body" x2="0" y2="1"><stop stop-color="#e3e5e8"/><stop offset=".16" stop-color="#838a92"/><stop offset=".46" stop-color="#48505a"/><stop offset=".62" stop-color="#bdc2c8"/><stop offset="1" stop-color="#343a41"/></linearGradient><linearGradient id="glass" x2="0" y2="1"><stop stop-color="#aab2ba"/><stop offset="1" stop-color="#273038"/></linearGradient><filter id="contact"><feGaussianBlur stdDeviation="12"/></filter></defs><ellipse cx="364" cy="273" rx="275" ry="23" fill="#000" opacity=".75" filter="url(#contact)"/><path d="M60 232Q83 207 140 197L216 125Q241 101 282 94H430Q473 96 510 129L570 185L637 205Q663 215 667 237L656 256H52Z" fill="url(#body)" stroke="#ccd0d5" stroke-width="2"/><path d="M238 128Q253 104 286 103H352V181H181Z" fill="url(#glass)" stroke="#262c32" stroke-width="3"/><path d="M370 103H428Q459 104 485 131L526 181H370Z" fill="url(#glass)" stroke="#262c32" stroke-width="3"/><path d="M352 103V183M370 103V184" stroke="#edf0f2" stroke-width="2" opacity=".6"/><path d="M85 210Q290 186 615 200" fill="none" stroke="#fff" stroke-width="5" opacity=".72"/><path d="M69 235H646" stroke="#23272c" stroke-width="4"/><g fill="#131619" stroke="#aeb4bb" stroke-width="5"><circle cx="200" cy="240" r="41"/><circle cx="532" cy="240" r="41"/></g><g fill="#6a737c" stroke="#d8dce0" stroke-width="2"><circle cx="200" cy="240" r="23"/><circle cx="532" cy="240" r="23"/></g><g stroke="#f0f1f3" stroke-width="2"><path d="M200 218v44M178 240h44M532 218v44M510 240h44"/></g><path d="M68 215l48-9M620 207l26 8" stroke="#f5f5f7" stroke-width="6"/></svg>
+<div class="comparison"><div class="measure"><h2>A week of driving</h2><strong>156 km</strong><div class="bar short"></div></div><div class="measure"><h2>One full charge</h2><strong>402 km</strong><div class="bar full"></div></div></div>
+<div class="footer"><div class="date"><span>Volt range note · 12 June 2026</span><span>2026 年 6 月 12 日</span></div><a data-apple-motion href="#reserve" class="reserve">Reserve</a><span>Illustrative example · Illustrative render, not a photograph</span></div></main><script src="../../_shared/continuous-corner.js"></script></body></html>

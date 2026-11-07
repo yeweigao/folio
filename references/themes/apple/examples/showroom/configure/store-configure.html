@@ -1,154 +1,16 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=1440">
-<title>Volt — Configure</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Volt — Configure</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="../../_shared/apple-interactions.css">
 <style>
-  :root{
-    --canvas:#171a20; --panel:#30343b; --ink:#f5f5f7; --muted:#d2d4d8;
-    --pewter:#5a6068; --action:#1559b7; --onAction:#ffffff; --hairline:#d2d2d7;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:#0e1014}
-  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
-  .unit{position:relative;width:1440px;height:1000px;overflow:hidden;background:var(--canvas)}
-  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
-  .zhserif{font-family:"Noto Serif SC","Noto Sans SC",serif}
-  .pad{padding:12px}
-  .t{position:absolute}
-  [data-cc]{position:relative;isolation:isolate}
-  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
-  svg{display:block}
+:root{--apple-focus:#1559b7}
+:root{--bg:#171a20;--panel:#30343b;--ink:#f5f5f7;--muted:#b7bbc1;--line:#565c64;--blue:#1559b7;--shell:#858b92;--shine:#f4f5f7}*{box-sizing:border-box;margin:0}html,body{background:var(--bg);font-family:Montserrat,"Noto Sans SC",sans-serif;color:var(--ink)}.unit{width:1440px;height:1000px;overflow:hidden;position:relative;background:var(--bg)}.brand{position:absolute;left:68px;top:31px;font-size:20px;font-weight:600}.brand span{margin-left:10px;color:var(--muted);font-weight:400;font-size:16px}.claim{position:absolute;left:68px;top:104px;width:790px;font-size:57px;line-height:1.04;letter-spacing:-2.6px;font-weight:600}.zh{position:absolute;left:72px;top:236px;font-size:25px}.car{position:absolute;left:28px;top:315px;width:860px;height:414px}.caption{position:absolute;left:72px;top:756px;font-size:14px;color:var(--muted)}.panel{position:absolute;left:934px;top:52px;width:440px;height:755px;border-left:1px solid var(--line);padding-left:28px}.panel h2{font-size:19px;color:var(--muted);font-weight:400;margin:2px 0 13px}.group{padding:14px 0 13px;border-bottom:1px solid var(--line)}.group h3{font-size:18px;font-weight:600;margin-bottom:8px}.zhsmall{font-size:14px;color:var(--muted);margin-left:6px;font-weight:400}.choice{display:flex;align-items:center;justify-content:space-between;min-height:45px;padding:6px 8px;margin:3px 0;color:#f5f5f7;font-size:15px;border:1px solid transparent}.choice.selected{border-color:#818790;background:#252930}.choice .delta{color:#c8ccd1;font-variant-numeric:tabular-nums}.choice input{accent-color:#fff;margin-right:8px}.label{display:flex;align-items:center;gap:5px}.swatch{width:16px;height:16px;border:1px solid #858b92;display:inline-block}.total{position:absolute;left:64px;right:64px;bottom:27px;height:122px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.total small{display:block;font-size:15px;color:var(--muted)}.total strong{display:block;font-size:34px;margin-top:3px;letter-spacing:-1px}.reserve{display:inline-block;background:var(--blue);color:#fff;padding:15px 34px;font-size:17px;text-decoration:none}.foot{position:absolute;left:68px;top:788px;color:var(--muted);font-size:14px}
+</style><style class="apple-web-reflow">
+@media(max-width:1000px){
+ .unit{width:100%;max-width:1440px;height:auto;min-height:100vh;overflow:visible;margin:auto;padding:28px max(24px,5vw) 104px;display:grid;grid-template-columns:minmax(0,1fr);gap:16px}.brand,.claim,.zh,.car,.caption,.panel,.foot,.total{position:static;width:auto;height:auto}.brand{font-size:20px}.brand span{font-size:16px}.claim{font-size:clamp(40px,7vw,58px);line-height:1.05;letter-spacing:-.04em;max-width:16ch}.zh{font-size:22px}.car{display:block;width:100%;max-width:900px;margin:0 auto;height:auto}.caption{font-size:16px}.panel{border-left:0;padding:0 0 92px;display:block;scroll-padding-bottom:92px}.panel h2{font-size:17px}.group{padding:12px 0;scroll-margin-bottom:92px}.group h3{font-size:18px}.zhsmall{font-size:16px}.choice{font-size:16px;min-height:48px;gap:10px;padding:7px 8px;scroll-margin-bottom:92px}.choice .label{gap:8px}.choice .delta{white-space:nowrap;font-size:16px}.choice input{width:18px;height:18px;flex:none}.foot{font-size:14px}.total{position:fixed;z-index:10;left:0;right:0;bottom:0;width:100%;height:64px;min-height:64px;padding:6px max(24px,5vw);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;background:var(--bg);border-top:1px solid var(--line);pointer-events:none}.total>div{min-width:0}.total small{font-size:16px;line-height:1.1;overflow-wrap:anywhere}.total strong{font-size:22px;line-height:1.1;margin-top:2px}.reserve{display:inline-flex;align-items:center;justify-content:center;min-width:96px;min-height:46px;padding:8px 18px;font-size:16px;white-space:nowrap;pointer-events:auto}}
+@media(max-width:600px){.unit{gap:14px;padding-bottom:92px}.claim{font-size:clamp(38px,10vw,48px)}.panel h2{font-size:16px}.choice{align-items:flex-start;line-height:1.35;flex-wrap:wrap}.choice .label{min-width:0}.choice .delta{margin-left:auto}.total{height:64px;min-height:64px;grid-template-columns:minmax(0,1fr) auto;gap:8px;padding-top:6px;padding-bottom:6px}.total small{font-size:16px}.total strong{font-size:21px}.reserve{min-width:86px;padding-inline:14px}.caption{line-height:1.4}}
 
-  .nav{left:80px;top:0;width:1280px;height:64px;display:flex;align-items:center;justify-content:space-between}
-  .nav .mark{font-size:21px;font-weight:600;letter-spacing:normal}
-  .nav .sec{font-size:14px;font-weight:400;color:var(--muted);letter-spacing:normal}
-
-  .claim{left:80px;top:92px;width:1000px}
-  .claim h1{font-size:40px;font-weight:600;line-height:1.1;letter-spacing:normal}
-  .claim .zhline{margin-top:14px;font-size:21px;font-weight:400;color:var(--muted);line-height:1.5}
-  .car{left:270px;top:198px;width:900px;height:331px}
-  .car svg{width:900px;height:331px}
-  .cap{left:80px;top:540px;width:1000px;font-size:14px;font-weight:400;color:var(--muted);letter-spacing:normal}
-
-  .options{left:80px;top:584px;width:1280px;height:296px;display:grid;grid-template-columns:1fr 1fr 1fr}
-  .ogroup{padding:12px 40px 12px 12px}
-  .ogroup + .ogroup{border-left:1px solid var(--panel);padding-left:40px}
-  .ogroup h2{font-size:17px;font-weight:600;letter-spacing:normal}
-  .ogroup h2 .zhsub{font-size:14px;font-weight:400;color:var(--muted);margin-left:10px}
-  .chips{margin-top:18px;display:flex;flex-direction:column;gap:10px}
-  .chip{min-height:56px;padding:10px 16px;display:flex;flex-direction:column;justify-content:center;
-    background:transparent;border:1px solid rgba(210,212,216,.30)}
-  .chip .nm{font-size:17px;font-weight:400;letter-spacing:normal}
-  .chip .dl{font-size:14px;font-weight:400;color:var(--muted);margin-top:3px;letter-spacing:normal}
-  .chip.on{background:var(--ink);border-color:var(--ink)}
-  .chip.on .nm{font-weight:600;color:#171a20}
-  .chip.on .dl{color:#30343b}
-
-  .exline{left:80px;top:892px;width:1280px;font-size:12px;font-weight:400;color:var(--muted);letter-spacing:normal}
-
-  .bar{left:0;top:920px;width:1440px;height:80px;background:var(--panel);
-    display:flex;align-items:center;justify-content:space-between;padding:0 80px}
-  .bar .left{display:flex;flex-direction:column;gap:6px}
-  .bar .row1{display:flex;align-items:baseline;gap:28px}
-  .bar .nm{font-size:21px;font-weight:600;letter-spacing:normal}
-  .bar .total{font-size:21px;font-weight:600;letter-spacing:normal}
-  .bar .deriv{font-size:12px;font-weight:400;color:var(--muted);letter-spacing:normal}
-  .reserve{display:inline-flex;align-items:center;justify-content:center;width:160px;height:48px;
-    background:var(--action);color:var(--onAction);font-size:17px;font-weight:600;letter-spacing:normal}
-</style>
-</head>
-<body>
-<div class="unit" id="page">
-
-  <div class="t nav">
-    <span class="mark">Volt</span>
-    <span class="sec">Configure</span>
-  </div>
-
-  <div class="t claim pad">
-    <h1>Every choice shows its price.</h1>
-    <p class="zhline zhserif">每一项选择，都标着价格</p>
-  </div>
-
-  <div class="t car">
-    <svg viewBox="0 0 576 212" aria-hidden="true">
-      <line x1="18" y1="176" x2="558" y2="176" stroke="#30343b" stroke-width="1"/>
-      <path d="M28 138
-               C23 138 20 132 20 124
-               L24 96
-               C31 79 50 69 80 65
-               L156 36
-               C171 30 190 28 212 28
-               L338 28
-               C358 28 374 34 388 48
-               L452 76
-               C508 82 540 94 540 114
-               L540 138
-               Z" fill="#4a505a"/>
-      <rect x="28" y="122" width="512" height="16" fill="#3a3f47"/>
-      <path d="M84 64 L156 38 C170 32 188 30 210 30 L336 30 C352 30 366 35 378 47 L424 70 Z" fill="#262b32"/>
-      <path d="M232 30 L336 30 C350 30 362 34 374 46 L392 68 L232 68 Z" fill="#262b32" opacity=".9"/>
-      <path d="M84 64 L156 38 C170 32 188 30 210 30 L226 30 L226 33 L212 33 C190 33 172 35 158 41 L88 67 Z" fill="#a9afb8" opacity=".6"/>
-      <line x1="229" y1="32" x2="229" y2="68" stroke="#4a505a" stroke-width="6"/>
-      <line x1="232" y1="68" x2="232" y2="136" stroke="#2a2e35" stroke-width="1.5" opacity=".8"/>
-      <line x1="388" y1="70" x2="388" y2="136" stroke="#2a2e35" stroke-width="1.5" opacity=".8"/>
-      <rect x="252" y="96" width="20" height="4" fill="#8a9099"/>
-      <rect x="300" y="96" width="20" height="4" fill="#8a9099"/>
-      <path d="M420 72 L433 68 L437 76 L424 80 Z" fill="#4a505a"/>
-      <circle cx="60" cy="104" r="5" fill="none" stroke="#8a9099" stroke-width="1.5"/>
-      <rect x="524" y="102" width="15" height="10" fill="#a9afb8"/>
-      <rect x="21" y="102" width="12" height="10" fill="#8a9099"/>
-      <line x1="34" y1="112" x2="530" y2="112" stroke="#2a2e35" stroke-width="2" opacity=".7"/>
-      <circle cx="152" cy="146" r="31" fill="#171a20"/>
-      <circle cx="152" cy="146" r="16" fill="#6b7078"/>
-      <circle cx="152" cy="146" r="6" fill="#20242b"/>
-      <circle cx="418" cy="146" r="31" fill="#171a20"/>
-      <circle cx="418" cy="146" r="16" fill="#6b7078"/>
-      <circle cx="418" cy="146" r="6" fill="#20242b"/>
-    </svg>
-  </div>
-  <p class="t cap pad">Illustrative render, not a photograph</p>
-
-  <div class="t options">
-    <div class="ogroup">
-      <h2>Battery<span class="zhsub zh">电池</span></h2>
-      <div class="chips">
-        <div class="chip"><span class="nm">Standard 402 km</span><span class="dl">Included</span></div>
-        <div class="chip on"><span class="nm">Long range 560 km</span><span class="dl">+¥12,000</span></div>
-      </div>
-    </div>
-    <div class="ogroup">
-      <h2>Wheels<span class="zhsub zh">轮毂</span></h2>
-      <div class="chips">
-        <div class="chip on"><span class="nm">16-inch Aero</span><span class="dl">Included</span></div>
-        <div class="chip"><span class="nm">18-inch Turbine</span><span class="dl">+¥4,800</span></div>
-      </div>
-    </div>
-    <div class="ogroup">
-      <h2>Finish<span class="zhsub zh">车色</span></h2>
-      <div class="chips">
-        <div class="chip on"><span class="nm">Ash</span><span class="dl">Included</span></div>
-        <div class="chip"><span class="nm">Pewter</span><span class="dl">+¥2,200</span></div>
-        <div class="chip"><span class="nm">Carbon</span><span class="dl">+¥3,600</span></div>
-      </div>
-    </div>
-  </div>
-
-  <p class="t exline pad">Illustrative example</p>
-
-  <div class="t bar">
-    <div class="left">
-      <div class="row1"><span class="nm">Volt</span><span class="total">¥92,400</span></div>
-      <span class="deriv">Base ¥80,400 + ¥12,000 Long range</span>
-    </div>
-    <span class="reserve">Reserve</span>
-  </div>
-</div>
-<script src="../../_shared/continuous-corner.js"></script>
-</body>
-</html>
+<style>.choice{font-size:16px}.choice input{cursor:pointer}.reserve{border:0;font-family:inherit;font-weight:600;cursor:pointer}</style><style class="apple-web-type-floor">.caption{font-size:16px}.total small{font-size:16px}.choice{font-size:16px}.zhsmall{font-size:16px}</style><style>.car-stage{position:absolute;left:28px;top:315px;width:860px;height:414px}.car{position:relative;left:auto;top:auto;width:100%;height:100%}@media(max-width:1000px){.car-stage{position:relative;left:auto;top:auto;width:100%;height:auto}.car{height:auto}}</style><style>@media(max-width:1000px){.car-stage[data-apple-light]::before{left:0;right:0;filter:none}}</style><style>@media(max-width:1000px){html,body{height:100%;overflow:hidden}.unit{height:calc(100vh - 64px);height:calc(100dvh - 64px);min-height:0;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;padding-bottom:24px}.panel{padding-bottom:24px;scroll-padding-bottom:24px}.group,.choice{scroll-margin-bottom:24px}.total{height:64px;min-height:64px}}</style></head><body><main class="unit"><div class="brand">Volt <span>Configure</span></div><h1 class="claim">Every choice shows its price.</h1><p class="zh">每一项选择，都标着价格</p>
+<div class="car-stage" data-apple-light style="--apple-light-color:rgba(192,198,207,.24);--apple-light-blur:38px;--apple-light-opacity:.38"><svg class="car" viewBox="0 0 900 430" role="img" aria-label="Carbon grey electric car render"><defs><linearGradient id="paint" x2="0" y2="1"><stop stop-color="#d4d7db"/><stop offset=".14" stop-color="#858c94"/><stop offset=".44" stop-color="#454c55"/><stop offset=".58" stop-color="#a8adb4"/><stop offset=".82" stop-color="#535a63"/><stop offset="1" stop-color="#252b32"/></linearGradient><linearGradient id="glass" x2="0" y2="1"><stop stop-color="#b9c0c8"/><stop offset=".35" stop-color="#434a52"/><stop offset="1" stop-color="#24292f"/></linearGradient><linearGradient id="tire" x2="0" y2="1"><stop stop-color="#454a50"/><stop offset="1" stop-color="#111316"/></linearGradient><filter id="ground"><feGaussianBlur stdDeviation="13"/></filter></defs><ellipse cx="453" cy="342" rx="345" ry="24" fill="#000" opacity=".62" filter="url(#ground)"/><path d="M101 284Q135 265 195 254L289 170Q318 144 363 139H572Q624 143 665 177L749 245L818 261Q844 270 850 295L841 320H76L73 301Q76 288 101 284Z" fill="url(#paint)" stroke="#c5c9ce" stroke-width="2"/><path d="M311 177Q330 151 367 149H458V235H243Z" fill="url(#glass)" stroke="#252a30" stroke-width="3"/><path d="M475 149H566Q608 151 638 181L689 235H475Z" fill="url(#glass)" stroke="#252a30" stroke-width="3"/><path d="M367 150V237M475 149V238" stroke="#d8dade" stroke-width="2" opacity=".65"/><path d="M118 278Q202 250 742 253" fill="none" stroke="#f5f6f8" stroke-width="5" opacity=".68"/><path d="M127 297H797" stroke="#25282d" stroke-width="4" opacity=".8"/><path d="M111 283L165 276" stroke="#e5e7e9" stroke-width="7"/><path d="M789 273l40 9" stroke="#c5c9cf" stroke-width="6"/><path d="M82 319H843" stroke="#16191d" stroke-width="3"/><g><circle cx="245" cy="310" r="53" fill="url(#tire)"/><circle cx="245" cy="310" r="31" fill="#aeb3b9"/><circle cx="245" cy="310" r="22" fill="#59616a"/><circle cx="245" cy="310" r="8" fill="#d6d9dd"/><path d="M245 282v56M217 310h56M225 290l40 40M265 290l-40 40" stroke="#e4e6e8" stroke-width="3"/><circle cx="696" cy="310" r="53" fill="url(#tire)"/><circle cx="696" cy="310" r="31" fill="#aeb3b9"/><circle cx="696" cy="310" r="22" fill="#59616a"/><circle cx="696" cy="310" r="8" fill="#d6d9dd"/><path d="M696 282v56M668 310h56M676 290l40 40M716 290l-40 40" stroke="#e4e6e8" stroke-width="3"/></g><path d="M168 260h57M750 255h28" stroke="#fff" stroke-width="5"/><path d="M295 248H664" stroke="#fff" stroke-width="1.5" opacity=".28"/></svg></div><p class="caption">Illustrative render, not a photograph</p>
+<aside class="panel"><h2>Choose a configuration</h2><section class="group"><h3>Battery <span class="zhsmall">电池</span></h3><label class="choice"><span class="label"><input data-apple-motion type="radio" name="battery" value="0">Standard 402 km</span><span class="delta">Included</span></label><label class="choice selected"><span class="label"><input data-apple-motion type="radio" name="battery" value="12000" checked>Long range 560 km</span><span class="delta">+¥12,000</span></label></section><section class="group"><h3>Wheels <span class="zhsmall">轮毂</span></h3><label class="choice selected"><span class="label"><input data-apple-motion type="radio" name="wheels" value="0" checked>16-inch Aero</span><span class="delta">Included</span></label><label class="choice"><span class="label"><input data-apple-motion type="radio" name="wheels" value="4800">18-inch Turbine</span><span class="delta">+¥4,800</span></label></section><section class="group"><h3>Finish <span class="zhsmall">车色</span></h3><label class="choice selected"><span class="label"><input data-apple-motion type="radio" name="finish" value="0" checked><i class="swatch" style="background:#bfc3c5"></i>Ash</span><span class="delta">Included</span></label><label class="choice"><span class="label"><input data-apple-motion type="radio" name="finish" value="2200"><i class="swatch" style="background:#737b83"></i>Pewter</span><span class="delta">+¥2,200</span></label><label class="choice"><span class="label"><input data-apple-motion type="radio" name="finish" value="3600"><i class="swatch" style="background:#24272c"></i>Carbon</span><span class="delta">+¥3,600</span></label></section></aside>
+<div class="foot">Illustrative example</div><div class="total"><div><small id="breakdown">Base ¥80,400 + ¥12,000 Long range</small><strong id="amount">¥92,400</strong></div><a data-apple-motion class="reserve" href="#reserve">Reserve</a></div></main><script>
+document.querySelectorAll('.choice input').forEach(input=>input.addEventListener('change',()=>{document.querySelectorAll('.choice').forEach(row=>row.classList.toggle('selected',row.querySelector('input').checked));let extras=[...document.querySelectorAll('.choice input:checked')].reduce((sum,item)=>sum+Number(item.value),0);document.getElementById('amount').textContent='¥'+(80400+extras).toLocaleString('en-US');let battery=document.querySelector('input[name="battery"]:checked');document.getElementById('breakdown').textContent=battery.value==='12000'?'Base ¥80,400 + ¥12,000 Long range':'Base ¥80,400 · Standard 402 km';}));
+</script><script src="../../_shared/continuous-corner.js"></script></body></html>

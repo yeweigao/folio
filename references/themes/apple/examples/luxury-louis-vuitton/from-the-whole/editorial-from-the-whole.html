@@ -2,261 +2,327 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1200">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Voyager — From the whole bag to the grain</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@400;600&amp;family=Noto+Serif+SC:wght@400&amp;family=Noto+Sans+SC:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&amp;family=Inter:wght@300;400;600&amp;family=Noto+Serif+SC:wght@400&amp;family=Noto+Sans+SC:wght@400&amp;display=swap" rel="stylesheet">
 <style>
   :root{
-    --canvas:#ffffff; --panel:#f5f1e9; --dark:#30271d; --ink:#30271d;
-    --muted:#686056; --action:#30271d; --onAction:#ffffff; --onDark:#ffffff;
-    --hairline:#d2d2d7;
+    --canvas:#ffffff; --panel:#f3f2f0; --dark:#30271d; --ink:#30271d;
+    --muted:#686056; --action:#30271d; --hairline:#d2d2d7;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{background:#e9e6e0}
   body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
   .unit{position:relative;width:1200px;height:1600px;overflow:hidden;background:var(--canvas)}
-  .serif{font-family:"Cormorant Garamond","Noto Serif SC",Georgia,serif}
-  .zhserif{font-family:"Noto Serif SC","Cormorant Garamond",serif}
-  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
+  .serif{font-family:"Cormorant Garamond","Noto Serif SC",serif}
   .t{position:absolute}
-  .pad{padding:12px}
   a{text-decoration:none;color:inherit}
   svg{display:block}
   [data-cc]{position:relative;isolation:isolate}
   .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
 
-  .vista{position:absolute;left:0;top:0;width:1200px;height:680px;overflow:hidden}
-  .mark{left:110px;top:64px;font-size:26px;font-weight:600;line-height:1.2}
-  .vhead{left:110px;top:150px;width:520px}
-  .vhead h1{font-size:52px;font-weight:400;line-height:1.08;letter-spacing:-.01em}
-  .vhead .zh{font-family:"Noto Serif SC","Cormorant Garamond",serif;
-             margin-top:20px;font-size:22px;font-weight:400;line-height:1.55;color:var(--muted)}
-  .vhead a{display:inline-block;margin-top:34px;font-size:17px;font-weight:400;line-height:1.4;
-           color:var(--action);border-bottom:1px solid var(--action);padding-bottom:3px}
+  /* vista: 60% of the frame */
+  .vista{position:absolute;left:0;top:0;width:1200px;height:960px;overflow:hidden}
+  .mark{left:110px;top:84px;font-size:30px;font-weight:500;letter-spacing:.01em}
+  .vhead{left:110px;top:212px;width:500px}
+  .vhead h1{font-size:96px;font-weight:400;line-height:1.0;letter-spacing:-.015em}
+  .vhead .zh{margin-top:30px;font-family:"Noto Serif SC",serif;font-size:26px;line-height:1.5;color:var(--muted)}
+  .vhead a{display:inline-block;margin-top:40px;font-size:19px;line-height:1.4;border-bottom:1px solid var(--action);padding-bottom:4px}
+  .cap{left:110px;top:918px;font-size:13px;line-height:1.4;color:var(--muted)}
 
-  .cap{left:110px;top:700px;width:980px;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
-  .lead{left:110px;top:740px;width:900px;font-size:30px;font-weight:400;line-height:1.34;letter-spacing:-.005em}
-  .leadzh{left:110px;top:800px;width:880px;font-family:"Noto Serif SC","Cormorant Garamond",serif;
-          font-size:19px;font-weight:400;line-height:1.65;color:var(--muted)}
-  .body{left:110px;top:872px;width:760px;font-size:17px;font-weight:400;line-height:1.62}
+  /* reading column */
+  .lead{left:110px;top:1000px;width:980px;font-size:36px;line-height:1.2;letter-spacing:-.005em}
+  .leadzh{left:110px;top:1054px;font-family:"Noto Serif SC",serif;font-size:20px;line-height:1.5;color:var(--muted)}
+  .body{left:110px;top:1098px;width:940px;font-size:19px;line-height:1.55}
 
-  .plateh{left:110px;top:1010px;font-size:14px;font-weight:400;line-height:1.5}
-  .plates{left:110px;top:1046px;display:flex;gap:20px}
-  .panel{width:300px;height:300px;overflow:hidden}
-  .pnote{width:300px;margin-top:14px;font-size:13px;font-weight:400;line-height:1.55;color:var(--muted)}
-  .pnote b{font-weight:400;color:var(--ink)}
-  .prow{left:110px;top:1360px;display:flex;gap:20px}
+  .plateh{left:110px;top:1206px;font-size:14px;line-height:1.4;color:var(--muted)}
+  .plates{left:110px;top:1232px;display:flex;gap:20px}
+  .panel-light{width:100%;aspect-ratio:313/220}.panel{width:313px;height:220px;overflow:hidden}
+  .pnote{width:313px;margin-top:12px;font-size:14px;line-height:1.45;color:var(--muted)}
+  .pnote b{display:block;font-weight:600;color:var(--ink)}
 
-  .close{left:110px;top:1424px;width:700px;font-size:22px;font-weight:400;line-height:1.4}
-  .price{left:110px;top:1470px;font-size:14px;font-weight:400;line-height:1.5;color:var(--muted)}
-  .foot{left:110px;top:1522px;width:980px;display:flex;justify-content:space-between;
-        font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
+  .close{left:110px;top:1528px;font-size:28px;line-height:1.1}
+  .price{left:666px;top:1534px;font-size:17px;line-height:1.4}
+  .foot{left:110px;top:1572px;width:980px;display:flex;justify-content:space-between;font-size:12px;line-height:1.4;color:var(--muted)}
+</style>
+<link rel="stylesheet" href="../../_shared/apple-interactions.css">
+<style data-review-reflow>
+
+:root{--apple-focus:#30271d}
+@media(max-width:1200px){
+ .unit{position:relative;width:min(100%,1200px);height:auto;min-height:100vh;overflow:visible;margin:0 auto;padding-bottom:22px;display:flex;flex-direction:column;gap:14px}
+ .vista{position:relative;left:auto;top:auto;width:100%;height:auto;aspect-ratio:1200/960;display:flex;flex-direction:column}
+ .vista>svg{position:absolute;inset:0;width:100%;height:100%}
+ .mark,.vhead,.cap,.lead,.leadzh,.body,.plateh,.plates,.close,.price,.foot{position:static;left:auto;top:auto;width:auto;height:auto}
+ .mark{align-self:flex-start;margin:28px clamp(24px,6.5vw,78px) 0;font-size:24px;z-index:1}
+ .vhead{margin:40px clamp(24px,6.5vw,78px) 0;width:min(500px,calc(100% - 48px));z-index:1}
+ .vhead h1{font-size:clamp(52px,8vw,88px);line-height:1.02;letter-spacing:-.035em}
+ .vhead .zh{font-size:20px;line-height:1.5;margin-top:14px}.vhead a{font-size:17px;margin-top:20px}
+ .cap{align-self:flex-start;margin:20px clamp(24px,6.5vw,78px) 12px;font-size:14px;color:var(--muted);background:var(--canvas);z-index:1}
+ .lead{margin:12px auto 0;width:min(980px,calc(100% - 48px));font-size:clamp(28px,3.6vw,36px);font-weight:400;line-height:1.22}
+ .leadzh{width:min(980px,calc(100% - 48px));margin:0 auto;font-size:19px;line-height:1.5;color:var(--muted)}
+ .body{width:min(940px,calc(100% - 48px));margin:0 auto;font-size:17px;line-height:1.55;max-width:65ch}
+ .plateh{width:min(980px,calc(100% - 48px));margin:6px auto 0;font-size:14px;line-height:1.45;color:var(--muted)}
+ .plates{width:min(980px,calc(100% - 48px));margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+ .panel{width:100%;height:100%;aspect-ratio:313/220;overflow:hidden}.panel-light{width:100%;aspect-ratio:313/220}.panel svg{width:100%;height:100%}.pnote{width:auto;font-size:14px;line-height:1.45}
+ .close{margin:4px auto 0;width:min(980px,calc(100% - 48px));font-size:26px}.price{margin:-42px max(24px,calc((100% - 980px)/2 + 380px)) 0 auto;font-size:16px}
+ .foot{width:min(980px,calc(100% - 48px));margin:0 auto;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:14px;line-height:1.45;color:var(--muted)}
+}
+@media(max-width:800px){
+ .vista{aspect-ratio:1200/960}.vhead{margin-top:26px}.plates{grid-template-columns:repeat(2,minmax(0,1fr))}.plates>div:last-child{grid-column:1/-1;max-width:calc(50% - 8px)}
+ .price{margin:-40px 24px 0 auto}
+}
+@media(max-width:520px){
+ .unit{gap:12px}.vista{aspect-ratio:auto;min-height:0;padding-bottom:18px;overflow:visible}
+ .vista>svg{position:static;width:100%;height:auto;aspect-ratio:1200/960}
+ .panel-light[data-apple-light]::before{inset:-12% 0}
+ .mark{margin:14px 20px 0;font-size:21px}.vhead{margin:20px 20px 0;width:calc(100% - 40px)}.vhead h1{font-size:45px;line-height:1.02}.vhead .zh{font-size:18px;margin-top:10px}.vhead a{font-size:16px;margin-top:14px}
+ .cap{margin:12px 20px 0;font-size:13px}
+ .lead,.leadzh,.body,.plateh,.plates,.close,.foot{width:calc(100% - 40px)}
+ .lead{font-size:27px}.leadzh{font-size:17px}.body{font-size:16px}
+ .plates{grid-template-columns:minmax(0,1fr);gap:14px}.plates>div:last-child{grid-column:auto;max-width:none}.panel{aspect-ratio:313/220}.pnote{font-size:14px}
+ .close{font-size:23px}.price{margin:-4px 20px 0;font-size:15px}.foot{font-size:13px;flex-direction:column}
+}
+
 </style>
 </head>
 <body>
 <div class="unit" id="page">
 
   <div class="vista">
-    <svg width="1200" height="680" viewBox="0 0 1200 680" aria-hidden="true">
+    <svg width="1200" height="960" viewBox="0 0 1200 960" role="img" aria-label="A leather bag and spool beside one another on a bench">
       <defs>
-        <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#f6f2e9"/>
-          <stop offset=".7" stop-color="#efe9dd"/>
-          <stop offset="1" stop-color="#e7dfd2"/>
+        <radialGradient id="wall" cx=".22" cy=".12" r="1.05">
+          <stop offset="0" stop-color="#fbfaf8"/>
+          <stop offset=".55" stop-color="#efedea"/>
+          <stop offset="1" stop-color="#dedad4"/>
+        </radialGradient>
+        <linearGradient id="table" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#e6e2dc"/>
+          <stop offset="1" stop-color="#d4cec5"/>
         </linearGradient>
-        <linearGradient id="bench" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#7d5f40"/>
-          <stop offset=".18" stop-color="#6a5036"/>
-          <stop offset="1" stop-color="#4f3b26"/>
+        <!-- calf: key light from the upper left -->
+        <linearGradient id="calfX" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#7c5534"/>
+          <stop offset=".18" stop-color="#9a6d43"/>
+          <stop offset=".5" stop-color="#8a5f39"/>
+          <stop offset=".86" stop-color="#6a4628"/>
+          <stop offset="1" stop-color="#4c3119"/>
         </linearGradient>
-        <linearGradient id="calf" x1="0" y1="0" x2=".3" y2="1">
-          <stop offset="0" stop-color="#d6c1a0"/>
-          <stop offset=".42" stop-color="#c0a67f"/>
-          <stop offset=".78" stop-color="#a98c64"/>
-          <stop offset="1" stop-color="#8f724b"/>
+        <linearGradient id="calfY" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#ffffff" stop-opacity=".16"/>
+          <stop offset=".45" stop-color="#ffffff" stop-opacity="0"/>
+          <stop offset="1" stop-color="#1c1108" stop-opacity=".34"/>
         </linearGradient>
-        <linearGradient id="calfTop" x1="0" y1="0" x2=".3" y2="1">
-          <stop offset="0" stop-color="#e2cfb1"/>
-          <stop offset="1" stop-color="#c8af88"/>
+        <linearGradient id="brass" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#f6e7bf"/>
+          <stop offset=".45" stop-color="#cda865"/>
+          <stop offset=".55" stop-color="#a7833f"/>
+          <stop offset="1" stop-color="#e2c98d"/>
         </linearGradient>
+        <linearGradient id="spool" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#cdbf9f"/>
+          <stop offset=".3" stop-color="#efe5cd"/>
+          <stop offset="1" stop-color="#b3a37f"/>
+        </linearGradient>
+        <filter id="grain" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" seed="7" result="n"/>
+          <feDiffuseLighting in="n" surfaceScale="1.6" lighting-color="#fff" result="l">
+            <feDistantLight azimuth="225" elevation="58"/>
+          </feDiffuseLighting>
+          <feComposite in="l" in2="SourceGraphic" operator="in"/>
+        </filter>
+        <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="30"/></filter>
+        <filter id="contact" x="-20%" y="-200%" width="140%" height="500%"><feGaussianBlur stdDeviation="5"/></filter>
+        <clipPath id="body"><path id="bodyPath" d="M640 432 C636 600 626 760 620 880 L1020 880 C1014 760 1004 600 1000 432 Z"/></clipPath>
       </defs>
 
-      <rect width="1200" height="680" fill="url(#wall)"/>
-      <rect y="560" width="1200" height="120" fill="url(#bench)"/>
-      <rect y="560" width="1200" height="4" fill="#a2825c" opacity=".75"/>
-      <rect y="564" width="1200" height="8" fill="#3a2b1a" opacity=".18"/>
+      <rect width="1200" height="960" fill="url(#wall)"/>
+      <rect y="880" width="1200" height="80" fill="url(#table)"/>
+      <rect y="880" width="1200" height="1.5" fill="#ffffff" opacity=".7"/>
 
-      <!-- a hide, folded twice, waiting on the bench -->
-      <path d="M566 560 C582 532 664 526 704 541 C724 549 720 560 700 560 Z" fill="#c9b191"/>
-      <path d="M566 560 C582 532 664 526 704 541" fill="none" stroke="#a88a63" stroke-width="1.6"/>
+      <!-- cast shadow on the wall, light from the upper left -->
+      <path d="M700 470 L1100 520 L1150 880 L760 880 Z" fill="#6b5a46" opacity=".10" filter="url(#soft)"/>
 
-      <!-- a spool of linen thread -->
-      <rect x="620" y="508" width="40" height="52" fill="#e6d8bd"/>
-      <rect x="620" y="508" width="40" height="6" fill="#cdbb99"/>
-      <rect x="620" y="554" width="40" height="6" fill="#cdbb99"/>
-      <path d="M626 515 V551 M636 515 V551 M646 515 V551 M656 515 V551" stroke="#bda98a" stroke-width="1.2" opacity=".7"/>
-      <ellipse cx="640" cy="508" rx="20" ry="4.6" fill="#f0e4cc"/>
-      <ellipse cx="640" cy="508" rx="7" ry="1.8" fill="#8a7250"/>
-
-      <!-- the bag, standing -->
-      <ellipse cx="880" cy="562" rx="132" ry="9" fill="#2b2015" opacity=".16"/>
-      <path d="M816 246 C816 200 872 200 872 246" fill="none" stroke="#7a5d3d" stroke-width="10"/>
-      <path d="M888 246 C888 200 944 200 944 246" fill="none" stroke="#7a5d3d" stroke-width="10"/>
-      <path d="M760 246 L1000 246 L984 560 L776 560 Z" fill="url(#calf)" stroke="#7a5d3d"
-            stroke-width="1.2" stroke-opacity=".45"/>
-      <path d="M760 246 L1000 246 L996 284 L764 284 Z" fill="url(#calfTop)"/>
-      <path d="M760 246 L1000 246 L1000 251 L760 251 Z" fill="#7a5d3d" opacity=".55"/>
-      <path d="M782 246 L779 560" stroke="#7a5d3d" stroke-width="1.6" opacity=".4"/>
-      <path d="M978 246 L981 560" stroke="#7a5d3d" stroke-width="1.6" opacity=".4"/>
-      <g stroke="#5b442c" stroke-width="3.2" stroke-linecap="round" opacity=".9" fill="none">
-        <line x1="786" y1="298" x2="793" y2="312"/><line x1="816" y1="298" x2="823" y2="312"/>
-        <line x1="846" y1="298" x2="853" y2="312"/><line x1="876" y1="298" x2="883" y2="312"/>
-        <line x1="906" y1="298" x2="913" y2="312"/><line x1="936" y1="298" x2="943" y2="312"/>
-        <line x1="966" y1="298" x2="973" y2="312"/>
+      <!-- spool of linen thread -->
+      <ellipse cx="548" cy="882" rx="40" ry="6" fill="#2b2015" opacity=".28" filter="url(#contact)"/>
+      <rect x="516" y="808" width="64" height="72" fill="url(#spool)"/>
+      <g stroke="#a79670" stroke-width="1" opacity=".55">
+        <path d="M516 818 H580 M516 826 H580 M516 834 H580 M516 842 H580 M516 850 H580 M516 858 H580 M516 866 H580"/>
       </g>
-      <rect x="868" y="238" width="26" height="24" fill="#4a3722"/>
-      <rect x="873" y="244" width="16" height="3" fill="#e2cfb1" opacity=".7"/>
-      <path d="M779 559 L981 559" stroke="#5b442c" stroke-width="2" opacity=".45"/>
-      <path d="M763 252 L763 556" stroke="#f2e5cd" stroke-width="1.8" opacity=".3"/>
+      <rect x="510" y="800" width="76" height="9" fill="#a88d62"/>
+      <rect x="510" y="872" width="76" height="9" fill="#9a7f55"/>
+      <ellipse cx="548" cy="800" rx="38" ry="6" fill="#c3a679"/>
+      <ellipse cx="548" cy="800" rx="9" ry="2" fill="#5c4528"/>
+      <path d="M580 846 C602 858 620 872 640 878" fill="none" stroke="#d9cba9" stroke-width="1.4"/>
+
+      <!-- contact shadow -->
+      <ellipse cx="820" cy="882" rx="214" ry="10" fill="#1c130a" opacity=".42" filter="url(#contact)"/>
+
+      <!-- handles: rolled calf, back handle first -->
+      <g fill="none" stroke-linecap="round">
+        <path d="M884 436 C884 300 960 300 960 436" stroke="#4a2f19" stroke-width="18"/>
+        <path d="M884 436 C884 300 960 300 960 436" stroke="#7b5432" stroke-width="12"/>
+        <path d="M680 436 C680 268 790 268 790 436" stroke="#4a2f19" stroke-width="20"/>
+        <path d="M680 436 C680 268 790 268 790 436" stroke="#8d6038" stroke-width="14"/>
+        <path d="M684 424 C686 290 784 290 786 410" stroke="#d2a777" stroke-width="3" opacity=".55"/>
+        <path d="M680 436 C680 268 790 268 790 436" stroke="#e6cfa6" stroke-width="1" stroke-dasharray="4 4" opacity=".7"/>
+      </g>
+
+      <!-- body -->
+      <path d="M640 432 C636 600 626 760 620 880 L1020 880 C1014 760 1004 600 1000 432 Z" fill="url(#calfX)"/>
+      <g clip-path="url(#body)">
+        <rect x="600" y="420" width="440" height="470" fill="url(#calfY)"/>
+        <rect x="600" y="420" width="440" height="470" fill="#000" filter="url(#grain)" opacity=".14" style="mix-blend-mode:overlay"/>
+        <!-- side panel in shadow -->
+        <path d="M972 432 C976 600 986 760 992 880 L1020 880 C1014 760 1004 600 1000 432 Z" fill="#2c1b0d" opacity=".35"/>
+        <!-- front pocket seam -->
+        <path d="M632 610 C740 628 900 628 1008 610" fill="none" stroke="#3d2714" stroke-width="2.4" opacity=".6"/>
+        <path d="M632 614 C740 632 900 632 1008 614" fill="none" stroke="#c89b6c" stroke-width="1" opacity=".35"/>
+        <path d="M632 626 C740 644 900 644 1008 626" fill="none" stroke="#ecd9b5" stroke-width="2" stroke-dasharray="6 5" opacity=".75"/>
+        <!-- side and base saddle stitching -->
+        <path d="M656 452 C652 610 644 760 640 864" fill="none" stroke="#ecd9b5" stroke-width="2" stroke-dasharray="6 5" opacity=".7"/>
+        <path d="M984 452 C988 610 996 760 1000 864" fill="none" stroke="#ecd9b5" stroke-width="2" stroke-dasharray="6 5" opacity=".45"/>
+        <path d="M640 862 H1000" fill="none" stroke="#ecd9b5" stroke-width="2" stroke-dasharray="6 5" opacity=".55"/>
+      </g>
+      <!-- lit edge, left -->
+      <path d="M641 440 C637 600 627 760 621 878" fill="none" stroke="#f4d9b0" stroke-width="2" opacity=".55"/>
+      <!-- painted top edge -->
+      <path d="M638 432 H1002" stroke="#2a1a0c" stroke-width="7"/>
+      <path d="M640 428.8 H1000" stroke="#a57a4e" stroke-width="1.2" opacity=".8"/>
+      <path d="M660 446 H980" stroke="#ecd9b5" stroke-width="2" stroke-dasharray="6 5" opacity=".75"/>
+      <!-- handle tabs -->
+      <g>
+        <path d="M666 432 h30 v40 l-15 8 l-15 -8 z" fill="#6f4a29"/>
+        <path d="M776 432 h30 v40 l-15 8 l-15 -8 z" fill="#6f4a29"/>
+        <path d="M870 432 h28 v36 l-14 7 l-14 -7 z" fill="#5f3e22"/>
+        <path d="M946 432 h28 v36 l-14 7 l-14 -7 z" fill="#5a3a1f"/>
+        <g fill="#efdfbf"><circle cx="681" cy="460" r="2.2"/><circle cx="791" cy="460" r="2.2"/><circle cx="884" cy="457" r="2"/><circle cx="960" cy="457" r="2"/></g>
+      </g>
+      <!-- clasp -->
+      <rect x="796" y="420" width="48" height="34" fill="url(#brass)"/>
+      <rect x="796" y="420" width="48" height="2" fill="#fff6dc" opacity=".9"/>
+      <rect x="814" y="432" width="12" height="10" fill="#6d5524"/>
+      <rect x="796" y="452" width="48" height="2" fill="#5e4720" opacity=".6"/>
     </svg>
 
     <p class="t mark serif">Voyager</p>
     <div class="t vhead">
-      <h1 class="serif">From the whole bag<br>to the grain.</h1>
+      <h1 class="serif">From the<br>whole bag<br>to the grain.</h1>
       <p class="zh">从整只包，到一粒皮纹</p>
-      <a href="#">Read the material note</a>
+      <a data-apple-motion href="#">Read the material note</a>
     </div>
+    <p class="t cap">Illustrative render, not a photograph</p>
   </div>
 
-  <p class="t cap">Illustrative render, not a photograph</p>
-
-  <p class="t lead serif">A bag is three distances at once: the object, the seam, the edge.</p>
+  <h2 class="t lead serif">A bag is three distances at once: the object, the seam, the edge.</h2>
   <p class="t leadzh">一只包，三个距离：整只、缝线、边</p>
   <p class="t body">At 1:2 the bag is a proportion. At 8:1 the seam is a pitch, 3.17 mm, and eleven stitches can be counted across the panel. At 24:1 the edge is a thickness — 3.2 mm of calf under 0.6 mm of paint — and there is nothing behind it.</p>
 
   <p class="t plateh">The same bag, read at three distances. Scale bars are in millimetres.</p>
   <div class="t plates">
-
-    <div class="panel" data-cc="18" data-cc-fill="#f5f1e9" data-cc-stroke="#d2d2d7" data-cc-clip>
-      <svg width="300" height="300" viewBox="0 0 300 300" aria-hidden="true">
-        <g transform="translate(12 26)">
-          <ellipse cx="138" cy="254" rx="96" ry="6" fill="#30271d" opacity=".1"/>
-          <path d="M96 120 C96 94 130 94 130 120" fill="none" stroke="#7a5d3d" stroke-width="7"/>
-          <path d="M146 120 C146 94 180 94 180 120" fill="none" stroke="#7a5d3d" stroke-width="7"/>
-          <path d="M60 120 L240 120 L226 252 L74 252 Z" fill="#c0a67f" stroke="#7a5d3d"
-                stroke-width="1" stroke-opacity=".45"/>
-          <path d="M60 120 L240 120 L238 144 L62 144 Z" fill="#d6c1a0"/>
-          <g stroke="#5b442c" stroke-width="2.4" stroke-linecap="round" opacity=".9" fill="none">
-            <line x1="74" y1="152" x2="81" y2="163"/><line x1="102" y1="152" x2="109" y2="163"/>
-            <line x1="130" y1="152" x2="137" y2="163"/><line x1="158" y1="152" x2="165" y2="163"/>
-            <line x1="186" y1="152" x2="193" y2="163"/><line x1="214" y1="152" x2="221" y2="163"/>
+    <div>
+      <div class="panel-light" data-apple-light style="--apple-light-color:rgba(158,128,93,.38);--apple-light-opacity:.32;--apple-light-blur:26px"><div class="panel" data-cc="18" data-cc-fill="#f3f2f0" data-cc-clip>
+        <svg width="313" height="220" viewBox="0 0 313 220" role="img" aria-label="The whole Voyage 36 bag shown at scale 1:2">
+          <defs>
+            <linearGradient id="pX" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#7c5534"/><stop offset=".2" stop-color="#9a6d43"/>
+              <stop offset=".86" stop-color="#6a4628"/><stop offset="1" stop-color="#4c3119"/>
+            </linearGradient>
+            <filter id="pc" x="-20%" y="-200%" width="140%" height="500%"><feGaussianBlur stdDeviation="3"/></filter>
+          </defs>
+          <ellipse cx="166" cy="183" rx="94" ry="4.5" fill="#1c130a" opacity=".35" filter="url(#pc)"/>
+          <g fill="none" stroke-linecap="round">
+            <path d="M190 96 C190 64 222 64 222 96" stroke="#5a3a1f" stroke-width="6"/>
+            <path d="M102 96 C102 56 150 56 150 96" stroke="#8d6038" stroke-width="7"/>
           </g>
-          <rect x="128" y="113" width="24" height="20" fill="#4a3722"/>
-        </g>
-        <g stroke="#686056" stroke-width="1" opacity=".8" fill="none">
-          <path d="M24 276 H74"/><path d="M24 271 V281"/><path d="M74 271 V281"/>
-        </g>
-        <text x="24" y="294" font-family="Inter, 'Noto Sans SC', sans-serif" font-size="11"
-              fill="#686056">10 cm</text>
-      </svg>
+          <path d="M84 96 C82 130 78 162 76 182 L256 182 C254 162 250 130 248 96 Z" fill="url(#pX)"/>
+          <path d="M83 96 H249" stroke="#2a1a0c" stroke-width="3"/>
+          <path d="M81 134 C130 140 202 140 251 134" fill="none" stroke="#3d2714" stroke-width="1.2" opacity=".6"/>
+          <rect x="155" y="91" width="22" height="15" fill="#cda865"/>
+          <g stroke="#686056" stroke-width="1" fill="none"><path d="M24 200 H74"/><path d="M24 196 V204"/><path d="M74 196 V204"/></g>
+          <text x="82" y="204" font-family="Inter,sans-serif" font-size="12" fill="#686056">10 cm</text>
+        </svg>
+      </div></div>
+      <p class="pnote"><b>The whole bag</b>1:2 · 36 cm wide, 26 cm tall</p>
     </div>
 
-    <div class="panel" data-cc="18" data-cc-fill="#6b5138" data-cc-stroke="#d2d2d7" data-cc-clip>
-      <svg width="300" height="300" viewBox="0 0 300 300" aria-hidden="true">
-        <defs>
-          <linearGradient id="m1" x1="0" y1="0" x2=".4" y2="1">
-            <stop offset="0" stop-color="#96754e"/>
-            <stop offset=".45" stop-color="#7d5f3e"/>
-            <stop offset="1" stop-color="#4d3823"/>
-          </linearGradient>
-        </defs>
-        <rect width="300" height="300" fill="url(#m1)"/>
-        <g fill="#2e2318" opacity=".18">
-          <ellipse cx="46" cy="60" rx="2.6" ry="1.8"/><ellipse cx="120" cy="42" rx="2" ry="1.4"/>
-          <ellipse cx="210" cy="86" rx="2.8" ry="1.9"/><ellipse cx="70" cy="196" rx="2.2" ry="1.5"/>
-          <ellipse cx="248" cy="214" rx="2.4" ry="1.6"/><ellipse cx="176" cy="256" rx="2" ry="1.4"/>
-        </g>
-        <path d="M150 0 V300" stroke="#2b2015" stroke-width="3" opacity=".5"/>
-        <path d="M153 0 V300" stroke="#cfb28c" stroke-width="1.2" opacity=".3"/>
-        <g stroke="#efe0c4" stroke-width="7" stroke-linecap="round" fill="none">
-          <line x1="134" y1="18" x2="166" y2="28"/>
-          <line x1="134" y1="43.4" x2="166" y2="53.4"/>
-          <line x1="134" y1="68.7" x2="166" y2="78.7"/>
-          <line x1="134" y1="94.1" x2="166" y2="104.1"/>
-          <line x1="134" y1="119.4" x2="166" y2="129.4"/>
-          <line x1="134" y1="144.8" x2="166" y2="154.8"/>
-          <line x1="134" y1="170.1" x2="166" y2="180.1"/>
-          <line x1="134" y1="195.5" x2="166" y2="205.5"/>
-          <line x1="134" y1="220.9" x2="166" y2="230.9"/>
-          <line x1="134" y1="246.2" x2="166" y2="256.2"/>
-          <line x1="134" y1="271.6" x2="166" y2="281.6"/>
-        </g>
-        <g stroke="#ecdfc7" stroke-width="1" opacity=".8" fill="none">
-          <path d="M22 268 H102"/><path d="M22 263 V273"/><path d="M102 263 V273"/>
-        </g>
-        <text x="22" y="290" font-family="Inter, 'Noto Sans SC', sans-serif" font-size="11"
-              fill="#f0e5cf">10 mm</text>
-      </svg>
+    <div>
+      <div class="panel" data-cc="18" data-cc-fill="#6a4628" data-cc-clip>
+        <svg width="313" height="220" viewBox="0 0 313 220" role="img" aria-label="A leather seam with stitches shown at scale 8:1">
+          <defs>
+            <linearGradient id="sx" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#a47549"/><stop offset=".55" stop-color="#83592f"/><stop offset="1" stop-color="#583819"/>
+            </linearGradient>
+            <filter id="sg" x="0" y="0" width="100%" height="100%">
+              <feTurbulence type="fractalNoise" baseFrequency=".32" numOctaves="4" seed="3" result="n"/>
+              <feDiffuseLighting in="n" surfaceScale="2.4" lighting-color="#fff" result="l"><feDistantLight azimuth="225" elevation="52"/></feDiffuseLighting>
+              <feComposite in="l" in2="SourceGraphic" operator="in"/>
+            </filter>
+            <g id="st">
+            <ellipse cx="0" cy="-12" rx="2.6" ry="1.8" fill="#24150a" opacity=".7"/>
+            <ellipse cx="0" cy="12" rx="2.6" ry="1.8" fill="#24150a" opacity=".7"/>
+            <path d="M-5 -10 L5 10" stroke="#5b4426" stroke-width="7" stroke-linecap="round" opacity=".55" transform="translate(1.5 1.5)"/>
+            <path d="M-5 -10 L5 10" stroke="#ead6ae" stroke-width="6" stroke-linecap="round"/>
+            <path d="M-4.4 -9 L1 2" stroke="#fff8e8" stroke-width="1.6" stroke-linecap="round" opacity=".8"/>
+          </g>
+          </defs>
+          <rect width="313" height="220" fill="url(#sx)"/>
+          <rect width="313" height="220" fill="#000" filter="url(#sg)" opacity=".28" style="mix-blend-mode:overlay"/>
+          <!-- creased stitch groove -->
+          <path d="M0 104 H313" stroke="#3a240f" stroke-width="2" opacity=".55"/>
+          <path d="M0 107 H313" stroke="#c39467" stroke-width="1" opacity=".35"/>
+          <!-- eleven saddle stitches at 25.4 px pitch -->
+          <g transform="translate(29 104)">
+            <use href="#st" x="0"/><use href="#st" x="25.4"/><use href="#st" x="50.8"/><use href="#st" x="76.2"/>
+            <use href="#st" x="101.6"/><use href="#st" x="127"/><use href="#st" x="152.4"/><use href="#st" x="177.8"/>
+            <use href="#st" x="203.2"/><use href="#st" x="228.6"/><use href="#st" x="254"/>
+          </g>
+          <g stroke="#f1e4cb" stroke-width="1" fill="none"><path d="M24 196 H104"/><path d="M24 192 V200"/><path d="M104 192 V200"/></g>
+          <text x="112" y="200" font-family="Inter,sans-serif" font-size="12" fill="#f4e9d4">10 mm</text>
+        </svg>
+      </div>
+      <p class="pnote"><b>The seam</b>8:1 · 3.17 mm pitch</p>
     </div>
 
-    <div class="panel" data-cc="18" data-cc-fill="#ffffff" data-cc-stroke="#d2d2d7" data-cc-clip>
-      <svg width="300" height="300" viewBox="0 0 300 300" aria-hidden="true">
-        <defs>
-          <linearGradient id="ply" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stop-color="#d3bd9b"/>
-            <stop offset=".35" stop-color="#bda37d"/>
-            <stop offset="1" stop-color="#9c7f58"/>
-          </linearGradient>
-        </defs>
-        <!-- one ply in section; the cut face is at the right -->
-        <rect x="86" y="104" width="198" height="74" fill="url(#ply)"/>
-        <path d="M86 104 H284" stroke="#e6d4b6" stroke-width="1.4" opacity=".75"/>
-        <path d="M86 178 H284" stroke="#6d5438" stroke-width="1.4" opacity=".5"/>
-        <g fill="#8a6c47" opacity=".26">
-          <ellipse cx="112" cy="122" rx="2.4" ry="1.6"/><ellipse cx="196" cy="132" rx="2" ry="1.4"/>
-          <ellipse cx="242" cy="114" rx="2.6" ry="1.8"/><ellipse cx="132" cy="164" rx="2.2" ry="1.5"/>
-        </g>
-        <!-- the thread seen through the cut: hidden inside the leather -->
-        <path d="M148 104 L164 178" stroke="#efe0c4" stroke-width="20" stroke-linecap="butt" opacity=".55"/>
-        <ellipse cx="148" cy="104" rx="10" ry="3.6" fill="#6d5438"/>
-        <ellipse cx="164" cy="178" rx="10" ry="3.6" fill="#4a3722"/>
-        <!-- painted edge over the cut face -->
-        <rect x="284" y="104" width="14" height="74" fill="#4f3a24"/>
-        <rect x="284" y="104" width="14" height="4" fill="#8a6c47"/>
-        <path d="M296 108 V174" stroke="#d8bd95" stroke-width="1.6" opacity=".55"/>
-        <!-- dimensions -->
-        <g stroke="#686056" stroke-width="1" opacity=".85" fill="none">
-          <path d="M64 104 V178"/><path d="M58 104 H70"/><path d="M58 178 H70"/>
-        </g>
-        <text x="4" y="145" font-family="Inter, 'Noto Sans SC', sans-serif" font-size="11"
-              fill="#30271d">3.2 mm</text>
-        <g stroke="#686056" stroke-width="1" opacity=".85" fill="none">
-          <path d="M291 178 V202 H196"/><path d="M196 196 V208"/>
-        </g>
-        <text x="192" y="206" text-anchor="end" font-family="Inter, 'Noto Sans SC', sans-serif"
-              font-size="11" fill="#30271d">0.6 mm</text>
-        <g stroke="#686056" stroke-width="1" opacity=".8" fill="none">
-          <path d="M24 268 H48"/><path d="M24 263 V273"/><path d="M48 263 V273"/>
-        </g>
-        <text x="24" y="290" font-family="Inter, 'Noto Sans SC', sans-serif" font-size="11"
-              fill="#686056">1 mm</text>
-      </svg>
+    <div>
+      <div class="panel" data-cc="18" data-cc-fill="#f3f2f0" data-cc-clip>
+        <svg width="313" height="220" viewBox="0 0 313 220" role="img" aria-label="A painted leather edge shown at scale 24:1">
+          <defs>
+            <linearGradient id="ply" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#9c6f45"/><stop offset=".5" stop-color="#b58a5c"/><stop offset="1" stop-color="#8a603a"/>
+            </linearGradient>
+            <filter id="fib" x="0" y="0" width="100%" height="100%">
+              <feTurbulence type="fractalNoise" baseFrequency=".02 .6" numOctaves="2" seed="11" result="n"/>
+              <feColorMatrix in="n" type="saturate" values="0"/>
+              <feComposite in2="SourceGraphic" operator="in"/>
+            </filter>
+          </defs>
+          <!-- 3.2 mm calf at 24:1 = 76.8 px, 0.6 mm paint = 14.4 px -->
+          <rect x="0" y="64" width="250" height="76.8" fill="url(#ply)"/>
+          <rect x="0" y="64" width="250" height="76.8" fill="#000" filter="url(#fib)" opacity=".2" style="mix-blend-mode:multiply"/>
+          <path d="M250 64 C258 64 264.4 74 264.4 102.4 C264.4 130.8 258 140.8 250 140.8 Z" fill="#2c1a0b"/>
+          <path d="M250 64 C258 64 264.4 74 264.4 102.4" fill="none" stroke="#7a5534" stroke-width="1.2" opacity=".8"/>
+          <g stroke="#686056" stroke-width="1" fill="none">
+            <path d="M286 64 V140.8"/><path d="M280 64 H292"/><path d="M280 140.8 H292"/>
+            <path d="M250 168 H264.4"/><path d="M250 162 V174"/><path d="M264.4 162 V174"/>
+          </g>
+          <text x="150" y="107" font-family="Inter,sans-serif" font-size="12" fill="#fff6e6">3.2 mm</text>
+          <text x="206" y="188" font-family="Inter,sans-serif" font-size="12" fill="#686056">0.6 mm</text>
+          <g stroke="#686056" stroke-width="1" fill="none"><path d="M24 196 H48"/><path d="M24 192 V200"/><path d="M48 192 V200"/></g>
+          <text x="56" y="200" font-family="Inter,sans-serif" font-size="12" fill="#686056">1 mm</text>
+        </svg>
+      </div>
+      <p class="pnote"><b>The edge</b>24:1 · 3.2 mm ply</p>
     </div>
-
-  </div>
-
-  <div class="t prow">
-    <p class="pnote"><b>The whole bag</b><br>1:2 · 36 cm wide, 26 cm tall</p>
-    <p class="pnote"><b>The seam</b><br>8:1 · 3.17 mm pitch</p>
-    <p class="pnote"><b>The edge</b><br>24:1 · 3.2 mm ply</p>
   </div>
 
   <p class="t close serif">Nothing is hidden between the three.</p>
   <p class="t price">The Voyage 36 · ¥17,600</p>
-
   <div class="t foot"><span>Illustrative example</span><span>Voyager material note · 2026</span></div>
+
 </div>
 <script src="../../_shared/continuous-corner.js"></script>
 </body>

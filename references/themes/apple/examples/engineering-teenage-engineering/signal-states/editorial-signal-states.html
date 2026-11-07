@@ -1,173 +1,18 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=1200">
-<title>Kit One — the states on the panel</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;display=swap" rel="stylesheet">
-<style>
-  :root{
-    --canvas:#f4f4ef; --panel:#ffffff; --dark:#272823;
-    --ink:#272823; --muted:#62635c; --action:#9a4100;
-    --onAction:#ffffff; --onDark:#ffffff; --hairline:#d2d2d7;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:#e4e4e0}
-  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
-  .unit{position:relative;width:1200px;height:1600px;overflow:hidden;background:var(--canvas)}
-  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
-  [data-cc]{position:relative;isolation:isolate}
-  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
-  .t{position:absolute}
-  svg{display:block}
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Kit One — signal states</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet"><style>
+:root{--apple-focus:#9a4100;--bg:#efefef;--white:#ffffff;--ink:#272823;--muted:#62635c;--line:#d2d2d7;--orange:#9a4100}*{box-sizing:border-box;margin:0}html,body{background:var(--bg);font-family:Inter,"Noto Sans SC",sans-serif;color:var(--ink)}.unit{width:1200px;height:1600px;overflow:hidden;background:var(--white)}.hero{height:1010px;position:relative;background:var(--bg)}.brand{position:absolute;left:78px;top:42px;font-size:18px;font-weight:600}.title{position:absolute;left:78px;top:105px;font-size:78px;line-height:1.02;letter-spacing:-3.5px;font-weight:600;width:960px}.sub{position:absolute;left:82px;top:300px;font-size:28px;line-height:1.35}.zh{position:absolute;left:82px;top:352px;font-size:24px}.panel{position:absolute;left:60px;top:430px;width:1080px;height:270px}.legend{position:absolute;left:82px;right:82px;top:740px;display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.state{border-top:1px solid var(--line);padding-top:13px}.state strong{font-size:20px;display:block}.state span{display:block;font-size:15px;line-height:1.4;color:var(--muted);margin-top:5px}.caption{position:absolute;left:82px;bottom:30px;font-size:16px;color:var(--muted)}.body{height:590px;padding:40px 82px 32px;position:relative;background:#fff}.lead{font-size:39px;line-height:1.15;letter-spacing:-1.4px;font-weight:600}.gproof{display:flex;align-items:center;gap:34px;margin-top:26px}.graypanel{width:500px;height:155px;background:#eeeeeb;border:1px solid #c9c9c6}.graycopy{max-width:470px}.graycopy h2{font-size:25px;line-height:1.2}.graycopy p{font-size:18px;line-height:1.4;margin-top:10px;color:#5f605a}.copy{max-width:900px;font-size:20px;line-height:1.5;margin-top:20px}.foot{position:absolute;left:82px;right:82px;bottom:25px;display:flex;justify-content:space-between;color:var(--muted);font-size:14px}
 
-  .brand{left:100px;top:48px;display:flex;align-items:baseline;gap:14px}
-  .brand .nm{font-size:14px;font-weight:600;letter-spacing:-.1px}
-  .brand .k{font-size:12px;font-weight:400;color:var(--muted)}
+:root{--apple-focus:#9a4100}.unit{max-width:1200px;margin-inline:auto}
+@media(max-width:900px){
+.unit{width:100%;height:auto;min-height:0;overflow:visible;display:flex;flex-direction:column}.hero{height:auto;padding:24px;display:flex;flex-direction:column;gap:16px}.brand,.title,.sub,.zh,.panel,.legend,.caption,.body,.foot{position:static;width:auto;height:auto;left:auto;right:auto;top:auto;bottom:auto}.title{font-size:clamp(40px,8vw,60px);line-height:1.05;letter-spacing:-1.2px}.sub{font-size:21px}.zh{font-size:19px}.panel{width:100%;height:auto;display:block}.legend{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.state{padding-top:9px}.state strong{font-size:18px}.state span{font-size:14px}.caption{font-size:13px;line-height:1.45}.body{height:auto;padding:28px 24px;background:#fff}.lead{font-size:clamp(28px,5.7vw,38px);line-height:1.2}.gproof{flex-direction:column;align-items:stretch;gap:16px}.graypanel{display:block;width:100%;height:auto;aspect-ratio:500/155}.graycopy{max-width:none}.graycopy h2{font-size:22px}.graycopy p,.copy{font-size:16px;line-height:1.5}.copy{margin-top:18px}.foot{position:static;margin-top:24px;display:flex;flex-wrap:wrap;gap:8px 24px;font-size:13px}
+}
+@media(max-width:480px){.legend{grid-template-columns:minmax(0,1fr)}}
 
-  .claim{left:100px;top:84px;width:1000px;font-size:48px;font-weight:600;line-height:1.1;letter-spacing:-1.5px}
-  .zhline{left:100px;top:206px;width:960px;font-size:22px;font-weight:400;line-height:1.5;color:var(--muted)}
 
-  .legend{position:absolute;left:860px;top:296px;width:240px}
-  .legend .h{font-size:14px;font-weight:600;line-height:1.4}
-  .item{display:flex;gap:14px;align-items:flex-start;margin-top:26px}
-  .item .n{font-size:17px;font-weight:600;line-height:1.3}
-  .item .d{margin-top:3px;font-size:13px;font-weight:400;line-height:1.45;color:var(--muted)}
-  .legend .note{margin-top:34px;font-size:13px;font-weight:400;line-height:1.55;color:var(--muted)}
+@media(min-width:501px) and (max-width:900px){body>.unit{padding-left:5vw!important;padding-right:5vw!important}}
 
-  .cap{left:100px;top:758px;width:720px;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
-  .rule{position:absolute;left:100px;top:798px;width:1000px;height:1px;background:var(--hairline)}
-
-  .lead{left:100px;top:822px;width:620px;font-size:24px;font-weight:400;line-height:1.5;letter-spacing:-.3px}
-  .body{left:100px;top:924px;width:600px;font-size:17px;font-weight:400;line-height:1.7}
-  .body p+p{margin-top:16px}
-
-  .greycap{left:100px;top:1288px;width:520px;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
-  .greynote{left:700px;top:1200px;width:400px;font-size:15px;font-weight:400;line-height:1.6;color:var(--muted)}
-
-  .close{left:100px;top:1340px;width:900px;font-size:21px;font-weight:600;line-height:1.45;letter-spacing:-.3px}
-  .foot{left:100px;top:1490px;width:1000px;display:flex;justify-content:space-between;font-size:12px;font-weight:400;line-height:1.5;color:var(--muted)}
-</style>
-</head>
-<body>
-<div class="unit" id="page">
-
-  <div class="t brand"><span class="nm">Kit</span><span class="k">Kit One · panel states</span></div>
-
-  <h1 class="t claim">One colour carries four states.<br>Nothing else on the panel is coloured.</h1>
-  <p class="t zhline zh">一种颜色承担四种状态，面板上别的地方不上色</p>
-
-  <svg width="720" height="450" viewBox="0 0 720 450" aria-hidden="true" style="position:absolute;left:100px;top:286px">
-    <g stroke="#272823" fill="none" stroke-width="1.5" stroke-linejoin="miter">
-      <rect x="0.75" y="0.75" width="718" height="448" fill="#ffffff"/>
-      <circle cx="16" cy="16" r="5"/><circle cx="704" cy="16" r="5"/>
-      <circle cx="16" cy="434" r="5"/><circle cx="704" cy="434" r="5"/>
-
-      <!-- four knobs -->
-      <circle cx="60" cy="70" r="33" fill="#272823" fill-opacity=".07"/>
-      <circle cx="150" cy="70" r="33" fill="#272823" fill-opacity=".07"/>
-      <circle cx="240" cy="70" r="33" fill="#272823" fill-opacity=".07"/>
-      <circle cx="330" cy="70" r="33" fill="#272823" fill-opacity=".07"/>
-      <circle cx="60" cy="70" r="21"/><circle cx="150" cy="70" r="21"/>
-      <circle cx="240" cy="70" r="21"/><circle cx="330" cy="70" r="21"/>
-      <path d="M 60 52 V 64 M 150 52 V 64 M 240 52 V 64 M 330 52 V 64"/>
-
-      <!-- speaker grille -->
-      <rect x="430" y="36" width="260" height="114"/>
-      <path stroke-width="1.2" d="M 442 48 H 678 M 442 60 H 678 M 442 72 H 678 M 442 84 H 678 M 442 96 H 678 M 442 108 H 678 M 442 120 H 678 M 442 132 H 678"/>
-
-      <!-- twelve keys -->
-      <rect x="40" y="200" width="138" height="66" fill="#f4f4ef"/>
-      <rect x="192" y="200" width="138" height="66" fill="#f4f4ef"/>
-      <rect x="344" y="200" width="138" height="66" fill="#f4f4ef"/>
-      <rect x="496" y="200" width="138" height="66" fill="#f4f4ef"/>
-      <rect x="40" y="282" width="138" height="66" fill="#f4f4ef"/>
-      <rect x="192" y="282" width="138" height="66" fill="#f4f4ef"/>
-      <rect x="344" y="282" width="138" height="66" fill="#f4f4ef"/>
-      <rect x="496" y="282" width="138" height="66" fill="#f4f4ef"/>
-      <rect x="40" y="364" width="138" height="66" fill="#f4f4ef"/>
-      <rect x="192" y="364" width="138" height="66" fill="#f4f4ef"/>
-      <rect x="344" y="364" width="138" height="66" fill="#f4f4ef"/>
-      <rect x="496" y="364" width="138" height="66" fill="#f4f4ef"/>
-    </g>
-
-    <!-- the one colour, spent on the twelve state lights -->
-    <g>
-      <!-- live: filled -->
-      <circle cx="57" cy="217" r="9" fill="#9a4100"/>
-      <circle cx="513" cy="299" r="9" fill="#9a4100"/>
-      <circle cx="361" cy="381" r="9" fill="#9a4100"/>
-      <!-- armed: outline -->
-      <circle cx="209" cy="217" r="8" fill="none" stroke="#9a4100" stroke-width="2.6"/>
-      <circle cx="57" cy="299" r="8" fill="none" stroke="#9a4100" stroke-width="2.6"/>
-      <circle cx="513" cy="381" r="8" fill="none" stroke="#9a4100" stroke-width="2.6"/>
-      <!-- waiting: dashed -->
-      <circle cx="361" cy="217" r="8" fill="none" stroke="#9a4100" stroke-width="1.8" stroke-dasharray="3 3"/>
-      <circle cx="209" cy="299" r="8" fill="none" stroke="#9a4100" stroke-width="1.8" stroke-dasharray="3 3"/>
-      <circle cx="57" cy="381" r="8" fill="none" stroke="#9a4100" stroke-width="1.8" stroke-dasharray="3 3"/>
-      <!-- off: hairline, no colour -->
-      <circle cx="513" cy="217" r="8" fill="none" stroke="#272823" stroke-opacity=".28" stroke-width="1.4"/>
-      <circle cx="361" cy="299" r="8" fill="none" stroke="#272823" stroke-opacity=".28" stroke-width="1.4"/>
-      <circle cx="209" cy="381" r="8" fill="none" stroke="#272823" stroke-opacity=".28" stroke-width="1.4"/>
-    </g>
-  </svg>
-
-  <div class="t legend">
-    <p class="h">States</p>
-    <div class="item">
-      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="10" fill="#9a4100"/></svg>
-      <div><p class="n">Live</p><p class="d">sounding now</p></div>
-    </div>
-    <div class="item">
-      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="9" fill="none" stroke="#9a4100" stroke-width="2.6"/></svg>
-      <div><p class="n">Armed</p><p class="d">queued for the next bar</p></div>
-    </div>
-    <div class="item">
-      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="9" fill="none" stroke="#9a4100" stroke-width="1.8" stroke-dasharray="3 3"/></svg>
-      <div><p class="n">Waiting</p><p class="d">in the pattern, not reached</p></div>
-    </div>
-    <div class="item">
-      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="9" fill="none" stroke="#272823" stroke-opacity=".28" stroke-width="1.4"/></svg>
-      <div><p class="n">Off</p><p class="d">not in the pattern</p></div>
-    </div>
-    <p class="note">No state is carried by colour alone.</p>
-  </div>
-
-  <p class="t cap">The panel at one moment. 12 keys, 4 knobs, four states, one colour. Drawn at 3×. Illustrative render, not a photograph.</p>
-
-  <div class="rule"></div>
-
-  <p class="t lead">The panel spends its one colour on state, and on nothing else.</p>
-
-  <div class="t body">
-    <p>Four states, one hue, and the difference is drawn. The colour sits in the same place on every key — a light at the top-left corner — and the state is how that light is filled.</p>
-    <p>Filled is live: the key is sounding now. An outline is armed: the key is queued for the next bar. A dashed outline is waiting: it is in the pattern, but the pattern has not reached it. A hairline is off: the key is not in the pattern at all.</p>
-  </div>
-
-  <svg width="540" height="72" viewBox="0 0 540 72" aria-hidden="true" style="position:absolute;left:100px;top:1200px">
-    <g stroke="#272823" fill="none" stroke-width="1.2">
-      <rect x="0.6" y="0.6" width="119" height="70" fill="#272823" fill-opacity=".04"/>
-      <rect x="140.6" y="0.6" width="119" height="70" fill="#272823" fill-opacity=".04"/>
-      <rect x="280.6" y="0.6" width="119" height="70" fill="#272823" fill-opacity=".04"/>
-      <rect x="420.6" y="0.6" width="119" height="70" fill="#272823" fill-opacity=".04"/>
-    </g>
-    <g>
-      <circle cx="18" cy="13" r="8" fill="#272823"/>
-      <circle cx="158" cy="13" r="7" fill="none" stroke="#272823" stroke-width="2.4"/>
-      <circle cx="298" cy="13" r="7" fill="none" stroke="#272823" stroke-width="1.6" stroke-dasharray="3 3"/>
-      <circle cx="438" cy="13" r="7" fill="none" stroke="#272823" stroke-opacity=".3" stroke-width="1.3"/>
-    </g>
-  </svg>
-
-  <p class="t greynote">Four keys, one grey ink. The states still separate, because they were never separated by colour.</p>
-  <p class="t greycap">With the colour removed, the four states still read.</p>
-
-  <p class="t close">The colour marks four states. Everything else on the panel is an edge.</p>
-
-  <div class="t foot"><span>Illustrative example</span><span>Illustrative render, not a photograph</span></div>
-</div>
-<script src="../../_shared/continuous-corner.js"></script>
-</body>
-</html>
+@media(min-width:501px) and (max-width:900px){.hero,.body{padding-left:5vw;padding-right:5vw}}
+</style><link rel="stylesheet" href="../../_shared/apple-interactions.css"></head><body><main class="unit"><section class="hero"><div class="brand">Kit One</div><h1 class="title">One colour carries four states.</h1><p class="sub">Nothing else on the panel is coloured.</p><p class="zh">一种颜色承担四种状态，面板上别的地方不上色</p>
+<svg class="panel" viewBox="0 0 1080 270" role="img" aria-label="Instrument control panel with state legend"><defs><linearGradient id="case" x2="0" y2="1"><stop stop-color="#f5f4ef"/><stop offset=".3" stop-color="#bdbeb7"/><stop offset=".55" stop-color="#f7f7f3"/><stop offset="1" stop-color="#a5a69f"/></linearGradient><linearGradient id="key" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#d6d7d1"/></linearGradient><filter id="shadow"><feGaussianBlur stdDeviation="9"/></filter></defs><ellipse cx="540" cy="240" rx="470" ry="17" fill="#000" opacity=".16" filter="url(#shadow)"/><rect x="35" y="41" width="1010" height="163" fill="url(#case)" stroke="#70716b" stroke-width="2"/><path d="M49 48h982" stroke="#fff" stroke-width="5"/><text x="65" y="76" fill="#686962" font-size="14" font-family="Inter">States</text><g fill="url(#key)" stroke="#5f605a" stroke-width="1.5"><rect x="60" y="105" width="64" height="69"/><rect x="137" y="105" width="64" height="69"/><rect x="214" y="105" width="64" height="69"/><rect x="291" y="105" width="64" height="69"/><rect x="368" y="105" width="64" height="69"/><rect x="445" y="105" width="64" height="69"/><rect x="522" y="105" width="64" height="69"/><rect x="599" y="105" width="64" height="69"/><rect x="676" y="105" width="64" height="69"/><rect x="753" y="105" width="64" height="69"/><rect x="830" y="105" width="64" height="69"/><rect x="907" y="105" width="64" height="69"/></g><rect x="60" y="105" width="64" height="69" fill="#9a4100"/><rect x="137" y="105" width="64" height="69" fill="none" stroke="#9a4100" stroke-width="4"/><rect x="214" y="105" width="64" height="69" fill="none" stroke="#9a4100" stroke-width="3" stroke-dasharray="6 5"/><g fill="#6c6d67"><circle cx="1010" cy="90" r="18"/><circle cx="1010" cy="144" r="18"/><circle cx="944" cy="72" r="13"/><circle cx="944" cy="183" r="13"/></g><path d="M995 85l30 10M995 139l30 10" stroke="#eee" stroke-width="2"/><g font-family="Inter" font-size="14" fill="#65665f"><text x="60" y="224">LIVE</text><text x="137" y="224">ARMED</text><text x="214" y="224">WAITING</text><text x="291" y="224">OFF</text><text x="962" y="224">4 knobs</text><text x="60" y="251">12 keys</text></g></svg>
+<div class="legend"><div class="state"><strong>Live</strong><span>sounding now</span></div><div class="state"><strong>Armed</strong><span>queued for the next bar</span></div><div class="state"><strong>Waiting</strong><span>in the pattern, not reached</span></div><div class="state"><strong>Off</strong><span>not in the pattern</span></div></div><p class="caption">The panel at one moment. 12 keys, 4 knobs, four states, one colour. · Illustrative render, not a photograph</p></section>
+<section class="body"><h2 class="lead">No state is carried by colour alone.</h2><div class="gproof"><svg role="img" class="graypanel" viewBox="0 0 500 155" aria-label="Same control panel with grey ink"><defs><linearGradient id="graycase" x2="0" y2="1"><stop stop-color="#eee"/><stop offset=".55" stop-color="#bbb"/><stop offset="1" stop-color="#dededb"/></linearGradient></defs><rect x="18" y="23" width="464" height="108" fill="url(#graycase)" stroke="#666" stroke-width="2"/><g fill="#eee" stroke="#555" stroke-width="1.5"><rect x="32" y="52" width="34" height="53"/><rect x="70" y="52" width="34" height="53"/><rect x="108" y="52" width="34" height="53"/><rect x="146" y="52" width="34" height="53"/><rect x="184" y="52" width="34" height="53"/><rect x="222" y="52" width="34" height="53"/><rect x="260" y="52" width="34" height="53"/><rect x="298" y="52" width="34" height="53"/><rect x="336" y="52" width="34" height="53"/><rect x="374" y="52" width="34" height="53"/><rect x="412" y="52" width="34" height="53"/><rect x="450" y="52" width="34" height="53"/></g><rect x="32" y="52" width="34" height="53" fill="#666"/><rect x="70" y="52" width="34" height="53" fill="none" stroke="#666" stroke-width="3"/><rect x="108" y="52" width="34" height="53" fill="none" stroke="#666" stroke-width="2" stroke-dasharray="4 3"/><circle cx="378" cy="38" r="8" fill="#666"/><circle cx="404" cy="38" r="8" fill="#666"/><circle cx="430" cy="38" r="8" fill="#666"/><circle cx="456" cy="38" r="8" fill="#666"/></svg><div class="graycopy"><h2>With the colour removed, the four states still read.</h2><p>Four keys, one grey ink. The states still separate, because they were never separated by colour.</p></div></div><p class="copy">The colour marks four states. Everything else on the panel is an edge.</p><footer class="foot"><span>Illustrative example</span><span>Kit One · panel states</span></footer></section></main><script src="../../_shared/continuous-corner.js"></script></body></html>

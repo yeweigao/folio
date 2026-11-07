@@ -2,187 +2,75 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1440">
-<title>Atelier — The range</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@400;600&amp;family=Noto+Serif+SC:wght@400;600&amp;family=Noto+Sans+SC:wght@400;600&amp;display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atelier — The leather series</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;family=Inter:wght@400;600&amp;family=Noto+Serif+SC:wght@400&amp;family=Noto+Sans+SC:wght@400&amp;display=swap" rel="stylesheet">
 <style>
-  :root{
-    --canvas:#ffffff; --panel:#f7f3eb; --dark:#24211d; --ink:#24211d;
-    --muted:#67615a; --action:#a74b00; --onAction:#ffffff; --hairline:#d2d2d7;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:#e7e5e1}
-  body{font-family:"Inter","Noto Sans SC",-apple-system,system-ui,sans-serif;color:var(--ink)}
-  .unit{position:relative;width:1440px;height:1000px;overflow:hidden;background:var(--canvas)}
-  .serif{font-family:"Cormorant Garamond","Noto Serif SC",Georgia,serif}
-  .zhserif{font-family:"Noto Serif SC","Cormorant Garamond",serif}
-  .zh{font-family:"Noto Sans SC","Inter",sans-serif}
-  .pad{padding:12px}
-  .t{position:absolute}
-  [data-cc]{position:relative;isolation:isolate}
-  .cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}
-  svg{display:block}
-  a{text-decoration:none}
+:root{--canvas:#fff;--panel:#f4f4f2;--ink:#24211d;--muted:#67615a;--action:#a74b00;--hairline:#d2d2d7}
+*{box-sizing:border-box;margin:0;padding:0}html,body{background:#fff}body{font-family:Inter,"Noto Sans SC",system-ui,sans-serif;color:var(--ink)}.unit{position:relative;width:1440px;height:1000px;overflow:hidden;background:var(--canvas)}.serif{font-family:"Cormorant Garamond","Noto Serif SC",Georgia,serif}.zh{font-family:"Noto Serif SC","Noto Sans SC",serif}.t{position:absolute}svg{display:block}[data-cc]{position:relative;isolation:isolate}.cc-bg{position:absolute;left:0;top:0;z-index:-1;pointer-events:none}a{text-decoration:none}
+.header{left:80px;top:32px;width:1280px;height:52px;display:flex;align-items:center;justify-content:space-between}.signature{display:flex;align-items:baseline;gap:24px}.signature .brand{font-size:28px;font-weight:600}.signature .series{font-size:16px;color:var(--muted)}.signature .zhline{font-size:16px;color:var(--muted)}.action{height:46px;padding:0 28px;display:flex;align-items:center;color:#fff;background:var(--action);font-size:17px}
+.title{left:80px;top:104px;width:1280px;display:flex;align-items:baseline;gap:22px}.title h1{font-size:62px;line-height:1.02;font-weight:400}.title p{font-size:24px;color:var(--muted)}
+.grid{left:80px;top:206px;width:1280px;height:664px;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:322px 322px;gap:20px}.tile{overflow:hidden;background:var(--panel);padding:24px}.lead{grid-column:1/3;grid-row:1/3;display:flex;flex-direction:column;padding:30px}.lead .object{flex:1;min-height:0;margin:8px -6px 12px}.lead .object svg{width:100%;height:100%}.lead .meta{display:grid;grid-template-columns:1fr auto;align-items:end;gap:16px}.lead .nm{font-size:29px;font-weight:600}.lead .claim{grid-column:1/3;margin-top:8px;font:32px/1.22 "Cormorant Garamond","Noto Serif SC",serif}.lead .price{font-size:21px;color:var(--muted)}
+.poster{display:flex;flex-direction:column;justify-content:space-between}.poster .top{display:flex;align-items:baseline;gap:12px}.poster .figure{font:132px/.78 "Cormorant Garamond","Noto Serif SC",serif}.poster .unit{font-size:18px;line-height:1.3;color:var(--muted);max-width:130px}.poster .seam{width:100%;height:90px}.poster .note{font-size:16px;line-height:1.4}.small{display:flex;flex-direction:column;justify-content:space-between}.small .art{flex:1;min-height:0;display:flex;align-items:center;justify-content:center}.small .art svg{width:100%;height:100%}.small .nm{font-size:22px;font-weight:600}.small .price{margin-top:5px;font-size:17px;color:var(--muted)}
+.footer{left:80px;top:894px;width:1280px;display:flex;justify-content:space-between;align-items:baseline;font-size:13px;color:var(--muted)}
+</style>
+<link rel="stylesheet" href="../../_shared/apple-interactions.css">
+<style data-review-reflow>
 
-  .nav{left:80px;top:0;width:1280px;height:56px;display:flex;align-items:center;justify-content:space-between}
-  .mark{font-family:"Cormorant Garamond",Georgia,serif;font-size:23px;font-weight:600}
-  .enquire{display:inline-flex;align-items:center;justify-content:center;height:44px;padding:0 28px;
-    font-size:17px;font-weight:400;color:var(--onAction)}
+:root{--apple-focus:#a74b00}
+@media(max-width:1440px){
+ .unit{position:relative;width:min(100%,1440px);min-height:100vh;height:auto;overflow:visible;margin:0 auto;padding:32px clamp(24px,5.55vw,80px) 24px;display:flex;flex-direction:column;gap:18px}
+ .t{position:static;left:auto;top:auto;width:auto;height:auto}
+ .header{min-height:52px;gap:18px;flex-wrap:wrap}.signature{gap:16px;flex-wrap:wrap}.signature .brand{font-size:26px}
+ .action{height:46px;flex:0 0 auto}
+ .title{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}.title h1{font-size:clamp(42px,5vw,62px);line-height:1.08;letter-spacing:-.035em}.title p{font-size:20px}
+ .grid{grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:322px 322px;gap:16px;height:auto}
+ .tile{min-width:0}.lead{grid-column:1/3;grid-row:1/3;padding:24px}.lead .nm{font-size:24px}.lead .claim{font-size:28px;line-height:1.25}.lead .price{font-size:18px}
+ .poster .figure{font-size:104px}.poster .unit{font-size:16px}.poster .note{font-size:16px}
+ .small .nm{font-size:20px}.small .price{font-size:16px}
+ .footer{margin-top:0;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px}
+}
+@media(max-width:900px){
+ .unit{gap:16px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto;grid-auto-rows:minmax(250px,auto)}
+ .lead{grid-column:1/-1;grid-row:auto;min-height:500px}.poster{grid-column:1/-1;min-height:245px}.small{min-height:250px}
+}
+@media(max-width:520px){
+ .unit{padding:24px 20px;gap:14px}.signature{gap:8px 14px}.signature .brand{font-size:23px}.signature .series,.signature .zhline{font-size:14px}
+ .title h1{font-size:39px}.title p{font-size:18px}
+ .grid{grid-template-columns:minmax(0,1fr);grid-auto-rows:auto;gap:12px}
+ .lead,.poster,.small{grid-column:1;grid-row:auto;min-height:0;padding:18px}
+ .lead{min-height:420px}.lead .object{min-height:240px}.lead .claim{font-size:24px}.lead .nm{font-size:22px}
+ .poster{min-height:230px}.poster .figure{font-size:82px}.poster .unit{max-width:150px}
+ .small{min-height:260px}.small .art{min-height:180px}.footer{flex-direction:column;font-size:13px}
+}
 
-  .title{left:80px;top:76px;width:1280px;display:flex;align-items:baseline;gap:24px}
-  .title h1{font-family:"Cormorant Garamond","Noto Serif SC",Georgia,serif;
-    font-size:46px;font-weight:400;line-height:1.1}
-  .title .zhsub{font-size:21px;font-weight:400;color:var(--muted)}
-
-  .grid{left:80px;top:176px;width:1280px;height:660px;
-    display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:340px 304px;gap:16px}
-  .tile{display:flex;flex-direction:column;overflow:hidden}
-  .tile .art{flex:1;min-height:0;overflow:hidden}
-  .tile .art svg{width:100%;height:100%}
-  .tile .meta{padding:0 0 4px 0}
-  .tile .nm{font-size:17px;font-weight:600;letter-spacing:normal}
-  .tile .pr{font-size:17px;font-weight:400;color:var(--muted);margin-top:4px;letter-spacing:normal}
-  .tile .clm{font-size:15px;font-weight:400;color:var(--muted);margin-top:12px;line-height:1.5;letter-spacing:normal}
-
-  .lead{grid-column:1 / 3;grid-row:1 / 3;padding:28px}
-  .lead .nm{font-family:"Cormorant Garamond","Noto Serif SC",Georgia,serif;
-    font-size:42px;font-weight:400;line-height:1.1}
-  .lead .art{margin:8px 0 22px 0}
-
-  .poster{grid-column:3;grid-row:1;padding:28px;justify-content:space-between}
-  .poster .big{font-family:"Cormorant Garamond",Georgia,serif;font-size:132px;font-weight:400;line-height:1}
-  .poster .pl{font-size:14px;font-weight:600;letter-spacing:normal}
-  .poster .pc{font-size:14px;font-weight:400;color:var(--muted);line-height:1.6;margin-top:10px;letter-spacing:normal}
-
-  .small{padding:24px}
-  .small .meta{margin-top:16px}
-
-  .cap{left:80px;top:856px;width:1280px;font-size:14px;font-weight:400;color:var(--muted);letter-spacing:normal}
-  .foot{left:80px;top:920px;width:1280px;display:flex;justify-content:space-between;
-    font-size:12px;font-weight:400;color:var(--muted);letter-spacing:normal}
 </style>
 </head>
-<body>
-<div class="unit" id="page">
-
-  <div class="t nav">
-    <span class="mark">Atelier</span>
-    <a class="enquire" href="#" data-cc="22" data-cc-fill="#a74b00">Enquire</a>
-  </div>
-
-  <div class="t title pad">
-    <h1>The leather series</h1>
-    <span class="zhsub zhserif">皮具系列</span>
-  </div>
-
-  <div class="t grid">
-
-    <div class="tile lead" data-cc="18" data-cc-fill="#f7f3eb" data-cc-clip>
-      <div class="art">
-        <svg viewBox="0 0 576 452" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-          <defs>
-            <linearGradient id="baghide" x1="0" y1="0" x2=".2" y2="1">
-              <stop offset="0" stop-color="#e9e0cf"/>
-              <stop offset=".55" stop-color="#d3c7b2"/>
-              <stop offset="1" stop-color="#b4a691"/>
-            </linearGradient>
-          </defs>
-          <path d="M212 132 C212 66 364 66 364 132" fill="none" stroke="#5c5245" stroke-width="13"/>
-          <path d="M92 132 L484 132 L508 404 L68 404 Z" fill="url(#baghide)"/>
-          <path d="M92 132 L484 132 L476 224 L100 224 Z" fill="#ddd1bd"/>
-          <path d="M100 224 L476 224" stroke="#8a7f6e" stroke-width="2" opacity=".55"/>
-          <g stroke="#4a4136" stroke-width="4" stroke-linecap="round">
-            <line x1="116" y1="212" x2="132" y2="226"/><line x1="160" y1="212" x2="176" y2="226"/>
-            <line x1="204" y1="212" x2="220" y2="226"/><line x1="248" y1="212" x2="264" y2="226"/>
-            <line x1="292" y1="212" x2="308" y2="226"/><line x1="336" y1="212" x2="352" y2="226"/>
-            <line x1="380" y1="212" x2="396" y2="226"/><line x1="424" y1="212" x2="440" y2="226"/>
-          </g>
-          <rect x="274" y="206" width="28" height="26" fill="#3a342c"/>
-          <rect x="280" y="212" width="16" height="6" fill="#8a7f6e" opacity=".7"/>
-          <path d="M92 132 L68 404 L96 404 L118 132 Z" fill="#000000" opacity=".07"/>
-          <path d="M484 132 L508 404 L480 404 L458 132 Z" fill="#000000" opacity=".07"/>
-          <rect x="68" y="398" width="440" height="6" fill="#3a342c" opacity=".8"/>
-        </svg>
-      </div>
-      <div class="meta">
-        <p class="nm">The Solstice</p>
-        <p class="clm">One bag, one hide, one hand.</p>
-        <p class="pr">¥12,800</p>
-      </div>
-    </div>
-
-    <div class="tile poster" data-cc="18" data-cc-fill="#f7f3eb" data-cc-clip>
-      <div class="big">9</div>
-      <div>
-        <p class="pl">stitches per centimetre</p>
-        <p class="pc">one saddle seam, set by hand</p>
-      </div>
-    </div>
-
-    <div class="tile small" data-cc="18" data-cc-fill="#f7f3eb" data-cc-clip>
-      <div class="art">
-        <svg viewBox="0 0 260 170" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-          <rect width="260" height="170" fill="#ddd1bd"/>
-          <path d="M0 0 L260 0 L260 170 L0 170 Z" fill="#e9e0cf" opacity=".5"/>
-          <path d="M0 108 L260 78" stroke="#8a7f6e" stroke-width="2" opacity=".55"/>
-          <g stroke="#4a4136" stroke-width="4" stroke-linecap="round">
-            <line x1="24" y1="98" x2="40" y2="114"/><line x1="70" y1="92" x2="86" y2="108"/>
-            <line x1="116" y1="86" x2="132" y2="102"/><line x1="162" y1="80" x2="178" y2="96"/>
-            <line x1="208" y1="74" x2="224" y2="90"/>
-          </g>
-          <rect x="0" y="158" width="260" height="12" fill="#3a342c"/>
-        </svg>
-      </div>
-      <div class="meta"><p class="nm">The Folio</p><p class="pr">¥3,400</p></div>
-    </div>
-
-    <div class="tile small" data-cc="18" data-cc-fill="#f7f3eb" data-cc-clip>
-      <div class="art">
-        <svg viewBox="0 0 260 170" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-          <rect width="260" height="170" fill="#d3c7b2"/>
-          <rect x="0" y="40" width="260" height="90" fill="#c1b29a"/>
-          <rect x="0" y="40" width="260" height="7" fill="#8a7f6e" opacity=".7"/>
-          <rect x="0" y="123" width="260" height="7" fill="#8a7f6e" opacity=".7"/>
-          <g fill="#3a342c">
-            <circle cx="46" cy="85" r="7"/><circle cx="86" cy="85" r="7"/>
-            <circle cx="126" cy="85" r="7"/>
-          </g>
-          <g stroke="#4a4136" stroke-width="3" stroke-linecap="round">
-            <line x1="20" y1="52" x2="34" y2="64"/><line x1="60" y1="52" x2="74" y2="64"/>
-            <line x1="100" y1="52" x2="114" y2="64"/><line x1="140" y1="52" x2="154" y2="64"/>
-            <line x1="180" y1="52" x2="194" y2="64"/><line x1="220" y1="52" x2="234" y2="64"/>
-          </g>
-        </svg>
-      </div>
-      <div class="meta"><p class="nm">The Cord</p><p class="pr">¥2,100</p></div>
-    </div>
-
-    <div class="tile small" data-cc="18" data-cc-fill="#f7f3eb" data-cc-clip>
-      <div class="art">
-        <svg viewBox="0 0 260 170" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-          <rect width="260" height="170" fill="#e9e0cf"/>
-          <path d="M30 34 L230 34 L244 140 L16 140 Z" fill="#d3c7b2"/>
-          <path d="M30 34 L230 34 L234 62 L26 62 Z" fill="#c1b29a"/>
-          <path d="M26 62 L234 62" stroke="#8a7f6e" stroke-width="2" opacity=".6"/>
-          <g stroke="#4a4136" stroke-width="3.5" stroke-linecap="round">
-            <line x1="40" y1="56" x2="52" y2="68"/><line x1="76" y1="56" x2="88" y2="68"/>
-            <line x1="112" y1="56" x2="124" y2="68"/><line x1="148" y1="56" x2="160" y2="68"/>
-            <line x1="184" y1="56" x2="196" y2="68"/><line x1="220" y1="56" x2="232" y2="68"/>
-          </g>
-          <rect x="112" y="96" width="36" height="22" fill="#3a342c"/>
-          <rect x="16" y="134" width="228" height="6" fill="#3a342c" opacity=".75"/>
-        </svg>
-      </div>
-      <div class="meta"><p class="nm">The Keepsake</p><p class="pr">¥4,600</p></div>
-    </div>
-
-  </div>
-
-  <p class="t cap pad">Illustrative render, not a photograph</p>
-  <div class="t foot pad"><span>Illustrative example</span><span>Atelier series · 2026</span></div>
-</div>
-<script src="../../_shared/continuous-corner.js"></script>
-</body>
-</html>
+<body><div class="unit">
+  <header class="t header"><div class="signature"><span class="brand serif">Atelier</span><span class="series">The leather series</span><span class="zhline zh">皮具系列</span></div><a data-apple-motion class="action" href="#" data-cc="23" data-cc-fill="#a74b00">Enquire</a></header>
+  <div class="t title"><h1 class="serif">One hand, four objects.</h1><p class="zh">一双手，四件作品</p></div>
+  <main class="t grid">
+    <section class="tile lead" data-cc="18" data-cc-fill="#f4f4f2" data-cc-clip>
+      <div class="object"><svg viewBox="0 0 560 440" role="img" aria-label="A structured leather bag, lit from the upper left">
+        <defs><linearGradient id="bag" x1=".1" y1="0" x2=".9" y2="1"><stop stop-color="#eee5d4"/><stop offset=".22" stop-color="#d6c3a4"/><stop offset=".55" stop-color="#b2936d"/><stop offset=".82" stop-color="#927453"/><stop offset="1" stop-color="#5c4936"/></linearGradient><linearGradient id="side" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#d9c7aa"/><stop offset="1" stop-color="#66533e"/></linearGradient><radialGradient id="shine" cx=".15" cy=".1" r=".85"><stop stop-color="#fff" stop-opacity=".78"/><stop offset=".45" stop-color="#fff" stop-opacity=".1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient><pattern id="pores" width="20" height="16" patternUnits="userSpaceOnUse"><path d="M2 5q4-3 7 0t8 0M5 12q3-2 7 1t6-1" fill="none" stroke="#523e29" stroke-opacity=".2" stroke-width=".8"/><circle cx="16" cy="4" r=".7" fill="#fff" opacity=".35"/></pattern><filter id="bagShadow" x="-.2" y="-.2" width="1.4" height="1.5"><feGaussianBlur stdDeviation="12"/></filter><clipPath id="bodyclip"><path d="M95 165Q97 142 127 139L436 139Q461 143 465 168L488 373Q492 399 463 405H98Q72 398 77 373Z"/></clipPath></defs>
+        <ellipse cx="279" cy="406" rx="192" ry="21" fill="#24211d" opacity=".24" filter="url(#bagShadow)"/>
+        <path d="M171 152C166 66 239 30 280 30S395 66 389 152" fill="none" stroke="#594631" stroke-width="20"/><path d="M178 150C177 80 238 48 280 48S382 80 382 150" fill="none" stroke="#d7c6a8" stroke-width="5"/><path d="M184 145C186 87 240 59 279 59S374 87 377 145" fill="none" stroke="#f3eadb" stroke-width="2" opacity=".65"/>
+        <path d="M95 165Q97 142 127 139L436 139Q461 143 465 168L488 373Q492 399 463 405H98Q72 398 77 373Z" fill="url(#bag)" stroke="#574431" stroke-width="2"/>
+        <g clip-path="url(#bodyclip)"><rect x="74" y="135" width="420" height="280" fill="url(#pores)" opacity=".72"/><rect x="74" y="135" width="420" height="280" fill="url(#shine)"/><path d="M108 158Q270 134 450 157" fill="none" stroke="#fff" stroke-opacity=".68" stroke-width="8"/><path d="M85 184Q111 245 100 365" fill="none" stroke="#f8eedf" stroke-opacity=".38" stroke-width="3"/></g>
+        <path d="M101 186H459L455 228H105Z" fill="url(#side)" opacity=".72"/><path d="M105 226H455" stroke="#574431" stroke-width="2" opacity=".75"/><path d="M112 218H448" stroke="#f6e8d3" stroke-width="2" stroke-dasharray="2 9" stroke-linecap="round" opacity=".9"/>
+        <path d="M114 236V373M448 236V373" stroke="#67523b" stroke-width="2" opacity=".62"/><path d="M120 240V368M442 240V368" stroke="#f2e5d0" stroke-width="1.5" opacity=".52"/>
+        <path d="M265 206h34v36h-34z" fill="#46423c"/><path d="M273 213h18v19h-18z" fill="#bec0bd"/><path d="M274 216h16" stroke="#fff" stroke-width="2" opacity=".8"/>
+        <path d="M96 386Q280 400 466 386" fill="none" stroke="#f5ead8" stroke-width="3" opacity=".68"/>
+      </svg></div>
+      <div class="meta"><div><p class="nm">The Solstice</p><p class="claim">One bag, one hide, one hand.</p></div><p class="price">¥12,800</p></div>
+    </section>
+    <section class="tile poster" data-cc="18" data-cc-fill="#fff" data-cc-clip><div class="top"><span class="figure">9</span><span class="unit">stitches per centimetre</span></div>
+      <svg class="seam" viewBox="0 0 270 90" aria-hidden="true"><defs><linearGradient id="leatherLine" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d4c2a7"/><stop offset="1" stop-color="#8d7658"/></linearGradient></defs><rect x="8" y="25" width="254" height="42" fill="url(#leatherLine)"/><path d="M8 25H262" stroke="#fff" stroke-width="4" opacity=".72"/><path d="M8 67H262" stroke="#51402d" stroke-width="4" opacity=".55"/><g stroke="#f8ecda" stroke-width="4" stroke-linecap="round"><path d="M30 31l16 27M58 31l16 27M86 31l16 27M114 31l16 27M142 31l16 27M170 31l16 27M198 31l16 27M226 31l16 27"/></g></svg>
+      <p class="note">one saddle seam, set by hand</p></section>
+    <section class="tile small" data-cc="18" data-cc-fill="#f4f4f2" data-cc-clip><div class="art"><svg viewBox="0 0 260 190" role="img" aria-label="Illustrative leather Folio bag"><defs><linearGradient id="folio" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#e5d7bf"/><stop offset=".55" stop-color="#ba9a73"/><stop offset="1" stop-color="#765b3e"/></linearGradient><filter id="folioShadow"><feGaussianBlur stdDeviation="5"/></filter></defs><ellipse cx="132" cy="159" rx="90" ry="10" fill="#24211d" opacity=".2" filter="url(#folioShadow)"/><path d="M55 35Q58 29 68 28H209Q216 29 216 38L205 148Q204 155 194 157H47Q41 154 43 147Z" fill="url(#folio)" stroke="#644c34"/><path d="M57 38Q125 47 212 35" fill="none" stroke="#fff" stroke-width="5" opacity=".6"/><path d="M50 62H210" stroke="#5f4830" stroke-width="2"/><path d="M63 143Q129 151 199 143" fill="none" stroke="#ead9be" stroke-width="2" stroke-dasharray="2 7"/><path d="M182 47L170 142" stroke="#f8eedf" stroke-opacity=".38" stroke-width="2"/></svg></div><div><p class="nm">The Folio</p><p class="price">¥3,400</p></div></section>
+    <section class="tile small" data-cc="18" data-cc-fill="#f4f4f2" data-cc-clip><div class="art"><svg viewBox="0 0 260 190" role="img" aria-label="Illustrative leather Cord strap"><defs><linearGradient id="cord" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e5d7bf"/><stop offset=".5" stop-color="#aa8b65"/><stop offset="1" stop-color="#57432e"/></linearGradient></defs><ellipse cx="130" cy="158" rx="91" ry="8" fill="#24211d" opacity=".18"/><path d="M35 120C46 64 73 47 116 61S185 126 220 95" fill="none" stroke="#6b5338" stroke-width="26" stroke-linecap="round"/><path d="M35 116C46 64 73 47 116 61S185 126 220 95" fill="none" stroke="url(#cord)" stroke-width="19" stroke-linecap="round"/><path d="M37 112C50 64 77 53 116 66S184 125 217 94" fill="none" stroke="#fff1d9" stroke-width="3" stroke-linecap="round" opacity=".56"/><g stroke="#57432e" stroke-width="2" opacity=".58"><path d="M48 101l13 7M60 79l14 7M79 64l12 9M102 64l-2 15M125 72l-6 15M149 88l-8 14M173 108l-8 12M196 105l3 13"/></g></svg></div><div><p class="nm">The Cord</p><p class="price">¥2,100</p></div></section>
+    <section class="tile small" data-cc="18" data-cc-fill="#f4f4f2" data-cc-clip><div class="art"><svg viewBox="0 0 260 190" role="img" aria-label="Illustrative leather Keepsake case"><defs><linearGradient id="keepsake" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#eee2cf"/><stop offset=".45" stop-color="#c6a984"/><stop offset="1" stop-color="#7c6245"/></linearGradient><filter id="caseShadow"><feGaussianBlur stdDeviation="5"/></filter></defs><ellipse cx="130" cy="159" rx="72" ry="9" fill="#24211d" opacity=".2" filter="url(#caseShadow)"/><path d="M69 69Q70 56 84 54H177Q190 57 191 71L184 145Q182 154 171 156H76Q64 154 66 144Z" fill="url(#keepsake)" stroke="#69533c" stroke-width="1.5"/><path d="M75 66Q124 72 185 65L182 98Q126 105 71 97Z" fill="#d9c4a5"/><path d="M72 98Q124 106 183 98" fill="none" stroke="#5e4933" stroke-width="2"/><path d="M73 101Q124 108 182 101" fill="none" stroke="#f3e6d2" stroke-width="2" stroke-dasharray="2 7"/><path d="M82 60Q105 51 171 59" fill="none" stroke="#fff" stroke-width="4" opacity=".62"/><path d="M169 68v25" stroke="#e9d6b8" stroke-width="5" stroke-linecap="round"/></svg></div><div><p class="nm">The Keepsake</p><p class="price">¥4,600</p></div></section>
+  </main>
+  <footer class="t footer"><span>Illustrative render, not a photograph</span><span>Illustrative example · Atelier series · 2026</span></footer>
+</div><script src="../../_shared/continuous-corner.js"></script></body></html>

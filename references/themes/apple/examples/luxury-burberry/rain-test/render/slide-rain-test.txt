@@ -1,27 +1,45 @@
 Highland
+
 The Highland Rain Test
+
 高地雨测
+
 What the sky gave,
 the cloth held.
 天给了多少，布就接住多少
+
 8,000 mm
+
 hydrostatic head held
+
 Measured against one storm, not a laboratory claim.
-14 October 2026, Glen Orra test field
-Rainfall
-48 mm/h
-Duration
-6 h
-Wind
-64 km/h
-Temperature
-7 °C
-Highland field log, 14 October 2026
-Read the field log
-Illustrative example
-A section through the cloth
+
 outer cloth
 weather membrane
 lining
-The single blue line is where the measured water stopped.
+
 Illustrative render, not a photograph
+
+Rainfall
+
+48 mm/h
+
+Duration
+
+6 h
+
+Wind
+
+64 km/h
+
+Temperature
+
+7 °C
+
+14 October 2026 · Glen Orra test field ·Highland field log, 14 October 2026
+
+Read the field log ›
+Illustrative example
+outer cloth
+weather membrane
+lining

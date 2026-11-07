@@ -1,5 +1,4 @@
 Aero
-Airflow note
 The air's route is fixed.
 Its pressure is lost in one place.
 
@@ -13,20 +12,19 @@ Outlet
 +38 Pa
 0 Pa
 −38 Pa
+76 Pa
+2,100 rpm
+420 L/s
 
-Static pressure along the route, measured from the bell mouth to the grille, one run.
 Illustrative render, not a photograph
 
-A filter is the only part of Aero
-that removes something.
+A filter is the only part of Aero that removes something.
 
 滤网是 Aero 唯一取走东西的部件
 
-Air enters at the bell mouth and leaves at the grille without being turned aside. Between those two points the path is fixed: one throat, one rotor, one diffuser, one nozzle. Nothing branches, and nothing is stored.
+Air enters at the bell mouth and leaves at the grille without turning aside. The path stays fixed through one throat, one rotor, one diffuser and one nozzle; the filter is where pressure first falls.
 
-At the filter the static pressure falls by 38 Pa and does not come back on its own. The rotor has to pay for it: 76 Pa across the blade disc, at 2,100 rpm. Everything the fan does downstream is the recovery of that one debt.
-
-The outlet figure is what remains after the debt is settled. 420 L/s leaves the grille because the machine has already spent the pressure it took to clean the air.
+Across the filter, the pressure drops 38 Pa. The impeller returns 76 Pa at 2,100 rpm, leaving the outlet with 420 L/s. The curve above follows the same five stations from bell mouth to grille, measured from the bell mouth to the grille, one run.
 
 Illustrative example
 Aero airflow note, 2026
@@ -38,3 +36,6 @@ Outlet
 +38 Pa
 0 Pa
 −38 Pa
+76 Pa
+2,100 rpm
+420 L/s

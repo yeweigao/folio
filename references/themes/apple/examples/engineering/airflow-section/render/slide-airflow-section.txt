@@ -1,32 +1,32 @@
 Aero
 Airflow section
-Every figure hangs from the
-station that measured it.
+Every figure hangs from the station that measured it.
 
 每个数字都挂在测量它的那一段上
 
 Cutaway at the horizontal axis. The wall is shown solid, at its full thickness.
 
 Inlet
-
+Filter
+Impeller
+Diffuser
+Outlet
+Inlet
 96 mm
 
 throat at the bell mouth
 
 Impeller
-
 2,100 rpm
 
 nine blades, one speed
 
 Diffuser
-
 38 Pa
 
 pressure recovered
 
 Outlet
-
 420 L/s
 
 airflow, 1 m from the grille
@@ -35,3 +35,8 @@ Fictional test figures at 44 dB(A), Aero engineering note, 2026.
 
 Illustrative example
 Illustrative render, not a photograph
+Inlet
+Filter
+Impeller
+Diffuser
+Outlet

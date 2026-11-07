@@ -1,69 +1,54 @@
-# Volt, a small electric car · Apple + Showroom, Tesla hand
+# Volt · Apple + Tesla, Showroom
 
-A visual world for a fictional small electric car, not a real Tesla product: one photograph, one message, one price per screen, and a configurator that never leaves the screen. Dialect: Showroom, governing hand Tesla. Surfaces shown: Keynote slide, Store card, Editorial opener; Bento grid as a variation for a range unit only.
+Volt's world: a small electric car in a night showroom, its price always in view.
 
-> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts. The photograph proves the claim; the price stays visible.
+> Use alone: read Overview and Images before any value; build the grid from your format by Layout. Tokens are at S = 1000 (S, the format's short side) and scale by S ÷ 1000, except a size the file derives from the format or a span, which is computed, never scaled. Content in one language takes that language's sizes. A unit carries one form, or a lead form with a quiet one beneath. A piece that must break a rule says why; a break every piece needs changes this file first. Check the piece against Do's and Don'ts.
 
 ## Overview
-
-Apple as base, Showroom as dialect, Tesla as governing hand — Compose one full-viewport object photograph with price and options at the decision point; never tile a single-object hero or hide the configurator behind atmosphere.
-
-World: Volt, a small electric car, its range, its price, its options, its configurator, across a launch deck, a configurator page and a story opener. Keep Apple's single-accent discipline and one lead per screen; let Tesla's philosophy govern the look — full-viewport photograph, normal tracking, two weights only, small square buttons, one electric blue for the primary action only, price and configurator always visible.
-
-Method: Separate the content into a claim, its visible evidence and a decision or lookup task. Build the proof field before setting the labels; select Keynote, Store or Editorial structure by the reader's task, then recompose the reading axis and crop for the actual format.
-
-Amplitude: full on covers, heroes and vistas; reduced on Store, reference and specification units.
-
-Anti-reference: a dealer page: the object in a card grid under a discount banner.
+Apple + Tesla style — Compose one full-viewport object scene with the price at the decision point; never put the vehicle in a card grid or hide its configurator behind atmosphere.
+World: A fictional small electric-car range, across launch, configuration and route stories. Every piece keeps the complete vehicle silhouette, one message and a visible price when selling; each brings a different buyer decision or journey. Translate a new subject by locating the object, its material and the proof the buyer can judge. A selling page keeps its live price and options together as the image changes.
+Method: Begin with the object's silhouette and the selling question. Choose a camera angle that makes the material and shape legible, then place the short claim in the calmest part of the image. The reader moves from object to message to price and options; where the page sells, price and configuration remain in one stationary decision band. A route story can give the landscape the lead only when the route is the proof and the vehicle remains identifiable. Prefer a shaded illustrative render when no cleared photograph exists; a flat line drawing cannot stand in for the object.
+Amplitude: Full on the car and its surrounding field; reduced on controls, price detail and secondary specifications.
+Anti-reference: A dealer catalogue of floating car cards under a discount banner.
 
 ## Images
-
-Full-viewport cinematic photographs of the car, one per screen, silhouette intact, material readable. No card grid pretending to be a showroom, no chrome competing with the photograph. Car photographs are generated stand-ins, not a real manufacturer's photographs, and are labelled as such. Crop: cover claim sits in a calm light zone (sky or light ground), never over a dark bumper or windshield, and is shortened until it reads over light ground.
+Use a generated or supplied image of the fictional object; never use Tesla or Apple product imagery, a real owner's photo, badge, wordmark or vehicle interface. In these examples the vehicle is a layered vector illustration, disclosed with Illustrative render, not a photograph; vehicleBody is the painted shell, vehicleGlass the glazing, and vehicleHighlight the reflected edge. The drawing is a stand-in, not evidence of a real car or performance. Give it at least half of a cover's useful field. Keep the whole silhouette on launch and configure surfaces; on the road story the landscape may meet the trim, but its road and distant car must remain legible. Scale source proportions uniformly. The live headline sits on an unplated calm zone; if contrast fails, move the text or adjust the image field, never add chrome. No content is baked into the image.
 
 ## Layout
-
-Grid system: Gallery field — derive the proof field and one reading axis from W × H; Store subdivides that field into equal peers, Editorial joins it to a reading column, and Keynote assigns one claim to each slide.
-
-One full-viewport screen per message, scrolling to the next screen rather than stacking sections on one page. Slide field 16:9, one thesis per slide, photograph full-bleed with live title in the calm zone. Store field: configurator with price, options and blue primary action always visible while the photograph changes. Editorial field: one centred column opening with a full-bleed photograph, then long leads with the price present but quiet. Text sits at least 11.34 inside its shape; a title clears its descenders before anything below it; a number group sits mid-frame, number, label and context spaced down. Containers may centre; body, leads, captions, card names and prices stay flush left, ragged right; only hero, vista and cover headlines centre.
+Grid system: Full viewport field — the object sets the screen's balance; the decision apparatus stays anchored.
+Derive a 12-track field from W × H with margin max(5% of W, 0.06S) and gutter margin/4. In landscape, give the vehicle at least 7 tracks and the text or decision group no more than 5; the calm area follows the actual silhouette, not a fixed side rule. In Store, place the rendered object across the first 8 tracks and keep options plus running price in the remaining tracks and bottom action band. The buy band stays at the trim. In editorial, the full-bleed landscape opens the page; the reading column below is centered, capped at 980 px and 65 Latin characters, flush-left. Portrait formats stack image first, choice and price next. Use the same baseline for price, option deltas and action; do not stagger them for rhythm.
 
 ## Typography
 
-A display face and a text face with normal letter-spacing at every size — the explicit break with Apple's negative tracking. Only two weights: a medium weight for heroes, a regular weight for interface text. Most interface text is small; heroes are restrained, never heavy.
-
-Concrete type for this fictional world: Inter for display, Inter for body and labels; pair Chinese with Noto Serif SC for serif display and Noto Sans SC for sans roles. Open-source substitutes, not the brand's own faces.
+Voice: Tesla's geometric sans, set in Montserrat, the nearest open face of that lineage. Use Montserrat for Latin and Noto Sans SC for Chinese interface and body; Noto Serif SC may carry a Chinese editorial title only when the bilingual story requires a distinct display voice. Load open-source faces from Google Fonts, no Apple or Tesla file. Use only two weights: 400 for body and labels, 600 for titles and primary action. At S = 1000: display 64 px / 600 / 1.08; heading 44 / 600 / 1.1; lead 28 / 400 / 1.45; body 17 / 400 / 1.5; label 14 / 400 / 1.4; caption 12 / 400 / 1.5; primary figure 144 / 600 / 1.0. Tracking stays normal at all sizes. Use tabular figures for prices, ranges and deltas. The object and amount outrank the slogan. On slides the Keynote floors hold: slide title at least 0.1 S, body at least 0.037 S.
 
 ## Colors
 
-Neutral grounds — dark carbon, graphite, pewter, light ash — with one electric blue for primary calls to action only, never as a field, never as decoration, never beside a second hue. No gradients, no shadows, no borders as decoration. The only chrome is a frosted nav on scroll.
-
-Concrete field roles: canvas is carbon, panel graphite and dark the hero polarity; ink, muted and onDark are light reading colours. Hairline is reserved for a functional option divider. Action is electric blue for the primary action only, with onAction text. Keep body and secondary actions neutral. Reading text uses only the pairs in Tokens. Accent: electric blue replaces every Apple blue role.
+Ground: carbon, the night showroom this world chose; the photograph brings the light. Carbon canvas and near-black photo void are fields, graphite is the neutral surface, ash is readable text, pewter labels the vehicle rendering and secondary information. Tesla blue marks the primary action and keyboard focus only; links stay neutral, and blue never fills a field or changes the object rendering. No gradient, decorative border, card shadow or second accent. Hairline appears only between functional option groups.
 
 ## Shapes
-
-Every nonzero radius takes Apple's continuous corner; square forms stay square. One corner, inward from the corner point in units of R: `M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0`. R is at most half the shorter side; a side shorter than 3.05732R shortens its shoulder to half the side, toward the native saturated form (first cubic 0 1, 0 .96, 0 .82). Build it natively (`.continuous`), as this path in SVG, canvas, clip or a slide freeform, or in Figma at 60% smoothing; never `border-radius`, `rect rx`, a preset or a superellipse. Fill, stroke and media clip share one path; nested corners share centres, inner R = max(0, outer R − gap).
-
-Buttons are small squares, never pill. Primary in electric blue, secondary as frosted or ghost treatments. No shadowed cards, no gradient wash, no bordered panels as decoration.
+Tesla's example world uses square corners and no decorative borders or shadows. Every radius is zero. If a future control requires a nonzero corner, use only Apple's continuous corner M 0 1.52866 C 0 1.08849 0 .86841 .07491 .63149 C .16906 .37282 .37282 .16906 .63149 .07491 C .86841 0 1.08849 0 1.52866 0, built with the shared continuous-corner.js helper; fill, stroke and clip share one path. No CSS radius, rect rx, preset curve or shadow. The Tesla render stays flat and carries no cast shadow.
 
 ## Forms
-
-- Keynote: one thesis per slide, one full-bleed photograph per slide, live title in the calm zone.
-- Store: configurator — price, options and blue primary action always visible, photograph changing behind them.
-- Editorial: full-bleed photograph opener, then long leads; price present but quiet, never the headline. The opener is a photographic vista — a full-bleed car photograph with one headline and at most one action.
-- Flyer: one A4 sheet, real internal padding so no text touches a frame edge, one claim, one dominant image, figure or price at display size in the footer rule.
-- Website: full-width hero image, hero plus three sections plus footer, hierarchy carried by size and weight, centred container with flush-left body, leads, captions and prices.
-- Bento grid: range units only — many Volt variants on one page, one object and one price per tile, each tile with its own photograph. Bento never visits a single-object hero unit. Tiles index; they do not prove: each claim is proved in a following unit or carries its own figure; a range tile's price is its check, not its proof of range.
+- Keynote: one thesis, one full-bleed vehicle render and one live title in a calm zone. Keep the from-price and the range figure visible together; one primary square action may use blue.
+- Store: a single-car configurator, not a card collection. Keep the object large, options grouped by decision, selection states neutral, and running price plus reserve action fixed in the decision band. The image may change while the price does not leave.
+- Editorial: one road or landscape vista opens the argument, then a single reading column explains route, range and source. The price is quiet and blue is reserved for one primary link only where the page is navigable.
 
 ## Variations
-
-One break per unit. A configurator turn: the photograph changes while price, options and action stay fixed. A subtraction turn: remove everything that does not change the photograph, the message or the price.
+One route vista may take the full-bleed landscape for an environmental story. One configuration turn may change the image while holding choice groups, running price and action on the same baseline. No other departure uses a gradient, shadow, or decorative border.
 
 ## Do's and Don'ts
 
-Do: one photograph and one message per screen, normal tracking, price and configurator always visible, one electric blue for action only, frosted nav only. Don't: a pill button, tight tracking, a heavy headline, a gradient wash, a shadowed card, a price hidden until checkout, three messages stacked on one screen, a second accent colour.
+Floors: facts match each brief exactly; declare every illustration; maintain 4.5:1 text contrast (3:1 for large type); keep reading text live and at its declared size floor for the intended viewing distance; make static output complete as a still; recompose each format instead of scaling a layout; use only original or licensed assets.
+
+Render check: at first view, the complete vehicle silhouette, live price and next option can be found without relying on a caption or badge.
+
+Test: Remove blue and price; the silhouette and message still read as Tesla showroom. Swap the hand; its calm image-plus-configurator relationship should no longer fit.
+
+Caricature: a cinematic night render whose reflections hide the vehicle's silhouette and whose buyer choices arrive only after checkout.
 
 ## Tokens
-
-Authored for this fictional world at S = 1000; radius sets size, the contour is continuous corner. Product-image colours and hero gradients are source imagery, not additional action colours.
+All values are authored for this fictional world at S = 1000. Vehicle drawing colors represent illustrative paint and glass; the only interface accent is Tesla blue.
 
 ```yaml
 colors:
@@ -72,42 +57,49 @@ colors:
   dark: "#171a20"
   ink: "#f5f5f7"
   muted: "#d2d4d8"
+  mutedDark: "#d2d4d8"
+  pewter: "#5a6068"
+  vehicleBody: "#4a505a"
+  vehicleGlass: "#262b32"
+  vehicleHighlight: "#a9afb8"
   action: "#1559b7"
+  focus: "#1559b7"
+  link: "#f5f5f7"
   onAction: "#ffffff"
   onDark: "#f5f5f7"
-  hairline: "#d2d2d7"
+  hairline: "#6c737c"
 typography:
-  display: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 56, fontWeight: 500, lineHeight: 1.07 }
-  heading: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 40, fontWeight: 500, lineHeight: 1.1 }
-  lead: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 28, fontWeight: 400, lineHeight: 1.3 }
-  body: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.47 }
-  label: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
-  fine: { fontFamily: "Inter, Noto Sans SC, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: 1.5 }
+  display: { fontFamily: "Montserrat, Noto Sans SC, sans-serif", fontSize: 64, fontWeight: 600, lineHeight: 1.08 }
+  heading: { fontFamily: "Montserrat, Noto Sans SC, sans-serif", fontSize: 44, fontWeight: 600, lineHeight: 1.1 }
+  lead: { fontFamily: "Montserrat, Noto Sans SC, sans-serif", fontSize: 28, fontWeight: 400, lineHeight: 1.45 }
+  body: { fontFamily: "Montserrat, Noto Sans SC, sans-serif", fontSize: 17, fontWeight: 400, lineHeight: 1.5 }
+  label: { fontFamily: "Montserrat, Noto Sans SC, sans-serif", fontSize: 14, fontWeight: 400, lineHeight: 1.4 }
+  caption: { fontFamily: "Montserrat, Noto Sans SC, sans-serif", fontSize: 12, fontWeight: 400, lineHeight: 1.5 }
+  figure: { fontFamily: "Montserrat, Noto Sans SC, sans-serif", fontSize: 144, fontWeight: 600, lineHeight: 1.0 }
 spacing:
   unit: 8
-  textInset: 11.34
-  cardInset: 24
-  proofGap: 40
-  tileInset: 80
+  pair: 16
+  group: 24
+  section: 64
+  imageText: 24
+  controlRow: 56
 rounded:
-  small: 0
-  control: 0
-  card: 0
+  all: 0
 corners:
   contour: "continuous corner"
-  smoothing: 0.6
   shoulderExtent: 1.52866
   innerRadius: "max(0, outerRadius - gap)"
 pairs:
   ink-on-canvas: { backgroundColor: "{colors.canvas}", textColor: "{colors.ink}" }
-  ink-on-panel: { backgroundColor: "{colors.panel}", textColor: "{colors.ink}" }
   muted-on-canvas: { backgroundColor: "{colors.canvas}", textColor: "{colors.muted}" }
+  ink-on-panel: { backgroundColor: "{colors.panel}", textColor: "{colors.ink}" }
   muted-on-panel: { backgroundColor: "{colors.panel}", textColor: "{colors.muted}" }
+  mutedDark-on-dark: { backgroundColor: "{colors.dark}", textColor: "{colors.mutedDark}" }
   onDark-on-dark: { backgroundColor: "{colors.dark}", textColor: "{colors.onDark}" }
   onAction-on-action: { backgroundColor: "{colors.action}", textColor: "{colors.onAction}" }
+  link-on-canvas: { backgroundColor: "{colors.canvas}", textColor: "{colors.link}" }
 ```
 
 ## Record
-
-Folio version: 1.1.0. Template version: 14. Date: 2026-11-05.
-Pieces: per-charge (Keynote), configure (Store), one-road (Editorial), each made from this file alone. Subject is fictional; no Tesla product, photograph, logo or font file is used. Tokens are authored for this world, not measured from the brand.
+Folio version: 1.1.0. Template version: 14. Date: 2026-11-07.
+Pieces: per-charge (Keynote), configure (Store), one-road (Editorial), each made from this file alone. Subject is fictional; no Tesla product, photograph, logo or font file is used. Changes after the lock: none.

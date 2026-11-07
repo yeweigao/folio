@@ -19,13 +19,13 @@ Read the draft as a maker who cannot see the images: which missing decision coul
 - **A world, not a piece.** A brand, a series, or a kind of content: the scope its content shares. What every piece keeps and what each piece brings are both stated; no fact of any piece appears, not even as an example.
 - **It stands alone.** With this file and their content, a maker without Folio can make the piece: the method, how a new subject yields its idea, how the method translates to content it was not made for, and the forms any content needs. A master's method has no unsuitable content.
 - **Three layers, one voice.** The Philosophy, the theme and the dialect are written merged, never side by side. A rule the dialect overturns is written only in the dialect's form; what it does not name is written from the theme as this world's values, since the file stands alone; what the chosen theme says its dialect keeps stays. Where a theme combines an industry dialect, a surface and a method, resolve their precedence there and write the resulting rules as one voice. The Philosophy is never quoted and never bent: each line is answered by a rule in this world's terms.
-- **Relative to the format, never one size.** Every size derives from S, the format's short side, and every construction from W × H, so the same file builds a poster, a slide, a phone cover or a page. A size set by a span is derived, never also fixed: one rule per size.
+- **Relative to the format, never one size.** Every size derives from S, the format's short side, and every construction from W × H, so the same file builds a poster, a slide, a phone cover or a page. A token is a floor at S, never a ceiling. On a page that scrolls, S is 1000 at a 1440 px viewport and scales with its width, never below the surface's phone floor. A size set by a span is derived, never also fixed: one rule per size.
 - **Three tests per line.** Would a maker get it wrong without it? Is it the rule, not one result of it (a ratio, not 336)? Does it say what no other line says? A line that fails one goes; a skeleton of rules, not instances, has nothing to contradict.
 - **No rule against itself.** Every rule holds for Latin and Chinese, for one language or two, for every form; a translation in World is never banned in Forms. Where two rules meet, the file says which wins.
 - **Method before look.** The invocation opens it: school, hand, the work that carries the method, the method as an imperative, one ban. Then the method as process: the first move, the tools and materials, how the subject yields different compositional relationships, and the visible evidence for choosing among them. State this hand's criterion in the world's terms; a material-dependent decision and a usable reading path must survive the choice. Values read first teach a look.
 - **Images decided once.** Source, treatment and credit; how each image role meets the frame (full bleed, trim-connected panel or inset), what must survive the crop, and how proportions are preserved.
 - **Layout as construction, not coordinates.** The grid system named, with the rule that derives it from any format.
-- **Forms, one line each.** How each form this world uses is set, and its ban. For a text-heavy world, specify paragraph measure and continuation, how genuine peers share columns, and how table/data rules differ from graphic framing; test these with new text rather than infer them from a cover.
+- **Forms, one line each.** How each form this world uses is set: what leads, how much of the frame it takes, its scale against the headline, and its ban. On a screen, what moves, what the reader can touch, and why; the content stands complete without it. For a text-heavy world, specify paragraph measure and continuation, how genuine peers share columns, and how table/data rules differ from graphic framing; test these with new text rather than infer them from a cover.
 - **Tokens derived, not inherited.** From the hand and the world, at the end as data. A role only if used, every role used. Every text-on-ground pair is listed under `pairs`, so contrast can be checked.
 - **Written as commands.** After the lock, helpers read this file instead of the theme.
 - **The file changes before work made from it.** A new or changed file is read by the skeleton reader ([review](review.md#skeleton-reader)) before its first new piece. Reference reconstruction precedes extraction as described above.
@@ -54,13 +54,13 @@ Grid system: <one system from the theme's roster> — <why>.
 <Assign a face and real weight to each role, with licensed sources or supplied files and the glyph coverage needed for new content. Give the size/weight ramp at S = 1000 or a span-derived rule, the smallest reading size, CJK/Latin relationship and figures. Name what visibly separates the levels; where scale leads, state the role-to-role size ratios. Where display leads, state its scale and weight in the field. Recompose long titles within the hierarchy.>
 
 ## Colors
-<Each role: what it marks, the grounds it touches, where it never appears.>
+<Where the ground comes from: the hand's signature or the theme's grounds. Each role: what it marks, the grounds it touches, where it never appears.>
 
 ## Shapes
 <Edges, rules, radius and depth. For identity-bearing motifs or constructed letters, define intrinsic counts, relative proportions, inner parts/negative shapes, joins and allowed transformations so another maker can construct them without the reference; or name the supplied asset. Repeated-instance counts and order stay variable unless they establish the identity. Pattern pitch follows the module rather than being re-scaled to each container. Keep page coordinates and piece content out.>
 
 ## Forms
-<The forms any content brings (cover, statement, exhibit, argument and data, sequence, comparison, collection, reference, close), each as this hand sets it, or refused; its ban.>
+<The forms any content brings (cover, statement, exhibit, argument and data, sequence, comparison, collection, reference, close), each as this hand sets it, or refused: what leads, its share of the frame, its scale against the headline; its ban. On a screen, what moves and what can be touched.>
 
 ## Variations
 <The breaks this world allows at a turn, each with magnitude and keep condition. These depart from the grammar; ordinary within-unit cadence belongs in Layout.>
@@ -110,10 +110,10 @@ A unit is one slide, poster, screen, frame, page or spread. Its form is what it 
 
 One `brief.md` per piece, beside the skeleton:
 
-- **Facts.** A `## Facts` section, every fixed string in backticks, verbatim.
-- **Reader and outcome.** Who reads, where, from how far; what should happen next.
-- **The idea.** "On this surface, *the subject* becomes *the device*." It fails if a rival subject fits the sentence, or a second maker would reach it unaided. The idea names the subject's cause, never its form: no primitive, hue, position or device is decided in the brief — those are found at make time by the skeleton's method and recorded in the piece's notes. A brief that pre-writes form has already made the piece, badly, and hidden the making from review.
-- **Sequence.** Per unit: form, lead, register (base, turn, pause). Turns sit where the content turns and name their variation.
+- **Facts.** A `## Facts` section: what is true and fixed — names, numbers, prices, dates, quotes — in backticks, verbatim. Copy is not a fact: the maker writes it from the facts and invents no number. Facts are written in the reader's language, the source wording beside a translation; a derived number shows its inputs on the page.
+- **Reader and outcome.** Who reads, where, from how far; what they recognise in the first three seconds; what should happen next.
+- **The idea.** "On this surface, *the subject* becomes *the device*." It fails if a rival subject fits the sentence, or a second maker would reach it unaided. The idea names the subject's cause, never its form: no copy, order, primitive, hue, size, position, device or list of bans is decided in the brief — those are found at make time by the skeleton's method and recorded in the piece's notes. A brief that pre-writes form has already made the piece, badly, and hidden the making from review.
+- **Sequence, where order is content.** A story or an argument fixes its order: per unit, form, lead, register (base, turn, pause), turns where the content turns. Otherwise order is found at make time.
 - **Assumptions and gaps.** Ask once, only what changes the work; what stays unknown or unverified is reported with the delivery.
 
 A piece that must differ from the skeleton records why in its brief. A difference that holds for every piece changes the skeleton.
